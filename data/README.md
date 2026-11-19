@@ -1,28 +1,94 @@
-# Data
+# Data Sources and Historical Processing
 
-This directory is reserved for dataset documentation, source manifests, and data organization used by StayOrSwitch.
+Keep data source files, downloaders, historical processing code, data tests,
+configuration, manifests, and quality reports in this directory. ETA estimation
+and Stay/Switch comparison code belongs in `algo/`.
 
-Sources include:
+## Historical pilot
 
-- Current itineraries and candidate alternatives supplied by Google Routes or another provider, including walking/transit legs and query timestamps.
-- MTA static GTFS and station metadata as needed to match provider itineraries to MTA stops, directions, and services. We are not building a routing graph.
-- Subway Data NYC raw GTFS-Realtime archives and accompanying CSVs for 2026-11-09 through 2026-11-15, inclusive, for feature extraction, labels, training, and evaluation.
-- Current MTA train feeds and service information for live ETA estimation and comparison.
-- Independently observed arrival samples for label validation and evaluation where available.
+The accepted pilot covers Subway Data NYC archives for **2026-11-02 through
+2026-11-15 inclusive**. Archive dates are New York calendar dates; trip service
+dates and original collection timestamps are separate fields. The window was
+expanded from one week to two on 2026-11-19.
 
-For each dataset, record its source, service dates, timezone, version or retrieval time, coverage, and processing steps. Keep inferred arrival labels distinct from independently verified arrival observations.
+- [Processing guide and limitations](docs/historical-pipeline.md)
+- [Pilot stations, sampling, feeds, and date splits](config/pilot-history.json)
+- [Source and derived artifact manifest](manifests/history-pilot.json)
+- [Verified Python runtime and dependency versions](manifests/history-runtime.json)
+- [Quality report](reports/history-pilot.md)
+- [Machine-readable quality report](reports/history-pilot.json)
 
-Use America/New_York service dates and preserve source and collection timestamps. Reserve whole dates for evaluation and prevent the same trip from appearing in multiple splits. Historical route-level replay needs date-appropriate service arrangements; current provider output is not a record of historical candidate routes.
+Use the repository's local Python environment, with the dependencies in
+[requirements.txt](requirements.txt), which includes the shared live-data
+decoder dependencies. Run these commands from the repository root:
 
-Historical MTA snapshots do not include historical Google route ETAs. Keep provider predictions and MTA predictions separate when defining model targets and evaluating improvements.
+```bash
+# Verify a weekday and a weekend sample before the full run.
+.venv/bin/python data/scripts/build_history.py --dates 2026-11-02,2026-11-07
 
-No raw archives are included in this initial setup. Record large archive locations and checksums in manifests rather than copying them into Git by default.
+# Download and process the full configured window.
+.venv/bin/python data/scripts/build_history.py
 
-Step 2 now uses official source URLs in [mta-sources.json](mta-sources.json).
-`data/local/mta/` holds ignored static GTFS and full MTA snapshots, with retrieval
-timestamps, hashes and as-of selection. The runtime processes Google responses in
-memory; real provider payloads are not committed as fixtures or used as training
-labels. See [live integration](../algo/docs/live-integration.md) for collection
-commands, retention boundaries and provider data-handling requirements.
+# Reprocess verified local archives without downloading them again.
+.venv/bin/python data/scripts/build_history.py --process-only
 
-See the [delay-aware ETA and Stay/Switch roadmap](../algo/README.md) for the seven-step development plan. The seven-day historical pilot archives remain a Step 3 task and have not been downloaded by Step 2.
+# Run synthetic archive, feature, label, and leakage checks.
+PYTHONPATH=algo:data .venv/bin/python -m unittest discover -s data/tests
+```
+
+The pipeline streams compressed archives rather than extracting the full raw
+history. Its station and forecast-horizon scope describes the training dataset;
+it does not impose walking, transfer, detour, or route limits on the live app.
+Actual coverage, exclusions, and artifact paths are recorded in the manifest and
+quality report. Download dates and checksums support reproducibility; a local
+checksum is not a publisher signature.
+
+## Directory ownership and retention
+
+| Path | Purpose | Git policy |
+|---|---|---|
+| `history/` | Archive parsing, as-of features, labels, and quality checks | Commit code |
+| `scripts/` | Reproducible data commands | Commit code |
+| `tests/` | Synthetic data-processing regression tests | Commit code |
+| `config/` | Explicit dataset scope and policies | Commit configuration |
+| `docs/` | Data definitions, commands, and limitations | Commit documentation |
+| `manifests/`, `reports/` | Source provenance and compact aggregate evidence | Commit small reports |
+| `raw/subwaydata_nyc/` | Downloaded daily source archives and retrieval metadata | Local, ignored |
+| `processed/history-pilot/` | Derived feature/label shards | Local, ignored |
+| `local/mta/` | Step 2 current static GTFS and as-of MTA snapshots | Local, ignored |
+
+Large raw and processed datasets stay under `data/` locally. Publish paths,
+sizes, checksums, and reproduction commands in Git rather than copying the
+archives into the repository history. Do not commit API credentials.
+
+## Interpretation and evaluation
+
+Subway Data NYC CSV arrival times are inferred from the last MTA prediction.
+They are **not independently observed physical arrivals**. Vehicle-derived
+consistency checks share the MTA source and must not be presented as independent
+ground truth. Preserve label method, quality flags, unavailable outcomes, and
+source timestamps alongside each example.
+
+Features may use only information available by their decision timestamp. Later
+CSV outcomes and stopping-pattern changes belong to labels or quality metadata,
+not input features. Keep every trip in one chronological split and prevent
+outcomes crossing the split cutoff from entering training. Report weekdays,
+Saturdays, and Sundays separately. Planned weekend headway differences are not
+the same as unexpected prediction errors.
+
+Historical MTA snapshots do not contain historical Google route ETAs or prove
+which complete alternative journeys a provider would have offered. Current
+static GTFS is useful for station identities, not historical route availability.
+Full-journey replay requires date-appropriate service arrangements and defensible
+candidate and outcome evidence. See the [evaluation criteria](../algo/docs/evaluation.md).
+
+## Live inputs
+
+Official MTA source URLs are in [mta-sources.json](mta-sources.json). The runtime
+uses Google-generated candidate routes and applicable live MTA observations;
+Google payloads are handled in memory and are not archived as training labels.
+See [live integration](../algo/docs/live-integration.md) and the
+[baseline comparator](../algo/docs/baseline.md).
+
+The teammate owns app UI and navigation. The overall sequence remains in the
+[seven-step algorithm roadmap](../algo/README.md).

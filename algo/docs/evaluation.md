@@ -26,11 +26,12 @@ Record the label method, observation coverage, timing uncertainty, and exclusion
 
 ## Chronological pilot evaluation
 
-- The initial historical window is 2026-11-09 through 2026-11-15 inclusive. Inspect quality before assigning complete dates to training, validation, and final testing; publish the actual split in the dataset manifest.
+- The historical pilot window is 2026-11-02 through 2026-11-15 inclusive, expanded to two weeks on 2026-11-19. The planned service-date split is November 2-8 for training, November 9-11 for validation, and November 12-15 for final testing. Verify coverage and publish the actual split and boundary exclusions in the dataset manifest before training.
 - Training dates precede validation dates, which precede final test dates. Keep each trip in one split, including cross-midnight observations; document boundary handling and any exclusion gap.
 - Fit feature transformations and historical summaries using training data only. Select features, model settings, and uncertainty methods using validation data, then freeze them before final testing.
 - Never construct an input using updates, future notices, inferred outcomes, or corrected data that were unavailable at the decision time. An old source timestamp alone does not prove the information had already been received.
-- Report weekdays and weekends separately. This one-week window has only one weekend, so a late-date holdout can confound temporal generalization with weekend service. Do not describe a weekend-only test as proof of weekday performance.
+- Report weekdays, Saturdays, and Sundays separately, including relevant stopping patterns and known service changes. The two-week window has only two weekends: the planned training and final-test ranges include weekends, but validation contains weekdays only. It cannot independently tune and test weekend behavior. Do not use the final-test weekend to choose model settings or describe two weekends as proof of general weekend performance.
+- Distinguish planned service differences from prediction error. Longer normal weekend headways are not unexpected delays. Use only the headways and stopping patterns available at each decision time as features; later stop changes are outcomes or quality metadata. An unseen operating pattern must trigger documented fallback or insufficient-data behavior rather than an unsupported learned correction.
 - If relevant cases are too sparse or labels are unreliable, report the limitation and request more data before drawing general conclusions. Do not replace a valid time split with random snapshot splitting to improve scores.
 
 ## Baselines and consistent comparisons

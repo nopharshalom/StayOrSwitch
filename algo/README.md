@@ -1,6 +1,34 @@
 # Delay-Aware ETA and Stay/Switch Roadmap
 
-Status: Steps 1 and 2 are implemented for the pilot as of 2026-11-19. The version 1.0 contract, evaluation criteria, simulated fixtures, Google Routes adapter, MTA ingestion, and candidate-service matching are available. Steps 3-7 remain planned; there is no destination ETA comparator, trained model, or live evaluation API server yet.
+Status: Steps 1 through 4 are implemented for the pilot: the version 1.0 contract, live input integration, historical-data preparation, and baseline journey comparator. The full November 2–15 historical window has been processed and passed the recorded integrity checks. Historical labels are inferred prediction proxies, not physical arrival observations. No trained model or live evaluation API server is delivered by these steps.
+
+## Steps 3 and 4: Parallel development
+
+The historical-data pipeline and live journey comparator are independent tracks.
+Data source files and processing code live under `data/`; the comparator lives
+under `algo/`. Both preserve decision-time provenance and explicit unavailable
+states. Neither trains a model or starts an API server.
+
+- [Historical processing, source manifests, and quality reports](../data/README.md)
+- [Baseline comparison commands and limitations](docs/baseline.md)
+
+From the repository root, after installing `algo/requirements-live.txt`:
+
+```bash
+# Step 3: reproduce the configured historical dataset.
+.venv/bin/python data/scripts/build_history.py
+
+# Step 4: compare current provider candidates using live MTA estimates.
+.venv/bin/python algo/scripts/run_baseline.py
+```
+
+The baseline returns the existing version 1 Response with destination ETA,
+walking/waiting/riding components, per-leg sources, and comparison eligibility.
+Pass the user's selected `--current-itinerary-id` to establish the Stay reference.
+Without one, the baseline can identify the fastest eligible supplied candidate
+but returns `NOT_APPLICABLE` for Stay/Switch. It does not silently select a current
+route. Provider-only transit fallbacks remain display-only; a fresh supplied
+walking-only itinerary can compete using its stated walking duration.
 
 ## Step 2 live integration
 
@@ -47,7 +75,7 @@ The teammate owns final UI design and app development. Our deliverable is a reus
 - Destination: NYU Tandon School of Engineering, 6 MetroTech Center, Brooklyn, NY 11201.
 - Verify building entrance coordinates before door-to-door evaluation. Keep this test case configurable.
 - User state: not yet on a train, departing now. Modes: subway and walking.
-- Historical source: Subway Data NYC archives for 2026-11-09 through 2026-11-15 inclusive, using America/New_York service dates.
+- Historical source: Subway Data NYC archives for 2026-11-02 through 2026-11-15 inclusive, expanded to two weeks on 2026-11-19. Distinguish archive calendar dates from America/New_York trip service dates and report weekdays, Saturdays, and Sundays separately.
 - Objective: lowest estimated total door-to-door time among feasible supplied candidates.
 - Do not impose arbitrary walking, transfer, or detour caps or penalties. Include actual walking and transfer durations.
 - Evaluate supplied alternatives using nearby different stations or detours, including routes through other areas.
@@ -84,14 +112,14 @@ Train-arrival predictions are intermediate inputs. The main output is estimated 
 
 ## Step 3: Prepare historical features and labels
 
-- Retrieve the seven selected daily raw GTFS-Realtime archives and accompanying CSVs; verify coverage and contents.
-- Extract decision-time ETA, recent ETA changes, route, stop, direction, vehicle state, headways, time of day, and alerts already available at that time.
+- Retrieve the fourteen selected daily raw GTFS-Realtime archives and accompanying CSVs; verify coverage and contents. Validate one weekday and one weekend sample before processing the full window. Keep source files and all historical processing code under `data/`.
+- Extract decision-time ETA, recent ETA changes, route, stop, direction, vehicle state, headways, day type, time of day, and the stopping pattern known at that time. Extract contemporaneous alerts only when archived evidence exists; otherwise mark alert availability unknown.
 - Construct subsequent arrival and, where supported, segment-travel labels. Record quality and derivation and validate a sample independently.
 - Treat CSV and vehicle-derived arrival times as inferred labels, not verified physical arrival times.
 - Check gaps, duplicates, trip continuity, cross-day records, and changed stopping patterns. Cover alternatives' lines as well as the current route.
-- Reserve whole dates for validation/testing, keep each trip in one split, and report weekdays and weekends separately. Exclude future updates and notices from input features.
+- Reserve whole dates for validation/testing, keep each trip in one split, and report weekdays, Saturdays, and Sundays separately. Exclude future updates and notices from input features. A longer planned weekend headway is not itself an unexpected delay.
 
-**Deliverable:** reproducible features, quality-marked labels, and chronological evaluation splits. A single week does not establish long-term generalization.
+**Deliverable:** reproducible features, quality-marked labels, and chronological evaluation splits. Two weeks and two weekends support a pilot, not long-term or general weekend-performance claims.
 
 ## Step 4: Build journey estimates and comparisons without a learned model
 
@@ -158,15 +186,16 @@ Define evaluation cases early. The first development milestone is an interpretab
 - Interface ownership: identify the teammate responsible for coordinating request/response integration.
 - First delivery date: use it to schedule the pilot scope and validation depth.
 
-Steps 1 and 2 have been delivered under the user's instructions. Google Routes is
-the pilot provider; its development credential is configured locally and never
-committed. Final backend ownership and delivery timing still need coordination.
-Steps 3-7 require subsequent implementation. API response examples remain simulated.
+Google Routes is the pilot provider; its development credential is configured
+locally and never committed. The baseline evaluator uses the existing contract;
+the original API response fixtures remain explicitly simulated. Model training,
+the served evaluation API, and integrated validation/handoff remain Steps 5-7.
+Final backend ownership and delivery timing still need coordination.
 
 ## Repository organization
 
 - `algo/`: provider adapters, ETA estimation, training, comparison logic, evaluation, and documentation.
-- `data/`: dataset documentation, manifests, and organization.
+- `data/`: data source files, downloaders, historical processing code, data tests, manifests, quality reports, and ignored large raw/processed artifacts.
 - Repository-wide conventions: [AGENTS.md](../AGENTS.md).
 
 ## References

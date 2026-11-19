@@ -1,0 +1,271 @@
+{
+  "dataset_version": "0.1",
+  "window": {
+    "archive_start": "2026-11-02",
+    "archive_end": "2026-11-15",
+    "timezone": "America/New_York"
+  },
+  "splits": {
+    "train": [
+      "2026-11-02",
+      "2026-11-08"
+    ],
+    "validation": [
+      "2026-11-09",
+      "2026-11-11"
+    ],
+    "test": [
+      "2026-11-12",
+      "2026-11-15"
+    ]
+  },
+  "feed_ids": [
+    "ace",
+    "bdfm",
+    "g",
+    "nqrw",
+    "numbered"
+  ],
+  "route_ids": [
+    "A",
+    "C",
+    "E",
+    "B",
+    "D",
+    "F",
+    "FX",
+    "M",
+    "G",
+    "N",
+    "Q",
+    "R",
+    "W",
+    "1",
+    "2",
+    "3",
+    "4",
+    "5",
+    "6",
+    "6X",
+    "7",
+    "7X",
+    "GS"
+  ],
+  "sample_seconds": 60,
+  "forecast_horizon_seconds": 1800,
+  "source_max_age_seconds": 180,
+  "target_stations": [
+    {
+      "parent_stop_id": "127",
+      "name": "Times Sq-42 St"
+    },
+    {
+      "parent_stop_id": "232",
+      "name": "Borough Hall"
+    },
+    {
+      "parent_stop_id": "233",
+      "name": "Hoyt St"
+    },
+    {
+      "parent_stop_id": "235",
+      "name": "Atlantic Av-Barclays Ctr"
+    },
+    {
+      "parent_stop_id": "423",
+      "name": "Borough Hall"
+    },
+    {
+      "parent_stop_id": "631",
+      "name": "Grand Central-42 St"
+    },
+    {
+      "parent_stop_id": "718",
+      "name": "Queensboro Plaza"
+    },
+    {
+      "parent_stop_id": "719",
+      "name": "Court Sq"
+    },
+    {
+      "parent_stop_id": "723",
+      "name": "Grand Central-42 St"
+    },
+    {
+      "parent_stop_id": "725",
+      "name": "Times Sq-42 St"
+    },
+    {
+      "parent_stop_id": "901",
+      "name": "Grand Central-42 St"
+    },
+    {
+      "parent_stop_id": "902",
+      "name": "Times Sq-42 St"
+    },
+    {
+      "parent_stop_id": "A27",
+      "name": "42 St-Port Authority Bus Terminal"
+    },
+    {
+      "parent_stop_id": "A38",
+      "name": "Fulton St"
+    },
+    {
+      "parent_stop_id": "A40",
+      "name": "High St"
+    },
+    {
+      "parent_stop_id": "A41",
+      "name": "Jay St-MetroTech"
+    },
+    {
+      "parent_stop_id": "A42",
+      "name": "Hoyt-Schermerhorn Sts"
+    },
+    {
+      "parent_stop_id": "B04",
+      "name": "21 St-Queensbridge"
+    },
+    {
+      "parent_stop_id": "D17",
+      "name": "34 St-Herald Sq"
+    },
+    {
+      "parent_stop_id": "D24",
+      "name": "Atlantic Av-Barclays Ctr"
+    },
+    {
+      "parent_stop_id": "F09",
+      "name": "Court Sq-23 St"
+    },
+    {
+      "parent_stop_id": "F11",
+      "name": "Lexington Av/53 St"
+    },
+    {
+      "parent_stop_id": "G21",
+      "name": "Queens Plaza"
+    },
+    {
+      "parent_stop_id": "G22",
+      "name": "Court Sq"
+    },
+    {
+      "parent_stop_id": "G24",
+      "name": "21 St"
+    },
+    {
+      "parent_stop_id": "G36",
+      "name": "Fulton St"
+    },
+    {
+      "parent_stop_id": "R09",
+      "name": "Queensboro Plaza"
+    },
+    {
+      "parent_stop_id": "R11",
+      "name": "Lexington Av/59 St"
+    },
+    {
+      "parent_stop_id": "R16",
+      "name": "Times Sq-42 St"
+    },
+    {
+      "parent_stop_id": "R17",
+      "name": "34 St-Herald Sq"
+    },
+    {
+      "parent_stop_id": "R29",
+      "name": "Jay St-MetroTech"
+    },
+    {
+      "parent_stop_id": "R30",
+      "name": "DeKalb Av"
+    },
+    {
+      "parent_stop_id": "R31",
+      "name": "Atlantic Av-Barclays Ctr"
+    }
+  ],
+  "stop_ids": [
+    "127N",
+    "127S",
+    "232N",
+    "232S",
+    "233N",
+    "233S",
+    "235N",
+    "235S",
+    "423N",
+    "423S",
+    "631N",
+    "631S",
+    "718N",
+    "718S",
+    "719N",
+    "719S",
+    "723N",
+    "723S",
+    "725N",
+    "725S",
+    "901N",
+    "901S",
+    "902N",
+    "902S",
+    "A27N",
+    "A27S",
+    "A38N",
+    "A38S",
+    "A40N",
+    "A40S",
+    "A41N",
+    "A41S",
+    "A42N",
+    "A42S",
+    "B04N",
+    "B04S",
+    "D17N",
+    "D17S",
+    "D24N",
+    "D24S",
+    "F09N",
+    "F09S",
+    "F11N",
+    "F11S",
+    "G21N",
+    "G21S",
+    "G22N",
+    "G22S",
+    "G24N",
+    "G24S",
+    "G36N",
+    "G36S",
+    "R09N",
+    "R09S",
+    "R11N",
+    "R11S",
+    "R16N",
+    "R16S",
+    "R17N",
+    "R17S",
+    "R29N",
+    "R29S",
+    "R30N",
+    "R30S",
+    "R31N",
+    "R31S"
+  ],
+  "station_metadata": {
+    "source": "https://rrgtfsfeeds.s3.amazonaws.com/gtfs_subway.zip",
+    "sha256": "acb122715bd90aeacf61f4559722ccf0b7de9c63317200a6dd7480246488f1e6",
+    "purpose": "Station identity and explicit pilot target selection only; not historical service or route availability."
+  },
+  "scope_notes": [
+    "Target stops cover LIC and Downtown Brooklyn boarding/alighting stations and selected Manhattan transfer stations; this is not exhaustive candidate-route coverage.",
+    "Dataset sampling and station scope do not impose live route, walking, transfer, or detour limits.",
+    "Remaining stop sequences and calendar features must come from each historical snapshot, not this current station metadata.",
+    "Historical protobuf alert snapshots are included and joined at or before each decision cutoff. Content-deduplicated old captures do not establish fresh alert state.",
+    "CSV endpoint labels are inferred from final MTA predictions, not independently observed physical arrival times."
+  ]
+}

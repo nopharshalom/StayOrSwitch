@@ -167,7 +167,7 @@ PYTHONPATH=algo .venv/bin/python -m unittest discover -s algo/tests -v
 .venv/bin/python algo/scripts/validate_contract.py --self-test
 ```
 
-The 82 tests use synthetic inputs. They cover credential handling, malformed provider
+The original 82 Step 2 tests use synthetic inputs. They cover credential handling, malformed provider
 data, route identity, deduplication, missing transfer walks, station ambiguity,
 missed departures/transfers, canceled/skipped stops, stale/missing feeds, alerts,
 and cutoff-aware cache selection. The original Step 1 contract remains unchanged.
@@ -184,6 +184,8 @@ counts are a smoke-test observation, not a route-coverage or accuracy benchmark.
 
 Primary entry points are `normalize_google_response`, `mta.collect_feeds`,
 `mta.SnapshotCache`, `match_request`, `integrate_live`, and `integrate_supplied`.
-Next development work is the historical-data pipeline (Step 3) and complete
-journey baseline evaluator (Step 4). The UI can continue using the Step 1 API
-contract and marked simulated responses until that evaluator is implemented.
+The separate [baseline journey evaluator](baseline.md) now consumes these
+matching reports and produces the Step 1 Response with destination ETA and
+comparison semantics. [Historical data processing](../../data/README.md) lives
+under `data/`. The UI can use the existing contract and marked simulated
+responses while the later API server and trained model are developed.
