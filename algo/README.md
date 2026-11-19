@@ -1,6 +1,6 @@
 # Delay-Aware ETA and Stay/Switch Roadmap
 
-Status: planned. Scope revised on 2026-11-19. No prediction model or decision API is implemented yet.
+Status: planned. The seven-step development plan was saved on 2026-11-19. This is a documentation-only update: implementation, data downloads, model training, and API development have not started as part of this update.
 
 ## Goal and boundaries
 
@@ -26,25 +26,28 @@ Provider current itinerary and alternatives -> normalized legs -> matching MTA o
 
 Train-arrival predictions are intermediate inputs. The main output is estimated arrival at the final destination, with its data basis and uncertainty, not a guaranteed actual arrival time.
 
-## Step 1: Define the itinerary input and evaluation contract
+## Step 1: Define the algorithm contract and evaluation criteria
 
 - Accept the current itinerary and alternatives from the application backend or a thin provider adapter. The external provider performs route planning.
 - Normalize walking/transit legs, line identifiers, directions, boarding/alighting stops, timings, itinerary identifiers, and provider query timestamps.
 - Preserve the user's selected current itinerary as the Stay reference. Refresh its timing without silently replacing it with the provider's newly preferred route.
 - Define a versioned `/v1/evaluate` contract. Without a current itinerary, return estimates without inventing a Stay reference.
 - Return per-route destination ETA, total/component durations, recommended itinerary identifier, estimated savings, decision reason codes, data timestamps, model version, and fallback/unavailable status.
+- Define responses for missing alternatives, stale data, unmatched trips, and infeasible routes. Missing values must not be interpreted as zero travel time.
+- Agree on evaluation criteria for ETA error, route comparisons, and disruption conditions before training.
 
 **Deliverable:** a provider-independent contract and clearly marked simulated fixtures for the teammate's integration work.
 
-## Step 2: Connect MTA data and establish baseline estimates
+## Step 2: Connect provider itineraries and real-time MTA data
 
+- Obtain real route-provider responses and convert them into the contract's common format.
 - Connect current train feeds and official service information.
 - Map provider stations, lines, directions, and timings to MTA stops and candidate trips, using static GTFS and station metadata where needed. Do not assume provider trip IDs match MTA IDs.
+- Verify which departures can be reached after walking to the boarding platform.
 - Track missing/stale data, ambiguous matches, cancellations, skipped stops, and known service changes.
-- Build a baseline evaluator using applicable real-time estimates and documented provider or schedule fallbacks.
-- Keep provider ETA and MTA-based estimates separate for comparison.
+- Preserve original provider ETA and MTA predictions separately for later comparison.
 
-**Deliverable:** provider itineraries matched to MTA observations where possible, with a working baseline ETA evaluator.
+**Deliverable:** normalized itinerary legs linked to live MTA observations, with unmatched or unsupported portions explicitly identified.
 
 ## Step 3: Prepare historical features and labels
 
@@ -57,7 +60,18 @@ Train-arrival predictions are intermediate inputs. The main output is estimated 
 
 **Deliverable:** reproducible features, quality-marked labels, and chronological evaluation splits. A single week does not establish long-term generalization.
 
-## Step 4: Train delay-aware time estimates
+## Step 4: Build journey estimates and comparisons without a learned model
+
+- Use applicable MTA real-time predictions and explicitly documented provider or schedule fallbacks.
+- Calculate journeys sequentially: access walking, waiting for a catchable train, riding, transfer walking and waiting, and final walking.
+- Select departures based on when the user can reach each platform; do not simply add each station's next-train waiting time at the initial query time.
+- Re-estimate the current itinerary and all alternatives at the same decision time and from the same user state.
+- Return baseline destination ETAs and the fastest feasible supplied candidate, with no extra walking, transfer, or detour penalties.
+- Keep component estimates and data sources available for inspection so later model corrections can be evaluated against this baseline.
+
+**Deliverable:** a runnable baseline journey comparator and an interpretable result for the pilot query. The learned model is not required for this milestone.
+
+## Step 5: Train and validate delay-aware time estimates
 
 - Start by predicting residual error in current MTA train-arrival estimates, especially during repeated revisions and disruptions.
 - Compare with unmodified MTA estimates and simple historical corrections on held-out dates, in normal and disrupted conditions.
@@ -67,8 +81,9 @@ Train-arrival predictions are intermediate inputs. The main output is estimated 
 
 **Deliverable:** evaluated time-estimation components with documented limitations.
 
-## Step 5: Compare current and alternative itineraries
+## Step 6: Integrate the model and expose Stay/Switch evaluation
 
+- Integrate the evaluated model from Step 5 into the baseline comparator from Step 4 and expose it through `/v1/evaluate`.
 - Evaluate all routes at the same decision time from the same user state.
 - Reconstruct access walking, waiting for a catchable train, riding, transfer walking/waiting, and final walking sequentially.
 - Apply corrections to the components they predict and avoid counting a delay already reflected in an estimate twice.
@@ -79,8 +94,10 @@ Train-arrival predictions are intermediate inputs. The main output is estimated 
 
 **Deliverable:** an evaluation API explaining revised destination ETA and whether an available alternative is expected to be faster.
 
-## Step 6: Evaluate and hand off the algorithm
+## Step 7: Validate the integrated system and hand it off
 
+- Use Hayden LIC to NYU Tandon at 6 MetroTech Center as the primary configurable test case.
+- Check normal operation, delays, reroutes, missing data, and missed-transfer scenarios.
 - Compare baseline and model estimates on identical candidate sets and decision times.
 - Evaluate component error, destination-ETA error where suitable labels exist, missed connections, and route-selection outcomes, especially during delays.
 - Separate inferred replay outcomes from independently observed passenger arrivals. Full historical journey replay requires date-appropriate service arrangements and defensible candidate availability; today's provider output is not historical evidence.
@@ -91,7 +108,24 @@ Train-arrival predictions are intermediate inputs. The main output is estimated 
 
 ## Parallel work
 
-Agree on the contract first. Provider normalization and live MTA matching (Steps 1-2) can proceed alongside historical preparation and modeling (Steps 3-4). The teammate can use simulated responses immediately. Build comparison against baseline estimates before the learned model is ready, integrate in Step 5, then complete validation and handoff in Step 6.
+Agree on the Step 1 contract first, then run the following tracks in parallel:
+
+| Track | Sequence | Dependency |
+|---|---|---|
+| Real-time integration and comparison | Step 2 -> Step 4 | Shared contract and provider/MTA access |
+| Historical data and modeling | Step 3 -> Step 5 | Feature definitions, label quality, and chronological splits |
+| Teammate's app development | Start after Step 1 | Clearly marked simulated requests/responses |
+| Algorithm integration and handoff | Step 6 -> Step 7 | Working baseline comparator and evaluated model |
+
+Define evaluation cases early. The first development milestone is an interpretable baseline comparison of a supplied current itinerary and alternatives using live MTA information; model training can continue independently.
+
+## Items to settle before development
+
+- Route-provider access: which backend calls the provider, account/API configuration, and how responses reach the algorithm. Keep credentials outside committed files.
+- Interface ownership: identify the teammate responsible for coordinating request/response integration.
+- First delivery date: use it to schedule the pilot scope and validation depth.
+
+This plan does not authorize implementation as part of the current save request. All seven development steps remain planned.
 
 ## Repository organization
 

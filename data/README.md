@@ -18,4 +18,4 @@ Historical MTA snapshots do not include historical Google route ETAs. Keep provi
 
 No raw archives are included in this initial setup. Record large archive locations and checksums in manifests rather than copying them into Git by default.
 
-See the [delay-aware ETA and Stay/Switch roadmap](../algo/README.md) for the six-step implementation plan. The seven-day pilot archives have been selected but are not included by this documentation change.
+See the [delay-aware ETA and Stay/Switch roadmap](../algo/README.md) for the seven-step development plan. The seven-day pilot archives have been selected but are not included by this documentation change.
