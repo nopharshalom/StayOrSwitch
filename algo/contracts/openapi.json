@@ -1,0 +1,78 @@
+{
+  "openapi": "3.1.0",
+  "info": {
+    "title": "StayOrSwitch Evaluation API",
+    "version": "1.0.0-draft",
+    "description": "Step 1 contract only; no deployed endpoint. API accepts provider itineraries and evaluates them. Authentication and hosting are deployment decisions, not implemented by this contract."
+  },
+  "paths": {
+    "/v1/evaluate": {
+      "post": {
+        "operationId": "evaluateItineraries",
+        "summary": "Estimate destination ETAs and compare a current itinerary with supplied alternatives",
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "./evaluate.schema.json#/$defs/Request"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Evaluation result, including partial or unavailable route estimates",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "./evaluate.schema.json#/$defs/Response"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Malformed JSON",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "./evaluate.schema.json#/$defs/Error"
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "Invalid fields, unsupported version/state, or semantic request errors",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "./evaluate.schema.json#/$defs/Error"
+                }
+              }
+            }
+          },
+          "500": {
+            "description": "Unexpected service failure",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "./evaluate.schema.json#/$defs/Error"
+                }
+              }
+            }
+          },
+          "503": {
+            "description": "Evaluation service unavailable",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "./evaluate.schema.json#/$defs/Error"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

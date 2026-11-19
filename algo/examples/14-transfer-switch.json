@@ -1,0 +1,398 @@
+{
+  "description": "SIMULATED: two subway legs, transfer walking, and separate waiting at each boarding. All times and routes are fictional.",
+  "synthetic": true,
+  "http_status": 200,
+  "request": {
+    "schema_version": "1.0",
+    "request_id": "14-transfer-switch",
+    "data_mode": "simulated",
+    "decision_time": "2026-11-19T13:00:00Z",
+    "user_state": "NOT_BOARDED",
+    "origin": {
+      "id": "pilot-origin",
+      "name": "Hayden LIC, 43-25 Hunter Street, Long Island City, NY 11101",
+      "coordinates": null,
+      "provider_place_id": null,
+      "mta_stop_id": null
+    },
+    "destination": {
+      "id": "pilot-destination",
+      "name": "NYU Tandon, 6 MetroTech Center, Brooklyn, NY 11201",
+      "coordinates": null,
+      "provider_place_id": null,
+      "mta_stop_id": null
+    },
+    "current_itinerary_id": "current",
+    "itineraries": [
+      {
+        "id": "current",
+        "provider": {
+          "name": "simulated-provider",
+          "itinerary_id": "mock-current",
+          "queried_at": "2026-11-19T12:59:30Z"
+        },
+        "provider_eta": "2026-11-19T13:30:00Z",
+        "legs": [
+          {
+            "id": "current-walk-in",
+            "mode": "WALK",
+            "from": {
+              "id": "pilot-origin",
+              "name": "Hayden LIC, 43-25 Hunter Street, Long Island City, NY 11101",
+              "coordinates": null,
+              "provider_place_id": null,
+              "mta_stop_id": null
+            },
+            "to": {
+              "id": "current-board",
+              "name": "Simulated boarding stop A",
+              "coordinates": null,
+              "provider_place_id": null,
+              "mta_stop_id": null
+            },
+            "provider_duration_seconds": 240,
+            "provider_departure_at": "2026-11-19T13:00:00Z",
+            "provider_arrival_at": "2026-11-19T13:04:00Z",
+            "transit": null
+          },
+          {
+            "id": "current-ride",
+            "mode": "SUBWAY",
+            "from": {
+              "id": "current-board",
+              "name": "Simulated boarding stop A",
+              "coordinates": null,
+              "provider_place_id": null,
+              "mta_stop_id": null
+            },
+            "to": {
+              "id": "current-alight",
+              "name": "Simulated alighting stop A",
+              "coordinates": null,
+              "provider_place_id": null,
+              "mta_stop_id": null
+            },
+            "provider_duration_seconds": 1200,
+            "provider_departure_at": "2026-11-19T13:07:00Z",
+            "provider_arrival_at": "2026-11-19T13:27:00Z",
+            "transit": {
+              "agency": "SIMULATED",
+              "provider_route_id": "SIM-A",
+              "route_short_name": "SIM-A",
+              "headsign": "Simulated direction",
+              "direction_id": null,
+              "provider_trip_id": null
+            }
+          },
+          {
+            "id": "current-walk-out",
+            "mode": "WALK",
+            "from": {
+              "id": "current-alight",
+              "name": "Simulated alighting stop A",
+              "coordinates": null,
+              "provider_place_id": null,
+              "mta_stop_id": null
+            },
+            "to": {
+              "id": "pilot-destination",
+              "name": "NYU Tandon, 6 MetroTech Center, Brooklyn, NY 11201",
+              "coordinates": null,
+              "provider_place_id": null,
+              "mta_stop_id": null
+            },
+            "provider_duration_seconds": 180,
+            "provider_departure_at": "2026-11-19T13:27:00Z",
+            "provider_arrival_at": "2026-11-19T13:30:00Z",
+            "transit": null
+          }
+        ]
+      },
+      {
+        "id": "transfer-alternative",
+        "provider": {
+          "name": "simulated-provider",
+          "itinerary_id": "mock-transfer",
+          "queried_at": "2026-11-19T12:59:30Z"
+        },
+        "provider_eta": "2026-11-19T13:32:00Z",
+        "legs": [
+          {
+            "id": "transfer-leg-1",
+            "mode": "WALK",
+            "from": {
+              "id": "pilot-origin",
+              "name": "Hayden LIC, 43-25 Hunter Street, Long Island City, NY 11101",
+              "coordinates": null,
+              "provider_place_id": null,
+              "mta_stop_id": null
+            },
+            "to": {
+              "id": "x-board",
+              "name": "Simulated first boarding stop",
+              "coordinates": null,
+              "provider_place_id": null,
+              "mta_stop_id": null
+            },
+            "provider_duration_seconds": 300,
+            "provider_departure_at": "2026-11-19T13:00:00Z",
+            "provider_arrival_at": "2026-11-19T13:05:00Z",
+            "transit": null
+          },
+          {
+            "id": "transfer-leg-2",
+            "mode": "SUBWAY",
+            "from": {
+              "id": "x-board",
+              "name": "Simulated first boarding stop",
+              "coordinates": null,
+              "provider_place_id": null,
+              "mta_stop_id": null
+            },
+            "to": {
+              "id": "x-transfer-out",
+              "name": "Simulated transfer exit",
+              "coordinates": null,
+              "provider_place_id": null,
+              "mta_stop_id": null
+            },
+            "provider_duration_seconds": 480,
+            "provider_departure_at": "2026-11-19T13:07:00Z",
+            "provider_arrival_at": "2026-11-19T13:15:00Z",
+            "transit": {
+              "agency": "SIMULATED",
+              "provider_route_id": "SIM-X1",
+              "route_short_name": "SIM-X1",
+              "headsign": "Simulated direction",
+              "direction_id": null,
+              "provider_trip_id": null
+            }
+          },
+          {
+            "id": "transfer-leg-3",
+            "mode": "WALK",
+            "from": {
+              "id": "x-transfer-out",
+              "name": "Simulated transfer exit",
+              "coordinates": null,
+              "provider_place_id": null,
+              "mta_stop_id": null
+            },
+            "to": {
+              "id": "x-transfer-in",
+              "name": "Simulated transfer entrance",
+              "coordinates": null,
+              "provider_place_id": null,
+              "mta_stop_id": null
+            },
+            "provider_duration_seconds": 120,
+            "provider_departure_at": "2026-11-19T13:15:00Z",
+            "provider_arrival_at": "2026-11-19T13:17:00Z",
+            "transit": null
+          },
+          {
+            "id": "transfer-leg-4",
+            "mode": "SUBWAY",
+            "from": {
+              "id": "x-transfer-in",
+              "name": "Simulated transfer entrance",
+              "coordinates": null,
+              "provider_place_id": null,
+              "mta_stop_id": null
+            },
+            "to": {
+              "id": "x-alight",
+              "name": "Simulated final alighting stop",
+              "coordinates": null,
+              "provider_place_id": null,
+              "mta_stop_id": null
+            },
+            "provider_duration_seconds": 540,
+            "provider_departure_at": "2026-11-19T13:20:00Z",
+            "provider_arrival_at": "2026-11-19T13:29:00Z",
+            "transit": {
+              "agency": "SIMULATED",
+              "provider_route_id": "SIM-X3",
+              "route_short_name": "SIM-X3",
+              "headsign": "Simulated direction",
+              "direction_id": null,
+              "provider_trip_id": null
+            }
+          },
+          {
+            "id": "transfer-leg-5",
+            "mode": "WALK",
+            "from": {
+              "id": "x-alight",
+              "name": "Simulated final alighting stop",
+              "coordinates": null,
+              "provider_place_id": null,
+              "mta_stop_id": null
+            },
+            "to": {
+              "id": "pilot-destination",
+              "name": "NYU Tandon, 6 MetroTech Center, Brooklyn, NY 11201",
+              "coordinates": null,
+              "provider_place_id": null,
+              "mta_stop_id": null
+            },
+            "provider_duration_seconds": 180,
+            "provider_departure_at": "2026-11-19T13:29:00Z",
+            "provider_arrival_at": "2026-11-19T13:32:00Z",
+            "transit": null
+          }
+        ]
+      }
+    ]
+  },
+  "response": {
+    "schema_version": "1.0",
+    "request_id": "14-transfer-switch",
+    "data_mode": "simulated",
+    "decision_time": "2026-11-19T13:00:00Z",
+    "evaluated_at": "2026-11-19T13:00:01Z",
+    "current_itinerary_id": "current",
+    "decision": {
+      "action": "SWITCH",
+      "recommended_itinerary_id": "transfer-alternative",
+      "estimated_savings_seconds": 480,
+      "reason_codes": [
+        "FASTEST_ELIGIBLE_ALTERNATIVE"
+      ],
+      "comparison_complete": true,
+      "comparison_scope": "SUPPLIED_ITINERARIES"
+    },
+    "itineraries": [
+      {
+        "id": "current",
+        "status": "ESTIMATED",
+        "method": "MODEL_CORRECTED",
+        "comparison_eligible": true,
+        "eta": "2026-11-19T13:40:00Z",
+        "total_duration_seconds": 2400,
+        "components": {
+          "walking_seconds": 420,
+          "waiting_seconds": 780,
+          "riding_seconds": 1200
+        },
+        "uncertainty": null,
+        "reason_codes": [
+          "MODEL_APPLIED"
+        ],
+        "legs": [
+          {
+            "leg_id": "current-walk-in",
+            "mode": "WALK",
+            "start_at": "2026-11-19T13:00:00Z",
+            "end_at": "2026-11-19T13:04:00Z",
+            "duration_seconds": 240,
+            "wait_before_seconds": 0,
+            "source": "PROVIDER",
+            "matched_mta_trip_id": null
+          },
+          {
+            "leg_id": "current-ride",
+            "mode": "SUBWAY",
+            "start_at": "2026-11-19T13:17:00Z",
+            "end_at": "2026-11-19T13:37:00Z",
+            "duration_seconds": 1200,
+            "wait_before_seconds": 780,
+            "source": "MODEL_CORRECTED",
+            "matched_mta_trip_id": "SIMULATED|2026-11-19|current"
+          },
+          {
+            "leg_id": "current-walk-out",
+            "mode": "WALK",
+            "start_at": "2026-11-19T13:37:00Z",
+            "end_at": "2026-11-19T13:40:00Z",
+            "duration_seconds": 180,
+            "wait_before_seconds": 0,
+            "source": "PROVIDER",
+            "matched_mta_trip_id": null
+          }
+        ]
+      },
+      {
+        "id": "transfer-alternative",
+        "status": "ESTIMATED",
+        "method": "MTA_REALTIME",
+        "comparison_eligible": true,
+        "eta": "2026-11-19T13:32:00Z",
+        "total_duration_seconds": 1920,
+        "components": {
+          "walking_seconds": 600,
+          "waiting_seconds": 300,
+          "riding_seconds": 1020
+        },
+        "uncertainty": null,
+        "reason_codes": [],
+        "legs": [
+          {
+            "leg_id": "transfer-leg-1",
+            "mode": "WALK",
+            "start_at": "2026-11-19T13:00:00Z",
+            "end_at": "2026-11-19T13:05:00Z",
+            "duration_seconds": 300,
+            "wait_before_seconds": 0,
+            "source": "PROVIDER",
+            "matched_mta_trip_id": null
+          },
+          {
+            "leg_id": "transfer-leg-2",
+            "mode": "SUBWAY",
+            "start_at": "2026-11-19T13:07:00Z",
+            "end_at": "2026-11-19T13:15:00Z",
+            "duration_seconds": 480,
+            "wait_before_seconds": 120,
+            "source": "MTA_REALTIME",
+            "matched_mta_trip_id": "SIMULATED|2026-11-19|X1"
+          },
+          {
+            "leg_id": "transfer-leg-3",
+            "mode": "WALK",
+            "start_at": "2026-11-19T13:15:00Z",
+            "end_at": "2026-11-19T13:17:00Z",
+            "duration_seconds": 120,
+            "wait_before_seconds": 0,
+            "source": "PROVIDER",
+            "matched_mta_trip_id": null
+          },
+          {
+            "leg_id": "transfer-leg-4",
+            "mode": "SUBWAY",
+            "start_at": "2026-11-19T13:20:00Z",
+            "end_at": "2026-11-19T13:29:00Z",
+            "duration_seconds": 540,
+            "wait_before_seconds": 180,
+            "source": "MTA_REALTIME",
+            "matched_mta_trip_id": "SIMULATED|2026-11-19|X3"
+          },
+          {
+            "leg_id": "transfer-leg-5",
+            "mode": "WALK",
+            "start_at": "2026-11-19T13:29:00Z",
+            "end_at": "2026-11-19T13:32:00Z",
+            "duration_seconds": 180,
+            "wait_before_seconds": 0,
+            "source": "PROVIDER",
+            "matched_mta_trip_id": null
+          }
+        ]
+      }
+    ],
+    "data_status": {
+      "train_feed": {
+        "status": "FRESH",
+        "source_updated_at": "2026-11-19T12:59:50Z",
+        "fetched_at": "2026-11-19T12:59:55Z"
+      },
+      "alerts_feed": {
+        "status": "FRESH",
+        "source_updated_at": "2026-11-19T12:59:00Z",
+        "fetched_at": "2026-11-19T12:59:55Z"
+      }
+    },
+    "model_version": "simulated-model-0",
+    "warnings": []
+  }
+}

@@ -1,0 +1,261 @@
+{
+  "description": "SIMULATED: stale train observations cannot support this comparison.",
+  "synthetic": true,
+  "http_status": 200,
+  "request": {
+    "schema_version": "1.0",
+    "request_id": "06-stale-feed",
+    "data_mode": "simulated",
+    "decision_time": "2026-11-19T13:00:00Z",
+    "user_state": "NOT_BOARDED",
+    "origin": {
+      "id": "pilot-origin",
+      "name": "Hayden LIC, 43-25 Hunter Street, Long Island City, NY 11101",
+      "coordinates": null,
+      "provider_place_id": null,
+      "mta_stop_id": null
+    },
+    "destination": {
+      "id": "pilot-destination",
+      "name": "NYU Tandon, 6 MetroTech Center, Brooklyn, NY 11201",
+      "coordinates": null,
+      "provider_place_id": null,
+      "mta_stop_id": null
+    },
+    "current_itinerary_id": "current",
+    "itineraries": [
+      {
+        "id": "current",
+        "provider": {
+          "name": "simulated-provider",
+          "itinerary_id": "mock-current",
+          "queried_at": "2026-11-19T12:59:30Z"
+        },
+        "provider_eta": "2026-11-19T13:30:00Z",
+        "legs": [
+          {
+            "id": "current-walk-in",
+            "mode": "WALK",
+            "from": {
+              "id": "pilot-origin",
+              "name": "Hayden LIC, 43-25 Hunter Street, Long Island City, NY 11101",
+              "coordinates": null,
+              "provider_place_id": null,
+              "mta_stop_id": null
+            },
+            "to": {
+              "id": "current-board",
+              "name": "Simulated boarding stop A",
+              "coordinates": null,
+              "provider_place_id": null,
+              "mta_stop_id": null
+            },
+            "provider_duration_seconds": 240,
+            "provider_departure_at": "2026-11-19T13:00:00Z",
+            "provider_arrival_at": "2026-11-19T13:04:00Z",
+            "transit": null
+          },
+          {
+            "id": "current-ride",
+            "mode": "SUBWAY",
+            "from": {
+              "id": "current-board",
+              "name": "Simulated boarding stop A",
+              "coordinates": null,
+              "provider_place_id": null,
+              "mta_stop_id": null
+            },
+            "to": {
+              "id": "current-alight",
+              "name": "Simulated alighting stop A",
+              "coordinates": null,
+              "provider_place_id": null,
+              "mta_stop_id": null
+            },
+            "provider_duration_seconds": 1200,
+            "provider_departure_at": "2026-11-19T13:07:00Z",
+            "provider_arrival_at": "2026-11-19T13:27:00Z",
+            "transit": {
+              "agency": "SIMULATED",
+              "provider_route_id": "SIM-A",
+              "route_short_name": "SIM-A",
+              "headsign": "Simulated direction",
+              "direction_id": null,
+              "provider_trip_id": null
+            }
+          },
+          {
+            "id": "current-walk-out",
+            "mode": "WALK",
+            "from": {
+              "id": "current-alight",
+              "name": "Simulated alighting stop A",
+              "coordinates": null,
+              "provider_place_id": null,
+              "mta_stop_id": null
+            },
+            "to": {
+              "id": "pilot-destination",
+              "name": "NYU Tandon, 6 MetroTech Center, Brooklyn, NY 11201",
+              "coordinates": null,
+              "provider_place_id": null,
+              "mta_stop_id": null
+            },
+            "provider_duration_seconds": 180,
+            "provider_departure_at": "2026-11-19T13:27:00Z",
+            "provider_arrival_at": "2026-11-19T13:30:00Z",
+            "transit": null
+          }
+        ]
+      },
+      {
+        "id": "alternative",
+        "provider": {
+          "name": "simulated-provider",
+          "itinerary_id": "mock-alternative",
+          "queried_at": "2026-11-19T12:59:30Z"
+        },
+        "provider_eta": "2026-11-19T13:30:00Z",
+        "legs": [
+          {
+            "id": "alternative-walk-in",
+            "mode": "WALK",
+            "from": {
+              "id": "pilot-origin",
+              "name": "Hayden LIC, 43-25 Hunter Street, Long Island City, NY 11101",
+              "coordinates": null,
+              "provider_place_id": null,
+              "mta_stop_id": null
+            },
+            "to": {
+              "id": "alternative-board",
+              "name": "Simulated boarding stop B",
+              "coordinates": null,
+              "provider_place_id": null,
+              "mta_stop_id": null
+            },
+            "provider_duration_seconds": 420,
+            "provider_departure_at": "2026-11-19T13:00:00Z",
+            "provider_arrival_at": "2026-11-19T13:07:00Z",
+            "transit": null
+          },
+          {
+            "id": "alternative-ride",
+            "mode": "SUBWAY",
+            "from": {
+              "id": "alternative-board",
+              "name": "Simulated boarding stop B",
+              "coordinates": null,
+              "provider_place_id": null,
+              "mta_stop_id": null
+            },
+            "to": {
+              "id": "alternative-alight",
+              "name": "Simulated alighting stop B",
+              "coordinates": null,
+              "provider_place_id": null,
+              "mta_stop_id": null
+            },
+            "provider_duration_seconds": 1020,
+            "provider_departure_at": "2026-11-19T13:10:00Z",
+            "provider_arrival_at": "2026-11-19T13:27:00Z",
+            "transit": {
+              "agency": "SIMULATED",
+              "provider_route_id": "SIM-B",
+              "route_short_name": "SIM-B",
+              "headsign": "Simulated direction",
+              "direction_id": null,
+              "provider_trip_id": null
+            }
+          },
+          {
+            "id": "alternative-walk-out",
+            "mode": "WALK",
+            "from": {
+              "id": "alternative-alight",
+              "name": "Simulated alighting stop B",
+              "coordinates": null,
+              "provider_place_id": null,
+              "mta_stop_id": null
+            },
+            "to": {
+              "id": "pilot-destination",
+              "name": "NYU Tandon, 6 MetroTech Center, Brooklyn, NY 11201",
+              "coordinates": null,
+              "provider_place_id": null,
+              "mta_stop_id": null
+            },
+            "provider_duration_seconds": 180,
+            "provider_departure_at": "2026-11-19T13:27:00Z",
+            "provider_arrival_at": "2026-11-19T13:30:00Z",
+            "transit": null
+          }
+        ]
+      }
+    ]
+  },
+  "response": {
+    "schema_version": "1.0",
+    "request_id": "06-stale-feed",
+    "data_mode": "simulated",
+    "decision_time": "2026-11-19T13:00:00Z",
+    "evaluated_at": "2026-11-19T13:00:01Z",
+    "current_itinerary_id": "current",
+    "decision": {
+      "action": "UNDETERMINED",
+      "recommended_itinerary_id": null,
+      "estimated_savings_seconds": null,
+      "reason_codes": [
+        "CURRENT_UNAVAILABLE"
+      ],
+      "comparison_complete": false,
+      "comparison_scope": "SUPPLIED_ITINERARIES"
+    },
+    "itineraries": [
+      {
+        "id": "current",
+        "status": "UNAVAILABLE",
+        "method": "NONE",
+        "comparison_eligible": false,
+        "eta": null,
+        "total_duration_seconds": null,
+        "components": null,
+        "uncertainty": null,
+        "reason_codes": [
+          "STALE_TRAIN_FEED"
+        ],
+        "legs": []
+      },
+      {
+        "id": "alternative",
+        "status": "UNAVAILABLE",
+        "method": "NONE",
+        "comparison_eligible": false,
+        "eta": null,
+        "total_duration_seconds": null,
+        "components": null,
+        "uncertainty": null,
+        "reason_codes": [
+          "STALE_TRAIN_FEED"
+        ],
+        "legs": []
+      }
+    ],
+    "data_status": {
+      "train_feed": {
+        "status": "STALE",
+        "source_updated_at": "2026-11-19T12:00:00Z",
+        "fetched_at": "2026-11-19T12:59:55Z"
+      },
+      "alerts_feed": {
+        "status": "FRESH",
+        "source_updated_at": "2026-11-19T12:59:00Z",
+        "fetched_at": "2026-11-19T12:59:55Z"
+      }
+    },
+    "model_version": null,
+    "warnings": [
+      "STALE_TRAIN_FEED"
+    ]
+  }
+}

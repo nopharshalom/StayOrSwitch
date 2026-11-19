@@ -1,6 +1,26 @@
 # Delay-Aware ETA and Stay/Switch Roadmap
 
-Status: planned. The seven-step development plan was saved on 2026-11-19. This is a documentation-only update: implementation, data downloads, model training, and API development have not started as part of this update.
+Status: Step 1 artifacts are complete for integration review as of 2026-11-19. The version 1.0 contract, evaluation criteria, and simulated fixtures are available; Steps 2-7 remain planned. No live API server, provider/MTA integration, dataset download, or trained model is included in Step 1.
+
+## Step 1 integration package
+
+- [API contract and decision semantics](docs/contract.md)
+- [OpenAPI 3.1 description](contracts/openapi.json)
+- [JSON Schema: Request, Response, and Error](contracts/evaluate.schema.json)
+- [Simulated request/response examples](examples/README.md)
+- [Evaluation criteria](docs/evaluation.md)
+
+The teammate can build against static simulated responses while live integration and training are developed separately. The contract is ready for review; upstream provider ownership and deployment details are still to be coordinated.
+
+Validate the package locally with Python 3.9 or later, from the repository root:
+
+```bash
+python3 -m venv .venv
+.venv/bin/python -m pip install -r algo/requirements-contract.txt
+.venv/bin/python algo/scripts/validate_contract.py --self-test
+```
+
+This offline check validates the JSON Schema, local OpenAPI references, fixture schemas, cross-field timing/identity/decision invariants, and deliberately invalid boundary cases. It does not start a server, predict travel times, or establish model performance. It is not a full OpenAPI conformance validator.
 
 ## Goal and boundaries
 
@@ -119,13 +139,13 @@ Agree on the Step 1 contract first, then run the following tracks in parallel:
 
 Define evaluation cases early. The first development milestone is an interpretable baseline comparison of a supplied current itinerary and alternatives using live MTA information; model training can continue independently.
 
-## Items to settle before development
+## Items to settle before live-data integration
 
 - Route-provider access: which backend calls the provider, account/API configuration, and how responses reach the algorithm. Keep credentials outside committed files.
 - Interface ownership: identify the teammate responsible for coordinating request/response integration.
 - First delivery date: use it to schedule the pilot scope and validation depth.
 
-This plan does not authorize implementation as part of the current save request. All seven development steps remain planned.
+Step 1 has been delivered under the user's instruction to begin it. The remaining development steps require subsequent implementation; this package contains simulated integration examples only.
 
 ## Repository organization
 

@@ -29,3 +29,4 @@
 - Keep the selected current itinerary as the Stay reference. Do not substitute the provider's newly preferred route for that reference. Without a reference itinerary, do not invent a Stay/Switch decision.
 - A train-arrival ETA is not the final destination ETA. Do not blindly add an MTA-trained residual to a route provider's total ETA or claim inferred arrival labels are physical ground truth.
 - Follow the seven-step development plan in [algo/README.md](algo/README.md): contract, live-data integration, historical data, baseline comparator, model training, evaluation API integration, and validation/handoff.
+- Step 1 artifacts live in `algo/contracts/`, `algo/docs/`, and `algo/examples/`. Use the version 1.0 contract for integration work; examples are explicitly simulated, and no live API/model is delivered by Step 1.
