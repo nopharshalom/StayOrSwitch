@@ -7,6 +7,8 @@ reject trains that leave before the supplied walking/transfer path reaches them.
 """
 
 from datetime import datetime, timezone
+import hashlib
+import json
 import math
 import re
 from typing import Any, Dict, Iterable, List, Optional, Set, Tuple
@@ -16,6 +18,12 @@ from .mta import ALERTS_FEED_ID, alert_is_active, route_feed_ids, snapshot_statu
 
 _MTA_AGENCIES = {"mta", "mta nyct", "nyct", "mtasbwy", "mta new york city transit",
                  "mta nyc transit", "new york city transit", "metropolitan transportation authority"}
+
+
+def request_fingerprint(request):
+    """Bind internal matching evidence to the complete normalized request."""
+    encoded = json.dumps(request, sort_keys=True, separators=(",", ":"), allow_nan=False).encode("utf-8")
+    return hashlib.sha256(encoded).hexdigest()
 
 
 def _epoch(value: Any) -> float:
@@ -34,7 +42,10 @@ def _epoch(value: Any) -> float:
 def _iso(value: Optional[float]) -> Optional[str]:
     if value is None:
         return None
-    return datetime.fromtimestamp(value, timezone.utc).isoformat().replace("+00:00", "Z")
+    try:
+        return datetime.fromtimestamp(value, timezone.utc).isoformat().replace("+00:00", "Z")
+    except (OverflowError, OSError, ValueError):
+        raise ValueError("Matching time exceeds the supported timestamp range.") from None
 
 
 def _name(value: Any) -> str:
@@ -292,7 +303,8 @@ def _selector_relevance(selector: Dict[str, Any], line_ids: Set[str], stop_ids: 
 
 
 def relevant_alerts(alerts: Iterable[Dict[str, Any]], line_ids: Set[str], stop_ids: Set[str],
-                    candidates: List[Dict[str, Any]], when: str) -> List[Dict[str, Any]]:
+                    candidates: List[Dict[str, Any]], when: str,
+                    fallback_interval: Optional[Tuple[str, str]] = None) -> List[Dict[str, Any]]:
     """Match active alert selectors without treating alert text as route geometry."""
     results = []
     for alert in alerts:
@@ -301,6 +313,7 @@ def relevant_alerts(alerts: Iterable[Dict[str, Any]], line_ids: Set[str], stop_i
         matches = []
         affected = []
         overlaps_candidate = False
+        overlaps_provider = False
         for candidate in candidates:
             candidate_stops = set(candidate.get("segment_stop_ids", [])) | set(candidate.get("segment_station_ids", []))
             candidate_stops.update(s for s in (candidate.get("boarding_stop_id"), candidate.get("alighting_stop_id")) if s)
@@ -316,8 +329,20 @@ def relevant_alerts(alerts: Iterable[Dict[str, Any]], line_ids: Set[str], stop_i
                 matches.extend(selector_matches)
                 affected.append(candidate["trip_id"])
                 overlaps_candidate = overlaps_candidate or overlap
+        if not candidates and fallback_interval is not None:
+            try:
+                provider_start, provider_end = map(_epoch, fallback_interval)
+                periods = alert.get("active_periods", [])
+                overlaps_provider = provider_start <= provider_end and (not periods or any(
+                    (period.get("start") is None or period["start"] <= provider_end) and
+                    (period.get("end") is None or period["end"] > provider_start)
+                    for period in periods))
+            except (ValueError, TypeError):
+                overlaps_provider = False
         if not candidates and active_now:
             matches = [_selector_relevance(s, line_ids, stop_ids, []) for s in selectors]
+        provider_matches = [_selector_relevance(s, line_ids, stop_ids, []) for s in selectors] if overlaps_provider else []
+        matches.extend(provider_matches)
         if not any(matches):
             continue
         results.append({"id": alert.get("id"), "effect": alert.get("effect"), "cause": alert.get("cause"),
@@ -325,6 +350,9 @@ def relevant_alerts(alerts: Iterable[Dict[str, Any]], line_ids: Set[str], stop_i
                         "selector_match": "MATCHED" if "MATCHED" in matches else "POSSIBLE",
                         "active_at_decision": active_now,
                         "overlaps_candidate_interval": overlaps_candidate,
+                        "overlaps_provider_interval": overlaps_provider,
+                        "provider_selector_match": "MATCHED" if "MATCHED" in provider_matches else
+                        "POSSIBLE" if any(provider_matches) else None,
                         "matched_candidate_trip_ids": affected,
                         "active_periods": alert.get("active_periods", [])})
     return results
@@ -406,6 +434,9 @@ def match_request(request: Dict[str, Any], static_data: Dict[str, Any], snapshot
             prior_subway = True
             line_ids = _line_ids(leg["transit"]["route_short_name"], static_data, fresh_trips)
             required = set(route_feed_ids(sorted(line_ids)))
+            # Downstream journey estimates summarize only the feeds needed by
+            # the supplied route, rather than every snapshot in a shared cache.
+            report["required_feed_ids"] = sorted(required)
             if not required:
                 report["reason_codes"].append("UNSUPPORTED_ROUTE_FEED")
             alerts_state = states.get(ALERTS_FEED_ID, "MISSING")
@@ -460,7 +491,19 @@ def match_request(request: Dict[str, Any], static_data: Dict[str, Any], snapshot
                         stop_ids.add(family_id)
                         if family_id not in candidate["segment_station_ids"]:
                             candidate["segment_station_ids"].append(family_id)
-            report["alerts"] = relevant_alerts(fresh_alerts, line_ids, stop_ids, report["candidates"], request["decision_time"])
+            provider_interval = (leg["provider_departure_at"], leg["provider_arrival_at"]) if (
+                leg.get("provider_departure_at") is not None and leg.get("provider_arrival_at") is not None) else None
+            report["alerts"] = relevant_alerts(fresh_alerts, line_ids, stop_ids, report["candidates"],
+                                               request["decision_time"], fallback_interval=provider_interval)
+            # Preserve provider fallback evidence separately. A later upstream
+            # selection can miss the initially catchable trains; its known
+            # future provider-interval alert must not disappear. Conversely,
+            # an unresolved provider selector must never become a matched alert
+            # on a different identified live train or its intermediate stops.
+            provider_stops = set(boarding["platform_stop_ids"] + alighting["platform_stop_ids"])
+            provider_stops.update(s for s in (boarding["station_id"], alighting["station_id"]) if s)
+            report["provider_alerts"] = relevant_alerts(fresh_alerts, line_ids, provider_stops, [],
+                                                        request["decision_time"], fallback_interval=provider_interval)
             if report["alerts"]:
                 report["reason_codes"].append("ACTIVE_SERVICE_ALERT")
             report["reason_codes"] = list(dict.fromkeys(report["reason_codes"]))
@@ -483,6 +526,7 @@ def match_request(request: Dict[str, Any], static_data: Dict[str, Any], snapshot
                             "fetched_at": snapshot.get("fetched_at") if snapshot else None,
                             "reason_codes": list(snapshot.get("reason_codes", [])) if snapshot else ["NO_SNAPSHOT_AT_CUTOFF"]})
     return {"stage": "LIVE_DATA_MATCHING", "request_id": request["request_id"],
+            "request_fingerprint": request_fingerprint(request),
             "data_mode": request["data_mode"],
             "decision_time": request["decision_time"], "current_itinerary_id": request.get("current_itinerary_id"),
             "policy": {"station_radius_meters": station_radius_meters, "train_max_age_seconds": train_max_age_seconds,
