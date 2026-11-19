@@ -1,6 +1,19 @@
 # Delay-Aware ETA and Stay/Switch Roadmap
 
-Status: Step 1 artifacts are complete for integration review as of 2026-11-19. The version 1.0 contract, evaluation criteria, and simulated fixtures are available; Steps 2-7 remain planned. No live API server, provider/MTA integration, dataset download, or trained model is included in Step 1.
+Status: Steps 1 and 2 are implemented for the pilot as of 2026-11-19. The version 1.0 contract, evaluation criteria, simulated fixtures, Google Routes adapter, MTA ingestion, and candidate-service matching are available. Steps 3-7 remain planned; there is no destination ETA comparator, trained model, or live evaluation API server yet.
+
+## Step 2 live integration
+
+See [setup, commands, data policies, and current limitations](docs/live-integration.md).
+The pilot command reads the local API credential, retrieves provider candidates,
+and links supported route legs to as-of MTA observations:
+
+```bash
+.venv/bin/python algo/scripts/run_live_integration.py
+```
+
+`MATCHED` means live candidate services were linked, not that an ETA or Stay/Switch
+recommendation has been computed. All generated routes remain the provider's work.
 
 ## Step 1 integration package
 
@@ -145,7 +158,10 @@ Define evaluation cases early. The first development milestone is an interpretab
 - Interface ownership: identify the teammate responsible for coordinating request/response integration.
 - First delivery date: use it to schedule the pilot scope and validation depth.
 
-Step 1 has been delivered under the user's instruction to begin it. The remaining development steps require subsequent implementation; this package contains simulated integration examples only.
+Steps 1 and 2 have been delivered under the user's instructions. Google Routes is
+the pilot provider; its development credential is configured locally and never
+committed. Final backend ownership and delivery timing still need coordination.
+Steps 3-7 require subsequent implementation. API response examples remain simulated.
 
 ## Repository organization
 

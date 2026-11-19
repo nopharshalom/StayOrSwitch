@@ -2,7 +2,7 @@
 
 This directory is reserved for dataset documentation, source manifests, and data organization used by StayOrSwitch.
 
-Planned sources include:
+Sources include:
 
 - Current itineraries and candidate alternatives supplied by Google Routes or another provider, including walking/transit legs and query timestamps.
 - MTA static GTFS and station metadata as needed to match provider itineraries to MTA stops, directions, and services. We are not building a routing graph.
@@ -18,4 +18,11 @@ Historical MTA snapshots do not include historical Google route ETAs. Keep provi
 
 No raw archives are included in this initial setup. Record large archive locations and checksums in manifests rather than copying them into Git by default.
 
-See the [delay-aware ETA and Stay/Switch roadmap](../algo/README.md) for the seven-step development plan. The seven-day pilot archives have been selected but are not included by this documentation change.
+Step 2 now uses official source URLs in [mta-sources.json](mta-sources.json).
+`data/local/mta/` holds ignored static GTFS and full MTA snapshots, with retrieval
+timestamps, hashes and as-of selection. The runtime processes Google responses in
+memory; real provider payloads are not committed as fixtures or used as training
+labels. See [live integration](../algo/docs/live-integration.md) for collection
+commands, retention boundaries and provider data-handling requirements.
+
+See the [delay-aware ETA and Stay/Switch roadmap](../algo/README.md) for the seven-step development plan. The seven-day historical pilot archives remain a Step 3 task and have not been downloaded by Step 2.

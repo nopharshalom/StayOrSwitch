@@ -1,0 +1,30 @@
+{
+  "verified_date": "2026-11-19",
+  "developer_resources": "https://www.mta.info/developers",
+  "feed_catalog": "https://api.mta.info/#/subwayRealTimeFeeds",
+  "feed_catalog_script_verified": "https://api.mta.info/static/js/main.bc5d42b5.js",
+  "static_gtfs": "https://rrgtfsfeeds.s3.amazonaws.com/gtfs_subway.zip",
+  "static_scope": "Normal schedule used only for station identities and advisory route membership; live reroutes can differ.",
+  "alerts": "https://api-endpoint.mta.info/Dataservice/mtagtfsfeeds/camsys%2Fsubway-alerts.json",
+  "nyct_extensions": "https://raw.githubusercontent.com/OneBusAway/onebusaway-gtfs-realtime-api/master/src/main/proto/com/google/transit/realtime/gtfs-realtime-NYCT.proto",
+  "nyct_reference": "https://new.mta.info/document/134521",
+  "gtfs_realtime_reference": "https://gtfs.org/documentation/realtime/reference/",
+  "freshness_policy": {
+    "status": "PROVISIONAL_NOT_CALIBRATED",
+    "train_max_source_or_fetch_age_seconds": 180,
+    "alerts_max_fetch_age_seconds": 300,
+    "alerts_unchanged_source_timestamp_is_not_expiration": true,
+    "missing_or_future_source_timestamp_is_unavailable": true,
+    "latest_fetch_failure_does_not_revive_older_entities": true
+  },
+  "feed_routes": {
+    "ace": ["A", "C", "E", "H"],
+    "bdfm": ["B", "D", "F", "FX", "M", "FS"],
+    "g": ["G"],
+    "jz": ["J", "Z"],
+    "nqrw": ["N", "Q", "R", "W"],
+    "l": ["L"],
+    "numbered": ["1", "2", "3", "4", "5", "6", "6X", "7", "7X", "GS"],
+    "si": ["SI", "SIR"]
+  }
+}
