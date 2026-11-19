@@ -1,0 +1,47 @@
+{
+  "experiment_version": "component-pilot-v1",
+  "random_seed": 5900,
+  "targets": ["arrival", "departure", "segment"],
+  "data_manifest": "data/manifests/model-data.json",
+  "artifact_directory": "algo/models/pilot-v1",
+  "validation_report": "algo/reports/model-validation.json",
+  "test_report": "algo/reports/model-test.json",
+  "iterations": 350,
+  "early_stopping_rounds": 40,
+  "learning_rate": 0.06,
+  "l2_leaf_reg": 5.0,
+  "thread_count": 4,
+  "candidates": [
+    {"name": "core_depth4", "depth": 4, "feature_set": "core"},
+    {"name": "core_depth6", "depth": 6, "feature_set": "core"},
+    {"name": "without_clock_depth4", "depth": 4, "feature_set": "without_clock"}
+  ],
+  "rolling_research": {
+    "target": "arrival",
+    "depth": 4,
+    "eligible_for_selection": false,
+    "evaluate_on_test": false
+  },
+  "primary_metric": "event_weighted_rmse_seconds",
+  "min_support_events": 20,
+  "min_historical_group_events": 20,
+  "max_horizon_seconds": 1800,
+  "prediction_floor_seconds": 0.0,
+  "promotion": {
+    "key_group_min_events": 50,
+    "key_group_axes": ["by_day_type", "by_disruption"],
+    "required_overall_rmse_improvement_seconds": 0.0,
+    "allowed_key_group_rmse_increase_seconds": 0.0,
+    "live_enabled": false,
+    "reason": "Step 5 is offline component validation. Proxy labels and one training weekend do not establish physical-arrival or journey performance."
+  },
+  "evidence_class": "MTA_FINAL_PREDICTION_PROXY",
+  "uncertainty": null,
+  "known_limitations": [
+    "Validation has weekdays only; final-test weekend must not select model settings.",
+    "Already-past forecasts and horizons beyond 30 minutes are outside the source dataset.",
+    "Archived alert groups describe as-of evidence; unknown alerts are not normal service.",
+    "No model predicts passenger walking, full journey outcomes or realized route-choice savings.",
+    "Prediction-revision histories and alert aggregates are excluded from model inputs until online parity is established."
+  ]
+}

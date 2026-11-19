@@ -1,0 +1,228 @@
+{
+  "payload": {
+    "configuration": {
+      "artifact_directory": "algo/models/pilot-v1",
+      "candidates": [
+        {
+          "depth": 4,
+          "feature_set": "core",
+          "name": "core_depth4"
+        },
+        {
+          "depth": 6,
+          "feature_set": "core",
+          "name": "core_depth6"
+        },
+        {
+          "depth": 4,
+          "feature_set": "without_clock",
+          "name": "without_clock_depth4"
+        }
+      ],
+      "data_manifest": "data/manifests/model-data.json",
+      "early_stopping_rounds": 40,
+      "evidence_class": "MTA_FINAL_PREDICTION_PROXY",
+      "experiment_version": "component-pilot-v1",
+      "iterations": 350,
+      "known_limitations": [
+        "Validation has weekdays only; final-test weekend must not select model settings.",
+        "Already-past forecasts and horizons beyond 30 minutes are outside the source dataset.",
+        "Archived alert groups describe as-of evidence; unknown alerts are not normal service.",
+        "No model predicts passenger walking, full journey outcomes or realized route-choice savings.",
+        "Prediction-revision histories and alert aggregates are excluded from model inputs until online parity is established."
+      ],
+      "l2_leaf_reg": 5.0,
+      "learning_rate": 0.06,
+      "max_horizon_seconds": 1800,
+      "min_historical_group_events": 20,
+      "min_support_events": 20,
+      "prediction_floor_seconds": 0.0,
+      "primary_metric": "event_weighted_rmse_seconds",
+      "promotion": {
+        "allowed_key_group_rmse_increase_seconds": 0.0,
+        "key_group_axes": [
+          "by_day_type",
+          "by_disruption"
+        ],
+        "key_group_min_events": 50,
+        "live_enabled": false,
+        "reason": "Step 5 is offline component validation. Proxy labels and one training weekend do not establish physical-arrival or journey performance.",
+        "required_overall_rmse_improvement_seconds": 0.0
+      },
+      "random_seed": 5900,
+      "rolling_research": {
+        "depth": 4,
+        "eligible_for_selection": false,
+        "evaluate_on_test": false,
+        "target": "arrival"
+      },
+      "targets": [
+        "arrival",
+        "departure",
+        "segment"
+      ],
+      "test_report": "algo/reports/model-test.json",
+      "thread_count": 4,
+      "uncertainty": null,
+      "validation_report": "algo/reports/model-validation.json"
+    },
+    "development_trips_path": "algo/models/pilot-v1/development-trips.json",
+    "evidence_class": "MTA_FINAL_PREDICTION_PROXY",
+    "experiment_version": "component-pilot-v1",
+    "feature_version": "snapshot-core-v1",
+    "frozen_at": "2026-11-19T22:24:56.051217Z",
+    "hashes": {
+      "algo/config/model-training.json": "241f6200c32be9704208dbe9056c88df39f2d7c21140b02cb9a9bbadb9356bb5",
+      "algo/docs/model-protocol.md": "da554fe631268eb85403ec543431972cad78198047cd5c06bd85273c71271a8f",
+      "algo/models/pilot-v1/arrival-history.json": "6787c7f8d435d51bdbcc7f9535af1c9c3fa8b13af7ab4afd95af9e1fab653b5f",
+      "algo/models/pilot-v1/arrival-rolling-research.cbm": "f75b91b6beca5527991ca51dbe9ff116b4fae02e3209d3c34ed181aa42d0f954",
+      "algo/models/pilot-v1/arrival-support.json": "71e39b388b75ff89b147ef0b0f9c29169ea239322fe66f1dcc5f3fd1aacabf84",
+      "algo/models/pilot-v1/arrival.cbm": "bc5118a9898c9ad9822208c730b6d18705f6d5d5d8b25ddca7683615b3a5de7e",
+      "algo/models/pilot-v1/departure-history.json": "b76be0aefd37b07f8859c8c75e7f4525ba8a87ba1839d0951a3c035386d89dc5",
+      "algo/models/pilot-v1/departure-support.json": "0934ef16443024afd467ae3803d589e91a46a3ed0f209284e5ccc4ff4091fb87",
+      "algo/models/pilot-v1/departure.cbm": "322161c5a12c06cff24eef4206564aecfe1bd062147fea9d8e8c987eaa33fc7e",
+      "algo/models/pilot-v1/development-trips.json": "18737ed043beb8571a7df1fe16134d2def6823cfb14829c8f0425bfe8b1485bd",
+      "algo/models/pilot-v1/segment-history.json": "029d05b7794b082284a0c059301e40d77665ccdda9b83f75aa38b9818dec7aba",
+      "algo/models/pilot-v1/segment-support.json": "5f12434efb73ac1dcbc4173c64d5dee11d53e3c6d87c1d27b8c5c391a121bbc6",
+      "algo/models/pilot-v1/segment.cbm": "4e3cc86d1852ec56c23b92f35e8219f3ef75765ee57658e8e2997ecc853f770f",
+      "algo/reports/model-validation.json": "60712a209b0d6d6c42e8ea102fbc65e8c613c7bb4438e3aa29eaf75b99c12a4f",
+      "algo/requirements-model-lock.txt": "2b7012205b4052b739c6618c9d51fef389213bc939235562ab2a3fd463be761c",
+      "algo/scripts/evaluate_models.py": "63a7d51ee1dc917254d5f424fd928b8209bb869d065d38f35e1fd9e945511c9c",
+      "algo/scripts/train_models.py": "4298177a20dcc5996bbb7d1be207e9dc57db8c029d0b94a5bfeea971a6a5e790",
+      "algo/stayorswitch/model_training/__init__.py": "e46ce7ca52c15f093cf849b7743d62a3d47c18a02919323a3efcb88fac2fe9ef",
+      "algo/stayorswitch/model_training/artifacts.py": "4cb3343e67bb54cfb02356bfa5652aa68cad365a6ec00060d9d89cb273678b3c",
+      "algo/stayorswitch/model_training/inference.py": "243e178299c29d9ef36aa3c5a1a9bf6c290b781435c146306fe54af632ed05c1",
+      "algo/stayorswitch/model_training/metrics.py": "4953d2985cd29e5363cc3829248b153603f0ead377ea8ed224664e1474acc33e",
+      "algo/stayorswitch/model_training/models.py": "d111c3bc76f2fe7c1a837a35ac108a1d82e5e646a55553c3cc5a0aa2e6defa12",
+      "algo/stayorswitch/model_training/pipeline.py": "a8843668011844994c89741d53f775e3b71d434508f0f7262407e7862db28cdd",
+      "data/config/model-data.json": "467ee93bac663e6f37cb6ca0be1994d86e48f40b2d7a849ce75ec76545bb8795",
+      "data/manifests/model-data.json": "284cc825f677b922f9d7b0009d5da6be27f5a11750c90b4a9f145a24e4b19c50",
+      "data/modeling/__init__.py": "15d3c3cda983ae9135a6127f910ad9b3ee3d9641eaa6e120cb258cb0c5e33f86",
+      "data/modeling/features.py": "04bf2eeb3255eec75ded5f65918bdbd5565b0a2724c2070071db80523cbb0884",
+      "data/modeling/snapshot.py": "8a473742ca7fb5fa521ff495db79738e994f5896fdf2381056298dadbcf4260a",
+      "data/modeling/views.py": "78822b4fc92eb4d5fcad3f922d78242c5df1e6a6de2e70d8deedfbd61226f44a",
+      "data/scripts/build_model_data.py": "9b16cf023df5f8cad1adc172964fdec234f04d0df040d1c7ebc8425b6d219050"
+    },
+    "live_enabled": false,
+    "targets": {
+      "arrival": {
+        "candidate": {
+          "depth": 6,
+          "feature_set": "core",
+          "name": "core_depth6"
+        },
+        "categorical_features": [
+          "route_id",
+          "feed_id",
+          "direction",
+          "day_type",
+          "stop_id"
+        ],
+        "feature_names": [
+          "route_id",
+          "feed_id",
+          "direction",
+          "day_type",
+          "stop_id",
+          "time_sin",
+          "time_cos",
+          "feed_age_seconds",
+          "trip_update_age_seconds",
+          "is_assigned",
+          "horizon_seconds",
+          "stops_until_target"
+        ],
+        "history_path": "algo/models/pilot-v1/arrival-history.json",
+        "model_path": "algo/models/pilot-v1/arrival.cbm",
+        "support_path": "algo/models/pilot-v1/arrival-support.json",
+        "training_rows": 99393,
+        "tree_count": 350,
+        "validation_event_weighted_rmse_seconds": 193.7787939195043,
+        "validation_rows": 47962
+      },
+      "departure": {
+        "candidate": {
+          "depth": 6,
+          "feature_set": "core",
+          "name": "core_depth6"
+        },
+        "categorical_features": [
+          "route_id",
+          "feed_id",
+          "direction",
+          "day_type",
+          "stop_id"
+        ],
+        "feature_names": [
+          "route_id",
+          "feed_id",
+          "direction",
+          "day_type",
+          "stop_id",
+          "time_sin",
+          "time_cos",
+          "feed_age_seconds",
+          "trip_update_age_seconds",
+          "is_assigned",
+          "horizon_seconds",
+          "stops_until_target"
+        ],
+        "history_path": "algo/models/pilot-v1/departure-history.json",
+        "model_path": "algo/models/pilot-v1/departure.cbm",
+        "support_path": "algo/models/pilot-v1/departure-support.json",
+        "training_rows": 63585,
+        "tree_count": 342,
+        "validation_event_weighted_rmse_seconds": 194.4115319679944,
+        "validation_rows": 30866
+      },
+      "segment": {
+        "candidate": {
+          "depth": 4,
+          "feature_set": "core",
+          "name": "core_depth4"
+        },
+        "categorical_features": [
+          "route_id",
+          "feed_id",
+          "direction",
+          "day_type",
+          "from_stop_id",
+          "to_stop_id",
+          "segment_pattern"
+        ],
+        "feature_names": [
+          "route_id",
+          "feed_id",
+          "direction",
+          "day_type",
+          "from_stop_id",
+          "to_stop_id",
+          "segment_pattern",
+          "time_sin",
+          "time_cos",
+          "feed_age_seconds",
+          "trip_update_age_seconds",
+          "is_assigned",
+          "predicted_duration_seconds",
+          "departure_horizon_seconds",
+          "arrival_horizon_seconds",
+          "segment_stop_count"
+        ],
+        "history_path": "algo/models/pilot-v1/segment-history.json",
+        "model_path": "algo/models/pilot-v1/segment.cbm",
+        "support_path": "algo/models/pilot-v1/segment-support.json",
+        "training_rows": 63594,
+        "tree_count": 313,
+        "validation_event_weighted_rmse_seconds": 98.92897718923712,
+        "validation_rows": 30871
+      }
+    },
+    "test_labels_opened": false,
+    "versions": {
+      "catboost": "1.2.10",
+      "numpy": "1.26.4",
+      "python": "3.9.6"
+    }
+  },
+  "sha256": "eb30157cd1b07f25fe2c197adbfaf34220baf988b73d9edb9d6613a03c7a70e6"
+}

@@ -4,6 +4,24 @@ Keep data source files, downloaders, historical processing code, data tests,
 configuration, manifests, and quality reports in this directory. ETA estimation
 and Stay/Switch comparison code belongs in `algo/`.
 
+## Step 5 model inputs
+
+[Model-training views](docs/model-data.md) derive arrival, departure, and riding
+duration examples from the verified historical shards. Their source loading,
+feature construction, deterministic sampling, and tests remain in `data/`.
+Run `.venv/bin/python data/scripts/build_model_data.py` from the repository root.
+The selected pilot sample has separate train, validation, and final-test files;
+it does not treat millions of repeated snapshots as independent events.
+The [model-data manifest](manifests/model-data.json) and
+[preparation report](reports/model-data.json) record all nine views and the
+447,506 usable sampled rows.
+
+`modeling/snapshot.py` builds label-free inputs from one normalized MTA snapshot
+using the same core feature transformation and explicit freshness, timing, and
+departure-basis checks. It does not collect feeds or activate learned estimates
+in the live comparator. Model commands and results belong in
+[the algorithm package](../algo/README.md).
+
 ## Historical pilot
 
 The accepted pilot covers Subway Data NYC archives for **2026-11-02 through
@@ -48,6 +66,7 @@ checksum is not a publisher signature.
 | Path | Purpose | Git policy |
 |---|---|---|
 | `history/` | Archive parsing, as-of features, labels, and quality checks | Commit code |
+| `modeling/` | Training views and shared offline/live feature construction | Commit code |
 | `scripts/` | Reproducible data commands | Commit code |
 | `tests/` | Synthetic data-processing regression tests | Commit code |
 | `config/` | Explicit dataset scope and policies | Commit configuration |
@@ -55,6 +74,7 @@ checksum is not a publisher signature.
 | `manifests/`, `reports/` | Source provenance and compact aggregate evidence | Commit small reports |
 | `raw/subwaydata_nyc/` | Downloaded daily source archives and retrieval metadata | Local, ignored |
 | `processed/history-pilot/` | Derived feature/label shards | Local, ignored |
+| `processed/model-pilot/` | Sampled, event-weighted training/validation/test views | Local, ignored |
 | `local/mta/` | Step 2 current static GTFS and as-of MTA snapshots | Local, ignored |
 
 Large raw and processed datasets stay under `data/` locally. Publish paths,

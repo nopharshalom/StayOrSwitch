@@ -8,3 +8,6 @@ data/local/
 data/raw/
 data/processed/
 data/.cache/
+algo/models/
+algo/local/
+catboost_info/

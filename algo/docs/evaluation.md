@@ -1,6 +1,6 @@
 # Evaluation Criteria
 
-Status: Step 1 evaluation specification. No model accuracy, savings, or operational performance has been established. Simulated API fixtures validate integration behavior only.
+Status: Evaluation specification established in Step 1. Step 5's [component experiment results](../reports/model-results.md) now report agreement with inferred labels. Physical-arrival accuracy, realized savings, and operational service performance remain unestablished. Simulated API fixtures validate integration behavior only.
 
 ## Evaluation question and units
 

@@ -1,6 +1,36 @@
 # Delay-Aware ETA and Stay/Switch Roadmap
 
-Status: Steps 1 through 4 are implemented for the pilot: the version 1.0 contract, live input integration, historical-data preparation, and baseline journey comparator. The full November 2–15 historical window has been processed and passed the recorded integrity checks. Historical labels are inferred prediction proxies, not physical arrival observations. No trained model or live evaluation API server is delivered by these steps.
+Status: Steps 1 through 5 are implemented for the pilot, including offline component-model training and frozen final-test evaluation. The riding-segment model passed the predeclared component gate; arrival and departure models did not outperform the simple historical correction on the primary RMSE metric. The live comparator remains the Step 4 baseline. Labels are inferred prediction proxies, not physical arrival observations. No evaluation API server is delivered yet.
+
+## Step 5: Component model experiments
+
+The [training and evaluation guide](docs/model-training.md) describes separate
+arrival, departure, and riding-duration residual models, their two reference
+methods, chronological holdouts, and operating-support fallbacks. The
+[pre-test protocol](docs/model-protocol.md) and
+[training configuration](config/model-training.json) define the experiment.
+See the [measured results and model card](reports/model-results.md),
+[final-test metrics](reports/model-test.json), and
+[pre-test frozen manifest](reports/model-frozen.json).
+
+From the repository root:
+
+```sh
+.venv/bin/python -m pip install -r algo/requirements-model.txt
+.venv/bin/python data/scripts/build_model_data.py
+.venv/bin/python algo/scripts/train_models.py
+.venv/bin/python algo/scripts/evaluate_models.py
+```
+
+Model data and shared feature construction stay under `data/`; training,
+inference, and evaluation stay under `algo/`. The pilot uses a documented,
+event-balanced sample of the two-week dataset. Final-test performance is opened
+only after configuration and model artifacts are frozen. An existing frozen
+experiment cannot be overwritten by the training command.
+
+These offline component experiments do not activate learned corrections in the
+live baseline. They do not establish passenger destination accuracy or realized
+time savings. Integration and the served evaluation API remain Step 6.
 
 ## Steps 3 and 4: Parallel development
 
@@ -188,9 +218,10 @@ Define evaluation cases early. The first development milestone is an interpretab
 
 Google Routes is the pilot provider; its development credential is configured
 locally and never committed. The baseline evaluator uses the existing contract;
-the original API response fixtures remain explicitly simulated. Model training,
-the served evaluation API, and integrated validation/handoff remain Steps 5-7.
-Final backend ownership and delivery timing still need coordination.
+the original API response fixtures remain explicitly simulated. Step 5's offline
+model experiment is complete. Model/service integration and integrated
+validation/handoff remain Steps 6-7. Final backend ownership and delivery timing
+still need coordination.
 
 ## Repository organization
 

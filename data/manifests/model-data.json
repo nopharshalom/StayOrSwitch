@@ -1,0 +1,758 @@
+{
+  "categorical_features": {
+    "arrival": [
+      "route_id",
+      "feed_id",
+      "direction",
+      "day_type",
+      "stop_id"
+    ],
+    "departure": [
+      "route_id",
+      "feed_id",
+      "direction",
+      "day_type",
+      "stop_id"
+    ],
+    "segment": [
+      "route_id",
+      "feed_id",
+      "direction",
+      "day_type",
+      "from_stop_id",
+      "to_stop_id",
+      "segment_pattern"
+    ]
+  },
+  "code_sha256": {
+    "data/modeling/__init__.py": "15d3c3cda983ae9135a6127f910ad9b3ee3d9641eaa6e120cb258cb0c5e33f86",
+    "data/modeling/features.py": "04bf2eeb3255eec75ded5f65918bdbd5565b0a2724c2070071db80523cbb0884",
+    "data/modeling/views.py": "78822b4fc92eb4d5fcad3f922d78242c5df1e6a6de2e70d8deedfbd61226f44a",
+    "data/scripts/build_model_data.py": "9b16cf023df5f8cad1adc172964fdec234f04d0df040d1c7ebc8425b6d219050"
+  },
+  "config": {
+    "path": "data/config/model-data.json",
+    "sha256": "467ee93bac663e6f37cb6ca0be1994d86e48f40b2d7a849ce75ec76545bb8795"
+  },
+  "feature_names": {
+    "arrival": [
+      "route_id",
+      "feed_id",
+      "direction",
+      "day_type",
+      "stop_id",
+      "time_sin",
+      "time_cos",
+      "feed_age_seconds",
+      "trip_update_age_seconds",
+      "is_assigned",
+      "horizon_seconds",
+      "stops_until_target"
+    ],
+    "departure": [
+      "route_id",
+      "feed_id",
+      "direction",
+      "day_type",
+      "stop_id",
+      "time_sin",
+      "time_cos",
+      "feed_age_seconds",
+      "trip_update_age_seconds",
+      "is_assigned",
+      "horizon_seconds",
+      "stops_until_target"
+    ],
+    "segment": [
+      "route_id",
+      "feed_id",
+      "direction",
+      "day_type",
+      "from_stop_id",
+      "to_stop_id",
+      "segment_pattern",
+      "time_sin",
+      "time_cos",
+      "feed_age_seconds",
+      "trip_update_age_seconds",
+      "is_assigned",
+      "predicted_duration_seconds",
+      "departure_horizon_seconds",
+      "arrival_horizon_seconds",
+      "segment_stop_count"
+    ]
+  },
+  "feature_version": "snapshot-core-v1",
+  "generated_at": "2026-11-19T22:22:32.813360Z",
+  "inputs": [
+    {
+      "bytes": 117287421,
+      "path": "data/processed/history-pilot/2026-11-02.arrivals.jsonl.gz",
+      "sha256": "a50874bc8a1b0805d14518fcd78b59e6d509b6d4f4be6115f7337bcfdd92f4ae"
+    },
+    {
+      "bytes": 67195348,
+      "path": "data/processed/history-pilot/2026-11-02.segments.jsonl.gz",
+      "sha256": "e1321152c450688c087cc8bd0a44cb0482d8fa9549afb96f7b74f894fc09536d"
+    },
+    {
+      "bytes": 119453201,
+      "path": "data/processed/history-pilot/2026-11-03.arrivals.jsonl.gz",
+      "sha256": "6e08fc2eec16aa689fb13fb7a1459f5451014af025e8aa29689498065ead7c84"
+    },
+    {
+      "bytes": 68778968,
+      "path": "data/processed/history-pilot/2026-11-03.segments.jsonl.gz",
+      "sha256": "3154b32c9ba6221f9b62256c3a81c9bf706ddfa78c639b8b8e3879fe03fea9ad"
+    },
+    {
+      "bytes": 120271794,
+      "path": "data/processed/history-pilot/2026-11-04.arrivals.jsonl.gz",
+      "sha256": "535591865e49c39db8083a544cde31a2953648ca91dc60c8e4f78f9cebff2470"
+    },
+    {
+      "bytes": 69331364,
+      "path": "data/processed/history-pilot/2026-11-04.segments.jsonl.gz",
+      "sha256": "5611615ab55d0e7aa0b17921fb6a8e55d16ebbef8952646717cae23be6771aef"
+    },
+    {
+      "bytes": 120798605,
+      "path": "data/processed/history-pilot/2026-11-05.arrivals.jsonl.gz",
+      "sha256": "a993085fb96b32d6febce5ed84049049fda390e78773687f6e63b1bddf4e0557"
+    },
+    {
+      "bytes": 69873153,
+      "path": "data/processed/history-pilot/2026-11-05.segments.jsonl.gz",
+      "sha256": "b08f56740003ea33330696d534ee3e36e33288e7798e7afb6833db4e8849090c"
+    },
+    {
+      "bytes": 119266598,
+      "path": "data/processed/history-pilot/2026-11-06.arrivals.jsonl.gz",
+      "sha256": "735bcdd1875523f097eeb7796218ca4b85995c9d853cfa15755d8ff0b4d91554"
+    },
+    {
+      "bytes": 68703935,
+      "path": "data/processed/history-pilot/2026-11-06.segments.jsonl.gz",
+      "sha256": "485cf9558b9e4bd992b5f63c7e508993adfeff47b19a0a763a1bb066c710ab34"
+    },
+    {
+      "bytes": 77393075,
+      "path": "data/processed/history-pilot/2026-11-07.arrivals.jsonl.gz",
+      "sha256": "97e71b46773dc40520c44cbe95f5cbe5a3632c01e2dc27ba48bc9d97c3d524fb"
+    },
+    {
+      "bytes": 43449404,
+      "path": "data/processed/history-pilot/2026-11-07.segments.jsonl.gz",
+      "sha256": "f2de04217e0fcde14b59ccefec83086e478803aaeef0c192296b0252de838603"
+    },
+    {
+      "bytes": 72987305,
+      "path": "data/processed/history-pilot/2026-11-08.arrivals.jsonl.gz",
+      "sha256": "578e23ee38a9aca2c4ed3b1e74c5d55d100ab42d38257680db1a962537602944"
+    },
+    {
+      "bytes": 41151601,
+      "path": "data/processed/history-pilot/2026-11-08.segments.jsonl.gz",
+      "sha256": "3631fed5441a27d1a6aadeeb630eb9a1fc469ed3ee5d7a72d4c0f8bd84870d31"
+    },
+    {
+      "bytes": 119122377,
+      "path": "data/processed/history-pilot/2026-11-09.arrivals.jsonl.gz",
+      "sha256": "158c5848e8cc0b8a3bbeba51382d6d8639fef0adf5628d62f02425da75c0fde2"
+    },
+    {
+      "bytes": 68064401,
+      "path": "data/processed/history-pilot/2026-11-09.segments.jsonl.gz",
+      "sha256": "75575803cea31a57d187b7f023fae39f83bd615ae81641a5c087d2d8b1a59131"
+    },
+    {
+      "bytes": 121254688,
+      "path": "data/processed/history-pilot/2026-11-10.arrivals.jsonl.gz",
+      "sha256": "ef9bd0743e8f9f48a57aded7b50fa5260c2ccb70a0e09972a5250214af9b1a06"
+    },
+    {
+      "bytes": 69682679,
+      "path": "data/processed/history-pilot/2026-11-10.segments.jsonl.gz",
+      "sha256": "54c3bf72f56fb5b939f7c426fdf878c048026057eedccc62dea4f7abe137a1c2"
+    },
+    {
+      "bytes": 119857872,
+      "path": "data/processed/history-pilot/2026-11-11.arrivals.jsonl.gz",
+      "sha256": "53340bc6ea7848f61e0bb5cbe09b192578bbf7c9b8ffde95c972fc892cd62a18"
+    },
+    {
+      "bytes": 68743456,
+      "path": "data/processed/history-pilot/2026-11-11.segments.jsonl.gz",
+      "sha256": "a317ec66f4c4a449f24cb8435ff52b07166accbea7bdbf09d463b8ae499a6a37"
+    },
+    {
+      "bytes": 119421719,
+      "path": "data/processed/history-pilot/2026-11-12.arrivals.jsonl.gz",
+      "sha256": "1301db0c185b3cac626f685ae7c6e5b90461487edd47642cf827470383647d35"
+    },
+    {
+      "bytes": 68598407,
+      "path": "data/processed/history-pilot/2026-11-12.segments.jsonl.gz",
+      "sha256": "41e706946a52bd52301d697c31d7e73145d18edda159d26982e393832a3014e3"
+    },
+    {
+      "bytes": 118548475,
+      "path": "data/processed/history-pilot/2026-11-13.arrivals.jsonl.gz",
+      "sha256": "347a84f0fd0e983c81638150d87715858184471c08b92bf9ba3f1f46a4bd7884"
+    },
+    {
+      "bytes": 68105522,
+      "path": "data/processed/history-pilot/2026-11-13.segments.jsonl.gz",
+      "sha256": "239b93a159d7c058f4b35f56d1c759271b17e20c25c352336857770132d5acd4"
+    },
+    {
+      "bytes": 73424049,
+      "path": "data/processed/history-pilot/2026-11-14.arrivals.jsonl.gz",
+      "sha256": "7d57eb16065ce0a0352a78cf045a49f1a5e6a3a29424d2233cabd8297c1327bb"
+    },
+    {
+      "bytes": 40099127,
+      "path": "data/processed/history-pilot/2026-11-14.segments.jsonl.gz",
+      "sha256": "48d1a5945100c4710bc4f853bf9182580474999ecd3564bfcf902370d3a35726"
+    },
+    {
+      "bytes": 69317838,
+      "path": "data/processed/history-pilot/2026-11-15.arrivals.jsonl.gz",
+      "sha256": "591db6811506535926db6cbed28bbde0f10fa7e181da2ad4b109a683a0e22edf"
+    },
+    {
+      "bytes": 38018624,
+      "path": "data/processed/history-pilot/2026-11-15.segments.jsonl.gz",
+      "sha256": "8f1d8ef78a56f7f12190164e8c55d2fdd17af9750621636783e743ce18e31016"
+    }
+  ],
+  "limitations": [
+    "Labels are final-prediction proxies from the same MTA source, not observed physical arrivals.",
+    "The fixed trip sample and event/horizon selection do not represent all source snapshots or passenger queries.",
+    "Selection precedes label filtering; unusable selected rows are excluded without replacement.",
+    "Departure labels inherit both-endpoint segment quality restrictions; boarding-only alerts are unknown.",
+    "Validation contains weekdays only; the held-out weekend must not guide model selection.",
+    "Source extraction excludes already-past predictions and horizons beyond thirty minutes; severe stalls may be absent.",
+    "No historical Google route predictions or complete passenger journey outcomes are present.",
+    "Rolling arrival features are research metadata and are not part of the deployable snapshot core."
+  ],
+  "outputs": [
+    {
+      "bytes": 8886313,
+      "events": 18118,
+      "groups": {
+        "day_type": {
+          "SATURDAY": 8951,
+          "SUNDAY": 8417,
+          "WEEKDAY": 31828
+        },
+        "disruption_group": {
+          "FRESH_NO_KNOWN_DISRUPTION": 15946,
+          "KNOWN_DISRUPTION": 7049,
+          "KNOWN_UPCOMING_ONLY": 9,
+          "POSSIBLE_DISRUPTION": 1384,
+          "UNKNOWN_ALERT_STATE": 24808
+        },
+        "horizon_bucket": {
+          "00_05_MIN": 15738,
+          "05_15_MIN": 16207,
+          "15_30_MIN": 17251
+        },
+        "revision_group": {
+          "NOT_REVISED_IN_OBSERVED_WINDOW": 8838,
+          "REVISED": 39665,
+          "UNAVAILABLE": 693
+        },
+        "route_id": {
+          "1": 1054,
+          "2": 3174,
+          "3": 2578,
+          "4": 2491,
+          "5": 1268,
+          "6": 940,
+          "6X": 168,
+          "7": 3808,
+          "7X": 491,
+          "A": 3196,
+          "B": 917,
+          "C": 2146,
+          "D": 1501,
+          "E": 3893,
+          "F": 2671,
+          "FX": 61,
+          "G": 3588,
+          "GS": 1392,
+          "M": 570,
+          "N": 3662,
+          "Q": 3382,
+          "R": 4867,
+          "W": 1378
+        }
+      },
+      "path": "data/processed/model-pilot/arrival/test.jsonl.gz",
+      "rows": 49196,
+      "sha256": "d7a610bf11e4af5df5661736f62c0b9a11b253e3bc71410f4e345a74a38eac92",
+      "split": "test",
+      "target": "arrival",
+      "trips": 5985
+    },
+    {
+      "bytes": 18053019,
+      "events": 36626,
+      "groups": {
+        "day_type": {
+          "SATURDAY": 10233,
+          "SUNDAY": 8766,
+          "WEEKDAY": 80394
+        },
+        "disruption_group": {
+          "FRESH_NO_KNOWN_DISRUPTION": 36247,
+          "KNOWN_DISRUPTION": 12230,
+          "KNOWN_UPCOMING_ONLY": 50,
+          "POSSIBLE_DISRUPTION": 2251,
+          "UNKNOWN_ALERT_STATE": 48615
+        },
+        "horizon_bucket": {
+          "00_05_MIN": 31630,
+          "05_15_MIN": 32560,
+          "15_30_MIN": 35203
+        },
+        "revision_group": {
+          "NOT_REVISED_IN_OBSERVED_WINDOW": 17704,
+          "REVISED": 80464,
+          "UNAVAILABLE": 1225
+        },
+        "route_id": {
+          "1": 2082,
+          "2": 5809,
+          "3": 5357,
+          "4": 4488,
+          "5": 3089,
+          "6": 1742,
+          "6X": 431,
+          "7": 7829,
+          "7X": 1497,
+          "A": 8110,
+          "B": 2601,
+          "C": 4897,
+          "D": 2426,
+          "E": 7440,
+          "F": 6652,
+          "FX": 92,
+          "G": 5748,
+          "GS": 2558,
+          "M": 1521,
+          "N": 6868,
+          "Q": 6369,
+          "R": 8757,
+          "W": 3030
+        }
+      },
+      "path": "data/processed/model-pilot/arrival/train.jsonl.gz",
+      "rows": 99393,
+      "sha256": "4c73470b9280e4da8e89b5ab9cd682ef52db744331f0dcb89e279e47bd78a7c5",
+      "split": "train",
+      "target": "arrival",
+      "trips": 11851
+    },
+    {
+      "bytes": 8636784,
+      "events": 17788,
+      "groups": {
+        "day_type": {
+          "WEEKDAY": 47962
+        },
+        "disruption_group": {
+          "FRESH_NO_KNOWN_DISRUPTION": 16054,
+          "KNOWN_DISRUPTION": 5831,
+          "KNOWN_UPCOMING_ONLY": 15,
+          "POSSIBLE_DISRUPTION": 627,
+          "UNKNOWN_ALERT_STATE": 25435
+        },
+        "horizon_bucket": {
+          "00_05_MIN": 15208,
+          "05_15_MIN": 15717,
+          "15_30_MIN": 17037
+        },
+        "revision_group": {
+          "NOT_REVISED_IN_OBSERVED_WINDOW": 8197,
+          "REVISED": 39121,
+          "UNAVAILABLE": 644
+        },
+        "route_id": {
+          "1": 977,
+          "2": 2608,
+          "3": 2501,
+          "4": 1792,
+          "5": 1445,
+          "6": 758,
+          "6X": 233,
+          "7": 3436,
+          "7X": 740,
+          "A": 3566,
+          "B": 1500,
+          "C": 2579,
+          "D": 1194,
+          "E": 4172,
+          "F": 3574,
+          "FX": 45,
+          "G": 2647,
+          "GS": 1086,
+          "M": 1034,
+          "N": 3098,
+          "Q": 2977,
+          "R": 4137,
+          "W": 1863
+        }
+      },
+      "path": "data/processed/model-pilot/arrival/validation.jsonl.gz",
+      "rows": 47962,
+      "sha256": "10dc8f5c8e55d00b16f98cee92d9918c0549e6a12ecd31028d7da59090387064",
+      "split": "validation",
+      "target": "arrival",
+      "trips": 5688
+    },
+    {
+      "bytes": 4892729,
+      "events": 12176,
+      "groups": {
+        "day_type": {
+          "SATURDAY": 5495,
+          "SUNDAY": 4993,
+          "WEEKDAY": 20528
+        },
+        "disruption_group": {
+          "UNKNOWN_ALERT_STATE": 31016
+        },
+        "horizon_bucket": {
+          "00_05_MIN": 10782,
+          "05_15_MIN": 11142,
+          "15_30_MIN": 9092
+        },
+        "revision_group": {
+          "UNAVAILABLE": 31016
+        },
+        "route_id": {
+          "2": 2005,
+          "3": 1591,
+          "4": 1284,
+          "5": 621,
+          "7": 2231,
+          "7X": 274,
+          "A": 2368,
+          "B": 499,
+          "C": 1450,
+          "D": 569,
+          "E": 2891,
+          "F": 1764,
+          "FX": 44,
+          "G": 2278,
+          "GS": 1073,
+          "M": 274,
+          "N": 2692,
+          "Q": 2254,
+          "R": 3822,
+          "W": 1032
+        }
+      },
+      "path": "data/processed/model-pilot/departure/test.jsonl.gz",
+      "rows": 31016,
+      "sha256": "61e345ca68a827ac8af97a6b25701c3f2e1d2a2362ce85a8790f6e07541bd438",
+      "split": "test",
+      "target": "departure",
+      "trips": 4761
+    },
+    {
+      "bytes": 10076817,
+      "events": 24902,
+      "groups": {
+        "day_type": {
+          "SATURDAY": 6547,
+          "SUNDAY": 5499,
+          "WEEKDAY": 51539
+        },
+        "disruption_group": {
+          "UNKNOWN_ALERT_STATE": 63585
+        },
+        "horizon_bucket": {
+          "00_05_MIN": 21957,
+          "05_15_MIN": 22540,
+          "15_30_MIN": 19088
+        },
+        "revision_group": {
+          "UNAVAILABLE": 63585
+        },
+        "route_id": {
+          "2": 3755,
+          "3": 3472,
+          "4": 2297,
+          "5": 1586,
+          "7": 4474,
+          "7X": 878,
+          "A": 6324,
+          "B": 1412,
+          "C": 3566,
+          "D": 926,
+          "E": 5511,
+          "F": 4556,
+          "FX": 67,
+          "G": 3675,
+          "GS": 2049,
+          "M": 721,
+          "N": 5027,
+          "Q": 4224,
+          "R": 6809,
+          "W": 2256
+        }
+      },
+      "path": "data/processed/model-pilot/departure/train.jsonl.gz",
+      "rows": 63585,
+      "sha256": "1257e335d4c21b39287b2d61a0d0aeff64011f346476451766497f23c918b85c",
+      "split": "train",
+      "target": "departure",
+      "trips": 9516
+    },
+    {
+      "bytes": 4852462,
+      "events": 12152,
+      "groups": {
+        "day_type": {
+          "WEEKDAY": 30866
+        },
+        "disruption_group": {
+          "UNKNOWN_ALERT_STATE": 30866
+        },
+        "horizon_bucket": {
+          "00_05_MIN": 10614,
+          "05_15_MIN": 10986,
+          "15_30_MIN": 9266
+        },
+        "revision_group": {
+          "UNAVAILABLE": 30866
+        },
+        "route_id": {
+          "2": 1706,
+          "3": 1621,
+          "4": 944,
+          "5": 768,
+          "7": 1898,
+          "7X": 450,
+          "A": 2785,
+          "B": 813,
+          "C": 1862,
+          "D": 453,
+          "E": 3102,
+          "F": 2508,
+          "FX": 33,
+          "G": 1683,
+          "GS": 872,
+          "M": 508,
+          "N": 2290,
+          "Q": 1971,
+          "R": 3215,
+          "W": 1384
+        }
+      },
+      "path": "data/processed/model-pilot/departure/validation.jsonl.gz",
+      "rows": 30866,
+      "sha256": "e39a7e2010f7a39ceb5ba858b2cbddc00ebaf0ca8448f07815527697993fc78e",
+      "split": "validation",
+      "target": "departure",
+      "trips": 4632
+    },
+    {
+      "bytes": 4083851,
+      "events": 12179,
+      "groups": {
+        "day_type": {
+          "SATURDAY": 5497,
+          "SUNDAY": 4997,
+          "WEEKDAY": 20529
+        },
+        "disruption_group": {
+          "FRESH_NO_KNOWN_DISRUPTION": 10853,
+          "KNOWN_DISRUPTION": 4276,
+          "KNOWN_UPCOMING_ONLY": 5,
+          "POSSIBLE_DISRUPTION": 314,
+          "UNKNOWN_ALERT_STATE": 15575
+        },
+        "horizon_bucket": {
+          "00_05_MIN": 10788,
+          "05_15_MIN": 11140,
+          "15_30_MIN": 9095
+        },
+        "revision_group": {
+          "UNAVAILABLE": 31023
+        },
+        "route_id": {
+          "2": 2004,
+          "3": 1591,
+          "4": 1285,
+          "5": 621,
+          "7": 2232,
+          "7X": 276,
+          "A": 2370,
+          "B": 499,
+          "C": 1450,
+          "D": 569,
+          "E": 2892,
+          "F": 1765,
+          "FX": 44,
+          "G": 2274,
+          "GS": 1073,
+          "M": 274,
+          "N": 2695,
+          "Q": 2254,
+          "R": 3823,
+          "W": 1032
+        }
+      },
+      "path": "data/processed/model-pilot/segment/test.jsonl.gz",
+      "rows": 31023,
+      "sha256": "608179de201dc9ab7825022a3b61422475d91ea6808055cbf744afa95d898fca",
+      "split": "test",
+      "target": "segment",
+      "trips": 4761
+    },
+    {
+      "bytes": 8415186,
+      "events": 24899,
+      "groups": {
+        "day_type": {
+          "SATURDAY": 6538,
+          "SUNDAY": 5496,
+          "WEEKDAY": 51560
+        },
+        "disruption_group": {
+          "FRESH_NO_KNOWN_DISRUPTION": 24313,
+          "KNOWN_DISRUPTION": 7804,
+          "KNOWN_UPCOMING_ONLY": 41,
+          "POSSIBLE_DISRUPTION": 544,
+          "UNKNOWN_ALERT_STATE": 30892
+        },
+        "horizon_bucket": {
+          "00_05_MIN": 21964,
+          "05_15_MIN": 22539,
+          "15_30_MIN": 19091
+        },
+        "revision_group": {
+          "UNAVAILABLE": 63594
+        },
+        "route_id": {
+          "2": 3758,
+          "3": 3473,
+          "4": 2295,
+          "5": 1586,
+          "7": 4469,
+          "7X": 888,
+          "A": 6325,
+          "B": 1412,
+          "C": 3566,
+          "D": 925,
+          "E": 5511,
+          "F": 4554,
+          "FX": 67,
+          "G": 3675,
+          "GS": 2048,
+          "M": 721,
+          "N": 5030,
+          "Q": 4226,
+          "R": 6809,
+          "W": 2256
+        }
+      },
+      "path": "data/processed/model-pilot/segment/train.jsonl.gz",
+      "rows": 63594,
+      "sha256": "e6da1450485034e10bffdc6cfdbc9f645f526fd60d3bf28e6f6503e72ac10445",
+      "split": "train",
+      "target": "segment",
+      "trips": 9515
+    },
+    {
+      "bytes": 4035212,
+      "events": 12151,
+      "groups": {
+        "day_type": {
+          "WEEKDAY": 30871
+        },
+        "disruption_group": {
+          "FRESH_NO_KNOWN_DISRUPTION": 10966,
+          "KNOWN_DISRUPTION": 3530,
+          "KNOWN_UPCOMING_ONLY": 14,
+          "POSSIBLE_DISRUPTION": 23,
+          "UNKNOWN_ALERT_STATE": 16338
+        },
+        "horizon_bucket": {
+          "00_05_MIN": 10615,
+          "05_15_MIN": 10988,
+          "15_30_MIN": 9268
+        },
+        "revision_group": {
+          "UNAVAILABLE": 30871
+        },
+        "route_id": {
+          "2": 1706,
+          "3": 1620,
+          "4": 944,
+          "5": 768,
+          "7": 1897,
+          "7X": 454,
+          "A": 2786,
+          "B": 813,
+          "C": 1862,
+          "D": 453,
+          "E": 3102,
+          "F": 2509,
+          "FX": 33,
+          "G": 1684,
+          "GS": 873,
+          "M": 508,
+          "N": 2289,
+          "Q": 1970,
+          "R": 3216,
+          "W": 1384
+        }
+      },
+      "path": "data/processed/model-pilot/segment/validation.jsonl.gz",
+      "rows": 30871,
+      "sha256": "b18856e3525b54833c26a914897d07d3e8e63d431923ec7ce3b45e98c48fa7ec",
+      "split": "validation",
+      "target": "segment",
+      "trips": 4633
+    }
+  ],
+  "report": {
+    "path": "data/reports/model-data.json",
+    "sha256": "d66149f545fb98f05984c7d88baec279084968d27b8eab7f8d9b92f112ae39e4"
+  },
+  "runtime": {
+    "dependencies": "Python standard library",
+    "python_version": "3.9.6 (default, Mar 12 2025, 20:22:46) \n[Clang 17.0.0 (clang-1700.0.13.3)]"
+  },
+  "sampling": {
+    "event_weight_total": 1.0,
+    "seed": "stayorswitch-step5-v1",
+    "selected_before_label_filter": true,
+    "trip_percent": 25
+  },
+  "schema_version": "model-data-manifest-v1",
+  "source_manifest": {
+    "path": "data/manifests/history-pilot.json",
+    "sha256": "5fb07ee53a086385f48ec128d2c8bc23fede607d5ba6ebce291bb7158690135b"
+  },
+  "splits": {
+    "test": [
+      "2026-11-12",
+      "2026-11-15"
+    ],
+    "train": [
+      "2026-11-02",
+      "2026-11-08"
+    ],
+    "validation": [
+      "2026-11-09",
+      "2026-11-11"
+    ]
+  },
+  "stage": "PREPARED"
+}
