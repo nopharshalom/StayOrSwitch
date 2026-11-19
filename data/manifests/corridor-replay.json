@@ -1,0 +1,108 @@
+{
+  "archives": [
+    {
+      "archive_date": "2026-11-11",
+      "bytes": 1448548,
+      "kind": "csv",
+      "path": "data/raw/subwaydata_nyc/subwaydatanyc_2026-11-11_csv.tar.xz",
+      "sha256": "c18c91d5b5a53e56f19f068465b83ae9bd21cd62a764ffd02b6c0c82276aae1a"
+    },
+    {
+      "archive_date": "2026-11-12",
+      "bytes": 1421424,
+      "kind": "csv",
+      "path": "data/raw/subwaydata_nyc/subwaydatanyc_2026-11-12_csv.tar.xz",
+      "sha256": "eff3699fee9e59a0b87317c575382ee7cb26434a17220942cd5118968106d0f3"
+    },
+    {
+      "archive_date": "2026-11-12",
+      "bytes": 81099184,
+      "kind": "gtfsrt",
+      "path": "data/raw/subwaydata_nyc/subwaydatanyc_2026-11-12_gtfsrt.tar.xz",
+      "sha256": "20778f547f8b75df7313929197aa8c5df1d9c1cadd14c9d79b63db0a0bdf13e6"
+    },
+    {
+      "archive_date": "2026-11-13",
+      "bytes": 1396816,
+      "kind": "csv",
+      "path": "data/raw/subwaydata_nyc/subwaydatanyc_2026-11-13_csv.tar.xz",
+      "sha256": "9bc69845ae8ebdb40b40aa266f501e07ee433025bbe8674d5d75c67e6096f580"
+    },
+    {
+      "archive_date": "2026-11-13",
+      "bytes": 82535696,
+      "kind": "gtfsrt",
+      "path": "data/raw/subwaydata_nyc/subwaydatanyc_2026-11-13_gtfsrt.tar.xz",
+      "sha256": "df7f6b605aaf61e249301dfa4bb3ddb93b501800b705b90578ee9b45a5d1a11d"
+    },
+    {
+      "archive_date": "2026-11-14",
+      "bytes": 931716,
+      "kind": "csv",
+      "path": "data/raw/subwaydata_nyc/subwaydatanyc_2026-11-14_csv.tar.xz",
+      "sha256": "06438f7231211681d3ab78cf7e27249055c30f6f6bc953d1ca305fbf748f88f1"
+    },
+    {
+      "archive_date": "2026-11-14",
+      "bytes": 51442288,
+      "kind": "gtfsrt",
+      "path": "data/raw/subwaydata_nyc/subwaydatanyc_2026-11-14_gtfsrt.tar.xz",
+      "sha256": "c376c3459183a6cc944798f73d713565f80642c9c8bc237696cf697774432bc1"
+    },
+    {
+      "archive_date": "2026-11-15",
+      "bytes": 872328,
+      "kind": "csv",
+      "path": "data/raw/subwaydata_nyc/subwaydatanyc_2026-11-15_csv.tar.xz",
+      "sha256": "a04714de613a3a1cc5ce026609373fcc6e4ba0633dec7535e4d29c84bcd7cfb3"
+    },
+    {
+      "archive_date": "2026-11-15",
+      "bytes": 47597252,
+      "kind": "gtfsrt",
+      "path": "data/raw/subwaydata_nyc/subwaydatanyc_2026-11-15_gtfsrt.tar.xz",
+      "sha256": "b872ef0f313862f97384babdb2b106e0bb930bd46dcab2e5a9fb448d7258d8be"
+    },
+    {
+      "archive_date": "2026-11-16",
+      "bytes": 1454860,
+      "kind": "csv",
+      "path": "data/raw/subwaydata_nyc/subwaydatanyc_2026-11-16_csv.tar.xz",
+      "sha256": "d0ce028b44ecaa2e9318dfec94578f568287b0ec29f590746e871ff7e267243e"
+    }
+  ],
+  "bundle": {
+    "bytes": 11270879,
+    "case_count": 140,
+    "path": "data/processed/corridor-replay/replay-bundle.json.gz",
+    "sha256": "7d873f5547257561b09e7a02853c0250f933a8630e7ec5a8af2b07d277eb4fbd"
+  },
+  "code_sha256": {
+    "algo/stayorswitch/mta.py": "f7e863de59ef092166767aaa8042bdf2d586892b692bd49f260c35215a0d8f3c",
+    "data/corridor_replay/__init__.py": "444f2cfb8332f01e45d734575dde4e1e9a45d37f10d0fec018b916173987b510",
+    "data/corridor_replay/extract.py": "4dca206e6056d938e04dd24f799de21ac590aa1dc4f83aff60728403c1c590e4",
+    "data/history/archives.py": "fbe94233b7eca1ac270d85081fbecb141b6ffaf2f33685602623d5859e2c8fa6",
+    "data/history/features.py": "9df433ccdc84d88d94b476709bba84a3340145fb70226237ebdd74be4b7aaea9",
+    "data/scripts/prepare_corridor_replay.py": "418127737b1edd30f68b05e3d4977e89e0611c0c1d6b05fea1edfa6caacd384e",
+    "data/scripts/scout_corridor_replay.py": "066653967c0fd1b488f70a1cbe63c655a59c2ba9033f04a8dfd797ebfd5dac80"
+  },
+  "input_sha256": {
+    "data/config/corridor-replay.json": "8fb6610c3f816c491769357d351327dd5d65f18ee1c70e8ada2e559f36673e7f",
+    "data/manifests/history-pilot.json": "5fb07ee53a086385f48ec128d2c8bc23fede607d5ba6ebce291bb7158690135b",
+    "data/processed/corridor-replay/scout-primary.json": "043bb5546103768330eefcfe9e48611f630656a9262fb734cf22577189ca1c8b",
+    "data/processed/history-pilot/2026-11-12.arrivals.jsonl.gz": "1301db0c185b3cac626f685ae7c6e5b90461487edd47642cf827470383647d35",
+    "data/processed/history-pilot/2026-11-12.segments.jsonl.gz": "41e706946a52bd52301d697c31d7e73145d18edda159d26982e393832a3014e3",
+    "data/processed/history-pilot/2026-11-13.arrivals.jsonl.gz": "347a84f0fd0e983c81638150d87715858184471c08b92bf9ba3f1f46a4bd7884",
+    "data/processed/history-pilot/2026-11-13.segments.jsonl.gz": "239b93a159d7c058f4b35f56d1c759271b17e20c25c352336857770132d5acd4",
+    "data/processed/history-pilot/2026-11-14.arrivals.jsonl.gz": "7d57eb16065ce0a0352a78cf045a49f1a5e6a3a29424d2233cabd8297c1327bb",
+    "data/processed/history-pilot/2026-11-14.segments.jsonl.gz": "48d1a5945100c4710bc4f853bf9182580474999ecd3564bfcf902370d3a35726",
+    "data/processed/history-pilot/2026-11-15.arrivals.jsonl.gz": "591db6811506535926db6cbed28bbde0f10fa7e181da2ad4b109a683a0e22edf",
+    "data/processed/history-pilot/2026-11-15.segments.jsonl.gz": "8f1d8ef78a56f7f12190164e8c55d2fdd17af9750621636783e743ce18e31016"
+  },
+  "report": {
+    "path": "data/reports/corridor-replay-data.json",
+    "sha256": "3c9931ba82355bff424b3765ec2ce18b5744fa8e379c2371bf8f1ff6e32cdd9a"
+  },
+  "schema_version": "corridor-replay-manifest-v1",
+  "stage": "PREPARED"
+}

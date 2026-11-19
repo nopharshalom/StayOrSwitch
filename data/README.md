@@ -4,6 +4,20 @@ Keep data source files, downloaders, historical processing code, data tests,
 configuration, manifests, and quality reports in this directory. ETA estimation
 and Stay/Switch comparison code belongs in `algo/`.
 
+## Historical corridor replay inputs
+
+`scripts/scout_corridor_replay.py` discovers potential delay moments in the
+existing November 12-15 shards without inspecting model recommendations.
+`scripts/prepare_corridor_replay.py` streams complete historical F/G train
+snapshots at those cutoffs and prepares separately screened endpoint labels.
+Both commands run from the repository root using `.venv/bin/python`.
+The [configuration](config/corridor-replay.json) records supplied paths and
+walking assumptions; the [manifest](manifests/corridor-replay.json) and
+[data report](reports/corridor-replay-data.json) record coverage and hashes.
+Large scout and snapshot artifacts stay in ignored `processed/corridor-replay/`.
+The comparison protocol and results belong in the
+[algorithm replay guide](../algo/docs/corridor-replay.md).
+
 ## Step 5 model inputs
 
 [Model-training views](docs/model-data.md) derive arrival, departure, and riding
@@ -67,6 +81,7 @@ checksum is not a publisher signature.
 |---|---|---|
 | `history/` | Archive parsing, as-of features, labels, and quality checks | Commit code |
 | `modeling/` | Training views and shared offline/live feature construction | Commit code |
+| `corridor_replay/` | As-of historical replay extraction and separate outcome labels | Commit code |
 | `scripts/` | Reproducible data commands | Commit code |
 | `tests/` | Synthetic data-processing regression tests | Commit code |
 | `config/` | Explicit dataset scope and policies | Commit configuration |
@@ -75,6 +90,7 @@ checksum is not a publisher signature.
 | `raw/subwaydata_nyc/` | Downloaded daily source archives and retrieval metadata | Local, ignored |
 | `processed/history-pilot/` | Derived feature/label shards | Local, ignored |
 | `processed/model-pilot/` | Sampled, event-weighted training/validation/test views | Local, ignored |
+| `processed/corridor-replay/` | Delay scout, complete as-of snapshots, and endpoint labels | Local, ignored |
 | `local/mta/` | Step 2 current static GTFS and as-of MTA snapshots | Local, ignored |
 
 Large raw and processed datasets stay under `data/` locally. Publish paths,

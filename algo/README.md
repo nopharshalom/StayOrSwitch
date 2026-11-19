@@ -2,6 +2,24 @@
 
 Status: Steps 1 through 5 are implemented for the pilot, including offline component-model training and frozen final-test evaluation. The riding-segment model passed the predeclared component gate; arrival and departure models did not outperform the simple historical correction on the primary RMSE metric. The live comparator remains the Step 4 baseline. Labels are inferred prediction proxies, not physical arrival observations. No evaluation API server is delivered yet.
 
+## Historical corridor delay diagnostic
+
+The [corridor replay protocol](docs/corridor-replay.md) compares the supplied
+direct F and G paths from Hayden LIC to NYU Tandon at historical delay moments.
+The user chose the fastest unmodified MTA estimate at each cutoff as the Stay
+reference. The [measured comparisons](reports/corridor-replay.md) preserve
+no-switch, failed-switch, and unavailable cases, and separate conditional timing
+rankings from recommendations with sufficient service evidence. The frozen
+models and live comparator remain unchanged. This retrospective diagnostic is
+not a new untouched test or an overall success-rate estimate.
+
+With the declared walking assumptions, the passed segment model produced no
+Switch choices across 86 delayed decision moments (24 distinct baseline trains)
+and missed 27 moments with a faster assessable alternative. The research-only
+departure model produced conditional switches, but none of its strict Switch
+recommendations had a verified faster proxy outcome. Component error reduction
+has therefore not established useful switching performance in this diagnostic.
+
 ## Step 5: Component model experiments
 
 The [training and evaluation guide](docs/model-training.md) describes separate
