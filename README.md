@@ -34,6 +34,20 @@ Recurring NYC commuters with familiar routes and real alternatives. The starting
 
 ## Status and next steps
 
+The latest algorithm version separates boarding feasibility from historical
+ETA correction. Its [boarding-safe entrypoint](algo/docs/boarding-safe-handoff.md)
+requires a two-minute initial margin; positive average delay cannot make a
+train catchable. The [repair study](algo/docs/november-repair-plan.md) compares
+old and new recommendations using the same historical route execution, which
+can continue to the next train while retaining the original boarding failure.
+This is a post-hoc comparison on the existing November weekday cohort. The
+full-October model and earlier frozen studies below remain preserved.
+See the [repaired results](algo/reports/november-repair-test.md) and
+[interpretation](algo/reports/november-repair-findings.md). Boarding feasibility
+improves substantially; strict first-service route ordering still leaves many
+outcomes unknown, so the study does not establish a general severe-Switch
+success rate or a consistent advantage over raw MTA.
+
 The active extension follows the [full-October / November analysis plan](algo/docs/november-five-corridor-plan.md):
 a separate model fitted on October 1–31, 2026, followed by service-delay
 evaluation and daily peak ETA-error analysis on the existing five corridors.

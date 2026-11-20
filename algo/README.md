@@ -1,5 +1,25 @@
 # Historical ETA Delay and Severe-Incident Decisions
 
+The latest prediction entrypoint is documented in the
+[boarding-safe handoff](docs/boarding-safe-handoff.md). It keeps historical ETA
+correction but uses an independent conservative boarding gate, including
+transfer readiness and a configurable margin. The default is 120 seconds;
+the margin is not an added travel-time penalty. The earlier `run_severe.py`
+and all frozen experiment producers remain unchanged.
+
+The [repair protocol](docs/november-repair-plan.md) evaluates the same 2,306
+November weekday cases with a first-compatible-train route executor. Both old
+and new recommendations use the same executor; initial boarding failures and
+eventual route travel-time savings remain separate. This is a post-hoc repair
+comparison, not a new untouched test. No profile retraining is involved.
+The [repaired benchmark](reports/november-repair-test.md) and
+[findings](reports/november-repair-findings.md) separate boarding improvement,
+route savings, matched old/new comparisons, and the limitations of strict
+first-service reconstruction. Reproduce it with
+`python algo/scripts/evaluate_november_repair.py --freeze-only`, followed by
+`--verify-only` and the same script without a stage flag, using the project
+Python environment.
+
 The current extension follows the [full-October / November analysis plan](docs/november-five-corridor-plan.md):
 fit a separate October 1–31 profile, evaluate service problems on the existing
 five corridors, and report daily peak-period complete-journey ETA errors.

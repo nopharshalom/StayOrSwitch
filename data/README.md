@@ -36,6 +36,14 @@ arrivals. Each downloaded archive and derived output must have provenance.
 
 ## Full-October model and November weekdays
 
+The separate [route-execution archive](docs/november-route-archive-v2.md)
+supports the [boarding repair study](../algo/docs/november-repair-plan.md).
+It retains timestamped path observations, strict endpoint evidence and unknown
+earlier-train blockers, enabling the evaluator to continue along a fixed route
+after a missed predicted train. Existing raw sources, labels, models and peak
+statistics remain unchanged. The archive is an indexed reconstruction of
+sampled MTA records, not independent physical movement measurements.
+
 The separate [full-month training report](reports/full-october-fit.md) records
 870,415 eligible October observations and 33,091 aggregate groups. The
 [independent fit audit](manifests/full-october-fit-audit.json) verifies eligibility,

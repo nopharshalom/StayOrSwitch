@@ -53,6 +53,28 @@
   boarding-feasibility change requires a new, separately evaluated version.
   The incident-specific correction has not shown an advantage over the
   time-only baseline in the primary weekday comparison.
+- The user then authorized a separate boarding and route-execution repair,
+  followed by the same weekday benchmark. Follow
+  `algo/docs/november-repair-plan.md` and
+  `data/config/november-repair-policy.json`. Keep the full-October model and
+  all earlier producers/results unchanged. Positive average departure delay
+  cannot create catchability; use a separate conservative boarding gate and
+  a 120-second initial margin, with 60/180-second sensitivity on primaries.
+  Historical route execution follows the first compatible actually catchable
+  service, including a later train after a missed prediction, without choosing
+  trains by future destination arrival. Apply the same executor to old and new
+  policies. Keep initial selected-train failures separate from eventual route
+  savings, and never skip an unresolved earlier train to manufacture coverage.
+  This is a post-hoc repair comparison on already examined November outcomes,
+  not a fresh held-out test. The original daily peak-delay study is unchanged.
+  Read `algo/reports/november-repair-test.md` with
+  `algo/reports/november-repair-findings.md`. The repair greatly reduces known
+  boarding misses; it does not establish general route-time superiority.
+  Strict first-service ordering can create additional unknowns when a visible
+  candidate has no usable final departure, even if its forecast looked much
+  later. Do not call every such case an absent feed. Explicit cancellation or
+  endpoint skipping before readiness may resolve a candidate, while omission,
+  cancellation after readiness and later reactivation remain distinct.
 
 - StayOrSwitch is a decision companion, not a navigation app. External providers supply current/candidate itineraries; the teammate owns app UI and development.
 - Initial state: not boarded, leaving now. Pilot: Hayden LIC Apartments, 43-25 Hunter Street, Long Island City -> NYU Tandon, 6 MetroTech Center, Brooklyn.

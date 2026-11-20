@@ -1,0 +1,29 @@
+{
+  "audit_method": "Independent standard-library arithmetic, membership, gate and hash checks; no project scoring helpers imported.",
+  "audited_at_utc": "2026-11-20T21:07:09.149950+00:00",
+  "cases": 2306,
+  "checks": {
+    "arithmetic": 662742,
+    "case_results": 309085,
+    "counts": 28040,
+    "forecast": 231969,
+    "membership": 38090,
+    "preservation": 351,
+    "provenance": 20
+  },
+  "limits": [
+    "Arithmetic and provenance checks do not independently observe physical passenger arrivals.",
+    "Archive first-train evidence and unknown-candidate behavior also require the separate source/execution review.",
+    "The November data were already examined; this remains a post-hoc repair comparison."
+  ],
+  "preserved_original_files": 351,
+  "primary_cases": 197,
+  "result": {
+    "path": "algo/reports/november-repair-test.json",
+    "sha256": "ea85a20d63488f8480fee310d60e023c42a8f84dfac663a2d79ca317346ca822"
+  },
+  "schema_version": "november-repair-independent-audit-v1",
+  "sensitivity_forecasts": 394,
+  "status": "PASS",
+  "total_checks_passed": 1270297
+}

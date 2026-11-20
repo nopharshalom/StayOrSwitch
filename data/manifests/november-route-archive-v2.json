@@ -1,0 +1,201 @@
+{
+  "binding": {
+    "producer_sha256": {
+      "algo/stayorswitch/matching.py": "4fbe2d3e51595dc33f746d5e8c4623402ca0537906e5f00a242488796010b262",
+      "data/november_outcomes.py": "a87bab20b27fc28438c14436a5feeae5340e2fe0ae9908ff41cf6634240b1d1d",
+      "data/october/labels.py": "e22e2ed808a1ab24ec5cc36f9e1642bc045f9a7abcb7a84d3d00cbe1feda5919",
+      "data/october/sources.py": "c895acfe723c1a894ca6f97222114731373a6e5729c17b9b16525e70eaa05957",
+      "data/route_archive.py": "6d40dceb5c0cb61378e259b7c3d091403cede7be2140f65f3de3100308927533"
+    },
+    "source_manifest_sha256": "f34e3f8369975436df8a14b7fbea86d28fd4fd35cd6bba3c9e6c25710bdc095e",
+    "templates_sha256": "fb10d37daeabc65b2d2bf03d8fdd581732ea565f8dca248a9fa254149a25c13e",
+    "windows": [
+      [
+        1793603458.612,
+        1793612758.612
+      ],
+      [
+        1793615892.737,
+        1793653992.723
+      ],
+      [
+        1793654595.56,
+        1793695417.739
+      ],
+      [
+        1793700355.543,
+        1793746605.544
+      ],
+      [
+        1793746780.542,
+        1793756690.537
+      ],
+      [
+        1793772602.778,
+        1793782202.778
+      ],
+      [
+        1793783217.701,
+        1793797747.725
+      ],
+      [
+        1793802938.596,
+        1793840767.723
+      ],
+      [
+        1793849917.718,
+        1793859517.718
+      ],
+      [
+        1793861057.704,
+        1793869757.704
+      ],
+      [
+        1793877137.727,
+        1793895557.727
+      ],
+      [
+        1793899113.604,
+        1793948315.535
+      ],
+      [
+        1793949315.55,
+        1793962562.781
+      ],
+      [
+        1793970992.723,
+        1793979692.723
+      ],
+      [
+        1793993283.604,
+        1794015913.688
+      ],
+      [
+        1794026875.541,
+        1794034375.541
+      ],
+      [
+        1794204612.782,
+        1794214512.782
+      ],
+      [
+        1794224445.547,
+        1794270367.72
+      ],
+      [
+        1794272293.596,
+        1794279493.596
+      ],
+      [
+        1794290963.582,
+        1794340200.552
+      ],
+      [
+        1794348392.782,
+        1794380125.533
+      ],
+      [
+        1794398760.632,
+        1794432365.655
+      ],
+      [
+        1794435777.718,
+        1794461720.536
+      ],
+      [
+        1794486790.634,
+        1794589918.692
+      ],
+      [
+        1794600488.778,
+        1794633017.722
+      ],
+      [
+        1794805432.718,
+        1794820552.73
+      ],
+      [
+        1794820672.701,
+        1794854867.741
+      ],
+      [
+        1794855795.544,
+        1794873428.598
+      ],
+      [
+        1794876802.705,
+        1794885502.705
+      ],
+      [
+        1794887470.551,
+        1794901870.551
+      ],
+      [
+        1794919647.726,
+        1794932942.824
+      ],
+      [
+        1794945132.739,
+        1794975397.727
+      ],
+      [
+        1794989537.705,
+        1795036542.734
+      ],
+      [
+        1795037042.728,
+        1795051627.87
+      ]
+    ]
+  },
+  "counts": {
+    "events": 48369,
+    "origin_observations": 3308710,
+    "snapshots": 74015,
+    "unusable_arrivals": 9268,
+    "unusable_departures": 9874,
+    "unusable_snapshots": 61,
+    "usable_arrivals": 39101,
+    "usable_departures": 38495
+  },
+  "path": "data/processed/november-repair-v2/route-events.json.gz",
+  "schema_version": "route-execution-archive-v2",
+  "sha256": "8eca60cdc402a776d8989af685034ae5b61ec2f2e2f37932bf69b00e6a2f80bb",
+  "sources": {
+    "data/processed/november-2026/2026-10-31.labels.json.gz": "88bdd217f2b10b719f2dd1b4fccdb14f02172d59cde3fa4f36f20b892a74766d",
+    "data/processed/november-2026/2026-11-01.labels.json.gz": "b668849f9e504be9dbc3e3f3339cbcdd064392554717f8758dd18f8494944191",
+    "data/processed/november-2026/2026-11-02.labels.json.gz": "ce1c6c25d5c7322acb5c799bb09f249a8b3980bea41421878a70c751034ee9b0",
+    "data/processed/november-2026/2026-11-02.snapshots.jsonl.gz": "35a3a70911d34b3d8413a0e4fce6926d9f6851471aa7d4bcbd53d187424edbc6",
+    "data/processed/november-2026/2026-11-03.labels.json.gz": "381eb93ca1e19e6ceae20126cb6b0555463da9331df0af480c80a5c47aa4b782",
+    "data/processed/november-2026/2026-11-03.snapshots.jsonl.gz": "b1b361aa13712e80d130aadfee94ae094d56a026742dedd24243d81c9eb47a9e",
+    "data/processed/november-2026/2026-11-04.labels.json.gz": "aae8c6bfdf1b563cca09be75091338df45a218f6bdc72ee341ad8cff24c21159",
+    "data/processed/november-2026/2026-11-04.snapshots.jsonl.gz": "e4cd930cf575ef854d733ecf286208ee922a5384d45df65682467f0ed231bb6b",
+    "data/processed/november-2026/2026-11-05.labels.json.gz": "8f6b2688a9bae9db3459eb3c2e87ad7c9ed58ca72d413719c3f2280d2cbef63e",
+    "data/processed/november-2026/2026-11-05.snapshots.jsonl.gz": "cf27d099cb38ce5a1a40009173cab4ce35ee6784705bd4f5d247b67665cc5a3a",
+    "data/processed/november-2026/2026-11-06.labels.json.gz": "fab03aa5915b795d17826c971c8c9137b02cbb24ebe828fcd9b52d1516cadeb2",
+    "data/processed/november-2026/2026-11-06.snapshots.jsonl.gz": "2d12667106c84ff407a23f7707a304ea7c6aeb08d15f59fe1c716ceae7570197",
+    "data/processed/november-2026/2026-11-07.labels.json.gz": "4df5af7f9865c1bcdb3164cf527e2e4db37054cb3814f17030da4ba97fddd073",
+    "data/processed/november-2026/2026-11-07.snapshots.jsonl.gz": "957e1d96eed020cc9acc96efee02e448b8601b1589b8e01f9c49fead2ee0bed2",
+    "data/processed/november-2026/2026-11-08.labels.json.gz": "791a0c7fdf88ac06782e6ee08066556a78dfb4086fba6c711ebf18dcbda37856",
+    "data/processed/november-2026/2026-11-09.labels.json.gz": "3c1d6e4729710ac3c0e20e5b8e7d060d9cb152cb91d2ca08e6616a2a5ce8d66d",
+    "data/processed/november-2026/2026-11-09.snapshots.jsonl.gz": "c92ceeaabeca2896314a51146fa7082d81d92a18b9d80eb8310be5baa9508b79",
+    "data/processed/november-2026/2026-11-10.labels.json.gz": "ddc2adc812ad6c2e581a5a0a99705b8a9792a2d84a89ff6752da2fad2c7133fd",
+    "data/processed/november-2026/2026-11-10.snapshots.jsonl.gz": "930931e46efeedb30104ce0292a16a2335c10946d0c47065a52aeef880563d65",
+    "data/processed/november-2026/2026-11-11.labels.json.gz": "823b138fc7569ec163b3a254c2ca06cf4229893901b00943af454c7536adb553",
+    "data/processed/november-2026/2026-11-11.snapshots.jsonl.gz": "64a2d8da7762892447e4c77ddf6429c3e516f44028e97c66515f82b2b5cc3890",
+    "data/processed/november-2026/2026-11-12.labels.json.gz": "ac3945ce1e8b81acf66e01f11ab25136e538a36ed34644ee64e47214b91eb492",
+    "data/processed/november-2026/2026-11-12.snapshots.jsonl.gz": "5179df7a3c32fdc9ac79ed6e61eb0e25291c65bb8ef6ee5f3c02e0a47b4e1a1f",
+    "data/processed/november-2026/2026-11-13.labels.json.gz": "e47345f4bfb617c14e4e41510415eda73e9e9e588602da037b4034ace0a5f1e8",
+    "data/processed/november-2026/2026-11-13.snapshots.jsonl.gz": "29a04405b63a6d698d2c59524fef04b8c82ae9e2e862bcc36fc98c8fcc71d649",
+    "data/processed/november-2026/2026-11-14.labels.json.gz": "3a0c9a9cbf70ff38e548cefcc3eb368c6b5974770bb68fcfdaed442c74bd5eaf",
+    "data/processed/november-2026/2026-11-14.snapshots.jsonl.gz": "bda3e08b87c4bc5de4bbbfaaacd4530c2d2796f54de8f9712ed718867178bdb7",
+    "data/processed/november-2026/2026-11-15.labels.json.gz": "ebed9c4c04b960d5c848ffbc99ee857512705a520b01b9841b19f664d3874f10",
+    "data/processed/november-2026/2026-11-16.labels.json.gz": "1568f65525b62759bff0415ae9d04a17b3096ec64bff4b1dbb266dacfc906bdb",
+    "data/processed/november-2026/2026-11-16.snapshots.jsonl.gz": "1949286aa2105927951f08906d269aad8f94a56fb3c2ad489bd4e848ea445bbf",
+    "data/processed/november-2026/2026-11-17.labels.json.gz": "396dee1278349fd65e4b6f1e23aa04c56211bcbb31641b3e9782c3e8ddabdd73",
+    "data/processed/november-2026/2026-11-17.snapshots.jsonl.gz": "3043ed6bd23902c0114970543c7b5efe1cc98b1ccea10c617dd0c29cf5c978ba",
+    "data/processed/november-2026/2026-11-18.labels.json.gz": "e57e004fa5dab4d487d792acc6035f5626f3433e9755b5aa660216a915e551e4",
+    "data/processed/november-2026/2026-11-18.snapshots.jsonl.gz": "74eb026a84a62d666798a89813df25198a5189d920fdb327503cb9ab3497e73b",
+    "data/processed/november-2026/2026-11-19.labels.json.gz": "92d5574e57c3a1a376aded730c9132e9bc6c332b85fbf8415a51b0b3b787d84a"
+  }
+}
