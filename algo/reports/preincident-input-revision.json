@@ -1,0 +1,22 @@
+{
+  "stage": "PRE_OUTCOME_INPUT_ONLY_REVISION",
+  "outcomes_opened": false,
+  "reason": "Bind the original source manifest and profile provenance, add timeline fields, and predeclare a separate second OD with interchangeable same-platform services grouped as route families. Preserve the first OD zero-confirmed-case search.",
+  "preserved_artifacts": [
+    {
+      "original_path": "algo/local/october-preincident/prepared-inputs.json.gz",
+      "preserved_path": "algo/local/october-preincident/initial-before-provenance-revision/prepared-inputs.json.gz",
+      "sha256": "3809e0fbcd00db51ffd9013b6fe5bae405ad9eab58c5868dd11dc2df2a558fba"
+    },
+    {
+      "original_path": "algo/reports/preincident-candidate-selection.json",
+      "preserved_path": "algo/local/october-preincident/initial-before-provenance-revision/preincident-candidate-selection.json",
+      "sha256": "5c7b4cdec02f136fb1159906169cfee8d5128bbe3186287fb606ec9f51660365"
+    },
+    {
+      "original_path": "algo/reports/preincident-text-review.json",
+      "preserved_path": "algo/local/october-preincident/initial-before-provenance-revision/preincident-text-review.json",
+      "sha256": "57c3c90724a2dd5fb74e5ca33bdc838c5b19a3d2c7ac7f48993b037103a059b5"
+    }
+  ]
+}

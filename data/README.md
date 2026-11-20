@@ -63,6 +63,12 @@ timing comparisons from still-unvalidated severe-service recommendations.
 
 ## Reproduce the data preparation
 
+The later pre-incident route experiment uses
+[supplemental raw-feed projections and Bryant Park labels](docs/preincident-inputs.md)
+so trains remain available after they pass the original pilot's boarding stops.
+These separate test-week inputs use the existing archives and unchanged quality
+rules. They do not replace the original source or refit historical profiles.
+
 Run from the repository root using the prepared Python environment:
 
 ```sh

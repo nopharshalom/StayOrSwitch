@@ -1,0 +1,149 @@
+{
+  "candidate_proposal_sha256": "bf6a52e5ad28b0ed7841104191d0790dba410a71694b641ba15fdd5bfbb897cb",
+  "cases": [
+    {
+      "actual_direction": "SOUTH_MANHATTAN_HUDSON_YARDS_BOUND",
+      "actual_route": "7",
+      "case_id": "lmm-alert-273522-1793023375",
+      "explanation": "The official delay applies to Flushing-bound trains, while the selected journey runs from Court Sq toward Times Sq. A duration increase does not establish that this opposite-direction incident affects the journey.",
+      "notice_version_ids": [
+        "8ede741a98e46144a584c8d897fa6d4aed8ff18cee32ab148bea99323bcabbf3"
+      ],
+      "official_affected_direction": "NORTH_QUEENS_FLUSHING_MAIN_ST_BOUND",
+      "reason": "OFFICIAL_NOTICE_IS_OPPOSITE_DIRECTION",
+      "status": "EXCLUDED"
+    },
+    {
+      "actual_direction": "SOUTH_MANHATTAN_HUDSON_YARDS_BOUND",
+      "actual_route": "7",
+      "case_id": "lmm-alert-273522-1793024275",
+      "explanation": "The official delay applies to Flushing-bound trains, while the selected journey runs from Court Sq toward Times Sq. A duration increase does not establish that this opposite-direction incident affects the journey.",
+      "notice_version_ids": [
+        "8ede741a98e46144a584c8d897fa6d4aed8ff18cee32ab148bea99323bcabbf3"
+      ],
+      "official_affected_direction": "NORTH_QUEENS_FLUSHING_MAIN_ST_BOUND",
+      "reason": "OFFICIAL_NOTICE_IS_OPPOSITE_DIRECTION",
+      "status": "EXCLUDED"
+    },
+    {
+      "actual_direction": "SOUTH_MANHATTAN_HUDSON_YARDS_BOUND",
+      "actual_route": "7",
+      "case_id": "lmm-alert-273522-1793024575",
+      "explanation": "The official delay applies to Flushing-bound trains, while the selected journey runs from Court Sq toward Times Sq. A duration increase does not establish that this opposite-direction incident affects the journey.",
+      "notice_version_ids": [
+        "8ede741a98e46144a584c8d897fa6d4aed8ff18cee32ab148bea99323bcabbf3"
+      ],
+      "official_affected_direction": "NORTH_QUEENS_FLUSHING_MAIN_ST_BOUND",
+      "reason": "OFFICIAL_NOTICE_IS_OPPOSITE_DIRECTION",
+      "status": "EXCLUDED"
+    },
+    {
+      "actual_direction": "SOUTH_MANHATTAN_HUDSON_YARDS_BOUND",
+      "actual_route": "7",
+      "case_id": "lmm-alert-273522-1793025175",
+      "explanation": "The official delay applies to Flushing-bound trains, while the selected journey runs from Court Sq toward Times Sq. A duration increase does not establish that this opposite-direction incident affects the journey.",
+      "notice_version_ids": [
+        "8ede741a98e46144a584c8d897fa6d4aed8ff18cee32ab148bea99323bcabbf3"
+      ],
+      "official_affected_direction": "NORTH_QUEENS_FLUSHING_MAIN_ST_BOUND",
+      "reason": "OFFICIAL_NOTICE_IS_OPPOSITE_DIRECTION",
+      "status": "EXCLUDED"
+    },
+    {
+      "actual_direction": "SOUTH_MANHATTAN_HUDSON_YARDS_BOUND",
+      "actual_route": "7",
+      "case_id": "lmm-alert-273522-1793025475",
+      "explanation": "The official delay applies to Flushing-bound trains, while the selected journey runs from Court Sq toward Times Sq. A duration increase does not establish that this opposite-direction incident affects the journey.",
+      "notice_version_ids": [
+        "8ede741a98e46144a584c8d897fa6d4aed8ff18cee32ab148bea99323bcabbf3"
+      ],
+      "official_affected_direction": "NORTH_QUEENS_FLUSHING_MAIN_ST_BOUND",
+      "reason": "OFFICIAL_NOTICE_IS_OPPOSITE_DIRECTION",
+      "status": "EXCLUDED"
+    },
+    {
+      "actual_direction": "SOUTH_MANHATTAN_HUDSON_YARDS_BOUND",
+      "actual_route": "7",
+      "case_id": "lmm-alert-273522-1793025775",
+      "explanation": "The official delay applies to Flushing-bound trains, while the selected journey runs from Court Sq toward Times Sq. A duration increase does not establish that this opposite-direction incident affects the journey.",
+      "notice_version_ids": [
+        "8ede741a98e46144a584c8d897fa6d4aed8ff18cee32ab148bea99323bcabbf3"
+      ],
+      "official_affected_direction": "NORTH_QUEENS_FLUSHING_MAIN_ST_BOUND",
+      "reason": "OFFICIAL_NOTICE_IS_OPPOSITE_DIRECTION",
+      "status": "EXCLUDED"
+    },
+    {
+      "actual_direction": "SOUTH_MANHATTAN_HUDSON_YARDS_BOUND",
+      "actual_route": "7",
+      "case_id": "lmm-alert-273522-1793026075",
+      "explanation": "The official delay applies to Flushing-bound trains, while the selected journey runs from Court Sq toward Times Sq. A duration increase does not establish that this opposite-direction incident affects the journey.",
+      "notice_version_ids": [
+        "8ede741a98e46144a584c8d897fa6d4aed8ff18cee32ab148bea99323bcabbf3"
+      ],
+      "official_affected_direction": "NORTH_QUEENS_FLUSHING_MAIN_ST_BOUND",
+      "reason": "OFFICIAL_NOTICE_IS_OPPOSITE_DIRECTION",
+      "status": "EXCLUDED"
+    },
+    {
+      "actual_direction": "SOUTH_MANHATTAN_HUDSON_YARDS_BOUND",
+      "actual_route": "7",
+      "case_id": "lmm-alert-273522-1793026675",
+      "explanation": "The official delay applies to Flushing-bound trains, while the selected journey runs from Court Sq toward Times Sq. A duration increase does not establish that this opposite-direction incident affects the journey.",
+      "notice_version_ids": [
+        "155903c940bc0d431bee8004eea23e52bdce1e2a7b014776417f58d688ad1d2b"
+      ],
+      "official_affected_direction": "NORTH_QUEENS_FLUSHING_MAIN_ST_BOUND",
+      "reason": "OFFICIAL_NOTICE_IS_OPPOSITE_DIRECTION",
+      "status": "EXCLUDED"
+    }
+  ],
+  "corrected_input_manifest": {
+    "path": "data/manifests/preincident-inputs.json",
+    "sha256": "8f60b7424705024e3333a4628511052018eb6efc2a9eb2243347a93b7392023c"
+  },
+  "input_artifact": {
+    "path": "algo/local/october-preincident/prepared-inputs.json.gz",
+    "sha256": "52d7266a7d7b2e033bf47dee4dc09503f14dfd33eb66551c72e1cc60f6db9b92"
+  },
+  "notice_versions": [
+    {
+      "captured_at": 1793025570.546,
+      "description": null,
+      "header": "Flushing-Main St-bound [7] trains are running with delays while we address a signal problem at Junction Blvd.",
+      "incident_id": "lmm:alert:273522",
+      "state": "DISRUPTION",
+      "version_id": "8ede741a98e46144a584c8d897fa6d4aed8ff18cee32ab148bea99323bcabbf3"
+    },
+    {
+      "captured_at": 1793026570.663,
+      "description": null,
+      "header": "Flushing-Main St-bound [7] trains are running with delays after we addressed a signal problem at Junction Blvd.",
+      "incident_id": "lmm:alert:273522",
+      "state": "DISRUPTION",
+      "version_id": "155903c940bc0d431bee8004eea23e52bdce1e2a7b014776417f58d688ad1d2b"
+    }
+  ],
+  "onset_audit": {
+    "all_versions_checked": true,
+    "candidate_families_checked": 77,
+    "conclusion": "Initial-version onset boundary equals the minimum declared active start across all versions for all 77 candidate families.",
+    "later_backdated_earlier_active_starts": 0
+  },
+  "prior_input_only_attempt": {
+    "candidate_route_time_notice_and_deterioration_fields_unchanged": true,
+    "proposal_path": "algo/local/october-preincident/initial-before-provenance-revision/preincident-candidate-selection.json",
+    "proposal_sha256": "5c7b4cdec02f136fb1159906169cfee8d5128bbe3186287fb606ec9f51660365"
+  },
+  "review_policy": "Match the contemporaneous official affected route, direction and section to the exact selected journey; do not infer impact on the opposite direction from a shared line name.",
+  "review_uses_outcomes": false,
+  "review_uses_switch_recommendations": false,
+  "schema_version": "preincident-official-text-review-v1",
+  "summary": {
+    "candidate_cases": 8,
+    "confirmed_cases": 0,
+    "excluded_cases": 8,
+    "excluded_incident_families": 1,
+    "no_qualifying_samples_for_this_od_under_declared_rules": true
+  }
+}

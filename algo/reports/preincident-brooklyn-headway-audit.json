@@ -1,0 +1,174 @@
+{
+  "access_walk_seconds": 180.0,
+  "alighting_stop_id": "423S",
+  "anchor": {
+    "archive_provenance": {
+      "archive": "subwaydatanyc_2026-10-26_gtfsrt.tar.xz",
+      "archive_member": "nycsubway_1234567_20261026T071400.451Z_nhwvw44sj53t.gtfsrt",
+      "sha256": "69ed5b73924f773690a3ee986d34dac2d2985ac433ad908bdbf723882da7140b"
+    },
+    "cutoff": 1792998899.0,
+    "cutoff_ny": "2026-10-26T03:14:59-04:00",
+    "feed_id": "numbered",
+    "raw_sha256": "69ed5b73924f773690a3ee986d34dac2d2985ac433ad908bdbf723882da7140b",
+    "selected_capture_at": 1792998840.451,
+    "selected_capture_ny": "2026-10-26T03:14:00.451000-04:00",
+    "trains": [
+      {
+        "alighting_stop_present": true,
+        "arrival_at": 1793000565,
+        "arrival_ny": "2026-10-26T03:42:45-04:00",
+        "boarding_stop_present": true,
+        "catchable_by_departure": true,
+        "departure_at": 1792999095,
+        "departure_ny": "2026-10-26T03:18:15-04:00",
+        "platform_ready_at": 1792999079.0,
+        "platform_ready_ny": "2026-10-26T03:17:59-04:00",
+        "present": true,
+        "trip_id": "MTA:numbered:20261026:4:017800_4..S13X061:"
+      },
+      {
+        "alighting_stop_present": true,
+        "arrival_at": 1793001690,
+        "arrival_ny": "2026-10-26T04:01:30-04:00",
+        "boarding_stop_present": true,
+        "catchable_by_departure": true,
+        "departure_at": 1793000220,
+        "departure_ny": "2026-10-26T03:37:00-04:00",
+        "platform_ready_at": 1792999079.0,
+        "platform_ready_ny": "2026-10-26T03:17:59-04:00",
+        "present": true,
+        "trip_id": "MTA:numbered:20261026:4:019800_4..S13X061:"
+      }
+    ]
+  },
+  "anchor_train_first_sample_without_boarding_stop": {
+    "alighting_stop_present": true,
+    "archive_member": "nycsubway_1234567_20261026T071900.453Z_6p57di5wfn37.gtfsrt",
+    "arrival_at": 1793000597,
+    "arrival_ny": "2026-10-26T03:43:17-04:00",
+    "boarding_stop_present": false,
+    "capture_at": 1792999140.453,
+    "capture_ny": "2026-10-26T03:19:00.453000-04:00",
+    "catchable_by_departure": null,
+    "departure_at": null,
+    "departure_ny": null,
+    "platform_ready_at": 1792999320.453,
+    "platform_ready_ny": "2026-10-26T03:22:00.453000-04:00",
+    "present": true,
+    "trip_id": "MTA:numbered:20261026:4:017800_4..S13X061:"
+  },
+  "anchor_train_first_uncatchable_sample": {
+    "alighting_stop_present": true,
+    "archive_member": "nycsubway_1234567_20261026T071600.534Z_53kjyuc5pwq7.gtfsrt",
+    "arrival_at": 1793000568,
+    "arrival_ny": "2026-10-26T03:42:48-04:00",
+    "boarding_stop_present": true,
+    "capture_at": 1792998960.534,
+    "capture_ny": "2026-10-26T03:16:00.534000-04:00",
+    "catchable_by_departure": false,
+    "departure_at": 1792999098,
+    "departure_ny": "2026-10-26T03:18:18-04:00",
+    "platform_ready_at": 1792999140.534,
+    "platform_ready_ny": "2026-10-26T03:19:00.534000-04:00",
+    "present": true,
+    "trip_id": "MTA:numbered:20261026:4:017800_4..S13X061:"
+  },
+  "anchor_train_last_catchable_sample": {
+    "alighting_stop_present": true,
+    "archive_member": "nycsubway_1234567_20261026T071502.675Z_dwywacr2jptk.gtfsrt",
+    "arrival_at": 1793000559,
+    "arrival_ny": "2026-10-26T03:42:39-04:00",
+    "boarding_stop_present": true,
+    "capture_at": 1792998902.675,
+    "capture_ny": "2026-10-26T03:15:02.675000-04:00",
+    "catchable_by_departure": true,
+    "departure_at": 1792999089,
+    "departure_ny": "2026-10-26T03:18:09-04:00",
+    "platform_ready_at": 1792999082.675,
+    "platform_ready_ny": "2026-10-26T03:18:02.675000-04:00",
+    "present": true,
+    "trip_id": "MTA:numbered:20261026:4:017800_4..S13X061:"
+  },
+  "audit_scope": "Input-only selected-train forecasts and catchability; no final arrival outcome values used.",
+  "boarding_stop_id": "631S",
+  "case_id": "lmm-alert-273480-1792999260",
+  "conclusion": "The 11.84-minute remaining-duration increase is entirely the waiting-time consequence of a later query selecting the next train after the earlier train becomes uncatchable. The later selected train was already forecast at the anchor and moved 53 seconds earlier; the original train destination forecast moved only 24 seconds later. This case does not establish a five-minute same-train forecast delay or show that the incident caused the 11.84-minute increase. It is confounded by departure time and headway.",
+  "decision": {
+    "archive_provenance": {
+      "archive": "subwaydatanyc_2026-10-26_gtfsrt.tar.xz",
+      "archive_member": "nycsubway_1234567_20261026T072100.475Z_ws5df3p7tvkm.gtfsrt",
+      "sha256": "b4ba32edff9d54cd5f0e79d88a31dc96a54abdf3b68d26407943b50cd5b25cbb"
+    },
+    "cutoff": 1792999260.539,
+    "cutoff_ny": "2026-10-26T03:21:00.539000-04:00",
+    "feed_id": "numbered",
+    "raw_sha256": "b4ba32edff9d54cd5f0e79d88a31dc96a54abdf3b68d26407943b50cd5b25cbb",
+    "selected_capture_at": 1792999260.475,
+    "selected_capture_ny": "2026-10-26T03:21:00.475000-04:00",
+    "trains": [
+      {
+        "alighting_stop_present": true,
+        "arrival_at": 1793000589,
+        "arrival_ny": "2026-10-26T03:43:09-04:00",
+        "boarding_stop_present": false,
+        "catchable_by_departure": null,
+        "departure_at": null,
+        "departure_ny": null,
+        "platform_ready_at": 1792999440.539,
+        "platform_ready_ny": "2026-10-26T03:24:00.539000-04:00",
+        "present": true,
+        "trip_id": "MTA:numbered:20261026:4:017800_4..S13X061:"
+      },
+      {
+        "alighting_stop_present": true,
+        "arrival_at": 1793001637,
+        "arrival_ny": "2026-10-26T04:00:37-04:00",
+        "boarding_stop_present": true,
+        "catchable_by_departure": true,
+        "departure_at": 1793000167,
+        "departure_ny": "2026-10-26T03:36:07-04:00",
+        "platform_ready_at": 1792999440.539,
+        "platform_ready_ny": "2026-10-26T03:24:00.539000-04:00",
+        "present": true,
+        "trip_id": "MTA:numbered:20261026:4:019800_4..S13X061:"
+      }
+    ]
+  },
+  "decomposition": {
+    "anchor_total_duration_seconds": 1786.0,
+    "anchor_waiting_seconds": 16.0,
+    "decision_total_duration_seconds": 2496.4609999656677,
+    "decision_waiting_seconds": 726.4609999656677,
+    "different_selected_trains_departure_difference_seconds": 1072,
+    "identity": "710.461 seconds = 1072 seconds between selected train departures - 361.539 seconds of query-time advance",
+    "query_time_advance_seconds": 361.5390000343323,
+    "remaining_duration_increase_seconds": 710.4609999656677,
+    "riding_seconds_both": 1470.0,
+    "waiting_increase_seconds": 710.4609999656677,
+    "walking_seconds_both": 300.0
+  },
+  "outcome_values_used": false,
+  "reference_route_id": "lexington_direct",
+  "same_train_forecast_changes": {
+    "anchor_train_destination_arrival_shift_seconds": 24,
+    "later_selected_train_arrival_shift_seconds": -53,
+    "later_selected_train_departure_shift_seconds": -53,
+    "later_selected_train_existed_at_anchor": true
+  },
+  "sampling_limit": "Catchability transition times refer to retained normalized samples, not an independently observed physical departure or the exact transition between samples.",
+  "schema_version": "preincident-headway-audit-v1",
+  "selected_case_artifact": {
+    "fields_used": "case ID, anchor/current selected train IDs, prediction components and cutoffs only",
+    "path": "algo/local/october-preincident-brooklyn/scored-cases.json.gz",
+    "sha256": "b7d4aa20bea081e6e5b54da79a92f9bd076f1ee0fa832245d6e45b957e911cd4"
+  },
+  "source_manifest": {
+    "path": "data/manifests/preincident-inputs.json",
+    "sha256": "8f60b7424705024e3333a4628511052018eb6efc2a9eb2243347a93b7392023c"
+  },
+  "source_snapshot": {
+    "path": "data/processed/preincident-inputs/2026-10-26.snapshots.jsonl.gz",
+    "sha256": "074ba6d7fe8aa2f9f905446f994ae279cb72773892ae4144a5611bf1eeeb627b"
+  }
+}

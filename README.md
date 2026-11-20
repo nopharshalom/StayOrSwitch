@@ -49,6 +49,25 @@ now tests the commuter's disrupted-route scenario with unchanged predictions.
 Its post-hoc results and outcome coverage do not establish general success rates
 or prove an advantage from historical corrections over live MTA.
 
+The [default-route delay findings](algo/reports/default-route-delay-findings.md)
+give a fully comparable missed opportunity: the originally fastest 4/5 route
+remains the current MTA default, but switching to F saves 7 minutes 13 seconds
+in the final-feed replay. The current algorithm recommends Stay. Negative and
+unknown comparisons are retained; this is exploratory evidence, not a general
+success rate or independent passenger-arrival measurement.
+
+The [same-run delay test](algo/reports/feed-revision-test.md) separately compares alternatives
+after the originally fastest route's same service run receives a later arrival
+forecast. It retains both qualifying examples from the fixed test-week search,
+with forecast advice and screened final MTA outcomes reported separately.
+
+An earlier [pre-incident route comparison](algo/reports/preincident-brooklyn-clear-default.md)
+fixes the default before an official notice. Its apparent duration deterioration
+also involves selecting later trains. A [same-train audit](algo/reports/preincident-brooklyn-headway-audit.json)
+shows that its positive counterfactual does not establish delay of the originally
+selected train. It remains a valid route-level comparison, with the changed
+train and later train's own forecast error distinguished in the findings.
+
 See the [algorithm workspace](algo/README.md) and [data workspace](data/README.md)
 for implementation status, reproducible commands and measured results. The
 previous November model/data experiment has been removed from the active project.

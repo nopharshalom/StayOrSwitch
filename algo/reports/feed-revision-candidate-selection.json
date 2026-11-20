@@ -1,0 +1,1242 @@
+{
+  "attempted_pairs": 8064,
+  "distinct_physical_train_runs": 2,
+  "grid_cutoffs": 2016,
+  "policy": {
+    "anchor_candidate_gate": "ALL_TIMING_AND_COMPARISON_ELIGIBLE; WINNER_FRESH_NORMAL",
+    "baseline_near_tie_seconds": 180,
+    "decision_grid_seconds": 300,
+    "deduplication": "EARLIEST_T1_THEN_EARLIEST_T0_PER_ORDERED_CANONICAL_TRAIN_AND_STOP_PAIR",
+    "destination": "Times Square, West 42nd Street at Seventh Avenue",
+    "minimum_absolute_arrival_revision_seconds": 300,
+    "no_independent_holdout_claim": true,
+    "official_delay_notice_required": false,
+    "origin": "Court Square subway complex street entrance, Long Island City",
+    "planning_state": "NOT_BOARDED_AT_EITHER_CUTOFF; NEW_DEPARTURE_FROM_SAME_ORIGIN_AT_DECISION_TIME",
+    "reassessment_lags_seconds": [
+      300,
+      600,
+      900,
+      1800
+    ],
+    "reference_policy": "FRESH_NORMAL_FASTEST_AT_T0_SAME_PHYSICAL_STAY_TRAIN_AT_T1",
+    "remaining_duration_increase_required": false,
+    "require_severe": false,
+    "routes": [
+      {
+        "access_walk_seconds": 120,
+        "egress_walk_seconds": 120,
+        "family": "7_DIRECT",
+        "id": "7_times_square",
+        "legs": [
+          {
+            "feed_id": "numbered",
+            "from_stop_id": "719S",
+            "route_id": "7",
+            "route_ids": [
+              "7",
+              "7X"
+            ],
+            "to_stop_id": "725S"
+          }
+        ],
+        "name": "7 Court Sq to Times Sq",
+        "transfer_walk_seconds": []
+      },
+      {
+        "access_walk_seconds": 300,
+        "egress_walk_seconds": 420,
+        "family": "E_DIRECT",
+        "id": "e_times_square",
+        "legs": [
+          {
+            "feed_id": "ace",
+            "from_stop_id": "F09S",
+            "route_id": "E",
+            "route_ids": [
+              "E"
+            ],
+            "to_stop_id": "A27S"
+          }
+        ],
+        "name": "E Court Sq to Port Authority, walk to Times Sq",
+        "transfer_walk_seconds": []
+      },
+      {
+        "access_walk_seconds": 300,
+        "egress_walk_seconds": 420,
+        "family": "F_DIRECT",
+        "id": "f_times_square",
+        "legs": [
+          {
+            "feed_id": "bdfm",
+            "from_stop_id": "F09S",
+            "route_id": "F",
+            "route_ids": [
+              "F",
+              "FX"
+            ],
+            "to_stop_id": "D16S"
+          }
+        ],
+        "name": "F Court Sq to Bryant Park, walk to Times Sq",
+        "transfer_walk_seconds": []
+      }
+    ],
+    "schema_version": "same-train-forecast-revision-v1",
+    "study_status": "POST_HOC_EXPLORATORY_TEST_CASE_SEARCH",
+    "switch_margin_seconds": 300,
+    "test_dates": [
+      "2026-10-25",
+      "2026-10-31"
+    ],
+    "tie_margin_seconds": 180,
+    "walking_policy": "AUTHORED_STREET_ACCESS_AND_EGRESS_ASSUMPTIONS_NOT_MEASURED_OR_HISTORICAL_PROVIDER_ROUTES",
+    "walking_sensitivity_seconds": [
+      -120,
+      120
+    ]
+  },
+  "prepared_inputs": {
+    "path": "algo/local/october-feed-revision/prepared-inputs.json.gz",
+    "sha256": "a149b6653814faabf8578faabbeb1374cb47c5f5afc98a7ee39639893ea9e84b"
+  },
+  "qualifying_pair_count": 2,
+  "rejection_counts": {
+    "ABSOLUTE_ARRIVAL_REVISION_BELOW_FIVE_MINUTES": 58,
+    "BASELINE_CANDIDATE_TIMING_OR_SERVICE_UNVERIFIED": 5756,
+    "BASELINE_WINNER_NOT_FRESH_NORMAL": 224,
+    "LATER_CUTOFF_OUTSIDE_TEST_WEEK": 12,
+    "STAY_NO_COMPLETE_CATCHABLE_TIMING_AT_T1": 3,
+    "STAY_SELECTED_PHYSICAL_TRAIN_CHANGED": 2009
+  },
+  "representative_selection_uses_outcomes": false,
+  "representatives": [
+    {
+      "absolute_arrival_revision_seconds": 447.0,
+      "anchor": {
+        "baseline_near_tie": true,
+        "decision_at": 1793205900.0,
+        "local_time": "2026-10-28T12:45:00-04:00",
+        "prediction": {
+          "cutoff": 1793205900.0,
+          "feed_states": {
+            "ace": "FRESH",
+            "bdfm": "FRESH",
+            "numbered": "FRESH",
+            "subway-alerts": "FRESH"
+          },
+          "mode": "mta",
+          "policy": {
+            "alerts_max_age_seconds": 300,
+            "prediction_uses_outcomes": false,
+            "profile_endpoint_composition": "CORRECT_ABSOLUTE_ENDPOINTS_THEN_SUBTRACT",
+            "train_max_age_seconds": 180
+          },
+          "routes": [
+            {
+              "access_walk_seconds": 120.0,
+              "comparison_eligible": true,
+              "components": {
+                "riding_seconds": 640.0,
+                "waiting_seconds": 331.0,
+                "walking_seconds": 240.0
+              },
+              "context": {
+                "ambiguous_scope": false,
+                "causes": [
+                  "UNKNOWN"
+                ],
+                "evidence_status": "FRESH",
+                "incident_ids": [],
+                "severe_incident_ids": [],
+                "state": "NORMAL"
+              },
+              "egress_walk_seconds": 120.0,
+              "eta": 1793207111.0,
+              "family": "7_DIRECT",
+              "id": "7_times_square",
+              "leg_candidate_counts": [
+                12
+              ],
+              "mode": "mta",
+              "name": "7 Court Sq to Times Sq",
+              "profile_fallback_endpoint_count": 2,
+              "profile_supported_endpoint_count": 0,
+              "reason_codes": [],
+              "rejected": [
+                {
+                  "leg_index": 0,
+                  "reason": "EXPIRED_BASELINE_FORECAST",
+                  "trip_id": "MTA:numbered:20261028:7:069600_7..S:"
+                },
+                {
+                  "leg_index": 0,
+                  "reason": "EXPIRED_BASELINE_FORECAST",
+                  "trip_id": "MTA:numbered:20261028:7:070100_7..S:"
+                },
+                {
+                  "leg_index": 0,
+                  "reason": "EXPIRED_BASELINE_FORECAST",
+                  "trip_id": "MTA:numbered:20261028:7:073100_7..S:"
+                },
+                {
+                  "leg_index": 0,
+                  "reason": "EXPIRED_BASELINE_FORECAST",
+                  "trip_id": "MTA:numbered:20261028:7:073600_7..S:"
+                }
+              ],
+              "selected_legs": [
+                {
+                  "alighting_stop_id": "725S",
+                  "arrival_at": 1793206991.0,
+                  "baseline_arrival_at": 1793206991.0,
+                  "baseline_departure_at": 1793206351.0,
+                  "boarding_stop_id": "719S",
+                  "boarding_time_source": "DEPARTURE",
+                  "catchable": null,
+                  "corrections": {
+                    "arrival": {
+                      "correction_seconds": 0.0,
+                      "event_count": 0,
+                      "incident_count": 0,
+                      "incident_supported": false,
+                      "level": "MTA",
+                      "reason": "UNMODIFIED_MTA",
+                      "statistics": null,
+                      "supported": false
+                    },
+                    "departure": {
+                      "correction_seconds": 0.0,
+                      "event_count": 0,
+                      "incident_count": 0,
+                      "incident_supported": false,
+                      "level": "MTA",
+                      "reason": "UNMODIFIED_MTA",
+                      "statistics": null,
+                      "supported": false
+                    }
+                  },
+                  "departure_at": 1793206351.0,
+                  "direction_id": null,
+                  "feed_id": "numbered",
+                  "from_stop_id": "719S",
+                  "incident_context": {
+                    "age_seconds": null,
+                    "alerts": [],
+                    "ambiguous_scope": false,
+                    "applicable": false,
+                    "captured_at": 1793205723.587,
+                    "cause": "UNKNOWN",
+                    "evidence_status": "FRESH",
+                    "first_observed_at": null,
+                    "incident_ids": [],
+                    "possible_alerts": [],
+                    "reason": "FRESH_NO_APPLICABLE_NOTICE",
+                    "receipt_age_seconds": 176.41300010681152,
+                    "scope_ambiguous": false,
+                    "severe_incident_ids": [],
+                    "state": "NORMAL"
+                  },
+                  "leg_index": 0,
+                  "nyct_direction": "SOUTH",
+                  "platform_direction": "S",
+                  "platform_ready_at": 1793206020.0,
+                  "raw_trip_id": "074100_7..S",
+                  "reason_codes": [],
+                  "riding_seconds": 640.0,
+                  "route_id": "7",
+                  "segment_station_ids": [
+                    "719",
+                    "719S",
+                    "720",
+                    "720S",
+                    "721",
+                    "721S",
+                    "723",
+                    "723S",
+                    "724",
+                    "724S",
+                    "725",
+                    "725S"
+                  ],
+                  "segment_stop_ids": [
+                    "719S",
+                    "720S",
+                    "721S",
+                    "723S",
+                    "724S",
+                    "725S"
+                  ],
+                  "service_date": "20261028",
+                  "start_time": null,
+                  "to_stop_id": "725S",
+                  "trip_id": "MTA:numbered:20261028:7:074100_7..S:",
+                  "waiting_seconds": 331.0
+                }
+              ],
+              "severe_incident_ids": [],
+              "status": "ESTIMATED",
+              "timing_eligible": true,
+              "total_duration_seconds": 1211.0,
+              "transfer_walk_seconds": []
+            },
+            {
+              "access_walk_seconds": 300.0,
+              "comparison_eligible": true,
+              "components": {
+                "riding_seconds": 630.0,
+                "waiting_seconds": 337.0,
+                "walking_seconds": 720.0
+              },
+              "context": {
+                "ambiguous_scope": false,
+                "causes": [
+                  "MAINTENANCE"
+                ],
+                "evidence_status": "FRESH",
+                "incident_ids": [
+                  "lmm:planned_work:33366"
+                ],
+                "severe_incident_ids": [],
+                "state": "PLANNED"
+              },
+              "egress_walk_seconds": 420.0,
+              "eta": 1793207587.0,
+              "family": "E_DIRECT",
+              "id": "e_times_square",
+              "leg_candidate_counts": [
+                10
+              ],
+              "mode": "mta",
+              "name": "E Court Sq to Port Authority, walk to Times Sq",
+              "profile_fallback_endpoint_count": 2,
+              "profile_supported_endpoint_count": 0,
+              "reason_codes": [],
+              "rejected": [
+                {
+                  "leg_index": 0,
+                  "reason": "EXPIRED_BASELINE_FORECAST",
+                  "trip_id": "MTA:ace:20261028:E:073950_E..S71R:12%3A19%3A30"
+                },
+                {
+                  "leg_index": 0,
+                  "reason": "DEPARTS_BEFORE_PLATFORM_READY",
+                  "trip_id": "MTA:ace:20261028:E:074700_E..S71R:12%3A27%3A30"
+                }
+              ],
+              "selected_legs": [
+                {
+                  "alighting_stop_id": "A27S",
+                  "arrival_at": 1793207167.0,
+                  "baseline_arrival_at": 1793207167.0,
+                  "baseline_departure_at": 1793206537.0,
+                  "boarding_stop_id": "F09S",
+                  "boarding_time_source": "DEPARTURE",
+                  "catchable": null,
+                  "corrections": {
+                    "arrival": {
+                      "correction_seconds": 0.0,
+                      "event_count": 0,
+                      "incident_count": 0,
+                      "incident_supported": false,
+                      "level": "MTA",
+                      "reason": "UNMODIFIED_MTA",
+                      "statistics": null,
+                      "supported": false
+                    },
+                    "departure": {
+                      "correction_seconds": 0.0,
+                      "event_count": 0,
+                      "incident_count": 0,
+                      "incident_supported": false,
+                      "level": "MTA",
+                      "reason": "UNMODIFIED_MTA",
+                      "statistics": null,
+                      "supported": false
+                    }
+                  },
+                  "departure_at": 1793206537.0,
+                  "direction_id": null,
+                  "feed_id": "ace",
+                  "from_stop_id": "F09S",
+                  "incident_context": {
+                    "age_seconds": 2373796.453999996,
+                    "alerts": [
+                      {
+                        "active_periods": [
+                          {
+                            "end": 1808757723,
+                            "start": 1776333600
+                          }
+                        ],
+                        "age_seconds": 2373796.453999996,
+                        "captured_at": 1793205723.587,
+                        "cause": "MAINTENANCE",
+                        "classification_rule": "PLANNED_NOTICE",
+                        "description": "What's happening?\nWe're replacing escalators",
+                        "effect": null,
+                        "first_observed_at": 1790832103.546,
+                        "header": "Enter 5 Av/53 St [E][F] Station at 5 Av only\nMadison Av entrance will be exit only",
+                        "id": "lmm:planned_work:33366",
+                        "incident_id": "lmm:planned_work:33366",
+                        "informed_entities": [
+                          {
+                            "agency_id": "MTASBWY",
+                            "direction_id": null,
+                            "extensions": {},
+                            "route_id": "E",
+                            "stop_id": "F12",
+                            "trip": null
+                          },
+                          {
+                            "agency_id": "MTASBWY",
+                            "direction_id": null,
+                            "extensions": {},
+                            "route_id": "F",
+                            "stop_id": "F12",
+                            "trip": null
+                          }
+                        ],
+                        "no_service": false,
+                        "no_service_route_ids": [],
+                        "no_service_scope": null,
+                        "recovery": false,
+                        "scope": "STOP",
+                        "source_cause": null,
+                        "state": "PLANNED",
+                        "version_id": "96947d45f6d73299d56aba8ecafa6702a1be7608efb91076e881d40d84c7c3c3"
+                      }
+                    ],
+                    "ambiguous_scope": false,
+                    "applicable": true,
+                    "captured_at": 1793205723.587,
+                    "cause": "MAINTENANCE",
+                    "evidence_status": "FRESH",
+                    "first_observed_at": 1790832103.546,
+                    "incident_ids": [
+                      "lmm:planned_work:33366"
+                    ],
+                    "possible_alerts": [],
+                    "reason": "ASOF_APPLICABLE_NOTICE",
+                    "receipt_age_seconds": 176.41300010681152,
+                    "scope_ambiguous": false,
+                    "severe_incident_ids": [],
+                    "state": "PLANNED"
+                  },
+                  "leg_index": 0,
+                  "nyct_direction": "SOUTH",
+                  "platform_direction": "S",
+                  "platform_ready_at": 1793206200.0,
+                  "raw_trip_id": "075450_E..S71R",
+                  "reason_codes": [],
+                  "riding_seconds": 630.0,
+                  "route_id": "E",
+                  "segment_station_ids": [
+                    "A25",
+                    "A25S",
+                    "A27",
+                    "A27S",
+                    "D14",
+                    "D14S",
+                    "F09",
+                    "F09S",
+                    "F11",
+                    "F11S",
+                    "F12",
+                    "F12S"
+                  ],
+                  "segment_stop_ids": [
+                    "F09S",
+                    "F11S",
+                    "F12S",
+                    "D14S",
+                    "A25S",
+                    "A27S"
+                  ],
+                  "service_date": "20261028",
+                  "start_time": "12:34:30",
+                  "to_stop_id": "A27S",
+                  "trip_id": "MTA:ace:20261028:E:075450_E..S71R:12%3A34%3A30",
+                  "waiting_seconds": 337.0
+                }
+              ],
+              "severe_incident_ids": [],
+              "status": "ESTIMATED",
+              "timing_eligible": true,
+              "total_duration_seconds": 1687.0,
+              "transfer_walk_seconds": []
+            },
+            {
+              "access_walk_seconds": 300.0,
+              "comparison_eligible": true,
+              "components": {
+                "riding_seconds": 510.0,
+                "waiting_seconds": 123.0,
+                "walking_seconds": 720.0
+              },
+              "context": {
+                "ambiguous_scope": false,
+                "causes": [
+                  "MAINTENANCE"
+                ],
+                "evidence_status": "FRESH",
+                "incident_ids": [
+                  "lmm:planned_work:33366"
+                ],
+                "severe_incident_ids": [],
+                "state": "PLANNED"
+              },
+              "egress_walk_seconds": 420.0,
+              "eta": 1793207253.0,
+              "family": "F_DIRECT",
+              "id": "f_times_square",
+              "leg_candidate_counts": [
+                11
+              ],
+              "mode": "mta",
+              "name": "F Court Sq to Bryant Park, walk to Times Sq",
+              "profile_fallback_endpoint_count": 2,
+              "profile_supported_endpoint_count": 0,
+              "reason_codes": [],
+              "rejected": [
+                {
+                  "leg_index": 0,
+                  "reason": "DEPARTS_BEFORE_PLATFORM_READY",
+                  "trip_id": "MTA:bdfm:20261028:F:074150_F..S78X002:12%3A21%3A27"
+                }
+              ],
+              "selected_legs": [
+                {
+                  "alighting_stop_id": "D16S",
+                  "arrival_at": 1793206833.0,
+                  "baseline_arrival_at": 1793206833.0,
+                  "baseline_departure_at": 1793206323.0,
+                  "boarding_stop_id": "F09S",
+                  "boarding_time_source": "DEPARTURE",
+                  "catchable": null,
+                  "corrections": {
+                    "arrival": {
+                      "correction_seconds": 0.0,
+                      "event_count": 0,
+                      "incident_count": 0,
+                      "incident_supported": false,
+                      "level": "MTA",
+                      "reason": "UNMODIFIED_MTA",
+                      "statistics": null,
+                      "supported": false
+                    },
+                    "departure": {
+                      "correction_seconds": 0.0,
+                      "event_count": 0,
+                      "incident_count": 0,
+                      "incident_supported": false,
+                      "level": "MTA",
+                      "reason": "UNMODIFIED_MTA",
+                      "statistics": null,
+                      "supported": false
+                    }
+                  },
+                  "departure_at": 1793206323.0,
+                  "direction_id": null,
+                  "feed_id": "bdfm",
+                  "from_stop_id": "F09S",
+                  "incident_context": {
+                    "age_seconds": 2373796.453999996,
+                    "alerts": [
+                      {
+                        "active_periods": [
+                          {
+                            "end": 1808757723,
+                            "start": 1776333600
+                          }
+                        ],
+                        "age_seconds": 2373796.453999996,
+                        "captured_at": 1793205723.587,
+                        "cause": "MAINTENANCE",
+                        "classification_rule": "PLANNED_NOTICE",
+                        "description": "What's happening?\nWe're replacing escalators",
+                        "effect": null,
+                        "first_observed_at": 1790832103.546,
+                        "header": "Enter 5 Av/53 St [E][F] Station at 5 Av only\nMadison Av entrance will be exit only",
+                        "id": "lmm:planned_work:33366",
+                        "incident_id": "lmm:planned_work:33366",
+                        "informed_entities": [
+                          {
+                            "agency_id": "MTASBWY",
+                            "direction_id": null,
+                            "extensions": {},
+                            "route_id": "E",
+                            "stop_id": "F12",
+                            "trip": null
+                          },
+                          {
+                            "agency_id": "MTASBWY",
+                            "direction_id": null,
+                            "extensions": {},
+                            "route_id": "F",
+                            "stop_id": "F12",
+                            "trip": null
+                          }
+                        ],
+                        "no_service": false,
+                        "no_service_route_ids": [],
+                        "no_service_scope": null,
+                        "recovery": false,
+                        "scope": "STOP",
+                        "source_cause": null,
+                        "state": "PLANNED",
+                        "version_id": "96947d45f6d73299d56aba8ecafa6702a1be7608efb91076e881d40d84c7c3c3"
+                      }
+                    ],
+                    "ambiguous_scope": false,
+                    "applicable": true,
+                    "captured_at": 1793205723.587,
+                    "cause": "MAINTENANCE",
+                    "evidence_status": "FRESH",
+                    "first_observed_at": 1790832103.546,
+                    "incident_ids": [
+                      "lmm:planned_work:33366"
+                    ],
+                    "possible_alerts": [],
+                    "reason": "ASOF_APPLICABLE_NOTICE",
+                    "receipt_age_seconds": 176.41300010681152,
+                    "scope_ambiguous": false,
+                    "severe_incident_ids": [],
+                    "state": "PLANNED"
+                  },
+                  "leg_index": 0,
+                  "nyct_direction": "SOUTH",
+                  "platform_direction": "S",
+                  "platform_ready_at": 1793206200.0,
+                  "raw_trip_id": "074850_F..S54R",
+                  "reason_codes": [],
+                  "riding_seconds": 510.0,
+                  "route_id": "F",
+                  "segment_station_ids": [
+                    "D15",
+                    "D15S",
+                    "D16",
+                    "D16S",
+                    "F09",
+                    "F09S",
+                    "F11",
+                    "F11S",
+                    "F12",
+                    "F12S"
+                  ],
+                  "segment_stop_ids": [
+                    "F09S",
+                    "F11S",
+                    "F12S",
+                    "D15S",
+                    "D16S"
+                  ],
+                  "service_date": "20261028",
+                  "start_time": "12:28:00",
+                  "to_stop_id": "D16S",
+                  "trip_id": "MTA:bdfm:20261028:F:074850_F..S54R:12%3A28%3A00",
+                  "waiting_seconds": 123.0
+                }
+              ],
+              "severe_incident_ids": [],
+              "status": "ESTIMATED",
+              "timing_eligible": true,
+              "total_duration_seconds": 1353.0,
+              "transfer_walk_seconds": []
+            }
+          ],
+          "schema_version": "severe-comparison-v1"
+        },
+        "reference_route_id": "7_times_square",
+        "status": "ELIGIBLE",
+        "winner_lead_seconds": 142.0
+      },
+      "decision_at": 1793206500.0,
+      "duration_deterioration_seconds": -153.0,
+      "id": "same-run-d98d60b82e0f8b400636-1793205900-1793206500",
+      "leg_forecast_revisions": [
+        {
+          "arrival_shift_seconds": 447.0,
+          "baseline_arrival_at": 1793206991.0,
+          "baseline_departure_at": 1793206351.0,
+          "baseline_normalized_trip_id": "MTA:numbered:20261028:7:074100_7..S:",
+          "current_arrival_at": 1793207438.0,
+          "current_departure_at": 1793206798.0,
+          "current_normalized_trip_id": "MTA:numbered:20261028:7:074100_7..S:",
+          "departure_shift_seconds": 447.0,
+          "from_stop_id": "719S",
+          "to_stop_id": "725S"
+        }
+      ],
+      "local_time": "2026-10-28T12:55:00-04:00",
+      "physical_sequence": [
+        [
+          "MTA_EVENT:numbered:20261028:7:074100_7..S",
+          "719S",
+          "725S"
+        ]
+      ],
+      "planning_interval_seconds": 600.0,
+      "reference_route_id": "7_times_square"
+    },
+    {
+      "absolute_arrival_revision_seconds": 324.0,
+      "anchor": {
+        "baseline_near_tie": false,
+        "decision_at": 1793287800.0,
+        "local_time": "2026-10-29T11:30:00-04:00",
+        "prediction": {
+          "cutoff": 1793287800.0,
+          "feed_states": {
+            "ace": "FRESH",
+            "bdfm": "FRESH",
+            "numbered": "FRESH",
+            "subway-alerts": "FRESH"
+          },
+          "mode": "mta",
+          "policy": {
+            "alerts_max_age_seconds": 300,
+            "prediction_uses_outcomes": false,
+            "profile_endpoint_composition": "CORRECT_ABSOLUTE_ENDPOINTS_THEN_SUBTRACT",
+            "train_max_age_seconds": 180
+          },
+          "routes": [
+            {
+              "access_walk_seconds": 120.0,
+              "comparison_eligible": true,
+              "components": {
+                "riding_seconds": 640.0,
+                "waiting_seconds": 371.0,
+                "walking_seconds": 240.0
+              },
+              "context": {
+                "ambiguous_scope": false,
+                "causes": [
+                  "UNKNOWN"
+                ],
+                "evidence_status": "FRESH",
+                "incident_ids": [],
+                "severe_incident_ids": [],
+                "state": "NORMAL"
+              },
+              "egress_walk_seconds": 120.0,
+              "eta": 1793289051.0,
+              "family": "7_DIRECT",
+              "id": "7_times_square",
+              "leg_candidate_counts": [
+                12
+              ],
+              "mode": "mta",
+              "name": "7 Court Sq to Times Sq",
+              "profile_fallback_endpoint_count": 2,
+              "profile_supported_endpoint_count": 0,
+              "reason_codes": [],
+              "rejected": [
+                {
+                  "leg_index": 0,
+                  "reason": "EXPIRED_BASELINE_FORECAST",
+                  "trip_id": "MTA:numbered:20261029:7:066100_7..S:"
+                }
+              ],
+              "selected_legs": [
+                {
+                  "alighting_stop_id": "725S",
+                  "arrival_at": 1793288931.0,
+                  "baseline_arrival_at": 1793288931.0,
+                  "baseline_departure_at": 1793288291.0,
+                  "boarding_stop_id": "719S",
+                  "boarding_time_source": "DEPARTURE",
+                  "catchable": null,
+                  "corrections": {
+                    "arrival": {
+                      "correction_seconds": 0.0,
+                      "event_count": 0,
+                      "incident_count": 0,
+                      "incident_supported": false,
+                      "level": "MTA",
+                      "reason": "UNMODIFIED_MTA",
+                      "statistics": null,
+                      "supported": false
+                    },
+                    "departure": {
+                      "correction_seconds": 0.0,
+                      "event_count": 0,
+                      "incident_count": 0,
+                      "incident_supported": false,
+                      "level": "MTA",
+                      "reason": "UNMODIFIED_MTA",
+                      "statistics": null,
+                      "supported": false
+                    }
+                  },
+                  "departure_at": 1793288291.0,
+                  "direction_id": null,
+                  "feed_id": "numbered",
+                  "from_stop_id": "719S",
+                  "incident_context": {
+                    "age_seconds": null,
+                    "alerts": [],
+                    "ambiguous_scope": false,
+                    "applicable": false,
+                    "captured_at": 1793287747.726,
+                    "cause": "UNKNOWN",
+                    "evidence_status": "FRESH",
+                    "first_observed_at": null,
+                    "incident_ids": [],
+                    "possible_alerts": [],
+                    "reason": "FRESH_NO_APPLICABLE_NOTICE",
+                    "receipt_age_seconds": 52.2739999294281,
+                    "scope_ambiguous": false,
+                    "severe_incident_ids": [],
+                    "state": "NORMAL"
+                  },
+                  "leg_index": 0,
+                  "nyct_direction": "SOUTH",
+                  "platform_direction": "S",
+                  "platform_ready_at": 1793287920.0,
+                  "raw_trip_id": "066600_7..S",
+                  "reason_codes": [],
+                  "riding_seconds": 640.0,
+                  "route_id": "7",
+                  "segment_station_ids": [
+                    "719",
+                    "719S",
+                    "720",
+                    "720S",
+                    "721",
+                    "721S",
+                    "723",
+                    "723S",
+                    "724",
+                    "724S",
+                    "725",
+                    "725S"
+                  ],
+                  "segment_stop_ids": [
+                    "719S",
+                    "720S",
+                    "721S",
+                    "723S",
+                    "724S",
+                    "725S"
+                  ],
+                  "service_date": "20261029",
+                  "start_time": null,
+                  "to_stop_id": "725S",
+                  "trip_id": "MTA:numbered:20261029:7:066600_7..S:",
+                  "waiting_seconds": 371.0
+                }
+              ],
+              "severe_incident_ids": [],
+              "status": "ESTIMATED",
+              "timing_eligible": true,
+              "total_duration_seconds": 1251.0,
+              "transfer_walk_seconds": []
+            },
+            {
+              "access_walk_seconds": 300.0,
+              "comparison_eligible": true,
+              "components": {
+                "riding_seconds": 630.0,
+                "waiting_seconds": 91.0,
+                "walking_seconds": 720.0
+              },
+              "context": {
+                "ambiguous_scope": false,
+                "causes": [
+                  "MAINTENANCE"
+                ],
+                "evidence_status": "FRESH",
+                "incident_ids": [
+                  "lmm:planned_work:33366"
+                ],
+                "severe_incident_ids": [],
+                "state": "PLANNED"
+              },
+              "egress_walk_seconds": 420.0,
+              "eta": 1793289241.0,
+              "family": "E_DIRECT",
+              "id": "e_times_square",
+              "leg_candidate_counts": [
+                12
+              ],
+              "mode": "mta",
+              "name": "E Court Sq to Port Authority, walk to Times Sq",
+              "profile_fallback_endpoint_count": 2,
+              "profile_supported_endpoint_count": 0,
+              "reason_codes": [],
+              "rejected": [
+                {
+                  "leg_index": 0,
+                  "reason": "EXPIRED_BASELINE_FORECAST",
+                  "trip_id": "MTA:ace:20261029:E:066150_E..S71R:11%3A01%3A00"
+                },
+                {
+                  "leg_index": 0,
+                  "reason": "EXPIRED_BASELINE_FORECAST",
+                  "trip_id": "MTA:ace:20261029:E:066800_E..S71R:11%3A08%3A00"
+                }
+              ],
+              "selected_legs": [
+                {
+                  "alighting_stop_id": "A27S",
+                  "arrival_at": 1793288821.0,
+                  "baseline_arrival_at": 1793288821.0,
+                  "baseline_departure_at": 1793288191.0,
+                  "boarding_stop_id": "F09S",
+                  "boarding_time_source": "DEPARTURE",
+                  "catchable": null,
+                  "corrections": {
+                    "arrival": {
+                      "correction_seconds": 0.0,
+                      "event_count": 0,
+                      "incident_count": 0,
+                      "incident_supported": false,
+                      "level": "MTA",
+                      "reason": "UNMODIFIED_MTA",
+                      "statistics": null,
+                      "supported": false
+                    },
+                    "departure": {
+                      "correction_seconds": 0.0,
+                      "event_count": 0,
+                      "incident_count": 0,
+                      "incident_supported": false,
+                      "level": "MTA",
+                      "reason": "UNMODIFIED_MTA",
+                      "statistics": null,
+                      "supported": false
+                    }
+                  },
+                  "departure_at": 1793288191.0,
+                  "direction_id": null,
+                  "feed_id": "ace",
+                  "from_stop_id": "F09S",
+                  "incident_context": {
+                    "age_seconds": 2455696.453999996,
+                    "alerts": [
+                      {
+                        "active_periods": [
+                          {
+                            "end": 1808839746,
+                            "start": 1776333600
+                          }
+                        ],
+                        "age_seconds": 2455696.453999996,
+                        "captured_at": 1793287747.726,
+                        "cause": "MAINTENANCE",
+                        "classification_rule": "PLANNED_NOTICE",
+                        "description": "What's happening?\nWe're replacing escalators",
+                        "effect": null,
+                        "first_observed_at": 1790832103.546,
+                        "header": "Enter 5 Av/53 St [E][F] Station at 5 Av only\nMadison Av entrance will be exit only",
+                        "id": "lmm:planned_work:33366",
+                        "incident_id": "lmm:planned_work:33366",
+                        "informed_entities": [
+                          {
+                            "agency_id": "MTASBWY",
+                            "direction_id": null,
+                            "extensions": {},
+                            "route_id": "E",
+                            "stop_id": "F12",
+                            "trip": null
+                          },
+                          {
+                            "agency_id": "MTASBWY",
+                            "direction_id": null,
+                            "extensions": {},
+                            "route_id": "F",
+                            "stop_id": "F12",
+                            "trip": null
+                          }
+                        ],
+                        "no_service": false,
+                        "no_service_route_ids": [],
+                        "no_service_scope": null,
+                        "recovery": false,
+                        "scope": "STOP",
+                        "source_cause": null,
+                        "state": "PLANNED",
+                        "version_id": "10e7c850ab806bfd415e5921f4486308b9aea7da9df5a81c881fa2e98dd66e7e"
+                      }
+                    ],
+                    "ambiguous_scope": false,
+                    "applicable": true,
+                    "captured_at": 1793287747.726,
+                    "cause": "MAINTENANCE",
+                    "evidence_status": "FRESH",
+                    "first_observed_at": 1790832103.546,
+                    "incident_ids": [
+                      "lmm:planned_work:33366"
+                    ],
+                    "possible_alerts": [],
+                    "reason": "ASOF_APPLICABLE_NOTICE",
+                    "receipt_age_seconds": 52.2739999294281,
+                    "scope_ambiguous": false,
+                    "severe_incident_ids": [],
+                    "state": "PLANNED"
+                  },
+                  "leg_index": 0,
+                  "nyct_direction": "SOUTH",
+                  "platform_direction": "S",
+                  "platform_ready_at": 1793288100.0,
+                  "raw_trip_id": "067450_E..S71R",
+                  "reason_codes": [],
+                  "riding_seconds": 630.0,
+                  "route_id": "E",
+                  "segment_station_ids": [
+                    "A25",
+                    "A25S",
+                    "A27",
+                    "A27S",
+                    "D14",
+                    "D14S",
+                    "F09",
+                    "F09S",
+                    "F11",
+                    "F11S",
+                    "F12",
+                    "F12S"
+                  ],
+                  "segment_stop_ids": [
+                    "F09S",
+                    "F11S",
+                    "F12S",
+                    "D14S",
+                    "A25S",
+                    "A27S"
+                  ],
+                  "service_date": "20261029",
+                  "start_time": "11:14:00",
+                  "to_stop_id": "A27S",
+                  "trip_id": "MTA:ace:20261029:E:067450_E..S71R:11%3A14%3A00",
+                  "waiting_seconds": 91.0
+                }
+              ],
+              "severe_incident_ids": [],
+              "status": "ESTIMATED",
+              "timing_eligible": true,
+              "total_duration_seconds": 1441.0,
+              "transfer_walk_seconds": []
+            },
+            {
+              "access_walk_seconds": 300.0,
+              "comparison_eligible": true,
+              "components": {
+                "riding_seconds": 510.0,
+                "waiting_seconds": 409.0,
+                "walking_seconds": 720.0
+              },
+              "context": {
+                "ambiguous_scope": false,
+                "causes": [
+                  "MAINTENANCE"
+                ],
+                "evidence_status": "FRESH",
+                "incident_ids": [
+                  "lmm:planned_work:33366"
+                ],
+                "severe_incident_ids": [],
+                "state": "PLANNED"
+              },
+              "egress_walk_seconds": 420.0,
+              "eta": 1793289439.0,
+              "family": "F_DIRECT",
+              "id": "f_times_square",
+              "leg_candidate_counts": [
+                10
+              ],
+              "mode": "mta",
+              "name": "F Court Sq to Bryant Park, walk to Times Sq",
+              "profile_fallback_endpoint_count": 2,
+              "profile_supported_endpoint_count": 0,
+              "reason_codes": [],
+              "rejected": [
+                {
+                  "leg_index": 0,
+                  "reason": "EXPIRED_BASELINE_FORECAST",
+                  "trip_id": "MTA:bdfm:20261029:F:066200_F..S54R:11%3A02%3A00"
+                },
+                {
+                  "leg_index": 0,
+                  "reason": "DEPARTS_BEFORE_PLATFORM_READY",
+                  "trip_id": "MTA:bdfm:20261029:F:066850_F..S54R:11%3A08%3A30"
+                }
+              ],
+              "selected_legs": [
+                {
+                  "alighting_stop_id": "D16S",
+                  "arrival_at": 1793289019.0,
+                  "baseline_arrival_at": 1793289019.0,
+                  "baseline_departure_at": 1793288509.0,
+                  "boarding_stop_id": "F09S",
+                  "boarding_time_source": "DEPARTURE",
+                  "catchable": null,
+                  "corrections": {
+                    "arrival": {
+                      "correction_seconds": 0.0,
+                      "event_count": 0,
+                      "incident_count": 0,
+                      "incident_supported": false,
+                      "level": "MTA",
+                      "reason": "UNMODIFIED_MTA",
+                      "statistics": null,
+                      "supported": false
+                    },
+                    "departure": {
+                      "correction_seconds": 0.0,
+                      "event_count": 0,
+                      "incident_count": 0,
+                      "incident_supported": false,
+                      "level": "MTA",
+                      "reason": "UNMODIFIED_MTA",
+                      "statistics": null,
+                      "supported": false
+                    }
+                  },
+                  "departure_at": 1793288509.0,
+                  "direction_id": null,
+                  "feed_id": "bdfm",
+                  "from_stop_id": "F09S",
+                  "incident_context": {
+                    "age_seconds": 2455696.453999996,
+                    "alerts": [
+                      {
+                        "active_periods": [
+                          {
+                            "end": 1808839746,
+                            "start": 1776333600
+                          }
+                        ],
+                        "age_seconds": 2455696.453999996,
+                        "captured_at": 1793287747.726,
+                        "cause": "MAINTENANCE",
+                        "classification_rule": "PLANNED_NOTICE",
+                        "description": "What's happening?\nWe're replacing escalators",
+                        "effect": null,
+                        "first_observed_at": 1790832103.546,
+                        "header": "Enter 5 Av/53 St [E][F] Station at 5 Av only\nMadison Av entrance will be exit only",
+                        "id": "lmm:planned_work:33366",
+                        "incident_id": "lmm:planned_work:33366",
+                        "informed_entities": [
+                          {
+                            "agency_id": "MTASBWY",
+                            "direction_id": null,
+                            "extensions": {},
+                            "route_id": "E",
+                            "stop_id": "F12",
+                            "trip": null
+                          },
+                          {
+                            "agency_id": "MTASBWY",
+                            "direction_id": null,
+                            "extensions": {},
+                            "route_id": "F",
+                            "stop_id": "F12",
+                            "trip": null
+                          }
+                        ],
+                        "no_service": false,
+                        "no_service_route_ids": [],
+                        "no_service_scope": null,
+                        "recovery": false,
+                        "scope": "STOP",
+                        "source_cause": null,
+                        "state": "PLANNED",
+                        "version_id": "10e7c850ab806bfd415e5921f4486308b9aea7da9df5a81c881fa2e98dd66e7e"
+                      }
+                    ],
+                    "ambiguous_scope": false,
+                    "applicable": true,
+                    "captured_at": 1793287747.726,
+                    "cause": "MAINTENANCE",
+                    "evidence_status": "FRESH",
+                    "first_observed_at": 1790832103.546,
+                    "incident_ids": [
+                      "lmm:planned_work:33366"
+                    ],
+                    "possible_alerts": [],
+                    "reason": "ASOF_APPLICABLE_NOTICE",
+                    "receipt_age_seconds": 52.2739999294281,
+                    "scope_ambiguous": false,
+                    "severe_incident_ids": [],
+                    "state": "PLANNED"
+                  },
+                  "leg_index": 0,
+                  "nyct_direction": "SOUTH",
+                  "platform_direction": "S",
+                  "platform_ready_at": 1793288100.0,
+                  "raw_trip_id": "067500_F..S78X002",
+                  "reason_codes": [],
+                  "riding_seconds": 510.0,
+                  "route_id": "F",
+                  "segment_station_ids": [
+                    "D15",
+                    "D15S",
+                    "D16",
+                    "D16S",
+                    "F09",
+                    "F09S",
+                    "F11",
+                    "F11S",
+                    "F12",
+                    "F12S"
+                  ],
+                  "segment_stop_ids": [
+                    "F09S",
+                    "F11S",
+                    "F12S",
+                    "D15S",
+                    "D16S"
+                  ],
+                  "service_date": "20261029",
+                  "start_time": "11:15:02",
+                  "to_stop_id": "D16S",
+                  "trip_id": "MTA:bdfm:20261029:F:067500_F..S78X002:11%3A15%3A02",
+                  "waiting_seconds": 409.0
+                }
+              ],
+              "severe_incident_ids": [],
+              "status": "ESTIMATED",
+              "timing_eligible": true,
+              "total_duration_seconds": 1639.0,
+              "transfer_walk_seconds": []
+            }
+          ],
+          "schema_version": "severe-comparison-v1"
+        },
+        "reference_route_id": "7_times_square",
+        "status": "ELIGIBLE",
+        "winner_lead_seconds": 190.0
+      },
+      "decision_at": 1793288400.0,
+      "duration_deterioration_seconds": -276.0,
+      "id": "same-run-5e63d993aa16a76172c7-1793287800-1793288400",
+      "leg_forecast_revisions": [
+        {
+          "arrival_shift_seconds": 324.0,
+          "baseline_arrival_at": 1793288931.0,
+          "baseline_departure_at": 1793288291.0,
+          "baseline_normalized_trip_id": "MTA:numbered:20261029:7:066600_7..S:",
+          "current_arrival_at": 1793289255.0,
+          "current_departure_at": 1793288615.0,
+          "current_normalized_trip_id": "MTA:numbered:20261029:7:066600_7..S:",
+          "departure_shift_seconds": 324.0,
+          "from_stop_id": "719S",
+          "to_stop_id": "725S"
+        }
+      ],
+      "local_time": "2026-10-29T11:40:00-04:00",
+      "physical_sequence": [
+        [
+          "MTA_EVENT:numbered:20261029:7:066600_7..S",
+          "719S",
+          "725S"
+        ]
+      ],
+      "planning_interval_seconds": 600.0,
+      "reference_route_id": "7_times_square"
+    }
+  ]
+}

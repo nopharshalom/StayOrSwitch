@@ -1,0 +1,2536 @@
+{
+  "anchor_counts": {
+    "ELIGIBLE": 99,
+    "UNAVAILABLE": 46
+  },
+  "candidate_count": 31,
+  "candidate_incidents": 11,
+  "cases": [
+    {
+      "anchor_time": "2026-10-25T02:27:31-04:00",
+      "anchor_winner_lead_seconds": 1015.0,
+      "case_id": "lmm-alert-273391-1792909952",
+      "decision_at": 1792909952.704,
+      "duration_deterioration_seconds": 925.2960000038147,
+      "incident_ids": [
+        "lmm:alert:273391"
+      ],
+      "local_time": "2026-10-25T02:32:32.704000-04:00",
+      "notices": [
+        {
+          "active_periods": [
+            {
+              "end": 1792911120,
+              "start": 1792909951
+            }
+          ],
+          "age_seconds": 0.0,
+          "captured_at": 1792909952.704,
+          "cause": "UNKNOWN",
+          "classification_rule": "EXPLICIT_SERVICE_IMPACT",
+          "description": null,
+          "effect": null,
+          "first_observed_at": 1792909952.704,
+          "header": "Downtown [4][6] trains are running with delays after a work train proceeded through Manhattan.",
+          "id": "lmm:alert:273391:26",
+          "incident_id": "lmm:alert:273391",
+          "informed_entities": [
+            {
+              "agency_id": "MTASBWY",
+              "direction_id": null,
+              "extensions": {},
+              "route_id": "4",
+              "stop_id": null,
+              "trip": null
+            },
+            {
+              "agency_id": "MTASBWY",
+              "direction_id": null,
+              "extensions": {},
+              "route_id": "6",
+              "stop_id": null,
+              "trip": null
+            }
+          ],
+          "no_service": false,
+          "no_service_route_ids": [],
+          "no_service_scope": null,
+          "recovery": false,
+          "scope": "ROUTE",
+          "source_cause": null,
+          "state": "DISRUPTION",
+          "version_id": "8a9240e9ccc25167b70487a477aee1055dcef35414078d335506521b6b825899"
+        }
+      ],
+      "reference_route_id": "lexington_direct",
+      "selected_legs": [
+        {
+          "from_stop_id": "631S",
+          "platform_direction": "S",
+          "route_id": "4",
+          "segment_stop_ids": [
+            "631S",
+            "632S",
+            "633S",
+            "634S",
+            "635S",
+            "636S",
+            "637S",
+            "638S",
+            "639S",
+            "640S",
+            "418S",
+            "419S",
+            "420S",
+            "423S"
+          ],
+          "to_stop_id": "423S"
+        }
+      ],
+      "status": "PENDING"
+    },
+    {
+      "anchor_time": "2026-10-25T02:27:31-04:00",
+      "anchor_winner_lead_seconds": 1015.0,
+      "case_id": "lmm-alert-273391-1792910252",
+      "decision_at": 1792910252.704,
+      "duration_deterioration_seconds": 615.2960000038147,
+      "incident_ids": [
+        "lmm:alert:273391"
+      ],
+      "local_time": "2026-10-25T02:37:32.704000-04:00",
+      "notices": [
+        {
+          "active_periods": [
+            {
+              "end": 1792911120,
+              "start": 1792909951
+            }
+          ],
+          "age_seconds": 300.0,
+          "captured_at": 1792910012.697,
+          "cause": "UNKNOWN",
+          "classification_rule": "EXPLICIT_SERVICE_IMPACT",
+          "description": null,
+          "effect": null,
+          "first_observed_at": 1792909952.704,
+          "header": "Downtown [4][6] trains are running with delays after a work train proceeded through Manhattan.",
+          "id": "lmm:alert:273391:26",
+          "incident_id": "lmm:alert:273391",
+          "informed_entities": [
+            {
+              "agency_id": "MTASBWY",
+              "direction_id": null,
+              "extensions": {},
+              "route_id": "4",
+              "stop_id": null,
+              "trip": null
+            },
+            {
+              "agency_id": "MTASBWY",
+              "direction_id": null,
+              "extensions": {},
+              "route_id": "6",
+              "stop_id": null,
+              "trip": null
+            }
+          ],
+          "no_service": false,
+          "no_service_route_ids": [],
+          "no_service_scope": null,
+          "recovery": false,
+          "scope": "ROUTE",
+          "source_cause": null,
+          "state": "DISRUPTION",
+          "version_id": "8a9240e9ccc25167b70487a477aee1055dcef35414078d335506521b6b825899"
+        }
+      ],
+      "reference_route_id": "lexington_direct",
+      "selected_legs": [
+        {
+          "from_stop_id": "631S",
+          "platform_direction": "S",
+          "route_id": "4",
+          "segment_stop_ids": [
+            "631S",
+            "632S",
+            "633S",
+            "634S",
+            "635S",
+            "636S",
+            "637S",
+            "638S",
+            "639S",
+            "640S",
+            "418S",
+            "419S",
+            "420S",
+            "423S"
+          ],
+          "to_stop_id": "423S"
+        }
+      ],
+      "status": "PENDING"
+    },
+    {
+      "anchor_time": "2026-10-25T02:27:31-04:00",
+      "anchor_winner_lead_seconds": 1015.0,
+      "case_id": "lmm-alert-273391-1792910552",
+      "decision_at": 1792910552.704,
+      "duration_deterioration_seconds": 312.2960000038147,
+      "incident_ids": [
+        "lmm:alert:273391"
+      ],
+      "local_time": "2026-10-25T02:42:32.704000-04:00",
+      "notices": [
+        {
+          "active_periods": [
+            {
+              "end": 1792911120,
+              "start": 1792909951
+            }
+          ],
+          "age_seconds": 600.0,
+          "captured_at": 1792910012.697,
+          "cause": "UNKNOWN",
+          "classification_rule": "EXPLICIT_SERVICE_IMPACT",
+          "description": null,
+          "effect": null,
+          "first_observed_at": 1792909952.704,
+          "header": "Downtown [4][6] trains are running with delays after a work train proceeded through Manhattan.",
+          "id": "lmm:alert:273391:26",
+          "incident_id": "lmm:alert:273391",
+          "informed_entities": [
+            {
+              "agency_id": "MTASBWY",
+              "direction_id": null,
+              "extensions": {},
+              "route_id": "4",
+              "stop_id": null,
+              "trip": null
+            },
+            {
+              "agency_id": "MTASBWY",
+              "direction_id": null,
+              "extensions": {},
+              "route_id": "6",
+              "stop_id": null,
+              "trip": null
+            }
+          ],
+          "no_service": false,
+          "no_service_route_ids": [],
+          "no_service_scope": null,
+          "recovery": false,
+          "scope": "ROUTE",
+          "source_cause": null,
+          "state": "DISRUPTION",
+          "version_id": "8a9240e9ccc25167b70487a477aee1055dcef35414078d335506521b6b825899"
+        }
+      ],
+      "reference_route_id": "lexington_direct",
+      "selected_legs": [
+        {
+          "from_stop_id": "631S",
+          "platform_direction": "S",
+          "route_id": "4",
+          "segment_stop_ids": [
+            "631S",
+            "632S",
+            "633S",
+            "634S",
+            "635S",
+            "636S",
+            "637S",
+            "638S",
+            "639S",
+            "640S",
+            "418S",
+            "419S",
+            "420S",
+            "423S"
+          ],
+          "to_stop_id": "423S"
+        }
+      ],
+      "status": "PENDING"
+    },
+    {
+      "anchor_time": "2026-10-26T03:14:59-04:00",
+      "anchor_winner_lead_seconds": 955.0,
+      "case_id": "lmm-alert-273480-1792998960",
+      "decision_at": 1792998960.539,
+      "duration_deterioration_seconds": 1063.4609999656677,
+      "incident_ids": [
+        "lmm:alert:273480"
+      ],
+      "local_time": "2026-10-26T03:16:00.539000-04:00",
+      "notices": [
+        {
+          "active_periods": [
+            {
+              "end": null,
+              "start": 1792998959
+            }
+          ],
+          "age_seconds": 0.0,
+          "captured_at": 1792998960.539,
+          "cause": "UNKNOWN",
+          "classification_rule": "EXPLICIT_SERVICE_IMPACT",
+          "description": null,
+          "effect": null,
+          "first_observed_at": 1792998960.539,
+          "header": "[4]  trains are delayed in both directions while we investigate why a train's brakes activated near Bowling Green.",
+          "id": "lmm:alert:273480:26",
+          "incident_id": "lmm:alert:273480",
+          "informed_entities": [
+            {
+              "agency_id": "MTASBWY",
+              "direction_id": null,
+              "extensions": {},
+              "route_id": "4",
+              "stop_id": null,
+              "trip": null
+            }
+          ],
+          "no_service": false,
+          "no_service_route_ids": [],
+          "no_service_scope": null,
+          "recovery": false,
+          "scope": "ROUTE",
+          "source_cause": null,
+          "state": "DISRUPTION",
+          "version_id": "38bbaf524d458e89f303da2f90291ddec9198778568dbf04a91227189de59a87"
+        }
+      ],
+      "reference_route_id": "lexington_direct",
+      "selected_legs": [
+        {
+          "from_stop_id": "631S",
+          "platform_direction": "S",
+          "route_id": "4",
+          "segment_stop_ids": [
+            "631S",
+            "632S",
+            "633S",
+            "634S",
+            "635S",
+            "636S",
+            "637S",
+            "638S",
+            "639S",
+            "640S",
+            "418S",
+            "419S",
+            "420S",
+            "423S"
+          ],
+          "to_stop_id": "423S"
+        }
+      ],
+      "status": "PENDING"
+    },
+    {
+      "anchor_time": "2026-10-26T03:14:59-04:00",
+      "anchor_winner_lead_seconds": 955.0,
+      "case_id": "lmm-alert-273480-1792999260",
+      "decision_at": 1792999260.539,
+      "duration_deterioration_seconds": 710.4609999656677,
+      "incident_ids": [
+        "lmm:alert:273480"
+      ],
+      "local_time": "2026-10-26T03:21:00.539000-04:00",
+      "notices": [
+        {
+          "active_periods": [
+            {
+              "end": null,
+              "start": 1792998959
+            }
+          ],
+          "age_seconds": 300.0,
+          "captured_at": 1792999230.536,
+          "cause": "UNKNOWN",
+          "classification_rule": "EXPLICIT_SERVICE_IMPACT",
+          "description": null,
+          "effect": null,
+          "first_observed_at": 1792998960.539,
+          "header": "[4]  trains are delayed in both directions while we investigate why a train's brakes activated near Bowling Green.",
+          "id": "lmm:alert:273480:26",
+          "incident_id": "lmm:alert:273480",
+          "informed_entities": [
+            {
+              "agency_id": "MTASBWY",
+              "direction_id": null,
+              "extensions": {},
+              "route_id": "4",
+              "stop_id": null,
+              "trip": null
+            }
+          ],
+          "no_service": false,
+          "no_service_route_ids": [],
+          "no_service_scope": null,
+          "recovery": false,
+          "scope": "ROUTE",
+          "source_cause": null,
+          "state": "DISRUPTION",
+          "version_id": "38bbaf524d458e89f303da2f90291ddec9198778568dbf04a91227189de59a87"
+        }
+      ],
+      "reference_route_id": "lexington_direct",
+      "selected_legs": [
+        {
+          "from_stop_id": "631S",
+          "platform_direction": "S",
+          "route_id": "4",
+          "segment_stop_ids": [
+            "631S",
+            "632S",
+            "633S",
+            "634S",
+            "635S",
+            "636S",
+            "637S",
+            "638S",
+            "639S",
+            "640S",
+            "418S",
+            "419S",
+            "420S",
+            "423S"
+          ],
+          "to_stop_id": "423S"
+        }
+      ],
+      "status": "PENDING"
+    },
+    {
+      "anchor_time": "2026-10-26T03:14:59-04:00",
+      "anchor_winner_lead_seconds": 955.0,
+      "case_id": "lmm-alert-273480-1792999432",
+      "decision_at": 1792999432.702,
+      "duration_deterioration_seconds": 537.2980000972748,
+      "incident_ids": [
+        "lmm:alert:273480"
+      ],
+      "local_time": "2026-10-26T03:23:52.702000-04:00",
+      "notices": [
+        {
+          "active_periods": [
+            {
+              "end": 1793000700,
+              "start": 1792998959
+            }
+          ],
+          "age_seconds": 472.16299986839294,
+          "captured_at": 1792999432.702,
+          "cause": "UNKNOWN",
+          "classification_rule": "EXPLICIT_SERVICE_IMPACT",
+          "description": null,
+          "effect": null,
+          "first_observed_at": 1792998960.539,
+          "header": "[4]  trains are running with delays in both directions after we moved a train that had its brakes activated near Bowling Green.",
+          "id": "lmm:alert:273480:26",
+          "incident_id": "lmm:alert:273480",
+          "informed_entities": [
+            {
+              "agency_id": "MTASBWY",
+              "direction_id": null,
+              "extensions": {},
+              "route_id": "4",
+              "stop_id": null,
+              "trip": null
+            }
+          ],
+          "no_service": false,
+          "no_service_route_ids": [],
+          "no_service_scope": null,
+          "recovery": false,
+          "scope": "ROUTE",
+          "source_cause": null,
+          "state": "DISRUPTION",
+          "version_id": "fd840d20165c92e6ce7d7c53769b9b6ecc4dc762d885a7ecdda72361f17bc971"
+        }
+      ],
+      "reference_route_id": "lexington_direct",
+      "selected_legs": [
+        {
+          "from_stop_id": "631S",
+          "platform_direction": "S",
+          "route_id": "4",
+          "segment_stop_ids": [
+            "631S",
+            "632S",
+            "633S",
+            "634S",
+            "635S",
+            "636S",
+            "637S",
+            "638S",
+            "639S",
+            "640S",
+            "418S",
+            "419S",
+            "420S",
+            "423S"
+          ],
+          "to_stop_id": "423S"
+        }
+      ],
+      "status": "PENDING"
+    },
+    {
+      "anchor_time": "2026-10-26T03:14:59-04:00",
+      "anchor_winner_lead_seconds": 955.0,
+      "case_id": "lmm-alert-273480-1792999560",
+      "decision_at": 1792999560.539,
+      "duration_deterioration_seconds": 434.4609999656677,
+      "incident_ids": [
+        "lmm:alert:273480"
+      ],
+      "local_time": "2026-10-26T03:26:00.539000-04:00",
+      "notices": [
+        {
+          "active_periods": [
+            {
+              "end": 1793000700,
+              "start": 1792998959
+            }
+          ],
+          "age_seconds": 600.0,
+          "captured_at": 1792999432.702,
+          "cause": "UNKNOWN",
+          "classification_rule": "EXPLICIT_SERVICE_IMPACT",
+          "description": null,
+          "effect": null,
+          "first_observed_at": 1792998960.539,
+          "header": "[4]  trains are running with delays in both directions after we moved a train that had its brakes activated near Bowling Green.",
+          "id": "lmm:alert:273480:26",
+          "incident_id": "lmm:alert:273480",
+          "informed_entities": [
+            {
+              "agency_id": "MTASBWY",
+              "direction_id": null,
+              "extensions": {},
+              "route_id": "4",
+              "stop_id": null,
+              "trip": null
+            }
+          ],
+          "no_service": false,
+          "no_service_route_ids": [],
+          "no_service_scope": null,
+          "recovery": false,
+          "scope": "ROUTE",
+          "source_cause": null,
+          "state": "DISRUPTION",
+          "version_id": "fd840d20165c92e6ce7d7c53769b9b6ecc4dc762d885a7ecdda72361f17bc971"
+        }
+      ],
+      "reference_route_id": "lexington_direct",
+      "selected_legs": [
+        {
+          "from_stop_id": "631S",
+          "platform_direction": "S",
+          "route_id": "4",
+          "segment_stop_ids": [
+            "631S",
+            "632S",
+            "633S",
+            "634S",
+            "635S",
+            "636S",
+            "637S",
+            "638S",
+            "639S",
+            "640S",
+            "418S",
+            "419S",
+            "420S",
+            "423S"
+          ],
+          "to_stop_id": "423S"
+        }
+      ],
+      "status": "PENDING"
+    },
+    {
+      "anchor_time": "2026-10-26T03:14:59-04:00",
+      "anchor_winner_lead_seconds": 955.0,
+      "case_id": "lmm-alert-273480-1793000160",
+      "decision_at": 1793000160.539,
+      "duration_deterioration_seconds": 1063.4609999656677,
+      "incident_ids": [
+        "lmm:alert:273480"
+      ],
+      "local_time": "2026-10-26T03:36:00.539000-04:00",
+      "notices": [
+        {
+          "active_periods": [
+            {
+              "end": 1793000700,
+              "start": 1792998959
+            }
+          ],
+          "age_seconds": 1200.0,
+          "captured_at": 1792999432.702,
+          "cause": "UNKNOWN",
+          "classification_rule": "EXPLICIT_SERVICE_IMPACT",
+          "description": null,
+          "effect": null,
+          "first_observed_at": 1792998960.539,
+          "header": "[4]  trains are running with delays in both directions after we moved a train that had its brakes activated near Bowling Green.",
+          "id": "lmm:alert:273480:26",
+          "incident_id": "lmm:alert:273480",
+          "informed_entities": [
+            {
+              "agency_id": "MTASBWY",
+              "direction_id": null,
+              "extensions": {},
+              "route_id": "4",
+              "stop_id": null,
+              "trip": null
+            }
+          ],
+          "no_service": false,
+          "no_service_route_ids": [],
+          "no_service_scope": null,
+          "recovery": false,
+          "scope": "ROUTE",
+          "source_cause": null,
+          "state": "DISRUPTION",
+          "version_id": "fd840d20165c92e6ce7d7c53769b9b6ecc4dc762d885a7ecdda72361f17bc971"
+        }
+      ],
+      "reference_route_id": "lexington_direct",
+      "selected_legs": [
+        {
+          "from_stop_id": "631S",
+          "platform_direction": "S",
+          "route_id": "4",
+          "segment_stop_ids": [
+            "631S",
+            "632S",
+            "633S",
+            "634S",
+            "635S",
+            "636S",
+            "637S",
+            "638S",
+            "639S",
+            "640S",
+            "418S",
+            "419S",
+            "420S",
+            "423S"
+          ],
+          "to_stop_id": "423S"
+        }
+      ],
+      "status": "PENDING"
+    },
+    {
+      "anchor_time": "2026-10-26T03:14:59-04:00",
+      "anchor_winner_lead_seconds": 955.0,
+      "case_id": "lmm-alert-273480-1793000460",
+      "decision_at": 1793000460.539,
+      "duration_deterioration_seconds": 796.4609999656677,
+      "incident_ids": [
+        "lmm:alert:273480"
+      ],
+      "local_time": "2026-10-26T03:41:00.539000-04:00",
+      "notices": [
+        {
+          "active_periods": [
+            {
+              "end": 1793000700,
+              "start": 1792998959
+            }
+          ],
+          "age_seconds": 1500.0,
+          "captured_at": 1792999432.702,
+          "cause": "UNKNOWN",
+          "classification_rule": "EXPLICIT_SERVICE_IMPACT",
+          "description": null,
+          "effect": null,
+          "first_observed_at": 1792998960.539,
+          "header": "[4]  trains are running with delays in both directions after we moved a train that had its brakes activated near Bowling Green.",
+          "id": "lmm:alert:273480:26",
+          "incident_id": "lmm:alert:273480",
+          "informed_entities": [
+            {
+              "agency_id": "MTASBWY",
+              "direction_id": null,
+              "extensions": {},
+              "route_id": "4",
+              "stop_id": null,
+              "trip": null
+            }
+          ],
+          "no_service": false,
+          "no_service_route_ids": [],
+          "no_service_scope": null,
+          "recovery": false,
+          "scope": "ROUTE",
+          "source_cause": null,
+          "state": "DISRUPTION",
+          "version_id": "fd840d20165c92e6ce7d7c53769b9b6ecc4dc762d885a7ecdda72361f17bc971"
+        }
+      ],
+      "reference_route_id": "lexington_direct",
+      "selected_legs": [
+        {
+          "from_stop_id": "631S",
+          "platform_direction": "S",
+          "route_id": "4",
+          "segment_stop_ids": [
+            "631S",
+            "632S",
+            "633S",
+            "634S",
+            "635S",
+            "636S",
+            "637S",
+            "638S",
+            "639S",
+            "640S",
+            "418S",
+            "419S",
+            "420S",
+            "423S"
+          ],
+          "to_stop_id": "423S"
+        }
+      ],
+      "status": "PENDING"
+    },
+    {
+      "anchor_time": "2026-10-26T20:34:37-04:00",
+      "anchor_winner_lead_seconds": 841.0,
+      "case_id": "lmm-alert-273610-1793061578",
+      "decision_at": 1793061578.618,
+      "duration_deterioration_seconds": 542.3819999694824,
+      "incident_ids": [
+        "lmm:alert:273610"
+      ],
+      "local_time": "2026-10-26T20:39:38.618000-04:00",
+      "notices": [
+        {
+          "active_periods": [
+            {
+              "end": null,
+              "start": 1793061577
+            }
+          ],
+          "age_seconds": 0.0,
+          "captured_at": 1793061578.618,
+          "cause": "MECHANICAL",
+          "classification_rule": "EXPLICIT_SERVICE_IMPACT",
+          "description": null,
+          "effect": null,
+          "first_observed_at": 1793061578.618,
+          "header": "Downtown [4] trains are delayed while we address a mechanical problem on a work train near Kingsbridge Rd.",
+          "id": "lmm:alert:273610:26",
+          "incident_id": "lmm:alert:273610",
+          "informed_entities": [
+            {
+              "agency_id": "MTASBWY",
+              "direction_id": null,
+              "extensions": {},
+              "route_id": "4",
+              "stop_id": null,
+              "trip": null
+            }
+          ],
+          "no_service": false,
+          "no_service_route_ids": [],
+          "no_service_scope": null,
+          "recovery": false,
+          "scope": "ROUTE",
+          "source_cause": null,
+          "state": "DISRUPTION",
+          "version_id": "1e61c33a6378ac709a5d831c92c9d0f576f85c6df974d5f4fb6914d70f9ad41a"
+        }
+      ],
+      "reference_route_id": "lexington_direct",
+      "selected_legs": [
+        {
+          "from_stop_id": "631S",
+          "platform_direction": "S",
+          "route_id": "4",
+          "segment_stop_ids": [
+            "631S",
+            "635S",
+            "640S",
+            "418S",
+            "419S",
+            "420S",
+            "423S"
+          ],
+          "to_stop_id": "423S"
+        }
+      ],
+      "status": "PENDING"
+    },
+    {
+      "anchor_time": "2026-10-26T20:34:37-04:00",
+      "anchor_winner_lead_seconds": 841.0,
+      "case_id": "lmm-alert-273610-1793062478",
+      "decision_at": 1793062478.618,
+      "duration_deterioration_seconds": 432.3819999694824,
+      "incident_ids": [
+        "lmm:alert:273610"
+      ],
+      "local_time": "2026-10-26T20:54:38.618000-04:00",
+      "notices": [
+        {
+          "active_periods": [
+            {
+              "end": 1793062740,
+              "start": 1793061577
+            }
+          ],
+          "age_seconds": 900.0,
+          "captured_at": 1793062297.786,
+          "cause": "MECHANICAL",
+          "classification_rule": "EXPLICIT_SERVICE_IMPACT",
+          "description": null,
+          "effect": null,
+          "first_observed_at": 1793061578.618,
+          "header": "Downtown [4] trains are running with delays after we addressed a mechanical problem on a work train near Kingsbridge Rd.",
+          "id": "lmm:alert:273610:26",
+          "incident_id": "lmm:alert:273610",
+          "informed_entities": [
+            {
+              "agency_id": "MTASBWY",
+              "direction_id": null,
+              "extensions": {},
+              "route_id": "4",
+              "stop_id": null,
+              "trip": null
+            }
+          ],
+          "no_service": false,
+          "no_service_route_ids": [],
+          "no_service_scope": null,
+          "recovery": false,
+          "scope": "ROUTE",
+          "source_cause": null,
+          "state": "DISRUPTION",
+          "version_id": "60c763ac6ad048cd4e9e9f6cef483765205206d44242306688dfb028bfd9c1aa"
+        }
+      ],
+      "reference_route_id": "lexington_direct",
+      "selected_legs": [
+        {
+          "from_stop_id": "631S",
+          "platform_direction": "S",
+          "route_id": "4",
+          "segment_stop_ids": [
+            "631S",
+            "635S",
+            "640S",
+            "418S",
+            "419S",
+            "420S",
+            "423S"
+          ],
+          "to_stop_id": "423S"
+        }
+      ],
+      "status": "PENDING"
+    },
+    {
+      "anchor_time": "2026-10-27T07:59:02-04:00",
+      "anchor_winner_lead_seconds": 699.0,
+      "case_id": "lmm-alert-273660-1793102943",
+      "decision_at": 1793102943.779,
+      "duration_deterioration_seconds": 484.220999956131,
+      "incident_ids": [
+        "lmm:alert:273660"
+      ],
+      "local_time": "2026-10-27T08:09:03.779000-04:00",
+      "notices": [
+        {
+          "active_periods": [
+            {
+              "end": null,
+              "start": 1793102642
+            }
+          ],
+          "age_seconds": 300.0,
+          "captured_at": 1793102773.581,
+          "cause": "UNKNOWN",
+          "classification_rule": "EXPLICIT_SERVICE_IMPACT",
+          "description": "Downtown [5] trains will run via [2] line from 149 St-Hostos to Nevins St.",
+          "effect": null,
+          "first_observed_at": 1793102643.779,
+          "header": "Downtown [4][5] trains are delayed while we investigate why a train's brakes were activated at 138 St-Grand Concourse.",
+          "id": "lmm:alert:273660:26",
+          "incident_id": "lmm:alert:273660",
+          "informed_entities": [
+            {
+              "agency_id": "MTASBWY",
+              "direction_id": null,
+              "extensions": {},
+              "route_id": "4",
+              "stop_id": null,
+              "trip": null
+            },
+            {
+              "agency_id": "MTASBWY",
+              "direction_id": null,
+              "extensions": {},
+              "route_id": "5",
+              "stop_id": null,
+              "trip": null
+            }
+          ],
+          "no_service": false,
+          "no_service_route_ids": [],
+          "no_service_scope": null,
+          "recovery": false,
+          "scope": "ROUTE",
+          "source_cause": null,
+          "state": "DISRUPTION",
+          "version_id": "d7036536c076920e256a977ba7fef62aba55160c80406948fbaf84723a3dcf8f"
+        }
+      ],
+      "reference_route_id": "lexington_direct",
+      "selected_legs": [
+        {
+          "from_stop_id": "631S",
+          "platform_direction": "S",
+          "route_id": "4",
+          "segment_stop_ids": [
+            "631S",
+            "635S",
+            "640S",
+            "418S",
+            "419S",
+            "420S",
+            "423S"
+          ],
+          "to_stop_id": "423S"
+        }
+      ],
+      "status": "PENDING"
+    },
+    {
+      "anchor_time": "2026-10-27T16:03:20-04:00",
+      "anchor_winner_lead_seconds": 668.0,
+      "case_id": "lmm-alert-273712-1793136202",
+      "decision_at": 1793136202.725,
+      "duration_deterioration_seconds": 473.27500009536743,
+      "incident_ids": [
+        "lmm:alert:273712"
+      ],
+      "local_time": "2026-10-27T17:23:22.725000-04:00",
+      "notices": [
+        {
+          "active_periods": [
+            {
+              "end": null,
+              "start": 1793133200
+            }
+          ],
+          "age_seconds": 3000.0,
+          "captured_at": 1793135137.83,
+          "cause": "UNKNOWN",
+          "classification_rule": "EXPLICIT_SERVICE_IMPACT",
+          "description": "What's happening?\nWe're investigating what caused a train's brakes to activate at 14 St-Union Sq.\n\nSome downtown [5] trains are running via the [2] line from 149 St-Hostos to Nevins St.\nThe last stop on some downtown [6] trains is 3 Av/138 St.\nListen to announcements to hear how your train will run.",
+          "effect": null,
+          "first_observed_at": 1793133202.725,
+          "header": "Downtown [4][5] trains are running local from 14 St-Union Sq to Brooklyn Bridge-City Hall.\nExpect downtown [4][5][6] delays while trains share the local track.",
+          "id": "lmm:alert:273712:25",
+          "incident_id": "lmm:alert:273712",
+          "informed_entities": [
+            {
+              "agency_id": "MTASBWY",
+              "direction_id": null,
+              "extensions": {},
+              "route_id": "4",
+              "stop_id": null,
+              "trip": null
+            },
+            {
+              "agency_id": "MTASBWY",
+              "direction_id": null,
+              "extensions": {},
+              "route_id": "5",
+              "stop_id": null,
+              "trip": null
+            }
+          ],
+          "no_service": false,
+          "no_service_route_ids": [],
+          "no_service_scope": null,
+          "recovery": false,
+          "scope": "ROUTE",
+          "source_cause": null,
+          "state": "DISRUPTION",
+          "version_id": "93985f9cf3c79b7966b2aa9c002363e0aae92e94dad8a37c6932909b53ae2be7"
+        }
+      ],
+      "reference_route_id": "lexington_direct",
+      "selected_legs": [
+        {
+          "from_stop_id": "631S",
+          "platform_direction": "S",
+          "route_id": "4",
+          "segment_stop_ids": [
+            "631S",
+            "635S",
+            "640S",
+            "418S",
+            "419S",
+            "420S",
+            "423S"
+          ],
+          "to_stop_id": "423S"
+        }
+      ],
+      "status": "PENDING"
+    },
+    {
+      "anchor_time": "2026-10-28T08:26:50-04:00",
+      "anchor_winner_lead_seconds": 17.0,
+      "case_id": "lmm-alert-273822-1793195212",
+      "decision_at": 1793195212.722,
+      "duration_deterioration_seconds": 638.2780001163483,
+      "incident_ids": [
+        "lmm:alert:273822"
+      ],
+      "local_time": "2026-10-28T09:46:52.722000-04:00",
+      "notices": [
+        {
+          "active_periods": [
+            {
+              "end": null,
+              "start": 1793192210
+            }
+          ],
+          "age_seconds": 3000.0,
+          "captured_at": 1793194773.603,
+          "cause": "SIGNAL",
+          "classification_rule": "EXPLICIT_SERVICE_IMPACT",
+          "description": "Some downtown [F] via [G] from Court Sq-23 St to Bergen St.\nSome downtown [M] express from 34 St-Herald Sq to W 4 St-Wash Sq. \nListen to announcements for how your train will run. \nExpect delays on Church Av-bound [G] trains while tracks are shared.",
+          "effect": null,
+          "first_observed_at": 1793192212.722,
+          "header": "Downtown [F][M] trains are running with delays while we address a signal problem near 23 St.",
+          "id": "lmm:alert:273822:26",
+          "incident_id": "lmm:alert:273822",
+          "informed_entities": [
+            {
+              "agency_id": "MTASBWY",
+              "direction_id": null,
+              "extensions": {},
+              "route_id": "F",
+              "stop_id": null,
+              "trip": null
+            },
+            {
+              "agency_id": "MTASBWY",
+              "direction_id": null,
+              "extensions": {},
+              "route_id": "M",
+              "stop_id": null,
+              "trip": null
+            }
+          ],
+          "no_service": false,
+          "no_service_route_ids": [],
+          "no_service_scope": null,
+          "recovery": false,
+          "scope": "ROUTE",
+          "source_cause": null,
+          "state": "DISRUPTION",
+          "version_id": "029af2f90aaeac080284edf21bbe8a922a262657c51dc678cb41011cc5b459c1"
+        }
+      ],
+      "reference_route_id": "walk_f",
+      "selected_legs": [
+        {
+          "from_stop_id": "D16S",
+          "platform_direction": "S",
+          "route_id": "F",
+          "segment_stop_ids": [
+            "D16S",
+            "D17S",
+            "D18S",
+            "D19S",
+            "D20S",
+            "D21S",
+            "F14S",
+            "F15S",
+            "F16S",
+            "F18S",
+            "A41S"
+          ],
+          "to_stop_id": "A41S"
+        }
+      ],
+      "status": "PENDING"
+    },
+    {
+      "anchor_time": "2026-10-28T08:26:50-04:00",
+      "anchor_winner_lead_seconds": 17.0,
+      "case_id": "lmm-alert-273822-1793195512",
+      "decision_at": 1793195512.722,
+      "duration_deterioration_seconds": 408.27800011634827,
+      "incident_ids": [
+        "lmm:alert:273822"
+      ],
+      "local_time": "2026-10-28T09:51:52.722000-04:00",
+      "notices": [
+        {
+          "active_periods": [
+            {
+              "end": null,
+              "start": 1793192210
+            }
+          ],
+          "age_seconds": 3300.0,
+          "captured_at": 1793194773.603,
+          "cause": "SIGNAL",
+          "classification_rule": "EXPLICIT_SERVICE_IMPACT",
+          "description": "Some downtown [F] via [G] from Court Sq-23 St to Bergen St.\nSome downtown [M] express from 34 St-Herald Sq to W 4 St-Wash Sq. \nListen to announcements for how your train will run. \nExpect delays on Church Av-bound [G] trains while tracks are shared.",
+          "effect": null,
+          "first_observed_at": 1793192212.722,
+          "header": "Downtown [F][M] trains are running with delays while we address a signal problem near 23 St.",
+          "id": "lmm:alert:273822:26",
+          "incident_id": "lmm:alert:273822",
+          "informed_entities": [
+            {
+              "agency_id": "MTASBWY",
+              "direction_id": null,
+              "extensions": {},
+              "route_id": "F",
+              "stop_id": null,
+              "trip": null
+            },
+            {
+              "agency_id": "MTASBWY",
+              "direction_id": null,
+              "extensions": {},
+              "route_id": "M",
+              "stop_id": null,
+              "trip": null
+            }
+          ],
+          "no_service": false,
+          "no_service_route_ids": [],
+          "no_service_scope": null,
+          "recovery": false,
+          "scope": "ROUTE",
+          "source_cause": null,
+          "state": "DISRUPTION",
+          "version_id": "029af2f90aaeac080284edf21bbe8a922a262657c51dc678cb41011cc5b459c1"
+        }
+      ],
+      "reference_route_id": "walk_f",
+      "selected_legs": [
+        {
+          "from_stop_id": "D16S",
+          "platform_direction": "S",
+          "route_id": "F",
+          "segment_stop_ids": [
+            "D16S",
+            "D17S",
+            "D18S",
+            "D19S",
+            "D20S",
+            "D21S",
+            "F14S",
+            "F15S",
+            "F16S",
+            "F18S",
+            "A41S"
+          ],
+          "to_stop_id": "A41S"
+        }
+      ],
+      "status": "PENDING"
+    },
+    {
+      "anchor_time": "2026-10-28T08:26:50-04:00",
+      "anchor_winner_lead_seconds": 17.0,
+      "case_id": "lmm-alert-273822-1793196412",
+      "decision_at": 1793196412.722,
+      "duration_deterioration_seconds": 470.27800011634827,
+      "incident_ids": [
+        "lmm:alert:273822"
+      ],
+      "local_time": "2026-10-28T10:06:52.722000-04:00",
+      "notices": [
+        {
+          "active_periods": [
+            {
+              "end": null,
+              "start": 1793192210
+            }
+          ],
+          "age_seconds": 4200.0,
+          "captured_at": 1793196070.556,
+          "cause": "SIGNAL",
+          "classification_rule": "EXPLICIT_SERVICE_IMPACT",
+          "description": "Some downtown [F] via [G] from Court Sq-23 St to Bergen St.\nSome downtown [M] express from 34 St-Herald Sq to W 4 St-Wash Sq. \nListen to announcements for how your train will run. \nExpect delays on Church Av-bound [G] trains while tracks are shared.",
+          "effect": null,
+          "first_observed_at": 1793192212.722,
+          "header": "Downtown [F][M] trains are running with delays while we address a signal problem near 23 St.",
+          "id": "lmm:alert:273822:26",
+          "incident_id": "lmm:alert:273822",
+          "informed_entities": [
+            {
+              "agency_id": "MTASBWY",
+              "direction_id": null,
+              "extensions": {},
+              "route_id": "F",
+              "stop_id": null,
+              "trip": null
+            },
+            {
+              "agency_id": "MTASBWY",
+              "direction_id": null,
+              "extensions": {},
+              "route_id": "M",
+              "stop_id": null,
+              "trip": null
+            }
+          ],
+          "no_service": false,
+          "no_service_route_ids": [],
+          "no_service_scope": null,
+          "recovery": false,
+          "scope": "ROUTE",
+          "source_cause": null,
+          "state": "DISRUPTION",
+          "version_id": "029af2f90aaeac080284edf21bbe8a922a262657c51dc678cb41011cc5b459c1"
+        }
+      ],
+      "reference_route_id": "walk_f",
+      "selected_legs": [
+        {
+          "from_stop_id": "D16S",
+          "platform_direction": "S",
+          "route_id": "F",
+          "segment_stop_ids": [
+            "D16S",
+            "D17S",
+            "D18S",
+            "D19S",
+            "D20S",
+            "D21S",
+            "F14S",
+            "F15S",
+            "F16S",
+            "F18S",
+            "A41S"
+          ],
+          "to_stop_id": "A41S"
+        }
+      ],
+      "status": "PENDING"
+    },
+    {
+      "anchor_time": "2026-10-28T08:26:50-04:00",
+      "anchor_winner_lead_seconds": 17.0,
+      "case_id": "lmm-alert-273822-1793197012",
+      "decision_at": 1793197012.722,
+      "duration_deterioration_seconds": 678.2780001163483,
+      "incident_ids": [
+        "lmm:alert:273822"
+      ],
+      "local_time": "2026-10-28T10:16:52.722000-04:00",
+      "notices": [
+        {
+          "active_periods": [
+            {
+              "end": null,
+              "start": 1793192210
+            }
+          ],
+          "age_seconds": 4800.0,
+          "captured_at": 1793196895.837,
+          "cause": "SIGNAL",
+          "classification_rule": "EXPLICIT_SERVICE_IMPACT",
+          "description": "Some downtown [F] via [G] from Court Sq-23 St to Bergen St.\nSome downtown [M] express from 34 St-Herald Sq to W 4 St-Wash Sq. \nListen to announcements for how your train will run. \nExpect delays on Church Av-bound [G] trains while tracks are shared.",
+          "effect": null,
+          "first_observed_at": 1793192212.722,
+          "header": "Downtown [F][M] trains are running with delays while we address a signal problem near 23 St.",
+          "id": "lmm:alert:273822:26",
+          "incident_id": "lmm:alert:273822",
+          "informed_entities": [
+            {
+              "agency_id": "MTASBWY",
+              "direction_id": null,
+              "extensions": {},
+              "route_id": "F",
+              "stop_id": null,
+              "trip": null
+            },
+            {
+              "agency_id": "MTASBWY",
+              "direction_id": null,
+              "extensions": {},
+              "route_id": "M",
+              "stop_id": null,
+              "trip": null
+            }
+          ],
+          "no_service": false,
+          "no_service_route_ids": [],
+          "no_service_scope": null,
+          "recovery": false,
+          "scope": "ROUTE",
+          "source_cause": null,
+          "state": "DISRUPTION",
+          "version_id": "029af2f90aaeac080284edf21bbe8a922a262657c51dc678cb41011cc5b459c1"
+        }
+      ],
+      "reference_route_id": "walk_f",
+      "selected_legs": [
+        {
+          "from_stop_id": "D16S",
+          "platform_direction": "S",
+          "route_id": "F",
+          "segment_stop_ids": [
+            "D16S",
+            "D17S",
+            "D18S",
+            "D19S",
+            "D20S",
+            "D21S",
+            "F14S",
+            "F15S",
+            "F16S",
+            "F18S",
+            "A41S"
+          ],
+          "to_stop_id": "A41S"
+        }
+      ],
+      "status": "PENDING"
+    },
+    {
+      "anchor_time": "2026-10-28T08:26:50-04:00",
+      "anchor_winner_lead_seconds": 17.0,
+      "case_id": "lmm-alert-273822-1793197243",
+      "decision_at": 1793197243.589,
+      "duration_deterioration_seconds": 483.41100001335144,
+      "incident_ids": [
+        "lmm:alert:273822"
+      ],
+      "local_time": "2026-10-28T10:20:43.589000-04:00",
+      "notices": [
+        {
+          "active_periods": [
+            {
+              "end": 1793199600,
+              "start": 1793192210
+            }
+          ],
+          "age_seconds": 5030.867000102997,
+          "captured_at": 1793197243.589,
+          "cause": "SIGNAL",
+          "classification_rule": "EXPLICIT_SERVICE_IMPACT",
+          "description": null,
+          "effect": null,
+          "first_observed_at": 1793192212.722,
+          "header": "Downtown [F][M] trains are running with delays after we addressed a signal problem near 23 St.\nDowntown [F][M] trains have resumed making their regular stops.",
+          "id": "lmm:alert:273822:26",
+          "incident_id": "lmm:alert:273822",
+          "informed_entities": [
+            {
+              "agency_id": "MTASBWY",
+              "direction_id": null,
+              "extensions": {},
+              "route_id": "F",
+              "stop_id": null,
+              "trip": null
+            },
+            {
+              "agency_id": "MTASBWY",
+              "direction_id": null,
+              "extensions": {},
+              "route_id": "M",
+              "stop_id": null,
+              "trip": null
+            }
+          ],
+          "no_service": false,
+          "no_service_route_ids": [],
+          "no_service_scope": null,
+          "recovery": false,
+          "scope": "ROUTE",
+          "source_cause": null,
+          "state": "DISRUPTION",
+          "version_id": "8eddbfefb601efca5bdc3dc95dd32e3a3e67357371cbca4f8ac4ae816ec8661a"
+        }
+      ],
+      "reference_route_id": "walk_f",
+      "selected_legs": [
+        {
+          "from_stop_id": "D16S",
+          "platform_direction": "S",
+          "route_id": "F",
+          "segment_stop_ids": [
+            "D16S",
+            "D17S",
+            "D18S",
+            "D19S",
+            "D20S",
+            "D21S",
+            "F14S",
+            "F15S",
+            "F16S",
+            "F18S",
+            "A41S"
+          ],
+          "to_stop_id": "A41S"
+        }
+      ],
+      "status": "PENDING"
+    },
+    {
+      "anchor_time": "2026-10-28T08:26:50-04:00",
+      "anchor_winner_lead_seconds": 17.0,
+      "case_id": "lmm-alert-273822-1793197312",
+      "decision_at": 1793197312.722,
+      "duration_deterioration_seconds": 414.27800011634827,
+      "incident_ids": [
+        "lmm:alert:273822"
+      ],
+      "local_time": "2026-10-28T10:21:52.722000-04:00",
+      "notices": [
+        {
+          "active_periods": [
+            {
+              "end": 1793199600,
+              "start": 1793192210
+            }
+          ],
+          "age_seconds": 5100.0,
+          "captured_at": 1793197243.589,
+          "cause": "SIGNAL",
+          "classification_rule": "EXPLICIT_SERVICE_IMPACT",
+          "description": null,
+          "effect": null,
+          "first_observed_at": 1793192212.722,
+          "header": "Downtown [F][M] trains are running with delays after we addressed a signal problem near 23 St.\nDowntown [F][M] trains have resumed making their regular stops.",
+          "id": "lmm:alert:273822:26",
+          "incident_id": "lmm:alert:273822",
+          "informed_entities": [
+            {
+              "agency_id": "MTASBWY",
+              "direction_id": null,
+              "extensions": {},
+              "route_id": "F",
+              "stop_id": null,
+              "trip": null
+            },
+            {
+              "agency_id": "MTASBWY",
+              "direction_id": null,
+              "extensions": {},
+              "route_id": "M",
+              "stop_id": null,
+              "trip": null
+            }
+          ],
+          "no_service": false,
+          "no_service_route_ids": [],
+          "no_service_scope": null,
+          "recovery": false,
+          "scope": "ROUTE",
+          "source_cause": null,
+          "state": "DISRUPTION",
+          "version_id": "8eddbfefb601efca5bdc3dc95dd32e3a3e67357371cbca4f8ac4ae816ec8661a"
+        }
+      ],
+      "reference_route_id": "walk_f",
+      "selected_legs": [
+        {
+          "from_stop_id": "D16S",
+          "platform_direction": "S",
+          "route_id": "F",
+          "segment_stop_ids": [
+            "D16S",
+            "D17S",
+            "D18S",
+            "D19S",
+            "D20S",
+            "D21S",
+            "F14S",
+            "F15S",
+            "F16S",
+            "F18S",
+            "A41S"
+          ],
+          "to_stop_id": "A41S"
+        }
+      ],
+      "status": "PENDING"
+    },
+    {
+      "anchor_time": "2026-10-28T08:26:50-04:00",
+      "anchor_winner_lead_seconds": 17.0,
+      "case_id": "lmm-alert-273822-1793198212",
+      "decision_at": 1793198212.722,
+      "duration_deterioration_seconds": 303.27800011634827,
+      "incident_ids": [
+        "lmm:alert:273822"
+      ],
+      "local_time": "2026-10-28T10:36:52.722000-04:00",
+      "notices": [
+        {
+          "active_periods": [
+            {
+              "end": 1793199600,
+              "start": 1793192210
+            }
+          ],
+          "age_seconds": 6000.0,
+          "captured_at": 1793198080.571,
+          "cause": "SIGNAL",
+          "classification_rule": "EXPLICIT_SERVICE_IMPACT",
+          "description": null,
+          "effect": null,
+          "first_observed_at": 1793192212.722,
+          "header": "Downtown [F][M] trains are running with delays after we addressed a signal problem near 23 St.\nDowntown [F][M] trains have resumed making their regular stops.",
+          "id": "lmm:alert:273822:26",
+          "incident_id": "lmm:alert:273822",
+          "informed_entities": [
+            {
+              "agency_id": "MTASBWY",
+              "direction_id": null,
+              "extensions": {},
+              "route_id": "F",
+              "stop_id": null,
+              "trip": null
+            },
+            {
+              "agency_id": "MTASBWY",
+              "direction_id": null,
+              "extensions": {},
+              "route_id": "M",
+              "stop_id": null,
+              "trip": null
+            }
+          ],
+          "no_service": false,
+          "no_service_route_ids": [],
+          "no_service_scope": null,
+          "recovery": false,
+          "scope": "ROUTE",
+          "source_cause": null,
+          "state": "DISRUPTION",
+          "version_id": "8eddbfefb601efca5bdc3dc95dd32e3a3e67357371cbca4f8ac4ae816ec8661a"
+        }
+      ],
+      "reference_route_id": "walk_f",
+      "selected_legs": [
+        {
+          "from_stop_id": "D16S",
+          "platform_direction": "S",
+          "route_id": "F",
+          "segment_stop_ids": [
+            "D16S",
+            "D17S",
+            "D18S",
+            "D19S",
+            "D20S",
+            "D21S",
+            "F14S",
+            "F15S",
+            "F16S",
+            "F18S",
+            "A41S"
+          ],
+          "to_stop_id": "A41S"
+        }
+      ],
+      "status": "PENDING"
+    },
+    {
+      "anchor_time": "2026-10-28T15:58:53-04:00",
+      "anchor_winner_lead_seconds": 735.0,
+      "case_id": "lmm-alert-273870-1793220595",
+      "decision_at": 1793220595.639,
+      "duration_deterioration_seconds": 305.36100006103516,
+      "incident_ids": [
+        "lmm:alert:273870"
+      ],
+      "local_time": "2026-10-28T16:49:55.639000-04:00",
+      "notices": [
+        {
+          "active_periods": [
+            {
+              "end": null,
+              "start": 1793217593
+            }
+          ],
+          "age_seconds": 3000.0,
+          "captured_at": 1793220407.719,
+          "cause": "UNKNOWN",
+          "classification_rule": "EXPLICIT_SERVICE_IMPACT",
+          "description": "What's Happening? \nWe're performing urgent track maintenance near 3 Av/149 St.\n\nAdditional service changes:\nSome uptown [2] trains are rerouted via the [1] line from 96 St to 137 St-City College or 145 St, where they will end.\nSome uptown [2] trains are rerouted via the [3] line from 135 St to Harlem-148 St, where they will end.\nSome uptown [2] trains will end at 34 St-Penn Station.\nSome uptown [5] trains will end at 149 St-Hostos on the [4] line.\n\nListen to announcements to hear how your train will run.\n\nTravel Alternatives:\nFor service in the Bronx, consider [4][6][B][D] trains or nearby Bx15 and Bx19 buses.",
+          "effect": null,
+          "first_observed_at": 1793217595.639,
+          "header": "Wakefield-241 St-bound [2] and Eastchester-Dyre Av-bound [5] trains are delayed.\nDowntown [2][5] trains are running with delays.",
+          "id": "lmm:alert:273870:26",
+          "incident_id": "lmm:alert:273870",
+          "informed_entities": [
+            {
+              "agency_id": "MTASBWY",
+              "direction_id": null,
+              "extensions": {},
+              "route_id": "2",
+              "stop_id": null,
+              "trip": null
+            },
+            {
+              "agency_id": "MTASBWY",
+              "direction_id": null,
+              "extensions": {},
+              "route_id": "5",
+              "stop_id": null,
+              "trip": null
+            }
+          ],
+          "no_service": false,
+          "no_service_route_ids": [],
+          "no_service_scope": null,
+          "recovery": false,
+          "scope": "ROUTE",
+          "source_cause": null,
+          "state": "DISRUPTION",
+          "version_id": "9e94170b859007bb80dcb67078ce9192aa0ca489c65f224abe68b526b7c4bb86"
+        }
+      ],
+      "reference_route_id": "lexington_direct",
+      "selected_legs": [
+        {
+          "from_stop_id": "631S",
+          "platform_direction": "S",
+          "route_id": "5",
+          "segment_stop_ids": [
+            "631S",
+            "635S",
+            "640S",
+            "418S",
+            "419S",
+            "420S",
+            "423S"
+          ],
+          "to_stop_id": "423S"
+        }
+      ],
+      "status": "PENDING"
+    },
+    {
+      "anchor_time": "2026-10-28T17:26:40-04:00",
+      "anchor_winner_lead_seconds": 689.0,
+      "case_id": "lmm-alert-273887-1793228732",
+      "decision_at": 1793228732.748,
+      "duration_deterioration_seconds": 563.2520000934601,
+      "incident_ids": [
+        "lmm:alert:273887"
+      ],
+      "local_time": "2026-10-28T19:05:32.748000-04:00",
+      "notices": [
+        {
+          "active_periods": [
+            {
+              "end": null,
+              "start": 1793223100
+            }
+          ],
+          "age_seconds": 5630.020999908447,
+          "captured_at": 1793228732.748,
+          "cause": "TRACK",
+          "classification_rule": "EXPLICIT_SERVICE_IMPACT",
+          "description": "What's Happened?\n[4][6] shared tracks with rerouted [5] trains while we replaced a broken rail near 3 Av/149 St.\nWe moved a train that had its brakes activated near Bleecker St.",
+          "effect": null,
+          "first_observed_at": 1793223102.727,
+          "header": "[4][6] trains are running with delays in both directions after multiple incidents on the line.",
+          "id": "lmm:alert:273887:26",
+          "incident_id": "lmm:alert:273887",
+          "informed_entities": [
+            {
+              "agency_id": "MTASBWY",
+              "direction_id": null,
+              "extensions": {},
+              "route_id": "4",
+              "stop_id": null,
+              "trip": null
+            },
+            {
+              "agency_id": "MTASBWY",
+              "direction_id": null,
+              "extensions": {},
+              "route_id": "6",
+              "stop_id": null,
+              "trip": null
+            }
+          ],
+          "no_service": false,
+          "no_service_route_ids": [],
+          "no_service_scope": null,
+          "recovery": false,
+          "scope": "ROUTE",
+          "source_cause": null,
+          "state": "DISRUPTION",
+          "version_id": "c852abfa920262579270e36b7a644d4a3a568b05f0a35fc7d1de8c58919a753c"
+        }
+      ],
+      "reference_route_id": "lexington_direct",
+      "selected_legs": [
+        {
+          "from_stop_id": "631S",
+          "platform_direction": "S",
+          "route_id": "4",
+          "segment_stop_ids": [
+            "631S",
+            "635S",
+            "640S",
+            "418S",
+            "419S",
+            "420S",
+            "423S"
+          ],
+          "to_stop_id": "423S"
+        }
+      ],
+      "status": "PENDING"
+    },
+    {
+      "anchor_time": "2026-10-28T17:26:40-04:00",
+      "anchor_winner_lead_seconds": 689.0,
+      "case_id": "lmm-alert-273887-1793228802",
+      "decision_at": 1793228802.727,
+      "duration_deterioration_seconds": 461.27300000190735,
+      "incident_ids": [
+        "lmm:alert:273887"
+      ],
+      "local_time": "2026-10-28T19:06:42.727000-04:00",
+      "notices": [
+        {
+          "active_periods": [
+            {
+              "end": null,
+              "start": 1793223100
+            }
+          ],
+          "age_seconds": 5700.0,
+          "captured_at": 1793228738.591,
+          "cause": "TRACK",
+          "classification_rule": "EXPLICIT_SERVICE_IMPACT",
+          "description": "What's Happened?\n[4][6] shared tracks with rerouted [5] trains while we replaced a broken rail near 3 Av/149 St.\nWe moved a train that had its brakes activated near Bleecker St.",
+          "effect": null,
+          "first_observed_at": 1793223102.727,
+          "header": "[4][6] trains are running with delays in both directions after multiple incidents on the line.",
+          "id": "lmm:alert:273887:26",
+          "incident_id": "lmm:alert:273887",
+          "informed_entities": [
+            {
+              "agency_id": "MTASBWY",
+              "direction_id": null,
+              "extensions": {},
+              "route_id": "4",
+              "stop_id": null,
+              "trip": null
+            },
+            {
+              "agency_id": "MTASBWY",
+              "direction_id": null,
+              "extensions": {},
+              "route_id": "6",
+              "stop_id": null,
+              "trip": null
+            }
+          ],
+          "no_service": false,
+          "no_service_route_ids": [],
+          "no_service_scope": null,
+          "recovery": false,
+          "scope": "ROUTE",
+          "source_cause": null,
+          "state": "DISRUPTION",
+          "version_id": "c852abfa920262579270e36b7a644d4a3a568b05f0a35fc7d1de8c58919a753c"
+        }
+      ],
+      "reference_route_id": "lexington_direct",
+      "selected_legs": [
+        {
+          "from_stop_id": "631S",
+          "platform_direction": "S",
+          "route_id": "4",
+          "segment_stop_ids": [
+            "631S",
+            "635S",
+            "640S",
+            "418S",
+            "419S",
+            "420S",
+            "423S"
+          ],
+          "to_stop_id": "423S"
+        }
+      ],
+      "status": "PENDING"
+    },
+    {
+      "anchor_time": "2026-10-29T15:40:53-04:00",
+      "anchor_winner_lead_seconds": 837.0,
+      "case_id": "lmm-alert-274022-1793305202",
+      "decision_at": 1793305202.813,
+      "duration_deterioration_seconds": 336.1870000362396,
+      "incident_ids": [
+        "lmm:alert:274022"
+      ],
+      "local_time": "2026-10-29T16:20:02.813000-04:00",
+      "notices": [
+        {
+          "active_periods": [
+            {
+              "end": 1793307000,
+              "start": 1793303153
+            }
+          ],
+          "age_seconds": 2047.1659998893738,
+          "captured_at": 1793305202.813,
+          "cause": "MEDICAL",
+          "classification_rule": "EXPLICIT_SERVICE_IMPACT",
+          "description": "Wakefield-241 St-bound [2] and Eastchester-Dyre Av-bound [5] trains have resumed making local stops from 3 Av/149 St to E 180 St.",
+          "effect": null,
+          "first_observed_at": 1793303155.647,
+          "header": "[2][5] trains are running with delays in both directions after we requested EMS assistance for someone in need at Jackson Av.",
+          "id": "lmm:alert:274022:26",
+          "incident_id": "lmm:alert:274022",
+          "informed_entities": [
+            {
+              "agency_id": "MTASBWY",
+              "direction_id": null,
+              "extensions": {},
+              "route_id": "2",
+              "stop_id": null,
+              "trip": null
+            },
+            {
+              "agency_id": "MTASBWY",
+              "direction_id": null,
+              "extensions": {},
+              "route_id": "5",
+              "stop_id": null,
+              "trip": null
+            }
+          ],
+          "no_service": false,
+          "no_service_route_ids": [],
+          "no_service_scope": null,
+          "recovery": false,
+          "scope": "ROUTE",
+          "source_cause": null,
+          "state": "DISRUPTION",
+          "version_id": "75fbd7f11e628296ea35f74acb2eacb55c717e087c78376ea77312e13b1634e9"
+        }
+      ],
+      "reference_route_id": "lexington_direct",
+      "selected_legs": [
+        {
+          "from_stop_id": "631S",
+          "platform_direction": "S",
+          "route_id": "5",
+          "segment_stop_ids": [
+            "631S",
+            "635S",
+            "640S",
+            "418S",
+            "419S",
+            "420S",
+            "423S"
+          ],
+          "to_stop_id": "423S"
+        }
+      ],
+      "status": "PENDING"
+    },
+    {
+      "anchor_time": "2026-10-31T13:16:25-04:00",
+      "anchor_winner_lead_seconds": 867.0,
+      "case_id": "lmm-alert-274347-1793467047",
+      "decision_at": 1793467047.714,
+      "duration_deterioration_seconds": 591.2860000133514,
+      "incident_ids": [
+        "lmm:alert:274347"
+      ],
+      "local_time": "2026-10-31T13:17:27.714000-04:00",
+      "notices": [
+        {
+          "active_periods": [
+            {
+              "end": null,
+              "start": 1793467045
+            }
+          ],
+          "age_seconds": 0.0,
+          "captured_at": 1793467047.714,
+          "cause": "POLICE",
+          "classification_rule": "EXPLICIT_SERVICE_IMPACT",
+          "description": null,
+          "effect": null,
+          "first_observed_at": 1793467047.714,
+          "header": "Downtown [4][5] trains are delayed while NYPD conducts an investigation at 14 St-Union Sq.",
+          "id": "lmm:alert:274347:26",
+          "incident_id": "lmm:alert:274347",
+          "informed_entities": [
+            {
+              "agency_id": "MTASBWY",
+              "direction_id": null,
+              "extensions": {},
+              "route_id": "4",
+              "stop_id": null,
+              "trip": null
+            },
+            {
+              "agency_id": "MTASBWY",
+              "direction_id": null,
+              "extensions": {},
+              "route_id": "5",
+              "stop_id": null,
+              "trip": null
+            }
+          ],
+          "no_service": false,
+          "no_service_route_ids": [],
+          "no_service_scope": null,
+          "recovery": false,
+          "scope": "ROUTE",
+          "source_cause": null,
+          "state": "DISRUPTION",
+          "version_id": "4ea34821cef1434ba6006d667f178fbc9623705a687d74d746c50b8c2e2d4d56"
+        }
+      ],
+      "reference_route_id": "lexington_direct",
+      "selected_legs": [
+        {
+          "from_stop_id": "631S",
+          "platform_direction": "S",
+          "route_id": "4",
+          "segment_stop_ids": [
+            "631S",
+            "635S",
+            "640S",
+            "418S",
+            "419S",
+            "420S",
+            "423S"
+          ],
+          "to_stop_id": "423S"
+        }
+      ],
+      "status": "PENDING"
+    },
+    {
+      "anchor_time": "2026-10-31T13:16:25-04:00",
+      "anchor_winner_lead_seconds": 867.0,
+      "case_id": "lmm-alert-274347-1793467602",
+      "decision_at": 1793467602.716,
+      "duration_deterioration_seconds": 478.28399991989136,
+      "incident_ids": [
+        "lmm:alert:274347"
+      ],
+      "local_time": "2026-10-31T13:26:42.716000-04:00",
+      "notices": [
+        {
+          "active_periods": [
+            {
+              "end": null,
+              "start": 1793467045
+            }
+          ],
+          "age_seconds": 555.0020000934601,
+          "captured_at": 1793467602.716,
+          "cause": "POLICE",
+          "classification_rule": "EXPLICIT_SERVICE_IMPACT",
+          "description": "Downtown [4][5] trains have resumed making express stops from 14 St-Union Sq to Brooklyn Bridge-City Hall.",
+          "effect": null,
+          "first_observed_at": 1793467047.714,
+          "header": "Downtown [4][5] trains are running with delays after  NYPD conducted an investigation at 14 St-Union Sq.",
+          "id": "lmm:alert:274347:26",
+          "incident_id": "lmm:alert:274347",
+          "informed_entities": [
+            {
+              "agency_id": "MTASBWY",
+              "direction_id": null,
+              "extensions": {},
+              "route_id": "4",
+              "stop_id": null,
+              "trip": null
+            },
+            {
+              "agency_id": "MTASBWY",
+              "direction_id": null,
+              "extensions": {},
+              "route_id": "5",
+              "stop_id": null,
+              "trip": null
+            }
+          ],
+          "no_service": false,
+          "no_service_route_ids": [],
+          "no_service_scope": null,
+          "recovery": false,
+          "scope": "ROUTE",
+          "source_cause": null,
+          "state": "DISRUPTION",
+          "version_id": "682adaa25d5ec8a61b985b65f2ad99d03fc06580593c5a4e40229797807668cd"
+        }
+      ],
+      "reference_route_id": "lexington_direct",
+      "selected_legs": [
+        {
+          "from_stop_id": "631S",
+          "platform_direction": "S",
+          "route_id": "4",
+          "segment_stop_ids": [
+            "631S",
+            "635S",
+            "640S",
+            "418S",
+            "419S",
+            "420S",
+            "423S"
+          ],
+          "to_stop_id": "423S"
+        }
+      ],
+      "status": "PENDING"
+    },
+    {
+      "anchor_time": "2026-10-31T13:16:25-04:00",
+      "anchor_winner_lead_seconds": 867.0,
+      "case_id": "lmm-alert-274347-1793467647",
+      "decision_at": 1793467647.714,
+      "duration_deterioration_seconds": 464.28600001335144,
+      "incident_ids": [
+        "lmm:alert:274347"
+      ],
+      "local_time": "2026-10-31T13:27:27.714000-04:00",
+      "notices": [
+        {
+          "active_periods": [
+            {
+              "end": null,
+              "start": 1793467045
+            }
+          ],
+          "age_seconds": 600.0,
+          "captured_at": 1793467602.716,
+          "cause": "POLICE",
+          "classification_rule": "EXPLICIT_SERVICE_IMPACT",
+          "description": "Downtown [4][5] trains have resumed making express stops from 14 St-Union Sq to Brooklyn Bridge-City Hall.",
+          "effect": null,
+          "first_observed_at": 1793467047.714,
+          "header": "Downtown [4][5] trains are running with delays after  NYPD conducted an investigation at 14 St-Union Sq.",
+          "id": "lmm:alert:274347:26",
+          "incident_id": "lmm:alert:274347",
+          "informed_entities": [
+            {
+              "agency_id": "MTASBWY",
+              "direction_id": null,
+              "extensions": {},
+              "route_id": "4",
+              "stop_id": null,
+              "trip": null
+            },
+            {
+              "agency_id": "MTASBWY",
+              "direction_id": null,
+              "extensions": {},
+              "route_id": "5",
+              "stop_id": null,
+              "trip": null
+            }
+          ],
+          "no_service": false,
+          "no_service_route_ids": [],
+          "no_service_scope": null,
+          "recovery": false,
+          "scope": "ROUTE",
+          "source_cause": null,
+          "state": "DISRUPTION",
+          "version_id": "682adaa25d5ec8a61b985b65f2ad99d03fc06580593c5a4e40229797807668cd"
+        }
+      ],
+      "reference_route_id": "lexington_direct",
+      "selected_legs": [
+        {
+          "from_stop_id": "631S",
+          "platform_direction": "S",
+          "route_id": "4",
+          "segment_stop_ids": [
+            "631S",
+            "635S",
+            "640S",
+            "418S",
+            "419S",
+            "420S",
+            "423S"
+          ],
+          "to_stop_id": "423S"
+        }
+      ],
+      "status": "PENDING"
+    },
+    {
+      "anchor_time": "2026-10-31T13:16:25-04:00",
+      "anchor_winner_lead_seconds": 867.0,
+      "case_id": "lmm-alert-274347-1793468547",
+      "decision_at": 1793468547.714,
+      "duration_deterioration_seconds": 575.2860000133514,
+      "incident_ids": [
+        "lmm:alert:274347"
+      ],
+      "local_time": "2026-10-31T13:42:27.714000-04:00",
+      "notices": [
+        {
+          "active_periods": [
+            {
+              "end": 1793469300,
+              "start": 1793467045
+            }
+          ],
+          "age_seconds": 1500.0,
+          "captured_at": 1793468423.586,
+          "cause": "POLICE",
+          "classification_rule": "EXPLICIT_SERVICE_IMPACT",
+          "description": "Downtown [4][5] trains have resumed making express stops from 14 St-Union Sq to Brooklyn Bridge-City Hall.",
+          "effect": null,
+          "first_observed_at": 1793467047.714,
+          "header": "Downtown [4][5] trains are running with delays after  NYPD conducted an investigation at 14 St-Union Sq.",
+          "id": "lmm:alert:274347:26",
+          "incident_id": "lmm:alert:274347",
+          "informed_entities": [
+            {
+              "agency_id": "MTASBWY",
+              "direction_id": null,
+              "extensions": {},
+              "route_id": "4",
+              "stop_id": null,
+              "trip": null
+            },
+            {
+              "agency_id": "MTASBWY",
+              "direction_id": null,
+              "extensions": {},
+              "route_id": "5",
+              "stop_id": null,
+              "trip": null
+            }
+          ],
+          "no_service": false,
+          "no_service_route_ids": [],
+          "no_service_scope": null,
+          "recovery": false,
+          "scope": "ROUTE",
+          "source_cause": null,
+          "state": "DISRUPTION",
+          "version_id": "186c926b79f5800f288a32799f77652fc198ba2db4cdf354521d41f6278351d5"
+        }
+      ],
+      "reference_route_id": "lexington_direct",
+      "selected_legs": [
+        {
+          "from_stop_id": "631S",
+          "platform_direction": "S",
+          "route_id": "4",
+          "segment_stop_ids": [
+            "631S",
+            "635S",
+            "640S",
+            "418S",
+            "419S",
+            "420S",
+            "423S"
+          ],
+          "to_stop_id": "423S"
+        }
+      ],
+      "status": "PENDING"
+    },
+    {
+      "anchor_time": "2026-10-31T20:55:02-04:00",
+      "anchor_winner_lead_seconds": 1269.0,
+      "case_id": "lmm-alert-274395-1793497503",
+      "decision_at": 1793497503.694,
+      "duration_deterioration_seconds": 388.30599999427795,
+      "incident_ids": [
+        "lmm:alert:274395"
+      ],
+      "local_time": "2026-10-31T21:45:03.694000-04:00",
+      "notices": [
+        {
+          "active_periods": [
+            {
+              "end": null,
+              "start": 1793495102
+            }
+          ],
+          "age_seconds": 2400.0,
+          "captured_at": 1793496527.7,
+          "cause": "UNKNOWN",
+          "classification_rule": "EXPLICIT_SERVICE_IMPACT",
+          "description": "]",
+          "effect": null,
+          "first_observed_at": 1793495103.694,
+          "header": "[2][3][4] trains are delayed in both directions while emergency teams respond to a person struck by a train at Bergen St.",
+          "id": "lmm:alert:274395:26",
+          "incident_id": "lmm:alert:274395",
+          "informed_entities": [
+            {
+              "agency_id": "MTASBWY",
+              "direction_id": null,
+              "extensions": {},
+              "route_id": "2",
+              "stop_id": null,
+              "trip": null
+            },
+            {
+              "agency_id": "MTASBWY",
+              "direction_id": null,
+              "extensions": {},
+              "route_id": "3",
+              "stop_id": null,
+              "trip": null
+            },
+            {
+              "agency_id": "MTASBWY",
+              "direction_id": null,
+              "extensions": {},
+              "route_id": "4",
+              "stop_id": null,
+              "trip": null
+            }
+          ],
+          "no_service": false,
+          "no_service_route_ids": [],
+          "no_service_scope": null,
+          "recovery": false,
+          "scope": "ROUTE",
+          "source_cause": null,
+          "state": "DISRUPTION",
+          "version_id": "6dbba164b0635a9870c2ea7bb290a2669e0b5221419a862d0eca7e740cd91ffe"
+        }
+      ],
+      "reference_route_id": "lexington_direct",
+      "selected_legs": [
+        {
+          "from_stop_id": "631S",
+          "platform_direction": "S",
+          "route_id": "4",
+          "segment_stop_ids": [
+            "631S",
+            "635S",
+            "640S",
+            "418S",
+            "419S",
+            "420S",
+            "423S"
+          ],
+          "to_stop_id": "423S"
+        }
+      ],
+      "status": "PENDING"
+    },
+    {
+      "anchor_time": "2026-10-31T20:55:02-04:00",
+      "anchor_winner_lead_seconds": 1269.0,
+      "case_id": "lmm-alert-274395-1793498103",
+      "decision_at": 1793498103.694,
+      "duration_deterioration_seconds": 496.30599999427795,
+      "incident_ids": [
+        "lmm:alert:274395"
+      ],
+      "local_time": "2026-10-31T21:55:03.694000-04:00",
+      "notices": [
+        {
+          "active_periods": [
+            {
+              "end": null,
+              "start": 1793495102
+            }
+          ],
+          "age_seconds": 3000.0,
+          "captured_at": 1793497892.699,
+          "cause": "UNKNOWN",
+          "classification_rule": "EXPLICIT_SERVICE_IMPACT",
+          "description": "Service Changes:\nSome Flatbush Av-bound [2], New Lots Av-bound [3], and Crown Heights-bound [4] trains will end at Atlantic Av-Barclays Ctr, where they will turn back for uptown service.\n\nSome downtown [2][3] trains will end at Chambers St or Rector St on the [1], where they will turn back for uptown service.\n\nSome downtown [4] trains will end at Bowling Green, where they will turn back for uptown service.\n\nListen for crew announcements to hear how your train will run. \n\nWhat's Happening?\nEmergency teams are responding to a person struck by a train at Bergen St.\n\nTravel Alternatives:\nTake nearby [A][C][D][F][N][Q][R] trains for service between Manhattan and Brooklyn.",
+          "effect": null,
+          "first_observed_at": 1793495103.694,
+          "header": "[2][3][4] trains are disrupted in Brooklyn in both directions.\nLimited [2][3][4] service between Manhattan and Brooklyn.\nTake [A][C][D][F][N][Q][R]  trains.",
+          "id": "lmm:alert:274395:26",
+          "incident_id": "lmm:alert:274395",
+          "informed_entities": [
+            {
+              "agency_id": "MTASBWY",
+              "direction_id": null,
+              "extensions": {},
+              "route_id": "2",
+              "stop_id": null,
+              "trip": null
+            },
+            {
+              "agency_id": "MTASBWY",
+              "direction_id": null,
+              "extensions": {},
+              "route_id": "3",
+              "stop_id": null,
+              "trip": null
+            },
+            {
+              "agency_id": "MTASBWY",
+              "direction_id": null,
+              "extensions": {},
+              "route_id": "4",
+              "stop_id": null,
+              "trip": null
+            }
+          ],
+          "no_service": false,
+          "no_service_route_ids": [],
+          "no_service_scope": null,
+          "recovery": false,
+          "scope": "ROUTE",
+          "source_cause": null,
+          "state": "DISRUPTION",
+          "version_id": "1d1e331cf7ac8e4b41d57ada9423fa3943fbc0f02f228eaf0bb1677ceaae4286"
+        }
+      ],
+      "reference_route_id": "lexington_direct",
+      "selected_legs": [
+        {
+          "from_stop_id": "631S",
+          "platform_direction": "S",
+          "route_id": "4",
+          "segment_stop_ids": [
+            "631S",
+            "635S",
+            "640S",
+            "418S",
+            "419S",
+            "420S",
+            "423S"
+          ],
+          "to_stop_id": "423S"
+        }
+      ],
+      "status": "PENDING"
+    },
+    {
+      "anchor_time": "2026-10-31T20:55:02-04:00",
+      "anchor_winner_lead_seconds": 1269.0,
+      "case_id": "lmm-alert-274395-1793498882",
+      "decision_at": 1793498882.712,
+      "duration_deterioration_seconds": 391.2880001068115,
+      "incident_ids": [
+        "lmm:alert:274395"
+      ],
+      "local_time": "2026-10-31T22:08:02.712000-04:00",
+      "notices": [
+        {
+          "active_periods": [
+            {
+              "end": null,
+              "start": 1793495102
+            }
+          ],
+          "age_seconds": 3779.0179998874664,
+          "captured_at": 1793498882.712,
+          "cause": "UNKNOWN",
+          "classification_rule": "EXPLICIT_SERVICE_IMPACT",
+          "description": "What's Happening?\nEmergency teams are responding to a person struck by a train at Bergen St.\n\nTravel Alternatives:\nTake nearby [A][C][D][F][N][Q][R] trains for service between Manhattan and Brooklyn.\n\nConsider nearby B14, B15, B41, B45 buses for [2][3][4] service in Brooklyn.\n\nPlanned Work Reminder:\nNo [L]  service between Broadway Junction and Canarsie-Rockaway Pkwy.\n[L] service is not available at Livonia Av.",
+          "effect": null,
+          "first_observed_at": 1793495103.694,
+          "header": "Flatbush Av-bound [2] and New Lots Av-bound [3] trains are running express from Atlantic Av-Barclays Ctr to Franklin Av.\n[2][3][4] running with delays in both directions.",
+          "id": "lmm:alert:274395:26",
+          "incident_id": "lmm:alert:274395",
+          "informed_entities": [
+            {
+              "agency_id": "MTASBWY",
+              "direction_id": null,
+              "extensions": {},
+              "route_id": "4",
+              "stop_id": null,
+              "trip": null
+            }
+          ],
+          "no_service": false,
+          "no_service_route_ids": [],
+          "no_service_scope": null,
+          "recovery": false,
+          "scope": "ROUTE",
+          "source_cause": null,
+          "state": "DISRUPTION",
+          "version_id": "8fa2179af25b801c58e48359f5159eed1b1f608568b6091fc1519cac8f3a6d47"
+        }
+      ],
+      "reference_route_id": "lexington_direct",
+      "selected_legs": [
+        {
+          "from_stop_id": "631S",
+          "platform_direction": "S",
+          "route_id": "4",
+          "segment_stop_ids": [
+            "631S",
+            "635S",
+            "640S",
+            "418S",
+            "419S",
+            "420S",
+            "423S"
+          ],
+          "to_stop_id": "423S"
+        }
+      ],
+      "status": "PENDING"
+    }
+  ],
+  "input_artifact": {
+    "path": "algo/local/october-preincident-brooklyn/prepared-inputs.json.gz",
+    "sha256": "91977f42e7aaf04dc2002fb1f693f84201039bf04302c36a1a9b8b5f59e16843"
+  },
+  "policy": {
+    "anchor_lookback_seconds": [
+      60,
+      300,
+      600,
+      900,
+      1800
+    ],
+    "baseline_near_tie_seconds": 180,
+    "decision_grid_seconds": 300,
+    "decision_window_seconds": 7200,
+    "destination": "Brooklyn Borough Hall street corner at Court Street and Joralemon Street",
+    "minimum_duration_deterioration_seconds": 300,
+    "origin": "Grand Central street entrance at East 42nd Street and Lexington Avenue",
+    "planning_state": "NOT_BOARDED_AT_EITHER_CUTOFF; NEW_DEPARTURE_FROM_SAME_ORIGIN_AT_DECISION_TIME",
+    "reference_policy": "LATEST_ELIGIBLE_PRE_PROBLEM_FASTEST_UNMODIFIED_MTA_ROUTE",
+    "require_severe": false,
+    "route_family_policy": "Treat interchangeable same-platform 4/5 and 2/3 services as route families; do not count 4-to-5 as a route Switch.",
+    "routes": [
+      {
+        "access_walk_seconds": 180,
+        "egress_walk_seconds": 120,
+        "family": "LEXINGTON_DIRECT",
+        "id": "lexington_direct",
+        "legs": [
+          {
+            "feed_id": "numbered",
+            "from_stop_id": "631S",
+            "route_id": "4",
+            "route_ids": [
+              "4",
+              "5"
+            ],
+            "to_stop_id": "423S"
+          }
+        ],
+        "name": "4 or 5 Grand Central to Borough Hall",
+        "transfer_walk_seconds": []
+      },
+      {
+        "access_walk_seconds": 300,
+        "egress_walk_seconds": 180,
+        "family": "BROADWAY_VIA_7",
+        "id": "broadway_via_7",
+        "legs": [
+          {
+            "feed_id": "numbered",
+            "from_stop_id": "723S",
+            "route_id": "7",
+            "route_ids": [
+              "7",
+              "7X"
+            ],
+            "to_stop_id": "725S"
+          },
+          {
+            "feed_id": "numbered",
+            "from_stop_id": "127S",
+            "route_id": "2",
+            "route_ids": [
+              "2",
+              "3"
+            ],
+            "to_stop_id": "232S"
+          }
+        ],
+        "name": "7 to 2 or 3 via Times Square",
+        "transfer_walk_seconds": [
+          360
+        ]
+      },
+      {
+        "access_walk_seconds": 960,
+        "egress_walk_seconds": 180,
+        "family": "BROADWAY_ON_FOOT",
+        "id": "walk_broadway",
+        "legs": [
+          {
+            "feed_id": "numbered",
+            "from_stop_id": "127S",
+            "route_id": "2",
+            "route_ids": [
+              "2",
+              "3"
+            ],
+            "to_stop_id": "232S"
+          }
+        ],
+        "name": "Walk to Times Square, then 2 or 3 to Borough Hall",
+        "transfer_walk_seconds": []
+      },
+      {
+        "access_walk_seconds": 600,
+        "egress_walk_seconds": 480,
+        "family": "SIXTH_AVENUE_F",
+        "id": "walk_f",
+        "legs": [
+          {
+            "feed_id": "bdfm",
+            "from_stop_id": "D16S",
+            "route_id": "F",
+            "route_ids": [
+              "F",
+              "FX"
+            ],
+            "to_stop_id": "A41S"
+          }
+        ],
+        "name": "Walk to Bryant Park, F to Jay Street, walk to Borough Hall",
+        "transfer_walk_seconds": []
+      }
+    ],
+    "schema_version": "preincident-fastest-brooklyn-v1",
+    "study_status": "POST_HOC_EXPLORATORY_TEST_CASE_SEARCH",
+    "switch_margin_seconds": 300,
+    "test_dates": [
+      "2026-10-25",
+      "2026-10-31"
+    ],
+    "tie_margin_seconds": 180,
+    "walking_policy": "AUTHORED_STREET_ACCESS_AND_EGRESS_ASSUMPTIONS_NOT_MEASURED_OR_HISTORICAL_PROVIDER_ROUTES",
+    "walking_sensitivity_seconds": [
+      -120,
+      120
+    ]
+  },
+  "selection_rejection_counts": {
+    "NO_APPLICABLE_CURRENT_PROBLEM_NOTICE": 2435,
+    "NO_VALID_PRE_PROBLEM_ANCHOR": 1235,
+    "REMAINING_DURATION_DID_NOT_INCREASE_FIVE_MINUTES": 209
+  }
+}

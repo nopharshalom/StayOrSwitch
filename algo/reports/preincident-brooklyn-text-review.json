@@ -1,0 +1,809 @@
+{
+  "candidate_proposal_sha256": "7dd7e6f2f02aa91bebd2a622d0093860460a61197f28a6501becf99f70c696f3",
+  "cases": [
+    {
+      "actual_direction": "SOUTH_DOWNTOWN",
+      "actual_route": "4",
+      "baseline_near_tie": false,
+      "baseline_winner_lead_seconds": 1015.0,
+      "case_id": "lmm-alert-273391-1792909952",
+      "from_stop_id": "631S",
+      "impact_class": "DISRUPTION_NOT_SEVERE",
+      "incident_ids": [
+        "lmm:alert:273391"
+      ],
+      "interpretation": "The notice applies to the selected line, direction and journey. A reported incident plus ETA deterioration does not independently establish its causal share of the delay.",
+      "notice_version_ids": [
+        "8a9240e9ccc25167b70487a477aee1055dcef35414078d335506521b6b825899"
+      ],
+      "planning_status": "UNSPECIFIED_WORK_TRAIN_MOVEMENT",
+      "reason": "EXPLICIT_SELECTED_ROUTE_AND_SOUTHBOUND_OR_BOTH_DIRECTION_DELAY",
+      "status": "CONFIRMED",
+      "to_stop_id": "423S"
+    },
+    {
+      "actual_direction": "SOUTH_DOWNTOWN",
+      "actual_route": "4",
+      "baseline_near_tie": false,
+      "baseline_winner_lead_seconds": 1015.0,
+      "case_id": "lmm-alert-273391-1792910252",
+      "from_stop_id": "631S",
+      "impact_class": "DISRUPTION_NOT_SEVERE",
+      "incident_ids": [
+        "lmm:alert:273391"
+      ],
+      "interpretation": "The notice applies to the selected line, direction and journey. A reported incident plus ETA deterioration does not independently establish its causal share of the delay.",
+      "notice_version_ids": [
+        "8a9240e9ccc25167b70487a477aee1055dcef35414078d335506521b6b825899"
+      ],
+      "planning_status": "UNSPECIFIED_WORK_TRAIN_MOVEMENT",
+      "reason": "EXPLICIT_SELECTED_ROUTE_AND_SOUTHBOUND_OR_BOTH_DIRECTION_DELAY",
+      "status": "CONFIRMED",
+      "to_stop_id": "423S"
+    },
+    {
+      "actual_direction": "SOUTH_DOWNTOWN",
+      "actual_route": "4",
+      "baseline_near_tie": false,
+      "baseline_winner_lead_seconds": 1015.0,
+      "case_id": "lmm-alert-273391-1792910552",
+      "from_stop_id": "631S",
+      "impact_class": "DISRUPTION_NOT_SEVERE",
+      "incident_ids": [
+        "lmm:alert:273391"
+      ],
+      "interpretation": "The notice applies to the selected line, direction and journey. A reported incident plus ETA deterioration does not independently establish its causal share of the delay.",
+      "notice_version_ids": [
+        "8a9240e9ccc25167b70487a477aee1055dcef35414078d335506521b6b825899"
+      ],
+      "planning_status": "UNSPECIFIED_WORK_TRAIN_MOVEMENT",
+      "reason": "EXPLICIT_SELECTED_ROUTE_AND_SOUTHBOUND_OR_BOTH_DIRECTION_DELAY",
+      "status": "CONFIRMED",
+      "to_stop_id": "423S"
+    },
+    {
+      "actual_direction": "SOUTH_DOWNTOWN",
+      "actual_route": "4",
+      "baseline_near_tie": false,
+      "baseline_winner_lead_seconds": 955.0,
+      "case_id": "lmm-alert-273480-1792998960",
+      "from_stop_id": "631S",
+      "impact_class": "DISRUPTION_NOT_SEVERE",
+      "incident_ids": [
+        "lmm:alert:273480"
+      ],
+      "interpretation": "The notice applies to the selected line, direction and journey. A reported incident plus ETA deterioration does not independently establish its causal share of the delay.",
+      "notice_version_ids": [
+        "38bbaf524d458e89f303da2f90291ddec9198778568dbf04a91227189de59a87"
+      ],
+      "planning_status": "INCIDENT_CAUSE_DESCRIBED_NOT_CLASSIFIED_AS_PLANNED_WORK",
+      "reason": "EXPLICIT_SELECTED_ROUTE_AND_SOUTHBOUND_OR_BOTH_DIRECTION_DELAY",
+      "status": "CONFIRMED",
+      "to_stop_id": "423S"
+    },
+    {
+      "actual_direction": "SOUTH_DOWNTOWN",
+      "actual_route": "4",
+      "baseline_near_tie": false,
+      "baseline_winner_lead_seconds": 955.0,
+      "case_id": "lmm-alert-273480-1792999260",
+      "from_stop_id": "631S",
+      "impact_class": "DISRUPTION_NOT_SEVERE",
+      "incident_ids": [
+        "lmm:alert:273480"
+      ],
+      "interpretation": "The notice applies to the selected line, direction and journey. A reported incident plus ETA deterioration does not independently establish its causal share of the delay.",
+      "notice_version_ids": [
+        "38bbaf524d458e89f303da2f90291ddec9198778568dbf04a91227189de59a87"
+      ],
+      "planning_status": "INCIDENT_CAUSE_DESCRIBED_NOT_CLASSIFIED_AS_PLANNED_WORK",
+      "reason": "EXPLICIT_SELECTED_ROUTE_AND_SOUTHBOUND_OR_BOTH_DIRECTION_DELAY",
+      "status": "CONFIRMED",
+      "to_stop_id": "423S"
+    },
+    {
+      "actual_direction": "SOUTH_DOWNTOWN",
+      "actual_route": "4",
+      "baseline_near_tie": false,
+      "baseline_winner_lead_seconds": 955.0,
+      "case_id": "lmm-alert-273480-1792999432",
+      "from_stop_id": "631S",
+      "impact_class": "DISRUPTION_NOT_SEVERE",
+      "incident_ids": [
+        "lmm:alert:273480"
+      ],
+      "interpretation": "The notice applies to the selected line, direction and journey. A reported incident plus ETA deterioration does not independently establish its causal share of the delay.",
+      "notice_version_ids": [
+        "fd840d20165c92e6ce7d7c53769b9b6ecc4dc762d885a7ecdda72361f17bc971"
+      ],
+      "planning_status": "INCIDENT_CAUSE_DESCRIBED_NOT_CLASSIFIED_AS_PLANNED_WORK",
+      "reason": "EXPLICIT_SELECTED_ROUTE_AND_SOUTHBOUND_OR_BOTH_DIRECTION_DELAY",
+      "status": "CONFIRMED",
+      "to_stop_id": "423S"
+    },
+    {
+      "actual_direction": "SOUTH_DOWNTOWN",
+      "actual_route": "4",
+      "baseline_near_tie": false,
+      "baseline_winner_lead_seconds": 955.0,
+      "case_id": "lmm-alert-273480-1792999560",
+      "from_stop_id": "631S",
+      "impact_class": "DISRUPTION_NOT_SEVERE",
+      "incident_ids": [
+        "lmm:alert:273480"
+      ],
+      "interpretation": "The notice applies to the selected line, direction and journey. A reported incident plus ETA deterioration does not independently establish its causal share of the delay.",
+      "notice_version_ids": [
+        "fd840d20165c92e6ce7d7c53769b9b6ecc4dc762d885a7ecdda72361f17bc971"
+      ],
+      "planning_status": "INCIDENT_CAUSE_DESCRIBED_NOT_CLASSIFIED_AS_PLANNED_WORK",
+      "reason": "EXPLICIT_SELECTED_ROUTE_AND_SOUTHBOUND_OR_BOTH_DIRECTION_DELAY",
+      "status": "CONFIRMED",
+      "to_stop_id": "423S"
+    },
+    {
+      "actual_direction": "SOUTH_DOWNTOWN",
+      "actual_route": "4",
+      "baseline_near_tie": false,
+      "baseline_winner_lead_seconds": 955.0,
+      "case_id": "lmm-alert-273480-1793000160",
+      "from_stop_id": "631S",
+      "impact_class": "DISRUPTION_NOT_SEVERE",
+      "incident_ids": [
+        "lmm:alert:273480"
+      ],
+      "interpretation": "The notice applies to the selected line, direction and journey. A reported incident plus ETA deterioration does not independently establish its causal share of the delay.",
+      "notice_version_ids": [
+        "fd840d20165c92e6ce7d7c53769b9b6ecc4dc762d885a7ecdda72361f17bc971"
+      ],
+      "planning_status": "INCIDENT_CAUSE_DESCRIBED_NOT_CLASSIFIED_AS_PLANNED_WORK",
+      "reason": "EXPLICIT_SELECTED_ROUTE_AND_SOUTHBOUND_OR_BOTH_DIRECTION_DELAY",
+      "status": "CONFIRMED",
+      "to_stop_id": "423S"
+    },
+    {
+      "actual_direction": "SOUTH_DOWNTOWN",
+      "actual_route": "4",
+      "baseline_near_tie": false,
+      "baseline_winner_lead_seconds": 955.0,
+      "case_id": "lmm-alert-273480-1793000460",
+      "from_stop_id": "631S",
+      "impact_class": "DISRUPTION_NOT_SEVERE",
+      "incident_ids": [
+        "lmm:alert:273480"
+      ],
+      "interpretation": "The notice applies to the selected line, direction and journey. A reported incident plus ETA deterioration does not independently establish its causal share of the delay.",
+      "notice_version_ids": [
+        "fd840d20165c92e6ce7d7c53769b9b6ecc4dc762d885a7ecdda72361f17bc971"
+      ],
+      "planning_status": "INCIDENT_CAUSE_DESCRIBED_NOT_CLASSIFIED_AS_PLANNED_WORK",
+      "reason": "EXPLICIT_SELECTED_ROUTE_AND_SOUTHBOUND_OR_BOTH_DIRECTION_DELAY",
+      "status": "CONFIRMED",
+      "to_stop_id": "423S"
+    },
+    {
+      "actual_direction": "SOUTH_DOWNTOWN",
+      "actual_route": "4",
+      "baseline_near_tie": false,
+      "baseline_winner_lead_seconds": 841.0,
+      "case_id": "lmm-alert-273610-1793061578",
+      "from_stop_id": "631S",
+      "impact_class": "DISRUPTION_NOT_SEVERE",
+      "incident_ids": [
+        "lmm:alert:273610"
+      ],
+      "interpretation": "The notice applies to the selected line, direction and journey. A reported incident plus ETA deterioration does not independently establish its causal share of the delay.",
+      "notice_version_ids": [
+        "1e61c33a6378ac709a5d831c92c9d0f576f85c6df974d5f4fb6914d70f9ad41a"
+      ],
+      "planning_status": "INCIDENT_CAUSE_DESCRIBED_NOT_CLASSIFIED_AS_PLANNED_WORK",
+      "reason": "EXPLICIT_SELECTED_ROUTE_AND_SOUTHBOUND_OR_BOTH_DIRECTION_DELAY",
+      "status": "CONFIRMED",
+      "to_stop_id": "423S"
+    },
+    {
+      "actual_direction": "SOUTH_DOWNTOWN",
+      "actual_route": "4",
+      "baseline_near_tie": false,
+      "baseline_winner_lead_seconds": 841.0,
+      "case_id": "lmm-alert-273610-1793062478",
+      "from_stop_id": "631S",
+      "impact_class": "DISRUPTION_NOT_SEVERE",
+      "incident_ids": [
+        "lmm:alert:273610"
+      ],
+      "interpretation": "The notice applies to the selected line, direction and journey. A reported incident plus ETA deterioration does not independently establish its causal share of the delay.",
+      "notice_version_ids": [
+        "60c763ac6ad048cd4e9e9f6cef483765205206d44242306688dfb028bfd9c1aa"
+      ],
+      "planning_status": "INCIDENT_CAUSE_DESCRIBED_NOT_CLASSIFIED_AS_PLANNED_WORK",
+      "reason": "EXPLICIT_SELECTED_ROUTE_AND_SOUTHBOUND_OR_BOTH_DIRECTION_DELAY",
+      "status": "CONFIRMED",
+      "to_stop_id": "423S"
+    },
+    {
+      "actual_direction": "SOUTH_DOWNTOWN",
+      "actual_route": "4",
+      "baseline_near_tie": false,
+      "baseline_winner_lead_seconds": 699.0,
+      "case_id": "lmm-alert-273660-1793102943",
+      "from_stop_id": "631S",
+      "impact_class": "DISRUPTION_NOT_SEVERE",
+      "incident_ids": [
+        "lmm:alert:273660"
+      ],
+      "interpretation": "The notice applies to the selected line, direction and journey. A reported incident plus ETA deterioration does not independently establish its causal share of the delay.",
+      "notice_version_ids": [
+        "d7036536c076920e256a977ba7fef62aba55160c80406948fbaf84723a3dcf8f"
+      ],
+      "planning_status": "INCIDENT_CAUSE_DESCRIBED_NOT_CLASSIFIED_AS_PLANNED_WORK",
+      "reason": "EXPLICIT_SELECTED_ROUTE_AND_SOUTHBOUND_OR_BOTH_DIRECTION_DELAY",
+      "status": "CONFIRMED",
+      "to_stop_id": "423S"
+    },
+    {
+      "actual_direction": "SOUTH_DOWNTOWN",
+      "actual_route": "4",
+      "baseline_near_tie": false,
+      "baseline_winner_lead_seconds": 668.0,
+      "case_id": "lmm-alert-273712-1793136202",
+      "from_stop_id": "631S",
+      "impact_class": "DISRUPTION_NOT_SEVERE",
+      "incident_ids": [
+        "lmm:alert:273712"
+      ],
+      "interpretation": "The notice applies to the selected line, direction and journey. A reported incident plus ETA deterioration does not independently establish its causal share of the delay.",
+      "notice_version_ids": [
+        "93985f9cf3c79b7966b2aa9c002363e0aae92e94dad8a37c6932909b53ae2be7"
+      ],
+      "planning_status": "INCIDENT_CAUSE_DESCRIBED_NOT_CLASSIFIED_AS_PLANNED_WORK",
+      "reason": "EXPLICIT_SELECTED_ROUTE_AND_SOUTHBOUND_OR_BOTH_DIRECTION_DELAY",
+      "status": "CONFIRMED",
+      "to_stop_id": "423S"
+    },
+    {
+      "actual_direction": "SOUTH_DOWNTOWN",
+      "actual_route": "F",
+      "baseline_near_tie": true,
+      "baseline_winner_lead_seconds": 17.0,
+      "case_id": "lmm-alert-273822-1793195212",
+      "from_stop_id": "D16S",
+      "impact_class": "DISRUPTION_NOT_SEVERE",
+      "incident_ids": [
+        "lmm:alert:273822"
+      ],
+      "interpretation": "The notice applies to the selected line, direction and journey. A reported incident plus ETA deterioration does not independently establish its causal share of the delay.",
+      "notice_version_ids": [
+        "029af2f90aaeac080284edf21bbe8a922a262657c51dc678cb41011cc5b459c1"
+      ],
+      "planning_status": "INCIDENT_CAUSE_DESCRIBED_NOT_CLASSIFIED_AS_PLANNED_WORK",
+      "reason": "EXPLICIT_SELECTED_ROUTE_AND_SOUTHBOUND_OR_BOTH_DIRECTION_DELAY",
+      "status": "CONFIRMED",
+      "to_stop_id": "A41S"
+    },
+    {
+      "actual_direction": "SOUTH_DOWNTOWN",
+      "actual_route": "F",
+      "baseline_near_tie": true,
+      "baseline_winner_lead_seconds": 17.0,
+      "case_id": "lmm-alert-273822-1793195512",
+      "from_stop_id": "D16S",
+      "impact_class": "DISRUPTION_NOT_SEVERE",
+      "incident_ids": [
+        "lmm:alert:273822"
+      ],
+      "interpretation": "The notice applies to the selected line, direction and journey. A reported incident plus ETA deterioration does not independently establish its causal share of the delay.",
+      "notice_version_ids": [
+        "029af2f90aaeac080284edf21bbe8a922a262657c51dc678cb41011cc5b459c1"
+      ],
+      "planning_status": "INCIDENT_CAUSE_DESCRIBED_NOT_CLASSIFIED_AS_PLANNED_WORK",
+      "reason": "EXPLICIT_SELECTED_ROUTE_AND_SOUTHBOUND_OR_BOTH_DIRECTION_DELAY",
+      "status": "CONFIRMED",
+      "to_stop_id": "A41S"
+    },
+    {
+      "actual_direction": "SOUTH_DOWNTOWN",
+      "actual_route": "F",
+      "baseline_near_tie": true,
+      "baseline_winner_lead_seconds": 17.0,
+      "case_id": "lmm-alert-273822-1793196412",
+      "from_stop_id": "D16S",
+      "impact_class": "DISRUPTION_NOT_SEVERE",
+      "incident_ids": [
+        "lmm:alert:273822"
+      ],
+      "interpretation": "The notice applies to the selected line, direction and journey. A reported incident plus ETA deterioration does not independently establish its causal share of the delay.",
+      "notice_version_ids": [
+        "029af2f90aaeac080284edf21bbe8a922a262657c51dc678cb41011cc5b459c1"
+      ],
+      "planning_status": "INCIDENT_CAUSE_DESCRIBED_NOT_CLASSIFIED_AS_PLANNED_WORK",
+      "reason": "EXPLICIT_SELECTED_ROUTE_AND_SOUTHBOUND_OR_BOTH_DIRECTION_DELAY",
+      "status": "CONFIRMED",
+      "to_stop_id": "A41S"
+    },
+    {
+      "actual_direction": "SOUTH_DOWNTOWN",
+      "actual_route": "F",
+      "baseline_near_tie": true,
+      "baseline_winner_lead_seconds": 17.0,
+      "case_id": "lmm-alert-273822-1793197012",
+      "from_stop_id": "D16S",
+      "impact_class": "DISRUPTION_NOT_SEVERE",
+      "incident_ids": [
+        "lmm:alert:273822"
+      ],
+      "interpretation": "The notice applies to the selected line, direction and journey. A reported incident plus ETA deterioration does not independently establish its causal share of the delay.",
+      "notice_version_ids": [
+        "029af2f90aaeac080284edf21bbe8a922a262657c51dc678cb41011cc5b459c1"
+      ],
+      "planning_status": "INCIDENT_CAUSE_DESCRIBED_NOT_CLASSIFIED_AS_PLANNED_WORK",
+      "reason": "EXPLICIT_SELECTED_ROUTE_AND_SOUTHBOUND_OR_BOTH_DIRECTION_DELAY",
+      "status": "CONFIRMED",
+      "to_stop_id": "A41S"
+    },
+    {
+      "actual_direction": "SOUTH_DOWNTOWN",
+      "actual_route": "F",
+      "baseline_near_tie": true,
+      "baseline_winner_lead_seconds": 17.0,
+      "case_id": "lmm-alert-273822-1793197243",
+      "from_stop_id": "D16S",
+      "impact_class": "DISRUPTION_NOT_SEVERE",
+      "incident_ids": [
+        "lmm:alert:273822"
+      ],
+      "interpretation": "The notice applies to the selected line, direction and journey. A reported incident plus ETA deterioration does not independently establish its causal share of the delay.",
+      "notice_version_ids": [
+        "8eddbfefb601efca5bdc3dc95dd32e3a3e67357371cbca4f8ac4ae816ec8661a"
+      ],
+      "planning_status": "INCIDENT_CAUSE_DESCRIBED_NOT_CLASSIFIED_AS_PLANNED_WORK",
+      "reason": "EXPLICIT_SELECTED_ROUTE_AND_SOUTHBOUND_OR_BOTH_DIRECTION_DELAY",
+      "status": "CONFIRMED",
+      "to_stop_id": "A41S"
+    },
+    {
+      "actual_direction": "SOUTH_DOWNTOWN",
+      "actual_route": "F",
+      "baseline_near_tie": true,
+      "baseline_winner_lead_seconds": 17.0,
+      "case_id": "lmm-alert-273822-1793197312",
+      "from_stop_id": "D16S",
+      "impact_class": "DISRUPTION_NOT_SEVERE",
+      "incident_ids": [
+        "lmm:alert:273822"
+      ],
+      "interpretation": "The notice applies to the selected line, direction and journey. A reported incident plus ETA deterioration does not independently establish its causal share of the delay.",
+      "notice_version_ids": [
+        "8eddbfefb601efca5bdc3dc95dd32e3a3e67357371cbca4f8ac4ae816ec8661a"
+      ],
+      "planning_status": "INCIDENT_CAUSE_DESCRIBED_NOT_CLASSIFIED_AS_PLANNED_WORK",
+      "reason": "EXPLICIT_SELECTED_ROUTE_AND_SOUTHBOUND_OR_BOTH_DIRECTION_DELAY",
+      "status": "CONFIRMED",
+      "to_stop_id": "A41S"
+    },
+    {
+      "actual_direction": "SOUTH_DOWNTOWN",
+      "actual_route": "F",
+      "baseline_near_tie": true,
+      "baseline_winner_lead_seconds": 17.0,
+      "case_id": "lmm-alert-273822-1793198212",
+      "from_stop_id": "D16S",
+      "impact_class": "DISRUPTION_NOT_SEVERE",
+      "incident_ids": [
+        "lmm:alert:273822"
+      ],
+      "interpretation": "The notice applies to the selected line, direction and journey. A reported incident plus ETA deterioration does not independently establish its causal share of the delay.",
+      "notice_version_ids": [
+        "8eddbfefb601efca5bdc3dc95dd32e3a3e67357371cbca4f8ac4ae816ec8661a"
+      ],
+      "planning_status": "INCIDENT_CAUSE_DESCRIBED_NOT_CLASSIFIED_AS_PLANNED_WORK",
+      "reason": "EXPLICIT_SELECTED_ROUTE_AND_SOUTHBOUND_OR_BOTH_DIRECTION_DELAY",
+      "status": "CONFIRMED",
+      "to_stop_id": "A41S"
+    },
+    {
+      "actual_direction": "SOUTH_DOWNTOWN",
+      "actual_route": "5",
+      "baseline_near_tie": false,
+      "baseline_winner_lead_seconds": 735.0,
+      "case_id": "lmm-alert-273870-1793220595",
+      "from_stop_id": "631S",
+      "impact_class": "DISRUPTION_NOT_SEVERE",
+      "incident_ids": [
+        "lmm:alert:273870"
+      ],
+      "interpretation": "The notice applies to the selected line, direction and journey. A reported incident plus ETA deterioration does not independently establish its causal share of the delay.",
+      "notice_version_ids": [
+        "9e94170b859007bb80dcb67078ce9192aa0ca489c65f224abe68b526b7c4bb86"
+      ],
+      "planning_status": "INCIDENT_CAUSE_DESCRIBED_NOT_CLASSIFIED_AS_PLANNED_WORK",
+      "reason": "EXPLICIT_SELECTED_ROUTE_AND_SOUTHBOUND_OR_BOTH_DIRECTION_DELAY",
+      "status": "CONFIRMED",
+      "to_stop_id": "423S"
+    },
+    {
+      "actual_direction": "SOUTH_DOWNTOWN",
+      "actual_route": "4",
+      "baseline_near_tie": false,
+      "baseline_winner_lead_seconds": 689.0,
+      "case_id": "lmm-alert-273887-1793228732",
+      "from_stop_id": "631S",
+      "impact_class": "DISRUPTION_NOT_SEVERE",
+      "incident_ids": [
+        "lmm:alert:273887"
+      ],
+      "interpretation": "The notice applies to the selected line, direction and journey. A reported incident plus ETA deterioration does not independently establish its causal share of the delay.",
+      "notice_version_ids": [
+        "c852abfa920262579270e36b7a644d4a3a568b05f0a35fc7d1de8c58919a753c"
+      ],
+      "planning_status": "INCIDENT_CAUSE_DESCRIBED_NOT_CLASSIFIED_AS_PLANNED_WORK",
+      "reason": "EXPLICIT_SELECTED_ROUTE_AND_SOUTHBOUND_OR_BOTH_DIRECTION_DELAY",
+      "status": "CONFIRMED",
+      "to_stop_id": "423S"
+    },
+    {
+      "actual_direction": "SOUTH_DOWNTOWN",
+      "actual_route": "4",
+      "baseline_near_tie": false,
+      "baseline_winner_lead_seconds": 689.0,
+      "case_id": "lmm-alert-273887-1793228802",
+      "from_stop_id": "631S",
+      "impact_class": "DISRUPTION_NOT_SEVERE",
+      "incident_ids": [
+        "lmm:alert:273887"
+      ],
+      "interpretation": "The notice applies to the selected line, direction and journey. A reported incident plus ETA deterioration does not independently establish its causal share of the delay.",
+      "notice_version_ids": [
+        "c852abfa920262579270e36b7a644d4a3a568b05f0a35fc7d1de8c58919a753c"
+      ],
+      "planning_status": "INCIDENT_CAUSE_DESCRIBED_NOT_CLASSIFIED_AS_PLANNED_WORK",
+      "reason": "EXPLICIT_SELECTED_ROUTE_AND_SOUTHBOUND_OR_BOTH_DIRECTION_DELAY",
+      "status": "CONFIRMED",
+      "to_stop_id": "423S"
+    },
+    {
+      "actual_direction": "SOUTH_DOWNTOWN",
+      "actual_route": "5",
+      "baseline_near_tie": false,
+      "baseline_winner_lead_seconds": 837.0,
+      "case_id": "lmm-alert-274022-1793305202",
+      "from_stop_id": "631S",
+      "impact_class": "DISRUPTION_NOT_SEVERE",
+      "incident_ids": [
+        "lmm:alert:274022"
+      ],
+      "interpretation": "The notice applies to the selected line, direction and journey. A reported incident plus ETA deterioration does not independently establish its causal share of the delay.",
+      "notice_version_ids": [
+        "75fbd7f11e628296ea35f74acb2eacb55c717e087c78376ea77312e13b1634e9"
+      ],
+      "planning_status": "INCIDENT_CAUSE_DESCRIBED_NOT_CLASSIFIED_AS_PLANNED_WORK",
+      "reason": "EXPLICIT_SELECTED_ROUTE_AND_SOUTHBOUND_OR_BOTH_DIRECTION_DELAY",
+      "status": "CONFIRMED",
+      "to_stop_id": "423S"
+    },
+    {
+      "actual_direction": "SOUTH_DOWNTOWN",
+      "actual_route": "4",
+      "baseline_near_tie": false,
+      "baseline_winner_lead_seconds": 867.0,
+      "case_id": "lmm-alert-274347-1793467047",
+      "from_stop_id": "631S",
+      "impact_class": "DISRUPTION_NOT_SEVERE",
+      "incident_ids": [
+        "lmm:alert:274347"
+      ],
+      "interpretation": "The notice applies to the selected line, direction and journey. A reported incident plus ETA deterioration does not independently establish its causal share of the delay.",
+      "notice_version_ids": [
+        "4ea34821cef1434ba6006d667f178fbc9623705a687d74d746c50b8c2e2d4d56"
+      ],
+      "planning_status": "INCIDENT_CAUSE_DESCRIBED_NOT_CLASSIFIED_AS_PLANNED_WORK",
+      "reason": "EXPLICIT_SELECTED_ROUTE_AND_SOUTHBOUND_OR_BOTH_DIRECTION_DELAY",
+      "status": "CONFIRMED",
+      "to_stop_id": "423S"
+    },
+    {
+      "actual_direction": "SOUTH_DOWNTOWN",
+      "actual_route": "4",
+      "baseline_near_tie": false,
+      "baseline_winner_lead_seconds": 867.0,
+      "case_id": "lmm-alert-274347-1793467602",
+      "from_stop_id": "631S",
+      "impact_class": "DISRUPTION_NOT_SEVERE",
+      "incident_ids": [
+        "lmm:alert:274347"
+      ],
+      "interpretation": "The notice applies to the selected line, direction and journey. A reported incident plus ETA deterioration does not independently establish its causal share of the delay.",
+      "notice_version_ids": [
+        "682adaa25d5ec8a61b985b65f2ad99d03fc06580593c5a4e40229797807668cd"
+      ],
+      "planning_status": "INCIDENT_CAUSE_DESCRIBED_NOT_CLASSIFIED_AS_PLANNED_WORK",
+      "reason": "EXPLICIT_SELECTED_ROUTE_AND_SOUTHBOUND_OR_BOTH_DIRECTION_DELAY",
+      "status": "CONFIRMED",
+      "to_stop_id": "423S"
+    },
+    {
+      "actual_direction": "SOUTH_DOWNTOWN",
+      "actual_route": "4",
+      "baseline_near_tie": false,
+      "baseline_winner_lead_seconds": 867.0,
+      "case_id": "lmm-alert-274347-1793467647",
+      "from_stop_id": "631S",
+      "impact_class": "DISRUPTION_NOT_SEVERE",
+      "incident_ids": [
+        "lmm:alert:274347"
+      ],
+      "interpretation": "The notice applies to the selected line, direction and journey. A reported incident plus ETA deterioration does not independently establish its causal share of the delay.",
+      "notice_version_ids": [
+        "682adaa25d5ec8a61b985b65f2ad99d03fc06580593c5a4e40229797807668cd"
+      ],
+      "planning_status": "INCIDENT_CAUSE_DESCRIBED_NOT_CLASSIFIED_AS_PLANNED_WORK",
+      "reason": "EXPLICIT_SELECTED_ROUTE_AND_SOUTHBOUND_OR_BOTH_DIRECTION_DELAY",
+      "status": "CONFIRMED",
+      "to_stop_id": "423S"
+    },
+    {
+      "actual_direction": "SOUTH_DOWNTOWN",
+      "actual_route": "4",
+      "baseline_near_tie": false,
+      "baseline_winner_lead_seconds": 867.0,
+      "case_id": "lmm-alert-274347-1793468547",
+      "from_stop_id": "631S",
+      "impact_class": "DISRUPTION_NOT_SEVERE",
+      "incident_ids": [
+        "lmm:alert:274347"
+      ],
+      "interpretation": "The notice applies to the selected line, direction and journey. A reported incident plus ETA deterioration does not independently establish its causal share of the delay.",
+      "notice_version_ids": [
+        "186c926b79f5800f288a32799f77652fc198ba2db4cdf354521d41f6278351d5"
+      ],
+      "planning_status": "INCIDENT_CAUSE_DESCRIBED_NOT_CLASSIFIED_AS_PLANNED_WORK",
+      "reason": "EXPLICIT_SELECTED_ROUTE_AND_SOUTHBOUND_OR_BOTH_DIRECTION_DELAY",
+      "status": "CONFIRMED",
+      "to_stop_id": "423S"
+    },
+    {
+      "actual_direction": "SOUTH_DOWNTOWN",
+      "actual_route": "4",
+      "baseline_near_tie": false,
+      "baseline_winner_lead_seconds": 1269.0,
+      "case_id": "lmm-alert-274395-1793497503",
+      "from_stop_id": "631S",
+      "impact_class": "DISRUPTION_NOT_SEVERE",
+      "incident_ids": [
+        "lmm:alert:274395"
+      ],
+      "interpretation": "The notice applies to the selected line, direction and journey. A reported incident plus ETA deterioration does not independently establish its causal share of the delay.",
+      "notice_version_ids": [
+        "6dbba164b0635a9870c2ea7bb290a2669e0b5221419a862d0eca7e740cd91ffe"
+      ],
+      "planning_status": "INCIDENT_CAUSE_DESCRIBED_NOT_CLASSIFIED_AS_PLANNED_WORK",
+      "reason": "EXPLICIT_SELECTED_ROUTE_AND_SOUTHBOUND_OR_BOTH_DIRECTION_DELAY",
+      "status": "CONFIRMED",
+      "to_stop_id": "423S"
+    },
+    {
+      "actual_direction": "SOUTH_DOWNTOWN",
+      "actual_route": "4",
+      "baseline_near_tie": false,
+      "baseline_winner_lead_seconds": 1269.0,
+      "case_id": "lmm-alert-274395-1793498103",
+      "from_stop_id": "631S",
+      "impact_class": "DISRUPTION_NOT_SEVERE",
+      "incident_ids": [
+        "lmm:alert:274395"
+      ],
+      "interpretation": "The notice applies to the selected line, direction and journey. A reported incident plus ETA deterioration does not independently establish its causal share of the delay.",
+      "notice_version_ids": [
+        "1d1e331cf7ac8e4b41d57ada9423fa3943fbc0f02f228eaf0bb1677ceaae4286"
+      ],
+      "planning_status": "INCIDENT_CAUSE_DESCRIBED_NOT_CLASSIFIED_AS_PLANNED_WORK",
+      "reason": "EXPLICIT_MANHATTAN_BROOKLYN_DISRUPTION_COVERS_SELECTED_ROUTE",
+      "status": "CONFIRMED",
+      "to_stop_id": "423S"
+    },
+    {
+      "actual_direction": "SOUTH_DOWNTOWN",
+      "actual_route": "4",
+      "baseline_near_tie": false,
+      "baseline_winner_lead_seconds": 1269.0,
+      "case_id": "lmm-alert-274395-1793498882",
+      "from_stop_id": "631S",
+      "impact_class": "DISRUPTION_NOT_SEVERE",
+      "incident_ids": [
+        "lmm:alert:274395"
+      ],
+      "interpretation": "The notice applies to the selected line, direction and journey. A reported incident plus ETA deterioration does not independently establish its causal share of the delay.",
+      "notice_version_ids": [
+        "8fa2179af25b801c58e48359f5159eed1b1f608568b6091fc1519cac8f3a6d47"
+      ],
+      "planning_status": "INCIDENT_CAUSE_DESCRIBED_NOT_CLASSIFIED_AS_PLANNED_WORK",
+      "reason": "EXPLICIT_SELECTED_ROUTE_AND_SOUTHBOUND_OR_BOTH_DIRECTION_DELAY",
+      "status": "CONFIRMED",
+      "to_stop_id": "423S"
+    }
+  ],
+  "corrected_input_manifest": {
+    "path": "data/manifests/preincident-inputs.json",
+    "sha256": "8f60b7424705024e3333a4628511052018eb6efc2a9eb2243347a93b7392023c"
+  },
+  "input_artifact": {
+    "path": "algo/local/october-preincident-brooklyn/prepared-inputs.json.gz",
+    "sha256": "91977f42e7aaf04dc2002fb1f693f84201039bf04302c36a1a9b8b5f59e16843"
+  },
+  "interpretation_limits": [
+    "The seven F cases have an initial lead of only 17 seconds and must remain a separately disclosed near-tie subgroup.",
+    "Fresh normal describes the information available in the archive, not independently verified physical normal service.",
+    "T0 and T1 are planning cutoffs for an unboarded traveler, not a passenger trajectory; the route family stays fixed while catchable trains are reselected at T1."
+  ],
+  "notice_versions": [
+    {
+      "captured_at": 1792910012.697,
+      "description": null,
+      "header": "Downtown [4][6] trains are running with delays after a work train proceeded through Manhattan.",
+      "incident_id": "lmm:alert:273391",
+      "state": "DISRUPTION",
+      "version_id": "8a9240e9ccc25167b70487a477aee1055dcef35414078d335506521b6b825899"
+    },
+    {
+      "captured_at": 1792999230.536,
+      "description": null,
+      "header": "[4]  trains are delayed in both directions while we investigate why a train's brakes activated near Bowling Green.",
+      "incident_id": "lmm:alert:273480",
+      "state": "DISRUPTION",
+      "version_id": "38bbaf524d458e89f303da2f90291ddec9198778568dbf04a91227189de59a87"
+    },
+    {
+      "captured_at": 1792999432.702,
+      "description": null,
+      "header": "[4]  trains are running with delays in both directions after we moved a train that had its brakes activated near Bowling Green.",
+      "incident_id": "lmm:alert:273480",
+      "state": "DISRUPTION",
+      "version_id": "fd840d20165c92e6ce7d7c53769b9b6ecc4dc762d885a7ecdda72361f17bc971"
+    },
+    {
+      "captured_at": 1793061578.618,
+      "description": null,
+      "header": "Downtown [4] trains are delayed while we address a mechanical problem on a work train near Kingsbridge Rd.",
+      "incident_id": "lmm:alert:273610",
+      "state": "DISRUPTION",
+      "version_id": "1e61c33a6378ac709a5d831c92c9d0f576f85c6df974d5f4fb6914d70f9ad41a"
+    },
+    {
+      "captured_at": 1793062297.786,
+      "description": null,
+      "header": "Downtown [4] trains are running with delays after we addressed a mechanical problem on a work train near Kingsbridge Rd.",
+      "incident_id": "lmm:alert:273610",
+      "state": "DISRUPTION",
+      "version_id": "60c763ac6ad048cd4e9e9f6cef483765205206d44242306688dfb028bfd9c1aa"
+    },
+    {
+      "captured_at": 1793102773.581,
+      "description": "Downtown [5] trains will run via [2] line from 149 St-Hostos to Nevins St.",
+      "header": "Downtown [4][5] trains are delayed while we investigate why a train's brakes were activated at 138 St-Grand Concourse.",
+      "incident_id": "lmm:alert:273660",
+      "state": "DISRUPTION",
+      "version_id": "d7036536c076920e256a977ba7fef62aba55160c80406948fbaf84723a3dcf8f"
+    },
+    {
+      "captured_at": 1793135137.83,
+      "description": "What's happening?\nWe're investigating what caused a train's brakes to activate at 14 St-Union Sq.\n\nSome downtown [5] trains are running via the [2] line from 149 St-Hostos to Nevins St.\nThe last stop on some downtown [6] trains is 3 Av/138 St.\nListen to announcements to hear how your train will run.",
+      "header": "Downtown [4][5] trains are running local from 14 St-Union Sq to Brooklyn Bridge-City Hall.\nExpect downtown [4][5][6] delays while trains share the local track.",
+      "incident_id": "lmm:alert:273712",
+      "state": "DISRUPTION",
+      "version_id": "93985f9cf3c79b7966b2aa9c002363e0aae92e94dad8a37c6932909b53ae2be7"
+    },
+    {
+      "captured_at": 1793196895.837,
+      "description": "Some downtown [F] via [G] from Court Sq-23 St to Bergen St.\nSome downtown [M] express from 34 St-Herald Sq to W 4 St-Wash Sq. \nListen to announcements for how your train will run. \nExpect delays on Church Av-bound [G] trains while tracks are shared.",
+      "header": "Downtown [F][M] trains are running with delays while we address a signal problem near 23 St.",
+      "incident_id": "lmm:alert:273822",
+      "state": "DISRUPTION",
+      "version_id": "029af2f90aaeac080284edf21bbe8a922a262657c51dc678cb41011cc5b459c1"
+    },
+    {
+      "captured_at": 1793198080.571,
+      "description": null,
+      "header": "Downtown [F][M] trains are running with delays after we addressed a signal problem near 23 St.\nDowntown [F][M] trains have resumed making their regular stops.",
+      "incident_id": "lmm:alert:273822",
+      "state": "DISRUPTION",
+      "version_id": "8eddbfefb601efca5bdc3dc95dd32e3a3e67357371cbca4f8ac4ae816ec8661a"
+    },
+    {
+      "captured_at": 1793220407.719,
+      "description": "What's Happening? \nWe're performing urgent track maintenance near 3 Av/149 St.\n\nAdditional service changes:\nSome uptown [2] trains are rerouted via the [1] line from 96 St to 137 St-City College or 145 St, where they will end.\nSome uptown [2] trains are rerouted via the [3] line from 135 St to Harlem-148 St, where they will end.\nSome uptown [2] trains will end at 34 St-Penn Station.\nSome uptown [5] trains will end at 149 St-Hostos on the [4] line.\n\nListen to announcements to hear how your train will run.\n\nTravel Alternatives:\nFor service in the Bronx, consider [4][6][B][D] trains or nearby Bx15 and Bx19 buses.",
+      "header": "Wakefield-241 St-bound [2] and Eastchester-Dyre Av-bound [5] trains are delayed.\nDowntown [2][5] trains are running with delays.",
+      "incident_id": "lmm:alert:273870",
+      "state": "DISRUPTION",
+      "version_id": "9e94170b859007bb80dcb67078ce9192aa0ca489c65f224abe68b526b7c4bb86"
+    },
+    {
+      "captured_at": 1793228738.591,
+      "description": "What's Happened?\n[4][6] shared tracks with rerouted [5] trains while we replaced a broken rail near 3 Av/149 St.\nWe moved a train that had its brakes activated near Bleecker St.",
+      "header": "[4][6] trains are running with delays in both directions after multiple incidents on the line.",
+      "incident_id": "lmm:alert:273887",
+      "state": "DISRUPTION",
+      "version_id": "c852abfa920262579270e36b7a644d4a3a568b05f0a35fc7d1de8c58919a753c"
+    },
+    {
+      "captured_at": 1793305202.813,
+      "description": "Wakefield-241 St-bound [2] and Eastchester-Dyre Av-bound [5] trains have resumed making local stops from 3 Av/149 St to E 180 St.",
+      "header": "[2][5] trains are running with delays in both directions after we requested EMS assistance for someone in need at Jackson Av.",
+      "incident_id": "lmm:alert:274022",
+      "state": "DISRUPTION",
+      "version_id": "75fbd7f11e628296ea35f74acb2eacb55c717e087c78376ea77312e13b1634e9"
+    },
+    {
+      "captured_at": 1793467047.714,
+      "description": null,
+      "header": "Downtown [4][5] trains are delayed while NYPD conducts an investigation at 14 St-Union Sq.",
+      "incident_id": "lmm:alert:274347",
+      "state": "DISRUPTION",
+      "version_id": "4ea34821cef1434ba6006d667f178fbc9623705a687d74d746c50b8c2e2d4d56"
+    },
+    {
+      "captured_at": 1793467602.716,
+      "description": "Downtown [4][5] trains have resumed making express stops from 14 St-Union Sq to Brooklyn Bridge-City Hall.",
+      "header": "Downtown [4][5] trains are running with delays after  NYPD conducted an investigation at 14 St-Union Sq.",
+      "incident_id": "lmm:alert:274347",
+      "state": "DISRUPTION",
+      "version_id": "682adaa25d5ec8a61b985b65f2ad99d03fc06580593c5a4e40229797807668cd"
+    },
+    {
+      "captured_at": 1793468423.586,
+      "description": "Downtown [4][5] trains have resumed making express stops from 14 St-Union Sq to Brooklyn Bridge-City Hall.",
+      "header": "Downtown [4][5] trains are running with delays after  NYPD conducted an investigation at 14 St-Union Sq.",
+      "incident_id": "lmm:alert:274347",
+      "state": "DISRUPTION",
+      "version_id": "186c926b79f5800f288a32799f77652fc198ba2db4cdf354521d41f6278351d5"
+    },
+    {
+      "captured_at": 1793496527.7,
+      "description": "]",
+      "header": "[2][3][4] trains are delayed in both directions while emergency teams respond to a person struck by a train at Bergen St.",
+      "incident_id": "lmm:alert:274395",
+      "state": "DISRUPTION",
+      "version_id": "6dbba164b0635a9870c2ea7bb290a2669e0b5221419a862d0eca7e740cd91ffe"
+    },
+    {
+      "captured_at": 1793497892.699,
+      "description": "Service Changes:\nSome Flatbush Av-bound [2], New Lots Av-bound [3], and Crown Heights-bound [4] trains will end at Atlantic Av-Barclays Ctr, where they will turn back for uptown service.\n\nSome downtown [2][3] trains will end at Chambers St or Rector St on the [1], where they will turn back for uptown service.\n\nSome downtown [4] trains will end at Bowling Green, where they will turn back for uptown service.\n\nListen for crew announcements to hear how your train will run. \n\nWhat's Happening?\nEmergency teams are responding to a person struck by a train at Bergen St.\n\nTravel Alternatives:\nTake nearby [A][C][D][F][N][Q][R] trains for service between Manhattan and Brooklyn.",
+      "header": "[2][3][4] trains are disrupted in Brooklyn in both directions.\nLimited [2][3][4] service between Manhattan and Brooklyn.\nTake [A][C][D][F][N][Q][R]  trains.",
+      "incident_id": "lmm:alert:274395",
+      "state": "DISRUPTION",
+      "version_id": "1d1e331cf7ac8e4b41d57ada9423fa3943fbc0f02f228eaf0bb1677ceaae4286"
+    },
+    {
+      "captured_at": 1793498882.712,
+      "description": "What's Happening?\nEmergency teams are responding to a person struck by a train at Bergen St.\n\nTravel Alternatives:\nTake nearby [A][C][D][F][N][Q][R] trains for service between Manhattan and Brooklyn.\n\nConsider nearby B14, B15, B41, B45 buses for [2][3][4] service in Brooklyn.\n\nPlanned Work Reminder:\nNo [L]  service between Broadway Junction and Canarsie-Rockaway Pkwy.\n[L] service is not available at Livonia Av.",
+      "header": "Flatbush Av-bound [2] and New Lots Av-bound [3] trains are running express from Atlantic Av-Barclays Ctr to Franklin Av.\n[2][3][4] running with delays in both directions.",
+      "incident_id": "lmm:alert:274395",
+      "state": "DISRUPTION",
+      "version_id": "8fa2179af25b801c58e48359f5159eed1b1f608568b6091fc1519cac8f3a6d47"
+    }
+  ],
+  "onset_audit": {
+    "all_versions_checked": true,
+    "candidate_families_checked": 145,
+    "conclusion": "Every declared initial-family onset boundary equals the earliest declared active start across all versions for this input inventory.",
+    "inventory_path": "data/processed/october/incidents.json.gz",
+    "inventory_sha256": "57d78963d57a419ae838763fcc06614841eefe02b0ffc9a7b7b0d4c6b81d9773",
+    "later_backdated_earlier_active_starts": 0
+  },
+  "review_policy": "Independently review contemporaneous official route/direction/section wording against the actual selected train path; ordinary delays qualify under the user request, and maintenance or work-train descriptions must not be relabeled as severe or proven unplanned.",
+  "review_uses_outcomes": false,
+  "review_uses_switch_recommendations": false,
+  "schema_version": "preincident-official-text-review-v1",
+  "summary": {
+    "candidate_cases": 31,
+    "clear_default_cases": 24,
+    "confirmed_by_actual_route": {
+      "4": 22,
+      "5": 2,
+      "F": 7
+    },
+    "confirmed_cases": 31,
+    "confirmed_incident_families": 11,
+    "excluded_cases": 0,
+    "near_tie_default_cases": 7
+  }
+}

@@ -72,6 +72,88 @@ supplemental freeze and reproduce both splits:
 These commands check the original code, configuration, profile, case archives
 and text-review hashes. They do not refit profiles or generate new routes.
 
+## Same-run delay test
+
+Start with the [combined default-route findings](reports/default-route-delay-findings.md)
+for the comparable route-level missed opportunity, a negative example, and the
+stricter same-run study's outcome limitations. Changing trains within the same
+Stay route is valid for a route comparison; it cannot establish delay of the
+earlier selected train. The findings keep these two claims separate.
+
+The [same-run forecast revision replay](reports/feed-revision-test.md) addresses
+the user's latest scenario directly: the original fastest route's selected
+service run remains catchable, but its absolute destination ETA moves later by
+at least five minutes. It compares Court Square to Times Square via 7, E or F.
+The October 25–31 fixed five-minute grid and four reassessment lags yield 8,064
+attempted pairs, two qualifying pairs and two distinct service runs. One initial
+lead is within the predeclared three-minute practical-tie boundary; the other
+is just above it. These are exploratory examples, not a general success rate.
+
+Inputs and representative runs are frozen before this experiment reads outcome
+labels. Earlier exploration of the same test week is explicitly disclosed.
+The unchanged five-minute Switch threshold applies, with `require_severe=False`
+because this request includes ordinary delays. The report evaluates both actual
+recommendations and forecast-selected alternatives, including negative and
+unknown outcomes. Final MTA predictions are screened arrival proxies, not
+independent passenger observations; street walking remains an authored assumption.
+
+With the prepared local sources, reproduce this separate experiment using:
+
+```sh
+.venv/bin/python algo/scripts/evaluate_feed_revision.py --prepare-inputs
+.venv/bin/python algo/scripts/evaluate_feed_revision.py --freeze-only
+.venv/bin/python algo/scripts/evaluate_feed_revision.py
+```
+
+The published freeze rejects changed code or inputs rather than silently
+replacing the selected cohort.
+
+The separate [Grand Central to Borough Hall extension](reports/feed-revision-brooklyn-test.md)
+reuses the already-declared four paths after the two Court Square outcomes
+failed quality checks. Five qualifying pairs yield three distinct delayed
+service runs. All modes recommend Stay; two complete comparisons show the
+forecast-best alternatives would be 6.75 and 14.75 minutes slower for the
+incident-profile mode, while one comparison remains unknown. This is a disclosed
+coverage-driven post-hoc expansion, with the earlier unknown cases preserved.
+Reproduce it with the same three commands using
+`algo/scripts/evaluate_feed_revision_brooklyn.py` instead of the Court Square runner.
+
+## Earlier pre-incident route comparison
+
+The [pre-incident route comparison](reports/preincident-brooklyn-test.md)
+fixes the originally fastest route before a problem, then compares alternatives
+at a later common departure cutoff. Its
+[clear-default subset](reports/preincident-brooklyn-clear-default.md) separates
+initially decisive choices from near ties. The test uses Grand Central to
+Borough Hall with four supplied paths; 4/5 and 2/3 are each treated as compatible
+same-corridor services, rather than artificial competing Stay/Switch routes.
+These are authored research candidates, not historical Google itineraries.
+
+This request includes ordinary delays, so this experiment explicitly calls the
+existing comparator with `require_severe=False`. It preserves the original
+predictor, training profile and five-minute Switch margin. Case selection and
+official direction/scope checks were fixed before outcome scoring. The separate
+[Court Sq to Times Square search](reports/preincident-test.md) retains its zero
+qualified-case result instead of manufacturing a successful example.
+
+All compared options include walking. The
+[supplemental raw-input pipeline](../data/docs/preincident-inputs.md) preserves
+trains that are usable at the new boarding stations even when the old pilot
+origin no longer appears in their future stops. New exact segments can use the
+frozen route-level statistical fallback; they do not necessarily receive zero
+correction. Returned support levels identify which fallback was used.
+
+The report compares Stay with the forecast-best alternative even when the
+algorithm says Stay, and keeps hindsight-best alternatives separate. It exposes
+missed opportunities as well as harmful recommendations and unknown outcomes.
+However, all selected baseline/reassessment train sequences differ. The
+[raw same-train audit](reports/preincident-brooklyn-headway-audit.json) shows that
+the positive October 26 counterfactual's longer remaining duration came from a
+later departure selecting the next train, whose forecast actually improved.
+It therefore does not establish that the originally selected train became
+delayed. Keep this exploratory route comparison distinct from a same-train
+forecast-revision test.
+
 ## Algorithm handoff
 
 Use [the comparator and integration instructions](docs/severe-comparison.md)
@@ -87,7 +169,15 @@ preserves the exact frozen development statistics; neither bundle contains raw
 data or individual outcome rows.
 The separate monthly bundle is for descriptive history, not held-out inference.
 
-After [preparing the data and freezing profiles](../data/README.md):
+The original benchmark commands below reproduce the published experiment at
+commit `8752333`, with its matching local source artifacts. Its protocol seals
+the entire algorithm module inventory. Later supplemental modules therefore
+cause the original freeze check to reject the current checkout even though
+the original predictor files remain unchanged. Use that published revision for
+the original benchmark, and the separate runners for subsequent experiments;
+do not overwrite a published freeze to bypass the check.
+
+At the original revision, after [preparing the data and freezing profiles](../data/README.md):
 
 ```sh
 .venv/bin/python algo/scripts/evaluate_october.py --freeze-only

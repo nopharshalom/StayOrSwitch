@@ -1,0 +1,168 @@
+{
+  "confirmed_case_ids": [],
+  "excluded_case_ids": [
+    "lmm-alert-273522-1793023375",
+    "lmm-alert-273522-1793024275",
+    "lmm-alert-273522-1793024575",
+    "lmm-alert-273522-1793025175",
+    "lmm-alert-273522-1793025475",
+    "lmm-alert-273522-1793025775",
+    "lmm-alert-273522-1793026075",
+    "lmm-alert-273522-1793026675"
+  ],
+  "prepared_inputs": {
+    "path": "algo/local/october-preincident/prepared-inputs.json.gz",
+    "sha256": "52d7266a7d7b2e033bf47dee4dc09503f14dfd33eb66551c72e1cc60f6db9b92"
+  },
+  "provenance": {
+    "new_code_sha256": {
+      "algo/scripts/evaluate_preincident.py": "c44269d0ac13b9a733a50cbb7e7810a86f96b05705f8eb20f7edcc1e8268f29c",
+      "algo/stayorswitch/preincident_replay.py": "8e273d2cc20f61afdeed2a0e18025cdd94eb67887f78425b3e7b91946b892989"
+    },
+    "original_code_sha256": {
+      "algo/scripts/evaluate_october.py": "98c8bfaf2491f2db93b01e5f656ba3eca0c1cb6f1f48d8ba525fa89440ad6954",
+      "algo/stayorswitch/__init__.py": "2033ed0e2d2816b7e6a938a5b1d9e2c87e4ba935f0a03d6a2c21c90e1ec6ad38",
+      "algo/stayorswitch/baseline.py": "606605ff2ad70a92155fcbf3e9fdc74498d2d1c45eda1dd5bde31f215cd5125e",
+      "algo/stayorswitch/google_routes.py": "464147ac91c2d3740e5a9a7fb4e69a1fe161374cfdf7c86a33f5e65099e5235a",
+      "algo/stayorswitch/integration.py": "b56805a41041477f470d1d2ea51e421e2aec09d8397d45b42514331517c422f5",
+      "algo/stayorswitch/matching.py": "4fbe2d3e51595dc33f746d5e8c4623402ca0537906e5f00a242488796010b262",
+      "algo/stayorswitch/mta.py": "f7e863de59ef092166767aaa8042bdf2d586892b692bd49f260c35215a0d8f3c",
+      "algo/stayorswitch/network.py": "abaf049627a81547ccc96ee403f07e95d06612e6a2488d2c80ad2cc5c43f320c",
+      "algo/stayorswitch/october_evaluation.py": "ad430d0ef18510c876f31c78b45134a62885845b816aa92abe77538d8c7afeab",
+      "algo/stayorswitch/provider_client.py": "36694c98a0dd97e51434aa30279f5109ee2add8adc1d79e5a482d9cbc68e747e",
+      "algo/stayorswitch/severe.py": "6c6fa7f4fd45316583d7f55c10b5b907618fbb022b648c415a725ce6da36742e",
+      "data/delay_profiles/__init__.py": "1748bf1fb14b82d6a12dc3c8f687504b48a0dc494da985ae8acb5be9a428d790",
+      "data/delay_profiles/build.py": "8925b99e67b34f4c61fa264f9f7edba4859ff6dc0b0cdc5e46fda4066d8ffc4a",
+      "data/delay_profiles/common.py": "0d66ec04553c567f6bf581130c8b018014cb1af63eda92336aa3d94fc053becf",
+      "data/delay_profiles/estimator.py": "9b44d6b76bf40e134806299bf05ffe8ec61b6b93fe9c9712cdb128ce1477a62a",
+      "data/delay_profiles/incidents.py": "3cf3a3e6ea8c22d1fb8bf6fc595a7df25653de4aa30bdda5cd5ae5686a9594f1",
+      "data/october/__init__.py": "630de8bab4998e234cfee460ad14cfc43352dcaa80bb9a8c3cc7a0a92bf056c6",
+      "data/october/labels.py": "e22e2ed808a1ab24ec5cc36f9e1642bc045f9a7abcb7a84d3d00cbe1feda5919",
+      "data/october/prepare.py": "c7566bf7dca048c05a8f576b48b69900dc52d8967e94846ada4ae3f7944c9170",
+      "data/october/projection.py": "504c7074510e1d66c88aaa59b4759cd650945b0630dc69067cc0b3fcb29994a5",
+      "data/october/sources.py": "c895acfe723c1a894ca6f97222114731373a6e5729c17b9b16525e70eaa05957",
+      "data/scripts/build_delay_profiles.py": "95d237c8040d3b91ebc870e9be44558ded53a7456c23400251cff0b0b84bc348",
+      "data/scripts/prepare_october.py": "84dfa5470a17606dbebf09e0425c616538b4e8939584af132487c68825033fdc",
+      "data/scripts/rebuild_october_labels.py": "824db1bcd224e7d2a83612b3cfc09f503a01ce004b5398d169859fdfd11d25f9"
+    },
+    "original_evaluation": {
+      "path": "algo/reports/october-evaluation-frozen.json",
+      "sha256": "dfcd5c1ad825c080b46b6fde07069084e8ed8df429d21cdaab80524da88882ad"
+    },
+    "policy": {
+      "anchor_lookback_seconds": [
+        60,
+        300,
+        600,
+        900,
+        1800
+      ],
+      "baseline_near_tie_seconds": 180,
+      "decision_grid_seconds": 300,
+      "decision_window_seconds": 7200,
+      "destination": "Times Square, West 42nd Street at Seventh Avenue",
+      "minimum_duration_deterioration_seconds": 300,
+      "origin": "Court Square subway complex street entrance, Long Island City",
+      "planning_state": "NOT_BOARDED_AT_EITHER_CUTOFF; NEW_DEPARTURE_FROM_SAME_ORIGIN_AT_DECISION_TIME",
+      "reference_policy": "LATEST_ELIGIBLE_PRE_PROBLEM_FASTEST_UNMODIFIED_MTA_ROUTE",
+      "require_severe": false,
+      "routes": [
+        {
+          "access_walk_seconds": 120,
+          "egress_walk_seconds": 120,
+          "family": "7_DIRECT",
+          "id": "7_times_square",
+          "legs": [
+            {
+              "feed_id": "numbered",
+              "from_stop_id": "719S",
+              "route_id": "7",
+              "route_ids": [
+                "7",
+                "7X"
+              ],
+              "to_stop_id": "725S"
+            }
+          ],
+          "name": "7 Court Sq to Times Sq",
+          "transfer_walk_seconds": []
+        },
+        {
+          "access_walk_seconds": 300,
+          "egress_walk_seconds": 420,
+          "family": "E_DIRECT",
+          "id": "e_times_square",
+          "legs": [
+            {
+              "feed_id": "ace",
+              "from_stop_id": "F09S",
+              "route_id": "E",
+              "route_ids": [
+                "E"
+              ],
+              "to_stop_id": "A27S"
+            }
+          ],
+          "name": "E Court Sq to Port Authority, walk to Times Sq",
+          "transfer_walk_seconds": []
+        },
+        {
+          "access_walk_seconds": 300,
+          "egress_walk_seconds": 420,
+          "family": "F_DIRECT",
+          "id": "f_times_square",
+          "legs": [
+            {
+              "feed_id": "bdfm",
+              "from_stop_id": "F09S",
+              "route_id": "F",
+              "route_ids": [
+                "F",
+                "FX"
+              ],
+              "to_stop_id": "D16S"
+            }
+          ],
+          "name": "F Court Sq to Bryant Park, walk to Times Sq",
+          "transfer_walk_seconds": []
+        }
+      ],
+      "schema_version": "preincident-fastest-v1",
+      "study_status": "POST_HOC_EXPLORATORY_TEST_CASE_SEARCH",
+      "switch_margin_seconds": 300,
+      "test_dates": [
+        "2026-10-25",
+        "2026-10-31"
+      ],
+      "tie_margin_seconds": 180,
+      "walking_policy": "AUTHORED_STREET_ACCESS_AND_EGRESS_ASSUMPTIONS_NOT_MEASURED_OR_HISTORICAL_PROVIDER_ROUTES",
+      "walking_sensitivity_seconds": [
+        -120,
+        120
+      ]
+    },
+    "profile_manifest": {
+      "path": "data/manifests/profiles-frozen.json",
+      "sha256": "6f097f54dd7631d5ae8e0e8708e007ca30b93a921f404e6666cd872d533cdfb1"
+    },
+    "source_manifest": {
+      "path": "data/manifests/october.json",
+      "sha256": "9397bc6ad9c4159a028f4613580206a560fba772bf9c845395e38eb628ea179f"
+    },
+    "training_bundle": {
+      "path": "data/artifacts/october-2026-profiles-train.json.gz",
+      "sha256": "ee9620bdba17412c2b55aaa919a781a855f84e37e4efc8f3016b2fe9212ff31c"
+    }
+  },
+  "schema_version": "preincident-freeze-v1",
+  "selection_uses_outcomes": false,
+  "study_status": "POST_HOC_TEST_CASE_SEARCH",
+  "supplemental_label_manifest": {
+    "path": "data/manifests/preincident-inputs.json",
+    "sha256": "8f60b7424705024e3333a4628511052018eb6efc2a9eb2243347a93b7392023c"
+  },
+  "text_review": {
+    "path": "algo/reports/preincident-text-review.json",
+    "sha256": "dcefc95b7bdac1b906624adc72c24786adf2057612ec824e4a8135bea5f7bbb3"
+  }
+}

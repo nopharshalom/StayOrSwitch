@@ -1,0 +1,647 @@
+{
+  "anchor_counts": {
+    "ELIGIBLE": 38,
+    "UNAVAILABLE": 39
+  },
+  "candidate_count": 8,
+  "candidate_incidents": 1,
+  "cases": [
+    {
+      "anchor_time": "2026-10-26T09:41:54-04:00",
+      "anchor_winner_lead_seconds": 391.0,
+      "case_id": "lmm-alert-273522-1793023375",
+      "decision_at": 1793023375.559,
+      "duration_deterioration_seconds": 305.4409999847412,
+      "incident_ids": [
+        "lmm:alert:273522"
+      ],
+      "local_time": "2026-10-26T10:02:55.559000-04:00",
+      "notices": [
+        {
+          "active_periods": [
+            {
+              "end": null,
+              "start": 1793022174
+            }
+          ],
+          "age_seconds": 1200.0,
+          "captured_at": 1793023265.641,
+          "cause": "SIGNAL",
+          "classification_rule": "EXPLICIT_SERVICE_IMPACT",
+          "description": null,
+          "effect": null,
+          "first_observed_at": 1793022175.559,
+          "header": "Flushing-Main St-bound [7] trains are running with delays while we address a signal problem at Junction Blvd.",
+          "id": "lmm:alert:273522:26",
+          "incident_id": "lmm:alert:273522",
+          "informed_entities": [
+            {
+              "agency_id": "MTASBWY",
+              "direction_id": null,
+              "extensions": {},
+              "route_id": "7",
+              "stop_id": null,
+              "trip": null
+            }
+          ],
+          "no_service": false,
+          "no_service_route_ids": [],
+          "no_service_scope": null,
+          "recovery": false,
+          "scope": "ROUTE",
+          "source_cause": null,
+          "state": "DISRUPTION",
+          "version_id": "8ede741a98e46144a584c8d897fa6d4aed8ff18cee32ab148bea99323bcabbf3"
+        }
+      ],
+      "reference_route_id": "7_times_square",
+      "selected_legs": [
+        {
+          "from_stop_id": "719S",
+          "platform_direction": "S",
+          "route_id": "7",
+          "segment_stop_ids": [
+            "719S",
+            "720S",
+            "721S",
+            "723S",
+            "724S",
+            "725S"
+          ],
+          "to_stop_id": "725S"
+        }
+      ],
+      "status": "PENDING"
+    },
+    {
+      "anchor_time": "2026-10-26T09:41:54-04:00",
+      "anchor_winner_lead_seconds": 391.0,
+      "case_id": "lmm-alert-273522-1793024275",
+      "decision_at": 1793024275.559,
+      "duration_deterioration_seconds": 346.4409999847412,
+      "incident_ids": [
+        "lmm:alert:273522"
+      ],
+      "local_time": "2026-10-26T10:17:55.559000-04:00",
+      "notices": [
+        {
+          "active_periods": [
+            {
+              "end": null,
+              "start": 1793022174
+            }
+          ],
+          "age_seconds": 2100.0,
+          "captured_at": 1793023515.739,
+          "cause": "SIGNAL",
+          "classification_rule": "EXPLICIT_SERVICE_IMPACT",
+          "description": null,
+          "effect": null,
+          "first_observed_at": 1793022175.559,
+          "header": "Flushing-Main St-bound [7] trains are running with delays while we address a signal problem at Junction Blvd.",
+          "id": "lmm:alert:273522:26",
+          "incident_id": "lmm:alert:273522",
+          "informed_entities": [
+            {
+              "agency_id": "MTASBWY",
+              "direction_id": null,
+              "extensions": {},
+              "route_id": "7",
+              "stop_id": null,
+              "trip": null
+            }
+          ],
+          "no_service": false,
+          "no_service_route_ids": [],
+          "no_service_scope": null,
+          "recovery": false,
+          "scope": "ROUTE",
+          "source_cause": null,
+          "state": "DISRUPTION",
+          "version_id": "8ede741a98e46144a584c8d897fa6d4aed8ff18cee32ab148bea99323bcabbf3"
+        }
+      ],
+      "reference_route_id": "7_times_square",
+      "selected_legs": [
+        {
+          "from_stop_id": "719S",
+          "platform_direction": "S",
+          "route_id": "7",
+          "segment_stop_ids": [
+            "719S",
+            "720S",
+            "721S",
+            "723S",
+            "724S",
+            "725S"
+          ],
+          "to_stop_id": "725S"
+        }
+      ],
+      "status": "PENDING"
+    },
+    {
+      "anchor_time": "2026-10-26T09:41:54-04:00",
+      "anchor_winner_lead_seconds": 391.0,
+      "case_id": "lmm-alert-273522-1793024575",
+      "decision_at": 1793024575.559,
+      "duration_deterioration_seconds": 352.4409999847412,
+      "incident_ids": [
+        "lmm:alert:273522"
+      ],
+      "local_time": "2026-10-26T10:22:55.559000-04:00",
+      "notices": [
+        {
+          "active_periods": [
+            {
+              "end": null,
+              "start": 1793022174
+            }
+          ],
+          "age_seconds": 2400.0,
+          "captured_at": 1793023515.739,
+          "cause": "SIGNAL",
+          "classification_rule": "EXPLICIT_SERVICE_IMPACT",
+          "description": null,
+          "effect": null,
+          "first_observed_at": 1793022175.559,
+          "header": "Flushing-Main St-bound [7] trains are running with delays while we address a signal problem at Junction Blvd.",
+          "id": "lmm:alert:273522:26",
+          "incident_id": "lmm:alert:273522",
+          "informed_entities": [
+            {
+              "agency_id": "MTASBWY",
+              "direction_id": null,
+              "extensions": {},
+              "route_id": "7",
+              "stop_id": null,
+              "trip": null
+            }
+          ],
+          "no_service": false,
+          "no_service_route_ids": [],
+          "no_service_scope": null,
+          "recovery": false,
+          "scope": "ROUTE",
+          "source_cause": null,
+          "state": "DISRUPTION",
+          "version_id": "8ede741a98e46144a584c8d897fa6d4aed8ff18cee32ab148bea99323bcabbf3"
+        }
+      ],
+      "reference_route_id": "7_times_square",
+      "selected_legs": [
+        {
+          "from_stop_id": "719S",
+          "platform_direction": "S",
+          "route_id": "7",
+          "segment_stop_ids": [
+            "719S",
+            "720S",
+            "721S",
+            "723S",
+            "724S",
+            "725S"
+          ],
+          "to_stop_id": "725S"
+        }
+      ],
+      "status": "PENDING"
+    },
+    {
+      "anchor_time": "2026-10-26T09:41:54-04:00",
+      "anchor_winner_lead_seconds": 391.0,
+      "case_id": "lmm-alert-273522-1793025175",
+      "decision_at": 1793025175.559,
+      "duration_deterioration_seconds": 374.4409999847412,
+      "incident_ids": [
+        "lmm:alert:273522"
+      ],
+      "local_time": "2026-10-26T10:32:55.559000-04:00",
+      "notices": [
+        {
+          "active_periods": [
+            {
+              "end": null,
+              "start": 1793022174
+            }
+          ],
+          "age_seconds": 3000.0,
+          "captured_at": 1793025140.651,
+          "cause": "SIGNAL",
+          "classification_rule": "EXPLICIT_SERVICE_IMPACT",
+          "description": null,
+          "effect": null,
+          "first_observed_at": 1793022175.559,
+          "header": "Flushing-Main St-bound [7] trains are running with delays while we address a signal problem at Junction Blvd.",
+          "id": "lmm:alert:273522:26",
+          "incident_id": "lmm:alert:273522",
+          "informed_entities": [
+            {
+              "agency_id": "MTASBWY",
+              "direction_id": null,
+              "extensions": {},
+              "route_id": "7",
+              "stop_id": null,
+              "trip": null
+            }
+          ],
+          "no_service": false,
+          "no_service_route_ids": [],
+          "no_service_scope": null,
+          "recovery": false,
+          "scope": "ROUTE",
+          "source_cause": null,
+          "state": "DISRUPTION",
+          "version_id": "8ede741a98e46144a584c8d897fa6d4aed8ff18cee32ab148bea99323bcabbf3"
+        }
+      ],
+      "reference_route_id": "7_times_square",
+      "selected_legs": [
+        {
+          "from_stop_id": "719S",
+          "platform_direction": "S",
+          "route_id": "7",
+          "segment_stop_ids": [
+            "719S",
+            "720S",
+            "721S",
+            "723S",
+            "724S",
+            "725S"
+          ],
+          "to_stop_id": "725S"
+        }
+      ],
+      "status": "PENDING"
+    },
+    {
+      "anchor_time": "2026-10-26T09:41:54-04:00",
+      "anchor_winner_lead_seconds": 391.0,
+      "case_id": "lmm-alert-273522-1793025475",
+      "decision_at": 1793025475.559,
+      "duration_deterioration_seconds": 664.4409999847412,
+      "incident_ids": [
+        "lmm:alert:273522"
+      ],
+      "local_time": "2026-10-26T10:37:55.559000-04:00",
+      "notices": [
+        {
+          "active_periods": [
+            {
+              "end": null,
+              "start": 1793022174
+            }
+          ],
+          "age_seconds": 3300.0,
+          "captured_at": 1793025140.651,
+          "cause": "SIGNAL",
+          "classification_rule": "EXPLICIT_SERVICE_IMPACT",
+          "description": null,
+          "effect": null,
+          "first_observed_at": 1793022175.559,
+          "header": "Flushing-Main St-bound [7] trains are running with delays while we address a signal problem at Junction Blvd.",
+          "id": "lmm:alert:273522:26",
+          "incident_id": "lmm:alert:273522",
+          "informed_entities": [
+            {
+              "agency_id": "MTASBWY",
+              "direction_id": null,
+              "extensions": {},
+              "route_id": "7",
+              "stop_id": null,
+              "trip": null
+            }
+          ],
+          "no_service": false,
+          "no_service_route_ids": [],
+          "no_service_scope": null,
+          "recovery": false,
+          "scope": "ROUTE",
+          "source_cause": null,
+          "state": "DISRUPTION",
+          "version_id": "8ede741a98e46144a584c8d897fa6d4aed8ff18cee32ab148bea99323bcabbf3"
+        }
+      ],
+      "reference_route_id": "7_times_square",
+      "selected_legs": [
+        {
+          "from_stop_id": "719S",
+          "platform_direction": "S",
+          "route_id": "7",
+          "segment_stop_ids": [
+            "719S",
+            "720S",
+            "721S",
+            "723S",
+            "724S",
+            "725S"
+          ],
+          "to_stop_id": "725S"
+        }
+      ],
+      "status": "PENDING"
+    },
+    {
+      "anchor_time": "2026-10-26T09:41:54-04:00",
+      "anchor_winner_lead_seconds": 391.0,
+      "case_id": "lmm-alert-273522-1793025775",
+      "decision_at": 1793025775.559,
+      "duration_deterioration_seconds": 438.4409999847412,
+      "incident_ids": [
+        "lmm:alert:273522"
+      ],
+      "local_time": "2026-10-26T10:42:55.559000-04:00",
+      "notices": [
+        {
+          "active_periods": [
+            {
+              "end": null,
+              "start": 1793022174
+            }
+          ],
+          "age_seconds": 3600.0,
+          "captured_at": 1793025570.546,
+          "cause": "SIGNAL",
+          "classification_rule": "EXPLICIT_SERVICE_IMPACT",
+          "description": null,
+          "effect": null,
+          "first_observed_at": 1793022175.559,
+          "header": "Flushing-Main St-bound [7] trains are running with delays while we address a signal problem at Junction Blvd.",
+          "id": "lmm:alert:273522:26",
+          "incident_id": "lmm:alert:273522",
+          "informed_entities": [
+            {
+              "agency_id": "MTASBWY",
+              "direction_id": null,
+              "extensions": {},
+              "route_id": "7",
+              "stop_id": null,
+              "trip": null
+            }
+          ],
+          "no_service": false,
+          "no_service_route_ids": [],
+          "no_service_scope": null,
+          "recovery": false,
+          "scope": "ROUTE",
+          "source_cause": null,
+          "state": "DISRUPTION",
+          "version_id": "8ede741a98e46144a584c8d897fa6d4aed8ff18cee32ab148bea99323bcabbf3"
+        }
+      ],
+      "reference_route_id": "7_times_square",
+      "selected_legs": [
+        {
+          "from_stop_id": "719S",
+          "platform_direction": "S",
+          "route_id": "7",
+          "segment_stop_ids": [
+            "719S",
+            "720S",
+            "721S",
+            "723S",
+            "724S",
+            "725S"
+          ],
+          "to_stop_id": "725S"
+        }
+      ],
+      "status": "PENDING"
+    },
+    {
+      "anchor_time": "2026-10-26T09:41:54-04:00",
+      "anchor_winner_lead_seconds": 391.0,
+      "case_id": "lmm-alert-273522-1793026075",
+      "decision_at": 1793026075.559,
+      "duration_deterioration_seconds": 317.4409999847412,
+      "incident_ids": [
+        "lmm:alert:273522"
+      ],
+      "local_time": "2026-10-26T10:47:55.559000-04:00",
+      "notices": [
+        {
+          "active_periods": [
+            {
+              "end": null,
+              "start": 1793022174
+            }
+          ],
+          "age_seconds": 3900.0,
+          "captured_at": 1793025570.546,
+          "cause": "SIGNAL",
+          "classification_rule": "EXPLICIT_SERVICE_IMPACT",
+          "description": null,
+          "effect": null,
+          "first_observed_at": 1793022175.559,
+          "header": "Flushing-Main St-bound [7] trains are running with delays while we address a signal problem at Junction Blvd.",
+          "id": "lmm:alert:273522:26",
+          "incident_id": "lmm:alert:273522",
+          "informed_entities": [
+            {
+              "agency_id": "MTASBWY",
+              "direction_id": null,
+              "extensions": {},
+              "route_id": "7",
+              "stop_id": null,
+              "trip": null
+            }
+          ],
+          "no_service": false,
+          "no_service_route_ids": [],
+          "no_service_scope": null,
+          "recovery": false,
+          "scope": "ROUTE",
+          "source_cause": null,
+          "state": "DISRUPTION",
+          "version_id": "8ede741a98e46144a584c8d897fa6d4aed8ff18cee32ab148bea99323bcabbf3"
+        }
+      ],
+      "reference_route_id": "7_times_square",
+      "selected_legs": [
+        {
+          "from_stop_id": "719S",
+          "platform_direction": "S",
+          "route_id": "7",
+          "segment_stop_ids": [
+            "719S",
+            "720S",
+            "721S",
+            "723S",
+            "724S",
+            "725S"
+          ],
+          "to_stop_id": "725S"
+        }
+      ],
+      "status": "PENDING"
+    },
+    {
+      "anchor_time": "2026-10-26T09:41:54-04:00",
+      "anchor_winner_lead_seconds": 391.0,
+      "case_id": "lmm-alert-273522-1793026675",
+      "decision_at": 1793026675.559,
+      "duration_deterioration_seconds": 415.4409999847412,
+      "incident_ids": [
+        "lmm:alert:273522"
+      ],
+      "local_time": "2026-10-26T10:57:55.559000-04:00",
+      "notices": [
+        {
+          "active_periods": [
+            {
+              "end": 1793027100,
+              "start": 1793022174
+            }
+          ],
+          "age_seconds": 4500.0,
+          "captured_at": 1793026570.663,
+          "cause": "SIGNAL",
+          "classification_rule": "EXPLICIT_SERVICE_IMPACT",
+          "description": null,
+          "effect": null,
+          "first_observed_at": 1793022175.559,
+          "header": "Flushing-Main St-bound [7] trains are running with delays after we addressed a signal problem at Junction Blvd.",
+          "id": "lmm:alert:273522:26",
+          "incident_id": "lmm:alert:273522",
+          "informed_entities": [
+            {
+              "agency_id": "MTASBWY",
+              "direction_id": null,
+              "extensions": {},
+              "route_id": "7",
+              "stop_id": null,
+              "trip": null
+            }
+          ],
+          "no_service": false,
+          "no_service_route_ids": [],
+          "no_service_scope": null,
+          "recovery": false,
+          "scope": "ROUTE",
+          "source_cause": null,
+          "state": "DISRUPTION",
+          "version_id": "155903c940bc0d431bee8004eea23e52bdce1e2a7b014776417f58d688ad1d2b"
+        }
+      ],
+      "reference_route_id": "7_times_square",
+      "selected_legs": [
+        {
+          "from_stop_id": "719S",
+          "platform_direction": "S",
+          "route_id": "7",
+          "segment_stop_ids": [
+            "719S",
+            "720S",
+            "721S",
+            "723S",
+            "724S",
+            "725S"
+          ],
+          "to_stop_id": "725S"
+        }
+      ],
+      "status": "PENDING"
+    }
+  ],
+  "input_artifact": {
+    "path": "algo/local/october-preincident/prepared-inputs.json.gz",
+    "sha256": "52d7266a7d7b2e033bf47dee4dc09503f14dfd33eb66551c72e1cc60f6db9b92"
+  },
+  "policy": {
+    "anchor_lookback_seconds": [
+      60,
+      300,
+      600,
+      900,
+      1800
+    ],
+    "baseline_near_tie_seconds": 180,
+    "decision_grid_seconds": 300,
+    "decision_window_seconds": 7200,
+    "destination": "Times Square, West 42nd Street at Seventh Avenue",
+    "minimum_duration_deterioration_seconds": 300,
+    "origin": "Court Square subway complex street entrance, Long Island City",
+    "planning_state": "NOT_BOARDED_AT_EITHER_CUTOFF; NEW_DEPARTURE_FROM_SAME_ORIGIN_AT_DECISION_TIME",
+    "reference_policy": "LATEST_ELIGIBLE_PRE_PROBLEM_FASTEST_UNMODIFIED_MTA_ROUTE",
+    "require_severe": false,
+    "routes": [
+      {
+        "access_walk_seconds": 120,
+        "egress_walk_seconds": 120,
+        "family": "7_DIRECT",
+        "id": "7_times_square",
+        "legs": [
+          {
+            "feed_id": "numbered",
+            "from_stop_id": "719S",
+            "route_id": "7",
+            "route_ids": [
+              "7",
+              "7X"
+            ],
+            "to_stop_id": "725S"
+          }
+        ],
+        "name": "7 Court Sq to Times Sq",
+        "transfer_walk_seconds": []
+      },
+      {
+        "access_walk_seconds": 300,
+        "egress_walk_seconds": 420,
+        "family": "E_DIRECT",
+        "id": "e_times_square",
+        "legs": [
+          {
+            "feed_id": "ace",
+            "from_stop_id": "F09S",
+            "route_id": "E",
+            "route_ids": [
+              "E"
+            ],
+            "to_stop_id": "A27S"
+          }
+        ],
+        "name": "E Court Sq to Port Authority, walk to Times Sq",
+        "transfer_walk_seconds": []
+      },
+      {
+        "access_walk_seconds": 300,
+        "egress_walk_seconds": 420,
+        "family": "F_DIRECT",
+        "id": "f_times_square",
+        "legs": [
+          {
+            "feed_id": "bdfm",
+            "from_stop_id": "F09S",
+            "route_id": "F",
+            "route_ids": [
+              "F",
+              "FX"
+            ],
+            "to_stop_id": "D16S"
+          }
+        ],
+        "name": "F Court Sq to Bryant Park, walk to Times Sq",
+        "transfer_walk_seconds": []
+      }
+    ],
+    "schema_version": "preincident-fastest-v1",
+    "study_status": "POST_HOC_EXPLORATORY_TEST_CASE_SEARCH",
+    "switch_margin_seconds": 300,
+    "test_dates": [
+      "2026-10-25",
+      "2026-10-31"
+    ],
+    "tie_margin_seconds": 180,
+    "walking_policy": "AUTHORED_STREET_ACCESS_AND_EGRESS_ASSUMPTIONS_NOT_MEASURED_OR_HISTORICAL_PROVIDER_ROUTES",
+    "walking_sensitivity_seconds": [
+      -120,
+      120
+    ]
+  },
+  "selection_rejection_counts": {
+    "NO_APPLICABLE_CURRENT_PROBLEM_NOTICE": 1000,
+    "NO_VALID_PRE_PROBLEM_ANCHOR": 1032,
+    "REMAINING_DURATION_DID_NOT_INCREASE_FIVE_MINUTES": 27
+  }
+}

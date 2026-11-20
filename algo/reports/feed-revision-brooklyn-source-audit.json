@@ -1,0 +1,364 @@
+{
+  "schema_version": "feed-revision-brooklyn-source-audit-v1",
+  "status": "PASS",
+  "scope": "Independent source-snapshot audit of all three selected Brooklyn same-run forecast-revision representatives before outcome scoring.",
+  "prepared_inputs": {
+    "path": "algo/local/october-feed-revision-brooklyn/prepared-inputs.json.gz",
+    "sha256": "50694cfaadbba05e8b32062d25809dea40ad13e514317cddb7eba8453c6fae3b"
+  },
+  "corrected_input_manifest": {
+    "path": "data/manifests/preincident-inputs.json",
+    "sha256": "8f60b7424705024e3333a4628511052018eb6efc2a9eb2243347a93b7392023c"
+  },
+  "method": {
+    "latest_capture_selection": "Maximum captured_at at or before each cutoff, independently scanned from corrected numbered snapshots.",
+    "raw_archive_verification": "Supplemental raw-to-projection parity was independently reviewed earlier; this audit reuses that verification and did not repeat full-archive decompression. Raw archive member identifiers and SHA256 values below are source metadata, not newly recomputed raw-byte hashes.",
+    "outcome_artifacts_inspected": false,
+    "producer_or_sealed_artifacts_modified": false,
+    "identity_limit": "Same encoded service run and matching NYCT train identifier; no independent physical railcar observation."
+  },
+  "cases": [
+    {
+      "case_id": "same-run-fcf4c3774ea8323c691b-1792904400-1792904700",
+      "status": "PASS",
+      "reference_route_id": "lexington_direct",
+      "source_snapshot": {
+        "path": "data/processed/preincident-inputs/2026-10-25.snapshots.jsonl.gz",
+        "sha256": "a952a9de7fc7f9936e1a8d02da542ca63d60394ff3eaa0816ae6a51ab010ce81",
+        "matches_prepared_input_source_hash": true
+      },
+      "cutoffs": [
+        {
+          "cutoff": "T0",
+          "cutoff_epoch": 1792904400.0,
+          "cutoff_local": "2026-10-25T01:00:00-04:00",
+          "legs": [
+            {
+              "leg_index": 0,
+              "latest_capture": {
+                "captured_at_epoch": 1792904342.686,
+                "captured_at_local": "2026-10-25T00:59:02.686000-04:00",
+                "source_updated_at": "2026-10-25T04:58:59Z",
+                "age_at_cutoff_seconds": 57.314,
+                "status": "AVAILABLE",
+                "raw_sha256": "3d91a7d0d9e0a0ff811dae57aed4bdf8b77e15a7c8e83ea8b3b051e384370441",
+                "archive_provenance": {
+                  "archive": "subwaydatanyc_2026-10-25_gtfsrt.tar.xz",
+                  "archive_member": "nycsubway_1234567_20261025T045902.686Z_hwi2pugz4cqp.gtfsrt",
+                  "sha256": "3d91a7d0d9e0a0ff811dae57aed4bdf8b77e15a7c8e83ea8b3b051e384370441"
+                }
+              },
+              "selected_run": {
+                "normalized_trip_id": "MTA:numbered:20261025:4:005400_4..S13X061:",
+                "raw_trip_id": "005400_4..S13X061",
+                "service_date": "20261025",
+                "route_id": "4",
+                "nyct_train_id": "04 0054  3AB/NLT"
+              },
+              "boarding": {
+                "stop_id": "631S",
+                "arrival_epoch": 1792905180,
+                "departure_epoch": 1792905180,
+                "departure_local": "2026-10-25T01:13:00-04:00",
+                "platform_ready_epoch": 1792904580.0,
+                "platform_ready_local": "2026-10-25T01:03:00-04:00",
+                "catchability_slack_seconds": 600.0
+              },
+              "alighting": {
+                "stop_id": "423S",
+                "arrival_epoch": 1792906500,
+                "arrival_local": "2026-10-25T01:35:00-04:00"
+              }
+            }
+          ]
+        },
+        {
+          "cutoff": "T1",
+          "cutoff_epoch": 1792904700.0,
+          "cutoff_local": "2026-10-25T01:05:00-04:00",
+          "legs": [
+            {
+              "leg_index": 0,
+              "latest_capture": {
+                "captured_at_epoch": 1792904642.683,
+                "captured_at_local": "2026-10-25T01:04:02.683000-04:00",
+                "source_updated_at": "2026-10-25T05:03:59Z",
+                "age_at_cutoff_seconds": 57.317,
+                "status": "AVAILABLE",
+                "raw_sha256": "e17ecfb803d56a48b89e34243a4dfc1e4d66b0a4d6153dadea6e6d8568c3bea2",
+                "archive_provenance": {
+                  "archive": "subwaydatanyc_2026-10-25_gtfsrt.tar.xz",
+                  "archive_member": "nycsubway_1234567_20261025T050402.683Z_4f7m7oad2vve.gtfsrt",
+                  "sha256": "e17ecfb803d56a48b89e34243a4dfc1e4d66b0a4d6153dadea6e6d8568c3bea2"
+                }
+              },
+              "selected_run": {
+                "normalized_trip_id": "MTA:numbered:20261025:4:005400_4..S13X061:",
+                "raw_trip_id": "005400_4..S13X061",
+                "service_date": "20261025",
+                "route_id": "4",
+                "nyct_train_id": "04 0054  3AB/NLT"
+              },
+              "boarding": {
+                "stop_id": "631S",
+                "arrival_epoch": 1792905581,
+                "departure_epoch": 1792905581,
+                "departure_local": "2026-10-25T01:19:41-04:00",
+                "platform_ready_epoch": 1792904880.0,
+                "platform_ready_local": "2026-10-25T01:08:00-04:00",
+                "catchability_slack_seconds": 701.0
+              },
+              "alighting": {
+                "stop_id": "423S",
+                "arrival_epoch": 1792906901,
+                "arrival_local": "2026-10-25T01:41:41-04:00"
+              }
+            }
+          ]
+        }
+      ],
+      "checks": {
+        "latest_captures_at_or_before_cutoffs": true,
+        "same_ordered_selected_service_runs_endpoints_and_nyct_train_ids": true,
+        "forecast_values_match_prepared_inputs": true,
+        "all_selected_legs_catchable_at_both_cutoffs": true,
+        "leg_forecast_shifts": [
+          {
+            "leg_index": 0,
+            "departure_forecast_shift_seconds": 401,
+            "arrival_forecast_shift_seconds": 401
+          }
+        ],
+        "final_arrival_shift_at_least_300_seconds": true
+      }
+    },
+    {
+      "case_id": "same-run-9381d2698faa80774e31-1793281800-1793282400",
+      "status": "PASS",
+      "reference_route_id": "lexington_direct",
+      "source_snapshot": {
+        "path": "data/processed/preincident-inputs/2026-10-29.snapshots.jsonl.gz",
+        "sha256": "a767dfcf163971c4d49c37452a14bd8b5b04decbeb2fe459f3cd1d8a95683ff9",
+        "matches_prepared_input_source_hash": true
+      },
+      "cutoffs": [
+        {
+          "cutoff": "T0",
+          "cutoff_epoch": 1793281800.0,
+          "cutoff_local": "2026-10-29T09:50:00-04:00",
+          "legs": [
+            {
+              "leg_index": 0,
+              "latest_capture": {
+                "captured_at_epoch": 1793281740.462,
+                "captured_at_local": "2026-10-29T09:49:00.462000-04:00",
+                "source_updated_at": "2026-10-29T13:48:56Z",
+                "age_at_cutoff_seconds": 59.538,
+                "status": "AVAILABLE",
+                "raw_sha256": "d00942f65edb4f368428495f31320c4edcaddc1887ad06d3efdfadd568c5cc7d",
+                "archive_provenance": {
+                  "archive": "subwaydatanyc_2026-10-29_gtfsrt.tar.xz",
+                  "archive_member": "nycsubway_1234567_20261029T134900.462Z_2aeuf5s63nht.gtfsrt",
+                  "sha256": "d00942f65edb4f368428495f31320c4edcaddc1887ad06d3efdfadd568c5cc7d"
+                }
+              },
+              "selected_run": {
+                "normalized_trip_id": "MTA:numbered:20261029:5:054700_5..S03R:",
+                "raw_trip_id": "054700_5..S03R",
+                "service_date": "20261029",
+                "route_id": "5",
+                "nyct_train_id": "05 0907  DYR/FLA"
+              },
+              "boarding": {
+                "stop_id": "631S",
+                "arrival_epoch": 1793282220,
+                "departure_epoch": 1793282220,
+                "departure_local": "2026-10-29T09:57:00-04:00",
+                "platform_ready_epoch": 1793281980.0,
+                "platform_ready_local": "2026-10-29T09:53:00-04:00",
+                "catchability_slack_seconds": 240.0
+              },
+              "alighting": {
+                "stop_id": "423S",
+                "arrival_epoch": 1793283420,
+                "arrival_local": "2026-10-29T10:17:00-04:00"
+              }
+            }
+          ]
+        },
+        {
+          "cutoff": "T1",
+          "cutoff_epoch": 1793282400.0,
+          "cutoff_local": "2026-10-29T10:00:00-04:00",
+          "legs": [
+            {
+              "leg_index": 0,
+              "latest_capture": {
+                "captured_at_epoch": 1793282340.466,
+                "captured_at_local": "2026-10-29T09:59:00.466000-04:00",
+                "source_updated_at": "2026-10-29T13:58:56Z",
+                "age_at_cutoff_seconds": 59.534,
+                "status": "AVAILABLE",
+                "raw_sha256": "4c48ecc381ae0255cf4eea5d5930f5d0c873e82ceb8130ffd612a1ae8b1ad236",
+                "archive_provenance": {
+                  "archive": "subwaydatanyc_2026-10-29_gtfsrt.tar.xz",
+                  "archive_member": "nycsubway_1234567_20261029T135900.466Z_jreozq4bvybf.gtfsrt",
+                  "sha256": "4c48ecc381ae0255cf4eea5d5930f5d0c873e82ceb8130ffd612a1ae8b1ad236"
+                }
+              },
+              "selected_run": {
+                "normalized_trip_id": "MTA:numbered:20261029:5:054700_5..S03R:",
+                "raw_trip_id": "054700_5..S03R",
+                "service_date": "20261029",
+                "route_id": "5",
+                "nyct_train_id": "05 0907  DYR/FLA"
+              },
+              "boarding": {
+                "stop_id": "631S",
+                "arrival_epoch": 1793282765,
+                "departure_epoch": 1793282765,
+                "departure_local": "2026-10-29T10:06:05-04:00",
+                "platform_ready_epoch": 1793282580.0,
+                "platform_ready_local": "2026-10-29T10:03:00-04:00",
+                "catchability_slack_seconds": 185.0
+              },
+              "alighting": {
+                "stop_id": "423S",
+                "arrival_epoch": 1793283965,
+                "arrival_local": "2026-10-29T10:26:05-04:00"
+              }
+            }
+          ]
+        }
+      ],
+      "checks": {
+        "latest_captures_at_or_before_cutoffs": true,
+        "same_ordered_selected_service_runs_endpoints_and_nyct_train_ids": true,
+        "forecast_values_match_prepared_inputs": true,
+        "all_selected_legs_catchable_at_both_cutoffs": true,
+        "leg_forecast_shifts": [
+          {
+            "leg_index": 0,
+            "departure_forecast_shift_seconds": 545,
+            "arrival_forecast_shift_seconds": 545
+          }
+        ],
+        "final_arrival_shift_at_least_300_seconds": true
+      }
+    },
+    {
+      "case_id": "same-run-eec0ee9e2f62c6662ecb-1793301000-1793301600",
+      "status": "PASS",
+      "reference_route_id": "lexington_direct",
+      "source_snapshot": {
+        "path": "data/processed/preincident-inputs/2026-10-29.snapshots.jsonl.gz",
+        "sha256": "a767dfcf163971c4d49c37452a14bd8b5b04decbeb2fe459f3cd1d8a95683ff9",
+        "matches_prepared_input_source_hash": true
+      },
+      "cutoffs": [
+        {
+          "cutoff": "T0",
+          "cutoff_epoch": 1793301000.0,
+          "cutoff_local": "2026-10-29T15:10:00-04:00",
+          "legs": [
+            {
+              "leg_index": 0,
+              "latest_capture": {
+                "captured_at_epoch": 1793300940.546,
+                "captured_at_local": "2026-10-29T15:09:00.546000-04:00",
+                "source_updated_at": "2026-10-29T19:08:56Z",
+                "age_at_cutoff_seconds": 59.454,
+                "status": "AVAILABLE",
+                "raw_sha256": "eab4f3330fa7fc49c26e12cf2f94250d0156765b190963ee11aa3d58ea91a5a3",
+                "archive_provenance": {
+                  "archive": "subwaydatanyc_2026-10-29_gtfsrt.tar.xz",
+                  "archive_member": "nycsubway_1234567_20261029T190900.546Z_5k2pgmypu76e.gtfsrt",
+                  "sha256": "eab4f3330fa7fc49c26e12cf2f94250d0156765b190963ee11aa3d58ea91a5a3"
+                }
+              },
+              "selected_run": {
+                "normalized_trip_id": "MTA:numbered:20261029:4:087750_4..S06R:",
+                "raw_trip_id": "087750_4..S06R",
+                "service_date": "20261029",
+                "route_id": "4",
+                "nyct_train_id": "04 1437+ WDL/UTI"
+              },
+              "boarding": {
+                "stop_id": "631S",
+                "arrival_epoch": 1793301348,
+                "departure_epoch": 1793301348,
+                "departure_local": "2026-10-29T15:15:48-04:00",
+                "platform_ready_epoch": 1793301180.0,
+                "platform_ready_local": "2026-10-29T15:13:00-04:00",
+                "catchability_slack_seconds": 168.0
+              },
+              "alighting": {
+                "stop_id": "423S",
+                "arrival_epoch": 1793302518,
+                "arrival_local": "2026-10-29T15:35:18-04:00"
+              }
+            }
+          ]
+        },
+        {
+          "cutoff": "T1",
+          "cutoff_epoch": 1793301600.0,
+          "cutoff_local": "2026-10-29T15:20:00-04:00",
+          "legs": [
+            {
+              "leg_index": 0,
+              "latest_capture": {
+                "captured_at_epoch": 1793301540.543,
+                "captured_at_local": "2026-10-29T15:19:00.543000-04:00",
+                "source_updated_at": "2026-10-29T19:18:56Z",
+                "age_at_cutoff_seconds": 59.457,
+                "status": "AVAILABLE",
+                "raw_sha256": "53ae84de225a7d8e0de5720d40bd18d35425a8564008b611c511e119fbe4b573",
+                "archive_provenance": {
+                  "archive": "subwaydatanyc_2026-10-29_gtfsrt.tar.xz",
+                  "archive_member": "nycsubway_1234567_20261029T191900.543Z_koxijxrclj6y.gtfsrt",
+                  "sha256": "53ae84de225a7d8e0de5720d40bd18d35425a8564008b611c511e119fbe4b573"
+                }
+              },
+              "selected_run": {
+                "normalized_trip_id": "MTA:numbered:20261029:4:087750_4..S06R:",
+                "raw_trip_id": "087750_4..S06R",
+                "service_date": "20261029",
+                "route_id": "4",
+                "nyct_train_id": "04 1437+ WDL/UTI"
+              },
+              "boarding": {
+                "stop_id": "631S",
+                "arrival_epoch": 1793301853,
+                "departure_epoch": 1793301853,
+                "departure_local": "2026-10-29T15:24:13-04:00",
+                "platform_ready_epoch": 1793301780.0,
+                "platform_ready_local": "2026-10-29T15:23:00-04:00",
+                "catchability_slack_seconds": 73.0
+              },
+              "alighting": {
+                "stop_id": "423S",
+                "arrival_epoch": 1793303023,
+                "arrival_local": "2026-10-29T15:43:43-04:00"
+              }
+            }
+          ]
+        }
+      ],
+      "checks": {
+        "latest_captures_at_or_before_cutoffs": true,
+        "same_ordered_selected_service_runs_endpoints_and_nyct_train_ids": true,
+        "forecast_values_match_prepared_inputs": true,
+        "all_selected_legs_catchable_at_both_cutoffs": true,
+        "leg_forecast_shifts": [
+          {
+            "leg_index": 0,
+            "departure_forecast_shift_seconds": 505,
+            "arrival_forecast_shift_seconds": 505
+          }
+        ],
+        "final_arrival_shift_at_least_300_seconds": true
+      }
+    }
+  ]
+}
