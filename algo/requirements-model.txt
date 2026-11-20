@@ -1,2 +1,0 @@
-# Reproduce the verified CPU training environment, including live integration.
--r requirements-model-lock.txt

@@ -186,7 +186,7 @@ Primary entry points are `normalize_google_response`, `mta.collect_feeds`,
 `mta.SnapshotCache`, `match_request`, `integrate_live`, and `integrate_supplied`.
 The separate [baseline journey evaluator](baseline.md) now consumes these
 matching reports and produces the Step 1 Response with destination ETA and
-comparison semantics. [Historical data processing](../../data/README.md) lives
-under `data/`. [Offline model training and evaluation](model-training.md) are
-complete as Step 5. The UI can use the existing contract and marked simulated
-responses while the later model integration and API server are developed.
+comparison semantics. [October historical processing](../../data/README.md) lives under `data/`.
+The [active implementation plan](october-implementation-plan.md) replaces the
+previous model experiment with time-conditioned profiles and severe-incident
+comparisons. The UI can use the existing contract and marked simulated responses.

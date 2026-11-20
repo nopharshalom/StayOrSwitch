@@ -1,0 +1,33 @@
+{
+  "by_feed": {
+    "ace": 60,
+    "bdfm": 60,
+    "g": 60,
+    "nqrw": 60,
+    "numbered": 60
+  },
+  "candidate_or_rejection_comparisons": 37224,
+  "date": "2026-10-05",
+  "gzip_size_reduction": 3.369,
+  "input_only": true,
+  "json_size_reduction": 4.167,
+  "local_hour": 7,
+  "measurements": {
+    "original": {
+      "gzip_bytes": 11344867,
+      "json_bytes": 184582154,
+      "seconds": 5.136
+    },
+    "projected": {
+      "gzip_bytes": 3367879,
+      "json_bytes": 44291284,
+      "seconds": 2.503
+    }
+  },
+  "minutes": 60,
+  "profile_observation_comparisons": 24792,
+  "samples": 300,
+  "source_archive_sha256": "91e5a6f9f7fc7ac3e81dcfb7945f3a607d8a32acfb04828d3d23648131e14a61",
+  "stage": "PASSED",
+  "timing_speedup": 2.052
+}

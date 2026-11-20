@@ -1,6 +1,6 @@
 # Evaluation Criteria
 
-Status: Evaluation specification established in Step 1. Step 5's [component experiment results](../reports/model-results.md) now report agreement with inferred labels. Physical-arrival accuracy, realized savings, and operational service performance remain unestablished. Simulated API fixtures validate integration behavior only.
+Status: General evidence principles retained for the [October implementation](october-implementation-plan.md). Its temporal protocol and practical-savings thresholds supersede earlier experiment settings. Simulated API fixtures validate integration behavior only.
 
 ## Evaluation question and units
 
@@ -24,19 +24,17 @@ Classify outcomes by evidence before calculating metrics:
 
 Record the label method, observation coverage, timing uncertainty, and exclusions. Do not pool these evidence classes into a single unqualified accuracy number. A label-validation sample should include ordinary service and disruptions; report disagreement and missing coverage, including difficult reroutes rather than silently dropping them.
 
-## Chronological pilot evaluation
+## October evaluation protocol
 
-- The historical pilot window is 2026-11-02 through 2026-11-15 inclusive, expanded to two weeks on 2026-11-19. The planned service-date split is November 2-8 for training, November 9-11 for validation, and November 12-15 for final testing. Verify coverage and publish the actual split and boundary exclusions in the dataset manifest before training.
-- Training dates precede validation dates, which precede final test dates. Keep each trip in one split, including cross-midnight observations; document boundary handling and any exclusion gap.
-- Fit feature transformations and historical summaries using training data only. Select features, model settings, and uncertainty methods using validation data, then freeze them before final testing.
-- Never construct an input using updates, future notices, inferred outcomes, or corrected data that were unavailable at the decision time. An old source timestamp alone does not prove the information had already been received.
-- Report weekdays, Saturdays, and Sundays separately, including relevant stopping patterns and known service changes. The two-week window has only two weekends: the planned training and final-test ranges include weekends, but validation contains weekdays only. It cannot independently tune and test weekend behavior. Do not use the final-test weekend to choose model settings or describe two weekends as proof of general weekend performance.
-- Distinguish planned service differences from prediction error. Longer normal weekend headways are not unexpected delays. Use only the headways and stopping patterns available at each decision time as features; later stop changes are outcomes or quality metadata. An unseen operating pattern must trigger documented fallback or insufficient-data behavior rather than an unsupported learned correction.
-- If relevant cases are too sparse or labels are unreliable, report the limitation and request more data before drawing general conclusions. Do not replace a valid time split with random snapshot splitting to improve scores.
+- Use October1–17 for development, October18–24 for validation and October25–31 for final testing, in America/New_York. Descriptive full-month profiles are separate from development-only predictive profiles.
+- Keep exact train and incident groups separated across boundaries; verify source receipt availability and purge boundary outcomes that cannot support a frozen development fit.
+- Use only information available by each decision cutoff. Later alert severity, outcome labels and future feeds cannot choose a train or make a connection catchable.
+- Report weekday, Saturday, Sunday and all configured time periods separately. Planned weekend headways are not unexpected ETA errors.
+- Count independent incidents and train events alongside correlated checkpoints. Missing evidence is not normal service or a successful decision.
 
 ## Baselines and consistent comparisons
 
-Compare unmodified MTA-based estimates, a simple historical correction, and the learned model on the same decision cases and candidate sets. Record any provider/schedule fallback and show results by estimation source. Preserve the route provider's original ETA as a separate comparator when it was actually captured at that time.
+Compare unmodified MTA-based estimates, time-conditioned historical profiles, and incident-conditioned profiles on the same decision cases and candidate sets. Record any provider/schedule fallback and show results by estimation source. Preserve the route provider's original ETA as a separate comparator when it was actually captured at that time.
 
 Do not add an MTA-trained residual directly to a provider's total ETA. Reconstruct the appropriate journey components and recheck catchable departures and transfers. If model corrections make a supplied itinerary infeasible, expose that outcome instead of continuing to score its original connection.
 
@@ -71,4 +69,4 @@ Break results down by disruption status known at decision time, repeated ETA rev
 
 Step 1 is complete when the contract, decision semantics, marked examples, and these evaluation criteria are internally consistent and usable for integration review. Fixture validation does not constitute model or live-service validation.
 
-Later stages require measured data quality, published chronological splits, baseline/model results, and explicit coverage and limitations before any improvement claim. Do not invent a minimum time-saving threshold, confidence cutoff, latency target, or model-accuracy target. Rank by estimated complete-journey time under the confirmed objective; report uncertainty separately until another product policy is agreed.
+Later stages require measured data quality, published chronological splits, baseline/model results, and explicit coverage and limitations before any improvement claim. Use the approved initial October parameters: at least300seconds predicted Switch savings and +/-180seconds practical outcome ties. Report uncertainty and unknown results separately; do not invent calibrated confidence or an overall accuracy guarantee.

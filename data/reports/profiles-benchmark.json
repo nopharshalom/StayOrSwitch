@@ -1,0 +1,23 @@
+{
+  "baseline_elapsed_seconds": 61.5,
+  "cached_elapsed_seconds": 83.6,
+  "exact_parity": {
+    "train": true,
+    "month": true,
+    "observations": true
+  },
+  "digests": {
+    "train": "a4d91bd663c110bea171c619363402ddf97c90493ca6a6c154c47e6f9532b78e",
+    "month": "2b2bde745cb45c540dbe1fef6287238be01513f536e2e39a7a5d45a32908c34d",
+    "observations": "97f75575e36c6d1e0da8f11a7302709d923fb8db4089ad400973a604a23c212a"
+  },
+  "cached_working_database_peak_bytes": 111064776,
+  "timing_note": "Runs overlapped four source workers; observed wall time is not an isolated speed comparison.",
+  "projected_elapsed_seconds": 33.3,
+  "projected_exact_parity": {
+    "train": true,
+    "month": true,
+    "observations": true
+  },
+  "projected_working_database_peak_bytes": 111064776
+}

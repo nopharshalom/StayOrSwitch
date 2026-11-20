@@ -1,0 +1,123 @@
+{
+  "dates": [
+    "2026-10-04"
+  ],
+  "day_reports": [
+    {
+      "by_feed": {
+        "ace": 1440,
+        "bdfm": 1440,
+        "g": 1440,
+        "nqrw": 1440,
+        "numbered": 1444,
+        "subway-alerts": 220
+      },
+      "cache_verified": false,
+      "counts": {
+        "alert_snapshots": 220,
+        "alert_versions_before_deduplication": 38613,
+        "projection_entities_after": 933760,
+        "projection_entities_before": 933760,
+        "projection_stops_after": 875254,
+        "projection_stops_before": 11117275,
+        "projection_trips_after": 324046,
+        "projection_trips_before": 504886,
+        "snapshots": 7424,
+        "state:FRESH": 7422,
+        "state:MISSING": 2
+      },
+      "date": "2026-10-04",
+      "elapsed_seconds": 74.19,
+      "ordering": "CHRONOLOGICAL_WITHIN_EACH_FEED_NOT_GLOBAL",
+      "outputs": {
+        "alerts": {
+          "bytes": 9195848,
+          "path": "data/processed/october/2026-10-04.alerts.jsonl.gz",
+          "sha256": "8951d06b6c8374ba916ce312c0a2352eb8516b7537cebb298ae9180934dd753d"
+        },
+        "receipts": {
+          "bytes": 493143,
+          "path": "data/processed/october/2026-10-04.receipts.json.gz",
+          "sha256": "8dc7b7feecbeeb29fda53c36f3345494d39536a871b6cb8c64dd3f2cf5368cb1"
+        },
+        "snapshots": {
+          "bytes": 42768773,
+          "path": "data/processed/october/2026-10-04.snapshots.jsonl.gz",
+          "sha256": "16844ae955ab6d4f48f6630c75b054331fc8c9a9915638ef2334344cfb4dc187"
+        },
+        "trips": {
+          "bytes": 57235,
+          "path": "data/processed/october/2026-10-04.trips.json.gz",
+          "sha256": "42dedebb2df097a1ccb6dcfbb3d3d3e1a38b583f7c0f7742d4492d20ed041b43"
+        }
+      },
+      "raw_counts": {
+        "members": 99583
+      },
+      "raw_train_capture_bounds": {
+        "ace": {
+          "captures": 11518,
+          "first_captured_at": 1791086403.543,
+          "last_captured_at": 1791172793.535
+        },
+        "bdfm": {
+          "captures": 9948,
+          "first_captured_at": 1791086403.546,
+          "last_captured_at": 1791172788.531
+        },
+        "g": {
+          "captures": 11519,
+          "first_captured_at": 1791086403.534,
+          "last_captured_at": 1791172796.566
+        },
+        "nqrw": {
+          "captures": 7938,
+          "first_captured_at": 1791086403.566,
+          "last_captured_at": 1791172786.57
+        },
+        "numbered": {
+          "captures": 30143,
+          "first_captured_at": 1791086401.575,
+          "last_captured_at": 1791172798.531
+        }
+      },
+      "stage": "NORMALIZED",
+      "trip_count": 3861
+    }
+  ],
+  "elapsed_seconds": 79.85,
+  "full_month_processed": false,
+  "label_quality": {
+    "aliased_source_uids": 904,
+    "ambiguous_source_uids": 2,
+    "canonical_service_runs": 2937,
+    "confirmed_endpoint_rows": 3669,
+    "conflicting_journal_stops": 2,
+    "conflicting_journal_trips": 2,
+    "endpoint_rows": 3943,
+    "extra_normalized_aliases": 924,
+    "flag:AMBIGUOUS_CSV_LABEL": 3,
+    "flag:CSV_SCHEDULE_CHANGED": 128,
+    "flag:CSV_SCHEDULE_REWRITTEN": 29,
+    "flag:MISSING_CSV_ARRIVAL": 146,
+    "flag:MISSING_CSV_DEPARTURE": 146,
+    "flag:MISSING_CSV_LABEL": 146,
+    "flag:MISSING_STOP_PASSAGE_CONFIRMATION": 149,
+    "flag:PREDICTED_ARRIVAL_AFTER_STOP_DISAPPEARANCE": 93,
+    "flag:PREDICTED_DEPARTURE_AFTER_STOP_DISAPPEARANCE": 234,
+    "identical_stop_duplicates": 1,
+    "matched_journal_trips": 2815,
+    "requested_trips": 3861,
+    "trips_without_configured_observed_endpoints": 2051,
+    "usable_arrival_rows": 3599,
+    "usable_departure_rows": 3458
+  },
+  "limitations": [
+    "Outcomes are screened MTA final-prediction proxies, not observed passenger arrivals.",
+    "Archived alerts are content-deduplicated; last capture age is not evidence of a fresh unchanged fetch.",
+    "Daily streams are chronological within each feed, not globally ordered.",
+    "Unregistered publisher protobuf extensions may be absent from normalized output; alert text is retained.",
+    "Boundary journals do not extend the October decision-date window."
+  ],
+  "stage": "SMOKE_PREPARED"
+}

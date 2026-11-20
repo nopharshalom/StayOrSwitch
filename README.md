@@ -34,8 +34,14 @@ Recurring NYC commuters with familiar routes and real alternatives. The starting
 
 ## Status and next steps
 
-- **Done:** MTA feed analysis (Experiment 1).
-- **Next:** a beta signup and A/B tests of how the alert explains its recommendation.
-- **Then:** basic Stay/Switch logic and a notification pilot.
+The active algorithm work follows the [October implementation plan](algo/docs/october-implementation-plan.md):
+historical ETA delay by time of day and meaningful switching during severe
+service problems, using October 1–31, 2026 history and multiple route families.
+The initial algorithm user has not boarded and is leaving now; the screens
+above illustrate the broader product concept.
+
+See the [algorithm workspace](algo/README.md) and [data workspace](data/README.md)
+for implementation status, reproducible commands and measured results. The
+previous November model/data experiment has been removed from the active project.
 
 The product is software only. The core experience is free, and premium features and ads haven't been tested. Hardware is set aside for future exploration.

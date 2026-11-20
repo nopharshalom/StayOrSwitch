@@ -1,0 +1,17 @@
+{
+  "after_projection": {
+    "alerts.jsonl.gz": "8951d06b6c8374ba916ce312c0a2352eb8516b7537cebb298ae9180934dd753d",
+    "labels.json.gz": "ffe31d75e77d7da9a25399fe30de69ac2eeabcc915df740435e66ad397ec7214",
+    "receipts.json.gz": "8dc7b7feecbeeb29fda53c36f3345494d39536a871b6cb8c64dd3f2cf5368cb1",
+    "trips.json.gz": "42dedebb2df097a1ccb6dcfbb3d3d3e1a38b583f7c0f7742d4492d20ed041b43"
+  },
+  "before_projection": {
+    "alerts.jsonl.gz": "8951d06b6c8374ba916ce312c0a2352eb8516b7537cebb298ae9180934dd753d",
+    "labels.json.gz": "ffe31d75e77d7da9a25399fe30de69ac2eeabcc915df740435e66ad397ec7214",
+    "receipts.json.gz": "8dc7b7feecbeeb29fda53c36f3345494d39536a871b6cb8c64dd3f2cf5368cb1",
+    "trips.json.gz": "42dedebb2df097a1ccb6dcfbb3d3d3e1a38b583f7c0f7742d4492d20ed041b43"
+  },
+  "date": "2026-10-04",
+  "exact_artifact_parity": true,
+  "input_only_parity": true
+}
