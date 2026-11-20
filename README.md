@@ -84,4 +84,14 @@ does not establish adaptive Stay-on-7 savings. Severe-stage Switch benefit
 remains unverified. The report separates 49 event representatives from 322
 repeated checkpoints and preserves unknown and missed-train outcomes.
 
+The subsequent [five-corridor incremental comparison](algo/reports/five-corridor-incremental-findings.md)
+tests when the raw-MTA decision rule says Stay but the historical model says
+Switch. It adds a fixed five-minute checkpoint grid and two Google-defined
+paths, keeping the total at five corridors. Same-platform service changes count
+as normal Switch choices. Its aggregate excludes duplicate earlier cohorts and
+walking variants; read the case and outcome-quality qualifications with the counts.
+The user-approved [five departure-time examples](algo/reports/incremental-timepoint-examples.md)
+retain repeated train pairs at different times. They come from a separately
+labeled 30-second illustration study and do not inflate the overall evaluation.
+
 The product is software only. The core experience is free, and premium features and ads haven't been tested. Hardware is set aside for future exploration.

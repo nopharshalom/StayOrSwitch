@@ -1,0 +1,255 @@
+{
+  "all_summary": {
+    "action_pairs": {
+      "STAY->STAY": 202,
+      "STAY->SWITCH": 21,
+      "SWITCH->STAY": 14,
+      "SWITCH->SWITCH": 45,
+      "SWITCH->UNDETERMINED": 4,
+      "UNDETERMINED->SWITCH": 2,
+      "UNDETERMINED->UNDETERMINED": 230
+    },
+    "all_action_eligible_policy_comparisons": {
+      "cases": 282,
+      "classes": {
+        "MEANINGFUL_GAIN": 16,
+        "MEANINGFUL_LOSS": 1,
+        "PRACTICAL_TIE": 184,
+        "UNKNOWN": 81
+      },
+      "comparable": 201
+    },
+    "cases": 518,
+    "corridor_incidents": 45,
+    "model_switch_vs_model_stay": {
+      "classes": {
+        "MEANINGFUL_GAIN": 29,
+        "PRACTICAL_TIE": 16,
+        "UNKNOWN": 23
+      },
+      "recommendations": 68
+    },
+    "mta_stay_model_switch": {
+      "cases": 21,
+      "classes": {
+        "MEANINGFUL_GAIN": 1,
+        "PRACTICAL_TIE": 9,
+        "UNKNOWN": 11
+      },
+      "comparable": 10
+    },
+    "qualified_impact_counts": {
+      "DISRUPTION": 510,
+      "SEVERE": 8
+    },
+    "unique_incident_count": 45,
+    "unique_incident_ids": [
+      "lmm:alert:273386",
+      "lmm:alert:273418",
+      "lmm:alert:273424",
+      "lmm:alert:273441",
+      "lmm:alert:273460",
+      "lmm:alert:273463",
+      "lmm:alert:273503",
+      "lmm:alert:273505",
+      "lmm:alert:273521",
+      "lmm:alert:273573",
+      "lmm:alert:273587",
+      "lmm:alert:273635",
+      "lmm:alert:273674",
+      "lmm:alert:273714",
+      "lmm:alert:273717",
+      "lmm:alert:273720",
+      "lmm:alert:273721",
+      "lmm:alert:273738",
+      "lmm:alert:273766",
+      "lmm:alert:273774",
+      "lmm:alert:273836",
+      "lmm:alert:273841",
+      "lmm:alert:273870",
+      "lmm:alert:273891",
+      "lmm:alert:273892",
+      "lmm:alert:273900",
+      "lmm:alert:273969",
+      "lmm:alert:274009",
+      "lmm:alert:274016",
+      "lmm:alert:274022",
+      "lmm:alert:274037",
+      "lmm:alert:274073",
+      "lmm:alert:274092",
+      "lmm:alert:274146",
+      "lmm:alert:274161",
+      "lmm:alert:274162",
+      "lmm:alert:274224",
+      "lmm:alert:274226",
+      "lmm:alert:274253",
+      "lmm:alert:274289",
+      "lmm:alert:274330",
+      "lmm:alert:274376",
+      "lmm:alert:274392",
+      "lmm:alert:274395",
+      "lmm:alert:274403"
+    ]
+  },
+  "base_cases": 518,
+  "check_count": 34907,
+  "checks": {
+    "all_summary": 1,
+    "catchable": 4357,
+    "compact_decision": 1554,
+    "compact_policy": 518,
+    "compact_primary": 518,
+    "compact_routes": 1554,
+    "compact_scope": 1,
+    "compact_trains": 1749,
+    "components": 4357,
+    "corridor_summary": 2,
+    "duration_arithmetic": 4357,
+    "endpoint_binding": 1,
+    "exact_train": 4357,
+    "freeze_hash": 1,
+    "frozen_artifact": 3,
+    "frozen_base_scope": 1,
+    "frozen_variant_scope": 1,
+    "input_audit_hash": 7,
+    "input_only_primary": 1,
+    "monotone": 4357,
+    "original_unchanged": 7,
+    "outcome_leg_count": 4357,
+    "paired_eligibility": 550,
+    "paired_gain": 550,
+    "paired_outcomes": 550,
+    "paired_routes": 550,
+    "primary_summary": 1,
+    "review_group_binding": 1,
+    "score_hash": 2,
+    "strict_discrepancy": 550,
+    "switch_vs_own_stay": 92
+  },
+  "limitations": [
+    "Durations are screened final MTA prediction proxies plus declared walking assumptions, not independently measured passenger journeys.",
+    "Raw-MTA advice is the unchanged five-minute decision rule using unmodified forecasts, not an official MTA routing recommendation.",
+    "Same-station A-to-C and 2-to-3 changes count as ordinary Switch choices without an extra penalty.",
+    "The sole strict-discrepancy gain, Port Authority A-to-C on October 28 at 18:50 (+337 seconds), is conditional on 120-second access. The 240-second variant misses C; at zero seconds an earlier known A becomes catchable and beats C.",
+    "Some aggregate comparisons use endpoints last observed 194\u2013275 seconds after their predicted event. No comparable used endpoint persists for hours. The age diagnostic does not mutate frozen counts.",
+    "Exact selected trains are scored. Bounded earlier-same-line diagnostics do not establish complete adaptive-route outcomes.",
+    "Repeated checkpoints and shared physical incident families are not independent trials."
+  ],
+  "primary_summary": {
+    "action_pairs": {
+      "STAY->STAY": 23,
+      "STAY->SWITCH": 4,
+      "SWITCH->STAY": 2,
+      "SWITCH->SWITCH": 5,
+      "UNDETERMINED->SWITCH": 1,
+      "UNDETERMINED->UNDETERMINED": 10
+    },
+    "all_action_eligible_policy_comparisons": {
+      "cases": 34,
+      "classes": {
+        "MEANINGFUL_GAIN": 3,
+        "PRACTICAL_TIE": 19,
+        "UNKNOWN": 12
+      },
+      "comparable": 22
+    },
+    "cases": 45,
+    "corridor_incidents": 45,
+    "model_switch_vs_model_stay": {
+      "classes": {
+        "MEANINGFUL_GAIN": 2,
+        "PRACTICAL_TIE": 5,
+        "UNKNOWN": 3
+      },
+      "recommendations": 10
+    },
+    "mta_stay_model_switch": {
+      "cases": 4,
+      "classes": {
+        "PRACTICAL_TIE": 3,
+        "UNKNOWN": 1
+      },
+      "comparable": 3
+    },
+    "qualified_impact_counts": {
+      "DISRUPTION": 45
+    },
+    "unique_incident_count": 45,
+    "unique_incident_ids": [
+      "lmm:alert:273386",
+      "lmm:alert:273418",
+      "lmm:alert:273424",
+      "lmm:alert:273441",
+      "lmm:alert:273460",
+      "lmm:alert:273463",
+      "lmm:alert:273503",
+      "lmm:alert:273505",
+      "lmm:alert:273521",
+      "lmm:alert:273573",
+      "lmm:alert:273587",
+      "lmm:alert:273635",
+      "lmm:alert:273674",
+      "lmm:alert:273714",
+      "lmm:alert:273717",
+      "lmm:alert:273720",
+      "lmm:alert:273721",
+      "lmm:alert:273738",
+      "lmm:alert:273766",
+      "lmm:alert:273774",
+      "lmm:alert:273836",
+      "lmm:alert:273841",
+      "lmm:alert:273870",
+      "lmm:alert:273891",
+      "lmm:alert:273892",
+      "lmm:alert:273900",
+      "lmm:alert:273969",
+      "lmm:alert:274009",
+      "lmm:alert:274016",
+      "lmm:alert:274022",
+      "lmm:alert:274037",
+      "lmm:alert:274073",
+      "lmm:alert:274092",
+      "lmm:alert:274146",
+      "lmm:alert:274161",
+      "lmm:alert:274162",
+      "lmm:alert:274224",
+      "lmm:alert:274226",
+      "lmm:alert:274253",
+      "lmm:alert:274289",
+      "lmm:alert:274330",
+      "lmm:alert:274376",
+      "lmm:alert:274392",
+      "lmm:alert:274395",
+      "lmm:alert:274403"
+    ]
+  },
+  "schema_version": "extra-corridor-switch-independent-audit-v1",
+  "sources": {
+    "endpoint_audit": {
+      "path": "algo/reports/extra-corridor-switch-endpoint-audit.json",
+      "sha256": "35656f7ed828f10e41705675e8cf78773dafcfca7173bb2d0f5be2c70a2837da"
+    },
+    "input_audit": {
+      "path": "algo/reports/extra-corridor-switch-input-audit.json",
+      "sha256": "b3c341ee90949103b25fb3a8592922d9b8975f01b9dd18fce68b79313c62e355"
+    },
+    "report": {
+      "path": "algo/reports/extra-corridor-switch-test.json",
+      "sha256": "d7b11395a34ccaf379d3c02f5a05df12eca8fc85aeb5dc9b4b76937c7ef2d869"
+    },
+    "scored": {
+      "path": "algo/local/extra-corridor-switch/scored-cases.json.gz",
+      "sha256": "ae240040aca9729791e7a1a39a5d2f2d17a4e8cce657ad46afd430583d790360"
+    },
+    "selection_freeze": {
+      "path": "algo/reports/extra-corridor-switch-selection-frozen.json",
+      "sha256": "baf0259cd2a44263867bd2439511e9e3d48ad8c495c342dcab0bc36c8f052167"
+    },
+    "walking_sensitivity": {
+      "path": "algo/local/extra-corridor-switch/scored-walking-sensitivity.json.gz",
+      "sha256": "a56856f536c0dc1216e969a8008d99dc42ad0a0b1cd7d35788dfd5a3517bcbdb"
+    }
+  },
+  "status": "PASS_WITH_PROXY_LIMITATIONS",
+  "walking_variants_separate": 32
+}

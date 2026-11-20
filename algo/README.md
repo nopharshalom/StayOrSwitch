@@ -72,6 +72,29 @@ supplemental freeze and reproduce both splits:
 These commands check the original code, configuration, profile, case archives
 and text-review hashes. They do not refit profiles or generate new routes.
 
+## Incremental advice across five corridors
+
+Start with the [five departure-time examples](reports/incremental-timepoint-examples.md)
+for the user's latest convention: the same train pair may appear at different
+departure times. The targeted 30-second refinement is separate from the overall
+evaluation, and known earlier Stay trains qualify misleading fixed-train gains.
+
+The [five-corridor findings](reports/five-corridor-incremental-findings.md) compare
+the actual journeys chosen by the raw-MTA and incident-profile decision rules.
+The narrower question requires raw MTA Stay, model Switch, and a meaningful
+historical proxy saving. Same-station/platform substitutions count normally.
+The [dense three-corridor protocol](docs/incremental-switch-experiment.md) and
+two separately captured Google corridors retain their own input freezes and
+audits. These exploratory studies keep the predictor and thresholds unchanged.
+
+The [combined machine-readable summary](reports/five-corridor-incremental-summary.json)
+contains all disagreements, per-corridor counts and primary representatives.
+Reproduce its aggregation without rerunning feeds or provider queries:
+
+```sh
+.venv/bin/python algo/scripts/summarize_incremental_experiment.py
+```
+
 ## Google-defined three-corridor experiment
 
 The subsequent [Google-defined three-corridor experiment](docs/google-corridor-experiment.md)

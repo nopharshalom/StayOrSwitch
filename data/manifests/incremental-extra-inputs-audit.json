@@ -1,0 +1,85 @@
+{
+  "all_eight_days_producer_parity_passed": true,
+  "all_manifest_source_code_config_and_output_hashes_match": true,
+  "checks_read_outcome_timestamps_or_compute_savings": false,
+  "focused_unit_tests_passed": 9,
+  "independent_compared_capture_count": 2879,
+  "independent_compared_trip_observation_count": 161817,
+  "independently_scanned_days": [
+    {
+      "added_stop_updates_by_route_and_stop": {
+        "N/R16S": 1190,
+        "R/R16S": 1077
+      },
+      "checks": [
+        "Existing captures and vehicles are identical",
+        "Existing trip metadata and occurrence order are identical",
+        "Every prior stop update is retained with identical values and order",
+        "Independent scan found only R16S additions",
+        "Current producer and snapshot hashes verified"
+      ],
+      "compared_captures": 1440,
+      "compared_trip_observations": 60752,
+      "date": "2026-10-24",
+      "new_snapshot": {
+        "bytes": 16932706,
+        "path": "data/processed/incremental-extra-inputs/2026-10-24.snapshots.jsonl.gz",
+        "sha256": "30d14c1b593f8d8ed175b6df0080e09a1e70da1eb4edb9e5d59a6b13e189cbac"
+      }
+    },
+    {
+      "added_stop_updates_by_route_and_stop": {
+        "N/R16S": 1941,
+        "R/R16S": 2997,
+        "W/R16S": 981
+      },
+      "checks": [
+        "Existing captures and vehicles are identical",
+        "Existing trip metadata and occurrence order are identical",
+        "Every prior stop update is retained with identical values and order",
+        "Independent scan found only R16S additions",
+        "Current producer and snapshot hashes verified"
+      ],
+      "compared_captures": 1439,
+      "compared_trip_observations": 101065,
+      "date": "2026-10-26",
+      "new_snapshot": {
+        "bytes": 24081403,
+        "path": "data/processed/incremental-extra-inputs/2026-10-26.snapshots.jsonl.gz",
+        "sha256": "3df279849cd59dbd8532b84507de53e9c4a32f57eb439ecc1b3ca34b9a306990"
+      }
+    }
+  ],
+  "input_manifest": {
+    "path": "data/manifests/incremental-extra-inputs.json",
+    "sha256": "6b6d4b647c92bde6586491a4baac65d0402b97f8544473724501b2181b58fdc3"
+  },
+  "label_scope": {
+    "feed": "nqrw",
+    "route": "R",
+    "stop": "R16S"
+  },
+  "limitations": [
+    "Independent whole-capture scan covers one boundary day and one weekday; the producer checks all eight days.",
+    "Projection adds R16S observations for observed N/W services too because the stop set is shared; only R labels are requested.",
+    "This checks provenance and label scope, not independent passenger arrival truth."
+  ],
+  "new_label_endpoint_count": 1251,
+  "new_label_identity_count": 1251,
+  "new_label_overlaps_with_all_prior_sources": 0,
+  "new_labels": {
+    "bytes": 47875,
+    "path": "data/processed/incremental-extra-inputs/additional-labels.json.gz",
+    "sha256": "246592222b354cf27c140cac80d8ae7475f7059aef48de37d31633dfc15abfd1"
+  },
+  "old_label_endpoint_counts_checked": {
+    "google-corridor-inputs": 8371,
+    "october": 196024,
+    "preincident-inputs": 1797
+  },
+  "schema_version": "incremental-extra-inputs-independent-audit-v1",
+  "status": "PASS",
+  "training_profile_sha256": "ee9620bdba17412c2b55aaa919a781a855f84e37e4efc8f3016b2fe9212ff31c",
+  "training_profile_unchanged": true,
+  "verified_original_input_artifact_count": 163
+}

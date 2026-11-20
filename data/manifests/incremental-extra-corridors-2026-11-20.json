@@ -1,0 +1,195 @@
+{
+  "code_sha256": {
+    "algo/stayorswitch/google_routes.py": "464147ac91c2d3740e5a9a7fb4e69a1fe161374cfdf7c86a33f5e65099e5235a",
+    "algo/stayorswitch/network.py": "abaf049627a81547ccc96ee403f07e95d06612e6a2488d2c80ad2cc5c43f320c",
+    "algo/stayorswitch/provider_client.py": "36694c98a0dd97e51434aa30279f5109ee2add8adc1d79e5a482d9cbc68e747e",
+    "data/google_corridors.py": "ff10f76851d4d83e786ff6c53b61e5f93e358538f148937a0bf96b0902e888b3",
+    "data/scripts/capture_google_corridors.py": "56ca6440d912d8ad654b3f286ed0cfcd23b424e574483d8e52b6775bba424641"
+  },
+  "config": {
+    "bytes": 755,
+    "path": "data/config/incremental-extra-corridors-2026-11-20.json",
+    "sha256": "d2a46436549cfc457e8f0a46970a2203bbebcd5239405ff8814e937da4414863"
+  },
+  "corridors": [
+    {
+      "corridor": {
+        "destination": "Brooklyn Borough Hall, 209 Joralemon Street, Brooklyn, NY 11201",
+        "id": "timesquare_boroughhall",
+        "origin": "West 42nd Street and Seventh Avenue, Manhattan, New York, NY"
+      },
+      "derived_summary": {
+        "bytes": 71700,
+        "path": "data/local/google-corridors/2026-11-20-extra/timesquare_boroughhall.summary.json",
+        "sha256": "840c3937816bf156f73f0c8bbb022db3d4d83c9e09d9f11d079674e41532c2c6"
+      },
+      "provider_capture": {
+        "bytes": 49945,
+        "path": "data/local/google-corridors/2026-11-20-extra/timesquare_boroughhall.provider.json",
+        "sha256": "8aa92c8a9da5fc0e51fe670b40b840524d82a347e032cc4f94523e1af44467dc"
+      },
+      "received_at": "2026-11-20T16:42:28.813889Z",
+      "requested_at": "2026-11-20T16:42:28.376519Z",
+      "route_count": 6,
+      "routes": [
+        {
+          "normalization_status": "NORMALIZED",
+          "normalized_itinerary_id": "google-route-a3323e48a0b39fbe1f34d120",
+          "provider_duration_seconds": 1382.0,
+          "route_index": 0,
+          "route_labels": [
+            "DEFAULT_ROUTE"
+          ],
+          "selected_as_stay": true
+        },
+        {
+          "normalization_status": "NORMALIZED",
+          "normalized_itinerary_id": "google-route-b4b074fe878e8f48c76e1617",
+          "provider_duration_seconds": 1382.0,
+          "route_index": 1,
+          "route_labels": [
+            "DEFAULT_ROUTE_ALTERNATE"
+          ],
+          "selected_as_stay": false
+        },
+        {
+          "normalization_status": "DUPLICATE",
+          "normalized_itinerary_id": "google-route-a3323e48a0b39fbe1f34d120",
+          "provider_duration_seconds": 1382.0,
+          "route_index": 2,
+          "route_labels": [
+            "DEFAULT_ROUTE_ALTERNATE"
+          ],
+          "selected_as_stay": false
+        },
+        {
+          "normalization_status": "DUPLICATE",
+          "normalized_itinerary_id": "google-route-b4b074fe878e8f48c76e1617",
+          "provider_duration_seconds": 1382.0,
+          "route_index": 3,
+          "route_labels": [
+            "DEFAULT_ROUTE_ALTERNATE"
+          ],
+          "selected_as_stay": false
+        },
+        {
+          "normalization_status": "NORMALIZED",
+          "normalized_itinerary_id": "google-route-286854e95fde76a2b52d9bf9",
+          "provider_duration_seconds": 1602.0,
+          "route_index": 4,
+          "route_labels": [
+            "DEFAULT_ROUTE_ALTERNATE"
+          ],
+          "selected_as_stay": false
+        },
+        {
+          "normalization_status": "NORMALIZED",
+          "normalized_itinerary_id": "google-route-a3fac7bc8d07beca82df5a37",
+          "provider_duration_seconds": 1708.0,
+          "route_index": 5,
+          "route_labels": [
+            "DEFAULT_ROUTE_ALTERNATE"
+          ],
+          "selected_as_stay": false
+        }
+      ],
+      "status": "CAPTURED",
+      "stay_selection": {
+        "method": "GOOGLE_DEFAULT_ROUTE",
+        "route_index": 0
+      }
+    },
+    {
+      "corridor": {
+        "destination": "NYU Tandon School of Engineering, 6 MetroTech Center, Brooklyn, NY 11201",
+        "id": "portauthority_tandon",
+        "origin": "West 42nd Street and Eighth Avenue, Manhattan, New York, NY"
+      },
+      "derived_summary": {
+        "bytes": 34531,
+        "path": "data/local/google-corridors/2026-11-20-extra/portauthority_tandon.summary.json",
+        "sha256": "11656af79bf2206f75b5e55c52bd97b39f6dcd2039c129bd30ac72c3ffbe722b"
+      },
+      "provider_capture": {
+        "bytes": 34055,
+        "path": "data/local/google-corridors/2026-11-20-extra/portauthority_tandon.provider.json",
+        "sha256": "2563ec7a455fca3ac6e41c76827df4dd9a5570af7d021d69638b53150ed24b62"
+      },
+      "received_at": "2026-11-20T16:42:28.749318Z",
+      "requested_at": "2026-11-20T16:42:28.376132Z",
+      "route_count": 6,
+      "routes": [
+        {
+          "normalization_status": "REJECTED",
+          "normalized_itinerary_id": null,
+          "provider_duration_seconds": 1344.0,
+          "route_index": 0,
+          "route_labels": [
+            "DEFAULT_ROUTE"
+          ],
+          "selected_as_stay": true
+        },
+        {
+          "normalization_status": "REJECTED",
+          "normalized_itinerary_id": null,
+          "provider_duration_seconds": 1359.0,
+          "route_index": 1,
+          "route_labels": [
+            "DEFAULT_ROUTE_ALTERNATE"
+          ],
+          "selected_as_stay": false
+        },
+        {
+          "normalization_status": "REJECTED",
+          "normalized_itinerary_id": null,
+          "provider_duration_seconds": 1479.0,
+          "route_index": 2,
+          "route_labels": [
+            "DEFAULT_ROUTE_ALTERNATE"
+          ],
+          "selected_as_stay": false
+        },
+        {
+          "normalization_status": "REJECTED",
+          "normalized_itinerary_id": null,
+          "provider_duration_seconds": 1479.0,
+          "route_index": 3,
+          "route_labels": [
+            "DEFAULT_ROUTE_ALTERNATE"
+          ],
+          "selected_as_stay": false
+        },
+        {
+          "normalization_status": "REJECTED",
+          "normalized_itinerary_id": null,
+          "provider_duration_seconds": 1374.0,
+          "route_index": 4,
+          "route_labels": [
+            "DEFAULT_ROUTE_ALTERNATE"
+          ],
+          "selected_as_stay": false
+        },
+        {
+          "normalization_status": "NORMALIZED",
+          "normalized_itinerary_id": "google-route-41ca0feabb6e296191561584",
+          "provider_duration_seconds": 2164.0,
+          "route_index": 5,
+          "route_labels": [
+            "DEFAULT_ROUTE_ALTERNATE"
+          ],
+          "selected_as_stay": false
+        }
+      ],
+      "status": "CAPTURED",
+      "stay_selection": {
+        "method": "GOOGLE_DEFAULT_ROUTE",
+        "route_index": 0
+      }
+    }
+  ],
+  "created_at": "2026-11-20T16:42:28.817849+00:00",
+  "query_time_policy": "PROVIDER_CURRENT_DEPARTURE_TIME; HISTORICAL_LABELS_ARE_NOT_READ",
+  "schema_version": "current-google-corridor-capture-v1",
+  "selection_policy": "UNIQUE_GOOGLE_DEFAULT_ROUTE_ELSE_EXPLICIT_FASTEST_DURATION_FALLBACK",
+  "use": "SELECT_CURRENT_STAY_PATH_ONLY; REPLAY_TIMES_USE_HISTORICAL_MTA"
+}

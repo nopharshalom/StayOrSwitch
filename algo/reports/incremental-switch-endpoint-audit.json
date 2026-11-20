@@ -1,0 +1,1094 @@
+{
+  "assertions": 530,
+  "audited_comparable_checkpoints": 5,
+  "cases": [
+    {
+      "case_id": "grandcentral_boroughhall--lmm-alert-273870--1793222995639",
+      "classification": "PRACTICAL_TIE",
+      "corridor_id": "grandcentral_boroughhall",
+      "earlier_same_line_stay_diagnostic": {
+        "earlier_near_event_count": 0,
+        "earlier_outside_near_event_count": 0,
+        "earliest_near_event_candidate": null,
+        "earliest_outside_near_event_candidate": null,
+        "proves_archive_completeness": false,
+        "replaces_frozen_outcome": false,
+        "selection_rule": "All loaded usable exact-line direct endpoint pairs catchable after configured access; destination earlier than original selected Stay. Near-event means absolute endpoint-to-last-observed age <=120 seconds, diagnostic only."
+      },
+      "incident_ids": [
+        "lmm:alert:273870"
+      ],
+      "local_time": "2026-10-28T17:29:55.639000-04:00",
+      "policy_saving_seconds": 140.0,
+      "routes": [
+        {
+          "access_walk_seconds": 111.0,
+          "duration_seconds": 1824.3610000610352,
+          "egress_walk_seconds": 171.0,
+          "endpoints": [
+            {
+              "endpoint": "departure",
+              "endpoint_at": 1793223504,
+              "endpoint_to_last_observed_seconds": 60,
+              "feed_id": "numbered",
+              "hours_stale": false,
+              "label_sources": [
+                "data/processed/october/2026-10-28.labels.json.gz"
+              ],
+              "last_observed_at": 1793223564,
+              "last_observed_to_marked_past_seconds": 3,
+              "leg_index": 0,
+              "marked_past_at": 1793223567,
+              "raw_trip_id": "101150_5..S03R",
+              "route_id": "5",
+              "service_date": "20261028",
+              "source_trip_uid": "1793206290_5..S03R",
+              "stop_id": "631S",
+              "trip_id": "MTA:numbered:20261028:5:101150_5..S03R:"
+            },
+            {
+              "endpoint": "arrival",
+              "endpoint_at": 1793224649,
+              "endpoint_to_last_observed_seconds": 67,
+              "feed_id": "numbered",
+              "hours_stale": false,
+              "label_sources": [
+                "data/processed/october/2026-10-28.labels.json.gz"
+              ],
+              "last_observed_at": 1793224716,
+              "last_observed_to_marked_past_seconds": 3,
+              "leg_index": 0,
+              "marked_past_at": 1793224719,
+              "raw_trip_id": "101150_5..S03R",
+              "route_id": "5",
+              "service_date": "20261028",
+              "source_trip_uid": "1793206290_5..S03R",
+              "stop_id": "423S",
+              "trip_id": "MTA:numbered:20261028:5:101150_5..S03R:"
+            }
+          ],
+          "id": "google-route-54502e7253ac53a2be3cd264",
+          "minimum_boarding_slack_seconds": 397.36100006103516,
+          "name": "5: Grand Central-42 St to Borough Hall",
+          "role": "MTA_STAY",
+          "selected_legs": [
+            {
+              "arrival_at": 1793224649,
+              "boarding_slack_seconds": 397.36100006103516,
+              "departure_at": 1793223504,
+              "from_stop_id": "631S",
+              "platform_ready_at": 1793223106.639,
+              "to_stop_id": "423S",
+              "trip_id": "MTA:numbered:20261028:5:101150_5..S03R:"
+            }
+          ],
+          "transfer_walk_seconds": []
+        },
+        {
+          "access_walk_seconds": 115.0,
+          "duration_seconds": 1684.3610000610352,
+          "egress_walk_seconds": 171.0,
+          "endpoints": [
+            {
+              "endpoint": "departure",
+              "endpoint_at": 1793223281,
+              "endpoint_to_last_observed_seconds": 58,
+              "feed_id": "numbered",
+              "hours_stale": false,
+              "label_sources": [
+                "data/processed/october/2026-10-28.labels.json.gz"
+              ],
+              "last_observed_at": 1793223339,
+              "last_observed_to_marked_past_seconds": 3,
+              "leg_index": 0,
+              "marked_past_at": 1793223342,
+              "raw_trip_id": "101800_4..S06R",
+              "route_id": "4",
+              "service_date": "20261028",
+              "source_trip_uid": "1793206680_4..S06R",
+              "stop_id": "631S",
+              "trip_id": "MTA:numbered:20261028:4:101800_4..S06R:"
+            },
+            {
+              "endpoint": "arrival",
+              "endpoint_at": 1793224509,
+              "endpoint_to_last_observed_seconds": 39,
+              "feed_id": "numbered",
+              "hours_stale": false,
+              "label_sources": [
+                "data/processed/october/2026-10-28.labels.json.gz"
+              ],
+              "last_observed_at": 1793224548,
+              "last_observed_to_marked_past_seconds": 3,
+              "leg_index": 0,
+              "marked_past_at": 1793224551,
+              "raw_trip_id": "101800_4..S06R",
+              "route_id": "4",
+              "service_date": "20261028",
+              "source_trip_uid": "1793206680_4..S06R",
+              "stop_id": "423S",
+              "trip_id": "MTA:numbered:20261028:4:101800_4..S06R:"
+            }
+          ],
+          "id": "google-route-fae079d4a0a7051e64aa1cda",
+          "minimum_boarding_slack_seconds": 170.36100006103516,
+          "name": "4: Grand Central-42 St to Borough Hall",
+          "role": "MODEL_SWITCH",
+          "selected_legs": [
+            {
+              "arrival_at": 1793224509,
+              "boarding_slack_seconds": 170.36100006103516,
+              "departure_at": 1793223281,
+              "from_stop_id": "631S",
+              "platform_ready_at": 1793223110.639,
+              "to_stop_id": "423S",
+              "trip_id": "MTA:numbered:20261028:4:101800_4..S06R:"
+            }
+          ],
+          "transfer_walk_seconds": []
+        }
+      ]
+    },
+    {
+      "case_id": "grandcentral_boroughhall--lmm-alert-274016--1793303397797",
+      "classification": "MEANINGFUL_GAIN",
+      "corridor_id": "grandcentral_boroughhall",
+      "earlier_same_line_stay_diagnostic": {
+        "earlier_near_event_count": 0,
+        "earlier_outside_near_event_count": 0,
+        "earliest_near_event_candidate": null,
+        "earliest_outside_near_event_candidate": null,
+        "proves_archive_completeness": false,
+        "replaces_frozen_outcome": false,
+        "selection_rule": "All loaded usable exact-line direct endpoint pairs catchable after configured access; destination earlier than original selected Stay. Near-event means absolute endpoint-to-last-observed age <=120 seconds, diagnostic only."
+      },
+      "incident_ids": [
+        "lmm:alert:274016"
+      ],
+      "local_time": "2026-10-29T15:49:57.797000-04:00",
+      "policy_saving_seconds": 331.0,
+      "routes": [
+        {
+          "access_walk_seconds": 111.0,
+          "duration_seconds": 1783.2030000686646,
+          "egress_walk_seconds": 171.0,
+          "endpoints": [
+            {
+              "endpoint": "departure",
+              "endpoint_at": 1793303859,
+              "endpoint_to_last_observed_seconds": 56,
+              "feed_id": "numbered",
+              "hours_stale": false,
+              "label_sources": [
+                "data/processed/october/2026-10-29.labels.json.gz"
+              ],
+              "last_observed_at": 1793303915,
+              "last_observed_to_marked_past_seconds": 3,
+              "leg_index": 0,
+              "marked_past_at": 1793303918,
+              "raw_trip_id": "090050_5..S",
+              "route_id": "5",
+              "service_date": "20261029",
+              "source_trip_uid": "1793286030_5..S",
+              "stop_id": "631S",
+              "trip_id": "MTA:numbered:20261029:5:090050_5..S:"
+            },
+            {
+              "endpoint": "arrival",
+              "endpoint_at": 1793305010,
+              "endpoint_to_last_observed_seconds": 24,
+              "feed_id": "numbered",
+              "hours_stale": false,
+              "label_sources": [
+                "data/processed/october/2026-10-29.labels.json.gz"
+              ],
+              "last_observed_at": 1793305034,
+              "last_observed_to_marked_past_seconds": 3,
+              "leg_index": 0,
+              "marked_past_at": 1793305037,
+              "raw_trip_id": "090050_5..S",
+              "route_id": "5",
+              "service_date": "20261029",
+              "source_trip_uid": "1793286030_5..S",
+              "stop_id": "423S",
+              "trip_id": "MTA:numbered:20261029:5:090050_5..S:"
+            }
+          ],
+          "id": "google-route-54502e7253ac53a2be3cd264",
+          "minimum_boarding_slack_seconds": 350.20300006866455,
+          "name": "5: Grand Central-42 St to Borough Hall",
+          "role": "MTA_STAY",
+          "selected_legs": [
+            {
+              "arrival_at": 1793305010,
+              "boarding_slack_seconds": 350.20300006866455,
+              "departure_at": 1793303859,
+              "from_stop_id": "631S",
+              "platform_ready_at": 1793303508.797,
+              "to_stop_id": "423S",
+              "trip_id": "MTA:numbered:20261029:5:090050_5..S:"
+            }
+          ],
+          "transfer_walk_seconds": []
+        },
+        {
+          "access_walk_seconds": 115.0,
+          "duration_seconds": 1452.2030000686646,
+          "egress_walk_seconds": 171.0,
+          "endpoints": [
+            {
+              "endpoint": "departure",
+              "endpoint_at": 1793303550,
+              "endpoint_to_last_observed_seconds": 92,
+              "feed_id": "numbered",
+              "hours_stale": false,
+              "label_sources": [
+                "data/processed/october/2026-10-29.labels.json.gz"
+              ],
+              "last_observed_at": 1793303642,
+              "last_observed_to_marked_past_seconds": 3,
+              "leg_index": 0,
+              "marked_past_at": 1793303645,
+              "raw_trip_id": "091400_4..S06R",
+              "route_id": "4",
+              "service_date": "20261029",
+              "source_trip_uid": "1793286840_4..S06R",
+              "stop_id": "631S",
+              "trip_id": "MTA:numbered:20261029:4:091400_4..S06R:"
+            },
+            {
+              "endpoint": "arrival",
+              "endpoint_at": 1793304679,
+              "endpoint_to_last_observed_seconds": 22,
+              "feed_id": "numbered",
+              "hours_stale": false,
+              "label_sources": [
+                "data/processed/october/2026-10-29.labels.json.gz"
+              ],
+              "last_observed_at": 1793304701,
+              "last_observed_to_marked_past_seconds": 3,
+              "leg_index": 0,
+              "marked_past_at": 1793304704,
+              "raw_trip_id": "091400_4..S06R",
+              "route_id": "4",
+              "service_date": "20261029",
+              "source_trip_uid": "1793286840_4..S06R",
+              "stop_id": "423S",
+              "trip_id": "MTA:numbered:20261029:4:091400_4..S06R:"
+            }
+          ],
+          "id": "google-route-fae079d4a0a7051e64aa1cda",
+          "minimum_boarding_slack_seconds": 37.20300006866455,
+          "name": "4: Grand Central-42 St to Borough Hall",
+          "role": "MODEL_SWITCH",
+          "selected_legs": [
+            {
+              "arrival_at": 1793304679,
+              "boarding_slack_seconds": 37.20300006866455,
+              "departure_at": 1793303550,
+              "from_stop_id": "631S",
+              "platform_ready_at": 1793303512.797,
+              "to_stop_id": "423S",
+              "trip_id": "MTA:numbered:20261029:4:091400_4..S06R:"
+            }
+          ],
+          "transfer_walk_seconds": []
+        }
+      ]
+    },
+    {
+      "case_id": "grandcentral_boroughhall--lmm-alert-274022--1793304655647",
+      "classification": "MEANINGFUL_GAIN",
+      "corridor_id": "grandcentral_boroughhall",
+      "earlier_same_line_stay_diagnostic": {
+        "earlier_near_event_count": 0,
+        "earlier_outside_near_event_count": 0,
+        "earliest_near_event_candidate": null,
+        "earliest_outside_near_event_candidate": null,
+        "proves_archive_completeness": false,
+        "replaces_frozen_outcome": false,
+        "selection_rule": "All loaded usable exact-line direct endpoint pairs catchable after configured access; destination earlier than original selected Stay. Near-event means absolute endpoint-to-last-observed age <=120 seconds, diagnostic only."
+      },
+      "incident_ids": [
+        "lmm:alert:274022"
+      ],
+      "local_time": "2026-10-29T16:10:55.647000-04:00",
+      "policy_saving_seconds": 246.0,
+      "routes": [
+        {
+          "access_walk_seconds": 111.0,
+          "duration_seconds": 1664.3529999256134,
+          "egress_walk_seconds": 171.0,
+          "endpoints": [
+            {
+              "endpoint": "departure",
+              "endpoint_at": 1793305040,
+              "endpoint_to_last_observed_seconds": 39,
+              "feed_id": "numbered",
+              "hours_stale": false,
+              "label_sources": [
+                "data/processed/october/2026-10-29.labels.json.gz"
+              ],
+              "last_observed_at": 1793305079,
+              "last_observed_to_marked_past_seconds": 3,
+              "leg_index": 0,
+              "marked_past_at": 1793305082,
+              "raw_trip_id": "092350_5..S03R",
+              "route_id": "5",
+              "service_date": "20261029",
+              "source_trip_uid": "1793287410_5..S03R",
+              "stop_id": "631S",
+              "trip_id": "MTA:numbered:20261029:5:092350_5..S03R:"
+            },
+            {
+              "endpoint": "arrival",
+              "endpoint_at": 1793306149,
+              "endpoint_to_last_observed_seconds": 25,
+              "feed_id": "numbered",
+              "hours_stale": false,
+              "label_sources": [
+                "data/processed/october/2026-10-29.labels.json.gz"
+              ],
+              "last_observed_at": 1793306174,
+              "last_observed_to_marked_past_seconds": 4,
+              "leg_index": 0,
+              "marked_past_at": 1793306178,
+              "raw_trip_id": "092350_5..S03R",
+              "route_id": "5",
+              "service_date": "20261029",
+              "source_trip_uid": "1793287410_5..S03R",
+              "stop_id": "423S",
+              "trip_id": "MTA:numbered:20261029:5:092350_5..S03R:"
+            }
+          ],
+          "id": "google-route-54502e7253ac53a2be3cd264",
+          "minimum_boarding_slack_seconds": 273.3529999256134,
+          "name": "5: Grand Central-42 St to Borough Hall",
+          "role": "MTA_STAY",
+          "selected_legs": [
+            {
+              "arrival_at": 1793306149,
+              "boarding_slack_seconds": 273.3529999256134,
+              "departure_at": 1793305040,
+              "from_stop_id": "631S",
+              "platform_ready_at": 1793304766.647,
+              "to_stop_id": "423S",
+              "trip_id": "MTA:numbered:20261029:5:092350_5..S03R:"
+            }
+          ],
+          "transfer_walk_seconds": []
+        },
+        {
+          "access_walk_seconds": 115.0,
+          "duration_seconds": 1418.3529999256134,
+          "egress_walk_seconds": 171.0,
+          "endpoints": [
+            {
+              "endpoint": "departure",
+              "endpoint_at": 1793304813,
+              "endpoint_to_last_observed_seconds": 38,
+              "feed_id": "numbered",
+              "hours_stale": false,
+              "label_sources": [
+                "data/processed/october/2026-10-29.labels.json.gz"
+              ],
+              "last_observed_at": 1793304851,
+              "last_observed_to_marked_past_seconds": 3,
+              "leg_index": 0,
+              "marked_past_at": 1793304854,
+              "raw_trip_id": "093550_4..S06R",
+              "route_id": "4",
+              "service_date": "20261029",
+              "source_trip_uid": "1793288130_4..S06R",
+              "stop_id": "631S",
+              "trip_id": "MTA:numbered:20261029:4:093550_4..S06R:"
+            },
+            {
+              "endpoint": "arrival",
+              "endpoint_at": 1793305903,
+              "endpoint_to_last_observed_seconds": 22,
+              "feed_id": "numbered",
+              "hours_stale": false,
+              "label_sources": [
+                "data/processed/october/2026-10-29.labels.json.gz"
+              ],
+              "last_observed_at": 1793305925,
+              "last_observed_to_marked_past_seconds": 3,
+              "leg_index": 0,
+              "marked_past_at": 1793305928,
+              "raw_trip_id": "093550_4..S06R",
+              "route_id": "4",
+              "service_date": "20261029",
+              "source_trip_uid": "1793288130_4..S06R",
+              "stop_id": "423S",
+              "trip_id": "MTA:numbered:20261029:4:093550_4..S06R:"
+            }
+          ],
+          "id": "google-route-fae079d4a0a7051e64aa1cda",
+          "minimum_boarding_slack_seconds": 42.3529999256134,
+          "name": "4: Grand Central-42 St to Borough Hall",
+          "role": "MODEL_SWITCH",
+          "selected_legs": [
+            {
+              "arrival_at": 1793305903,
+              "boarding_slack_seconds": 42.3529999256134,
+              "departure_at": 1793304813,
+              "from_stop_id": "631S",
+              "platform_ready_at": 1793304770.647,
+              "to_stop_id": "423S",
+              "trip_id": "MTA:numbered:20261029:4:093550_4..S06R:"
+            }
+          ],
+          "transfer_walk_seconds": []
+        }
+      ]
+    },
+    {
+      "case_id": "grandcentral_boroughhall--lmm-alert-274037--1793311412707",
+      "classification": "PRACTICAL_TIE",
+      "corridor_id": "grandcentral_boroughhall",
+      "earlier_same_line_stay_diagnostic": {
+        "earlier_near_event_count": 0,
+        "earlier_outside_near_event_count": 0,
+        "earliest_near_event_candidate": null,
+        "earliest_outside_near_event_candidate": null,
+        "proves_archive_completeness": false,
+        "replaces_frozen_outcome": false,
+        "selection_rule": "All loaded usable exact-line direct endpoint pairs catchable after configured access; destination earlier than original selected Stay. Near-event means absolute endpoint-to-last-observed age <=120 seconds, diagnostic only."
+      },
+      "incident_ids": [
+        "lmm:alert:274037"
+      ],
+      "local_time": "2026-10-29T18:03:32.707000-04:00",
+      "policy_saving_seconds": 155.0,
+      "routes": [
+        {
+          "access_walk_seconds": 111.0,
+          "duration_seconds": 1944.2929999828339,
+          "egress_walk_seconds": 171.0,
+          "endpoints": [
+            {
+              "endpoint": "departure",
+              "endpoint_at": 1793311865,
+              "endpoint_to_last_observed_seconds": 56,
+              "feed_id": "numbered",
+              "hours_stale": false,
+              "label_sources": [
+                "data/processed/october/2026-10-29.labels.json.gz"
+              ],
+              "last_observed_at": 1793311921,
+              "last_observed_to_marked_past_seconds": 3,
+              "leg_index": 0,
+              "marked_past_at": 1793311924,
+              "raw_trip_id": "104000_5..S03R",
+              "route_id": "5",
+              "service_date": "20261029",
+              "source_trip_uid": "1793294400_5..S03R",
+              "stop_id": "631S",
+              "trip_id": "MTA:numbered:20261029:5:104000_5..S03R:"
+            },
+            {
+              "endpoint": "arrival",
+              "endpoint_at": 1793313186,
+              "endpoint_to_last_observed_seconds": 25,
+              "feed_id": "numbered",
+              "hours_stale": false,
+              "label_sources": [
+                "data/processed/october/2026-10-29.labels.json.gz"
+              ],
+              "last_observed_at": 1793313211,
+              "last_observed_to_marked_past_seconds": 3,
+              "leg_index": 0,
+              "marked_past_at": 1793313214,
+              "raw_trip_id": "104000_5..S03R",
+              "route_id": "5",
+              "service_date": "20261029",
+              "source_trip_uid": "1793294400_5..S03R",
+              "stop_id": "423S",
+              "trip_id": "MTA:numbered:20261029:5:104000_5..S03R:"
+            }
+          ],
+          "id": "google-route-54502e7253ac53a2be3cd264",
+          "minimum_boarding_slack_seconds": 341.29299998283386,
+          "name": "5: Grand Central-42 St to Borough Hall",
+          "role": "MTA_STAY",
+          "selected_legs": [
+            {
+              "arrival_at": 1793313186,
+              "boarding_slack_seconds": 341.29299998283386,
+              "departure_at": 1793311865,
+              "from_stop_id": "631S",
+              "platform_ready_at": 1793311523.707,
+              "to_stop_id": "423S",
+              "trip_id": "MTA:numbered:20261029:5:104000_5..S03R:"
+            }
+          ],
+          "transfer_walk_seconds": []
+        },
+        {
+          "access_walk_seconds": 115.0,
+          "duration_seconds": 1789.2929999828339,
+          "egress_walk_seconds": 171.0,
+          "endpoints": [
+            {
+              "endpoint": "departure",
+              "endpoint_at": 1793311645,
+              "endpoint_to_last_observed_seconds": 54,
+              "feed_id": "numbered",
+              "hours_stale": false,
+              "label_sources": [
+                "data/processed/october/2026-10-29.labels.json.gz"
+              ],
+              "last_observed_at": 1793311699,
+              "last_observed_to_marked_past_seconds": 3,
+              "leg_index": 0,
+              "marked_past_at": 1793311702,
+              "raw_trip_id": "104650_4..S06R",
+              "route_id": "4",
+              "service_date": "20261029",
+              "source_trip_uid": "1793294790_4..S06R",
+              "stop_id": "631S",
+              "trip_id": "MTA:numbered:20261029:4:104650_4..S06R:"
+            },
+            {
+              "endpoint": "arrival",
+              "endpoint_at": 1793313031,
+              "endpoint_to_last_observed_seconds": 42,
+              "feed_id": "numbered",
+              "hours_stale": false,
+              "label_sources": [
+                "data/processed/october/2026-10-29.labels.json.gz"
+              ],
+              "last_observed_at": 1793313073,
+              "last_observed_to_marked_past_seconds": 3,
+              "leg_index": 0,
+              "marked_past_at": 1793313076,
+              "raw_trip_id": "104650_4..S06R",
+              "route_id": "4",
+              "service_date": "20261029",
+              "source_trip_uid": "1793294790_4..S06R",
+              "stop_id": "423S",
+              "trip_id": "MTA:numbered:20261029:4:104650_4..S06R:"
+            }
+          ],
+          "id": "google-route-fae079d4a0a7051e64aa1cda",
+          "minimum_boarding_slack_seconds": 117.29299998283386,
+          "name": "4: Grand Central-42 St to Borough Hall",
+          "role": "MODEL_SWITCH",
+          "selected_legs": [
+            {
+              "arrival_at": 1793313031,
+              "boarding_slack_seconds": 117.29299998283386,
+              "departure_at": 1793311645,
+              "from_stop_id": "631S",
+              "platform_ready_at": 1793311527.707,
+              "to_stop_id": "423S",
+              "trip_id": "MTA:numbered:20261029:4:104650_4..S06R:"
+            }
+          ],
+          "transfer_walk_seconds": []
+        }
+      ]
+    },
+    {
+      "case_id": "courtsquare_timessquare--lmm-alert-274118--1793353883617",
+      "classification": "MEANINGFUL_GAIN",
+      "corridor_id": "courtsquare_timessquare",
+      "earlier_same_line_stay_diagnostic": {
+        "earlier_near_event_count": 3,
+        "earlier_outside_near_event_count": 2,
+        "earliest_near_event_candidate": {
+          "arrival_at": 1793357517,
+          "departure_at": 1793356900,
+          "duration_seconds": 3701.382999897003,
+          "endpoint_to_last_observed_seconds": [
+            61,
+            49
+          ],
+          "last_observed_to_marked_past_seconds": [
+            2,
+            3
+          ],
+          "trip_id": "MTA:numbered:20261030:7:040031_7..S:"
+        },
+        "earliest_outside_near_event_candidate": {
+          "arrival_at": 1793356180,
+          "departure_at": 1793355600,
+          "duration_seconds": 2364.382999897003,
+          "endpoint_to_last_observed_seconds": [
+            78008,
+            77428
+          ],
+          "last_observed_to_marked_past_seconds": [
+            3,
+            3
+          ],
+          "trip_id": "MTA:numbered:20261030:7:035750_7..S:"
+        },
+        "proves_archive_completeness": false,
+        "replaces_frozen_outcome": false,
+        "selection_rule": "All loaded usable exact-line direct endpoint pairs catchable after configured access; destination earlier than original selected Stay. Near-event means absolute endpoint-to-last-observed age <=120 seconds, diagnostic only."
+      },
+      "incident_ids": [
+        "lmm:alert:274118"
+      ],
+      "local_time": "2026-10-30T05:51:23.617000-04:00",
+      "policy_saving_seconds": 4970.0,
+      "routes": [
+        {
+          "access_walk_seconds": 170.0,
+          "duration_seconds": 6391.382999897003,
+          "egress_walk_seconds": 68.0,
+          "endpoints": [
+            {
+              "endpoint": "departure",
+              "endpoint_at": 1793359606,
+              "endpoint_to_last_observed_seconds": 44,
+              "feed_id": "numbered",
+              "hours_stale": false,
+              "label_sources": [
+                "data/processed/october/2026-10-30.labels.json.gz"
+              ],
+              "last_observed_at": 1793359650,
+              "last_observed_to_marked_past_seconds": 4,
+              "leg_index": 0,
+              "marked_past_at": 1793359654,
+              "raw_trip_id": "033750_7..S",
+              "route_id": "7",
+              "service_date": "20261030",
+              "source_trip_uid": "1793338650_7..S",
+              "stop_id": "719S",
+              "trip_id": "MTA:numbered:20261030:7:033750_7..S:"
+            },
+            {
+              "endpoint": "arrival",
+              "endpoint_at": 1793360207,
+              "endpoint_to_last_observed_seconds": 38,
+              "feed_id": "numbered",
+              "hours_stale": false,
+              "label_sources": [
+                "data/processed/october/2026-10-30.labels.json.gz"
+              ],
+              "last_observed_at": 1793360245,
+              "last_observed_to_marked_past_seconds": 3,
+              "leg_index": 0,
+              "marked_past_at": 1793360248,
+              "raw_trip_id": "033750_7..S",
+              "route_id": "7",
+              "service_date": "20261030",
+              "source_trip_uid": "1793338650_7..S",
+              "stop_id": "725S",
+              "trip_id": "MTA:numbered:20261030:7:033750_7..S:"
+            }
+          ],
+          "id": "google-route-9a6888e689fb501e230ccda5",
+          "minimum_boarding_slack_seconds": 5552.382999897003,
+          "name": "7: Court Sq to Times Sq-42 St",
+          "role": "MTA_STAY",
+          "selected_legs": [
+            {
+              "arrival_at": 1793360207,
+              "boarding_slack_seconds": 5552.382999897003,
+              "departure_at": 1793359606,
+              "from_stop_id": "719S",
+              "platform_ready_at": 1793354053.617,
+              "to_stop_id": "725S",
+              "trip_id": "MTA:numbered:20261030:7:033750_7..S:"
+            }
+          ],
+          "transfer_walk_seconds": []
+        },
+        {
+          "access_walk_seconds": 278.0,
+          "duration_seconds": 1421.3829998970032,
+          "egress_walk_seconds": 228.0,
+          "endpoints": [
+            {
+              "endpoint": "departure",
+              "endpoint_at": 1793354252,
+              "endpoint_to_last_observed_seconds": 28,
+              "feed_id": "bdfm",
+              "hours_stale": false,
+              "label_sources": [
+                "data/processed/october/2026-10-30.labels.json.gz"
+              ],
+              "last_observed_at": 1793354280,
+              "last_observed_to_marked_past_seconds": 14,
+              "leg_index": 0,
+              "marked_past_at": 1793354294,
+              "raw_trip_id": "032650_F..S54R",
+              "route_id": "F",
+              "service_date": "20261030",
+              "source_trip_uid": "1793337990_F..S54R",
+              "stop_id": "F09S",
+              "trip_id": "MTA:bdfm:20261030:F:032650_F..S54R:05%3A26%3A18"
+            },
+            {
+              "endpoint": "arrival",
+              "endpoint_at": 1793355077,
+              "endpoint_to_last_observed_seconds": 29,
+              "feed_id": "bdfm",
+              "hours_stale": false,
+              "label_sources": [
+                "data/processed/preincident-inputs/d16-labels.json.gz"
+              ],
+              "last_observed_at": 1793355106,
+              "last_observed_to_marked_past_seconds": 16,
+              "leg_index": 0,
+              "marked_past_at": 1793355122,
+              "raw_trip_id": "032650_F..S54R",
+              "route_id": "F",
+              "service_date": "20261030",
+              "source_trip_uid": "1793337990_F..S54R",
+              "stop_id": "D16S",
+              "trip_id": "MTA:bdfm:20261030:F:032650_F..S54R:05%3A26%3A18"
+            }
+          ],
+          "id": "google-route-59e8e3290ecae4779e70fb80",
+          "minimum_boarding_slack_seconds": 90.38299989700317,
+          "name": "F: Court Sq-23 St to 42 St-Bryant Pk",
+          "role": "MODEL_SWITCH",
+          "selected_legs": [
+            {
+              "arrival_at": 1793355077,
+              "boarding_slack_seconds": 90.38299989700317,
+              "departure_at": 1793354252,
+              "from_stop_id": "F09S",
+              "platform_ready_at": 1793354161.617,
+              "to_stop_id": "D16S",
+              "trip_id": "MTA:bdfm:20261030:F:032650_F..S54R:05%3A26%3A18"
+            }
+          ],
+          "transfer_walk_seconds": []
+        }
+      ]
+    }
+  ],
+  "distinct_used_endpoint_keys": 20,
+  "endpoint_age_range_seconds": [
+    22,
+    92
+  ],
+  "hours_stale_used_endpoints": [],
+  "limitations": [
+    "Final MTA predictions remain proxies, not passenger observations.",
+    "Walking times and inferred boarding slack are assumptions, not measured platform arrival times. Same-platform service substitutions are valid Switches.",
+    "Later near-event same-line alternatives are diagnostics only; they establish that fixed-run and adaptive-route Stay differ, without proving complete archive coverage or simulating an adaptive policy.",
+    "The 120-second endpoint proximity screen is a post-score diagnostic; it neither changes the frozen cohort nor repairs outcomes.",
+    "Raw CSV final values match selected endpoint labels; independent physical arrival validation is unavailable."
+  ],
+  "maximum_stop_removal_gap_seconds": 16,
+  "practical_tie_checkpoints": 2,
+  "raw_csv_matches": [
+    {
+      "endpoint_values_match_raw": true,
+      "matching_stop_sources": [
+        "data/raw/october/subwaydatanyc_2026-10-28_csv.tar.xz"
+      ],
+      "matching_trip_sources": [
+        "data/raw/october/subwaydatanyc_2026-10-28_csv.tar.xz"
+      ],
+      "route_and_raw_trip_identity_match": true,
+      "source_trip_uid": "1793206680_4..S06R",
+      "stop_id": "423S",
+      "trip_id": "MTA:numbered:20261028:4:101800_4..S06R:"
+    },
+    {
+      "endpoint_values_match_raw": true,
+      "matching_stop_sources": [
+        "data/raw/october/subwaydatanyc_2026-10-29_csv.tar.xz"
+      ],
+      "matching_trip_sources": [
+        "data/raw/october/subwaydatanyc_2026-10-29_csv.tar.xz"
+      ],
+      "route_and_raw_trip_identity_match": true,
+      "source_trip_uid": "1793286840_4..S06R",
+      "stop_id": "423S",
+      "trip_id": "MTA:numbered:20261029:4:091400_4..S06R:"
+    },
+    {
+      "endpoint_values_match_raw": true,
+      "matching_stop_sources": [
+        "data/raw/october/subwaydatanyc_2026-10-30_csv.tar.xz"
+      ],
+      "matching_trip_sources": [
+        "data/raw/october/subwaydatanyc_2026-10-30_csv.tar.xz"
+      ],
+      "route_and_raw_trip_identity_match": true,
+      "source_trip_uid": "1793338650_7..S",
+      "stop_id": "725S",
+      "trip_id": "MTA:numbered:20261030:7:033750_7..S:"
+    },
+    {
+      "endpoint_values_match_raw": true,
+      "matching_stop_sources": [
+        "data/raw/october/subwaydatanyc_2026-10-29_csv.tar.xz"
+      ],
+      "matching_trip_sources": [
+        "data/raw/october/subwaydatanyc_2026-10-29_csv.tar.xz"
+      ],
+      "route_and_raw_trip_identity_match": true,
+      "source_trip_uid": "1793286030_5..S",
+      "stop_id": "631S",
+      "trip_id": "MTA:numbered:20261029:5:090050_5..S:"
+    },
+    {
+      "endpoint_values_match_raw": true,
+      "matching_stop_sources": [
+        "data/raw/october/subwaydatanyc_2026-10-29_csv.tar.xz"
+      ],
+      "matching_trip_sources": [
+        "data/raw/october/subwaydatanyc_2026-10-29_csv.tar.xz"
+      ],
+      "route_and_raw_trip_identity_match": true,
+      "source_trip_uid": "1793288130_4..S06R",
+      "stop_id": "423S",
+      "trip_id": "MTA:numbered:20261029:4:093550_4..S06R:"
+    },
+    {
+      "endpoint_values_match_raw": true,
+      "matching_stop_sources": [
+        "data/raw/october/subwaydatanyc_2026-10-29_csv.tar.xz"
+      ],
+      "matching_trip_sources": [
+        "data/raw/october/subwaydatanyc_2026-10-29_csv.tar.xz"
+      ],
+      "route_and_raw_trip_identity_match": true,
+      "source_trip_uid": "1793286030_5..S",
+      "stop_id": "423S",
+      "trip_id": "MTA:numbered:20261029:5:090050_5..S:"
+    },
+    {
+      "endpoint_values_match_raw": true,
+      "matching_stop_sources": [
+        "data/raw/october/subwaydatanyc_2026-10-28_csv.tar.xz"
+      ],
+      "matching_trip_sources": [
+        "data/raw/october/subwaydatanyc_2026-10-28_csv.tar.xz"
+      ],
+      "route_and_raw_trip_identity_match": true,
+      "source_trip_uid": "1793206290_5..S03R",
+      "stop_id": "631S",
+      "trip_id": "MTA:numbered:20261028:5:101150_5..S03R:"
+    },
+    {
+      "endpoint_values_match_raw": true,
+      "matching_stop_sources": [
+        "data/raw/october/subwaydatanyc_2026-10-29_csv.tar.xz"
+      ],
+      "matching_trip_sources": [
+        "data/raw/october/subwaydatanyc_2026-10-29_csv.tar.xz"
+      ],
+      "route_and_raw_trip_identity_match": true,
+      "source_trip_uid": "1793294400_5..S03R",
+      "stop_id": "631S",
+      "trip_id": "MTA:numbered:20261029:5:104000_5..S03R:"
+    },
+    {
+      "endpoint_values_match_raw": true,
+      "matching_stop_sources": [
+        "data/raw/october/subwaydatanyc_2026-10-28_csv.tar.xz"
+      ],
+      "matching_trip_sources": [
+        "data/raw/october/subwaydatanyc_2026-10-28_csv.tar.xz"
+      ],
+      "route_and_raw_trip_identity_match": true,
+      "source_trip_uid": "1793206290_5..S03R",
+      "stop_id": "423S",
+      "trip_id": "MTA:numbered:20261028:5:101150_5..S03R:"
+    },
+    {
+      "endpoint_values_match_raw": true,
+      "matching_stop_sources": [
+        "data/raw/october/subwaydatanyc_2026-10-29_csv.tar.xz"
+      ],
+      "matching_trip_sources": [
+        "data/raw/october/subwaydatanyc_2026-10-29_csv.tar.xz"
+      ],
+      "route_and_raw_trip_identity_match": true,
+      "source_trip_uid": "1793294400_5..S03R",
+      "stop_id": "423S",
+      "trip_id": "MTA:numbered:20261029:5:104000_5..S03R:"
+    },
+    {
+      "endpoint_values_match_raw": true,
+      "matching_stop_sources": [
+        "data/raw/october/subwaydatanyc_2026-10-29_csv.tar.xz"
+      ],
+      "matching_trip_sources": [
+        "data/raw/october/subwaydatanyc_2026-10-29_csv.tar.xz"
+      ],
+      "route_and_raw_trip_identity_match": true,
+      "source_trip_uid": "1793287410_5..S03R",
+      "stop_id": "631S",
+      "trip_id": "MTA:numbered:20261029:5:092350_5..S03R:"
+    },
+    {
+      "endpoint_values_match_raw": true,
+      "matching_stop_sources": [
+        "data/raw/october/subwaydatanyc_2026-10-30_csv.tar.xz"
+      ],
+      "matching_trip_sources": [
+        "data/raw/october/subwaydatanyc_2026-10-30_csv.tar.xz"
+      ],
+      "route_and_raw_trip_identity_match": true,
+      "source_trip_uid": "1793337990_F..S54R",
+      "stop_id": "D16S",
+      "trip_id": "MTA:bdfm:20261030:F:032650_F..S54R:05%3A26%3A18"
+    },
+    {
+      "endpoint_values_match_raw": true,
+      "matching_stop_sources": [
+        "data/raw/october/subwaydatanyc_2026-10-30_csv.tar.xz"
+      ],
+      "matching_trip_sources": [
+        "data/raw/october/subwaydatanyc_2026-10-30_csv.tar.xz"
+      ],
+      "route_and_raw_trip_identity_match": true,
+      "source_trip_uid": "1793338650_7..S",
+      "stop_id": "719S",
+      "trip_id": "MTA:numbered:20261030:7:033750_7..S:"
+    },
+    {
+      "endpoint_values_match_raw": true,
+      "matching_stop_sources": [
+        "data/raw/october/subwaydatanyc_2026-10-30_csv.tar.xz"
+      ],
+      "matching_trip_sources": [
+        "data/raw/october/subwaydatanyc_2026-10-30_csv.tar.xz"
+      ],
+      "route_and_raw_trip_identity_match": true,
+      "source_trip_uid": "1793337990_F..S54R",
+      "stop_id": "F09S",
+      "trip_id": "MTA:bdfm:20261030:F:032650_F..S54R:05%3A26%3A18"
+    },
+    {
+      "endpoint_values_match_raw": true,
+      "matching_stop_sources": [
+        "data/raw/october/subwaydatanyc_2026-10-29_csv.tar.xz"
+      ],
+      "matching_trip_sources": [
+        "data/raw/october/subwaydatanyc_2026-10-29_csv.tar.xz"
+      ],
+      "route_and_raw_trip_identity_match": true,
+      "source_trip_uid": "1793287410_5..S03R",
+      "stop_id": "423S",
+      "trip_id": "MTA:numbered:20261029:5:092350_5..S03R:"
+    },
+    {
+      "endpoint_values_match_raw": true,
+      "matching_stop_sources": [
+        "data/raw/october/subwaydatanyc_2026-10-28_csv.tar.xz"
+      ],
+      "matching_trip_sources": [
+        "data/raw/october/subwaydatanyc_2026-10-28_csv.tar.xz"
+      ],
+      "route_and_raw_trip_identity_match": true,
+      "source_trip_uid": "1793206680_4..S06R",
+      "stop_id": "631S",
+      "trip_id": "MTA:numbered:20261028:4:101800_4..S06R:"
+    },
+    {
+      "endpoint_values_match_raw": true,
+      "matching_stop_sources": [
+        "data/raw/october/subwaydatanyc_2026-10-29_csv.tar.xz"
+      ],
+      "matching_trip_sources": [
+        "data/raw/october/subwaydatanyc_2026-10-29_csv.tar.xz"
+      ],
+      "route_and_raw_trip_identity_match": true,
+      "source_trip_uid": "1793294790_4..S06R",
+      "stop_id": "631S",
+      "trip_id": "MTA:numbered:20261029:4:104650_4..S06R:"
+    },
+    {
+      "endpoint_values_match_raw": true,
+      "matching_stop_sources": [
+        "data/raw/october/subwaydatanyc_2026-10-29_csv.tar.xz"
+      ],
+      "matching_trip_sources": [
+        "data/raw/october/subwaydatanyc_2026-10-29_csv.tar.xz"
+      ],
+      "route_and_raw_trip_identity_match": true,
+      "source_trip_uid": "1793294790_4..S06R",
+      "stop_id": "423S",
+      "trip_id": "MTA:numbered:20261029:4:104650_4..S06R:"
+    },
+    {
+      "endpoint_values_match_raw": true,
+      "matching_stop_sources": [
+        "data/raw/october/subwaydatanyc_2026-10-29_csv.tar.xz"
+      ],
+      "matching_trip_sources": [
+        "data/raw/october/subwaydatanyc_2026-10-29_csv.tar.xz"
+      ],
+      "route_and_raw_trip_identity_match": true,
+      "source_trip_uid": "1793286840_4..S06R",
+      "stop_id": "631S",
+      "trip_id": "MTA:numbered:20261029:4:091400_4..S06R:"
+    },
+    {
+      "endpoint_values_match_raw": true,
+      "matching_stop_sources": [
+        "data/raw/october/subwaydatanyc_2026-10-29_csv.tar.xz"
+      ],
+      "matching_trip_sources": [
+        "data/raw/october/subwaydatanyc_2026-10-29_csv.tar.xz"
+      ],
+      "route_and_raw_trip_identity_match": true,
+      "source_trip_uid": "1793288130_4..S06R",
+      "stop_id": "631S",
+      "trip_id": "MTA:numbered:20261029:4:093550_4..S06R:"
+    }
+  ],
+  "raw_csv_sources": [
+    {
+      "matches_metadata_hash": true,
+      "metadata_sha256": "424197c012574ce88108d746934f924b3207bb97612b8ce83d76d08522d297d5",
+      "path": "data/raw/october/subwaydatanyc_2026-10-28_csv.tar.xz",
+      "sha256": "bba0e8685a505fa3c3b581fcbf5ebbff9fa2aa74354a97e2208dce6843061833"
+    },
+    {
+      "matches_metadata_hash": true,
+      "metadata_sha256": "30136351ca2622057bf2435c3cf1793c7e992c3368f3f80641489c2c4ae4937a",
+      "path": "data/raw/october/subwaydatanyc_2026-10-29_csv.tar.xz",
+      "sha256": "6917d918502ff8d9c548b6ca801c19fba8fe6b1d2f6f1d8480b8d811851012ae"
+    },
+    {
+      "matches_metadata_hash": true,
+      "metadata_sha256": "c0bc3e135a86f681f254f1d86bf239cbec593764994d2955c04bddd2b77b01f9",
+      "path": "data/raw/october/subwaydatanyc_2026-10-30_csv.tar.xz",
+      "sha256": "5de91950c552e4e43f69c971c678acb01473bf0bae02a39237daed5a6412e868"
+    }
+  ],
+  "result_report": {
+    "path": "algo/reports/incremental-switch-test.json",
+    "sha256": "7c7a162bd9fac387193be43b2e3abfbf537808af326b4ea08f58627feabc230c"
+  },
+  "schema_version": "incremental-switch-endpoint-audit-v1",
+  "scored_artifact": {
+    "path": "algo/local/incremental-switch/scored-cases.json.gz",
+    "sha256": "80f4b4de3e9c260148f76c4dba54dcf8bc569f643d209dc69665ae12fc2f3aeb"
+  },
+  "selection": "Every raw-MTA strict STAY / incident-profile strict SWITCH checkpoint with both chosen outcomes INFERRED in this supplement (three gains and two ties). No fixed outcome or selection was changed.",
+  "selection_freeze": {
+    "path": "algo/reports/incremental-switch-selection-frozen.json",
+    "sha256": "872a092f257b76e1ebbbdd5cef3bc92bd3b98b591eb7b23ffe46cda89f3475b4"
+  },
+  "source_label_sha256": {
+    "data/processed/google-corridor-inputs/additional-labels.json.gz": "a29d106be2c49d13d736d90d23f6594a25d507fbf77c93825ef713b8ba2d45f6",
+    "data/processed/october/2026-10-24.labels.json.gz": "b359b8930e0583abc2513daef84420052fca46b0aabb4c994b80508c4f0039e4",
+    "data/processed/october/2026-10-25.labels.json.gz": "cf3d06a826ef8dda0cce2df6fe06f1e3cac7a576cebe57a671613a70447f51f2",
+    "data/processed/october/2026-10-26.labels.json.gz": "0630ac56c3681fa4095bcc5c600d46b0f713343a5a71f96c26b42a3e0c888f46",
+    "data/processed/october/2026-10-27.labels.json.gz": "4a6b40aad474409ec82d1ddf44e5894517b1ba79170b24a6af6f9c1f8ec85457",
+    "data/processed/october/2026-10-28.labels.json.gz": "362f9933638751dbe488064c1081277bc31c60d5813a080a747e13246bef570f",
+    "data/processed/october/2026-10-29.labels.json.gz": "7903b141e09254784c3b666c398bebc681c11e2ad608a3a646e758daeffc2f2d",
+    "data/processed/october/2026-10-30.labels.json.gz": "0520fad8788fb9e177ad6a91d7f6c239570da0bec96f80bd7a2944c572d1eeb6",
+    "data/processed/october/2026-10-31.labels.json.gz": "aa8691ccfa63556e0903558892f36b9de5f5ed2cab90490993bdcd21369f2b6e",
+    "data/processed/preincident-inputs/d16-labels.json.gz": "64c210dc9e6f8f93cd59fda2c821af21e2e83d80648ced0ff2cb0b32c7636c72"
+  },
+  "status": "PASS_WITH_PROXY_AND_ADAPTIVE_STAY_LIMITATIONS",
+  "strict_discrepancy_checkpoints": 13,
+  "winning_checkpoints": 3,
+  "winning_incident_families": 3
+}

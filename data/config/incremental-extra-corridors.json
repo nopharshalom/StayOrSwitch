@@ -1,0 +1,894 @@
+{
+  "builder": {
+    "path": "data/scripts/build_incremental_extra_corridors.py",
+    "sha256": "df3ef33c447f71da8058324075e431a011f20c27ac19b7e600d81a867f306979"
+  },
+  "capture_manifest": {
+    "path": "data/manifests/incremental-extra-corridors-2026-11-20.json",
+    "sha256": "0b3991ae7efeb82af6ef928f54807c9338095129ffd0337c48c4181b1f667962"
+  },
+  "corridors": [
+    {
+      "destination": "Brooklyn Borough Hall, 209 Joralemon Street, Brooklyn, NY 11201",
+      "google": {
+        "all_provider_routes": [
+          {
+            "normalization_status": "NORMALIZED",
+            "normalized_itinerary_id": "google-route-a3323e48a0b39fbe1f34d120",
+            "provider_duration_seconds": 1382.0,
+            "route_index": 0,
+            "route_labels": [
+              "DEFAULT_ROUTE"
+            ],
+            "selected_as_stay": true
+          },
+          {
+            "normalization_status": "NORMALIZED",
+            "normalized_itinerary_id": "google-route-b4b074fe878e8f48c76e1617",
+            "provider_duration_seconds": 1382.0,
+            "route_index": 1,
+            "route_labels": [
+              "DEFAULT_ROUTE_ALTERNATE"
+            ],
+            "selected_as_stay": false
+          },
+          {
+            "normalization_status": "DUPLICATE",
+            "normalized_itinerary_id": "google-route-a3323e48a0b39fbe1f34d120",
+            "provider_duration_seconds": 1382.0,
+            "route_index": 2,
+            "route_labels": [
+              "DEFAULT_ROUTE_ALTERNATE"
+            ],
+            "selected_as_stay": false
+          },
+          {
+            "normalization_status": "DUPLICATE",
+            "normalized_itinerary_id": "google-route-b4b074fe878e8f48c76e1617",
+            "provider_duration_seconds": 1382.0,
+            "route_index": 3,
+            "route_labels": [
+              "DEFAULT_ROUTE_ALTERNATE"
+            ],
+            "selected_as_stay": false
+          },
+          {
+            "normalization_status": "NORMALIZED",
+            "normalized_itinerary_id": "google-route-286854e95fde76a2b52d9bf9",
+            "provider_duration_seconds": 1602.0,
+            "route_index": 4,
+            "route_labels": [
+              "DEFAULT_ROUTE_ALTERNATE"
+            ],
+            "selected_as_stay": false
+          },
+          {
+            "normalization_status": "NORMALIZED",
+            "normalized_itinerary_id": "google-route-a3fac7bc8d07beca82df5a37",
+            "provider_duration_seconds": 1708.0,
+            "route_index": 5,
+            "route_labels": [
+              "DEFAULT_ROUTE_ALTERNATE"
+            ],
+            "selected_as_stay": false
+          }
+        ],
+        "capture": {
+          "bytes": 49945,
+          "path": "data/local/google-corridors/2026-11-20-extra/timesquare_boroughhall.provider.json",
+          "sha256": "8aa92c8a9da5fc0e51fe670b40b840524d82a347e032cc4f94523e1af44467dc"
+        },
+        "current_duration_seconds": 1382.0,
+        "current_duration_used_as_historical_outcome": false,
+        "default_route_id": "google-route-a3323e48a0b39fbe1f34d120",
+        "default_route_index": 0,
+        "default_route_labels": [
+          "DEFAULT_ROUTE"
+        ],
+        "derived_summary": {
+          "bytes": 71700,
+          "path": "data/local/google-corridors/2026-11-20-extra/timesquare_boroughhall.summary.json",
+          "sha256": "840c3937816bf156f73f0c8bbb022db3d4d83c9e09d9f11d079674e41532c2c6"
+        },
+        "derived_template_by_raw_index": {
+          "0": "google-route-a3323e48a0b39fbe1f34d120",
+          "1": "google-route-b4b074fe878e8f48c76e1617",
+          "2": "google-route-a3323e48a0b39fbe1f34d120",
+          "3": "google-route-b4b074fe878e8f48c76e1617",
+          "4": "google-route-286854e95fde76a2b52d9bf9",
+          "5": "google-route-a3fac7bc8d07beca82df5a37"
+        },
+        "received_at": "2026-11-20T16:42:28.813889Z",
+        "requested_at": "2026-11-20T16:42:28.376519Z",
+        "selection": {
+          "method": "GOOGLE_DEFAULT_ROUTE",
+          "route_index": 0
+        }
+      },
+      "id": "timesquare_boroughhall",
+      "origin": "West 42nd Street and Seventh Avenue, Manhattan, New York, NY",
+      "reference_route_id": "google-route-a3323e48a0b39fbe1f34d120",
+      "routes": [
+        {
+          "access_walk_seconds": 97.0,
+          "candidate_provenance": "CURRENT_GOOGLE_ROUTE",
+          "egress_walk_seconds": 138.0,
+          "family": "GOOGLE_2",
+          "google": {
+            "current_provider_eta": "2026-11-20T17:06:13Z",
+            "explicit_access_supplement": null,
+            "original_normalization_status": "NORMALIZED",
+            "representative_route_index": 0,
+            "source_route_indices": [
+              0,
+              2
+            ]
+          },
+          "id": "google-route-a3323e48a0b39fbe1f34d120",
+          "legs": [
+            {
+              "feed_id": "numbered",
+              "from_stop_id": "127S",
+              "route_id": "2",
+              "route_ids": [
+                "2"
+              ],
+              "to_stop_id": "232S"
+            }
+          ],
+          "name": "2: Times Sq-42 St to Borough Hall",
+          "station_mapping_evidence": [
+            {
+              "alighting": {
+                "distance_metres": 0.111,
+                "explicit_station_name_alias": false,
+                "mta_stop_id": "232S",
+                "official_coordinates": {
+                  "latitude": 40.693219,
+                  "longitude": -73.989998
+                },
+                "official_daytime_routes": "2 3",
+                "official_south_direction_label": "Outbound",
+                "official_station_name": "Borough Hall",
+                "provider_coordinates": {
+                  "latitude": 40.693218,
+                  "longitude": -73.989998
+                },
+                "provider_name": "Borough Hall"
+              },
+              "boarding": {
+                "distance_metres": 0.421,
+                "explicit_station_name_alias": false,
+                "mta_stop_id": "127S",
+                "official_coordinates": {
+                  "latitude": 40.75529,
+                  "longitude": -73.987495
+                },
+                "official_daytime_routes": "1 2 3",
+                "official_south_direction_label": "Downtown",
+                "official_station_name": "Times Sq-42 St",
+                "provider_coordinates": {
+                  "latitude": 40.755289999999995,
+                  "longitude": -73.9875
+                },
+                "provider_name": "Times Sq-42 St"
+              },
+              "headsign": "Flatbush Av-Brooklyn College",
+              "route_id": "2"
+            }
+          ],
+          "transfer_walk_seconds": [],
+          "walking_provenance": {
+            "access": {
+              "kind": "SUM_OF_EXPLICIT_GOOGLE_WALK_STEPS"
+            },
+            "egress": {
+              "kind": "SUM_OF_EXPLICIT_GOOGLE_WALK_STEPS"
+            },
+            "historical_assumption": "CURRENT_WALKS_HELD_FIXED; NOT_OBSERVED_HISTORICAL_PLATFORM_ACCESS"
+          }
+        },
+        {
+          "access_walk_seconds": 97.0,
+          "candidate_provenance": "CURRENT_GOOGLE_ROUTE",
+          "egress_walk_seconds": 138.0,
+          "family": "GOOGLE_3",
+          "google": {
+            "current_provider_eta": "2026-11-20T17:07:29Z",
+            "explicit_access_supplement": null,
+            "original_normalization_status": "NORMALIZED",
+            "representative_route_index": 1,
+            "source_route_indices": [
+              1,
+              3
+            ]
+          },
+          "id": "google-route-b4b074fe878e8f48c76e1617",
+          "legs": [
+            {
+              "feed_id": "numbered",
+              "from_stop_id": "127S",
+              "route_id": "3",
+              "route_ids": [
+                "3"
+              ],
+              "to_stop_id": "232S"
+            }
+          ],
+          "name": "3: Times Sq-42 St to Borough Hall",
+          "station_mapping_evidence": [
+            {
+              "alighting": {
+                "distance_metres": 0.111,
+                "explicit_station_name_alias": false,
+                "mta_stop_id": "232S",
+                "official_coordinates": {
+                  "latitude": 40.693219,
+                  "longitude": -73.989998
+                },
+                "official_daytime_routes": "2 3",
+                "official_south_direction_label": "Outbound",
+                "official_station_name": "Borough Hall",
+                "provider_coordinates": {
+                  "latitude": 40.693218,
+                  "longitude": -73.989998
+                },
+                "provider_name": "Borough Hall"
+              },
+              "boarding": {
+                "distance_metres": 0.421,
+                "explicit_station_name_alias": false,
+                "mta_stop_id": "127S",
+                "official_coordinates": {
+                  "latitude": 40.75529,
+                  "longitude": -73.987495
+                },
+                "official_daytime_routes": "1 2 3",
+                "official_south_direction_label": "Downtown",
+                "official_station_name": "Times Sq-42 St",
+                "provider_coordinates": {
+                  "latitude": 40.755289999999995,
+                  "longitude": -73.9875
+                },
+                "provider_name": "Times Sq-42 St"
+              },
+              "headsign": "New Lots Av",
+              "route_id": "3"
+            }
+          ],
+          "transfer_walk_seconds": [],
+          "walking_provenance": {
+            "access": {
+              "kind": "SUM_OF_EXPLICIT_GOOGLE_WALK_STEPS"
+            },
+            "egress": {
+              "kind": "SUM_OF_EXPLICIT_GOOGLE_WALK_STEPS"
+            },
+            "historical_assumption": "CURRENT_WALKS_HELD_FIXED; NOT_OBSERVED_HISTORICAL_PLATFORM_ACCESS"
+          }
+        },
+        {
+          "access_walk_seconds": 206.0,
+          "candidate_provenance": "CURRENT_GOOGLE_ROUTE",
+          "egress_walk_seconds": 312.0,
+          "family": "GOOGLE_A",
+          "google": {
+            "current_provider_eta": "2026-11-20T17:11:19Z",
+            "explicit_access_supplement": null,
+            "original_normalization_status": "NORMALIZED",
+            "representative_route_index": 4,
+            "source_route_indices": [
+              4
+            ]
+          },
+          "id": "google-route-286854e95fde76a2b52d9bf9",
+          "legs": [
+            {
+              "feed_id": "ace",
+              "from_stop_id": "A27S",
+              "route_id": "A",
+              "route_ids": [
+                "A"
+              ],
+              "to_stop_id": "A41S"
+            }
+          ],
+          "name": "A: 42 St-Port Authority Bus Terminal to Jay St-MetroTech",
+          "station_mapping_evidence": [
+            {
+              "alighting": {
+                "distance_metres": 0.14,
+                "explicit_station_name_alias": false,
+                "mta_stop_id": "A41S",
+                "official_coordinates": {
+                  "latitude": 40.692338,
+                  "longitude": -73.987342
+                },
+                "official_daytime_routes": "A C F",
+                "official_south_direction_label": "Outbound",
+                "official_station_name": "Jay St-MetroTech",
+                "provider_coordinates": {
+                  "latitude": 40.692337,
+                  "longitude": -73.987343
+                },
+                "provider_name": "Jay St-MetroTech"
+              },
+              "boarding": {
+                "distance_metres": 4.927,
+                "explicit_station_name_alias": false,
+                "mta_stop_id": "A27S",
+                "official_coordinates": {
+                  "latitude": 40.757308,
+                  "longitude": -73.989735
+                },
+                "official_daytime_routes": "A C E",
+                "official_south_direction_label": "Downtown",
+                "official_station_name": "42 St-Port Authority Bus Terminal",
+                "provider_coordinates": {
+                  "latitude": 40.757351,
+                  "longitude": -73.9897209
+                },
+                "provider_name": "42 St-Port Authority Bus Terminal"
+              },
+              "headsign": "Ozone Park-Lefferts Blvd",
+              "route_id": "A"
+            }
+          ],
+          "transfer_walk_seconds": [],
+          "walking_provenance": {
+            "access": {
+              "kind": "SUM_OF_EXPLICIT_GOOGLE_WALK_STEPS"
+            },
+            "egress": {
+              "kind": "SUM_OF_EXPLICIT_GOOGLE_WALK_STEPS"
+            },
+            "historical_assumption": "CURRENT_WALKS_HELD_FIXED; NOT_OBSERVED_HISTORICAL_PLATFORM_ACCESS"
+          }
+        },
+        {
+          "access_walk_seconds": 236.0,
+          "candidate_provenance": "CURRENT_GOOGLE_ROUTE",
+          "egress_walk_seconds": 312.0,
+          "family": "GOOGLE_F",
+          "google": {
+            "current_provider_eta": "2026-11-20T17:13:02Z",
+            "explicit_access_supplement": null,
+            "original_normalization_status": "NORMALIZED",
+            "representative_route_index": 5,
+            "source_route_indices": [
+              5
+            ]
+          },
+          "id": "google-route-a3fac7bc8d07beca82df5a37",
+          "legs": [
+            {
+              "feed_id": "bdfm",
+              "from_stop_id": "D16S",
+              "route_id": "F",
+              "route_ids": [
+                "F"
+              ],
+              "to_stop_id": "A41S"
+            }
+          ],
+          "name": "F: 42 St-Bryant Pk to Jay St-MetroTech",
+          "station_mapping_evidence": [
+            {
+              "alighting": {
+                "distance_metres": 0.14,
+                "explicit_station_name_alias": false,
+                "mta_stop_id": "A41S",
+                "official_coordinates": {
+                  "latitude": 40.692338,
+                  "longitude": -73.987342
+                },
+                "official_daytime_routes": "A C F",
+                "official_south_direction_label": "Outbound",
+                "official_station_name": "Jay St-MetroTech",
+                "provider_coordinates": {
+                  "latitude": 40.692337,
+                  "longitude": -73.987343
+                },
+                "provider_name": "Jay St-MetroTech"
+              },
+              "boarding": {
+                "distance_metres": 0.276,
+                "explicit_station_name_alias": false,
+                "mta_stop_id": "D16S",
+                "official_coordinates": {
+                  "latitude": 40.754222,
+                  "longitude": -73.984569
+                },
+                "official_daytime_routes": "B D F M",
+                "official_south_direction_label": "Downtown",
+                "official_station_name": "42 St-Bryant Pk",
+                "provider_coordinates": {
+                  "latitude": 40.754222999999996,
+                  "longitude": -73.984566
+                },
+                "provider_name": "42 St-Bryant Pk"
+              },
+              "headsign": "Coney Island-Stillwell Av",
+              "route_id": "F"
+            }
+          ],
+          "transfer_walk_seconds": [],
+          "walking_provenance": {
+            "access": {
+              "kind": "SUM_OF_EXPLICIT_GOOGLE_WALK_STEPS"
+            },
+            "egress": {
+              "kind": "SUM_OF_EXPLICIT_GOOGLE_WALK_STEPS"
+            },
+            "historical_assumption": "CURRENT_WALKS_HELD_FIXED; NOT_OBSERVED_HISTORICAL_PLATFORM_ACCESS"
+          }
+        }
+      ],
+      "unavailable_candidates": []
+    },
+    {
+      "destination": "NYU Tandon School of Engineering, 6 MetroTech Center, Brooklyn, NY 11201",
+      "google": {
+        "all_provider_routes": [
+          {
+            "normalization_status": "REJECTED",
+            "normalized_itinerary_id": null,
+            "provider_duration_seconds": 1344.0,
+            "route_index": 0,
+            "route_labels": [
+              "DEFAULT_ROUTE"
+            ],
+            "selected_as_stay": true
+          },
+          {
+            "normalization_status": "REJECTED",
+            "normalized_itinerary_id": null,
+            "provider_duration_seconds": 1359.0,
+            "route_index": 1,
+            "route_labels": [
+              "DEFAULT_ROUTE_ALTERNATE"
+            ],
+            "selected_as_stay": false
+          },
+          {
+            "normalization_status": "REJECTED",
+            "normalized_itinerary_id": null,
+            "provider_duration_seconds": 1479.0,
+            "route_index": 2,
+            "route_labels": [
+              "DEFAULT_ROUTE_ALTERNATE"
+            ],
+            "selected_as_stay": false
+          },
+          {
+            "normalization_status": "REJECTED",
+            "normalized_itinerary_id": null,
+            "provider_duration_seconds": 1479.0,
+            "route_index": 3,
+            "route_labels": [
+              "DEFAULT_ROUTE_ALTERNATE"
+            ],
+            "selected_as_stay": false
+          },
+          {
+            "normalization_status": "REJECTED",
+            "normalized_itinerary_id": null,
+            "provider_duration_seconds": 1374.0,
+            "route_index": 4,
+            "route_labels": [
+              "DEFAULT_ROUTE_ALTERNATE"
+            ],
+            "selected_as_stay": false
+          },
+          {
+            "normalization_status": "NORMALIZED",
+            "normalized_itinerary_id": "google-route-41ca0feabb6e296191561584",
+            "provider_duration_seconds": 2164.0,
+            "route_index": 5,
+            "route_labels": [
+              "DEFAULT_ROUTE_ALTERNATE"
+            ],
+            "selected_as_stay": false
+          }
+        ],
+        "capture": {
+          "bytes": 34055,
+          "path": "data/local/google-corridors/2026-11-20-extra/portauthority_tandon.provider.json",
+          "sha256": "2563ec7a455fca3ac6e41c76827df4dd9a5570af7d021d69638b53150ed24b62"
+        },
+        "current_duration_seconds": 1344.0,
+        "current_duration_used_as_historical_outcome": false,
+        "default_route_id": "google-derived-4a312d280a51df498129a03e",
+        "default_route_index": 0,
+        "default_route_labels": [
+          "DEFAULT_ROUTE"
+        ],
+        "derived_summary": {
+          "bytes": 34531,
+          "path": "data/local/google-corridors/2026-11-20-extra/portauthority_tandon.summary.json",
+          "sha256": "11656af79bf2206f75b5e55c52bd97b39f6dcd2039c129bd30ac72c3ffbe722b"
+        },
+        "derived_template_by_raw_index": {
+          "0": "google-derived-4a312d280a51df498129a03e",
+          "1": "google-derived-4a312d280a51df498129a03e",
+          "2": "google-derived-9fab23eb821baf0cf1b650a3",
+          "3": "google-derived-9fab23eb821baf0cf1b650a3",
+          "4": "google-derived-4a312d280a51df498129a03e",
+          "5": "google-route-41ca0feabb6e296191561584"
+        },
+        "received_at": "2026-11-20T16:42:28.749318Z",
+        "requested_at": "2026-11-20T16:42:28.376132Z",
+        "selection": {
+          "method": "GOOGLE_DEFAULT_ROUTE",
+          "route_index": 0
+        }
+      },
+      "id": "portauthority_tandon",
+      "origin": "West 42nd Street and Eighth Avenue, Manhattan, New York, NY",
+      "reference_route_id": "google-derived-4a312d280a51df498129a03e",
+      "routes": [
+        {
+          "access_walk_seconds": 120.0,
+          "candidate_provenance": "CURRENT_GOOGLE_ROUTE_WITH_EXPLICIT_ACCESS_SUPPLEMENT",
+          "egress_walk_seconds": 279.0,
+          "family": "GOOGLE_A",
+          "google": {
+            "current_provider_eta": "2026-11-20T17:06:37Z",
+            "explicit_access_supplement": {
+              "authored_allowance_policy": "ADD_120_SECONDS_TO_BOTH_A_AND_C_BEFORE_INPUT_FREEZE; NOT_A_TRANSFER_PENALTY_OR_PROVIDER_ESTIMATE",
+              "authored_platform_access_seconds": 120,
+              "capture": {
+                "path": "data/local/google-corridors/2026-11-20-extra/portauthority_tandon_access_A27S.json",
+                "sha256": "d5603076d295a7916fec129bb24293115ac5fe5d0bad0f2f28be2b9b6337d09f"
+              },
+              "corridor_id": "portauthority_tandon",
+              "kind": "GOOGLE_WALK_TO_STATION_COORDINATE_PLATFORM_ACCESS_UNVERIFIED",
+              "received_at": "2026-11-20T16:45:40.539639Z",
+              "repair_reason": "RAW_GOOGLE_TRANSIT_RESPONSE_OMITS_ACCESS_WALK; RAW_REJECTION_PRESERVED",
+              "requested_at": "2026-11-20T16:45:40.405303Z",
+              "seconds": 0.0,
+              "status": "AVAILABLE",
+              "stop_id": "A27S"
+            },
+            "original_normalization_status": "REJECTED",
+            "representative_route_index": 0,
+            "source_route_indices": [
+              0,
+              1,
+              4
+            ]
+          },
+          "id": "google-derived-4a312d280a51df498129a03e",
+          "legs": [
+            {
+              "feed_id": "ace",
+              "from_stop_id": "A27S",
+              "route_id": "A",
+              "route_ids": [
+                "A"
+              ],
+              "to_stop_id": "A41S"
+            }
+          ],
+          "name": "A: 42 St-Port Authority Bus Terminal to Jay St-MetroTech",
+          "station_mapping_evidence": [
+            {
+              "alighting": {
+                "distance_metres": 0.14,
+                "explicit_station_name_alias": false,
+                "mta_stop_id": "A41S",
+                "official_coordinates": {
+                  "latitude": 40.692338,
+                  "longitude": -73.987342
+                },
+                "official_daytime_routes": "A C F",
+                "official_south_direction_label": "Outbound",
+                "official_station_name": "Jay St-MetroTech",
+                "provider_coordinates": {
+                  "latitude": 40.692337,
+                  "longitude": -73.987343
+                },
+                "provider_name": "Jay St-MetroTech"
+              },
+              "boarding": {
+                "distance_metres": 4.927,
+                "explicit_station_name_alias": false,
+                "mta_stop_id": "A27S",
+                "official_coordinates": {
+                  "latitude": 40.757308,
+                  "longitude": -73.989735
+                },
+                "official_daytime_routes": "A C E",
+                "official_south_direction_label": "Downtown",
+                "official_station_name": "42 St-Port Authority Bus Terminal",
+                "provider_coordinates": {
+                  "latitude": 40.757351,
+                  "longitude": -73.9897209
+                },
+                "provider_name": "42 St-Port Authority Bus Terminal"
+              },
+              "headsign": "Far Rockaway-Mott Av",
+              "route_id": "A"
+            }
+          ],
+          "transfer_walk_seconds": [],
+          "walking_provenance": {
+            "access": {
+              "authored_allowance_policy": "ADD_120_SECONDS_TO_BOTH_A_AND_C_BEFORE_INPUT_FREEZE; NOT_A_TRANSFER_PENALTY_OR_PROVIDER_ESTIMATE",
+              "authored_platform_access_seconds": 120,
+              "capture": {
+                "path": "data/local/google-corridors/2026-11-20-extra/portauthority_tandon_access_A27S.json",
+                "sha256": "d5603076d295a7916fec129bb24293115ac5fe5d0bad0f2f28be2b9b6337d09f"
+              },
+              "corridor_id": "portauthority_tandon",
+              "kind": "GOOGLE_WALK_TO_STATION_COORDINATE_PLATFORM_ACCESS_UNVERIFIED",
+              "received_at": "2026-11-20T16:45:40.539639Z",
+              "repair_reason": "RAW_GOOGLE_TRANSIT_RESPONSE_OMITS_ACCESS_WALK; RAW_REJECTION_PRESERVED",
+              "requested_at": "2026-11-20T16:45:40.405303Z",
+              "seconds": 0.0,
+              "status": "AVAILABLE",
+              "stop_id": "A27S"
+            },
+            "egress": {
+              "kind": "SUM_OF_EXPLICIT_GOOGLE_WALK_STEPS"
+            },
+            "historical_assumption": "CURRENT_WALKS_HELD_FIXED; NOT_OBSERVED_HISTORICAL_PLATFORM_ACCESS"
+          }
+        },
+        {
+          "access_walk_seconds": 120.0,
+          "candidate_provenance": "CURRENT_GOOGLE_ROUTE_WITH_EXPLICIT_ACCESS_SUPPLEMENT",
+          "egress_walk_seconds": 279.0,
+          "family": "GOOGLE_C",
+          "google": {
+            "current_provider_eta": "2026-11-20T17:13:37Z",
+            "explicit_access_supplement": {
+              "authored_allowance_policy": "ADD_120_SECONDS_TO_BOTH_A_AND_C_BEFORE_INPUT_FREEZE; NOT_A_TRANSFER_PENALTY_OR_PROVIDER_ESTIMATE",
+              "authored_platform_access_seconds": 120,
+              "capture": {
+                "path": "data/local/google-corridors/2026-11-20-extra/portauthority_tandon_access_A27S.json",
+                "sha256": "d5603076d295a7916fec129bb24293115ac5fe5d0bad0f2f28be2b9b6337d09f"
+              },
+              "corridor_id": "portauthority_tandon",
+              "kind": "GOOGLE_WALK_TO_STATION_COORDINATE_PLATFORM_ACCESS_UNVERIFIED",
+              "received_at": "2026-11-20T16:45:40.539639Z",
+              "repair_reason": "RAW_GOOGLE_TRANSIT_RESPONSE_OMITS_ACCESS_WALK; RAW_REJECTION_PRESERVED",
+              "requested_at": "2026-11-20T16:45:40.405303Z",
+              "seconds": 0.0,
+              "status": "AVAILABLE",
+              "stop_id": "A27S"
+            },
+            "original_normalization_status": "REJECTED",
+            "representative_route_index": 2,
+            "source_route_indices": [
+              2,
+              3
+            ]
+          },
+          "id": "google-derived-9fab23eb821baf0cf1b650a3",
+          "legs": [
+            {
+              "feed_id": "ace",
+              "from_stop_id": "A27S",
+              "route_id": "C",
+              "route_ids": [
+                "C"
+              ],
+              "to_stop_id": "A41S"
+            }
+          ],
+          "name": "C: 42 St-Port Authority Bus Terminal to Jay St-MetroTech",
+          "station_mapping_evidence": [
+            {
+              "alighting": {
+                "distance_metres": 0.14,
+                "explicit_station_name_alias": false,
+                "mta_stop_id": "A41S",
+                "official_coordinates": {
+                  "latitude": 40.692338,
+                  "longitude": -73.987342
+                },
+                "official_daytime_routes": "A C F",
+                "official_south_direction_label": "Outbound",
+                "official_station_name": "Jay St-MetroTech",
+                "provider_coordinates": {
+                  "latitude": 40.692337,
+                  "longitude": -73.987343
+                },
+                "provider_name": "Jay St-MetroTech"
+              },
+              "boarding": {
+                "distance_metres": 9.562,
+                "explicit_station_name_alias": false,
+                "mta_stop_id": "A27S",
+                "official_coordinates": {
+                  "latitude": 40.757308,
+                  "longitude": -73.989735
+                },
+                "official_daytime_routes": "A C E",
+                "official_south_direction_label": "Downtown",
+                "official_station_name": "42 St-Port Authority Bus Terminal",
+                "provider_coordinates": {
+                  "latitude": 40.757306,
+                  "longitude": -73.9896215
+                },
+                "provider_name": "42 St-Port Authority Bus Terminal"
+              },
+              "headsign": "Euclid Av",
+              "route_id": "C"
+            }
+          ],
+          "transfer_walk_seconds": [],
+          "walking_provenance": {
+            "access": {
+              "authored_allowance_policy": "ADD_120_SECONDS_TO_BOTH_A_AND_C_BEFORE_INPUT_FREEZE; NOT_A_TRANSFER_PENALTY_OR_PROVIDER_ESTIMATE",
+              "authored_platform_access_seconds": 120,
+              "capture": {
+                "path": "data/local/google-corridors/2026-11-20-extra/portauthority_tandon_access_A27S.json",
+                "sha256": "d5603076d295a7916fec129bb24293115ac5fe5d0bad0f2f28be2b9b6337d09f"
+              },
+              "corridor_id": "portauthority_tandon",
+              "kind": "GOOGLE_WALK_TO_STATION_COORDINATE_PLATFORM_ACCESS_UNVERIFIED",
+              "received_at": "2026-11-20T16:45:40.539639Z",
+              "repair_reason": "RAW_GOOGLE_TRANSIT_RESPONSE_OMITS_ACCESS_WALK; RAW_REJECTION_PRESERVED",
+              "requested_at": "2026-11-20T16:45:40.405303Z",
+              "seconds": 0.0,
+              "status": "AVAILABLE",
+              "stop_id": "A27S"
+            },
+            "egress": {
+              "kind": "SUM_OF_EXPLICIT_GOOGLE_WALK_STEPS"
+            },
+            "historical_assumption": "CURRENT_WALKS_HELD_FIXED; NOT_OBSERVED_HISTORICAL_PLATFORM_ACCESS"
+          }
+        },
+        {
+          "access_walk_seconds": 383.0,
+          "candidate_provenance": "CURRENT_GOOGLE_ROUTE",
+          "egress_walk_seconds": 233.0,
+          "family": "GOOGLE_R",
+          "google": {
+            "current_provider_eta": "2026-11-20T17:19:01Z",
+            "explicit_access_supplement": null,
+            "original_normalization_status": "NORMALIZED",
+            "representative_route_index": 5,
+            "source_route_indices": [
+              5
+            ]
+          },
+          "id": "google-route-41ca0feabb6e296191561584",
+          "legs": [
+            {
+              "feed_id": "nqrw",
+              "from_stop_id": "R16S",
+              "route_id": "R",
+              "route_ids": [
+                "R"
+              ],
+              "to_stop_id": "R29S"
+            }
+          ],
+          "name": "R: Times Sq-42 St to Jay St - MetroTech",
+          "station_mapping_evidence": [
+            {
+              "alighting": {
+                "distance_metres": 0.276,
+                "explicit_station_name_alias": true,
+                "mta_stop_id": "R29S",
+                "official_coordinates": {
+                  "latitude": 40.69218,
+                  "longitude": -73.985942
+                },
+                "official_daytime_routes": "R",
+                "official_south_direction_label": "Southbound",
+                "official_station_name": "Jay St-MetroTech",
+                "provider_coordinates": {
+                  "latitude": 40.692181,
+                  "longitude": -73.985939
+                },
+                "provider_name": "Jay St - MetroTech"
+              },
+              "boarding": {
+                "distance_metres": 28.967,
+                "explicit_station_name_alias": false,
+                "mta_stop_id": "R16S",
+                "official_coordinates": {
+                  "latitude": 40.754672,
+                  "longitude": -73.986754
+                },
+                "official_daytime_routes": "N Q R W",
+                "official_south_direction_label": "Downtown",
+                "official_station_name": "Times Sq-42 St",
+                "provider_coordinates": {
+                  "latitude": 40.754449099999995,
+                  "longitude": -73.986932
+                },
+                "provider_name": "Times Sq-42 St"
+              },
+              "headsign": "Bay Ridge-95 St",
+              "route_id": "R"
+            }
+          ],
+          "transfer_walk_seconds": [],
+          "walking_provenance": {
+            "access": {
+              "kind": "SUM_OF_EXPLICIT_GOOGLE_WALK_STEPS"
+            },
+            "egress": {
+              "kind": "SUM_OF_EXPLICIT_GOOGLE_WALK_STEPS"
+            },
+            "historical_assumption": "CURRENT_WALKS_HELD_FIXED; NOT_OBSERVED_HISTORICAL_PLATFORM_ACCESS"
+          }
+        }
+      ],
+      "unavailable_candidates": []
+    }
+  ],
+  "existing_corridor_count": 3,
+  "extra_label_sources": [
+    {
+      "key": "labels",
+      "manifest": "data/manifests/preincident-inputs.json"
+    },
+    {
+      "key": "labels",
+      "manifest": "data/manifests/google-corridor-inputs.json"
+    },
+    {
+      "key": "labels",
+      "manifest": "data/manifests/incremental-extra-inputs.json"
+    }
+  ],
+  "historical_walking_limit": "Current walking durations held fixed; station-coordinate walks do not independently establish platform access.",
+  "mapper": {
+    "path": "data/incremental_extra_corridors.py",
+    "sha256": "d521d22e2e9d5bbd5d81d49ce629158461ce85fcc29bc2ea2ab8e5a1899da639"
+  },
+  "maximum_total_corridors": 5,
+  "portauthority_access_policy": {
+    "applies_to_lines": [
+      "A",
+      "C"
+    ],
+    "authored_platform_access_seconds": 120,
+    "meaning": "Same origin-to-platform allowance for both services; not an additional Switch transfer cost.",
+    "predeclared_coupled_sensitivity_platform_seconds": [
+      0,
+      240
+    ],
+    "provider_street_walk_seconds": 0.0
+  },
+  "provider_line_policy": "EXACT_CAPTURED_LINE_WITHOUT_COMPATIBLE_SERVICE_POOLING",
+  "schema_version": "google-corridor-experiment-config-v1",
+  "selection_uses_outcome_labels": false,
+  "station_metadata": {
+    "path": "data/local/google-corridors/2026-11-20-current/official-stations.json",
+    "sha256": "40f829816b08434dfd23ddd6e2b75a98ad7bd9bc2c00861c9a257726435cb0cb"
+  },
+  "supplemental_sources": [
+    {
+      "manifest": "data/manifests/preincident-inputs.json",
+      "replace_feeds": [
+        "bdfm",
+        "numbered"
+      ]
+    },
+    {
+      "manifest": "data/manifests/google-corridor-inputs.json",
+      "replace_feeds": [
+        "numbered",
+        "nqrw"
+      ]
+    },
+    {
+      "manifest": "data/manifests/incremental-extra-inputs.json",
+      "replace_feeds": [
+        "nqrw"
+      ]
+    }
+  ],
+  "walking_manifest": {
+    "path": "data/manifests/incremental-extra-walks.json",
+    "sha256": "083cd17b1bb6cfb95c0a307159aa01f11a867f27ef2e10bbfe03dc42c138c2bc"
+  }
+}
