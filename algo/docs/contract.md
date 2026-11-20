@@ -11,7 +11,7 @@ The app/backend preserves the user's selected current itinerary and supplies it 
 - Machine-readable schema: [evaluate.schema.json](../contracts/evaluate.schema.json), `$defs/Request`, `$defs/Response`, and `$defs/Error`.
 - API description: [openapi.json](../contracts/openapi.json).
 - Marked simulated examples: [examples](../examples/).
-- Evaluation definitions: [evaluation.md](evaluation.md).
+- Evaluation definitions: [November field results](../reports/november-all-forecast-boarding-any-saving.md).
 
 ## Request
 
@@ -130,4 +130,4 @@ Do not encode a partial feed failure as a successful zero-duration route. Conver
 
 Every fixture is simulated. Each example file wraps `description`, `synthetic`, `http_status`, `request`, and `response`; only its nested `request` is an endpoint request. Pilot address labels are real place names, but fixture stops, lines, paths, and times are illustrative, not verified navigation or MTA results. Fixture coordinates are null deliberately. Use the examples to build UI states and contract checks, not to demonstrate real travel-time performance. Start with [Switch](../examples/01-switch.json), [Stay](../examples/02-stay.json), [no reference](../examples/10-no-reference.json), and [provider fallback](../examples/11-provider-fallback.json).
 
-The deployment URL, authentication mechanism, upstream API-account ownership, and integration contact remain to be agreed. They do not prevent implementation against this versioned contract and simulated examples. Live matching, freshness rules, model calibration, and service performance are later-stage work; see [evaluation criteria](evaluation.md).
+The deployment URL, authentication mechanism, upstream API-account ownership, and integration contact remain to be agreed. They do not prevent implementation against this versioned contract and simulated examples.

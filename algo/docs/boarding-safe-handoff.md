@@ -2,8 +2,7 @@
 
 The repaired predictor is `stayorswitch.boarding_safe`. It compares routes
 supplied by Google or another provider for a passenger who has not boarded and
-is leaving now. It does not generate paths. The original `stayorswitch.severe`
-predictor and its frozen experiments remain unchanged.
+is leaving now. It does not generate paths.
 
 ## Runnable entrypoint
 
@@ -17,7 +16,7 @@ PYTHONPATH=algo:. .venv/bin/python algo/scripts/run_boarding_safe.py \
               data/processed/november-2026/2026-11-18.alerts.jsonl.gz \
   --cutoff 2026-11-18T08:00:00-05:00 \
   --current-route-id f_direct \
-  --mode incident_profile \
+  --mode all \
   --boarding-margin-seconds 120 \
   --output algo/local/boarding-safe-example.json \
   --json
@@ -58,8 +57,7 @@ older successful one. This CLI makes no external API calls and needs no API key.
 The configuration is a JSON object with a `routes` list. Every route requires
 a stable unique `id`, access/egress walking seconds, one walking duration per
 transfer, and subway legs with explicit feed, line, and directional stop IDs.
-The template schema is described in the preserved
-[supplied-route interface](severe-comparison.md#python-integration).
+See the [sample configuration](../../data/config/october.json) for route and leg fields.
 
 Optional configuration fields are `train_max_age_seconds` (default 180),
 `alerts_max_age_seconds` (300), `switch_margin_seconds` (300), and
@@ -124,27 +122,10 @@ or timing-rejected leg exposes a `boarding_gate` record with conservative
 readiness, expected readiness, gate departure, remaining slack and required
 margin. The report also preserves historical support and fallback information.
 
-Use `strict_decision` for advice. `conditional_timing_decision` is a timing-only
-diagnostic when service evidence is insufficient. Unknown does not mean Stay.
-The 120-second margin is an initial evaluated policy, not a calibrated guarantee
-that every recommended train can be boarded.
+Pass the saved all-mode report to the commuter policy for the experiment's final advice.
 
-## Historical execution is an evaluation component
+```sh
+.venv/bin/python algo/scripts/run_commuter_advice.py algo/local/boarding-safe-example.json
+```
 
-The live predictor takes no outcome-label or future-feed argument. Its output
-is an ETA and recommendation, not a measured actual journey. The CLI explicitly
-reports `prediction_uses_outcomes=false` and `actual_travel_time_computed=false`.
-
-The separate [route executor](../stayorswitch/route_execution.py) advances through
-archived evidence after a frozen route decision to assess first compatible
-boarding, later waits and transfers. The
-[repair benchmark](../scripts/evaluate_november_repair.py) compares those outcomes
-with the retained exact-selected-train diagnostics. It can account for waiting
-after a missed initial prediction; it does not feed later evidence back into
-the original recommendation or choose a future train by its eventual fastest
-destination arrival. Incomplete evidence remains explicit. These historical
-outcomes are screened final-MTA proxies plus the declared walking assumptions,
-not independently observed passenger journeys.
-
-The protocol and comparison scope are in the
-[November repair plan](november-repair-plan.md).
+The commuter policy keeps definitive comparisons and can use the available timing forecasts when service evidence is incomplete. A fallback Switch needs support for the same alternative in both corrected and raw-MTA timing. The 10% predicted advantage threshold is relative to the Stay duration. The [November report](../reports/november-all-forecast-boarding-any-saving.md) defines how the recommended route was scored against its alternative after the decision.

@@ -103,7 +103,7 @@ class FullOctoberFitTests(unittest.TestCase):
         config = deepcopy(CONFIG)
         config["start_date"] = config["end_date"] = "2026-10-31"
         config["full_month_fit"]["boundary_input_dates"] = ["2026-11-01", "2026-11-02"]
-        with tempfile.TemporaryDirectory(dir=ROOT / "data/local") as temporary:
+        with tempfile.TemporaryDirectory(dir=ROOT / "data") as temporary:
             directory = Path(temporary)
             for day in ("2026-10-31", "2026-11-01", "2026-11-02"):
                 write_json(directory / (day + ".trips.json.gz"), {})

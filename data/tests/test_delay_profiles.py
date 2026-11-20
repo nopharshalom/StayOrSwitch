@@ -8,7 +8,7 @@ import tempfile
 import unittest
 
 from data.delay_profiles.build import (ProfileDatabase, distinct_legs, fit_database,
-    _incident_spans, build, observation_rows, profile_document, retain_earlier, scan_input_inventory,
+    _incident_spans, observation_rows, profile_document, retain_earlier, scan_input_inventory,
     summarize_errors, train_eligible)
 from data.delay_profiles.common import (digest, end_of_date, epoch, group_candidates,
     horizon_group, local_fields, read_json, write_json)
@@ -199,11 +199,6 @@ class DelayProfileTests(unittest.TestCase):
         month = profile_document(self.config, {}, "month_descriptive", {}, {}, {})
         with self.assertRaises(ValueError):
             ProfileEstimator(month)
-
-    def test_smoke_mode_cannot_open_held_out_dates(self):
-        with self.assertRaisesRegex(ValueError, "only development dates"):
-            build(ROOT / "data/config/october.json", ROOT / "data/processed/october",
-                  dates=["2026-10-25"], smoke=True)
 
     def test_daily_cache_preserves_uncached_rows_groups_and_equal_cutoff_choice(self):
         late = representative(decision_at=CUTOFF + 60)

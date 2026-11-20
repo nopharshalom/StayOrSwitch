@@ -160,33 +160,4 @@ product preference. No arbitrary walking, transfer, detour or minimum-savings
 penalty is introduced. Source/collection times after the snapshot cutoff are
 unavailable; future predicted arrivals are expected and are not future evidence.
 
-## Validation and handoff
-
-```bash
-PYTHONPATH=algo .venv/bin/python -m unittest discover -s algo/tests -v
-.venv/bin/python algo/scripts/validate_contract.py --self-test
-```
-
-The original 82 Step 2 tests use synthetic inputs. They cover credential handling, malformed provider
-data, route identity, deduplication, missing transfer walks, station ambiguity,
-missed departures/transfers, canceled/skipped stops, stale/missing feeds, alerts,
-and cutoff-aware cache selection. The original Step 1 contract remains unchanged.
-
-Live checks confirmed Google access and parsing of ACE, BDFM, G, NQRW, and subway alerts.
-The static download contained 1,488 stop records and 29 route records. The pilot
-returned six provider candidates in the final check at 2026-11-19 20:52 UTC;
-normalization retained three unique supported itineraries, and all three linked
-to live MTA candidates. Their subway legs had 14, 7, and 10 catchable candidate
-services respectively under the documented walking assumptions. All four
-required feed snapshots were fresh at the common cutoff.
-Provider alternatives and realtime matches change with departure time; these
-counts are a smoke-test observation, not a route-coverage or accuracy benchmark.
-
-Primary entry points are `normalize_google_response`, `mta.collect_feeds`,
-`mta.SnapshotCache`, `match_request`, `integrate_live`, and `integrate_supplied`.
-The separate [baseline journey evaluator](baseline.md) now consumes these
-matching reports and produces the Step 1 Response with destination ETA and
-comparison semantics. [October historical processing](../../data/README.md) lives under `data/`.
-The [active implementation plan](october-implementation-plan.md) replaces the
-previous model experiment with time-conditioned profiles and severe-incident
-comparisons. The UI can use the existing contract and marked simulated responses.
+For the current recommendation API and evaluation, see the [algorithm guide](../README.md).

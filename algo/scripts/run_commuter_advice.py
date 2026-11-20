@@ -5,7 +5,8 @@ import json
 import sys
 from pathlib import Path
 
-sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
+ROOT = Path(__file__).resolve().parents[2]
+sys.path[:0] = [str(ROOT), str(ROOT / "algo")]
 from stayorswitch.commuter_advice import commuter_advice
 
 

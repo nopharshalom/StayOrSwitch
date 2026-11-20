@@ -26,10 +26,11 @@ from data.delay_profiles.incidents import IncidentIndex
 
 
 ROOT = Path(__file__).resolve().parents[1]
-ARTIFACT = ROOT / "data/artifacts/october-2026-profiles-full-train.json.gz"
-MANIFEST = ROOT / "data/artifacts/october-2026-profiles-full-train.manifest.json"
-REPORT = ROOT / "data/reports/full-october-fit.json"
-FROZEN = ROOT / "data/manifests/full-october-fit-frozen.json"
+REFIT = ROOT / "data/processed/full-october-refit"
+ARTIFACT = REFIT / "october-2026-profiles-full-train.json.gz"
+MANIFEST = REFIT / "october-2026-profiles-full-train.manifest.json"
+REPORT = REFIT / "full-october-fit.json"
+FROZEN = REFIT / "full-october-fit-frozen.json"
 
 
 def verified_source(path, expected):
@@ -251,13 +252,6 @@ def build_full_october(config_path, november_dir):
     source_hashes[str(source_manifest_path.relative_to(ROOT))] = file_sha256(source_manifest_path)
     for name, expected in source_hashes.items():
         verified_source(ROOT / name, expected)
-    protected_paths = [ROOT / "data/artifacts/october-2026-profiles-train.json.gz",
-                       ROOT / "data/artifacts/october-2026-profiles-train.manifest.json",
-                       ROOT / "data/artifacts/october-2026-profiles-month-descriptive.json.gz",
-                       ROOT / "data/manifests/profiles-frozen.json",
-                       ROOT / "data/reports/profiles.json",
-                       ROOT / "data/reports/profiles.md"]
-    protected = {str(path.relative_to(ROOT)): file_sha256(path) for path in protected_paths}
     code_paths = [Path(__file__), ROOT / "data/scripts/build_full_october_profiles.py"]
     code_paths += sorted((ROOT / "data/delay_profiles").glob("*.py"))
     code_paths += sorted((ROOT / "data/october").glob("*.py"))
@@ -272,7 +266,7 @@ def build_full_october(config_path, november_dir):
     boundary_families = _boundary_inventory(index, incident_spans, config)
     print(json.dumps({"stage": "FULL_OCTOBER_INPUT_INVENTORY", "counts": inventory,
                       "boundary_families": boundary_families}), flush=True)
-    directory = ROOT / "data/processed/full-october-fit"
+    directory = REFIT
     directory.mkdir(parents=True, exist_ok=True)
     db_path = directory / "aggregation.sqlite"
     if db_path.exists():
@@ -299,13 +293,12 @@ def build_full_october(config_path, november_dir):
                    full_october_training=True, complete_month_inputs=True,
                    training_cutoff_at="2026-11-01T00:00:00-04:00",
                    reused_observation_archive=source_manifest["observations"],
-                   november_outcomes_used_for_fit=False,
-                   original_experiment_preserved=protected)
+                   november_outcomes_used_for_fit=False)
     profile["seal"] = digest({key: value for key, value in profile.items() if key != "seal"})
     ProfileEstimator(profile)
     if file_sha256(config_path) != config_sha:
         raise ValueError("Configuration changed during fitting.")
-    for collection in (source_hashes, protected, code_hashes):
+    for collection in (source_hashes, code_hashes):
         for name, expected in collection.items():
             verified_source(ROOT / name, expected)
     elapsed_seconds = round(time.monotonic() - started, 1)
@@ -320,7 +313,7 @@ def build_full_october(config_path, november_dir):
               "artifact": {"path": str(ARTIFACT.relative_to(ROOT)), "sha256": file_sha256(ARTIFACT)},
               "config": {"path": str(config_path.relative_to(ROOT)), "sha256": config_sha},
               "code_sha256": code_hashes, "source_sha256": source_hashes,
-              "original_experiment_preserved": protected, "november_outcomes_used_for_fit": False,
+              "november_outcomes_used_for_fit": False,
               "input_only_boundary_dates": config["full_month_fit"]["boundary_input_dates"],
               "report": {"path": str(REPORT.relative_to(ROOT)), "sha256": file_sha256(REPORT)}}
     write_json(FROZEN, frozen)

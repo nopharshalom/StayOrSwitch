@@ -1,4 +1,3 @@
 # Preserve the exact bytes bound by the November peak audit manifests.
 data/reports/november-weekday-peak-delays-daily.csv -text whitespace=trailing-space,space-before-tab,cr-at-eol
-data/reports/november-weekday-peak-delays-duration-band.csv -text whitespace=trailing-space,space-before-tab,cr-at-eol
 data/reports/november-weekday-peak-delays-pooled.csv -text whitespace=trailing-space,space-before-tab,cr-at-eol

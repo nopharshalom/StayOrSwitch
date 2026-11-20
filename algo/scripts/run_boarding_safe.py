@@ -15,13 +15,29 @@ sys.path.insert(0, str(REPOSITORY))
 sys.path.insert(0, str(REPOSITORY / "algo"))
 
 from data.delay_profiles import IncidentIndex, ProfileEstimator
-from algo.scripts.run_severe import load_asof
+from data.october import read_snapshots
+from stayorswitch.mta import ALERTS_FEED_ID
 from stayorswitch.boarding_safe import predict_routes
-from stayorswitch.matching import _epoch
+from stayorswitch.matching import _choose_snapshots, _epoch
 from stayorswitch.severe import MODES, _seconds, decide, validate_templates
 
 
 DEFAULT_PROFILE = REPOSITORY / "data/artifacts/october-2026-profiles-full-train.json.gz"
+
+
+def load_asof(paths, cutoff):
+    """Bound train memory while retaining all supplied as-of alert versions."""
+    alerts = []
+
+    def records():
+        for path in paths:
+            for snapshot in read_snapshots(path):
+                if _epoch(snapshot["fetched_at"]) <= cutoff:
+                    if snapshot["feed_id"] == ALERTS_FEED_ID:
+                        alerts.append(snapshot)
+                    yield snapshot
+
+    return list(_choose_snapshots(records(), cutoff).values()), alerts
 
 
 def unavailable_templates(config):
