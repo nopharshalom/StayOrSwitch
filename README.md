@@ -6,14 +6,16 @@ A background **decision companion** for NYC subway commuters. It runs alongside 
 
 ## November experiment
 
-[Read the two-corridor results](algo/reports/november-recorded-boarding.md) or [inspect the 595 recommendations and their train traces](algo/reports/november-recorded-boarding.json).
+[Read the two-corridor results](algo/reports/november-all-forecast-boarding-any-saving.md) or [inspect the 595 recommendations and their train traces](algo/reports/november-all-forecast-boarding.json).
 
 | When the model recommended Switch | Issued | Classifiable | Faster than Stay | Mean minutes saved per classifiable Switch |
 |---|---:|---:|---:|---:|
-| Grand Central → Borough Hall | 152 | 38 | 23 (60.5%) | 2.16 |
-| Court Square → Times Square | 31 | 11 | 3 (27.3%) | −2.87 to −2.81 |
+| Grand Central → Borough Hall | 152 | 113 | 70 (61.9%) | 2.63 |
+| Court Square → Times Square | 31 | 18 | 14 (77.8%) | 12.06–12.10 |
 
-The model used October 1–31, 2026. The replay covers 13 November weekdays and boards both options by recorded departures after platform readiness. Historical MTA journal and vehicle records provide the departure and arrival evidence. The full table includes Stay recommendations, slower journeys, ties and missing outcomes. The corridors were selected after an earlier comparison.
+The model used October 1–31, 2026. The replay covers 13 November weekdays and assumes passengers catch the first compatible train forecast to depart after they reach the platform. Arrival evidence comes from historical MTA records. The full table includes Stay recommendations, slower journeys, ties and missing outcomes. The corridors were selected after an earlier comparison.
+
+The boarding assumption matters for Court Square. Among nine Switch recommendations classifiable under both methods, seven saved time using forecast departures and three saved time using recorded departures. See the [matched-checkpoint comparison](algo/reports/november-recorded-boarding.md#switch-outcomes-on-the-same-checkpoints).
 
 ### Reproduce the result
 
@@ -22,7 +24,7 @@ Run from the repository root with Python 3.9 or later.
 ```sh
 python3 -m venv .venv
 .venv/bin/python -m pip install -r algo/requirements-live-lock.txt
-.venv/bin/python algo/scripts/evaluate_recorded_boarding.py
+.venv/bin/python algo/scripts/evaluate_all_forecast_boarding.py
 ```
 
 The command uses bundled evidence, works offline after dependency installation, and regenerates both linked results. The [algorithm handoff](algo/README.md) describes how to make a new recommendation. The [data guide](data/README.md) identifies the model, inputs and supporting weekday ETA statistics.

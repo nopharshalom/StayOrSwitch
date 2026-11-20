@@ -128,4 +128,4 @@ Pass the saved all-mode report to the commuter policy for the experiment's final
 .venv/bin/python algo/scripts/run_commuter_advice.py algo/local/boarding-safe-example.json
 ```
 
-The commuter policy keeps definitive comparisons and can use the available timing forecasts when service evidence is incomplete. A fallback Switch needs support for the same alternative in both corrected and raw-MTA timing. The 10% predicted advantage threshold is relative to the Stay duration. The [November report](../reports/november-recorded-boarding.md) defines how the recommended route was scored against its alternative after the decision.
+The commuter policy keeps definitive comparisons and can use the available timing forecasts when service evidence is incomplete. A fallback Switch needs support for the same alternative in both corrected and raw-MTA timing. The 10% predicted advantage threshold is relative to the Stay duration. The [November report](../reports/november-all-forecast-boarding-any-saving.md) defines how the recommended route was scored against its alternative after the decision.
