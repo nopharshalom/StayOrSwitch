@@ -34,6 +34,19 @@ Recurring NYC commuters with familiar routes and real alternatives. The starting
 
 ## Status and next steps
 
+The current historical evaluation follows the feed visible at each passenger
+decision time: choose the earliest advertised usable service, then update that
+choice when a later feed changes the situation. Unselected trains' missing final
+records do not block a comparison. See the
+[feed-following replay plan](algo/docs/november-feed-replay-plan.md) and
+[new results](algo/reports/november-feed-replay-test.md). The model and existing
+two-minute boarding-safe recommendations are reused exactly; this changes the
+execution evaluator, not the training or route advice.
+Read the [findings](algo/reports/november-feed-replay-findings.md) with the
+counts. A [selected-outcome quality correction](algo/docs/november-feed-outcome-quality-addendum.md)
+excludes physically impossible collapsed prediction timelines symmetrically;
+it never changes which train the simulated passenger chooses.
+
 The latest algorithm version separates boarding feasibility from historical
 ETA correction. Its [boarding-safe entrypoint](algo/docs/boarding-safe-handoff.md)
 requires a two-minute initial margin; positive average delay cannot make a
@@ -42,7 +55,8 @@ old and new recommendations using the same historical route execution, which
 can continue to the next train while retaining the original boarding failure.
 This is a post-hoc comparison on the existing November weekday cohort. The
 full-October model and earlier frozen studies below remain preserved.
-See the [repaired results](algo/reports/november-repair-test.md) and
+The preceding stricter executor remains in the
+[repaired results](algo/reports/november-repair-test.md) and
 [interpretation](algo/reports/november-repair-findings.md). Boarding feasibility
 improves substantially; strict first-service route ordering still leaves many
 outcomes unknown, so the study does not establish a general severe-Switch

@@ -36,6 +36,16 @@ arrivals. Each downloaded archive and derived output must have provenance.
 
 ## Full-October model and November weekdays
 
+The current [feed-view adapter](docs/november-feed-route-archive-v3.md) exposes
+each exact historical full-feed capture to the feed-following executor. Raw
+forecasts and current membership are separated from the final endpoint records
+used only after a train is selected. The adapter reuses the verified prior
+archive, preserving all original data and label-quality rules.
+An additional [selected-outcome quality screen](../algo/docs/november-feed-outcome-quality-addendum.md)
+rejects physically impossible travel times using archived station coordinates.
+It runs only after selection, retains the original records, and does not alter
+candidate views or any earlier frozen study.
+
 The separate [route-execution archive](docs/november-route-archive-v2.md)
 supports the [boarding repair study](../algo/docs/november-repair-plan.md).
 It retains timestamped path observations, strict endpoint evidence and unknown

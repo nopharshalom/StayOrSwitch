@@ -1,0 +1,37 @@
+{
+  "audit_method": "Independent standard-library trace, arithmetic, membership, conditional-evidence and hash checks; no prediction/execution/scoring code imported.",
+  "audited_at_utc": "2026-11-20T21:42:44.702795+00:00",
+  "cases": 2306,
+  "checks": {
+    "arithmetic": 1343079,
+    "case_results": 352879,
+    "conditional_evidence": 3,
+    "counts": 28040,
+    "evaluator_comparison": 6,
+    "execution_traces": 7,
+    "membership": 21944,
+    "outcome_quality_counts": 1,
+    "preservation": 381,
+    "provenance": 37,
+    "trace": 4696551
+  },
+  "limits": [
+    "Feed-policy inferred movement is not an independent passenger observation.",
+    "Independent geometry and invalid-outcome trace-prefix checks are recorded separately in november-feed-replay-quality-audit.json.",
+    "Conditional selected waiting is explicitly retained, not reclassified as proven physical waiting.",
+    "The dates were previously examined; unchanged predictions do not create a new untouched test."
+  ],
+  "preserved_arithmetic_audit": {
+    "path": "algo/scripts/audit_november_repair_results.py",
+    "sha256": "41b5ff53a41f6b6ae71642acada9380f510afdda6ae1b640aafd24ed2fb7cd21"
+  },
+  "preserved_original_files": 381,
+  "primary_cases": 197,
+  "result": {
+    "path": "algo/reports/november-feed-replay-test.json",
+    "sha256": "5332da553a917b75697b93967362bbf0f8b595de00a8a3091457a269acb9379b"
+  },
+  "schema_version": "november-feed-replay-independent-audit-v3",
+  "status": "PASS",
+  "total_checks_passed": 6442928
+}

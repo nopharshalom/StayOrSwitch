@@ -1,0 +1,1324 @@
+{
+  "case_count": 5,
+  "checks": {
+    "actual_platform_readiness_without_repeated_margin": 5,
+    "board_before_next_feed_or_expiry": 5,
+    "boarding_matches_selected_endpoint_without_backdating": 5,
+    "complete_contemporaneous_candidate_pool_and_raw_eta": 28,
+    "conditional_wait_disclosed": 1,
+    "conditional_wait_ends_before_unknown_boarding_deadline": 1,
+    "destination_arrival_arithmetic": 5,
+    "endpoint_evidence_identity": 14,
+    "endpoint_evidence_time": 14,
+    "endpoint_near_event_observation": 14,
+    "endpoint_passage_confirmation": 14,
+    "frozen_report_hash": 1,
+    "full_journey_duration_arithmetic": 5,
+    "gain_recovered_from_strict_unknown": 1,
+    "immutable_source_cache_hash": 1,
+    "known_miss_is_past_departure": 1,
+    "miss_waits_for_next_visible_feed": 1,
+    "missing_endpoint_has_exclusion_reasons": 3,
+    "no_reselection_after_boarding": 5,
+    "raw_eta_first_selection_without_endpoint_ranking": 28,
+    "recorded_selection_label_separation": 28,
+    "recovered_pair_savings_arithmetic": 1,
+    "selected_leg_source_endpoint_equality": 5,
+    "selected_raw_eta": 28,
+    "selected_unknown_stops_at_forecast_boundary": 1,
+    "selection_frame_freshness": 28,
+    "selection_frame_source_binding": 28,
+    "selection_uses_latest_full_capture": 28,
+    "shared_outcome_hash": 1,
+    "unique_source_event_identity": 47,
+    "unknown_selected_train_has_no_convenient_fallback": 1,
+    "usable_endpoint_has_unflagged_source_evidence": 13
+  },
+  "examples": [
+    {
+      "case_id": "grandcentral_boroughhall--lmm-alert-274536--1793621353693",
+      "classification": "MEANINGFUL_GAIN",
+      "corridor_id": "grandcentral_boroughhall",
+      "independently_verified_savings_seconds": 333.0,
+      "local_time": "2026-11-02T07:09:13.693000-05:00",
+      "purpose": "recovered_comparable_gain",
+      "routes": [
+        {
+          "execution_summary": {
+            "conditional_on_unverified_selected_wait": false,
+            "reason": null,
+            "status": "INFERRED",
+            "total_duration_seconds": 1884.3069999217987,
+            "trace_counters": {
+              "chosen_train_updates": 1,
+              "conditional_wait_intervals": 0,
+              "feed_updates": 10,
+              "known_missed_attempts": 0,
+              "selected_unknown": 0,
+              "unverified_selected_wait_intervals": 0
+            }
+          },
+          "execution_trace": [
+            {
+              "action": "SELECT",
+              "at": 1793621464.693,
+              "departure_forecast_at": 1793622058.0,
+              "event_key": "MTA_EVENT:numbered:20261102:5:039750_5..S40R",
+              "leg_index": 0,
+              "selection_reads_endpoint_labels": false,
+              "snapshot_at": 1793621460.544,
+              "snapshot_sha256": "85b948da4dbd14412949387e1cbfca66369406c4d6830e18c5a959673159515f",
+              "source_at": 1793621455.0
+            },
+            {
+              "action": "KEEP",
+              "at": 1793621520.549,
+              "departure_forecast_at": 1793622058.0,
+              "event_key": "MTA_EVENT:numbered:20261102:5:039750_5..S40R",
+              "leg_index": 0,
+              "selection_reads_endpoint_labels": false,
+              "snapshot_at": 1793621520.549,
+              "snapshot_sha256": "cd82d477ac9d47702223871ae1d46a565f73c6e99390eb8eee4391ee7cb2429e",
+              "source_at": 1793621515.0
+            },
+            {
+              "action": "KEEP",
+              "at": 1793621580.55,
+              "departure_forecast_at": 1793622058.0,
+              "event_key": "MTA_EVENT:numbered:20261102:5:039750_5..S40R",
+              "leg_index": 0,
+              "selection_reads_endpoint_labels": false,
+              "snapshot_at": 1793621580.55,
+              "snapshot_sha256": "476ac8a3875f342d51c57bba945b65a6e3e4de99721fbf279a3f1617ab75f18d",
+              "source_at": 1793621575.0
+            },
+            {
+              "action": "KEEP",
+              "at": 1793621640.55,
+              "departure_forecast_at": 1793622025.0,
+              "event_key": "MTA_EVENT:numbered:20261102:5:039750_5..S40R",
+              "leg_index": 0,
+              "selection_reads_endpoint_labels": false,
+              "snapshot_at": 1793621640.55,
+              "snapshot_sha256": "0c80efcbdc92429209c68308ee7d138eace5945361a5fe51de9c0c3e9ef8e31d",
+              "source_at": 1793621635.0
+            },
+            {
+              "action": "KEEP",
+              "at": 1793621700.544,
+              "departure_forecast_at": 1793622056.0,
+              "event_key": "MTA_EVENT:numbered:20261102:5:039750_5..S40R",
+              "leg_index": 0,
+              "selection_reads_endpoint_labels": false,
+              "snapshot_at": 1793621700.544,
+              "snapshot_sha256": "5bd0f938838a59738bdff5b45ea7cbb40a7984caf765007446e8c5b27b418c6b",
+              "source_at": 1793621695.0
+            },
+            {
+              "action": "KEEP",
+              "at": 1793621760.541,
+              "departure_forecast_at": 1793622056.0,
+              "event_key": "MTA_EVENT:numbered:20261102:5:039750_5..S40R",
+              "leg_index": 0,
+              "selection_reads_endpoint_labels": false,
+              "snapshot_at": 1793621760.541,
+              "snapshot_sha256": "49538ad1c3cbe720cfa46928a7fdb612784b1e9ce9bfb026e7d9e122c47cc2fc",
+              "source_at": 1793621755.0
+            },
+            {
+              "action": "KEEP",
+              "at": 1793621820.543,
+              "departure_forecast_at": 1793621982.0,
+              "event_key": "MTA_EVENT:numbered:20261102:5:039750_5..S40R",
+              "leg_index": 0,
+              "selection_reads_endpoint_labels": false,
+              "snapshot_at": 1793621820.543,
+              "snapshot_sha256": "ea9dfa6ceac1584f5f574eae5693d58b2707ce0516d5a8b906670925c657885d",
+              "source_at": 1793621815.0
+            },
+            {
+              "action": "KEEP",
+              "at": 1793621880.543,
+              "departure_forecast_at": 1793622000.0,
+              "event_key": "MTA_EVENT:numbered:20261102:5:039750_5..S40R",
+              "leg_index": 0,
+              "selection_reads_endpoint_labels": false,
+              "snapshot_at": 1793621880.543,
+              "snapshot_sha256": "4558517e8672666263224596747e4785ef8232ae88873f607d452c362a69d6aa",
+              "source_at": 1793621875.0
+            },
+            {
+              "action": "KEEP",
+              "at": 1793621940.634,
+              "departure_forecast_at": 1793622000.0,
+              "event_key": "MTA_EVENT:numbered:20261102:5:039750_5..S40R",
+              "leg_index": 0,
+              "selection_reads_endpoint_labels": false,
+              "snapshot_at": 1793621940.634,
+              "snapshot_sha256": "bd93e12d2bc4c4c73ac4e29b52687337d683c713046826a76230f068ac95f644",
+              "source_at": 1793621935.0
+            },
+            {
+              "action": "KEEP",
+              "at": 1793622000.633,
+              "departure_forecast_at": 1793622004.0,
+              "event_key": "MTA_EVENT:numbered:20261102:5:039750_5..S40R",
+              "leg_index": 0,
+              "selection_reads_endpoint_labels": false,
+              "snapshot_at": 1793622000.633,
+              "snapshot_sha256": "f6d2536c5f015672c1f8cc9c9574b504b8e6f210d1157253eca5b7842bcad544",
+              "source_at": 1793621995.0
+            },
+            {
+              "action": "BOARD",
+              "at": 1793622004.0,
+              "boarding_precedes_equal_time_feed_update": true,
+              "event_key": "MTA_EVENT:numbered:20261102:5:039750_5..S40R",
+              "leg_index": 0,
+              "outcome_quality": {
+                "distance_km": 6.696384701917123,
+                "duration_seconds": 1063.0,
+                "earth_radius_km": 6371.0088,
+                "flags": [],
+                "from_stop_id": "631S",
+                "implied_speed_kmh": 22.67825487008621,
+                "max_straight_line_speed_kmh": 300.0,
+                "raw_arrival_at": 1793623067.0,
+                "raw_departure_at": 1793622004.0,
+                "rule": "MAXIMUM_STRAIGHT_LINE_AVERAGE_SPEED",
+                "schema_version": "selected-route-outcome-sanity-v1",
+                "selection_affected": false,
+                "status": "PASSED",
+                "to_stop_id": "423S"
+              },
+              "selection_at": 1793621464.693,
+              "selection_snapshot_at": 1793621460.544
+            }
+          ],
+          "route_id": "google-route-54502e7253ac53a2be3cd264",
+          "route_name": "5: Grand Central-42 St to Borough Hall",
+          "selected_endpoint_evidence": [
+            {
+              "arrival_at": 1793623067.0,
+              "canonical_trip_id": "MTA_EVENT:numbered:20261102:5:039750_5..S40R",
+              "departure_at": 1793622004.0,
+              "endpoint_evidence": {
+                "alighting": [
+                  {
+                    "arrival_at": 1793623067,
+                    "canonical_event_trip_id": "MTA_EVENT:numbered:20261102:5:039750_5..S40R",
+                    "confirmation_status": "CONFIRMED",
+                    "confirmed_at": 1793623105.534,
+                    "feed_id": "numbered",
+                    "raw_trip_id": "039750_5..S40R",
+                    "route_id": "5",
+                    "service_date": "20261102",
+                    "stop_id": "423S",
+                    "stop_last_observed_at": 1793623087
+                  }
+                ],
+                "boarding": [
+                  {
+                    "canonical_event_trip_id": "MTA_EVENT:numbered:20261102:5:039750_5..S40R",
+                    "confirmation_status": "CONFIRMED",
+                    "confirmed_at": 1793622068.583,
+                    "departure_at": 1793622004,
+                    "feed_id": "numbered",
+                    "raw_trip_id": "039750_5..S40R",
+                    "route_id": "5",
+                    "service_date": "20261102",
+                    "stop_id": "631S",
+                    "stop_last_observed_at": 1793622058
+                  }
+                ]
+              },
+              "endpoint_flags": {
+                "alighting": [],
+                "boarding": []
+              }
+            }
+          ],
+          "source_trace_checks": [
+            {
+              "action": "SELECT",
+              "at": 1793621464.693,
+              "chosen_event_key": "MTA_EVENT:numbered:20261102:5:039750_5..S40R",
+              "due_now": false,
+              "eligible_candidate_count": 15,
+              "raw_departure_forecast_at": 1793622058.0,
+              "snapshot_at": 1793621460.544,
+              "snapshot_sha256": "85b948da4dbd14412949387e1cbfca66369406c4d6830e18c5a959673159515f",
+              "source_candidate_count": 15,
+              "visible_unselected_with_unusable_endpoints": 0
+            },
+            {
+              "action": "KEEP",
+              "at": 1793621520.549,
+              "chosen_event_key": "MTA_EVENT:numbered:20261102:5:039750_5..S40R",
+              "due_now": false,
+              "eligible_candidate_count": 15,
+              "raw_departure_forecast_at": 1793622058.0,
+              "snapshot_at": 1793621520.549,
+              "snapshot_sha256": "cd82d477ac9d47702223871ae1d46a565f73c6e99390eb8eee4391ee7cb2429e",
+              "source_candidate_count": 15,
+              "visible_unselected_with_unusable_endpoints": 0
+            },
+            {
+              "action": "KEEP",
+              "at": 1793621580.55,
+              "chosen_event_key": "MTA_EVENT:numbered:20261102:5:039750_5..S40R",
+              "due_now": false,
+              "eligible_candidate_count": 15,
+              "raw_departure_forecast_at": 1793622058.0,
+              "snapshot_at": 1793621580.55,
+              "snapshot_sha256": "476ac8a3875f342d51c57bba945b65a6e3e4de99721fbf279a3f1617ab75f18d",
+              "source_candidate_count": 15,
+              "visible_unselected_with_unusable_endpoints": 0
+            },
+            {
+              "action": "KEEP",
+              "at": 1793621640.55,
+              "chosen_event_key": "MTA_EVENT:numbered:20261102:5:039750_5..S40R",
+              "due_now": false,
+              "eligible_candidate_count": 16,
+              "raw_departure_forecast_at": 1793622025.0,
+              "snapshot_at": 1793621640.55,
+              "snapshot_sha256": "0c80efcbdc92429209c68308ee7d138eace5945361a5fe51de9c0c3e9ef8e31d",
+              "source_candidate_count": 16,
+              "visible_unselected_with_unusable_endpoints": 1
+            },
+            {
+              "action": "KEEP",
+              "at": 1793621700.544,
+              "chosen_event_key": "MTA_EVENT:numbered:20261102:5:039750_5..S40R",
+              "due_now": false,
+              "eligible_candidate_count": 16,
+              "raw_departure_forecast_at": 1793622056.0,
+              "snapshot_at": 1793621700.544,
+              "snapshot_sha256": "5bd0f938838a59738bdff5b45ea7cbb40a7984caf765007446e8c5b27b418c6b",
+              "source_candidate_count": 16,
+              "visible_unselected_with_unusable_endpoints": 1
+            },
+            {
+              "action": "KEEP",
+              "at": 1793621760.541,
+              "chosen_event_key": "MTA_EVENT:numbered:20261102:5:039750_5..S40R",
+              "due_now": false,
+              "eligible_candidate_count": 16,
+              "raw_departure_forecast_at": 1793622056.0,
+              "snapshot_at": 1793621760.541,
+              "snapshot_sha256": "49538ad1c3cbe720cfa46928a7fdb612784b1e9ce9bfb026e7d9e122c47cc2fc",
+              "source_candidate_count": 16,
+              "visible_unselected_with_unusable_endpoints": 1
+            },
+            {
+              "action": "KEEP",
+              "at": 1793621820.543,
+              "chosen_event_key": "MTA_EVENT:numbered:20261102:5:039750_5..S40R",
+              "due_now": false,
+              "eligible_candidate_count": 16,
+              "raw_departure_forecast_at": 1793621982.0,
+              "snapshot_at": 1793621820.543,
+              "snapshot_sha256": "ea9dfa6ceac1584f5f574eae5693d58b2707ce0516d5a8b906670925c657885d",
+              "source_candidate_count": 16,
+              "visible_unselected_with_unusable_endpoints": 1
+            },
+            {
+              "action": "KEEP",
+              "at": 1793621880.543,
+              "chosen_event_key": "MTA_EVENT:numbered:20261102:5:039750_5..S40R",
+              "due_now": false,
+              "eligible_candidate_count": 16,
+              "raw_departure_forecast_at": 1793622000.0,
+              "snapshot_at": 1793621880.543,
+              "snapshot_sha256": "4558517e8672666263224596747e4785ef8232ae88873f607d452c362a69d6aa",
+              "source_candidate_count": 16,
+              "visible_unselected_with_unusable_endpoints": 1
+            },
+            {
+              "action": "KEEP",
+              "at": 1793621940.634,
+              "chosen_event_key": "MTA_EVENT:numbered:20261102:5:039750_5..S40R",
+              "due_now": false,
+              "eligible_candidate_count": 17,
+              "raw_departure_forecast_at": 1793622000.0,
+              "snapshot_at": 1793621940.634,
+              "snapshot_sha256": "bd93e12d2bc4c4c73ac4e29b52687337d683c713046826a76230f068ac95f644",
+              "source_candidate_count": 18,
+              "visible_unselected_with_unusable_endpoints": 2
+            },
+            {
+              "action": "KEEP",
+              "at": 1793622000.633,
+              "chosen_event_key": "MTA_EVENT:numbered:20261102:5:039750_5..S40R",
+              "due_now": false,
+              "eligible_candidate_count": 17,
+              "raw_departure_forecast_at": 1793622004.0,
+              "snapshot_at": 1793622000.633,
+              "snapshot_sha256": "f6d2536c5f015672c1f8cc9c9574b504b8e6f210d1157253eca5b7842bcad544",
+              "source_candidate_count": 18,
+              "visible_unselected_with_unusable_endpoints": 2
+            }
+          ]
+        },
+        {
+          "execution_summary": {
+            "conditional_on_unverified_selected_wait": false,
+            "reason": null,
+            "status": "INFERRED",
+            "total_duration_seconds": 1551.3069999217987,
+            "trace_counters": {
+              "chosen_train_updates": 1,
+              "conditional_wait_intervals": 0,
+              "feed_updates": 3,
+              "known_missed_attempts": 0,
+              "selected_unknown": 0,
+              "unverified_selected_wait_intervals": 0
+            }
+          },
+          "execution_trace": [
+            {
+              "action": "SELECT",
+              "at": 1793621468.693,
+              "departure_forecast_at": 1793621590.0,
+              "event_key": "MTA_EVENT:numbered:20261102:4:039700_4..S34R",
+              "leg_index": 0,
+              "selection_reads_endpoint_labels": false,
+              "snapshot_at": 1793621460.544,
+              "snapshot_sha256": "85b948da4dbd14412949387e1cbfca66369406c4d6830e18c5a959673159515f",
+              "source_at": 1793621455.0
+            },
+            {
+              "action": "KEEP",
+              "at": 1793621520.549,
+              "departure_forecast_at": 1793621590.0,
+              "event_key": "MTA_EVENT:numbered:20261102:4:039700_4..S34R",
+              "leg_index": 0,
+              "selection_reads_endpoint_labels": false,
+              "snapshot_at": 1793621520.549,
+              "snapshot_sha256": "cd82d477ac9d47702223871ae1d46a565f73c6e99390eb8eee4391ee7cb2429e",
+              "source_at": 1793621515.0
+            },
+            {
+              "action": "KEEP",
+              "at": 1793621580.55,
+              "departure_forecast_at": 1793621583.0,
+              "event_key": "MTA_EVENT:numbered:20261102:4:039700_4..S34R",
+              "leg_index": 0,
+              "selection_reads_endpoint_labels": false,
+              "snapshot_at": 1793621580.55,
+              "snapshot_sha256": "476ac8a3875f342d51c57bba945b65a6e3e4de99721fbf279a3f1617ab75f18d",
+              "source_at": 1793621575.0
+            },
+            {
+              "action": "BOARD",
+              "at": 1793621583.0,
+              "boarding_precedes_equal_time_feed_update": true,
+              "event_key": "MTA_EVENT:numbered:20261102:4:039700_4..S34R",
+              "leg_index": 0,
+              "outcome_quality": {
+                "distance_km": 6.696384701917123,
+                "duration_seconds": 1151.0,
+                "earth_radius_km": 6371.0088,
+                "flags": [],
+                "from_stop_id": "631S",
+                "implied_speed_kmh": 20.94438308158266,
+                "max_straight_line_speed_kmh": 300.0,
+                "raw_arrival_at": 1793622734.0,
+                "raw_departure_at": 1793621583.0,
+                "rule": "MAXIMUM_STRAIGHT_LINE_AVERAGE_SPEED",
+                "schema_version": "selected-route-outcome-sanity-v1",
+                "selection_affected": false,
+                "status": "PASSED",
+                "to_stop_id": "423S"
+              },
+              "selection_at": 1793621468.693,
+              "selection_snapshot_at": 1793621460.544
+            }
+          ],
+          "route_id": "google-route-fae079d4a0a7051e64aa1cda",
+          "route_name": "4: Grand Central-42 St to Borough Hall",
+          "selected_endpoint_evidence": [
+            {
+              "arrival_at": 1793622734.0,
+              "canonical_trip_id": "MTA_EVENT:numbered:20261102:4:039700_4..S34R",
+              "departure_at": 1793621583.0,
+              "endpoint_evidence": {
+                "alighting": [
+                  {
+                    "arrival_at": 1793622734,
+                    "canonical_event_trip_id": "MTA_EVENT:numbered:20261102:4:039700_4..S34R",
+                    "confirmation_status": "CONFIRMED",
+                    "confirmed_at": 1793622767.692,
+                    "feed_id": "numbered",
+                    "raw_trip_id": "039700_4..S34R",
+                    "route_id": "4",
+                    "service_date": "20261102",
+                    "stop_id": "423S",
+                    "stop_last_observed_at": 1793622760
+                  }
+                ],
+                "boarding": [
+                  {
+                    "canonical_event_trip_id": "MTA_EVENT:numbered:20261102:4:039700_4..S34R",
+                    "confirmation_status": "CONFIRMED",
+                    "confirmed_at": 1793621648.576,
+                    "departure_at": 1793621583,
+                    "feed_id": "numbered",
+                    "raw_trip_id": "039700_4..S34R",
+                    "route_id": "4",
+                    "service_date": "20261102",
+                    "stop_id": "631S",
+                    "stop_last_observed_at": 1793621638
+                  }
+                ]
+              },
+              "endpoint_flags": {
+                "alighting": [],
+                "boarding": []
+              }
+            }
+          ],
+          "source_trace_checks": [
+            {
+              "action": "SELECT",
+              "at": 1793621468.693,
+              "chosen_event_key": "MTA_EVENT:numbered:20261102:4:039700_4..S34R",
+              "due_now": false,
+              "eligible_candidate_count": 12,
+              "raw_departure_forecast_at": 1793621590.0,
+              "snapshot_at": 1793621460.544,
+              "snapshot_sha256": "85b948da4dbd14412949387e1cbfca66369406c4d6830e18c5a959673159515f",
+              "source_candidate_count": 12,
+              "visible_unselected_with_unusable_endpoints": 2
+            },
+            {
+              "action": "KEEP",
+              "at": 1793621520.549,
+              "chosen_event_key": "MTA_EVENT:numbered:20261102:4:039700_4..S34R",
+              "due_now": false,
+              "eligible_candidate_count": 12,
+              "raw_departure_forecast_at": 1793621590.0,
+              "snapshot_at": 1793621520.549,
+              "snapshot_sha256": "cd82d477ac9d47702223871ae1d46a565f73c6e99390eb8eee4391ee7cb2429e",
+              "source_candidate_count": 12,
+              "visible_unselected_with_unusable_endpoints": 2
+            },
+            {
+              "action": "KEEP",
+              "at": 1793621580.55,
+              "chosen_event_key": "MTA_EVENT:numbered:20261102:4:039700_4..S34R",
+              "due_now": false,
+              "eligible_candidate_count": 12,
+              "raw_departure_forecast_at": 1793621583.0,
+              "snapshot_at": 1793621580.55,
+              "snapshot_sha256": "476ac8a3875f342d51c57bba945b65a6e3e4de99721fbf279a3f1617ab75f18d",
+              "source_candidate_count": 12,
+              "visible_unselected_with_unusable_endpoints": 2
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "case_id": "pilot_hayden_tandon--lmm-alert-274525--1793615892737",
+      "classification": "MEANINGFUL_LOSS",
+      "corridor_id": "pilot_hayden_tandon",
+      "local_time": "2026-11-02T05:38:12.737000-05:00",
+      "purpose": "loss_route_execution",
+      "routes": [
+        {
+          "execution_summary": {
+            "conditional_on_unverified_selected_wait": false,
+            "reason": null,
+            "status": "INFERRED",
+            "total_duration_seconds": 2478.263000011444,
+            "trace_counters": {
+              "chosen_train_updates": 1,
+              "conditional_wait_intervals": 0,
+              "feed_updates": 8,
+              "known_missed_attempts": 0,
+              "selected_unknown": 0,
+              "unverified_selected_wait_intervals": 0
+            }
+          },
+          "execution_trace": [
+            {
+              "action": "SELECT",
+              "at": 1793616100.737,
+              "departure_forecast_at": 1793616510.0,
+              "event_key": "MTA_EVENT:g:20261102:G:034850_G..S14R",
+              "leg_index": 0,
+              "selection_reads_endpoint_labels": false,
+              "snapshot_at": 1793616062.685,
+              "snapshot_sha256": "14db7ab98b80640a948138ea6cad0048912426c1e1d027be789dd82cdab63f33",
+              "source_at": 1793616061.0
+            },
+            {
+              "action": "KEEP",
+              "at": 1793616122.678,
+              "departure_forecast_at": 1793616510.0,
+              "event_key": "MTA_EVENT:g:20261102:G:034850_G..S14R",
+              "leg_index": 0,
+              "selection_reads_endpoint_labels": false,
+              "snapshot_at": 1793616122.678,
+              "snapshot_sha256": "550c673680326810dd1dd0ad6e125f71399903edd14f546a4de99fa3a72b7736",
+              "source_at": 1793616121.0
+            },
+            {
+              "action": "KEEP",
+              "at": 1793616182.761,
+              "departure_forecast_at": 1793616510.0,
+              "event_key": "MTA_EVENT:g:20261102:G:034850_G..S14R",
+              "leg_index": 0,
+              "selection_reads_endpoint_labels": false,
+              "snapshot_at": 1793616182.761,
+              "snapshot_sha256": "54991b184390b8c603b88e26dc1b2de525f4e2b93d7bf8885325b63181b1d96d",
+              "source_at": 1793616181.0
+            },
+            {
+              "action": "KEEP",
+              "at": 1793616242.709,
+              "departure_forecast_at": 1793616510.0,
+              "event_key": "MTA_EVENT:g:20261102:G:034850_G..S14R",
+              "leg_index": 0,
+              "selection_reads_endpoint_labels": false,
+              "snapshot_at": 1793616242.709,
+              "snapshot_sha256": "ddbb41386d428b631f585209a18b5b5013bb871014e37b0844de4a53735e9b38",
+              "source_at": 1793616241.0
+            },
+            {
+              "action": "KEEP",
+              "at": 1793616302.785,
+              "departure_forecast_at": 1793616510.0,
+              "event_key": "MTA_EVENT:g:20261102:G:034850_G..S14R",
+              "leg_index": 0,
+              "selection_reads_endpoint_labels": false,
+              "snapshot_at": 1793616302.785,
+              "snapshot_sha256": "ea3a00ed222057e1c815f7732f200065b8fa58436173e1ecfacd7bedd2c83b96",
+              "source_at": 1793616301.0
+            },
+            {
+              "action": "KEEP",
+              "at": 1793616362.663,
+              "departure_forecast_at": 1793616510.0,
+              "event_key": "MTA_EVENT:g:20261102:G:034850_G..S14R",
+              "leg_index": 0,
+              "selection_reads_endpoint_labels": false,
+              "snapshot_at": 1793616362.663,
+              "snapshot_sha256": "f66216d3fe51f1587441d056be53f09627b59e24b6cbd4b732103c1a68613d4e",
+              "source_at": 1793616361.0
+            },
+            {
+              "action": "KEEP",
+              "at": 1793616422.686,
+              "departure_forecast_at": 1793616510.0,
+              "event_key": "MTA_EVENT:g:20261102:G:034850_G..S14R",
+              "leg_index": 0,
+              "selection_reads_endpoint_labels": false,
+              "snapshot_at": 1793616422.686,
+              "snapshot_sha256": "a3e5b2ae7976659748030d33ab8b3807c9ed1b35c99fa166b206ddd68f5d9e6f",
+              "source_at": 1793616421.0
+            },
+            {
+              "action": "KEEP",
+              "at": 1793616482.665,
+              "departure_forecast_at": 1793616510.0,
+              "event_key": "MTA_EVENT:g:20261102:G:034850_G..S14R",
+              "leg_index": 0,
+              "selection_reads_endpoint_labels": false,
+              "snapshot_at": 1793616482.665,
+              "snapshot_sha256": "348e50d5a26d03377d95d7142ae64f04cdd44a64174edf42bf3d45c297477b66",
+              "source_at": 1793616481.0
+            },
+            {
+              "action": "BOARD",
+              "at": 1793616506.0,
+              "boarding_precedes_equal_time_feed_update": true,
+              "event_key": "MTA_EVENT:g:20261102:G:034850_G..S14R",
+              "leg_index": 0,
+              "outcome_quality": {
+                "distance_km": 7.330259513028183,
+                "duration_seconds": 1161.0,
+                "earth_radius_km": 6371.0088,
+                "flags": [],
+                "from_stop_id": "G22S",
+                "implied_speed_kmh": 22.729486862102892,
+                "max_straight_line_speed_kmh": 300.0,
+                "raw_arrival_at": 1793617667.0,
+                "raw_departure_at": 1793616506.0,
+                "rule": "MAXIMUM_STRAIGHT_LINE_AVERAGE_SPEED",
+                "schema_version": "selected-route-outcome-sanity-v1",
+                "selection_affected": false,
+                "status": "PASSED",
+                "to_stop_id": "A42S"
+              },
+              "selection_at": 1793616100.737,
+              "selection_snapshot_at": 1793616062.685
+            }
+          ],
+          "route_id": "google-route-88aa6b135b2fe15e2cd08a95",
+          "route_name": "G: Court Sq to Hoyt-Schermerhorn Sts",
+          "selected_endpoint_evidence": [
+            {
+              "arrival_at": 1793617667.0,
+              "canonical_trip_id": "MTA_EVENT:g:20261102:G:034850_G..S14R",
+              "departure_at": 1793616506.0,
+              "endpoint_evidence": {
+                "alighting": [
+                  {
+                    "arrival_at": 1793617667,
+                    "canonical_event_trip_id": "MTA_EVENT:g:20261102:G:034850_G..S14R",
+                    "confirmation_status": "CONFIRMED",
+                    "confirmed_at": 1793617703.016,
+                    "feed_id": "g",
+                    "raw_trip_id": "034850_G..S14R",
+                    "route_id": "G",
+                    "service_date": "20261102",
+                    "stop_id": "A42S",
+                    "stop_last_observed_at": 1793617686
+                  },
+                  {
+                    "arrival_at": 1793617667,
+                    "canonical_event_trip_id": "MTA_EVENT:g:20261102:G:034850_G..S14R",
+                    "confirmation_status": "CONFIRMED",
+                    "confirmed_at": 1793617703.016,
+                    "feed_id": "g",
+                    "raw_trip_id": "034850_G..S14R",
+                    "route_id": "G",
+                    "service_date": "20261102",
+                    "stop_id": "A42S",
+                    "stop_last_observed_at": 1793617686
+                  }
+                ],
+                "boarding": [
+                  {
+                    "canonical_event_trip_id": "MTA_EVENT:g:20261102:G:034850_G..S14R",
+                    "confirmation_status": "CONFIRMED",
+                    "confirmed_at": 1793616547.711,
+                    "departure_at": 1793616506,
+                    "feed_id": "g",
+                    "raw_trip_id": "034850_G..S14R",
+                    "route_id": "G",
+                    "service_date": "20261102",
+                    "stop_id": "G22S",
+                    "stop_last_observed_at": 1793616530
+                  }
+                ]
+              },
+              "endpoint_flags": {
+                "alighting": [],
+                "boarding": []
+              }
+            }
+          ],
+          "source_trace_checks": [
+            {
+              "action": "SELECT",
+              "at": 1793616100.737,
+              "chosen_event_key": "MTA_EVENT:g:20261102:G:034850_G..S14R",
+              "due_now": false,
+              "eligible_candidate_count": 5,
+              "raw_departure_forecast_at": 1793616510.0,
+              "snapshot_at": 1793616062.685,
+              "snapshot_sha256": "14db7ab98b80640a948138ea6cad0048912426c1e1d027be789dd82cdab63f33",
+              "source_candidate_count": 5,
+              "visible_unselected_with_unusable_endpoints": 0
+            },
+            {
+              "action": "KEEP",
+              "at": 1793616122.678,
+              "chosen_event_key": "MTA_EVENT:g:20261102:G:034850_G..S14R",
+              "due_now": false,
+              "eligible_candidate_count": 5,
+              "raw_departure_forecast_at": 1793616510.0,
+              "snapshot_at": 1793616122.678,
+              "snapshot_sha256": "550c673680326810dd1dd0ad6e125f71399903edd14f546a4de99fa3a72b7736",
+              "source_candidate_count": 5,
+              "visible_unselected_with_unusable_endpoints": 0
+            },
+            {
+              "action": "KEEP",
+              "at": 1793616182.761,
+              "chosen_event_key": "MTA_EVENT:g:20261102:G:034850_G..S14R",
+              "due_now": false,
+              "eligible_candidate_count": 5,
+              "raw_departure_forecast_at": 1793616510.0,
+              "snapshot_at": 1793616182.761,
+              "snapshot_sha256": "54991b184390b8c603b88e26dc1b2de525f4e2b93d7bf8885325b63181b1d96d",
+              "source_candidate_count": 5,
+              "visible_unselected_with_unusable_endpoints": 0
+            },
+            {
+              "action": "KEEP",
+              "at": 1793616242.709,
+              "chosen_event_key": "MTA_EVENT:g:20261102:G:034850_G..S14R",
+              "due_now": false,
+              "eligible_candidate_count": 5,
+              "raw_departure_forecast_at": 1793616510.0,
+              "snapshot_at": 1793616242.709,
+              "snapshot_sha256": "ddbb41386d428b631f585209a18b5b5013bb871014e37b0844de4a53735e9b38",
+              "source_candidate_count": 5,
+              "visible_unselected_with_unusable_endpoints": 0
+            },
+            {
+              "action": "KEEP",
+              "at": 1793616302.785,
+              "chosen_event_key": "MTA_EVENT:g:20261102:G:034850_G..S14R",
+              "due_now": false,
+              "eligible_candidate_count": 5,
+              "raw_departure_forecast_at": 1793616510.0,
+              "snapshot_at": 1793616302.785,
+              "snapshot_sha256": "ea3a00ed222057e1c815f7732f200065b8fa58436173e1ecfacd7bedd2c83b96",
+              "source_candidate_count": 5,
+              "visible_unselected_with_unusable_endpoints": 0
+            },
+            {
+              "action": "KEEP",
+              "at": 1793616362.663,
+              "chosen_event_key": "MTA_EVENT:g:20261102:G:034850_G..S14R",
+              "due_now": false,
+              "eligible_candidate_count": 6,
+              "raw_departure_forecast_at": 1793616510.0,
+              "snapshot_at": 1793616362.663,
+              "snapshot_sha256": "f66216d3fe51f1587441d056be53f09627b59e24b6cbd4b732103c1a68613d4e",
+              "source_candidate_count": 6,
+              "visible_unselected_with_unusable_endpoints": 0
+            },
+            {
+              "action": "KEEP",
+              "at": 1793616422.686,
+              "chosen_event_key": "MTA_EVENT:g:20261102:G:034850_G..S14R",
+              "due_now": false,
+              "eligible_candidate_count": 6,
+              "raw_departure_forecast_at": 1793616510.0,
+              "snapshot_at": 1793616422.686,
+              "snapshot_sha256": "a3e5b2ae7976659748030d33ab8b3807c9ed1b35c99fa166b206ddd68f5d9e6f",
+              "source_candidate_count": 6,
+              "visible_unselected_with_unusable_endpoints": 0
+            },
+            {
+              "action": "KEEP",
+              "at": 1793616482.665,
+              "chosen_event_key": "MTA_EVENT:g:20261102:G:034850_G..S14R",
+              "due_now": false,
+              "eligible_candidate_count": 6,
+              "raw_departure_forecast_at": 1793616510.0,
+              "snapshot_at": 1793616482.665,
+              "snapshot_sha256": "348e50d5a26d03377d95d7142ae64f04cdd44a64174edf42bf3d45c297477b66",
+              "source_candidate_count": 6,
+              "visible_unselected_with_unusable_endpoints": 0
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "case_id": "grandcentral_boroughhall--lmm-alert-274536--1793621053693",
+      "classification": "UNKNOWN",
+      "corridor_id": "grandcentral_boroughhall",
+      "local_time": "2026-11-02T07:04:13.693000-05:00",
+      "purpose": "due_now_known_miss_then_recovery",
+      "routes": [
+        {
+          "execution_summary": {
+            "conditional_on_unverified_selected_wait": false,
+            "reason": null,
+            "status": "INFERRED",
+            "total_duration_seconds": 1681.3069999217987,
+            "trace_counters": {
+              "chosen_train_updates": 2,
+              "conditional_wait_intervals": 0,
+              "feed_updates": 4,
+              "known_missed_attempts": 1,
+              "selected_unknown": 0,
+              "unverified_selected_wait_intervals": 0
+            }
+          },
+          "execution_trace": [
+            {
+              "action": "SELECT",
+              "at": 1793621164.693,
+              "departure_forecast_at": 1793621131.0,
+              "event_key": "MTA_EVENT:numbered:20261102:5:037950_5..S40R",
+              "leg_index": 0,
+              "selection_reads_endpoint_labels": false,
+              "snapshot_at": 1793621160.635,
+              "snapshot_sha256": "012ba231bc32b67ab1cc6c4c80af6e51b684ce1840ff28cddd7159c991a9dc5e",
+              "source_at": 1793621155.0
+            },
+            {
+              "action": "MISSED_SELECTED_SERVICE",
+              "at": 1793621164.693,
+              "departure_at": 1793621131.0,
+              "event_key": "MTA_EVENT:numbered:20261102:5:037950_5..S40R",
+              "leg_index": 0,
+              "selection_uses_this_departure": false
+            },
+            {
+              "action": "RESELECT",
+              "at": 1793621220.455,
+              "departure_forecast_at": 1793621364.0,
+              "event_key": "MTA_EVENT:numbered:20261102:5:038850_5..S30R",
+              "leg_index": 0,
+              "selection_reads_endpoint_labels": false,
+              "snapshot_at": 1793621220.455,
+              "snapshot_sha256": "7e8c49a31c43a620d0868ee9bde3e8b55a119215e68100abc4c58894f0e4bdaf",
+              "source_at": 1793621215.0
+            },
+            {
+              "action": "KEEP",
+              "at": 1793621280.639,
+              "departure_forecast_at": 1793621364.0,
+              "event_key": "MTA_EVENT:numbered:20261102:5:038850_5..S30R",
+              "leg_index": 0,
+              "selection_reads_endpoint_labels": false,
+              "snapshot_at": 1793621280.639,
+              "snapshot_sha256": "df080e4978d530fd490941dadc3c2a66318a72781bf530399d6a63bae9232b7a",
+              "source_at": 1793621275.0
+            },
+            {
+              "action": "KEEP",
+              "at": 1793621340.478,
+              "departure_forecast_at": 1793621371.0,
+              "event_key": "MTA_EVENT:numbered:20261102:5:038850_5..S30R",
+              "leg_index": 0,
+              "selection_reads_endpoint_labels": false,
+              "snapshot_at": 1793621340.478,
+              "snapshot_sha256": "4abfcee89d72d0f477262364edbdd8321829ac3f4fbabf448a2858167803e0d5",
+              "source_at": 1793621335.0
+            },
+            {
+              "action": "BOARD",
+              "at": 1793621367.0,
+              "boarding_precedes_equal_time_feed_update": true,
+              "event_key": "MTA_EVENT:numbered:20261102:5:038850_5..S30R",
+              "leg_index": 0,
+              "outcome_quality": {
+                "distance_km": 6.696384701917123,
+                "duration_seconds": 1197.0,
+                "earth_radius_km": 6371.0088,
+                "flags": [],
+                "from_stop_id": "631S",
+                "implied_speed_kmh": 20.13950286290864,
+                "max_straight_line_speed_kmh": 300.0,
+                "raw_arrival_at": 1793622564.0,
+                "raw_departure_at": 1793621367.0,
+                "rule": "MAXIMUM_STRAIGHT_LINE_AVERAGE_SPEED",
+                "schema_version": "selected-route-outcome-sanity-v1",
+                "selection_affected": false,
+                "status": "PASSED",
+                "to_stop_id": "423S"
+              },
+              "selection_at": 1793621220.455,
+              "selection_snapshot_at": 1793621220.455
+            }
+          ],
+          "route_id": "google-route-54502e7253ac53a2be3cd264",
+          "route_name": "5: Grand Central-42 St to Borough Hall",
+          "selected_endpoint_evidence": [
+            {
+              "arrival_at": 1793622564.0,
+              "canonical_trip_id": "MTA_EVENT:numbered:20261102:5:038850_5..S30R",
+              "departure_at": 1793621367.0,
+              "endpoint_evidence": {
+                "alighting": [
+                  {
+                    "arrival_at": 1793622564,
+                    "canonical_event_trip_id": "MTA_EVENT:numbered:20261102:5:038850_5..S30R",
+                    "confirmation_status": "CONFIRMED",
+                    "confirmed_at": 1793622593.584,
+                    "feed_id": "numbered",
+                    "raw_trip_id": "038850_5..S30R",
+                    "route_id": "5",
+                    "service_date": "20261102",
+                    "stop_id": "423S",
+                    "stop_last_observed_at": 1793622583
+                  }
+                ],
+                "boarding": [
+                  {
+                    "canonical_event_trip_id": "MTA_EVENT:numbered:20261102:5:038850_5..S30R",
+                    "confirmation_status": "CONFIRMED",
+                    "confirmed_at": 1793621408.591,
+                    "departure_at": 1793621367,
+                    "feed_id": "numbered",
+                    "raw_trip_id": "038850_5..S30R",
+                    "route_id": "5",
+                    "service_date": "20261102",
+                    "stop_id": "631S",
+                    "stop_last_observed_at": 1793621398
+                  }
+                ]
+              },
+              "endpoint_flags": {
+                "alighting": [],
+                "boarding": []
+              }
+            }
+          ],
+          "source_trace_checks": [
+            {
+              "action": "SELECT",
+              "at": 1793621164.693,
+              "chosen_event_key": "MTA_EVENT:numbered:20261102:5:037950_5..S40R",
+              "due_now": true,
+              "eligible_candidate_count": 16,
+              "raw_departure_forecast_at": 1793621131.0,
+              "snapshot_at": 1793621160.635,
+              "snapshot_sha256": "012ba231bc32b67ab1cc6c4c80af6e51b684ce1840ff28cddd7159c991a9dc5e",
+              "source_candidate_count": 16,
+              "visible_unselected_with_unusable_endpoints": 0
+            },
+            {
+              "action": "RESELECT",
+              "at": 1793621220.455,
+              "chosen_event_key": "MTA_EVENT:numbered:20261102:5:038850_5..S30R",
+              "due_now": false,
+              "eligible_candidate_count": 15,
+              "raw_departure_forecast_at": 1793621364.0,
+              "snapshot_at": 1793621220.455,
+              "snapshot_sha256": "7e8c49a31c43a620d0868ee9bde3e8b55a119215e68100abc4c58894f0e4bdaf",
+              "source_candidate_count": 15,
+              "visible_unselected_with_unusable_endpoints": 0
+            },
+            {
+              "action": "KEEP",
+              "at": 1793621280.639,
+              "chosen_event_key": "MTA_EVENT:numbered:20261102:5:038850_5..S30R",
+              "due_now": false,
+              "eligible_candidate_count": 15,
+              "raw_departure_forecast_at": 1793621364.0,
+              "snapshot_at": 1793621280.639,
+              "snapshot_sha256": "df080e4978d530fd490941dadc3c2a66318a72781bf530399d6a63bae9232b7a",
+              "source_candidate_count": 15,
+              "visible_unselected_with_unusable_endpoints": 0
+            },
+            {
+              "action": "KEEP",
+              "at": 1793621340.478,
+              "chosen_event_key": "MTA_EVENT:numbered:20261102:5:038850_5..S30R",
+              "due_now": false,
+              "eligible_candidate_count": 16,
+              "raw_departure_forecast_at": 1793621371.0,
+              "snapshot_at": 1793621340.478,
+              "snapshot_sha256": "4abfcee89d72d0f477262364edbdd8321829ac3f4fbabf448a2858167803e0d5",
+              "source_candidate_count": 16,
+              "visible_unselected_with_unusable_endpoints": 0
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "case_id": "courtsquare_timessquare--lmm-alert-274534--1793622093585",
+      "classification": "UNKNOWN",
+      "corridor_id": "courtsquare_timessquare",
+      "local_time": "2026-11-02T07:21:33.585000-05:00",
+      "purpose": "selected_departure_unknown",
+      "routes": [
+        {
+          "execution_summary": {
+            "conditional_on_unverified_selected_wait": false,
+            "reason": "SELECTED_TRAIN_DEPARTURE_UNAVAILABLE",
+            "status": "UNAVAILABLE",
+            "total_duration_seconds": null,
+            "trace_counters": {
+              "chosen_train_updates": 1,
+              "conditional_wait_intervals": 0,
+              "feed_updates": 1,
+              "known_missed_attempts": 0,
+              "selected_unknown": 1,
+              "unverified_selected_wait_intervals": 0
+            }
+          },
+          "execution_trace": [
+            {
+              "action": "SELECT",
+              "at": 1793622263.585,
+              "departure_forecast_at": 1793618880.0,
+              "event_key": "MTA_EVENT:numbered:20261102:7:036550_7..S",
+              "leg_index": 0,
+              "selection_reads_endpoint_labels": false,
+              "snapshot_at": 1793622240.557,
+              "snapshot_sha256": "e0ff42e2dc32b082f7b6bbf783c9084d2d7c3290b54d330de1ad8e999e5aad80",
+              "source_at": 1793622235.0
+            },
+            {
+              "action": "UNVERIFIED_BOARDING_BOUNDARY",
+              "at": 1793622263.585,
+              "event_key": "MTA_EVENT:numbered:20261102:7:036550_7..S",
+              "forecast_departure_at": 1793622263.585,
+              "leg_index": 0
+            }
+          ],
+          "route_id": "google-route-9a6888e689fb501e230ccda5",
+          "route_name": "7: Court Sq to Times Sq-42 St",
+          "selected_endpoint_evidence": [
+            {
+              "arrival_at": null,
+              "canonical_trip_id": "MTA_EVENT:numbered:20261102:7:036550_7..S",
+              "departure_at": null,
+              "endpoint_evidence": {
+                "alighting": [
+                  {
+                    "arrival_at": null,
+                    "canonical_event_trip_id": "MTA_EVENT:numbered:20261102:7:036550_7..S",
+                    "confirmation_status": "UNVERIFIED",
+                    "confirmed_at": null,
+                    "feed_id": "numbered",
+                    "raw_trip_id": "036550_7..S",
+                    "route_id": "7",
+                    "service_date": "20261102",
+                    "stop_id": "725S",
+                    "stop_last_observed_at": null
+                  }
+                ],
+                "boarding": [
+                  {
+                    "canonical_event_trip_id": "MTA_EVENT:numbered:20261102:7:036550_7..S",
+                    "confirmation_status": "UNVERIFIED",
+                    "confirmed_at": null,
+                    "departure_at": null,
+                    "feed_id": "numbered",
+                    "raw_trip_id": "036550_7..S",
+                    "route_id": "7",
+                    "service_date": "20261102",
+                    "stop_id": "719S",
+                    "stop_last_observed_at": null
+                  }
+                ]
+              },
+              "endpoint_flags": {
+                "alighting": [
+                  "MISSING_CSV_ARRIVAL",
+                  "MISSING_CSV_LABEL",
+                  "MISSING_OR_INVALID_ARCHIVED_CONFIRMATION",
+                  "MISSING_OR_INVALID_ENDPOINT_OBSERVATION_AGE",
+                  "MISSING_OR_INVALID_ENDPOINT_TIME",
+                  "MISSING_STOP_PASSAGE_CONFIRMATION",
+                  "UNUSABLE_ENDPOINT_LABEL"
+                ],
+                "boarding": [
+                  "MISSING_CSV_DEPARTURE",
+                  "MISSING_CSV_LABEL",
+                  "MISSING_OR_INVALID_ARCHIVED_CONFIRMATION",
+                  "MISSING_OR_INVALID_ENDPOINT_OBSERVATION_AGE",
+                  "MISSING_OR_INVALID_ENDPOINT_TIME",
+                  "MISSING_STOP_PASSAGE_CONFIRMATION",
+                  "UNUSABLE_ENDPOINT_LABEL"
+                ]
+              }
+            }
+          ],
+          "source_trace_checks": [
+            {
+              "action": "SELECT",
+              "at": 1793622263.585,
+              "chosen_event_key": "MTA_EVENT:numbered:20261102:7:036550_7..S",
+              "due_now": true,
+              "eligible_candidate_count": 8,
+              "raw_departure_forecast_at": 1793618880.0,
+              "snapshot_at": 1793622240.557,
+              "snapshot_sha256": "e0ff42e2dc32b082f7b6bbf783c9084d2d7c3290b54d330de1ad8e999e5aad80",
+              "source_candidate_count": 12,
+              "visible_unselected_with_unusable_endpoints": 7
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "case_id": "courtsquare_timessquare--lmm-alert-274981--1793880473586",
+      "classification": "ACCEPTABLE_STAY",
+      "corridor_id": "courtsquare_timessquare",
+      "local_time": "2026-11-05T07:07:53.586000-05:00",
+      "purpose": "conditional_feed_reordering",
+      "routes": [
+        {
+          "execution_summary": {
+            "conditional_on_unverified_selected_wait": true,
+            "reason": null,
+            "status": "INFERRED",
+            "total_duration_seconds": 934.4140000343323,
+            "trace_counters": {
+              "chosen_train_updates": 2,
+              "conditional_wait_intervals": 1,
+              "feed_updates": 2,
+              "known_missed_attempts": 0,
+              "selected_unknown": 0,
+              "unverified_selected_wait_intervals": 1
+            }
+          },
+          "execution_trace": [
+            {
+              "action": "SELECT",
+              "at": 1793880643.586,
+              "departure_forecast_at": 1793880855.0,
+              "event_key": "MTA_EVENT:numbered:20261105:7:038450_7..S",
+              "leg_index": 0,
+              "selection_reads_endpoint_labels": false,
+              "snapshot_at": 1793880600.638,
+              "snapshot_sha256": "762c633079e221ed64f75790bd811a22af60dad7c87e08b1eab827d10ab6221e",
+              "source_at": 1793880595.0
+            },
+            {
+              "action": "CONDITIONAL_WAIT",
+              "assumption": "WAIT_BEFORE_VISIBLE_FORECAST_BOARDING_TIME",
+              "end_at": 1793880660.469,
+              "event_key": "MTA_EVENT:numbered:20261105:7:038450_7..S",
+              "forecast_departure_at": 1793880855.0,
+              "leg_index": 0,
+              "start_at": 1793880643.586
+            },
+            {
+              "action": "RESELECT",
+              "at": 1793880660.469,
+              "departure_forecast_at": 1793880693.0,
+              "event_key": "MTA_EVENT:numbered:20261105:7:042985_7..S",
+              "leg_index": 0,
+              "selection_reads_endpoint_labels": false,
+              "snapshot_at": 1793880660.469,
+              "snapshot_sha256": "8817b75f1ff597affacf6f755c1a6b07fa99d624707b1fbe79977ce5c7c834bc",
+              "source_at": 1793880655.0
+            },
+            {
+              "action": "BOARD",
+              "at": 1793880693.0,
+              "boarding_precedes_equal_time_feed_update": true,
+              "event_key": "MTA_EVENT:numbered:20261105:7:042985_7..S",
+              "leg_index": 0,
+              "outcome_quality": {
+                "distance_km": 3.6954403132609377,
+                "duration_seconds": 647.0,
+                "earth_radius_km": 6371.0088,
+                "flags": [],
+                "from_stop_id": "719S",
+                "implied_speed_kmh": 20.56195537517678,
+                "max_straight_line_speed_kmh": 300.0,
+                "raw_arrival_at": 1793881340.0,
+                "raw_departure_at": 1793880693.0,
+                "rule": "MAXIMUM_STRAIGHT_LINE_AVERAGE_SPEED",
+                "schema_version": "selected-route-outcome-sanity-v1",
+                "selection_affected": false,
+                "status": "PASSED",
+                "to_stop_id": "725S"
+              },
+              "selection_at": 1793880660.469,
+              "selection_snapshot_at": 1793880660.469
+            }
+          ],
+          "route_id": "google-route-9a6888e689fb501e230ccda5",
+          "route_name": "7: Court Sq to Times Sq-42 St",
+          "selected_endpoint_evidence": [
+            {
+              "arrival_at": 1793881340.0,
+              "canonical_trip_id": "MTA_EVENT:numbered:20261105:7:042985_7..S",
+              "departure_at": 1793880693.0,
+              "endpoint_evidence": {
+                "alighting": [
+                  {
+                    "arrival_at": 1793881340,
+                    "canonical_event_trip_id": "MTA_EVENT:numbered:20261105:7:042985_7..S",
+                    "confirmation_status": "CONFIRMED",
+                    "confirmed_at": 1793881438.579,
+                    "feed_id": "numbered",
+                    "raw_trip_id": "042985_7..S",
+                    "route_id": "7",
+                    "service_date": "20261105",
+                    "stop_id": "725S",
+                    "stop_last_observed_at": 1793881429
+                  }
+                ],
+                "boarding": [
+                  {
+                    "canonical_event_trip_id": "MTA_EVENT:numbered:20261105:7:042985_7..S",
+                    "confirmation_status": "CONFIRMED",
+                    "confirmed_at": 1793880728.575,
+                    "departure_at": 1793880693,
+                    "feed_id": "numbered",
+                    "raw_trip_id": "042985_7..S",
+                    "route_id": "7",
+                    "service_date": "20261105",
+                    "stop_id": "719S",
+                    "stop_last_observed_at": 1793880718
+                  }
+                ]
+              },
+              "endpoint_flags": {
+                "alighting": [],
+                "boarding": []
+              }
+            }
+          ],
+          "source_trace_checks": [
+            {
+              "action": "SELECT",
+              "at": 1793880643.586,
+              "chosen_event_key": "MTA_EVENT:numbered:20261105:7:038450_7..S",
+              "due_now": false,
+              "eligible_candidate_count": 9,
+              "raw_departure_forecast_at": 1793880855.0,
+              "snapshot_at": 1793880600.638,
+              "snapshot_sha256": "762c633079e221ed64f75790bd811a22af60dad7c87e08b1eab827d10ab6221e",
+              "source_candidate_count": 13,
+              "visible_unselected_with_unusable_endpoints": 6
+            },
+            {
+              "action": "RESELECT",
+              "at": 1793880660.469,
+              "chosen_event_key": "MTA_EVENT:numbered:20261105:7:042985_7..S",
+              "due_now": false,
+              "eligible_candidate_count": 10,
+              "raw_departure_forecast_at": 1793880693.0,
+              "snapshot_at": 1793880660.469,
+              "snapshot_sha256": "8817b75f1ff597affacf6f755c1a6b07fa99d624707b1fbe79977ce5c7c834bc",
+              "source_candidate_count": 14,
+              "visible_unselected_with_unusable_endpoints": 7
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "limitations": [
+    "Final MTA endpoint records are screened proxies, not independent passenger measurements.",
+    "The conditional example assumes waiting until a later visible feed before the unknown train forecast boundary; it does not prove that the first train had not physically departed.",
+    "The loss example audits its selected route execution; its alternative route is outside this six-route source review.",
+    "This checks the hash-bound immutable cache and its embedded endpoint evidence. It does not re-ingest raw GTFS-RT archives or rescan daily label files.",
+    "Purpose-selected examples demonstrate local consistency, not general performance or a fresh test set."
+  ],
+  "producer_hashes": {
+    "algo/scripts/evaluate_november_feed_replay.py": "c6529351c3c2f4c3d6f80de8d0ca61e44f68c7de42380a7c76262331f8caca8f",
+    "algo/stayorswitch/feed_execution.py": "472b95789b525c62d2c6f49a6ae36efb537f945d3bbb4def03ec87a27c0ced5f",
+    "data/feed_route_archive.py": "ca61d3f6fabb02fae22dd975dc15a1be6675027f650372e6702d5d450dede1fa",
+    "data/route_outcome_sanity.py": "6342b88b5807d38d64c63d243ad5277a2fd89466d61784b967e458b5497d99bf"
+  },
+  "quality_config_sha256": "6d1094983c9320159b39cda5d1f46da0448a6ed98f1660f3da958afcbe8018ee",
+  "route_count": 6,
+  "schema_version": "november-feed-replay-case-audit-v1",
+  "selected_events_with_endpoint_evidence_checked": 8,
+  "selection": "Five purpose-selected post-scoring cases, six route executions. Not an additional performance sample.",
+  "source_events_retained": 64,
+  "source_events_scanned": 48369,
+  "sources": {
+    "audit_script": {
+      "path": "algo/scripts/audit_november_feed_replay_cases.py",
+      "sha256": "b0fba48733ad799623416d09a20bdfb96519a0599bfd89f883feb591227d8037"
+    },
+    "immutable_source_cache": {
+      "path": "data/processed/november-repair-v2/route-events.json.gz",
+      "sha256": "8eca60cdc402a776d8989af685034ae5b61ec2f2e2f37932bf69b00e6a2f80bb"
+    },
+    "report": {
+      "path": "algo/reports/november-feed-replay-test.json",
+      "sha256": "5332da553a917b75697b93967362bbf0f8b595de00a8a3091457a269acb9379b"
+    },
+    "shared_route_execution": {
+      "path": "algo/local/november-feed-replay/shared-route-execution.json.gz",
+      "sha256": "bf651f2b50e752672a23df79863289fa412836a60d1d7b4bea20974522037e30"
+    }
+  },
+  "status": "PASS",
+  "total_checks": 361
+}

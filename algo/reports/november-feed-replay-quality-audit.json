@@ -1,0 +1,411 @@
+{
+  "affected_initial_leg_occurrences": [
+    {
+      "arrival_at": 1793638078.0,
+      "canonical_trip_id": "MTA_EVENT:nqrw:20261102:N:062400_N..S34R",
+      "case_id": "pilot_hayden_tandon--lmm-alert-274568--1793637550634",
+      "departure_at": 1793638071.0,
+      "duration_seconds": 7.0,
+      "from_stop_id": "R09S",
+      "implied_speed_kmh": 2069.357516672958,
+      "initial_status": "INFERRED",
+      "leg_index": 0,
+      "route_id": "research_n_r",
+      "straight_line_km": 4.023750726864085,
+      "to_stop_id": "R17S"
+    },
+    {
+      "arrival_at": 1793658098.0,
+      "canonical_trip_id": "MTA_EVENT:nqrw:20261102:N:096500_N..S34R",
+      "case_id": "pilot_hayden_tandon--lmm-alert-274604--1793657595560",
+      "departure_at": 1793658091.0,
+      "duration_seconds": 7.0,
+      "from_stop_id": "R09S",
+      "implied_speed_kmh": 2069.357516672958,
+      "initial_status": "UNAVAILABLE",
+      "leg_index": 0,
+      "route_id": "research_n_r",
+      "straight_line_km": 4.023750726864085,
+      "to_stop_id": "R17S"
+    },
+    {
+      "arrival_at": 1795008286.0,
+      "canonical_trip_id": "MTA_EVENT:ace:20261118:A:032500_A..S58R",
+      "case_id": "portauthority_tandon--lmm-alert-276905--1795007783577",
+      "departure_at": 1795008278.0,
+      "duration_seconds": 8.0,
+      "from_stop_id": "A27S",
+      "implied_speed_kmh": 3252.2212276926325,
+      "initial_status": "INFERRED",
+      "leg_index": 0,
+      "route_id": "google-derived-4a312d280a51df498129a03e",
+      "straight_line_km": 7.227158283761406,
+      "to_stop_id": "A41S"
+    },
+    {
+      "arrival_at": 1795008286.0,
+      "canonical_trip_id": "MTA_EVENT:ace:20261118:A:032500_A..S58R",
+      "case_id": "portauthority_tandon--lmm-alert-276905--1795008083577",
+      "departure_at": 1795008278.0,
+      "duration_seconds": 8.0,
+      "from_stop_id": "A27S",
+      "implied_speed_kmh": 3252.2212276926325,
+      "initial_status": "INFERRED",
+      "leg_index": 0,
+      "route_id": "google-derived-4a312d280a51df498129a03e",
+      "straight_line_km": 7.227158283761406,
+      "to_stop_id": "A41S"
+    },
+    {
+      "arrival_at": 1795010140.0,
+      "canonical_trip_id": "MTA_EVENT:ace:20261118:C:035883_C..S05R",
+      "case_id": "portauthority_tandon--lmm-alert-276905--1795008383577",
+      "departure_at": 1795010130.0,
+      "duration_seconds": 10.0,
+      "from_stop_id": "A27S",
+      "implied_speed_kmh": 2601.776982154106,
+      "initial_status": "INFERRED",
+      "leg_index": 0,
+      "route_id": "google-derived-9fab23eb821baf0cf1b650a3",
+      "straight_line_km": 7.227158283761406,
+      "to_stop_id": "A41S"
+    },
+    {
+      "arrival_at": 1795010140.0,
+      "canonical_trip_id": "MTA_EVENT:ace:20261118:C:035883_C..S05R",
+      "case_id": "portauthority_tandon--lmm-alert-276905--1795008683577",
+      "departure_at": 1795010130.0,
+      "duration_seconds": 10.0,
+      "from_stop_id": "A27S",
+      "implied_speed_kmh": 2601.776982154106,
+      "initial_status": "INFERRED",
+      "leg_index": 0,
+      "route_id": "google-derived-9fab23eb821baf0cf1b650a3",
+      "straight_line_km": 7.227158283761406,
+      "to_stop_id": "A41S"
+    },
+    {
+      "arrival_at": 1795010140.0,
+      "canonical_trip_id": "MTA_EVENT:ace:20261118:C:035883_C..S05R",
+      "case_id": "portauthority_tandon--lmm-alert-276905--1795008983577",
+      "departure_at": 1795010130.0,
+      "duration_seconds": 10.0,
+      "from_stop_id": "A27S",
+      "implied_speed_kmh": 2601.776982154106,
+      "initial_status": "INFERRED",
+      "leg_index": 0,
+      "route_id": "google-derived-9fab23eb821baf0cf1b650a3",
+      "straight_line_km": 7.227158283761406,
+      "to_stop_id": "A41S"
+    },
+    {
+      "arrival_at": 1795010140.0,
+      "canonical_trip_id": "MTA_EVENT:ace:20261118:C:035883_C..S05R",
+      "case_id": "portauthority_tandon--lmm-alert-276905--1795009283577",
+      "departure_at": 1795010130.0,
+      "duration_seconds": 10.0,
+      "from_stop_id": "A27S",
+      "implied_speed_kmh": 2601.776982154106,
+      "initial_status": "INFERRED",
+      "leg_index": 0,
+      "route_id": "google-derived-9fab23eb821baf0cf1b650a3",
+      "straight_line_km": 7.227158283761406,
+      "to_stop_id": "A41S"
+    },
+    {
+      "arrival_at": 1795010140.0,
+      "canonical_trip_id": "MTA_EVENT:ace:20261118:C:035883_C..S05R",
+      "case_id": "portauthority_tandon--lmm-alert-276905--1795009583577",
+      "departure_at": 1795010130.0,
+      "duration_seconds": 10.0,
+      "from_stop_id": "A27S",
+      "implied_speed_kmh": 2601.776982154106,
+      "initial_status": "INFERRED",
+      "leg_index": 0,
+      "route_id": "google-derived-9fab23eb821baf0cf1b650a3",
+      "straight_line_km": 7.227158283761406,
+      "to_stop_id": "A41S"
+    },
+    {
+      "arrival_at": 1795010140.0,
+      "canonical_trip_id": "MTA_EVENT:ace:20261118:C:035883_C..S05R",
+      "case_id": "portauthority_tandon--lmm-alert-276905--1795009883577",
+      "departure_at": 1795010130.0,
+      "duration_seconds": 10.0,
+      "from_stop_id": "A27S",
+      "implied_speed_kmh": 2601.776982154106,
+      "initial_status": "INFERRED",
+      "leg_index": 0,
+      "route_id": "google-derived-9fab23eb821baf0cf1b650a3",
+      "straight_line_km": 7.227158283761406,
+      "to_stop_id": "A41S"
+    },
+    {
+      "arrival_at": 1795022645.0,
+      "canonical_trip_id": "MTA_EVENT:nqrw:20261118:N:066500_N..S34R",
+      "case_id": "pilot_hayden_tandon--lmm-alert-276931--1795022147708",
+      "departure_at": 1795022638.0,
+      "duration_seconds": 7.0,
+      "from_stop_id": "R09S",
+      "implied_speed_kmh": 2069.357516672958,
+      "initial_status": "INFERRED",
+      "leg_index": 0,
+      "route_id": "research_n_r",
+      "straight_line_km": 4.023750726864085,
+      "to_stop_id": "R17S"
+    }
+  ],
+  "affected_route_outcomes": [
+    {
+      "case_id": "pilot_hayden_tandon--lmm-alert-274568--1793637550634",
+      "final_reason": "SELECTED_OUTCOME_IMPLAUSIBLE_TRAVEL_TIME",
+      "final_status": "UNAVAILABLE",
+      "implied_speed_kmh": 2069.357516672958,
+      "initial_status": "INFERRED",
+      "leg_index": 0,
+      "route_id": "research_n_r",
+      "selected_bad_train": "MTA_EVENT:nqrw:20261102:N:062400_N..S34R",
+      "unchanged_trace_prefix_actions": 4
+    },
+    {
+      "case_id": "pilot_hayden_tandon--lmm-alert-274604--1793657595560",
+      "final_reason": "SELECTED_OUTCOME_IMPLAUSIBLE_TRAVEL_TIME",
+      "final_status": "UNAVAILABLE",
+      "implied_speed_kmh": 2069.357516672958,
+      "initial_status": "UNAVAILABLE",
+      "leg_index": 0,
+      "route_id": "research_n_r",
+      "selected_bad_train": "MTA_EVENT:nqrw:20261102:N:096500_N..S34R",
+      "unchanged_trace_prefix_actions": 4
+    },
+    {
+      "case_id": "portauthority_tandon--lmm-alert-276905--1795007783577",
+      "final_reason": "SELECTED_OUTCOME_IMPLAUSIBLE_TRAVEL_TIME",
+      "final_status": "UNAVAILABLE",
+      "implied_speed_kmh": 3252.2212276926325,
+      "initial_status": "INFERRED",
+      "leg_index": 0,
+      "route_id": "google-derived-4a312d280a51df498129a03e",
+      "selected_bad_train": "MTA_EVENT:ace:20261118:A:032500_A..S58R",
+      "unchanged_trace_prefix_actions": 14
+    },
+    {
+      "case_id": "portauthority_tandon--lmm-alert-276905--1795008083577",
+      "final_reason": "SELECTED_OUTCOME_IMPLAUSIBLE_TRAVEL_TIME",
+      "final_status": "UNAVAILABLE",
+      "implied_speed_kmh": 3252.2212276926325,
+      "initial_status": "INFERRED",
+      "leg_index": 0,
+      "route_id": "google-derived-4a312d280a51df498129a03e",
+      "selected_bad_train": "MTA_EVENT:ace:20261118:A:032500_A..S58R",
+      "unchanged_trace_prefix_actions": 4
+    },
+    {
+      "case_id": "portauthority_tandon--lmm-alert-276905--1795008383577",
+      "final_reason": "SELECTED_OUTCOME_IMPLAUSIBLE_TRAVEL_TIME",
+      "final_status": "UNAVAILABLE",
+      "implied_speed_kmh": 2601.776982154106,
+      "initial_status": "INFERRED",
+      "leg_index": 0,
+      "route_id": "google-derived-9fab23eb821baf0cf1b650a3",
+      "selected_bad_train": "MTA_EVENT:ace:20261118:C:035883_C..S05R",
+      "unchanged_trace_prefix_actions": 29
+    },
+    {
+      "case_id": "portauthority_tandon--lmm-alert-276905--1795008683577",
+      "final_reason": "SELECTED_OUTCOME_IMPLAUSIBLE_TRAVEL_TIME",
+      "final_status": "UNAVAILABLE",
+      "implied_speed_kmh": 2601.776982154106,
+      "initial_status": "INFERRED",
+      "leg_index": 0,
+      "route_id": "google-derived-9fab23eb821baf0cf1b650a3",
+      "selected_bad_train": "MTA_EVENT:ace:20261118:C:035883_C..S05R",
+      "unchanged_trace_prefix_actions": 24
+    },
+    {
+      "case_id": "portauthority_tandon--lmm-alert-276905--1795008983577",
+      "final_reason": "SELECTED_OUTCOME_IMPLAUSIBLE_TRAVEL_TIME",
+      "final_status": "UNAVAILABLE",
+      "implied_speed_kmh": 2601.776982154106,
+      "initial_status": "INFERRED",
+      "leg_index": 0,
+      "route_id": "google-derived-9fab23eb821baf0cf1b650a3",
+      "selected_bad_train": "MTA_EVENT:ace:20261118:C:035883_C..S05R",
+      "unchanged_trace_prefix_actions": 19
+    },
+    {
+      "case_id": "portauthority_tandon--lmm-alert-276905--1795009283577",
+      "final_reason": "SELECTED_OUTCOME_IMPLAUSIBLE_TRAVEL_TIME",
+      "final_status": "UNAVAILABLE",
+      "implied_speed_kmh": 2601.776982154106,
+      "initial_status": "INFERRED",
+      "leg_index": 0,
+      "route_id": "google-derived-9fab23eb821baf0cf1b650a3",
+      "selected_bad_train": "MTA_EVENT:ace:20261118:C:035883_C..S05R",
+      "unchanged_trace_prefix_actions": 14
+    },
+    {
+      "case_id": "portauthority_tandon--lmm-alert-276905--1795009583577",
+      "final_reason": "SELECTED_OUTCOME_IMPLAUSIBLE_TRAVEL_TIME",
+      "final_status": "UNAVAILABLE",
+      "implied_speed_kmh": 2601.776982154106,
+      "initial_status": "INFERRED",
+      "leg_index": 0,
+      "route_id": "google-derived-9fab23eb821baf0cf1b650a3",
+      "selected_bad_train": "MTA_EVENT:ace:20261118:C:035883_C..S05R",
+      "unchanged_trace_prefix_actions": 9
+    },
+    {
+      "case_id": "portauthority_tandon--lmm-alert-276905--1795009883577",
+      "final_reason": "SELECTED_OUTCOME_IMPLAUSIBLE_TRAVEL_TIME",
+      "final_status": "UNAVAILABLE",
+      "implied_speed_kmh": 2601.776982154106,
+      "initial_status": "INFERRED",
+      "leg_index": 0,
+      "route_id": "google-derived-9fab23eb821baf0cf1b650a3",
+      "selected_bad_train": "MTA_EVENT:ace:20261118:C:035883_C..S05R",
+      "unchanged_trace_prefix_actions": 4
+    },
+    {
+      "case_id": "pilot_hayden_tandon--lmm-alert-276931--1795022147708",
+      "final_reason": "SELECTED_OUTCOME_IMPLAUSIBLE_TRAVEL_TIME",
+      "final_status": "UNAVAILABLE",
+      "implied_speed_kmh": 2069.357516672958,
+      "initial_status": "INFERRED",
+      "leg_index": 0,
+      "route_id": "research_n_r",
+      "selected_bad_train": "MTA_EVENT:nqrw:20261118:N:066500_N..S34R",
+      "unchanged_trace_prefix_actions": 4
+    }
+  ],
+  "checks": {
+    "additional_implausible_completed_leg_on_already_unknown_route": 1,
+    "all_eleven_affected_route_occurrences_stop_at_invalid_leg": 1,
+    "all_final_completed_and_inferred_legs_pass_independent_geometry": 12627,
+    "all_initial_completed_leg_inventory": 1,
+    "all_mode_advice_predictions_and_forecast_trains_unchanged": 2306,
+    "archived_official_coordinate_source_hash": 1,
+    "completed_leg_has_positive_duration": 25278,
+    "completed_leg_quality_flag_matches_geometry": 12627,
+    "coordinates_equal_archived_official_values": 22,
+    "corrected_shared_report_hash": 1,
+    "declared_post_selection_quality_ceiling": 1,
+    "declared_symmetric_outcome_only_scope": 1,
+    "final_archive_manifest_binding": 1,
+    "final_report_completion_hash": 1,
+    "four_unique_implausible_inferred_legs_ten_route_occurrences": 1,
+    "implausible_route_becomes_unknown": 11,
+    "independent_vector_geometry_matches_recorded_quality": 12627,
+    "initial_inferred_leg_inventory_matches_initial_scan": 1,
+    "leg_coordinate_coverage": 25278,
+    "no_later_transfer_execution_after_invalid_selected_arrival": 11,
+    "only_arrival_outcome_invalidated_not_boarding": 11,
+    "platform_station_identity": 22,
+    "preserved_initial_report_hash": 1,
+    "preserved_initial_shared_hash": 1,
+    "raw_endpoint_values_preserved": 12627,
+    "rejected_independent_geometry_matches_record": 11,
+    "rejected_quality_status_matches_geometry": 11,
+    "rejected_raw_endpoint_values_preserved": 11,
+    "route_templates_and_walking_unchanged": 1,
+    "same_bad_train_boarding_preserved": 11,
+    "same_case_cohort": 1,
+    "same_choice_and_boarding_trace_prefix_no_alternative_fallback": 11,
+    "same_inferred_exclusions_at_100_160_200_300_ceiling_sensitivity": 1,
+    "same_route_execution_query_set": 1,
+    "station_subset_config_hash": 1,
+    "unaffected_route_outcome_unchanged": 15192,
+    "unaffected_route_trace_identical_except_board_quality": 15192,
+    "unaffected_selected_train_endpoints_unchanged": 15192
+  },
+  "corrected": {
+    "affected_route_queries": 11,
+    "affected_unique_events": 5,
+    "completed_leg_queries": 12627,
+    "inferred_route_leg_queries": 11681,
+    "maximum_implied_speed_kmh": 58.135900522621355,
+    "previously_inferred_route_queries_now_unknown": 10,
+    "previously_unknown_routes_stopping_earlier": 1,
+    "route_queries": 15203,
+    "unique_completed_legs": 5634
+  },
+  "initial": {
+    "completed_leg_queries": 12640,
+    "completed_leg_threshold_exceedance_occurrences": {
+      "100": 11,
+      "160": 11,
+      "200": 11,
+      "300": 11
+    },
+    "inferred_route_leg_queries": 11693,
+    "inferred_route_threshold_exceedance_occurrences": {
+      "100": 10,
+      "160": 10,
+      "200": 10,
+      "300": 10
+    },
+    "maximum_implied_speed_kmh": 3252.2212276926325,
+    "route_queries": 15203,
+    "unique_completed_legs": 5639,
+    "unique_inferred_route_legs": 5491
+  },
+  "limitations": [
+    "The 300 km/h ceiling is a deliberately permissive design quality rule, not a measured subway operating-speed limit.",
+    "Passing this screen does not prove final MTA predictions equal actual passenger movement.",
+    "Initial November outcomes had already been examined; this is a post-hoc quality repair, not a new held-out evaluation.",
+    "Straight-line station distance is a lower bound on travel distance; track geometry and intermediate dwell times are not modeled."
+  ],
+  "producer_hashes": {
+    "algo/scripts/evaluate_november_feed_replay.py": "c6529351c3c2f4c3d6f80de8d0ca61e44f68c7de42380a7c76262331f8caca8f",
+    "algo/stayorswitch/feed_execution.py": "472b95789b525c62d2c6f49a6ae36efb537f945d3bbb4def03ec87a27c0ced5f",
+    "data/feed_route_archive.py": "ca61d3f6fabb02fae22dd975dc15a1be6675027f650372e6702d5d450dede1fa",
+    "data/route_outcome_sanity.py": "6342b88b5807d38d64c63d243ad5277a2fd89466d61784b967e458b5497d99bf"
+  },
+  "schema_version": "november-feed-replay-quality-independent-audit-v1",
+  "scope": "All initial and corrected route queries, all completed/inferred legs, all compact report advice; no raw trip archive re-ingestion.",
+  "sources": {
+    "audit_script": {
+      "path": "algo/scripts/audit_november_feed_replay_quality.py",
+      "sha256": "ab512ce1965472c0682bf7d0491ed636bbc2d9a1c0595f1796fdf5ebaf0cd8ae"
+    },
+    "final_archive_manifest": {
+      "path": "data/manifests/november-feed-route-archive-v3.json",
+      "sha256": "2d74fe28df24b09530ef259fde678a9456a66f03ff52833fafced108dfe6e642"
+    },
+    "final_report": {
+      "path": "algo/reports/november-feed-replay-test.json",
+      "sha256": "5332da553a917b75697b93967362bbf0f8b595de00a8a3091457a269acb9379b"
+    },
+    "final_shared": {
+      "path": "algo/local/november-feed-replay/shared-route-execution.json.gz",
+      "sha256": "bf651f2b50e752672a23df79863289fa412836a60d1d7b4bea20974522037e30"
+    },
+    "initial_report": {
+      "path": "algo/local/november-feed-replay/superseded/initial-v3/algo/reports/november-feed-replay-test.json",
+      "sha256": "492263df8563e4d1309e2855a3796665e64ad425187094f418fe0e923c8f1daf"
+    },
+    "initial_shared": {
+      "path": "algo/local/november-feed-replay/superseded/initial-v3/algo/local/november-feed-replay/shared-route-execution.json.gz",
+      "sha256": "168d44f19ee80854389986a637ad3f452e22af59a602622f98df3ab0a4823645"
+    },
+    "official_station_archive": {
+      "path": "data/local/google-corridors/2026-11-20-current/official-stations.json",
+      "sha256": "40f829816b08434dfd23ddd6e2b75a98ad7bd9bc2c00861c9a257726435cb0cb"
+    },
+    "preservation_manifest": {
+      "path": "algo/local/november-feed-replay/superseded/initial-v3/preservation-manifest.json",
+      "sha256": "35cf4954a7ac258d8ae54bcbb401ce5627b766c9a0995232b8175922a949777a"
+    },
+    "quality_config": {
+      "path": "data/config/november-feed-outcome-quality.json",
+      "sha256": "6d1094983c9320159b39cda5d1f46da0448a6ed98f1660f3da958afcbe8018ee"
+    },
+    "station_coordinates": {
+      "path": "data/manifests/november-feed-station-coordinates.json",
+      "sha256": "794f23d74b28aa95c6cc9c5142a8e3b198b37fe061bd47b60921b30fe647767b"
+    }
+  },
+  "status": "PASS",
+  "total_checks": 149096,
+  "unchanged_advice_case_count": 2306
+}

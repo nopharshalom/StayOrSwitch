@@ -1,0 +1,54 @@
+{
+  "counts": {
+    "full_feed_capture_count": 74015,
+    "indexed_observation_count": 3275620,
+    "leg_route_key_count": 25,
+    "source_event_count": 48369
+  },
+  "future_frames_remain_timestamped": true,
+  "geographic_screen_changes_candidate_views": false,
+  "membership_policy": "EXACT_LATEST_FULL_CAPTURE_ONLY",
+  "provenance": {
+    "outcome_quality": {
+      "config": {
+        "path": "data/config/november-feed-outcome-quality.json",
+        "sha256": "6d1094983c9320159b39cda5d1f46da0448a6ed98f1660f3da958afcbe8018ee"
+      },
+      "producer": {
+        "path": "data/route_outcome_sanity.py",
+        "sha256": "6342b88b5807d38d64c63d243ad5277a2fd89466d61784b967e458b5497d99bf"
+      },
+      "raw_official_source": {
+        "path": "data/local/google-corridors/2026-11-20-current/official-stations.json",
+        "received_at": "2026-11-20T15:56:24.154387Z",
+        "requested_at": "2026-11-20T15:56:23.901225Z",
+        "sha256": "40f829816b08434dfd23ddd6e2b75a98ad7bd9bc2c00861c9a257726435cb0cb",
+        "url": "https://data.ny.gov/resource/39hk-dx4f.json?$limit=5000"
+      },
+      "station_source": {
+        "path": "data/manifests/november-feed-station-coordinates.json",
+        "sha256": "794f23d74b28aa95c6cc9c5142a8e3b198b37fe061bd47b60921b30fe647767b"
+      }
+    },
+    "producer": {
+      "path": "data/feed_route_archive.py",
+      "sha256": "ca61d3f6fabb02fae22dd975dc15a1be6675027f650372e6702d5d450dede1fa"
+    },
+    "reuse_of_previously_verified_source_cache": true,
+    "source_archive": {
+      "path": "data/processed/november-repair-v2/route-events.json.gz",
+      "sha256": "8eca60cdc402a776d8989af685034ae5b61ec2f2e2f37932bf69b00e6a2f80bb"
+    },
+    "source_manifest": {
+      "path": "data/manifests/november-route-archive-v2.json",
+      "sha256": "06be8565e21bfa8a9fdda9896f2dab7d5d8d163cfe313cda98bdd38157de4269"
+    },
+    "source_schema_version": "route-execution-archive-v2"
+  },
+  "raw_endpoint_timestamps_retained": true,
+  "schema_version": "feed-following-route-archive-v3",
+  "selected_outcomes_receive_additional_geographic_screen": true,
+  "selection_filters_by_outcome_quality": false,
+  "selection_views_contain_final_endpoint_labels": false,
+  "source_endpoint_quality_unchanged": true
+}

@@ -75,6 +75,27 @@
   later. Do not call every such case an absent feed. Explicit cancellation or
   endpoint skipping before readiness may resolve a candidate, while omission,
   cancellation after readiness and later reactivation remain distinct.
+- The user subsequently rejected exhaustive first-actual-train ordering and
+  authorized a feed-following execution policy. This supersedes the prior
+  unselected-unknown veto only for the new version. Follow
+  `algo/docs/november-feed-replay-plan.md` and
+  `data/config/november-feed-replay-policy.json`. Reuse the exact boarding-safe
+  forecasts, model, cohort and margins; do not retrain or regenerate advice.
+  Choose from then-visible raw departure forecasts, revise choices only with
+  subsequent feed information, and validate the selected train's movement.
+  Missing final records for unselected trains must not block scoring. Preserve
+  selected-outcome unknowns and explicitly report forecast-conditioned waiting
+  before an unknown selected train's predicted boarding boundary. Fresh,
+  currently advertised expired departure ETAs are DUE_NOW in execution only;
+  they do not relax the 120-second planning gate. Prior reports and producers
+  remain immutable, and the comparison is still post-hoc on examined data.
+  Before publishing the first feed-following result, source inspection found
+  impossible collapsed stop-time sequences. Apply the post-selection outcome
+  screen in `algo/docs/november-feed-outcome-quality-addendum.md` uniformly:
+  reject selected leg outcomes exceeding a permissive 300 km/h straight-line
+  bound, retain the evidence, and never choose another train based on this
+  quality result. This is a disclosed post-score evidence correction, not a
+  change to advice or training. Preserve the initial v3 run separately.
 
 - StayOrSwitch is a decision companion, not a navigation app. External providers supply current/candidate itineraries; the teammate owns app UI and development.
 - Initial state: not boarded, leaving now. Pilot: Hayden LIC Apartments, 43-25 Hunter Street, Long Island City -> NYU Tandon, 6 MetroTech Center, Brooklyn.

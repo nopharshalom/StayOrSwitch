@@ -1,0 +1,151 @@
+{
+  "approved_route_source": {
+    "path": "algo/reports/november-repair-test.json",
+    "sha256": "ea85a20d63488f8480fee310d60e023c42a8f84dfac663a2d79ca317346ca822"
+  },
+  "coordinate_reference": "MTA station geographic coordinates; platform suffixes N/S share station coordinates",
+  "coordinates": {
+    "127S": {
+      "latitude": 40.75529,
+      "longitude": -73.987495,
+      "station_name": "Times Sq-42 St",
+      "station_stop_id": "127"
+    },
+    "232S": {
+      "latitude": 40.693219,
+      "longitude": -73.989998,
+      "station_name": "Borough Hall",
+      "station_stop_id": "232"
+    },
+    "423S": {
+      "latitude": 40.692404,
+      "longitude": -73.990151,
+      "station_name": "Borough Hall",
+      "station_stop_id": "423"
+    },
+    "631S": {
+      "latitude": 40.751776,
+      "longitude": -73.976848,
+      "station_name": "Grand Central-42 St",
+      "station_stop_id": "631"
+    },
+    "635S": {
+      "latitude": 40.734673,
+      "longitude": -73.989951,
+      "station_name": "14 St-Union Sq",
+      "station_stop_id": "635"
+    },
+    "719S": {
+      "latitude": 40.747023,
+      "longitude": -73.945264,
+      "station_name": "Court Sq",
+      "station_stop_id": "719"
+    },
+    "723S": {
+      "latitude": 40.751431,
+      "longitude": -73.976041,
+      "station_name": "Grand Central-42 St",
+      "station_stop_id": "723"
+    },
+    "724S": {
+      "latitude": 40.753821,
+      "longitude": -73.981963,
+      "station_name": "5 Av",
+      "station_stop_id": "724"
+    },
+    "725S": {
+      "latitude": 40.755477,
+      "longitude": -73.987691,
+      "station_name": "Times Sq-42 St",
+      "station_stop_id": "725"
+    },
+    "A27S": {
+      "latitude": 40.757308,
+      "longitude": -73.989735,
+      "station_name": "42 St-Port Authority Bus Terminal",
+      "station_stop_id": "A27"
+    },
+    "A41S": {
+      "latitude": 40.692338,
+      "longitude": -73.987342,
+      "station_name": "Jay St-MetroTech",
+      "station_stop_id": "A41"
+    },
+    "A42S": {
+      "latitude": 40.688484,
+      "longitude": -73.985001,
+      "station_name": "Hoyt-Schermerhorn Sts",
+      "station_stop_id": "A42"
+    },
+    "D16S": {
+      "latitude": 40.754222,
+      "longitude": -73.984569,
+      "station_name": "42 St-Bryant Pk",
+      "station_stop_id": "D16"
+    },
+    "F09S": {
+      "latitude": 40.747846,
+      "longitude": -73.946,
+      "station_name": "Court Sq-23 St",
+      "station_stop_id": "F09"
+    },
+    "G21S": {
+      "latitude": 40.748973,
+      "longitude": -73.937243,
+      "station_name": "Queens Plaza",
+      "station_stop_id": "G21"
+    },
+    "G22S": {
+      "latitude": 40.746554,
+      "longitude": -73.943832,
+      "station_name": "Court Sq",
+      "station_stop_id": "G22"
+    },
+    "R09S": {
+      "latitude": 40.750582,
+      "longitude": -73.940202,
+      "station_name": "Queensboro Plaza",
+      "station_stop_id": "R09"
+    },
+    "R16S": {
+      "latitude": 40.754672,
+      "longitude": -73.986754,
+      "station_name": "Times Sq-42 St",
+      "station_stop_id": "R16"
+    },
+    "R17S": {
+      "latitude": 40.749567,
+      "longitude": -73.98795,
+      "station_name": "34 St-Herald Sq",
+      "station_stop_id": "R17"
+    },
+    "R20S": {
+      "latitude": 40.735736,
+      "longitude": -73.990568,
+      "station_name": "14 St-Union Sq",
+      "station_stop_id": "R20"
+    },
+    "R28S": {
+      "latitude": 40.6941,
+      "longitude": -73.991777,
+      "station_name": "Court St",
+      "station_stop_id": "R28"
+    },
+    "R29S": {
+      "latitude": 40.69218,
+      "longitude": -73.985942,
+      "station_name": "Jay St-MetroTech",
+      "station_stop_id": "R29"
+    }
+  },
+  "raw_official_source": {
+    "path": "data/local/google-corridors/2026-11-20-current/official-stations.json",
+    "received_at": "2026-11-20T15:56:24.154387Z",
+    "requested_at": "2026-11-20T15:56:23.901225Z",
+    "sha256": "40f829816b08434dfd23ddd6e2b75a98ad7bd9bc2c00861c9a257726435cb0cb",
+    "url": "https://data.ny.gov/resource/39hk-dx4f.json?$limit=5000"
+  },
+  "schema_version": "approved-route-station-coordinates-v1",
+  "scope": "Endpoints of every approved five-corridor route template; selection independent of replay outcomes",
+  "station_count": 22
+}

@@ -1,5 +1,19 @@
 # Historical ETA Delay and Severe-Incident Decisions
 
+The current evaluation uses a [feed-following passenger policy](docs/november-feed-replay-plan.md):
+select from the feed available at each historical time, update only as new
+feed information arrives, and validate the train ultimately selected for
+boarding. Unselected missing outcomes no longer create a global ordering veto.
+The [new results](reports/november-feed-replay-test.md) reuse the exact existing
+predictions, model, 2,306 cases and 197 representatives. Conditional waiting
+before an uncertain intended train's forecast boarding time is reported
+explicitly. The prior strict executor and its reports are preserved below.
+Read the [findings](reports/november-feed-replay-findings.md) and
+[outcome-quality addendum](docs/november-feed-outcome-quality-addendum.md)
+alongside the counts. The selected train's inferred travel time must pass a
+permissive geographic sanity screen; unusable outcomes remain unknown without
+an outcome-based fallback to another train.
+
 The latest prediction entrypoint is documented in the
 [boarding-safe handoff](docs/boarding-safe-handoff.md). It keeps historical ETA
 correction but uses an independent conservative boarding gate, including
@@ -7,7 +21,7 @@ transfer readiness and a configurable margin. The default is 120 seconds;
 the margin is not an added travel-time penalty. The earlier `run_severe.py`
 and all frozen experiment producers remain unchanged.
 
-The [repair protocol](docs/november-repair-plan.md) evaluates the same 2,306
+The preceding [repair protocol](docs/november-repair-plan.md) evaluates the same 2,306
 November weekday cases with a first-compatible-train route executor. Both old
 and new recommendations use the same executor; initial boarding failures and
 eventual route travel-time savings remain separate. This is a post-hoc repair

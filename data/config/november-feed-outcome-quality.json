@@ -1,0 +1,19 @@
+{
+  "applies_to_all_routes_modes_and_comparison_signs": true,
+  "changes_forecasts_or_candidate_selection": false,
+  "earth_radius_km": 6371.0088,
+  "flag_endpoint": "alighting",
+  "implausible_flag": "IMPLAUSIBLE_LEG_TRAVEL_TIME",
+  "max_straight_line_speed_kmh": 300.0,
+  "missing_coordinates_flag": "MISSING_OUTCOME_STATION_COORDINATES",
+  "missing_coordinates_policy": "UNKNOWN_FOR_OTHERWISE_COMPLETE_ENDPOINT_PAIR",
+  "retain_raw_endpoint_values": true,
+  "rule": "MAXIMUM_STRAIGHT_LINE_AVERAGE_SPEED",
+  "schema_version": "feed-following-outcome-quality-v1",
+  "scope": "POST_SELECTION_SELECTED_TRAIN_OUTCOME_ONLY",
+  "station_source": {
+    "path": "data/manifests/november-feed-station-coordinates.json",
+    "sha256": "794f23d74b28aa95c6cc9c5142a8e3b198b37fe061bd47b60921b30fe647767b"
+  },
+  "threshold_interpretation": "Deliberately permissive design quality-control ceiling; not a claim about subway operating speed or calibrated model accuracy"
+}
