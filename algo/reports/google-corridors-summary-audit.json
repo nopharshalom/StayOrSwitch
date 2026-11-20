@@ -1,0 +1,2015 @@
+{
+  "all_manual_severe_checkpoints": [
+    {
+      "case_id": "grandcentral_boroughhall--lmm-alert-273799--1793187260634",
+      "corridor_id": "grandcentral_boroughhall",
+      "header": [
+        "No [4][5][6] trains service in both directions between Atlantic Av-Barclays Ctr/Brooklyn Bridge-City Hall and Grand Central-42 St."
+      ],
+      "impact_kind": "NO_SERVICE_OR_REROUTE",
+      "incident_ids": [
+        "lmm:alert:273799"
+      ],
+      "local_time": "2026-10-28T07:34:20.634000-04:00",
+      "modes": {
+        "incident_profile": {
+          "action": "SWITCH",
+          "forecast_best_alternative": {
+            "name": "4: Grand Central-42 St to Borough Hall",
+            "outcome": {
+              "reason": "MISSING_OR_UNUSABLE_ENDPOINT_LABEL",
+              "status": "UNAVAILABLE"
+            },
+            "predicted_seconds": 1764.5238947868347
+          },
+          "gain_vs_same_cutoff_fastest_raw_mta_seconds": null,
+          "recommended_itinerary_id": "google-route-fae079d4a0a7051e64aa1cda",
+          "same_station_path_switch": true,
+          "stay": {
+            "name": "5: Grand Central-42 St to Borough Hall",
+            "outcome": {
+              "reason": "MISSING_OR_UNUSABLE_ENDPOINT_LABEL",
+              "status": "UNAVAILABLE"
+            },
+            "predicted_seconds": 2457.745310306549
+          },
+          "switch_saving_seconds": null
+        },
+        "mta": {
+          "action": "SWITCH",
+          "forecast_best_alternative": {
+            "name": "4: Grand Central-42 St to Borough Hall",
+            "outcome": {
+              "reason": "MISSING_OR_UNUSABLE_ENDPOINT_LABEL",
+              "status": "UNAVAILABLE"
+            },
+            "predicted_seconds": 1499.3659999370575
+          },
+          "gain_vs_same_cutoff_fastest_raw_mta_seconds": null,
+          "recommended_itinerary_id": "google-route-fae079d4a0a7051e64aa1cda",
+          "same_station_path_switch": true,
+          "stay": {
+            "name": "5: Grand Central-42 St to Borough Hall",
+            "outcome": {
+              "reason": "MISSING_OR_UNUSABLE_ENDPOINT_LABEL",
+              "status": "UNAVAILABLE"
+            },
+            "predicted_seconds": 2304.3659999370575
+          },
+          "switch_saving_seconds": null
+        }
+      },
+      "primary": false
+    },
+    {
+      "case_id": "courtsquare_timessquare--lmm-alert-274118--1793359155544",
+      "corridor_id": "courtsquare_timessquare",
+      "header": [
+        "[7][7X] trains are running with severe delays in both directions after NYPD removed an unauthorized person from the tracks near 46 St-Bliss St."
+      ],
+      "impact_kind": "EXPLICIT_SEVERE_DELAYS",
+      "incident_ids": [
+        "lmm:alert:274118"
+      ],
+      "local_time": "2026-10-30T07:19:15.544000-04:00",
+      "modes": {
+        "incident_profile": {
+          "action": "STAY",
+          "forecast_best_alternative": {
+            "name": "E: Court Sq-23 St to 42 St-Port Authority Bus Terminal",
+            "outcome": {
+              "status": "INFERRED",
+              "total_duration_seconds": 1357.4560000896454
+            },
+            "predicted_seconds": 1278.2287273406982
+          },
+          "gain_vs_same_cutoff_fastest_raw_mta_seconds": null,
+          "recommended_itinerary_id": "google-route-9a6888e689fb501e230ccda5",
+          "same_station_path_switch": false,
+          "stay": {
+            "name": "7: Court Sq to Times Sq-42 St",
+            "outcome": {
+              "reason": "MISSING_OR_UNUSABLE_ENDPOINT_LABEL",
+              "status": "UNAVAILABLE"
+            },
+            "predicted_seconds": 960.3031761646271
+          },
+          "switch_saving_seconds": null
+        },
+        "mta": {
+          "action": "STAY",
+          "forecast_best_alternative": {
+            "name": "F: Court Sq-23 St to 42 St-Bryant Pk",
+            "outcome": {
+              "reason": "MISSING_OR_UNUSABLE_ENDPOINT_LABEL",
+              "status": "UNAVAILABLE"
+            },
+            "predicted_seconds": 1154.4560000896454
+          },
+          "gain_vs_same_cutoff_fastest_raw_mta_seconds": null,
+          "recommended_itinerary_id": "google-route-9a6888e689fb501e230ccda5",
+          "same_station_path_switch": false,
+          "stay": {
+            "name": "7: Court Sq to Times Sq-42 St",
+            "outcome": {
+              "reason": "MISSING_OR_UNUSABLE_ENDPOINT_LABEL",
+              "status": "UNAVAILABLE"
+            },
+            "predicted_seconds": 926.4560000896454
+          },
+          "switch_saving_seconds": null
+        }
+      },
+      "primary": false
+    },
+    {
+      "case_id": "courtsquare_timessquare--lmm-alert-274118--1793359395635",
+      "corridor_id": "courtsquare_timessquare",
+      "header": [
+        "[7][7X] trains are running with severe delays in both directions after NYPD removed an unauthorized person from the tracks near 46 St-Bliss St."
+      ],
+      "impact_kind": "EXPLICIT_SEVERE_DELAYS",
+      "incident_ids": [
+        "lmm:alert:274118"
+      ],
+      "local_time": "2026-10-30T07:23:15.635000-04:00",
+      "modes": {
+        "incident_profile": {
+          "action": "STAY",
+          "forecast_best_alternative": {
+            "name": "E: Court Sq-23 St to 42 St-Port Authority Bus Terminal",
+            "outcome": {
+              "reason": "INFERRED_DEPARTURE_BEFORE_PLATFORM_READY",
+              "status": "MISSED_SELECTED_TRAIN"
+            },
+            "predicted_seconds": 1188.3192856311798
+          },
+          "gain_vs_same_cutoff_fastest_raw_mta_seconds": 0.0,
+          "recommended_itinerary_id": "google-route-9a6888e689fb501e230ccda5",
+          "same_station_path_switch": false,
+          "stay": {
+            "name": "7: Court Sq to Times Sq-42 St",
+            "outcome": {
+              "status": "INFERRED",
+              "total_duration_seconds": 879.3650000095367
+            },
+            "predicted_seconds": 900.2121760845184
+          },
+          "switch_saving_seconds": 0.0
+        },
+        "mta": {
+          "action": "STAY",
+          "forecast_best_alternative": {
+            "name": "F: Court Sq-23 St to 42 St-Bryant Pk",
+            "outcome": {
+              "status": "INFERRED",
+              "total_duration_seconds": 1439.3650000095367
+            },
+            "predicted_seconds": 1374.3650000095367
+          },
+          "gain_vs_same_cutoff_fastest_raw_mta_seconds": 0.0,
+          "recommended_itinerary_id": "google-route-9a6888e689fb501e230ccda5",
+          "same_station_path_switch": false,
+          "stay": {
+            "name": "7: Court Sq to Times Sq-42 St",
+            "outcome": {
+              "status": "INFERRED",
+              "total_duration_seconds": 879.3650000095367
+            },
+            "predicted_seconds": 866.3650000095367
+          },
+          "switch_saving_seconds": 0.0
+        }
+      },
+      "primary": false
+    },
+    {
+      "case_id": "courtsquare_timessquare--lmm-alert-274118--1793360183617",
+      "corridor_id": "courtsquare_timessquare",
+      "header": [
+        "[7][7X] trains are running with severe delays in both directions after NYPD removed an unauthorized person from the tracks near 46 St-Bliss St."
+      ],
+      "impact_kind": "EXPLICIT_SEVERE_DELAYS",
+      "incident_ids": [
+        "lmm:alert:274118"
+      ],
+      "local_time": "2026-10-30T07:36:23.617000-04:00",
+      "modes": {
+        "incident_profile": {
+          "action": "UNDETERMINED",
+          "forecast_best_alternative": {
+            "name": "F: Court Sq-23 St to 42 St-Bryant Pk",
+            "outcome": {
+              "reason": "INFERRED_DEPARTURE_BEFORE_PLATFORM_READY",
+              "status": "MISSED_SELECTED_TRAIN"
+            },
+            "predicted_seconds": 891.3829998970032
+          },
+          "gain_vs_same_cutoff_fastest_raw_mta_seconds": null,
+          "recommended_itinerary_id": null,
+          "same_station_path_switch": false,
+          "stay": {
+            "name": "7: Court Sq to Times Sq-42 St",
+            "outcome": {
+              "status": "INFERRED",
+              "total_duration_seconds": 928.3829998970032
+            },
+            "predicted_seconds": 913.2301759719849
+          },
+          "switch_saving_seconds": null
+        },
+        "mta": {
+          "action": "UNDETERMINED",
+          "forecast_best_alternative": {
+            "name": "E: Court Sq-23 St to 42 St-Port Authority Bus Terminal",
+            "outcome": {
+              "reason": "MISSING_OR_UNUSABLE_ENDPOINT_LABEL",
+              "status": "UNAVAILABLE"
+            },
+            "predicted_seconds": 1185.3829998970032
+          },
+          "gain_vs_same_cutoff_fastest_raw_mta_seconds": null,
+          "recommended_itinerary_id": null,
+          "same_station_path_switch": false,
+          "stay": {
+            "name": "7: Court Sq to Times Sq-42 St",
+            "outcome": {
+              "status": "INFERRED",
+              "total_duration_seconds": 928.3829998970032
+            },
+            "predicted_seconds": 879.3829998970032
+          },
+          "switch_saving_seconds": null
+        }
+      },
+      "primary": false
+    }
+  ],
+  "assertions_by_kind": {
+    "abstention_not_scored_as_gain": 1165,
+    "all_frozen_confirmed_cases_scored": 1,
+    "corridor_primary_ids": 3,
+    "counterfactual_is_forecast_best_not_hindsight": 966,
+    "excluded_cases_not_scored": 1,
+    "forecast_best_counterfactual_arithmetic": 966,
+    "literal_severe_tag_has_matching_wording": 3,
+    "no_service_tag_distinct_from_literal_severe": 1,
+    "primary_is_confirmed_subset": 1,
+    "same_station_path_matches_template_endpoints": 322,
+    "selection_remains_input_only": 322,
+    "summary_actions": 120,
+    "summary_case_denominator": 20,
+    "summary_comparable_switch_denominator": 120,
+    "summary_counterfactual_distinct_from_advice": 60,
+    "summary_incident_denominator": 20,
+    "summary_manual_impact_counts": 20,
+    "summary_path_relation_split": 240,
+    "summary_switch_denominator": 120,
+    "summary_switch_outcome_classes": 360,
+    "summary_unknown_switch_denominator": 120,
+    "switch_classification_independent_threshold": 313,
+    "switch_gain_from_fixed_stay_and_recommended_outcomes": 313,
+    "tracked_report_complete_case_ids": 1,
+    "unique_scored_case_ids": 1
+  },
+  "assertions_passed": 5579,
+  "audit_scope": "Independent report denominator, path relation, fixed-Stay outcome savings aggregation, forecast-best alternative separation, and severe wording audit. Underlying endpoint labels are audited separately. No source or producer files were modified.",
+  "example_selection_policy": "For each corridor, earliest comparable model Switch primary case if one exists; otherwise earliest comparable model Switch checkpoint. Examples are post-score illustrations, not the predeclared primary cohort and not independent evidence counts.",
+  "examples": [
+    {
+      "case_id": "pilot_hayden_tandon--lmm-alert-273920--1793237265542",
+      "corridor_id": "pilot_hayden_tandon",
+      "header": [
+        "Coney Island-bound [F] trains are running with delays after we moved a train that had its brakes activated at Avenue X."
+      ],
+      "impact_kind": "ORDINARY_SERVICE_DISRUPTION",
+      "incident_ids": [
+        "lmm:alert:273920"
+      ],
+      "local_time": "2026-10-28T21:27:45.542000-04:00",
+      "modes": {
+        "incident_profile": {
+          "action": "SWITCH",
+          "forecast_best_alternative": {
+            "name": "G: Court Sq to Hoyt-Schermerhorn Sts",
+            "outcome": {
+              "status": "INFERRED",
+              "total_duration_seconds": 2308.457999944687
+            },
+            "predicted_seconds": 2278.11745929718
+          },
+          "gain_vs_same_cutoff_fastest_raw_mta_seconds": 0.0,
+          "recommended_itinerary_id": "google-route-88aa6b135b2fe15e2cd08a95",
+          "same_station_path_switch": false,
+          "stay": {
+            "name": "F: Court Sq-23 St to Jay St-MetroTech",
+            "outcome": {
+              "status": "INFERRED",
+              "total_duration_seconds": 3723.457999944687
+            },
+            "predicted_seconds": 3559.5927517414093
+          },
+          "switch_saving_seconds": 1415.0
+        },
+        "mta": {
+          "action": "SWITCH",
+          "forecast_best_alternative": {
+            "name": "G: Court Sq to Hoyt-Schermerhorn Sts",
+            "outcome": {
+              "status": "INFERRED",
+              "total_duration_seconds": 2308.457999944687
+            },
+            "predicted_seconds": 2143.457999944687
+          },
+          "gain_vs_same_cutoff_fastest_raw_mta_seconds": 0.0,
+          "recommended_itinerary_id": "google-route-88aa6b135b2fe15e2cd08a95",
+          "same_station_path_switch": false,
+          "stay": {
+            "name": "F: Court Sq-23 St to Jay St-MetroTech",
+            "outcome": {
+              "status": "INFERRED",
+              "total_duration_seconds": 3723.457999944687
+            },
+            "predicted_seconds": 3203.457999944687
+          },
+          "switch_saving_seconds": 1415.0
+        }
+      },
+      "primary": true
+    },
+    {
+      "case_id": "grandcentral_boroughhall--lmm-alert-273523--1793023468593",
+      "corridor_id": "grandcentral_boroughhall",
+      "header": [
+        "Downtown [4][5][6] trains are running with delays after we requested EMS assistance for someone on a train at Brooklyn Bridge-City Hall."
+      ],
+      "impact_kind": "ORDINARY_SERVICE_DISRUPTION",
+      "incident_ids": [
+        "lmm:alert:273523"
+      ],
+      "local_time": "2026-10-26T10:04:28.593000-04:00",
+      "modes": {
+        "incident_profile": {
+          "action": "SWITCH",
+          "forecast_best_alternative": {
+            "name": "4: Grand Central-42 St to Borough Hall",
+            "outcome": {
+              "status": "INFERRED",
+              "total_duration_seconds": 1319.4070000648499
+            },
+            "predicted_seconds": 1516.8876867294312
+          },
+          "gain_vs_same_cutoff_fastest_raw_mta_seconds": 0.0,
+          "recommended_itinerary_id": "google-route-fae079d4a0a7051e64aa1cda",
+          "same_station_path_switch": true,
+          "stay": {
+            "name": "5: Grand Central-42 St to Borough Hall",
+            "outcome": {
+              "status": "INFERRED",
+              "total_duration_seconds": 1758.4070000648499
+            },
+            "predicted_seconds": 1822.525518655777
+          },
+          "switch_saving_seconds": 439.0
+        },
+        "mta": {
+          "action": "SWITCH",
+          "forecast_best_alternative": {
+            "name": "4: Grand Central-42 St to Borough Hall",
+            "outcome": {
+              "status": "INFERRED",
+              "total_duration_seconds": 1319.4070000648499
+            },
+            "predicted_seconds": 1461.4070000648499
+          },
+          "gain_vs_same_cutoff_fastest_raw_mta_seconds": 0.0,
+          "recommended_itinerary_id": "google-route-fae079d4a0a7051e64aa1cda",
+          "same_station_path_switch": true,
+          "stay": {
+            "name": "5: Grand Central-42 St to Borough Hall",
+            "outcome": {
+              "status": "INFERRED",
+              "total_duration_seconds": 1758.4070000648499
+            },
+            "predicted_seconds": 1833.4070000648499
+          },
+          "switch_saving_seconds": 439.0
+        }
+      },
+      "primary": false
+    },
+    {
+      "case_id": "courtsquare_timessquare--lmm-alert-274118--1793353883617",
+      "corridor_id": "courtsquare_timessquare",
+      "header": [
+        "34 St-Hudson Yards-bound [7] trains are delayed while we investigate a report of an unauthorized person on the tracks at 46 St-Bliss St."
+      ],
+      "impact_kind": "ORDINARY_SERVICE_DISRUPTION",
+      "incident_ids": [
+        "lmm:alert:274118"
+      ],
+      "local_time": "2026-10-30T05:51:23.617000-04:00",
+      "modes": {
+        "incident_profile": {
+          "action": "SWITCH",
+          "forecast_best_alternative": {
+            "name": "F: Court Sq-23 St to 42 St-Bryant Pk",
+            "outcome": {
+              "status": "INFERRED",
+              "total_duration_seconds": 1421.3829998970032
+            },
+            "predicted_seconds": 913.3829998970032
+          },
+          "gain_vs_same_cutoff_fastest_raw_mta_seconds": -27.0,
+          "recommended_itinerary_id": "google-route-59e8e3290ecae4779e70fb80",
+          "same_station_path_switch": false,
+          "stay": {
+            "name": "7: Court Sq to Times Sq-42 St",
+            "outcome": {
+              "status": "INFERRED",
+              "total_duration_seconds": 6391.382999897003
+            },
+            "predicted_seconds": 1402.9040083885193
+          },
+          "switch_saving_seconds": 4970.0
+        },
+        "mta": {
+          "action": "STAY",
+          "forecast_best_alternative": {
+            "name": "E: Court Sq-23 St to 42 St-Port Authority Bus Terminal",
+            "outcome": {
+              "status": "INFERRED",
+              "total_duration_seconds": 1394.3829998970032
+            },
+            "predicted_seconds": 1261.3829998970032
+          },
+          "gain_vs_same_cutoff_fastest_raw_mta_seconds": -4997.0,
+          "recommended_itinerary_id": "google-route-9a6888e689fb501e230ccda5",
+          "same_station_path_switch": false,
+          "stay": {
+            "name": "7: Court Sq to Times Sq-42 St",
+            "outcome": {
+              "status": "INFERRED",
+              "total_duration_seconds": 6391.382999897003
+            },
+            "predicted_seconds": 1336.3829998970032
+          },
+          "switch_saving_seconds": 0.0
+        }
+      },
+      "primary": false
+    }
+  ],
+  "interpretation_limits": [
+    "All 49 primary events have ordinary service-problem wording; four manually severe checkpoints are later repeated observations from two events. Three are literal severe-delay notices and one is a no-service/reroute notice.",
+    "The primary incident-profile result is four Switch recommendations, with one comparable meaningful gain and three unknowns. A one-of-one scorable gain is not a general success-rate estimate.",
+    "Across all 322 correlated checkpoints, incident-profile strict advice has 44 Switch recommendations: 15 comparable outcomes (11 gains and four practical ties), plus 29 unknowns. Repeated checkpoints are not independent trials.",
+    "All four comparable Grand Central model Switch gains are 5-to-4 substitutions between the same boarding and alighting stations. Six different-path Switch recommendations in that corridor have unknown outcomes.",
+    "The pilot primary positive is also selected by raw MTA and saves the same 1415 seconds; it does not establish improvement from the historical correction.",
+    "Court Square 05:51 ordinary-disruption illustration has 4970 seconds proxy savings for model-selected F versus fixed 7 Stay. Raw-MTA threshold advice stays, but raw-MTA fastest available route is E and is 27 seconds faster than the model F proxy; distinguish the threshold-policy effect from selecting the globally best route.",
+    "No literal severe-delay checkpoint contains a quantifiably successful Switch. The no-service/reroute checkpoint recommends same-path 4 over 5 but both endpoint outcomes are unavailable and both lines are named in the raw alert; this is not evidence of a safe or beneficial severe reroute.",
+    "Current Google route paths are fixed reference paths. Present-day Google minutes are not historical outcomes. All outcome durations are screened final-MTA proxies plus fixed walking assumptions, not independent passenger measurements."
+  ],
+  "schema_version": "google-corridors-independent-summary-audit-v1",
+  "source_artifacts": [
+    {
+      "path": "algo/reports/google-corridors-test.json",
+      "sha256": "d2307886145dfccdd9d28d9d98695cbee383c1bb3d9c3ec0b11e2cbb10ea323e"
+    },
+    {
+      "path": "algo/reports/google-corridors-selection-frozen.json",
+      "sha256": "c2ddb1e228b830bb9beaca4ceae25ebe8a4a6375f68e5b78107bfbbdc9e63b28"
+    },
+    {
+      "path": "algo/local/google-corridors/scored-cases.json.gz",
+      "sha256": "4388d67628f7cf51e404a56078eb80c9789493fc6adbb18c16e084ab9065b669"
+    },
+    {
+      "path": "data/config/google-corridors.json",
+      "sha256": "6e973cb42424db8ca832b22206cea482619d0390856db0aeea771f131440344b"
+    }
+  ],
+  "status": "PASS",
+  "summaries": {
+    "all_checkpoints": {
+      "cases": 322,
+      "impact_kinds": {
+        "EXPLICIT_SEVERE_DELAYS": 3,
+        "NO_SERVICE_OR_REROUTE": 1,
+        "ORDINARY_SERVICE_DISRUPTION": 318
+      },
+      "modes": {
+        "incident_profile": {
+          "conditional_timing_decision": {
+            "actions": {
+              "STAY": 86,
+              "SWITCH": 56,
+              "UNDETERMINED": 180
+            },
+            "comparable_switches": 19,
+            "meaningful_gains": 14,
+            "meaningful_losses": 0,
+            "path_relation": {
+              "different_path": {
+                "comparable": 13,
+                "outcome_classes": {
+                  "MEANINGFUL_GAIN": 9,
+                  "PRACTICAL_TIE": 4
+                },
+                "recommendations": 37,
+                "unknown": 24
+              },
+              "same_station_path": {
+                "comparable": 6,
+                "outcome_classes": {
+                  "MEANINGFUL_GAIN": 5,
+                  "PRACTICAL_TIE": 1
+                },
+                "recommendations": 19,
+                "unknown": 13
+              }
+            },
+            "practical_ties": 5,
+            "switches": 56,
+            "unknown_switches": 37
+          },
+          "strict_decision": {
+            "actions": {
+              "STAY": 71,
+              "SWITCH": 44,
+              "UNDETERMINED": 207
+            },
+            "comparable_switches": 15,
+            "meaningful_gains": 11,
+            "meaningful_losses": 0,
+            "path_relation": {
+              "different_path": {
+                "comparable": 11,
+                "outcome_classes": {
+                  "MEANINGFUL_GAIN": 7,
+                  "PRACTICAL_TIE": 4
+                },
+                "recommendations": 27,
+                "unknown": 16
+              },
+              "same_station_path": {
+                "comparable": 4,
+                "outcome_classes": {
+                  "MEANINGFUL_GAIN": 4
+                },
+                "recommendations": 17,
+                "unknown": 13
+              }
+            },
+            "practical_ties": 4,
+            "switches": 44,
+            "unknown_switches": 29
+          }
+        },
+        "mta": {
+          "conditional_timing_decision": {
+            "actions": {
+              "STAY": 83,
+              "SWITCH": 64,
+              "UNDETERMINED": 175
+            },
+            "comparable_switches": 24,
+            "meaningful_gains": 21,
+            "meaningful_losses": 0,
+            "path_relation": {
+              "different_path": {
+                "comparable": 12,
+                "outcome_classes": {
+                  "MEANINGFUL_GAIN": 11,
+                  "PRACTICAL_TIE": 1
+                },
+                "recommendations": 34,
+                "unknown": 22
+              },
+              "same_station_path": {
+                "comparable": 12,
+                "outcome_classes": {
+                  "MEANINGFUL_GAIN": 10,
+                  "PRACTICAL_TIE": 2
+                },
+                "recommendations": 30,
+                "unknown": 18
+              }
+            },
+            "practical_ties": 3,
+            "switches": 64,
+            "unknown_switches": 40
+          },
+          "strict_decision": {
+            "actions": {
+              "STAY": 67,
+              "SWITCH": 55,
+              "UNDETERMINED": 200
+            },
+            "comparable_switches": 21,
+            "meaningful_gains": 19,
+            "meaningful_losses": 0,
+            "path_relation": {
+              "different_path": {
+                "comparable": 11,
+                "outcome_classes": {
+                  "MEANINGFUL_GAIN": 10,
+                  "PRACTICAL_TIE": 1
+                },
+                "recommendations": 29,
+                "unknown": 18
+              },
+              "same_station_path": {
+                "comparable": 10,
+                "outcome_classes": {
+                  "MEANINGFUL_GAIN": 9,
+                  "PRACTICAL_TIE": 1
+                },
+                "recommendations": 26,
+                "unknown": 16
+              }
+            },
+            "practical_ties": 2,
+            "switches": 55,
+            "unknown_switches": 34
+          }
+        },
+        "time_profile": {
+          "conditional_timing_decision": {
+            "actions": {
+              "STAY": 81,
+              "SWITCH": 52,
+              "UNDETERMINED": 189
+            },
+            "comparable_switches": 22,
+            "meaningful_gains": 16,
+            "meaningful_losses": 2,
+            "path_relation": {
+              "different_path": {
+                "comparable": 10,
+                "outcome_classes": {
+                  "MEANINGFUL_GAIN": 6,
+                  "MEANINGFUL_LOSS": 2,
+                  "PRACTICAL_TIE": 2
+                },
+                "recommendations": 22,
+                "unknown": 12
+              },
+              "same_station_path": {
+                "comparable": 12,
+                "outcome_classes": {
+                  "MEANINGFUL_GAIN": 10,
+                  "PRACTICAL_TIE": 2
+                },
+                "recommendations": 30,
+                "unknown": 18
+              }
+            },
+            "practical_ties": 4,
+            "switches": 52,
+            "unknown_switches": 30
+          },
+          "strict_decision": {
+            "actions": {
+              "STAY": 66,
+              "SWITCH": 42,
+              "UNDETERMINED": 214
+            },
+            "comparable_switches": 17,
+            "meaningful_gains": 14,
+            "meaningful_losses": 0,
+            "path_relation": {
+              "different_path": {
+                "comparable": 7,
+                "outcome_classes": {
+                  "MEANINGFUL_GAIN": 5,
+                  "PRACTICAL_TIE": 2
+                },
+                "recommendations": 15,
+                "unknown": 8
+              },
+              "same_station_path": {
+                "comparable": 10,
+                "outcome_classes": {
+                  "MEANINGFUL_GAIN": 9,
+                  "PRACTICAL_TIE": 1
+                },
+                "recommendations": 27,
+                "unknown": 17
+              }
+            },
+            "practical_ties": 3,
+            "switches": 42,
+            "unknown_switches": 25
+          }
+        }
+      }
+    },
+    "corridors": {
+      "courtsquare_timessquare": {
+        "all_checkpoints": {
+          "cases": 32,
+          "impact_kinds": {
+            "EXPLICIT_SEVERE_DELAYS": 3,
+            "ORDINARY_SERVICE_DISRUPTION": 29
+          },
+          "modes": {
+            "incident_profile": {
+              "conditional_timing_decision": {
+                "actions": {
+                  "STAY": 6,
+                  "SWITCH": 3,
+                  "UNDETERMINED": 23
+                },
+                "comparable_switches": 2,
+                "meaningful_gains": 2,
+                "meaningful_losses": 0,
+                "path_relation": {
+                  "different_path": {
+                    "comparable": 2,
+                    "outcome_classes": {
+                      "MEANINGFUL_GAIN": 2
+                    },
+                    "recommendations": 3,
+                    "unknown": 1
+                  },
+                  "same_station_path": {
+                    "comparable": 0,
+                    "outcome_classes": {},
+                    "recommendations": 0,
+                    "unknown": 0
+                  }
+                },
+                "practical_ties": 0,
+                "switches": 3,
+                "unknown_switches": 1
+              },
+              "strict_decision": {
+                "actions": {
+                  "STAY": 3,
+                  "SWITCH": 2,
+                  "UNDETERMINED": 27
+                },
+                "comparable_switches": 1,
+                "meaningful_gains": 1,
+                "meaningful_losses": 0,
+                "path_relation": {
+                  "different_path": {
+                    "comparable": 1,
+                    "outcome_classes": {
+                      "MEANINGFUL_GAIN": 1
+                    },
+                    "recommendations": 2,
+                    "unknown": 1
+                  },
+                  "same_station_path": {
+                    "comparable": 0,
+                    "outcome_classes": {},
+                    "recommendations": 0,
+                    "unknown": 0
+                  }
+                },
+                "practical_ties": 0,
+                "switches": 2,
+                "unknown_switches": 1
+              }
+            },
+            "mta": {
+              "conditional_timing_decision": {
+                "actions": {
+                  "STAY": 8,
+                  "UNDETERMINED": 24
+                },
+                "comparable_switches": 0,
+                "meaningful_gains": 0,
+                "meaningful_losses": 0,
+                "path_relation": {
+                  "different_path": {
+                    "comparable": 0,
+                    "outcome_classes": {},
+                    "recommendations": 0,
+                    "unknown": 0
+                  },
+                  "same_station_path": {
+                    "comparable": 0,
+                    "outcome_classes": {},
+                    "recommendations": 0,
+                    "unknown": 0
+                  }
+                },
+                "practical_ties": 0,
+                "switches": 0,
+                "unknown_switches": 0
+              },
+              "strict_decision": {
+                "actions": {
+                  "STAY": 5,
+                  "UNDETERMINED": 27
+                },
+                "comparable_switches": 0,
+                "meaningful_gains": 0,
+                "meaningful_losses": 0,
+                "path_relation": {
+                  "different_path": {
+                    "comparable": 0,
+                    "outcome_classes": {},
+                    "recommendations": 0,
+                    "unknown": 0
+                  },
+                  "same_station_path": {
+                    "comparable": 0,
+                    "outcome_classes": {},
+                    "recommendations": 0,
+                    "unknown": 0
+                  }
+                },
+                "practical_ties": 0,
+                "switches": 0,
+                "unknown_switches": 0
+              }
+            },
+            "time_profile": {
+              "conditional_timing_decision": {
+                "actions": {
+                  "STAY": 6,
+                  "SWITCH": 5,
+                  "UNDETERMINED": 21
+                },
+                "comparable_switches": 4,
+                "meaningful_gains": 1,
+                "meaningful_losses": 2,
+                "path_relation": {
+                  "different_path": {
+                    "comparable": 4,
+                    "outcome_classes": {
+                      "MEANINGFUL_GAIN": 1,
+                      "MEANINGFUL_LOSS": 2,
+                      "PRACTICAL_TIE": 1
+                    },
+                    "recommendations": 5,
+                    "unknown": 1
+                  },
+                  "same_station_path": {
+                    "comparable": 0,
+                    "outcome_classes": {},
+                    "recommendations": 0,
+                    "unknown": 0
+                  }
+                },
+                "practical_ties": 1,
+                "switches": 5,
+                "unknown_switches": 1
+              },
+              "strict_decision": {
+                "actions": {
+                  "STAY": 3,
+                  "SWITCH": 3,
+                  "UNDETERMINED": 26
+                },
+                "comparable_switches": 2,
+                "meaningful_gains": 1,
+                "meaningful_losses": 0,
+                "path_relation": {
+                  "different_path": {
+                    "comparable": 2,
+                    "outcome_classes": {
+                      "MEANINGFUL_GAIN": 1,
+                      "PRACTICAL_TIE": 1
+                    },
+                    "recommendations": 3,
+                    "unknown": 1
+                  },
+                  "same_station_path": {
+                    "comparable": 0,
+                    "outcome_classes": {},
+                    "recommendations": 0,
+                    "unknown": 0
+                  }
+                },
+                "practical_ties": 1,
+                "switches": 3,
+                "unknown_switches": 1
+              }
+            }
+          }
+        },
+        "primary": {
+          "cases": 5,
+          "impact_kinds": {
+            "ORDINARY_SERVICE_DISRUPTION": 5
+          },
+          "modes": {
+            "incident_profile": {
+              "conditional_timing_decision": {
+                "actions": {
+                  "STAY": 1,
+                  "UNDETERMINED": 4
+                },
+                "comparable_switches": 0,
+                "meaningful_gains": 0,
+                "meaningful_losses": 0,
+                "path_relation": {
+                  "different_path": {
+                    "comparable": 0,
+                    "outcome_classes": {},
+                    "recommendations": 0,
+                    "unknown": 0
+                  },
+                  "same_station_path": {
+                    "comparable": 0,
+                    "outcome_classes": {},
+                    "recommendations": 0,
+                    "unknown": 0
+                  }
+                },
+                "practical_ties": 0,
+                "switches": 0,
+                "unknown_switches": 0
+              },
+              "strict_decision": {
+                "actions": {
+                  "STAY": 1,
+                  "UNDETERMINED": 4
+                },
+                "comparable_switches": 0,
+                "meaningful_gains": 0,
+                "meaningful_losses": 0,
+                "path_relation": {
+                  "different_path": {
+                    "comparable": 0,
+                    "outcome_classes": {},
+                    "recommendations": 0,
+                    "unknown": 0
+                  },
+                  "same_station_path": {
+                    "comparable": 0,
+                    "outcome_classes": {},
+                    "recommendations": 0,
+                    "unknown": 0
+                  }
+                },
+                "practical_ties": 0,
+                "switches": 0,
+                "unknown_switches": 0
+              }
+            },
+            "mta": {
+              "conditional_timing_decision": {
+                "actions": {
+                  "STAY": 1,
+                  "UNDETERMINED": 4
+                },
+                "comparable_switches": 0,
+                "meaningful_gains": 0,
+                "meaningful_losses": 0,
+                "path_relation": {
+                  "different_path": {
+                    "comparable": 0,
+                    "outcome_classes": {},
+                    "recommendations": 0,
+                    "unknown": 0
+                  },
+                  "same_station_path": {
+                    "comparable": 0,
+                    "outcome_classes": {},
+                    "recommendations": 0,
+                    "unknown": 0
+                  }
+                },
+                "practical_ties": 0,
+                "switches": 0,
+                "unknown_switches": 0
+              },
+              "strict_decision": {
+                "actions": {
+                  "STAY": 1,
+                  "UNDETERMINED": 4
+                },
+                "comparable_switches": 0,
+                "meaningful_gains": 0,
+                "meaningful_losses": 0,
+                "path_relation": {
+                  "different_path": {
+                    "comparable": 0,
+                    "outcome_classes": {},
+                    "recommendations": 0,
+                    "unknown": 0
+                  },
+                  "same_station_path": {
+                    "comparable": 0,
+                    "outcome_classes": {},
+                    "recommendations": 0,
+                    "unknown": 0
+                  }
+                },
+                "practical_ties": 0,
+                "switches": 0,
+                "unknown_switches": 0
+              }
+            },
+            "time_profile": {
+              "conditional_timing_decision": {
+                "actions": {
+                  "STAY": 1,
+                  "SWITCH": 2,
+                  "UNDETERMINED": 2
+                },
+                "comparable_switches": 2,
+                "meaningful_gains": 0,
+                "meaningful_losses": 1,
+                "path_relation": {
+                  "different_path": {
+                    "comparable": 2,
+                    "outcome_classes": {
+                      "MEANINGFUL_LOSS": 1,
+                      "PRACTICAL_TIE": 1
+                    },
+                    "recommendations": 2,
+                    "unknown": 0
+                  },
+                  "same_station_path": {
+                    "comparable": 0,
+                    "outcome_classes": {},
+                    "recommendations": 0,
+                    "unknown": 0
+                  }
+                },
+                "practical_ties": 1,
+                "switches": 2,
+                "unknown_switches": 0
+              },
+              "strict_decision": {
+                "actions": {
+                  "STAY": 1,
+                  "SWITCH": 1,
+                  "UNDETERMINED": 3
+                },
+                "comparable_switches": 1,
+                "meaningful_gains": 0,
+                "meaningful_losses": 0,
+                "path_relation": {
+                  "different_path": {
+                    "comparable": 1,
+                    "outcome_classes": {
+                      "PRACTICAL_TIE": 1
+                    },
+                    "recommendations": 1,
+                    "unknown": 0
+                  },
+                  "same_station_path": {
+                    "comparable": 0,
+                    "outcome_classes": {},
+                    "recommendations": 0,
+                    "unknown": 0
+                  }
+                },
+                "practical_ties": 1,
+                "switches": 1,
+                "unknown_switches": 0
+              }
+            }
+          }
+        }
+      },
+      "grandcentral_boroughhall": {
+        "all_checkpoints": {
+          "cases": 132,
+          "impact_kinds": {
+            "NO_SERVICE_OR_REROUTE": 1,
+            "ORDINARY_SERVICE_DISRUPTION": 131
+          },
+          "modes": {
+            "incident_profile": {
+              "conditional_timing_decision": {
+                "actions": {
+                  "STAY": 80,
+                  "SWITCH": 28,
+                  "UNDETERMINED": 24
+                },
+                "comparable_switches": 6,
+                "meaningful_gains": 5,
+                "meaningful_losses": 0,
+                "path_relation": {
+                  "different_path": {
+                    "comparable": 0,
+                    "outcome_classes": {},
+                    "recommendations": 9,
+                    "unknown": 9
+                  },
+                  "same_station_path": {
+                    "comparable": 6,
+                    "outcome_classes": {
+                      "MEANINGFUL_GAIN": 5,
+                      "PRACTICAL_TIE": 1
+                    },
+                    "recommendations": 19,
+                    "unknown": 13
+                  }
+                },
+                "practical_ties": 1,
+                "switches": 28,
+                "unknown_switches": 22
+              },
+              "strict_decision": {
+                "actions": {
+                  "STAY": 68,
+                  "SWITCH": 23,
+                  "UNDETERMINED": 41
+                },
+                "comparable_switches": 4,
+                "meaningful_gains": 4,
+                "meaningful_losses": 0,
+                "path_relation": {
+                  "different_path": {
+                    "comparable": 0,
+                    "outcome_classes": {},
+                    "recommendations": 6,
+                    "unknown": 6
+                  },
+                  "same_station_path": {
+                    "comparable": 4,
+                    "outcome_classes": {
+                      "MEANINGFUL_GAIN": 4
+                    },
+                    "recommendations": 17,
+                    "unknown": 13
+                  }
+                },
+                "practical_ties": 0,
+                "switches": 23,
+                "unknown_switches": 19
+              }
+            },
+            "mta": {
+              "conditional_timing_decision": {
+                "actions": {
+                  "STAY": 75,
+                  "SWITCH": 33,
+                  "UNDETERMINED": 24
+                },
+                "comparable_switches": 12,
+                "meaningful_gains": 10,
+                "meaningful_losses": 0,
+                "path_relation": {
+                  "different_path": {
+                    "comparable": 0,
+                    "outcome_classes": {},
+                    "recommendations": 3,
+                    "unknown": 3
+                  },
+                  "same_station_path": {
+                    "comparable": 12,
+                    "outcome_classes": {
+                      "MEANINGFUL_GAIN": 10,
+                      "PRACTICAL_TIE": 2
+                    },
+                    "recommendations": 30,
+                    "unknown": 18
+                  }
+                },
+                "practical_ties": 2,
+                "switches": 33,
+                "unknown_switches": 21
+              },
+              "strict_decision": {
+                "actions": {
+                  "STAY": 62,
+                  "SWITCH": 29,
+                  "UNDETERMINED": 41
+                },
+                "comparable_switches": 10,
+                "meaningful_gains": 9,
+                "meaningful_losses": 0,
+                "path_relation": {
+                  "different_path": {
+                    "comparable": 0,
+                    "outcome_classes": {},
+                    "recommendations": 3,
+                    "unknown": 3
+                  },
+                  "same_station_path": {
+                    "comparable": 10,
+                    "outcome_classes": {
+                      "MEANINGFUL_GAIN": 9,
+                      "PRACTICAL_TIE": 1
+                    },
+                    "recommendations": 26,
+                    "unknown": 16
+                  }
+                },
+                "practical_ties": 1,
+                "switches": 29,
+                "unknown_switches": 19
+              }
+            },
+            "time_profile": {
+              "conditional_timing_decision": {
+                "actions": {
+                  "STAY": 75,
+                  "SWITCH": 33,
+                  "UNDETERMINED": 24
+                },
+                "comparable_switches": 12,
+                "meaningful_gains": 10,
+                "meaningful_losses": 0,
+                "path_relation": {
+                  "different_path": {
+                    "comparable": 0,
+                    "outcome_classes": {},
+                    "recommendations": 3,
+                    "unknown": 3
+                  },
+                  "same_station_path": {
+                    "comparable": 12,
+                    "outcome_classes": {
+                      "MEANINGFUL_GAIN": 10,
+                      "PRACTICAL_TIE": 2
+                    },
+                    "recommendations": 30,
+                    "unknown": 18
+                  }
+                },
+                "practical_ties": 2,
+                "switches": 33,
+                "unknown_switches": 21
+              },
+              "strict_decision": {
+                "actions": {
+                  "STAY": 63,
+                  "SWITCH": 28,
+                  "UNDETERMINED": 41
+                },
+                "comparable_switches": 10,
+                "meaningful_gains": 9,
+                "meaningful_losses": 0,
+                "path_relation": {
+                  "different_path": {
+                    "comparable": 0,
+                    "outcome_classes": {},
+                    "recommendations": 1,
+                    "unknown": 1
+                  },
+                  "same_station_path": {
+                    "comparable": 10,
+                    "outcome_classes": {
+                      "MEANINGFUL_GAIN": 9,
+                      "PRACTICAL_TIE": 1
+                    },
+                    "recommendations": 27,
+                    "unknown": 17
+                  }
+                },
+                "practical_ties": 1,
+                "switches": 28,
+                "unknown_switches": 18
+              }
+            }
+          }
+        },
+        "primary": {
+          "cases": 20,
+          "impact_kinds": {
+            "ORDINARY_SERVICE_DISRUPTION": 20
+          },
+          "modes": {
+            "incident_profile": {
+              "conditional_timing_decision": {
+                "actions": {
+                  "STAY": 16,
+                  "SWITCH": 1,
+                  "UNDETERMINED": 3
+                },
+                "comparable_switches": 0,
+                "meaningful_gains": 0,
+                "meaningful_losses": 0,
+                "path_relation": {
+                  "different_path": {
+                    "comparable": 0,
+                    "outcome_classes": {},
+                    "recommendations": 0,
+                    "unknown": 0
+                  },
+                  "same_station_path": {
+                    "comparable": 0,
+                    "outcome_classes": {},
+                    "recommendations": 1,
+                    "unknown": 1
+                  }
+                },
+                "practical_ties": 0,
+                "switches": 1,
+                "unknown_switches": 1
+              },
+              "strict_decision": {
+                "actions": {
+                  "STAY": 16,
+                  "SWITCH": 1,
+                  "UNDETERMINED": 3
+                },
+                "comparable_switches": 0,
+                "meaningful_gains": 0,
+                "meaningful_losses": 0,
+                "path_relation": {
+                  "different_path": {
+                    "comparable": 0,
+                    "outcome_classes": {},
+                    "recommendations": 0,
+                    "unknown": 0
+                  },
+                  "same_station_path": {
+                    "comparable": 0,
+                    "outcome_classes": {},
+                    "recommendations": 1,
+                    "unknown": 1
+                  }
+                },
+                "practical_ties": 0,
+                "switches": 1,
+                "unknown_switches": 1
+              }
+            },
+            "mta": {
+              "conditional_timing_decision": {
+                "actions": {
+                  "STAY": 16,
+                  "SWITCH": 1,
+                  "UNDETERMINED": 3
+                },
+                "comparable_switches": 0,
+                "meaningful_gains": 0,
+                "meaningful_losses": 0,
+                "path_relation": {
+                  "different_path": {
+                    "comparable": 0,
+                    "outcome_classes": {},
+                    "recommendations": 0,
+                    "unknown": 0
+                  },
+                  "same_station_path": {
+                    "comparable": 0,
+                    "outcome_classes": {},
+                    "recommendations": 1,
+                    "unknown": 1
+                  }
+                },
+                "practical_ties": 0,
+                "switches": 1,
+                "unknown_switches": 1
+              },
+              "strict_decision": {
+                "actions": {
+                  "STAY": 16,
+                  "SWITCH": 1,
+                  "UNDETERMINED": 3
+                },
+                "comparable_switches": 0,
+                "meaningful_gains": 0,
+                "meaningful_losses": 0,
+                "path_relation": {
+                  "different_path": {
+                    "comparable": 0,
+                    "outcome_classes": {},
+                    "recommendations": 0,
+                    "unknown": 0
+                  },
+                  "same_station_path": {
+                    "comparable": 0,
+                    "outcome_classes": {},
+                    "recommendations": 1,
+                    "unknown": 1
+                  }
+                },
+                "practical_ties": 0,
+                "switches": 1,
+                "unknown_switches": 1
+              }
+            },
+            "time_profile": {
+              "conditional_timing_decision": {
+                "actions": {
+                  "STAY": 15,
+                  "SWITCH": 2,
+                  "UNDETERMINED": 3
+                },
+                "comparable_switches": 0,
+                "meaningful_gains": 0,
+                "meaningful_losses": 0,
+                "path_relation": {
+                  "different_path": {
+                    "comparable": 0,
+                    "outcome_classes": {},
+                    "recommendations": 0,
+                    "unknown": 0
+                  },
+                  "same_station_path": {
+                    "comparable": 0,
+                    "outcome_classes": {},
+                    "recommendations": 2,
+                    "unknown": 2
+                  }
+                },
+                "practical_ties": 0,
+                "switches": 2,
+                "unknown_switches": 2
+              },
+              "strict_decision": {
+                "actions": {
+                  "STAY": 15,
+                  "SWITCH": 2,
+                  "UNDETERMINED": 3
+                },
+                "comparable_switches": 0,
+                "meaningful_gains": 0,
+                "meaningful_losses": 0,
+                "path_relation": {
+                  "different_path": {
+                    "comparable": 0,
+                    "outcome_classes": {},
+                    "recommendations": 0,
+                    "unknown": 0
+                  },
+                  "same_station_path": {
+                    "comparable": 0,
+                    "outcome_classes": {},
+                    "recommendations": 2,
+                    "unknown": 2
+                  }
+                },
+                "practical_ties": 0,
+                "switches": 2,
+                "unknown_switches": 2
+              }
+            }
+          }
+        }
+      },
+      "pilot_hayden_tandon": {
+        "all_checkpoints": {
+          "cases": 158,
+          "impact_kinds": {
+            "ORDINARY_SERVICE_DISRUPTION": 158
+          },
+          "modes": {
+            "incident_profile": {
+              "conditional_timing_decision": {
+                "actions": {
+                  "SWITCH": 25,
+                  "UNDETERMINED": 133
+                },
+                "comparable_switches": 11,
+                "meaningful_gains": 7,
+                "meaningful_losses": 0,
+                "path_relation": {
+                  "different_path": {
+                    "comparable": 11,
+                    "outcome_classes": {
+                      "MEANINGFUL_GAIN": 7,
+                      "PRACTICAL_TIE": 4
+                    },
+                    "recommendations": 25,
+                    "unknown": 14
+                  },
+                  "same_station_path": {
+                    "comparable": 0,
+                    "outcome_classes": {},
+                    "recommendations": 0,
+                    "unknown": 0
+                  }
+                },
+                "practical_ties": 4,
+                "switches": 25,
+                "unknown_switches": 14
+              },
+              "strict_decision": {
+                "actions": {
+                  "SWITCH": 19,
+                  "UNDETERMINED": 139
+                },
+                "comparable_switches": 10,
+                "meaningful_gains": 6,
+                "meaningful_losses": 0,
+                "path_relation": {
+                  "different_path": {
+                    "comparable": 10,
+                    "outcome_classes": {
+                      "MEANINGFUL_GAIN": 6,
+                      "PRACTICAL_TIE": 4
+                    },
+                    "recommendations": 19,
+                    "unknown": 9
+                  },
+                  "same_station_path": {
+                    "comparable": 0,
+                    "outcome_classes": {},
+                    "recommendations": 0,
+                    "unknown": 0
+                  }
+                },
+                "practical_ties": 4,
+                "switches": 19,
+                "unknown_switches": 9
+              }
+            },
+            "mta": {
+              "conditional_timing_decision": {
+                "actions": {
+                  "SWITCH": 31,
+                  "UNDETERMINED": 127
+                },
+                "comparable_switches": 12,
+                "meaningful_gains": 11,
+                "meaningful_losses": 0,
+                "path_relation": {
+                  "different_path": {
+                    "comparable": 12,
+                    "outcome_classes": {
+                      "MEANINGFUL_GAIN": 11,
+                      "PRACTICAL_TIE": 1
+                    },
+                    "recommendations": 31,
+                    "unknown": 19
+                  },
+                  "same_station_path": {
+                    "comparable": 0,
+                    "outcome_classes": {},
+                    "recommendations": 0,
+                    "unknown": 0
+                  }
+                },
+                "practical_ties": 1,
+                "switches": 31,
+                "unknown_switches": 19
+              },
+              "strict_decision": {
+                "actions": {
+                  "SWITCH": 26,
+                  "UNDETERMINED": 132
+                },
+                "comparable_switches": 11,
+                "meaningful_gains": 10,
+                "meaningful_losses": 0,
+                "path_relation": {
+                  "different_path": {
+                    "comparable": 11,
+                    "outcome_classes": {
+                      "MEANINGFUL_GAIN": 10,
+                      "PRACTICAL_TIE": 1
+                    },
+                    "recommendations": 26,
+                    "unknown": 15
+                  },
+                  "same_station_path": {
+                    "comparable": 0,
+                    "outcome_classes": {},
+                    "recommendations": 0,
+                    "unknown": 0
+                  }
+                },
+                "practical_ties": 1,
+                "switches": 26,
+                "unknown_switches": 15
+              }
+            },
+            "time_profile": {
+              "conditional_timing_decision": {
+                "actions": {
+                  "SWITCH": 14,
+                  "UNDETERMINED": 144
+                },
+                "comparable_switches": 6,
+                "meaningful_gains": 5,
+                "meaningful_losses": 0,
+                "path_relation": {
+                  "different_path": {
+                    "comparable": 6,
+                    "outcome_classes": {
+                      "MEANINGFUL_GAIN": 5,
+                      "PRACTICAL_TIE": 1
+                    },
+                    "recommendations": 14,
+                    "unknown": 8
+                  },
+                  "same_station_path": {
+                    "comparable": 0,
+                    "outcome_classes": {},
+                    "recommendations": 0,
+                    "unknown": 0
+                  }
+                },
+                "practical_ties": 1,
+                "switches": 14,
+                "unknown_switches": 8
+              },
+              "strict_decision": {
+                "actions": {
+                  "SWITCH": 11,
+                  "UNDETERMINED": 147
+                },
+                "comparable_switches": 5,
+                "meaningful_gains": 4,
+                "meaningful_losses": 0,
+                "path_relation": {
+                  "different_path": {
+                    "comparable": 5,
+                    "outcome_classes": {
+                      "MEANINGFUL_GAIN": 4,
+                      "PRACTICAL_TIE": 1
+                    },
+                    "recommendations": 11,
+                    "unknown": 6
+                  },
+                  "same_station_path": {
+                    "comparable": 0,
+                    "outcome_classes": {},
+                    "recommendations": 0,
+                    "unknown": 0
+                  }
+                },
+                "practical_ties": 1,
+                "switches": 11,
+                "unknown_switches": 6
+              }
+            }
+          }
+        },
+        "primary": {
+          "cases": 24,
+          "impact_kinds": {
+            "ORDINARY_SERVICE_DISRUPTION": 24
+          },
+          "modes": {
+            "incident_profile": {
+              "conditional_timing_decision": {
+                "actions": {
+                  "SWITCH": 3,
+                  "UNDETERMINED": 21
+                },
+                "comparable_switches": 1,
+                "meaningful_gains": 1,
+                "meaningful_losses": 0,
+                "path_relation": {
+                  "different_path": {
+                    "comparable": 1,
+                    "outcome_classes": {
+                      "MEANINGFUL_GAIN": 1
+                    },
+                    "recommendations": 3,
+                    "unknown": 2
+                  },
+                  "same_station_path": {
+                    "comparable": 0,
+                    "outcome_classes": {},
+                    "recommendations": 0,
+                    "unknown": 0
+                  }
+                },
+                "practical_ties": 0,
+                "switches": 3,
+                "unknown_switches": 2
+              },
+              "strict_decision": {
+                "actions": {
+                  "SWITCH": 3,
+                  "UNDETERMINED": 21
+                },
+                "comparable_switches": 1,
+                "meaningful_gains": 1,
+                "meaningful_losses": 0,
+                "path_relation": {
+                  "different_path": {
+                    "comparable": 1,
+                    "outcome_classes": {
+                      "MEANINGFUL_GAIN": 1
+                    },
+                    "recommendations": 3,
+                    "unknown": 2
+                  },
+                  "same_station_path": {
+                    "comparable": 0,
+                    "outcome_classes": {},
+                    "recommendations": 0,
+                    "unknown": 0
+                  }
+                },
+                "practical_ties": 0,
+                "switches": 3,
+                "unknown_switches": 2
+              }
+            },
+            "mta": {
+              "conditional_timing_decision": {
+                "actions": {
+                  "SWITCH": 4,
+                  "UNDETERMINED": 20
+                },
+                "comparable_switches": 2,
+                "meaningful_gains": 1,
+                "meaningful_losses": 0,
+                "path_relation": {
+                  "different_path": {
+                    "comparable": 2,
+                    "outcome_classes": {
+                      "MEANINGFUL_GAIN": 1,
+                      "PRACTICAL_TIE": 1
+                    },
+                    "recommendations": 4,
+                    "unknown": 2
+                  },
+                  "same_station_path": {
+                    "comparable": 0,
+                    "outcome_classes": {},
+                    "recommendations": 0,
+                    "unknown": 0
+                  }
+                },
+                "practical_ties": 1,
+                "switches": 4,
+                "unknown_switches": 2
+              },
+              "strict_decision": {
+                "actions": {
+                  "SWITCH": 4,
+                  "UNDETERMINED": 20
+                },
+                "comparable_switches": 2,
+                "meaningful_gains": 1,
+                "meaningful_losses": 0,
+                "path_relation": {
+                  "different_path": {
+                    "comparable": 2,
+                    "outcome_classes": {
+                      "MEANINGFUL_GAIN": 1,
+                      "PRACTICAL_TIE": 1
+                    },
+                    "recommendations": 4,
+                    "unknown": 2
+                  },
+                  "same_station_path": {
+                    "comparable": 0,
+                    "outcome_classes": {},
+                    "recommendations": 0,
+                    "unknown": 0
+                  }
+                },
+                "practical_ties": 1,
+                "switches": 4,
+                "unknown_switches": 2
+              }
+            },
+            "time_profile": {
+              "conditional_timing_decision": {
+                "actions": {
+                  "SWITCH": 2,
+                  "UNDETERMINED": 22
+                },
+                "comparable_switches": 1,
+                "meaningful_gains": 1,
+                "meaningful_losses": 0,
+                "path_relation": {
+                  "different_path": {
+                    "comparable": 1,
+                    "outcome_classes": {
+                      "MEANINGFUL_GAIN": 1
+                    },
+                    "recommendations": 2,
+                    "unknown": 1
+                  },
+                  "same_station_path": {
+                    "comparable": 0,
+                    "outcome_classes": {},
+                    "recommendations": 0,
+                    "unknown": 0
+                  }
+                },
+                "practical_ties": 0,
+                "switches": 2,
+                "unknown_switches": 1
+              },
+              "strict_decision": {
+                "actions": {
+                  "SWITCH": 2,
+                  "UNDETERMINED": 22
+                },
+                "comparable_switches": 1,
+                "meaningful_gains": 1,
+                "meaningful_losses": 0,
+                "path_relation": {
+                  "different_path": {
+                    "comparable": 1,
+                    "outcome_classes": {
+                      "MEANINGFUL_GAIN": 1
+                    },
+                    "recommendations": 2,
+                    "unknown": 1
+                  },
+                  "same_station_path": {
+                    "comparable": 0,
+                    "outcome_classes": {},
+                    "recommendations": 0,
+                    "unknown": 0
+                  }
+                },
+                "practical_ties": 0,
+                "switches": 2,
+                "unknown_switches": 1
+              }
+            }
+          }
+        }
+      }
+    },
+    "primary": {
+      "cases": 49,
+      "impact_kinds": {
+        "ORDINARY_SERVICE_DISRUPTION": 49
+      },
+      "modes": {
+        "incident_profile": {
+          "conditional_timing_decision": {
+            "actions": {
+              "STAY": 17,
+              "SWITCH": 4,
+              "UNDETERMINED": 28
+            },
+            "comparable_switches": 1,
+            "meaningful_gains": 1,
+            "meaningful_losses": 0,
+            "path_relation": {
+              "different_path": {
+                "comparable": 1,
+                "outcome_classes": {
+                  "MEANINGFUL_GAIN": 1
+                },
+                "recommendations": 3,
+                "unknown": 2
+              },
+              "same_station_path": {
+                "comparable": 0,
+                "outcome_classes": {},
+                "recommendations": 1,
+                "unknown": 1
+              }
+            },
+            "practical_ties": 0,
+            "switches": 4,
+            "unknown_switches": 3
+          },
+          "strict_decision": {
+            "actions": {
+              "STAY": 17,
+              "SWITCH": 4,
+              "UNDETERMINED": 28
+            },
+            "comparable_switches": 1,
+            "meaningful_gains": 1,
+            "meaningful_losses": 0,
+            "path_relation": {
+              "different_path": {
+                "comparable": 1,
+                "outcome_classes": {
+                  "MEANINGFUL_GAIN": 1
+                },
+                "recommendations": 3,
+                "unknown": 2
+              },
+              "same_station_path": {
+                "comparable": 0,
+                "outcome_classes": {},
+                "recommendations": 1,
+                "unknown": 1
+              }
+            },
+            "practical_ties": 0,
+            "switches": 4,
+            "unknown_switches": 3
+          }
+        },
+        "mta": {
+          "conditional_timing_decision": {
+            "actions": {
+              "STAY": 17,
+              "SWITCH": 5,
+              "UNDETERMINED": 27
+            },
+            "comparable_switches": 2,
+            "meaningful_gains": 1,
+            "meaningful_losses": 0,
+            "path_relation": {
+              "different_path": {
+                "comparable": 2,
+                "outcome_classes": {
+                  "MEANINGFUL_GAIN": 1,
+                  "PRACTICAL_TIE": 1
+                },
+                "recommendations": 4,
+                "unknown": 2
+              },
+              "same_station_path": {
+                "comparable": 0,
+                "outcome_classes": {},
+                "recommendations": 1,
+                "unknown": 1
+              }
+            },
+            "practical_ties": 1,
+            "switches": 5,
+            "unknown_switches": 3
+          },
+          "strict_decision": {
+            "actions": {
+              "STAY": 17,
+              "SWITCH": 5,
+              "UNDETERMINED": 27
+            },
+            "comparable_switches": 2,
+            "meaningful_gains": 1,
+            "meaningful_losses": 0,
+            "path_relation": {
+              "different_path": {
+                "comparable": 2,
+                "outcome_classes": {
+                  "MEANINGFUL_GAIN": 1,
+                  "PRACTICAL_TIE": 1
+                },
+                "recommendations": 4,
+                "unknown": 2
+              },
+              "same_station_path": {
+                "comparable": 0,
+                "outcome_classes": {},
+                "recommendations": 1,
+                "unknown": 1
+              }
+            },
+            "practical_ties": 1,
+            "switches": 5,
+            "unknown_switches": 3
+          }
+        },
+        "time_profile": {
+          "conditional_timing_decision": {
+            "actions": {
+              "STAY": 16,
+              "SWITCH": 6,
+              "UNDETERMINED": 27
+            },
+            "comparable_switches": 3,
+            "meaningful_gains": 1,
+            "meaningful_losses": 1,
+            "path_relation": {
+              "different_path": {
+                "comparable": 3,
+                "outcome_classes": {
+                  "MEANINGFUL_GAIN": 1,
+                  "MEANINGFUL_LOSS": 1,
+                  "PRACTICAL_TIE": 1
+                },
+                "recommendations": 4,
+                "unknown": 1
+              },
+              "same_station_path": {
+                "comparable": 0,
+                "outcome_classes": {},
+                "recommendations": 2,
+                "unknown": 2
+              }
+            },
+            "practical_ties": 1,
+            "switches": 6,
+            "unknown_switches": 3
+          },
+          "strict_decision": {
+            "actions": {
+              "STAY": 16,
+              "SWITCH": 5,
+              "UNDETERMINED": 28
+            },
+            "comparable_switches": 2,
+            "meaningful_gains": 1,
+            "meaningful_losses": 0,
+            "path_relation": {
+              "different_path": {
+                "comparable": 2,
+                "outcome_classes": {
+                  "MEANINGFUL_GAIN": 1,
+                  "PRACTICAL_TIE": 1
+                },
+                "recommendations": 3,
+                "unknown": 1
+              },
+              "same_station_path": {
+                "comparable": 0,
+                "outcome_classes": {},
+                "recommendations": 2,
+                "unknown": 2
+              }
+            },
+            "practical_ties": 1,
+            "switches": 5,
+            "unknown_switches": 3
+          }
+        }
+      }
+    }
+  }
+}

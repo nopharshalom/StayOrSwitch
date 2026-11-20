@@ -1,0 +1,372 @@
+{
+  "capture_manifest": {
+    "path": "data/manifests/google-corridors-2026-11-20.json",
+    "sha256": "b92b538445fa9333b234ac71ae01936baa8f4af054c28fc1ef7e08f90d94555c"
+  },
+  "checks": [
+    "All capture, summary, station, builder and producer hashes verified.",
+    "All three responses have one explicit DEFAULT_ROUTE; it is retained even when other raw duration values are lower.",
+    "All raw provider alternatives are retained as normalized, duplicate or explicitly rejected entries.",
+    "Every accepted template preserves exact provider line without compatible-service pooling.",
+    "Every access, transfer and egress walking component equals the sum of the raw explicit provider WALK steps at that boundary.",
+    "Every mapped station matches official name, supported daytime line, directional ID, coordinates and a <=250-metre station-point threshold.",
+    "Current raw provider durations and derived departure-now arrival clocks remain separate and neither is a historical outcome.",
+    "Raw provider captures and derived full summaries are git-ignored; no credential material was inspected."
+  ],
+  "corridors": [
+    {
+      "corridor_id": "pilot_hayden_tandon",
+      "default_lines": [
+        "F"
+      ],
+      "default_route_id": "google-route-f1879a6d65f5e73756e1b684",
+      "default_source_index": 0,
+      "derived_departure_now_duration_seconds": 2274.112718105316,
+      "derived_summary": {
+        "bytes": 57581,
+        "path": "data/local/google-corridors/2026-11-20-current/pilot_hayden_tandon.summary.json",
+        "sha256": "89ea6b96fd4c125615026bca26ab199aa7ee56c59a54e00f8da4c65ee37800a5"
+      },
+      "duplicate_routes": 3,
+      "duration_clock_difference_seconds": 92.11271799999986,
+      "mapped_routes": [
+        {
+          "lines": [
+            "F"
+          ],
+          "maximum_raw_provider_station_offset_metres": 0.14,
+          "provider_walk_components_seconds": [
+            255.0,
+            279.0
+          ],
+          "representative_source_index": 0,
+          "route_id": "google-route-f1879a6d65f5e73756e1b684",
+          "source_indices": [
+            0,
+            1,
+            2,
+            5
+          ],
+          "stop_pairs": [
+            [
+              "F09S",
+              "A41S"
+            ]
+          ]
+        },
+        {
+          "lines": [
+            "G"
+          ],
+          "maximum_raw_provider_station_offset_metres": 71.495,
+          "provider_walk_components_seconds": [
+            208.0,
+            704.0
+          ],
+          "representative_source_index": 4,
+          "route_id": "google-route-88aa6b135b2fe15e2cd08a95",
+          "source_indices": [
+            4
+          ],
+          "stop_pairs": [
+            [
+              "G22S",
+              "A42S"
+            ]
+          ]
+        }
+      ],
+      "normalized_distinct_routes": 2,
+      "provider_reported_duration_seconds": 2182.0,
+      "raw_capture": {
+        "bytes": 47023,
+        "path": "data/local/google-corridors/2026-11-20-current/pilot_hayden_tandon.provider.json",
+        "sha256": "f01c3bc1d94098bb86ba365fa2dd6e465aa612831e4017c75fff0d12283785fa"
+      },
+      "raw_routes": 6,
+      "received_at": "2026-11-20T15:54:47.277363Z",
+      "rejected_routes": 1,
+      "request_at": "2026-11-20T15:54:46.887282Z",
+      "unavailable_candidates": [
+        {
+          "candidate_provenance": "CURRENT_GOOGLE_ROUTE_REJECTED_NORMALIZATION",
+          "google_route_index": 3,
+          "id": "google-unavailable-pilot_hayden_tandon-3",
+          "name": "E then A (provider route unavailable)",
+          "reason_codes": [
+            "MISSING_TRANSFER_WALK"
+          ]
+        }
+      ]
+    },
+    {
+      "corridor_id": "grandcentral_boroughhall",
+      "default_lines": [
+        "5"
+      ],
+      "default_route_id": "google-route-54502e7253ac53a2be3cd264",
+      "default_source_index": 0,
+      "derived_departure_now_duration_seconds": 1896.1125619411469,
+      "derived_summary": {
+        "bytes": 81391,
+        "path": "data/local/google-corridors/2026-11-20-current/grandcentral_boroughhall.summary.json",
+        "sha256": "e0f35d184bef29beeeb6d2604abb99ce0ac537d0e812cb9bcd177401eea2b734"
+      },
+      "duplicate_routes": 1,
+      "duration_clock_difference_seconds": 459.112562,
+      "mapped_routes": [
+        {
+          "lines": [
+            "5"
+          ],
+          "maximum_raw_provider_station_offset_metres": 17.803,
+          "provider_walk_components_seconds": [
+            111.0,
+            171.0
+          ],
+          "representative_source_index": 0,
+          "route_id": "google-route-54502e7253ac53a2be3cd264",
+          "source_indices": [
+            0,
+            3
+          ],
+          "stop_pairs": [
+            [
+              "631S",
+              "423S"
+            ]
+          ]
+        },
+        {
+          "lines": [
+            "7",
+            "3"
+          ],
+          "maximum_raw_provider_station_offset_metres": 95.084,
+          "provider_walk_components_seconds": [
+            100.0,
+            46.0,
+            138.0
+          ],
+          "representative_source_index": 1,
+          "route_id": "google-route-7216c8289da57456f28b1b48",
+          "source_indices": [
+            1
+          ],
+          "stop_pairs": [
+            [
+              "723S",
+              "725S"
+            ],
+            [
+              "127S",
+              "232S"
+            ]
+          ]
+        },
+        {
+          "lines": [
+            "7",
+            "F"
+          ],
+          "maximum_raw_provider_station_offset_metres": 95.084,
+          "provider_walk_components_seconds": [
+            100.0,
+            53.0,
+            312.0
+          ],
+          "representative_source_index": 2,
+          "route_id": "google-route-f64f3db98836328b08094801",
+          "source_indices": [
+            2
+          ],
+          "stop_pairs": [
+            [
+              "723S",
+              "724S"
+            ],
+            [
+              "D16S",
+              "A41S"
+            ]
+          ]
+        },
+        {
+          "lines": [
+            "4"
+          ],
+          "maximum_raw_provider_station_offset_metres": 17.803,
+          "provider_walk_components_seconds": [
+            115.0,
+            171.0
+          ],
+          "representative_source_index": 4,
+          "route_id": "google-route-fae079d4a0a7051e64aa1cda",
+          "source_indices": [
+            4
+          ],
+          "stop_pairs": [
+            [
+              "631S",
+              "423S"
+            ]
+          ]
+        },
+        {
+          "lines": [
+            "6",
+            "R"
+          ],
+          "maximum_raw_provider_station_offset_metres": 249.52,
+          "provider_walk_components_seconds": [
+            115.0,
+            51.0,
+            217.0
+          ],
+          "representative_source_index": 5,
+          "route_id": "google-route-de788210588f9366a3b6c046",
+          "source_indices": [
+            5
+          ],
+          "stop_pairs": [
+            [
+              "631S",
+              "635S"
+            ],
+            [
+              "R20S",
+              "R28S"
+            ]
+          ]
+        }
+      ],
+      "normalized_distinct_routes": 5,
+      "provider_reported_duration_seconds": 1437.0,
+      "raw_capture": {
+        "bytes": 54527,
+        "path": "data/local/google-corridors/2026-11-20-current/grandcentral_boroughhall.provider.json",
+        "sha256": "035039ff44524da9f42f615a7acd3a66b0645ff905e8daae312542d82cd2172e"
+      },
+      "raw_routes": 6,
+      "received_at": "2026-11-20T15:54:47.348971Z",
+      "rejected_routes": 0,
+      "request_at": "2026-11-20T15:54:46.887438Z",
+      "unavailable_candidates": []
+    },
+    {
+      "corridor_id": "courtsquare_timessquare",
+      "default_lines": [
+        "7"
+      ],
+      "default_route_id": "google-route-9a6888e689fb501e230ccda5",
+      "default_source_index": 0,
+      "derived_departure_now_duration_seconds": 1101.1131150722504,
+      "derived_summary": {
+        "bytes": 47432,
+        "path": "data/local/google-corridors/2026-11-20-current/courtsquare_timessquare.summary.json",
+        "sha256": "a5f6e0c64d5ad539a324f188991078fe4285aab170ee518b84b4be0e25a8dbeb"
+      },
+      "duplicate_routes": 3,
+      "duration_clock_difference_seconds": 223.1131150000001,
+      "mapped_routes": [
+        {
+          "lines": [
+            "7"
+          ],
+          "maximum_raw_provider_station_offset_metres": 39.181,
+          "provider_walk_components_seconds": [
+            170.0,
+            68.0
+          ],
+          "representative_source_index": 0,
+          "route_id": "google-route-9a6888e689fb501e230ccda5",
+          "source_indices": [
+            0,
+            1,
+            4,
+            5
+          ],
+          "stop_pairs": [
+            [
+              "719S",
+              "725S"
+            ]
+          ]
+        },
+        {
+          "lines": [
+            "F"
+          ],
+          "maximum_raw_provider_station_offset_metres": 0.276,
+          "provider_walk_components_seconds": [
+            278.0,
+            228.0
+          ],
+          "representative_source_index": 2,
+          "route_id": "google-route-59e8e3290ecae4779e70fb80",
+          "source_indices": [
+            2
+          ],
+          "stop_pairs": [
+            [
+              "F09S",
+              "D16S"
+            ]
+          ]
+        },
+        {
+          "lines": [
+            "E"
+          ],
+          "maximum_raw_provider_station_offset_metres": 9.562,
+          "provider_walk_components_seconds": [
+            278.0,
+            246.0
+          ],
+          "representative_source_index": 3,
+          "route_id": "google-route-b0b73137413b2a2d691f0c66",
+          "source_indices": [
+            3
+          ],
+          "stop_pairs": [
+            [
+              "F09S",
+              "A27S"
+            ]
+          ]
+        }
+      ],
+      "normalized_distinct_routes": 3,
+      "provider_reported_duration_seconds": 878.0,
+      "raw_capture": {
+        "bytes": 34715,
+        "path": "data/local/google-corridors/2026-11-20-current/courtsquare_timessquare.provider.json",
+        "sha256": "6e20b3f5a2820ca4c6bfa5f8020ee21b923de93b9a2b81b7efdea22930a7d694"
+      },
+      "raw_routes": 6,
+      "received_at": "2026-11-20T15:54:47.297236Z",
+      "rejected_routes": 0,
+      "request_at": "2026-11-20T15:54:46.886885Z",
+      "unavailable_candidates": []
+    }
+  ],
+  "limits": [
+    "Current Google routes and walking are November 20 inputs held fixed for retrospective October research, not archived October Google recommendations.",
+    "Official station metadata establishes station mapping; each historical train still requires ordered actual stop updates for eligibility.",
+    "The rejected E-to-A route has no explicit provider transfer-walk duration; it remains unavailable rather than receiving an invented zero.",
+    "Raw Google reported duration differs from current final-arrival-minus-query duration; report both if interpreting a departure-now baseline.",
+    "Research-route augmentation, if later added, requires separate source and walking checks and is not claimed by this provider-only audit."
+  ],
+  "provider_templates": {
+    "path": "data/config/google-corridors-provider.json",
+    "sha256": "5ca970aae7adb56bb3d3438aa6721037d9aab51c57c3795dc9e1fb7806934f2e"
+  },
+  "schema_version": "google-corridors-provider-audit-v1",
+  "scope": "Independent current-provider capture, default-path selection, station mapping and walking arithmetic audit; historical event/outcome scoring is outside this audit.",
+  "station_metadata": {
+    "path": "data/local/google-corridors/2026-11-20-current/official-stations.json",
+    "sha256": "40f829816b08434dfd23ddd6e2b75a98ad7bd9bc2c00861c9a257726435cb0cb"
+  },
+  "station_metadata_url": "https://data.ny.gov/resource/39hk-dx4f.json?$limit=5000",
+  "status": "PASS"
+}

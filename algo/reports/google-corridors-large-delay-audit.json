@@ -1,0 +1,1093 @@
+{
+  "asof_incident": [
+    {
+      "ambiguous_scope": false,
+      "applicable": true,
+      "evidence_status": "FRESH",
+      "exposure_source": "ASOF_SELECTED_TRAIN_SEGMENT",
+      "from_stop_id": "719S",
+      "leg_index": 0,
+      "notices": [
+        {
+          "active_periods": [
+            {
+              "end": null,
+              "start": 1793352982
+            }
+          ],
+          "active_status": true,
+          "age_seconds": 900.0,
+          "captured_at": 1793353820.553,
+          "cause": "UNKNOWN",
+          "classification_rule": "EXPLICIT_SERVICE_IMPACT",
+          "description": null,
+          "first_observed_at": 1793352983.617,
+          "frozen_classifier_and_scope_are_unchanged": true,
+          "header": "34 St-Hudson Yards-bound [7] trains are delayed while we investigate a report of an unauthorized person on the tracks at 46 St-Bliss St.",
+          "id": "lmm:alert:274118:26",
+          "incident_id": "lmm:alert:274118",
+          "informed_entities": [
+            {
+              "agency_id": "MTASBWY",
+              "direction_id": null,
+              "extensions": {},
+              "route_id": "7",
+              "stop_id": null,
+              "trip": null
+            }
+          ],
+          "model_scope": "ROUTE",
+          "model_scope_matches": true,
+          "state": "DISRUPTION",
+          "version_id": "ac287fdf734866f45e199025de59942665bd58795b3dadc0cfcb739f9700c105"
+        }
+      ],
+      "platform_direction": "S",
+      "route_id": "7",
+      "segment_stop_ids": [
+        "719S",
+        "720S",
+        "721S",
+        "723S",
+        "724S",
+        "725S"
+      ],
+      "to_stop_id": "725S"
+    }
+  ],
+  "audit_stage": "POST_FREEZE_SOURCE_VALIDATION_ONLY",
+  "case_id": "courtsquare_timessquare--lmm-alert-274118--1793353883617",
+  "claim_limitations": [
+    "The 82.83-minute result compares the exact trains selected from cutoff-time forecasts. It does not establish 82.83 minutes saved versus taking any later available 7 train.",
+    "Most of the fixed-run Stay duration is the 92.54-minute wait for selected 7 trip 033750_7..S. Other 7 trips have earlier endpoint evidence; an adaptive reboarding baseline was not simulated.",
+    "Two nominally earlier usable 7 label pairs persist nearly 22 hours after their final predicted times. The current frozen screen limits disappearance gap but not prediction-to-disappearance lag; passing flags are not independent ground truth. Their optimistic durations are not reliable adaptive-baseline headlines.",
+    "A separate earlier 7 trip 040031_7..S has near-event journal disappearance and a 61.69-minute fixed-walk proxy duration. It demonstrates the baseline distinction, without proving the optimal adaptive Stay time.",
+    "The selected 7 and F endpoints themselves have near-event raw disappearance and consistent trip/vehicle identity. This supports the fixed-run proxy calculation but does not convert prediction records into measured physical arrivals.",
+    "The incident is DISRUPTION at the 05:51 cutoff. Later SEVERE wording cannot be backdated into the case or used to label this a severe-at-decision example.",
+    "Google selected the Stay path using current responses. Current Google durations and walks are not historical Google performance or event-day measured walking/entrance access.",
+    "No source labels, frozen cohort, model, thresholds or scored results were modified. These diagnostics were inspected only after freeze."
+  ],
+  "csv_trip_rows": [
+    {
+      "direction_id": "1",
+      "last_observed": "1793360443",
+      "marked_past": "1793360446",
+      "num_schedule_changes": "0",
+      "num_schedule_rewrites": "0",
+      "num_updates": "3467",
+      "route_id": "7",
+      "start_time": "1793338650",
+      "trip_id": "033750_7..S",
+      "trip_uid": "1793338650_7..S",
+      "vehicle_id": "07 0537+ MST/34H"
+    },
+    {
+      "direction_id": "1",
+      "last_observed": "1793433608",
+      "marked_past": "1793433611",
+      "num_schedule_changes": "0",
+      "num_schedule_rewrites": "0",
+      "num_updates": "28522",
+      "route_id": "7",
+      "start_time": "1793339850",
+      "trip_id": "035750_7..S",
+      "trip_uid": "1793339850_7..S",
+      "vehicle_id": "07 0557+ MST/34H"
+    },
+    {
+      "direction_id": "1",
+      "last_observed": "1793433608",
+      "marked_past": "1793433611",
+      "num_schedule_changes": "0",
+      "num_schedule_rewrites": "0",
+      "num_updates": "28416",
+      "route_id": "7",
+      "start_time": "1793340090",
+      "trip_id": "036150_7..S",
+      "trip_uid": "1793340090_7..S",
+      "vehicle_id": "07 0601+ MST/34H"
+    },
+    {
+      "direction_id": "1",
+      "last_observed": "1793357686",
+      "marked_past": "1793357689",
+      "num_schedule_changes": "0",
+      "num_schedule_rewrites": "0",
+      "num_updates": "271",
+      "route_id": "7",
+      "start_time": "1793342418",
+      "trip_id": "040031_7..S",
+      "trip_uid": "1793342418_7..S",
+      "vehicle_id": "$7 0640 CHS/34H"
+    },
+    {
+      "direction_id": "1",
+      "last_observed": "1793358364",
+      "marked_past": "1793358378",
+      "num_schedule_changes": "0",
+      "num_schedule_rewrites": "0",
+      "num_updates": "1059",
+      "route_id": "F",
+      "start_time": "1793337990",
+      "trip_id": "032650_F..S54R",
+      "trip_uid": "1793337990_F..S54R",
+      "vehicle_id": "1F 0526+ 179/STL"
+    }
+  ],
+  "decision_at": 1793353883.617,
+  "frozen_comparison": {
+    "fixed_selected_train_proxy_savings_minutes": 82.83333333333333,
+    "fixed_selected_train_proxy_savings_seconds": 4970,
+    "hindsight_best_was_not_used_for_recommendation": true,
+    "predicted_savings_seconds": 489.5210084915161,
+    "provider_walk_seconds": {
+      "F_access": 278,
+      "F_egress": 228,
+      "stay_access": 170,
+      "stay_egress": 68
+    },
+    "recommended_alternative_route_id": "google-route-59e8e3290ecae4779e70fb80",
+    "recommended_trip": "MTA:bdfm:20261030:F:032650_F..S54R:05%3A26%3A18",
+    "selection_uses_outcomes": false,
+    "stay_proxy_duration_minutes": 106.52304999828338,
+    "stay_proxy_duration_seconds": 6391.382999897003,
+    "stay_route_id": "google-route-9a6888e689fb501e230ccda5",
+    "stay_trip": "MTA:numbered:20261030:7:033750_7..S:",
+    "stay_wait_seconds": 5552.382999897003,
+    "switch_proxy_duration_minutes": 23.68971666495005,
+    "switch_proxy_duration_seconds": 1421.3829998970032
+  },
+  "generated_at": "2026-11-20T16:25:58.894677+00:00",
+  "independent_checks_passed": [
+    "Selected trip identity and NYCT train ID are constant throughout each inspected raw window.",
+    "No duplicate matching trip entities or interior disappearance/reappearance in the inspected raw windows.",
+    "Each selected endpoint final prediction matches raw GTFS-RT, CSV journal and screened label exactly.",
+    "The next raw full-feed capture removes the endpoint while retaining the same trip at downstream stops.",
+    "All four selected endpoint disappearance transitions occur within 68 seconds after the relevant final endpoint prediction.",
+    "Both selected CSV trip rows have zero schedule changes and zero schedule rewrites."
+  ],
+  "local_time": "2026-10-30T05:51:23.617000-04:00",
+  "raw_inspection": {
+    "bdfm": {
+      "checkpoint_note": "These are the latest full archived raw captures at illustrative times, not necessarily the minute-sampled input snapshots used by the frozen experiment.",
+      "first_capture": 1793353710.458,
+      "first_target_capture": 1793353710.458,
+      "identity_variants": [
+        [
+          "032650_F..S54R",
+          "F",
+          "20261030",
+          "05:26:18",
+          "1F 0526+ 179/STL",
+          3
+        ]
+      ],
+      "illustrative_raw_checkpoints": [
+        {
+          "captured_at": 1793353877.706,
+          "feed": "bdfm",
+          "member": "nycsubway_BDFM_20261030T095117.706Z_f45brg6f7jx5.gtfsrt",
+          "sha256": "2f3a189bc5fa6fd5370fdece952b8a3bdfe34cd1674956d76dcf4173f0a6c58b",
+          "source_timestamp": 1793353875,
+          "trips": [
+            {
+              "entity_id": "000021F",
+              "first_stop": "G21S",
+              "is_assigned": true,
+              "nyct_direction": 3,
+              "nyct_train_id": "1F 0526+ 179/STL",
+              "route_id": "F",
+              "schedule_relationship": 0,
+              "start_date": "20261030",
+              "start_time": "05:26:18",
+              "stop_count": 36,
+              "stops": [
+                {
+                  "arrival": 1793354083,
+                  "departure": 1793354083,
+                  "schedule_relationship": 0,
+                  "stop_id": "F09S"
+                },
+                {
+                  "arrival": 1793354593,
+                  "departure": 1793354593,
+                  "schedule_relationship": 0,
+                  "stop_id": "D16S"
+                }
+              ],
+              "trip_id": "032650_F..S54R"
+            }
+          ]
+        }
+      ],
+      "inspected_capture_count": 188,
+      "interior_missing_capture_count": 0,
+      "last_capture": 1793355242.7,
+      "last_target_capture": 1793355242.7,
+      "max_matching_entities_per_capture": 1,
+      "target_present_capture_count": 188
+    },
+    "numbered": {
+      "checkpoint_note": "These are the latest full archived raw captures at illustrative times, not necessarily the minute-sampled input snapshots used by the frozen experiment.",
+      "first_capture": 1793353700.452,
+      "first_target_capture": 1793353700.452,
+      "identity_variants": [
+        [
+          "033750_7..S",
+          "7",
+          "20261030",
+          "",
+          "07 0537+ MST/34H",
+          3
+        ]
+      ],
+      "illustrative_raw_checkpoints": [
+        {
+          "captured_at": 1793353882.669,
+          "feed": "numbered",
+          "member": "nycsubway_1234567_20261030T095122.669Z_cw7ysd6xzizc.gtfsrt",
+          "sha256": "15bf890fd7ca322449559834fce5b78dcee84692eae271855e70f9fa479c90f4",
+          "source_timestamp": 1793353879,
+          "trips": [
+            {
+              "entity_id": "000205",
+              "first_stop": "709S",
+              "is_assigned": true,
+              "nyct_direction": 3,
+              "nyct_train_id": "07 0537+ MST/34H",
+              "route_id": "7",
+              "schedule_relationship": 0,
+              "start_date": "20261030",
+              "start_time": "",
+              "stop_count": 16,
+              "stops": [
+                {
+                  "arrival": 1793354552,
+                  "departure": 1793354572,
+                  "schedule_relationship": 0,
+                  "stop_id": "719S"
+                },
+                {
+                  "arrival": 1793355152,
+                  "departure": 1793355172,
+                  "schedule_relationship": 0,
+                  "stop_id": "725S"
+                }
+              ],
+              "trip_id": "033750_7..S"
+            }
+          ]
+        },
+        {
+          "captured_at": 1793355682.739,
+          "feed": "numbered",
+          "member": "nycsubway_1234567_20261030T102122.739Z_bum3zid2dnxq.gtfsrt",
+          "sha256": "0d19bca07a1b6f04759eec31a8c5e56777fdf3c71f566453bf44c73b12c50c7f",
+          "source_timestamp": 1793355679,
+          "trips": [
+            {
+              "entity_id": "000252",
+              "first_stop": "709S",
+              "is_assigned": true,
+              "nyct_direction": 3,
+              "nyct_train_id": "07 0537+ MST/34H",
+              "route_id": "7",
+              "schedule_relationship": 0,
+              "start_date": "20261030",
+              "start_time": "",
+              "stop_count": 16,
+              "stops": [
+                {
+                  "arrival": 1793354552,
+                  "departure": 1793354572,
+                  "schedule_relationship": 0,
+                  "stop_id": "719S"
+                },
+                {
+                  "arrival": 1793355152,
+                  "departure": 1793355172,
+                  "schedule_relationship": 0,
+                  "stop_id": "725S"
+                }
+              ],
+              "trip_id": "033750_7..S"
+            }
+          ]
+        },
+        {
+          "captured_at": 1793357483.595,
+          "feed": "numbered",
+          "member": "nycsubway_1234567_20261030T105123.595Z_lyxux6d2lfnc.gtfsrt",
+          "sha256": "5e2f4bf87a595a2ab9258fd9dc59514dcfebc13786a6c5803daa028190978c7b",
+          "source_timestamp": 1793357479,
+          "trips": [
+            {
+              "entity_id": "000312",
+              "first_stop": "709S",
+              "is_assigned": true,
+              "nyct_direction": 3,
+              "nyct_train_id": "07 0537+ MST/34H",
+              "route_id": "7",
+              "schedule_relationship": 0,
+              "start_date": "20261030",
+              "start_time": "",
+              "stop_count": 16,
+              "stops": [
+                {
+                  "arrival": 1793354552,
+                  "departure": 1793354572,
+                  "schedule_relationship": 0,
+                  "stop_id": "719S"
+                },
+                {
+                  "arrival": 1793355152,
+                  "departure": 1793355172,
+                  "schedule_relationship": 0,
+                  "stop_id": "725S"
+                }
+              ],
+              "trip_id": "033750_7..S"
+            }
+          ]
+        },
+        {
+          "captured_at": 1793359283.583,
+          "feed": "numbered",
+          "member": "nycsubway_1234567_20261030T112123.583Z_6flhsp6wulz7.gtfsrt",
+          "sha256": "f156793fd6a2f3f5c7bbc020f72b3c787df5987e8eff6c01a4d04bc4425478c5",
+          "source_timestamp": 1793359279,
+          "trips": [
+            {
+              "entity_id": "000359",
+              "first_stop": "715S",
+              "is_assigned": true,
+              "nyct_direction": 3,
+              "nyct_train_id": "07 0537+ MST/34H",
+              "route_id": "7",
+              "schedule_relationship": 0,
+              "start_date": "20261030",
+              "start_time": "",
+              "stop_count": 10,
+              "stops": [
+                {
+                  "arrival": 1793359592,
+                  "departure": 1793359612,
+                  "schedule_relationship": 0,
+                  "stop_id": "719S"
+                },
+                {
+                  "arrival": 1793360192,
+                  "departure": 1793360212,
+                  "schedule_relationship": 0,
+                  "stop_id": "725S"
+                }
+              ],
+              "trip_id": "033750_7..S"
+            }
+          ]
+        }
+      ],
+      "inspected_capture_count": 2479,
+      "interior_missing_capture_count": 0,
+      "last_capture": 1793360547.71,
+      "last_target_capture": 1793360447.697,
+      "max_matching_entities_per_capture": 1,
+      "target_present_capture_count": 2440
+    }
+  },
+  "reproduction_method": [
+    "Stream the original October 30 CSV archive with iter_csv_rows; match exact trip_uid and four endpoint stop_ids.",
+    "Independently stream the original October 30 GTFS-RT tar.xz, decode unprojected protobuf messages for numbered 1793353700..1793360550 and BDFM 1793353700..1793355250 capture windows.",
+    "Retain target trip descriptors, NYCT train_id, header source time, target stop times and raw member SHA256; compare final presence and next full-feed absence to journal and label timestamps.",
+    "Compare read-only same-line label diagnostics, preserving their full last-observed/marked-past lag and frozen rule limitations."
+  ],
+  "same_line_diagnostics": [
+    {
+      "boarding_departure_at": 1793355600,
+      "changes_frozen_result": false,
+      "destination_stop_arrival_at": 1793356180,
+      "diagnostic_only": true,
+      "endpoint_labels": {
+        "719S": {
+          "arrival_at": 1793355580,
+          "arrival_quality_flags": [],
+          "arrival_usable": true,
+          "available_at": 1793433611,
+          "available_at_basis": "JOURNAL_SOURCE_TIMESTAMP_NOT_RECEIPT",
+          "canonical_event_trip_id": "MTA_EVENT:numbered:20261030:7:035750_7..S",
+          "confirmation_status": "CONFIRMED",
+          "confirmed_at": 1793433617.665,
+          "confirmed_at_basis": "FIRST_ARCHIVED_SAME_FEED_RECEIPT_WITH_SOURCE_AFTER_MARKED_PAST",
+          "departure_at": 1793355600,
+          "departure_quality_flags": [],
+          "departure_usable": true,
+          "evidence_class": "MTA_FINAL_PREDICTION_PROXY",
+          "feed_id": "numbered",
+          "normalized_alias_count": 1,
+          "observation_gap_seconds": 3,
+          "physical_ground_truth": false,
+          "quality_flags": [],
+          "raw_trip_id": "035750_7..S",
+          "route_id": "7",
+          "service_date": "20261030",
+          "source_trip_uid": "1793339850_7..S",
+          "stop_id": "719S",
+          "stop_last_observed_at": 1793433608
+        },
+        "725S": {
+          "arrival_at": 1793356180,
+          "arrival_quality_flags": [],
+          "arrival_usable": true,
+          "available_at": 1793433611,
+          "available_at_basis": "JOURNAL_SOURCE_TIMESTAMP_NOT_RECEIPT",
+          "canonical_event_trip_id": "MTA_EVENT:numbered:20261030:7:035750_7..S",
+          "confirmation_status": "CONFIRMED",
+          "confirmed_at": 1793433617.665,
+          "confirmed_at_basis": "FIRST_ARCHIVED_SAME_FEED_RECEIPT_WITH_SOURCE_AFTER_MARKED_PAST",
+          "departure_at": 1793356200,
+          "departure_quality_flags": [],
+          "departure_usable": true,
+          "evidence_class": "MTA_FINAL_PREDICTION_PROXY",
+          "feed_id": "numbered",
+          "normalized_alias_count": 1,
+          "observation_gap_seconds": 3,
+          "physical_ground_truth": false,
+          "quality_flags": [],
+          "raw_trip_id": "035750_7..S",
+          "route_id": "7",
+          "service_date": "20261030",
+          "source_trip_uid": "1793339850_7..S",
+          "stop_id": "725S",
+          "stop_last_observed_at": 1793433608
+        }
+      },
+      "endpoint_to_last_observed_seconds": {
+        "719S_departure": 78008,
+        "725S_arrival": 77428
+      },
+      "fixed_walk_total_duration_minutes": 39.406383331616716,
+      "fixed_walk_total_duration_seconds": 2364.382999897003,
+      "hypothetical_F_gain_seconds": 943.0,
+      "interpretation": "Accepted by frozen label rules but both endpoints persist almost 22 hours after their predicted times. Do not treat the 39.41/43.41-minute values as strong arrival evidence.",
+      "trip_id": "MTA:numbered:20261030:7:035750_7..S:"
+    },
+    {
+      "boarding_departure_at": 1793355840,
+      "changes_frozen_result": false,
+      "destination_stop_arrival_at": 1793356420,
+      "diagnostic_only": true,
+      "endpoint_labels": {
+        "719S": {
+          "arrival_at": 1793355820,
+          "arrival_quality_flags": [],
+          "arrival_usable": true,
+          "available_at": 1793433611,
+          "available_at_basis": "JOURNAL_SOURCE_TIMESTAMP_NOT_RECEIPT",
+          "canonical_event_trip_id": "MTA_EVENT:numbered:20261030:7:036150_7..S",
+          "confirmation_status": "CONFIRMED",
+          "confirmed_at": 1793433617.665,
+          "confirmed_at_basis": "FIRST_ARCHIVED_SAME_FEED_RECEIPT_WITH_SOURCE_AFTER_MARKED_PAST",
+          "departure_at": 1793355840,
+          "departure_quality_flags": [],
+          "departure_usable": true,
+          "evidence_class": "MTA_FINAL_PREDICTION_PROXY",
+          "feed_id": "numbered",
+          "normalized_alias_count": 1,
+          "observation_gap_seconds": 3,
+          "physical_ground_truth": false,
+          "quality_flags": [],
+          "raw_trip_id": "036150_7..S",
+          "route_id": "7",
+          "service_date": "20261030",
+          "source_trip_uid": "1793340090_7..S",
+          "stop_id": "719S",
+          "stop_last_observed_at": 1793433608
+        },
+        "725S": {
+          "arrival_at": 1793356420,
+          "arrival_quality_flags": [],
+          "arrival_usable": true,
+          "available_at": 1793433611,
+          "available_at_basis": "JOURNAL_SOURCE_TIMESTAMP_NOT_RECEIPT",
+          "canonical_event_trip_id": "MTA_EVENT:numbered:20261030:7:036150_7..S",
+          "confirmation_status": "CONFIRMED",
+          "confirmed_at": 1793433617.665,
+          "confirmed_at_basis": "FIRST_ARCHIVED_SAME_FEED_RECEIPT_WITH_SOURCE_AFTER_MARKED_PAST",
+          "departure_at": 1793356440,
+          "departure_quality_flags": [],
+          "departure_usable": true,
+          "evidence_class": "MTA_FINAL_PREDICTION_PROXY",
+          "feed_id": "numbered",
+          "normalized_alias_count": 1,
+          "observation_gap_seconds": 3,
+          "physical_ground_truth": false,
+          "quality_flags": [],
+          "raw_trip_id": "036150_7..S",
+          "route_id": "7",
+          "service_date": "20261030",
+          "source_trip_uid": "1793340090_7..S",
+          "stop_id": "725S",
+          "stop_last_observed_at": 1793433608
+        }
+      },
+      "endpoint_to_last_observed_seconds": {
+        "719S_departure": 77768,
+        "725S_arrival": 77188
+      },
+      "fixed_walk_total_duration_minutes": 43.406383331616716,
+      "fixed_walk_total_duration_seconds": 2604.382999897003,
+      "hypothetical_F_gain_seconds": 1183.0,
+      "interpretation": "Accepted by frozen label rules but both endpoints persist almost 22 hours after their predicted times. Do not treat the 39.41/43.41-minute values as strong arrival evidence.",
+      "trip_id": "MTA:numbered:20261030:7:036150_7..S:"
+    },
+    {
+      "boarding_departure_at": 1793356900,
+      "changes_frozen_result": false,
+      "destination_stop_arrival_at": 1793357517,
+      "diagnostic_only": true,
+      "endpoint_labels": {
+        "719S": {
+          "arrival_at": null,
+          "arrival_quality_flags": [
+            "MISSING_CSV_ARRIVAL"
+          ],
+          "arrival_usable": false,
+          "available_at": 1793356963,
+          "available_at_basis": "JOURNAL_SOURCE_TIMESTAMP_NOT_RECEIPT",
+          "canonical_event_trip_id": "MTA_EVENT:numbered:20261030:7:040031_7..S",
+          "confirmation_status": "CONFIRMED",
+          "confirmed_at": 1793356970.639,
+          "confirmed_at_basis": "FIRST_ARCHIVED_SAME_FEED_RECEIPT_WITH_SOURCE_AFTER_MARKED_PAST",
+          "departure_at": 1793356900,
+          "departure_quality_flags": [],
+          "departure_usable": true,
+          "evidence_class": "MTA_FINAL_PREDICTION_PROXY",
+          "feed_id": "numbered",
+          "normalized_alias_count": 1,
+          "observation_gap_seconds": 2,
+          "physical_ground_truth": false,
+          "quality_flags": [],
+          "raw_trip_id": "040031_7..S",
+          "route_id": "7",
+          "service_date": "20261030",
+          "source_trip_uid": "1793342418_7..S",
+          "stop_id": "719S",
+          "stop_last_observed_at": 1793356961
+        },
+        "725S": {
+          "arrival_at": 1793357517,
+          "arrival_quality_flags": [],
+          "arrival_usable": true,
+          "available_at": 1793357569,
+          "available_at_basis": "JOURNAL_SOURCE_TIMESTAMP_NOT_RECEIPT",
+          "canonical_event_trip_id": "MTA_EVENT:numbered:20261030:7:040031_7..S",
+          "confirmation_status": "CONFIRMED",
+          "confirmed_at": 1793357577.725,
+          "confirmed_at_basis": "FIRST_ARCHIVED_SAME_FEED_RECEIPT_WITH_SOURCE_AFTER_MARKED_PAST",
+          "departure_at": 1793357537,
+          "departure_quality_flags": [],
+          "departure_usable": true,
+          "evidence_class": "MTA_FINAL_PREDICTION_PROXY",
+          "feed_id": "numbered",
+          "normalized_alias_count": 1,
+          "observation_gap_seconds": 3,
+          "physical_ground_truth": false,
+          "quality_flags": [],
+          "raw_trip_id": "040031_7..S",
+          "route_id": "7",
+          "service_date": "20261030",
+          "source_trip_uid": "1793342418_7..S",
+          "stop_id": "725S",
+          "stop_last_observed_at": 1793357566
+        }
+      },
+      "endpoint_to_last_observed_seconds": {
+        "719S_departure": 61,
+        "725S_arrival": 49
+      },
+      "fixed_walk_total_duration_minutes": 61.689716664950055,
+      "fixed_walk_total_duration_seconds": 3701.382999897003,
+      "hypothetical_F_gain_seconds": 2280.0,
+      "interpretation": "A bounded near-event-disappearance counterexample to interpreting the selected 7 run as the best adaptive Stay-on-7 outcome. This is not a complete adaptive baseline. Boarding arrival is missing, but departure is present and usable.",
+      "trip_id": "MTA:numbered:20261030:7:040031_7..S:"
+    }
+  ],
+  "schema_version": "google-corridors-large-delay-independent-audit-v1",
+  "selected_endpoint_source_verification": [
+    {
+      "csv_row": {
+        "arrival_time": "1793359586",
+        "departure_time": "1793359606",
+        "last_observed": "1793359650",
+        "marked_past": "1793359654",
+        "stop_id": "719S",
+        "track": "1",
+        "trip_uid": "1793338650_7..S"
+      },
+      "last_present_raw_capture": {
+        "captured_at": 1793359655.637,
+        "feed": "numbered",
+        "member": "nycsubway_1234567_20261030T112735.637Z_mf6eezeygdvu.gtfsrt",
+        "sha256": "617c42649830eb46ce4967eb1a310f8a90f6142276093a68e814d6579d78bf44",
+        "source_timestamp": 1793359650,
+        "trips": [
+          {
+            "entity_id": "000364",
+            "first_stop": "719S",
+            "is_assigned": true,
+            "nyct_direction": 3,
+            "nyct_train_id": "07 0537+ MST/34H",
+            "route_id": "7",
+            "schedule_relationship": 0,
+            "start_date": "20261030",
+            "start_time": "",
+            "stop_count": 7,
+            "stops": [
+              {
+                "arrival": 1793359586,
+                "departure": 1793359606,
+                "schedule_relationship": 0,
+                "stop_id": "719S"
+              },
+              {
+                "arrival": 1793360186,
+                "departure": 1793360206,
+                "schedule_relationship": 0,
+                "stop_id": "725S"
+              }
+            ],
+            "trip_id": "033750_7..S"
+          }
+        ]
+      },
+      "next_raw_capture": {
+        "captured_at": 1793359657.675,
+        "feed": "numbered",
+        "member": "nycsubway_1234567_20261030T112737.675Z_oogd24sjy3t6.gtfsrt",
+        "sha256": "738c3d7249c6e7ecf4546b28bd75920a97379d3dfdb4e8b0fe1d83a4879769e2",
+        "source_timestamp": 1793359654,
+        "trips": [
+          {
+            "entity_id": "000362",
+            "first_stop": "720S",
+            "is_assigned": true,
+            "nyct_direction": 3,
+            "nyct_train_id": "07 0537+ MST/34H",
+            "route_id": "7",
+            "schedule_relationship": 0,
+            "start_date": "20261030",
+            "start_time": "",
+            "stop_count": 6,
+            "stops": [
+              {
+                "arrival": 1793360189,
+                "departure": 1793360209,
+                "schedule_relationship": 0,
+                "stop_id": "725S"
+              }
+            ],
+            "trip_id": "033750_7..S"
+          }
+        ]
+      },
+      "screened_label": {
+        "arrival_at": 1793359586,
+        "arrival_quality_flags": [],
+        "arrival_usable": true,
+        "available_at": 1793359654,
+        "available_at_basis": "JOURNAL_SOURCE_TIMESTAMP_NOT_RECEIPT",
+        "canonical_event_trip_id": "MTA_EVENT:numbered:20261030:7:033750_7..S",
+        "confirmation_status": "CONFIRMED",
+        "confirmed_at": 1793359660.545,
+        "confirmed_at_basis": "FIRST_ARCHIVED_SAME_FEED_RECEIPT_WITH_SOURCE_AFTER_MARKED_PAST",
+        "departure_at": 1793359606,
+        "departure_quality_flags": [],
+        "departure_usable": true,
+        "evidence_class": "MTA_FINAL_PREDICTION_PROXY",
+        "feed_id": "numbered",
+        "normalized_alias_count": 1,
+        "observation_gap_seconds": 4,
+        "physical_ground_truth": false,
+        "quality_flags": [],
+        "raw_trip_id": "033750_7..S",
+        "route_id": "7",
+        "service_date": "20261030",
+        "source_trip_uid": "1793338650_7..S",
+        "stop_id": "719S",
+        "stop_last_observed_at": 1793359650
+      },
+      "selected_endpoint_to_last_observed_seconds": 44,
+      "selected_endpoint_to_marked_past_seconds": 48,
+      "source_disappearance_gap_seconds": 4,
+      "stop_id": "719S",
+      "trip_id": "MTA:numbered:20261030:7:033750_7..S:",
+      "verified": true
+    },
+    {
+      "csv_row": {
+        "arrival_time": "1793360207",
+        "departure_time": "1793360227",
+        "last_observed": "1793360245",
+        "marked_past": "1793360248",
+        "stop_id": "725S",
+        "track": "1",
+        "trip_uid": "1793338650_7..S"
+      },
+      "last_present_raw_capture": {
+        "captured_at": 1793360250.632,
+        "feed": "numbered",
+        "member": "nycsubway_1234567_20261030T113730.632Z_wotpey7swprl.gtfsrt",
+        "sha256": "b3a6f263f2b3e2bf22a5ee24e60604efea11a0a2cc6f401376f41de204b290d5",
+        "source_timestamp": 1793360245,
+        "trips": [
+          {
+            "entity_id": "000368",
+            "first_stop": "725S",
+            "is_assigned": true,
+            "nyct_direction": 3,
+            "nyct_train_id": "07 0537+ MST/34H",
+            "route_id": "7",
+            "schedule_relationship": 0,
+            "start_date": "20261030",
+            "start_time": "",
+            "stop_count": 2,
+            "stops": [
+              {
+                "arrival": 1793360207,
+                "departure": 1793360227,
+                "schedule_relationship": 0,
+                "stop_id": "725S"
+              }
+            ],
+            "trip_id": "033750_7..S"
+          }
+        ]
+      },
+      "next_raw_capture": {
+        "captured_at": 1793360252.704,
+        "feed": "numbered",
+        "member": "nycsubway_1234567_20261030T113732.704Z_g26vv25ewjs5.gtfsrt",
+        "sha256": "36bd5aeba4b265df81e05e96bc38776c31468a0252b31a15bec54f49f632a79a",
+        "source_timestamp": 1793360248,
+        "trips": [
+          {
+            "entity_id": "000368",
+            "first_stop": "726S",
+            "is_assigned": true,
+            "nyct_direction": 3,
+            "nyct_train_id": "07 0537+ MST/34H",
+            "route_id": "7",
+            "schedule_relationship": 0,
+            "start_date": "20261030",
+            "start_time": "",
+            "stop_count": 1,
+            "stops": [],
+            "trip_id": "033750_7..S"
+          }
+        ]
+      },
+      "screened_label": {
+        "arrival_at": 1793360207,
+        "arrival_quality_flags": [],
+        "arrival_usable": true,
+        "available_at": 1793360248,
+        "available_at_basis": "JOURNAL_SOURCE_TIMESTAMP_NOT_RECEIPT",
+        "canonical_event_trip_id": "MTA_EVENT:numbered:20261030:7:033750_7..S",
+        "confirmation_status": "CONFIRMED",
+        "confirmed_at": 1793360255.547,
+        "confirmed_at_basis": "FIRST_ARCHIVED_SAME_FEED_RECEIPT_WITH_SOURCE_AFTER_MARKED_PAST",
+        "departure_at": 1793360227,
+        "departure_quality_flags": [],
+        "departure_usable": true,
+        "evidence_class": "MTA_FINAL_PREDICTION_PROXY",
+        "feed_id": "numbered",
+        "normalized_alias_count": 1,
+        "observation_gap_seconds": 3,
+        "physical_ground_truth": false,
+        "quality_flags": [],
+        "raw_trip_id": "033750_7..S",
+        "route_id": "7",
+        "service_date": "20261030",
+        "source_trip_uid": "1793338650_7..S",
+        "stop_id": "725S",
+        "stop_last_observed_at": 1793360245
+      },
+      "selected_endpoint_to_last_observed_seconds": 38,
+      "selected_endpoint_to_marked_past_seconds": 41,
+      "source_disappearance_gap_seconds": 3,
+      "stop_id": "725S",
+      "trip_id": "MTA:numbered:20261030:7:033750_7..S:",
+      "verified": true
+    },
+    {
+      "csv_row": {
+        "arrival_time": "1793354252",
+        "departure_time": "1793354252",
+        "last_observed": "1793354280",
+        "marked_past": "1793354294",
+        "stop_id": "F09S",
+        "track": "D3",
+        "trip_uid": "1793337990_F..S54R"
+      },
+      "last_present_raw_capture": {
+        "captured_at": 1793354282.702,
+        "feed": "bdfm",
+        "member": "nycsubway_BDFM_20261030T095802.702Z_3clhmfav77ls.gtfsrt",
+        "sha256": "d896761415ffd727e7340b673985d4f0f54151e39b762e46e5cf726e4b43a570",
+        "source_timestamp": 1793354280,
+        "trips": [
+          {
+            "entity_id": "000019F",
+            "first_stop": "F09S",
+            "is_assigned": true,
+            "nyct_direction": 3,
+            "nyct_train_id": "1F 0526+ 179/STL",
+            "route_id": "F",
+            "schedule_relationship": 0,
+            "start_date": "20261030",
+            "start_time": "05:26:18",
+            "stop_count": 35,
+            "stops": [
+              {
+                "arrival": 1793354252,
+                "departure": 1793354252,
+                "schedule_relationship": 0,
+                "stop_id": "F09S"
+              },
+              {
+                "arrival": 1793354662,
+                "departure": 1793354662,
+                "schedule_relationship": 0,
+                "stop_id": "D16S"
+              }
+            ],
+            "trip_id": "032650_F..S54R"
+          }
+        ]
+      },
+      "next_raw_capture": {
+        "captured_at": 1793354295.464,
+        "feed": "bdfm",
+        "member": "nycsubway_BDFM_20261030T095815.464Z_2l2fn5y3tt3l.gtfsrt",
+        "sha256": "d2f456f71b9cf6b459d479547590011c103ded7ee1bbf58e41f8636498f841af",
+        "source_timestamp": 1793354294,
+        "trips": [
+          {
+            "entity_id": "000021F",
+            "first_stop": "F11S",
+            "is_assigned": true,
+            "nyct_direction": 3,
+            "nyct_train_id": "1F 0526+ 179/STL",
+            "route_id": "F",
+            "schedule_relationship": 0,
+            "start_date": "20261030",
+            "start_time": "05:26:18",
+            "stop_count": 34,
+            "stops": [
+              {
+                "arrival": 1793354671,
+                "departure": 1793354671,
+                "schedule_relationship": 0,
+                "stop_id": "D16S"
+              }
+            ],
+            "trip_id": "032650_F..S54R"
+          }
+        ]
+      },
+      "screened_label": {
+        "arrival_at": 1793354252,
+        "arrival_quality_flags": [],
+        "arrival_usable": true,
+        "available_at": 1793354294,
+        "available_at_basis": "JOURNAL_SOURCE_TIMESTAMP_NOT_RECEIPT",
+        "canonical_event_trip_id": "MTA_EVENT:bdfm:20261030:F:032650_F..S54R",
+        "confirmation_status": "CONFIRMED",
+        "confirmed_at": 1793354297.686,
+        "confirmed_at_basis": "FIRST_ARCHIVED_SAME_FEED_RECEIPT_WITH_SOURCE_AFTER_MARKED_PAST",
+        "departure_at": 1793354252,
+        "departure_quality_flags": [],
+        "departure_usable": true,
+        "evidence_class": "MTA_FINAL_PREDICTION_PROXY",
+        "feed_id": "bdfm",
+        "normalized_alias_count": 3,
+        "observation_gap_seconds": 14,
+        "physical_ground_truth": false,
+        "quality_flags": [],
+        "raw_trip_id": "032650_F..S54R",
+        "route_id": "F",
+        "service_date": "20261030",
+        "source_trip_uid": "1793337990_F..S54R",
+        "stop_id": "F09S",
+        "stop_last_observed_at": 1793354280
+      },
+      "selected_endpoint_to_last_observed_seconds": 28,
+      "selected_endpoint_to_marked_past_seconds": 42,
+      "source_disappearance_gap_seconds": 14,
+      "stop_id": "F09S",
+      "trip_id": "MTA:bdfm:20261030:F:032650_F..S54R:05%3A26%3A18",
+      "verified": true
+    },
+    {
+      "csv_row": {
+        "arrival_time": "1793355077",
+        "departure_time": "1793355077",
+        "last_observed": "1793355106",
+        "marked_past": "1793355122",
+        "stop_id": "D16S",
+        "track": "B1",
+        "trip_uid": "1793337990_F..S54R"
+      },
+      "last_present_raw_capture": {
+        "captured_at": 1793355107.695,
+        "feed": "bdfm",
+        "member": "nycsubway_BDFM_20261030T101147.695Z_7z52bq3l2pli.gtfsrt",
+        "sha256": "fe7ba0c36bd3d686bd885db11bb0cfa29c6f7cfa4144af93db5413425d6dc36b",
+        "source_timestamp": 1793355106,
+        "trips": [
+          {
+            "entity_id": "000015F",
+            "first_stop": "D16S",
+            "is_assigned": true,
+            "nyct_direction": 3,
+            "nyct_train_id": "1F 0526+ 179/STL",
+            "route_id": "F",
+            "schedule_relationship": 0,
+            "start_date": "20261030",
+            "start_time": "05:26:18",
+            "stop_count": 31,
+            "stops": [
+              {
+                "arrival": 1793355077,
+                "departure": 1793355077,
+                "schedule_relationship": 0,
+                "stop_id": "D16S"
+              }
+            ],
+            "trip_id": "032650_F..S54R"
+          }
+        ]
+      },
+      "next_raw_capture": {
+        "captured_at": 1793355122.687,
+        "feed": "bdfm",
+        "member": "nycsubway_BDFM_20261030T101202.687Z_h5n6xll5zczp.gtfsrt",
+        "sha256": "3f5bebad7dc8b2fc4c80f4f2f6d7b725664f1fa9468f43c7e2199cf2dd945a65",
+        "source_timestamp": 1793355122,
+        "trips": [
+          {
+            "entity_id": "000013F",
+            "first_stop": "D17S",
+            "is_assigned": true,
+            "nyct_direction": 3,
+            "nyct_train_id": "1F 0526+ 179/STL",
+            "route_id": "F",
+            "schedule_relationship": 0,
+            "start_date": "20261030",
+            "start_time": "05:26:18",
+            "stop_count": 30,
+            "stops": [],
+            "trip_id": "032650_F..S54R"
+          }
+        ]
+      },
+      "screened_label": {
+        "arrival_at": 1793355077,
+        "arrival_quality_flags": [],
+        "arrival_usable": true,
+        "available_at": 1793355122,
+        "available_at_basis": "JOURNAL_SOURCE_TIMESTAMP_NOT_RECEIPT",
+        "canonical_event_trip_id": "MTA_EVENT:bdfm:20261030:F:032650_F..S54R",
+        "confirmation_status": "CONFIRMED",
+        "confirmed_at": 1793355137.736,
+        "confirmed_at_basis": "FIRST_ARCHIVED_SAME_FEED_RECEIPT_WITH_SOURCE_AFTER_MARKED_PAST",
+        "departure_at": 1793355077,
+        "departure_quality_flags": [],
+        "departure_usable": true,
+        "evidence_class": "MTA_FINAL_PREDICTION_PROXY",
+        "feed_id": "bdfm",
+        "normalized_alias_count": 3,
+        "observation_gap_seconds": 16,
+        "physical_ground_truth": false,
+        "quality_flags": [],
+        "raw_trip_id": "032650_F..S54R",
+        "route_id": "F",
+        "service_date": "20261030",
+        "source_trip_uid": "1793337990_F..S54R",
+        "stop_id": "D16S",
+        "stop_last_observed_at": 1793355106
+      },
+      "selected_endpoint_to_last_observed_seconds": 29,
+      "selected_endpoint_to_marked_past_seconds": 45,
+      "source_disappearance_gap_seconds": 16,
+      "stop_id": "D16S",
+      "trip_id": "MTA:bdfm:20261030:F:032650_F..S54R:05%3A26%3A18",
+      "verified": true
+    }
+  ],
+  "source_and_label_mutations": false,
+  "source_artifacts": [
+    {
+      "bytes": 11565519,
+      "path": "algo/local/google-corridors/scored-cases.json.gz",
+      "sha256": "4388d67628f7cf51e404a56078eb80c9789493fc6adbb18c16e084ab9065b669"
+    },
+    {
+      "bytes": 55626,
+      "path": "algo/reports/google-corridors-selection-frozen.json",
+      "sha256": "c2ddb1e228b830bb9beaca4ceae25ebe8a4a6375f68e5b78107bfbbdc9e63b28"
+    },
+    {
+      "bytes": 168706,
+      "path": "data/manifests/october.json",
+      "sha256": "9397bc6ad9c4159a028f4613580206a560fba772bf9c845395e38eb628ea179f"
+    },
+    {
+      "bytes": 99716,
+      "path": "data/manifests/preincident-inputs.json",
+      "sha256": "8f60b7424705024e3333a4628511052018eb6efc2a9eb2243347a93b7392023c"
+    },
+    {
+      "bytes": 86857,
+      "path": "data/manifests/google-corridor-inputs.json",
+      "sha256": "bcf94b0bda09b6d788d2a5defd488093aad2f3ac5f3520d2c063147d44d90fad"
+    },
+    {
+      "bytes": 369598,
+      "path": "data/processed/october/2026-10-30.labels.json.gz",
+      "sha256": "0520fad8788fb9e177ad6a91d7f6c239570da0bec96f80bd7a2944c572d1eeb6"
+    },
+    {
+      "bytes": 64899,
+      "path": "data/processed/preincident-inputs/d16-labels.json.gz",
+      "sha256": "64c210dc9e6f8f93cd59fda2c821af21e2e83d80648ced0ff2cb0b32c7636c72"
+    },
+    {
+      "bytes": 1413728,
+      "path": "data/raw/october/subwaydatanyc_2026-10-30_csv.tar.xz",
+      "sha256": "5de91950c552e4e43f69c971c678acb01473bf0bae02a39237daed5a6412e868"
+    },
+    {
+      "bytes": 80715120,
+      "path": "data/raw/october/subwaydatanyc_2026-10-30_gtfsrt.tar.xz",
+      "sha256": "01e38f420ac416e2edd34b9d36ffa68e4cc8b9b55240031f48e820a4d2428eb7"
+    },
+    {
+      "bytes": 15463,
+      "path": "data/october/labels.py",
+      "sha256": "e22e2ed808a1ab24ec5cc36f9e1642bc045f9a7abcb7a84d3d00cbe1feda5919"
+    },
+    {
+      "bytes": 13857,
+      "path": "data/october/sources.py",
+      "sha256": "c895acfe723c1a894ca6f97222114731373a6e5729c17b9b16525e70eaa05957"
+    },
+    {
+      "bytes": 22892,
+      "path": "algo/stayorswitch/mta.py",
+      "sha256": "f7e863de59ef092166767aaa8042bdf2d586892b692bd49f260c35215a0d8f3c"
+    }
+  ],
+  "timezone_note": "October 30, 2026 in New York is EDT (UTC-04:00), not EST.",
+  "verdict": "PASS_FOR_FIXED_SELECTED_TRIP_PROXY_COMPARISON_WITH_MATERIAL_INTERPRETATION_LIMITS"
+}

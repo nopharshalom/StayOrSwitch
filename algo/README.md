@@ -72,6 +72,25 @@ supplemental freeze and reproduce both splits:
 These commands check the original code, configuration, profile, case archives
 and text-review hashes. They do not refit profiles or generate new routes.
 
+## Google-defined three-corridor experiment
+
+The subsequent [Google-defined three-corridor experiment](docs/google-corridor-experiment.md)
+uses the current Google default path as Stay, as separately approved by the user.
+It replays historical service problems without claiming that today's Google
+choice was historically fastest. The earlier tests below retain their own
+reference rules and frozen results.
+
+Read the [audited findings](reports/google-corridors-findings.md) before the
+[full comparisons](reports/google-corridors-test.md). Across 49 primary events,
+four Switch recommendations yield one comparable gain and three unknowns. The
+322-checkpoint supplement has 44 recommendations: 11 fixed-selected-train proxy
+gains, four practical ties and 29 unknown complete gains, including five missed
+selected journeys. LIC's primary F-to-G example saves 23m35s and retains Switch
+in all eight walking variants. Grand Central's gains are boarding-sensitive
+5-to-4 substitutions. Court Square's 82m50s fixed-train result does not quantify
+savings against an adaptive passenger staying on the 7. No successful severe
+Switch is quantified. The original predictor and previous studies are unchanged.
+
 ## Same-run delay test
 
 Start with the [combined default-route findings](reports/default-route-delay-findings.md)
@@ -81,7 +100,7 @@ Stay route is valid for a route comparison; it cannot establish delay of the
 earlier selected train. The findings keep these two claims separate.
 
 The [same-run forecast revision replay](reports/feed-revision-test.md) addresses
-the user's latest scenario directly: the original fastest route's selected
+the earlier, stricter scenario: the original fastest route's selected
 service run remains catchable, but its absolute destination ETA moves later by
 at least five minutes. It compares Court Square to Times Square via 7, E or F.
 The October 25–31 fixed five-minute grid and four reassessment lags yield 8,064

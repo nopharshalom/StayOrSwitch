@@ -63,6 +63,12 @@ timing comparisons from still-unvalidated severe-service recommendations.
 
 ## Reproduce the data preparation
 
+The three-corridor experiment adds a
+[current Google route and walking capture](docs/google-corridors.md) and a
+[separate historical projection](docs/google-corridor-inputs.md) for newly needed
+6, R and 7 endpoints. Both preserve prior sources and training profiles; current
+provider durations are not historical outcome labels.
+
 The later pre-incident route experiment uses
 [supplemental raw-feed projections and Bryant Park labels](docs/preincident-inputs.md)
 so trains remain available after they pass the original pilot's boarding stops.

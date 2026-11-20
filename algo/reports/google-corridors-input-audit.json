@@ -1,0 +1,97 @@
+{
+  "assertions": 425477,
+  "case_count": 672,
+  "checks": [
+    "Exact current Google Stay path is retained; provider duration never enters historical arithmetic.",
+    "Every selected cutoff is predeclared and every notice was observed and active by that cutoff.",
+    "All raw service-problem notices pass independent route/direction/planning review or remain explicitly excluded/unresolved.",
+    "Every route prediction uses the same historical cutoff, frozen training-only corrections, and catchable ordered exact train legs.",
+    "Walking, waiting, riding, transfers and egress sum exactly once to each complete duration.",
+    "Primary representatives match an independent earliest-confirmed-usable-Stay selection without reading outcomes."
+  ],
+  "confirmed_impact_kind_counts": {
+    "EXPLICIT_SEVERE_DELAYS": 3,
+    "NO_SERVICE_OR_REROUTE": 1,
+    "ORDINARY_SERVICE_DISRUPTION": 318
+  },
+  "corridor_config": {
+    "path": "data/config/google-corridors.json",
+    "sha256": "6e973cb42424db8ca832b22206cea482619d0390856db0aeea771f131440344b"
+  },
+  "corridors": {
+    "courtsquare_timessquare": {
+      "candidates": 52,
+      "confirmed": 32,
+      "excluded_or_unresolved": 20,
+      "primary_events": 5
+    },
+    "grandcentral_boroughhall": {
+      "candidates": 230,
+      "confirmed": 132,
+      "excluded_or_unresolved": 98,
+      "primary_events": 20
+    },
+    "pilot_hayden_tandon": {
+      "candidates": 390,
+      "confirmed": 158,
+      "excluded_or_unresolved": 232,
+      "primary_events": 24
+    }
+  },
+  "independent_sources": [
+    {
+      "path": "algo/reports/google-corridors-f-notice-review-notes.json",
+      "sha256": "b7d634b10169ceff29db150d61db3587da87d6d8845a1da4b7abfb445e66390b"
+    },
+    {
+      "path": "algo/reports/google-corridors-five-notice-review-notes.json",
+      "sha256": "3e05eb9e9102b54d6b9954cb0c4049ff89606753dbb51eef724571a000a52e35"
+    },
+    {
+      "path": "algo/reports/google-corridors-seven-notice-review-notes.json",
+      "sha256": "1bbdd43f43f3ed222d9bb3604331b846f3c99427e4b5a090dcf672b3add9a33f"
+    },
+    {
+      "path": "algo/reports/google-corridors-provider-audit.json",
+      "sha256": "f4ebe5fec0a2e0e4703c8a5d2cef921f792892904613c466a6b0a2e44be30b77"
+    },
+    {
+      "path": "algo/reports/google-corridors-augmentation-audit.json",
+      "sha256": "c5aaebabf91ee37a505ccf180fa9389e47e3ee342837e8d0176935ad122c2c94"
+    },
+    {
+      "path": "algo/reports/google-corridors-data-input-audit.json",
+      "sha256": "bda72bb7a43405504f68fefc375cc498b7b2c1dd212fca93455a15f741c84a73"
+    }
+  ],
+  "limits": [
+    "Independent per-version audits qualify exposure only; original classifier/scope behavior remains unchanged.",
+    "The NO_SERVICE_OR_REROUTE impact kind is not a claim that the notice literally says severe delays.",
+    "Data-source raw parity and provider mapping are separately audited in the bound independent reports."
+  ],
+  "notice_inventory": {
+    "path": "data/processed/october/incidents.json.gz",
+    "sha256": "57d78963d57a419ae838763fcc06614841eefe02b0ffc9a7b7b0d4c6b81d9773"
+  },
+  "notice_membership_checks": 672,
+  "outcome_labels_read": false,
+  "prepared_inputs": {
+    "path": "algo/local/google-corridors/prepared-inputs.json.gz",
+    "sha256": "c5a55fa50fb032f22865ea4255df3a01a3b001bb834a578c518b720fdb59a61e"
+  },
+  "producer_code_sha256": {
+    "algo/scripts/evaluate_google_corridors.py": "794e4f3768c6a2641ffac607260d1b2b61c69a81b2c297a42b762fb94bc6bd1c",
+    "algo/stayorswitch/google_corridor_replay.py": "092b8de90ad8cfaa6f612efccbaf3fcc8a49ea27b590d772bddfed3b4732760c"
+  },
+  "review_group_count": 290,
+  "review_group_status_counts": {
+    "CONFIRMED": 152,
+    "EXCLUDED": 116,
+    "UNRESOLVED": 22
+  },
+  "review_groups_sha256": "ec4608a1816b90118b36df71c779426b5da6d42a663a94afa02f7a4170f2a65f",
+  "route_predictions_checked": 20028,
+  "schema_version": "google-corridors-independent-input-audit-v1",
+  "selected_legs_checked": 27198,
+  "status": "PASS_BEFORE_OUTCOME_SCORING"
+}

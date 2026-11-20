@@ -72,4 +72,16 @@ See the [algorithm workspace](algo/README.md) and [data workspace](data/README.m
 for implementation status, reproducible commands and measured results. The
 previous November model/data experiment has been removed from the active project.
 
+The [three-corridor Google-path experiment](algo/docs/google-corridor-experiment.md)
+uses current Google recommendations to fix Stay paths, then replays October
+service problems with historical train records. Current Google durations are
+recorded separately and never substitute for historical outcomes. Its provider
+and walking inputs are documented in [the capture record](data/docs/google-corridors.md).
+Read the [audited findings](algo/reports/google-corridors-findings.md): the primary
+LIC F-to-G example saves 23m35s in the MTA-based replay; Grand Central's 5-to-4
+gains have little boarding margin, and Court Square's large fixed-train gap
+does not establish adaptive Stay-on-7 savings. Severe-stage Switch benefit
+remains unverified. The report separates 49 event representatives from 322
+repeated checkpoints and preserves unknown and missed-train outcomes.
+
 The product is software only. The core experience is free, and premium features and ads haven't been tested. Hardware is set aside for future exploration.

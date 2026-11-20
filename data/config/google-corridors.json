@@ -1,0 +1,2858 @@
+{
+  "augmentation_builder": {
+    "path": "data/scripts/augment_google_corridor_research_paths.py",
+    "sha256": "96496a845f8ba9469c01d7fc39a12ea6cc4002523529b531e88be88dba9ef5fa"
+  },
+  "builder": {
+    "path": "data/scripts/build_google_corridor_templates.py",
+    "sha256": "1c5b20933a9a3e8f4028717b42b47517a53826617f2c983f68009ef24d0ee3e1"
+  },
+  "capture_manifest": {
+    "path": "data/manifests/google-corridors-2026-11-20.json",
+    "sha256": "b92b538445fa9333b234ac71ae01936baa8f4af054c28fc1ef7e08f90d94555c"
+  },
+  "corridors": [
+    {
+      "destination": "NYU Tandon School of Engineering, 6 MetroTech Center, Brooklyn, NY 11201",
+      "google": {
+        "all_provider_routes": [
+          {
+            "normalization_status": "NORMALIZED",
+            "normalized_itinerary_id": "google-route-f1879a6d65f5e73756e1b684",
+            "provider_duration_seconds": 2182.0,
+            "route_index": 0,
+            "route_labels": [
+              "DEFAULT_ROUTE"
+            ],
+            "selected_as_stay": true
+          },
+          {
+            "normalization_status": "DUPLICATE",
+            "normalized_itinerary_id": "google-route-f1879a6d65f5e73756e1b684",
+            "provider_duration_seconds": 2169.0,
+            "route_index": 1,
+            "route_labels": [
+              "DEFAULT_ROUTE_ALTERNATE"
+            ],
+            "selected_as_stay": false
+          },
+          {
+            "normalization_status": "DUPLICATE",
+            "normalized_itinerary_id": "google-route-f1879a6d65f5e73756e1b684",
+            "provider_duration_seconds": 2154.0,
+            "route_index": 2,
+            "route_labels": [
+              "DEFAULT_ROUTE_ALTERNATE"
+            ],
+            "selected_as_stay": false
+          },
+          {
+            "normalization_status": "REJECTED",
+            "normalized_itinerary_id": null,
+            "provider_duration_seconds": 2370.0,
+            "route_index": 3,
+            "route_labels": [
+              "DEFAULT_ROUTE_ALTERNATE"
+            ],
+            "selected_as_stay": false
+          },
+          {
+            "normalization_status": "NORMALIZED",
+            "normalized_itinerary_id": "google-route-88aa6b135b2fe15e2cd08a95",
+            "provider_duration_seconds": 2178.0,
+            "route_index": 4,
+            "route_labels": [
+              "DEFAULT_ROUTE_ALTERNATE"
+            ],
+            "selected_as_stay": false
+          },
+          {
+            "normalization_status": "DUPLICATE",
+            "normalized_itinerary_id": "google-route-f1879a6d65f5e73756e1b684",
+            "provider_duration_seconds": 2174.0,
+            "route_index": 5,
+            "route_labels": [
+              "DEFAULT_ROUTE_ALTERNATE"
+            ],
+            "selected_as_stay": false
+          }
+        ],
+        "capture": {
+          "bytes": 47023,
+          "path": "data/local/google-corridors/2026-11-20-current/pilot_hayden_tandon.provider.json",
+          "sha256": "f01c3bc1d94098bb86ba365fa2dd6e465aa612831e4017c75fff0d12283785fa"
+        },
+        "current_duration_seconds": 2182.0,
+        "current_duration_used_as_historical_outcome": false,
+        "default_route_id": "google-route-f1879a6d65f5e73756e1b684",
+        "default_route_index": 0,
+        "default_route_labels": [
+          "DEFAULT_ROUTE"
+        ],
+        "derived_summary": {
+          "bytes": 57581,
+          "path": "data/local/google-corridors/2026-11-20-current/pilot_hayden_tandon.summary.json",
+          "sha256": "89ea6b96fd4c125615026bca26ab199aa7ee56c59a54e00f8da4c65ee37800a5"
+        },
+        "received_at": "2026-11-20T15:54:47.277363Z",
+        "requested_at": "2026-11-20T15:54:46.887282Z",
+        "selection": {
+          "method": "GOOGLE_DEFAULT_ROUTE",
+          "route_index": 0
+        }
+      },
+      "id": "pilot_hayden_tandon",
+      "origin": "Hayden LIC Apartments, 43-25 Hunter Street, Long Island City, NY 11101",
+      "reference_route_id": "google-route-f1879a6d65f5e73756e1b684",
+      "research_library_deduplication": [
+        {
+          "original_research_route_ids": [
+            [
+              "F",
+              "FX"
+            ]
+          ],
+          "provider_route_id": "google-route-f1879a6d65f5e73756e1b684",
+          "reason": "PREFER_CURRENT_GOOGLE_PATH_AND_WALKS; KEEP_EXACT_GOOGLE_LINE_SCOPE",
+          "research_route_id": "f_direct"
+        },
+        {
+          "original_research_route_ids": [
+            [
+              "G"
+            ]
+          ],
+          "provider_route_id": "google-route-88aa6b135b2fe15e2cd08a95",
+          "reason": "PREFER_CURRENT_GOOGLE_PATH_AND_WALKS; KEEP_EXACT_GOOGLE_LINE_SCOPE",
+          "research_route_id": "g_direct"
+        }
+      ],
+      "routes": [
+        {
+          "access_walk_seconds": 255.0,
+          "candidate_provenance": "CURRENT_GOOGLE_ROUTE",
+          "egress_walk_seconds": 279.0,
+          "family": "GOOGLE_F",
+          "google": {
+            "current_provider_eta": "2026-11-20T16:32:41Z",
+            "normalization_provenance": {
+              "boundary_reconciliations": [
+                {
+                  "distance_metres": 3.24,
+                  "path": "routes[0].legs[0].steps[2]"
+                },
+                {
+                  "distance_metres": 0.562,
+                  "path": "routes[0].legs[0].steps[3].startLocation"
+                },
+                {
+                  "distance_metres": 0.419,
+                  "path": "routes[0].legs[0].steps[3].endLocation"
+                },
+                {
+                  "distance_metres": 0.562,
+                  "path": "routes[0].legs[0].steps[3]"
+                },
+                {
+                  "distance_metres": 0.419,
+                  "path": "routes[0].legs[0].steps[4]"
+                },
+                {
+                  "distance_metres": 1.646,
+                  "path": "routes[0].legs[0].steps[5]"
+                }
+              ],
+              "derived_provider_eta": "2026-11-20T16:32:41Z",
+              "duration_vs_clock_difference_seconds": 92.11271799999986,
+              "egress_walking_seconds": 279.0,
+              "eta_basis": "LAST_SUBWAY_ARRIVAL_PLUS_EGRESS",
+              "itinerary_id": "google-route-f1879a6d65f5e73756e1b684",
+              "last_subway_arrival_at": "2026-11-20T16:28:02Z",
+              "original_duration_seconds": 2182.0,
+              "queried_at": "2026-11-20T15:54:46.887282Z",
+              "received_at": "2026-11-20T15:54:47.277363Z",
+              "route_index": 0,
+              "selected": true,
+              "source_route_indices": [
+                0,
+                1,
+                2,
+                5
+              ],
+              "status": "NORMALIZED",
+              "subway_durations": [
+                {
+                  "clock_duration_seconds": 1648.0,
+                  "path": "routes[0].legs[0].steps[3]",
+                  "static_duration_seconds": 1620.0
+                }
+              ],
+              "unverified_endpoint_coordinates": [
+                "origin",
+                "destination"
+              ]
+            },
+            "representative_route_index": 0,
+            "source_route_indices": [
+              0,
+              1,
+              2,
+              5
+            ]
+          },
+          "id": "google-route-f1879a6d65f5e73756e1b684",
+          "legs": [
+            {
+              "feed_id": "bdfm",
+              "from_stop_id": "F09S",
+              "route_id": "F",
+              "route_ids": [
+                "F"
+              ],
+              "to_stop_id": "A41S"
+            }
+          ],
+          "name": "F: Court Sq-23 St to Jay St-MetroTech",
+          "station_mapping_evidence": [
+            {
+              "alighting": {
+                "distance_metres": 0.279,
+                "mta_stop_id": "A41S",
+                "official_coordinates": {
+                  "latitude": 40.692338,
+                  "longitude": -73.987342
+                },
+                "official_daytime_routes": "A C F",
+                "official_south_direction_label": "Outbound",
+                "official_station_name": "Jay St-MetroTech",
+                "provider_coordinates": {
+                  "latitude": 40.69234,
+                  "longitude": -73.98734
+                },
+                "provider_name": "Jay St-MetroTech"
+              },
+              "boarding": {
+                "distance_metres": 0.667,
+                "mta_stop_id": "F09S",
+                "official_coordinates": {
+                  "latitude": 40.747846,
+                  "longitude": -73.946
+                },
+                "official_daytime_routes": "E F",
+                "official_south_direction_label": "Manhattan",
+                "official_station_name": "Court Sq-23 St",
+                "provider_coordinates": {
+                  "latitude": 40.74784,
+                  "longitude": -73.946
+                },
+                "provider_name": "Court Sq-23 St"
+              },
+              "headsign": "Coney Island-Stillwell Av",
+              "route_id": "F"
+            }
+          ],
+          "transfer_walk_seconds": [],
+          "walking_provenance": "SUM_OF_EXPLICIT_CURRENT_PROVIDER_WALK_STEPS_HELD_FIXED_FOR_HISTORICAL_REPLAY"
+        },
+        {
+          "access_walk_seconds": 208.0,
+          "candidate_provenance": "CURRENT_GOOGLE_ROUTE",
+          "egress_walk_seconds": 704.0,
+          "family": "GOOGLE_G",
+          "google": {
+            "current_provider_eta": "2026-11-20T16:39:14Z",
+            "normalization_provenance": {
+              "boundary_reconciliations": [
+                {
+                  "distance_metres": 5.331,
+                  "path": "routes[4].legs[0].steps[3]"
+                },
+                {
+                  "distance_metres": 0.432,
+                  "path": "routes[4].legs[0].steps[4].endLocation"
+                },
+                {
+                  "distance_metres": 0.432,
+                  "path": "routes[4].legs[0].steps[5]"
+                },
+                {
+                  "distance_metres": 4.342,
+                  "path": "routes[4].legs[0].steps[6]"
+                }
+              ],
+              "derived_provider_eta": "2026-11-20T16:39:14Z",
+              "duration_vs_clock_difference_seconds": 489.11271799999986,
+              "egress_walking_seconds": 704.0,
+              "eta_basis": "LAST_SUBWAY_ARRIVAL_PLUS_EGRESS",
+              "itinerary_id": "google-route-88aa6b135b2fe15e2cd08a95",
+              "last_subway_arrival_at": "2026-11-20T16:27:30Z",
+              "original_duration_seconds": 2178.0,
+              "queried_at": "2026-11-20T15:54:46.887282Z",
+              "received_at": "2026-11-20T15:54:47.277363Z",
+              "route_index": 4,
+              "selected": true,
+              "source_route_indices": [
+                4
+              ],
+              "status": "NORMALIZED",
+              "subway_durations": [
+                {
+                  "clock_duration_seconds": 1260.0,
+                  "path": "routes[4].legs[0].steps[4]",
+                  "static_duration_seconds": 1200.0
+                }
+              ],
+              "unverified_endpoint_coordinates": [
+                "origin",
+                "destination"
+              ]
+            },
+            "representative_route_index": 4,
+            "source_route_indices": [
+              4
+            ]
+          },
+          "id": "google-route-88aa6b135b2fe15e2cd08a95",
+          "legs": [
+            {
+              "feed_id": "g",
+              "from_stop_id": "G22S",
+              "route_id": "G",
+              "route_ids": [
+                "G"
+              ],
+              "to_stop_id": "A42S"
+            }
+          ],
+          "name": "G: Court Sq to Hoyt-Schermerhorn Sts",
+          "station_mapping_evidence": [
+            {
+              "alighting": {
+                "distance_metres": 71.606,
+                "mta_stop_id": "A42S",
+                "official_coordinates": {
+                  "latitude": 40.688484,
+                  "longitude": -73.985001
+                },
+                "official_daytime_routes": "A C G",
+                "official_south_direction_label": "Queens",
+                "official_station_name": "Hoyt-Schermerhorn Sts",
+                "provider_coordinates": {
+                  "latitude": 40.68827,
+                  "longitude": -73.9842
+                },
+                "provider_name": "Hoyt-Schermerhorn Sts"
+              },
+              "boarding": {
+                "distance_metres": 0.476,
+                "mta_stop_id": "G22S",
+                "official_coordinates": {
+                  "latitude": 40.746554,
+                  "longitude": -73.943832
+                },
+                "official_daytime_routes": "G",
+                "official_south_direction_label": "Brooklyn",
+                "official_station_name": "Court Sq",
+                "provider_coordinates": {
+                  "latitude": 40.74655,
+                  "longitude": -73.94383
+                },
+                "provider_name": "Court Sq"
+              },
+              "headsign": "Church Av",
+              "route_id": "G"
+            }
+          ],
+          "transfer_walk_seconds": [],
+          "walking_provenance": "SUM_OF_EXPLICIT_CURRENT_PROVIDER_WALK_STEPS_HELD_FIXED_FOR_HISTORICAL_REPLAY"
+        },
+        {
+          "access_walk_seconds": 500.0,
+          "authored_transfer_indices": [],
+          "candidate_provenance": "EXISTING_RESEARCH_ROUTE_LIBRARY_WITH_RECONCILED_CURRENT_OD_WALKS",
+          "egress_walk_seconds": 225.0,
+          "family": "R_DIRECT",
+          "id": "research_r_direct",
+          "legs": [
+            {
+              "feed_id": "nqrw",
+              "from_stop_id": "G21S",
+              "route_id": "R",
+              "route_ids": [
+                "R"
+              ],
+              "to_stop_id": "R29S"
+            }
+          ],
+          "name": "R Queens Plaza to Jay St",
+          "research_library_id": "r_direct",
+          "service_alias_policy": "PRESERVE_DECLARED_RESEARCH_ALIASES_EXCEPT_GOOGLE_COVERED_3_SERVICE; NEVER_POOL_GOOGLE_STAY",
+          "transfer_walk_seconds": [],
+          "transfer_walking_provenance": [],
+          "walking_provenance": {
+            "access": {
+              "capture": {
+                "path": "data/local/google-corridors/2026-11-20-current/research-walks/pilot_hayden_tandon_access_G21S.json",
+                "sha256": "641628779f95cba38b4728db687906de08393cd7c39f6bf99a4ad02519e3d9e3"
+              },
+              "job": {
+                "component": "access",
+                "corridor_id": "pilot_hayden_tandon",
+                "id": "pilot_hayden_tandon_access_G21S",
+                "request": {
+                  "destination": {
+                    "location": {
+                      "latLng": {
+                        "latitude": 40.748973,
+                        "longitude": -73.937243
+                      }
+                    }
+                  },
+                  "languageCode": "en-US",
+                  "origin": {
+                    "address": "Hayden LIC Apartments, 43-25 Hunter Street, Long Island City, NY 11101"
+                  },
+                  "travelMode": "WALK"
+                },
+                "station_name": "Queens Plaza",
+                "stop_id": "G21S"
+              },
+              "kind": "GOOGLE_WALK_TO_STATION_COORDINATE_PLATFORM_ACCESS_UNVERIFIED",
+              "reason": null,
+              "received_at": "2026-11-20T16:01:28.495577Z",
+              "requested_at": "2026-11-20T16:01:28.309541Z",
+              "seconds": 500.0,
+              "status": "AVAILABLE"
+            },
+            "egress": {
+              "capture": {
+                "path": "data/local/google-corridors/2026-11-20-current/research-walks/pilot_hayden_tandon_egress_R29S.json",
+                "sha256": "aef3704a5888bde0857dba89a3c94939227178b6bc52194bce195a9f5bd5e9d1"
+              },
+              "job": {
+                "component": "egress",
+                "corridor_id": "pilot_hayden_tandon",
+                "id": "pilot_hayden_tandon_egress_R29S",
+                "request": {
+                  "destination": {
+                    "address": "NYU Tandon School of Engineering, 6 MetroTech Center, Brooklyn, NY 11201"
+                  },
+                  "languageCode": "en-US",
+                  "origin": {
+                    "location": {
+                      "latLng": {
+                        "latitude": 40.69218,
+                        "longitude": -73.985942
+                      }
+                    }
+                  },
+                  "travelMode": "WALK"
+                },
+                "station_name": "Jay St-MetroTech",
+                "stop_id": "R29S"
+              },
+              "kind": "GOOGLE_WALK_TO_STATION_COORDINATE_PLATFORM_ACCESS_UNVERIFIED",
+              "reason": null,
+              "received_at": "2026-11-20T16:01:28.471859Z",
+              "requested_at": "2026-11-20T16:01:28.308929Z",
+              "seconds": 225.0,
+              "status": "AVAILABLE"
+            }
+          }
+        },
+        {
+          "access_walk_seconds": 255.0,
+          "authored_transfer_indices": [
+            0
+          ],
+          "candidate_provenance": "EXISTING_RESEARCH_ROUTE_LIBRARY_WITH_RECONCILED_CURRENT_OD_WALKS",
+          "egress_walk_seconds": 279.0,
+          "family": "E_TO_AC",
+          "id": "research_e_a",
+          "legs": [
+            {
+              "feed_id": "ace",
+              "from_stop_id": "F09S",
+              "route_id": "E",
+              "route_ids": [
+                "E"
+              ],
+              "to_stop_id": "A27S"
+            },
+            {
+              "feed_id": "ace",
+              "from_stop_id": "A27S",
+              "route_id": "A",
+              "route_ids": [
+                "A"
+              ],
+              "to_stop_id": "A41S"
+            }
+          ],
+          "name": "E to A via Port Authority",
+          "research_library_id": "e_a",
+          "service_alias_policy": "PRESERVE_DECLARED_RESEARCH_ALIASES_EXCEPT_GOOGLE_COVERED_3_SERVICE; NEVER_POOL_GOOGLE_STAY",
+          "transfer_walk_seconds": [
+            240
+          ],
+          "transfer_walking_provenance": [
+            {
+              "kind": "AUTHORED_TRANSFER_FROM_PRIOR_RESEARCH_LIBRARY",
+              "seconds": 240,
+              "transfer_index": 0
+            }
+          ],
+          "walking_provenance": {
+            "access": {
+              "component": "access",
+              "kind": "CURRENT_PROVIDER_EXPLICIT_WALK_SAME_OD_AND_STATION",
+              "seconds": 255.0,
+              "source_route_id": "google-route-f1879a6d65f5e73756e1b684",
+              "stop_id": "F09S"
+            },
+            "egress": {
+              "component": "egress",
+              "kind": "CURRENT_PROVIDER_EXPLICIT_WALK_SAME_OD_AND_STATION",
+              "seconds": 279.0,
+              "source_route_id": "google-route-f1879a6d65f5e73756e1b684",
+              "stop_id": "A41S"
+            }
+          }
+        },
+        {
+          "access_walk_seconds": 255.0,
+          "authored_transfer_indices": [
+            0
+          ],
+          "candidate_provenance": "EXISTING_RESEARCH_ROUTE_LIBRARY_WITH_RECONCILED_CURRENT_OD_WALKS",
+          "egress_walk_seconds": 279.0,
+          "family": "E_TO_AC",
+          "id": "research_e_c",
+          "legs": [
+            {
+              "feed_id": "ace",
+              "from_stop_id": "F09S",
+              "route_id": "E",
+              "route_ids": [
+                "E"
+              ],
+              "to_stop_id": "A27S"
+            },
+            {
+              "feed_id": "ace",
+              "from_stop_id": "A27S",
+              "route_id": "C",
+              "route_ids": [
+                "C"
+              ],
+              "to_stop_id": "A41S"
+            }
+          ],
+          "name": "E to C via Port Authority",
+          "research_library_id": "e_c",
+          "service_alias_policy": "PRESERVE_DECLARED_RESEARCH_ALIASES_EXCEPT_GOOGLE_COVERED_3_SERVICE; NEVER_POOL_GOOGLE_STAY",
+          "transfer_walk_seconds": [
+            240
+          ],
+          "transfer_walking_provenance": [
+            {
+              "kind": "AUTHORED_TRANSFER_FROM_PRIOR_RESEARCH_LIBRARY",
+              "seconds": 240,
+              "transfer_index": 0
+            }
+          ],
+          "walking_provenance": {
+            "access": {
+              "component": "access",
+              "kind": "CURRENT_PROVIDER_EXPLICIT_WALK_SAME_OD_AND_STATION",
+              "seconds": 255.0,
+              "source_route_id": "google-route-f1879a6d65f5e73756e1b684",
+              "stop_id": "F09S"
+            },
+            "egress": {
+              "component": "egress",
+              "kind": "CURRENT_PROVIDER_EXPLICIT_WALK_SAME_OD_AND_STATION",
+              "seconds": 279.0,
+              "source_route_id": "google-route-f1879a6d65f5e73756e1b684",
+              "stop_id": "A41S"
+            }
+          }
+        },
+        {
+          "access_walk_seconds": 254.0,
+          "authored_transfer_indices": [
+            0
+          ],
+          "candidate_provenance": "EXISTING_RESEARCH_ROUTE_LIBRARY_WITH_RECONCILED_CURRENT_OD_WALKS",
+          "egress_walk_seconds": 498.0,
+          "family": "7_TO_45",
+          "id": "research_7_4",
+          "legs": [
+            {
+              "feed_id": "numbered",
+              "from_stop_id": "719S",
+              "route_id": "7",
+              "route_ids": [
+                "7",
+                "7X"
+              ],
+              "to_stop_id": "723S"
+            },
+            {
+              "feed_id": "numbered",
+              "from_stop_id": "631S",
+              "route_id": "4",
+              "route_ids": [
+                "4"
+              ],
+              "to_stop_id": "423S"
+            }
+          ],
+          "name": "7 to 4 via Grand Central",
+          "research_library_id": "7_4",
+          "service_alias_policy": "PRESERVE_DECLARED_RESEARCH_ALIASES_EXCEPT_GOOGLE_COVERED_3_SERVICE; NEVER_POOL_GOOGLE_STAY",
+          "transfer_walk_seconds": [
+            300
+          ],
+          "transfer_walking_provenance": [
+            {
+              "kind": "AUTHORED_TRANSFER_FROM_PRIOR_RESEARCH_LIBRARY",
+              "seconds": 300,
+              "transfer_index": 0
+            }
+          ],
+          "walking_provenance": {
+            "access": {
+              "capture": {
+                "path": "data/local/google-corridors/2026-11-20-current/research-walks/pilot_hayden_tandon_access_719S.json",
+                "sha256": "b99224ecf013d316969197289c1c19c04386e19c5178d813f124f226aa4cae4a"
+              },
+              "job": {
+                "component": "access",
+                "corridor_id": "pilot_hayden_tandon",
+                "id": "pilot_hayden_tandon_access_719S",
+                "request": {
+                  "destination": {
+                    "location": {
+                      "latLng": {
+                        "latitude": 40.747023,
+                        "longitude": -73.945264
+                      }
+                    }
+                  },
+                  "languageCode": "en-US",
+                  "origin": {
+                    "address": "Hayden LIC Apartments, 43-25 Hunter Street, Long Island City, NY 11101"
+                  },
+                  "travelMode": "WALK"
+                },
+                "station_name": "Court Sq",
+                "stop_id": "719S"
+              },
+              "kind": "GOOGLE_WALK_TO_STATION_COORDINATE_PLATFORM_ACCESS_UNVERIFIED",
+              "reason": null,
+              "received_at": "2026-11-20T16:01:28.472838Z",
+              "requested_at": "2026-11-20T16:01:28.309374Z",
+              "seconds": 254.0,
+              "status": "AVAILABLE"
+            },
+            "egress": {
+              "capture": {
+                "path": "data/local/google-corridors/2026-11-20-current/research-walks/pilot_hayden_tandon_egress_423S.json",
+                "sha256": "92aceb7d5898ea5bf2f48b1a7f5011a7536b67de2207e3b2115a1e03f3e28c79"
+              },
+              "job": {
+                "component": "egress",
+                "corridor_id": "pilot_hayden_tandon",
+                "id": "pilot_hayden_tandon_egress_423S",
+                "request": {
+                  "destination": {
+                    "address": "NYU Tandon School of Engineering, 6 MetroTech Center, Brooklyn, NY 11201"
+                  },
+                  "languageCode": "en-US",
+                  "origin": {
+                    "location": {
+                      "latLng": {
+                        "latitude": 40.692404,
+                        "longitude": -73.990151
+                      }
+                    }
+                  },
+                  "travelMode": "WALK"
+                },
+                "station_name": "Borough Hall",
+                "stop_id": "423S"
+              },
+              "kind": "GOOGLE_WALK_TO_STATION_COORDINATE_PLATFORM_ACCESS_UNVERIFIED",
+              "reason": null,
+              "received_at": "2026-11-20T16:01:28.587907Z",
+              "requested_at": "2026-11-20T16:01:28.474763Z",
+              "seconds": 498.0,
+              "status": "AVAILABLE"
+            }
+          }
+        },
+        {
+          "access_walk_seconds": 254.0,
+          "authored_transfer_indices": [
+            0
+          ],
+          "candidate_provenance": "EXISTING_RESEARCH_ROUTE_LIBRARY_WITH_RECONCILED_CURRENT_OD_WALKS",
+          "egress_walk_seconds": 498.0,
+          "family": "7_TO_45",
+          "id": "research_7_5",
+          "legs": [
+            {
+              "feed_id": "numbered",
+              "from_stop_id": "719S",
+              "route_id": "7",
+              "route_ids": [
+                "7",
+                "7X"
+              ],
+              "to_stop_id": "723S"
+            },
+            {
+              "feed_id": "numbered",
+              "from_stop_id": "631S",
+              "route_id": "5",
+              "route_ids": [
+                "5"
+              ],
+              "to_stop_id": "423S"
+            }
+          ],
+          "name": "7 to 5 via Grand Central",
+          "research_library_id": "7_5",
+          "service_alias_policy": "PRESERVE_DECLARED_RESEARCH_ALIASES_EXCEPT_GOOGLE_COVERED_3_SERVICE; NEVER_POOL_GOOGLE_STAY",
+          "transfer_walk_seconds": [
+            300
+          ],
+          "transfer_walking_provenance": [
+            {
+              "kind": "AUTHORED_TRANSFER_FROM_PRIOR_RESEARCH_LIBRARY",
+              "seconds": 300,
+              "transfer_index": 0
+            }
+          ],
+          "walking_provenance": {
+            "access": {
+              "capture": {
+                "path": "data/local/google-corridors/2026-11-20-current/research-walks/pilot_hayden_tandon_access_719S.json",
+                "sha256": "b99224ecf013d316969197289c1c19c04386e19c5178d813f124f226aa4cae4a"
+              },
+              "job": {
+                "component": "access",
+                "corridor_id": "pilot_hayden_tandon",
+                "id": "pilot_hayden_tandon_access_719S",
+                "request": {
+                  "destination": {
+                    "location": {
+                      "latLng": {
+                        "latitude": 40.747023,
+                        "longitude": -73.945264
+                      }
+                    }
+                  },
+                  "languageCode": "en-US",
+                  "origin": {
+                    "address": "Hayden LIC Apartments, 43-25 Hunter Street, Long Island City, NY 11101"
+                  },
+                  "travelMode": "WALK"
+                },
+                "station_name": "Court Sq",
+                "stop_id": "719S"
+              },
+              "kind": "GOOGLE_WALK_TO_STATION_COORDINATE_PLATFORM_ACCESS_UNVERIFIED",
+              "reason": null,
+              "received_at": "2026-11-20T16:01:28.472838Z",
+              "requested_at": "2026-11-20T16:01:28.309374Z",
+              "seconds": 254.0,
+              "status": "AVAILABLE"
+            },
+            "egress": {
+              "capture": {
+                "path": "data/local/google-corridors/2026-11-20-current/research-walks/pilot_hayden_tandon_egress_423S.json",
+                "sha256": "92aceb7d5898ea5bf2f48b1a7f5011a7536b67de2207e3b2115a1e03f3e28c79"
+              },
+              "job": {
+                "component": "egress",
+                "corridor_id": "pilot_hayden_tandon",
+                "id": "pilot_hayden_tandon_egress_423S",
+                "request": {
+                  "destination": {
+                    "address": "NYU Tandon School of Engineering, 6 MetroTech Center, Brooklyn, NY 11201"
+                  },
+                  "languageCode": "en-US",
+                  "origin": {
+                    "location": {
+                      "latLng": {
+                        "latitude": 40.692404,
+                        "longitude": -73.990151
+                      }
+                    }
+                  },
+                  "travelMode": "WALK"
+                },
+                "station_name": "Borough Hall",
+                "stop_id": "423S"
+              },
+              "kind": "GOOGLE_WALK_TO_STATION_COORDINATE_PLATFORM_ACCESS_UNVERIFIED",
+              "reason": null,
+              "received_at": "2026-11-20T16:01:28.587907Z",
+              "requested_at": "2026-11-20T16:01:28.474763Z",
+              "seconds": 498.0,
+              "status": "AVAILABLE"
+            }
+          }
+        },
+        {
+          "access_walk_seconds": 254.0,
+          "authored_transfer_indices": [
+            0
+          ],
+          "candidate_provenance": "EXISTING_RESEARCH_ROUTE_LIBRARY_WITH_RECONCILED_CURRENT_OD_WALKS",
+          "egress_walk_seconds": 426.0,
+          "family": "7_TO_23",
+          "id": "research_7_2",
+          "legs": [
+            {
+              "feed_id": "numbered",
+              "from_stop_id": "719S",
+              "route_id": "7",
+              "route_ids": [
+                "7",
+                "7X"
+              ],
+              "to_stop_id": "725S"
+            },
+            {
+              "feed_id": "numbered",
+              "from_stop_id": "127S",
+              "route_id": "2",
+              "route_ids": [
+                "2"
+              ],
+              "to_stop_id": "232S"
+            }
+          ],
+          "name": "7 to 2 via Times Sq",
+          "research_library_id": "7_2",
+          "service_alias_policy": "PRESERVE_DECLARED_RESEARCH_ALIASES_EXCEPT_GOOGLE_COVERED_3_SERVICE; NEVER_POOL_GOOGLE_STAY",
+          "transfer_walk_seconds": [
+            360
+          ],
+          "transfer_walking_provenance": [
+            {
+              "kind": "AUTHORED_TRANSFER_FROM_PRIOR_RESEARCH_LIBRARY",
+              "seconds": 360,
+              "transfer_index": 0
+            }
+          ],
+          "walking_provenance": {
+            "access": {
+              "capture": {
+                "path": "data/local/google-corridors/2026-11-20-current/research-walks/pilot_hayden_tandon_access_719S.json",
+                "sha256": "b99224ecf013d316969197289c1c19c04386e19c5178d813f124f226aa4cae4a"
+              },
+              "job": {
+                "component": "access",
+                "corridor_id": "pilot_hayden_tandon",
+                "id": "pilot_hayden_tandon_access_719S",
+                "request": {
+                  "destination": {
+                    "location": {
+                      "latLng": {
+                        "latitude": 40.747023,
+                        "longitude": -73.945264
+                      }
+                    }
+                  },
+                  "languageCode": "en-US",
+                  "origin": {
+                    "address": "Hayden LIC Apartments, 43-25 Hunter Street, Long Island City, NY 11101"
+                  },
+                  "travelMode": "WALK"
+                },
+                "station_name": "Court Sq",
+                "stop_id": "719S"
+              },
+              "kind": "GOOGLE_WALK_TO_STATION_COORDINATE_PLATFORM_ACCESS_UNVERIFIED",
+              "reason": null,
+              "received_at": "2026-11-20T16:01:28.472838Z",
+              "requested_at": "2026-11-20T16:01:28.309374Z",
+              "seconds": 254.0,
+              "status": "AVAILABLE"
+            },
+            "egress": {
+              "capture": {
+                "path": "data/local/google-corridors/2026-11-20-current/research-walks/pilot_hayden_tandon_egress_232S.json",
+                "sha256": "f9570052283924051a6ad7ece060ca853d56b59f5f60e261cb282858f9612355"
+              },
+              "job": {
+                "component": "egress",
+                "corridor_id": "pilot_hayden_tandon",
+                "id": "pilot_hayden_tandon_egress_232S",
+                "request": {
+                  "destination": {
+                    "address": "NYU Tandon School of Engineering, 6 MetroTech Center, Brooklyn, NY 11201"
+                  },
+                  "languageCode": "en-US",
+                  "origin": {
+                    "location": {
+                      "latLng": {
+                        "latitude": 40.693219,
+                        "longitude": -73.989998
+                      }
+                    }
+                  },
+                  "travelMode": "WALK"
+                },
+                "station_name": "Borough Hall",
+                "stop_id": "232S"
+              },
+              "kind": "GOOGLE_WALK_TO_STATION_COORDINATE_PLATFORM_ACCESS_UNVERIFIED",
+              "reason": null,
+              "received_at": "2026-11-20T16:01:28.613518Z",
+              "requested_at": "2026-11-20T16:01:28.475332Z",
+              "seconds": 426.0,
+              "status": "AVAILABLE"
+            }
+          }
+        },
+        {
+          "access_walk_seconds": 254.0,
+          "authored_transfer_indices": [
+            0
+          ],
+          "candidate_provenance": "EXISTING_RESEARCH_ROUTE_LIBRARY_WITH_RECONCILED_CURRENT_OD_WALKS",
+          "egress_walk_seconds": 426.0,
+          "family": "7_TO_23",
+          "id": "research_7_3",
+          "legs": [
+            {
+              "feed_id": "numbered",
+              "from_stop_id": "719S",
+              "route_id": "7",
+              "route_ids": [
+                "7",
+                "7X"
+              ],
+              "to_stop_id": "725S"
+            },
+            {
+              "feed_id": "numbered",
+              "from_stop_id": "127S",
+              "route_id": "3",
+              "route_ids": [
+                "3"
+              ],
+              "to_stop_id": "232S"
+            }
+          ],
+          "name": "7 to 3 via Times Sq",
+          "research_library_id": "7_3",
+          "service_alias_policy": "PRESERVE_DECLARED_RESEARCH_ALIASES_EXCEPT_GOOGLE_COVERED_3_SERVICE; NEVER_POOL_GOOGLE_STAY",
+          "transfer_walk_seconds": [
+            360
+          ],
+          "transfer_walking_provenance": [
+            {
+              "kind": "AUTHORED_TRANSFER_FROM_PRIOR_RESEARCH_LIBRARY",
+              "seconds": 360,
+              "transfer_index": 0
+            }
+          ],
+          "walking_provenance": {
+            "access": {
+              "capture": {
+                "path": "data/local/google-corridors/2026-11-20-current/research-walks/pilot_hayden_tandon_access_719S.json",
+                "sha256": "b99224ecf013d316969197289c1c19c04386e19c5178d813f124f226aa4cae4a"
+              },
+              "job": {
+                "component": "access",
+                "corridor_id": "pilot_hayden_tandon",
+                "id": "pilot_hayden_tandon_access_719S",
+                "request": {
+                  "destination": {
+                    "location": {
+                      "latLng": {
+                        "latitude": 40.747023,
+                        "longitude": -73.945264
+                      }
+                    }
+                  },
+                  "languageCode": "en-US",
+                  "origin": {
+                    "address": "Hayden LIC Apartments, 43-25 Hunter Street, Long Island City, NY 11101"
+                  },
+                  "travelMode": "WALK"
+                },
+                "station_name": "Court Sq",
+                "stop_id": "719S"
+              },
+              "kind": "GOOGLE_WALK_TO_STATION_COORDINATE_PLATFORM_ACCESS_UNVERIFIED",
+              "reason": null,
+              "received_at": "2026-11-20T16:01:28.472838Z",
+              "requested_at": "2026-11-20T16:01:28.309374Z",
+              "seconds": 254.0,
+              "status": "AVAILABLE"
+            },
+            "egress": {
+              "capture": {
+                "path": "data/local/google-corridors/2026-11-20-current/research-walks/pilot_hayden_tandon_egress_232S.json",
+                "sha256": "f9570052283924051a6ad7ece060ca853d56b59f5f60e261cb282858f9612355"
+              },
+              "job": {
+                "component": "egress",
+                "corridor_id": "pilot_hayden_tandon",
+                "id": "pilot_hayden_tandon_egress_232S",
+                "request": {
+                  "destination": {
+                    "address": "NYU Tandon School of Engineering, 6 MetroTech Center, Brooklyn, NY 11201"
+                  },
+                  "languageCode": "en-US",
+                  "origin": {
+                    "location": {
+                      "latLng": {
+                        "latitude": 40.693219,
+                        "longitude": -73.989998
+                      }
+                    }
+                  },
+                  "travelMode": "WALK"
+                },
+                "station_name": "Borough Hall",
+                "stop_id": "232S"
+              },
+              "kind": "GOOGLE_WALK_TO_STATION_COORDINATE_PLATFORM_ACCESS_UNVERIFIED",
+              "reason": null,
+              "received_at": "2026-11-20T16:01:28.613518Z",
+              "requested_at": "2026-11-20T16:01:28.475332Z",
+              "seconds": 426.0,
+              "status": "AVAILABLE"
+            }
+          }
+        },
+        {
+          "access_walk_seconds": 366.0,
+          "authored_transfer_indices": [
+            0
+          ],
+          "candidate_provenance": "EXISTING_RESEARCH_ROUTE_LIBRARY_WITH_RECONCILED_CURRENT_OD_WALKS",
+          "egress_walk_seconds": 225.0,
+          "family": "NW_TO_R",
+          "id": "research_n_r",
+          "legs": [
+            {
+              "feed_id": "nqrw",
+              "from_stop_id": "R09S",
+              "route_id": "N",
+              "route_ids": [
+                "N"
+              ],
+              "to_stop_id": "R17S"
+            },
+            {
+              "feed_id": "nqrw",
+              "from_stop_id": "R17S",
+              "route_id": "R",
+              "route_ids": [
+                "R"
+              ],
+              "to_stop_id": "R29S"
+            }
+          ],
+          "name": "N to R via Herald Sq",
+          "research_library_id": "n_r",
+          "service_alias_policy": "PRESERVE_DECLARED_RESEARCH_ALIASES_EXCEPT_GOOGLE_COVERED_3_SERVICE; NEVER_POOL_GOOGLE_STAY",
+          "transfer_walk_seconds": [
+            240
+          ],
+          "transfer_walking_provenance": [
+            {
+              "kind": "AUTHORED_TRANSFER_FROM_PRIOR_RESEARCH_LIBRARY",
+              "seconds": 240,
+              "transfer_index": 0
+            }
+          ],
+          "walking_provenance": {
+            "access": {
+              "capture": {
+                "path": "data/local/google-corridors/2026-11-20-current/research-walks/pilot_hayden_tandon_access_R09S.json",
+                "sha256": "d26e603323b362e23a997cc7a15c9ff4ad2740468d71ac012310e28ea7d5ee52"
+              },
+              "job": {
+                "component": "access",
+                "corridor_id": "pilot_hayden_tandon",
+                "id": "pilot_hayden_tandon_access_R09S",
+                "request": {
+                  "destination": {
+                    "location": {
+                      "latLng": {
+                        "latitude": 40.750582,
+                        "longitude": -73.940202
+                      }
+                    }
+                  },
+                  "languageCode": "en-US",
+                  "origin": {
+                    "address": "Hayden LIC Apartments, 43-25 Hunter Street, Long Island City, NY 11101"
+                  },
+                  "travelMode": "WALK"
+                },
+                "station_name": "Queensboro Plaza",
+                "stop_id": "R09S"
+              },
+              "kind": "GOOGLE_WALK_TO_STATION_COORDINATE_PLATFORM_ACCESS_UNVERIFIED",
+              "reason": null,
+              "received_at": "2026-11-20T16:01:28.591131Z",
+              "requested_at": "2026-11-20T16:01:28.498196Z",
+              "seconds": 366.0,
+              "status": "AVAILABLE"
+            },
+            "egress": {
+              "capture": {
+                "path": "data/local/google-corridors/2026-11-20-current/research-walks/pilot_hayden_tandon_egress_R29S.json",
+                "sha256": "aef3704a5888bde0857dba89a3c94939227178b6bc52194bce195a9f5bd5e9d1"
+              },
+              "job": {
+                "component": "egress",
+                "corridor_id": "pilot_hayden_tandon",
+                "id": "pilot_hayden_tandon_egress_R29S",
+                "request": {
+                  "destination": {
+                    "address": "NYU Tandon School of Engineering, 6 MetroTech Center, Brooklyn, NY 11201"
+                  },
+                  "languageCode": "en-US",
+                  "origin": {
+                    "location": {
+                      "latLng": {
+                        "latitude": 40.69218,
+                        "longitude": -73.985942
+                      }
+                    }
+                  },
+                  "travelMode": "WALK"
+                },
+                "station_name": "Jay St-MetroTech",
+                "stop_id": "R29S"
+              },
+              "kind": "GOOGLE_WALK_TO_STATION_COORDINATE_PLATFORM_ACCESS_UNVERIFIED",
+              "reason": null,
+              "received_at": "2026-11-20T16:01:28.471859Z",
+              "requested_at": "2026-11-20T16:01:28.308929Z",
+              "seconds": 225.0,
+              "status": "AVAILABLE"
+            }
+          }
+        },
+        {
+          "access_walk_seconds": 366.0,
+          "authored_transfer_indices": [
+            0
+          ],
+          "candidate_provenance": "EXISTING_RESEARCH_ROUTE_LIBRARY_WITH_RECONCILED_CURRENT_OD_WALKS",
+          "egress_walk_seconds": 225.0,
+          "family": "NW_TO_R",
+          "id": "research_w_r",
+          "legs": [
+            {
+              "feed_id": "nqrw",
+              "from_stop_id": "R09S",
+              "route_id": "W",
+              "route_ids": [
+                "W"
+              ],
+              "to_stop_id": "R17S"
+            },
+            {
+              "feed_id": "nqrw",
+              "from_stop_id": "R17S",
+              "route_id": "R",
+              "route_ids": [
+                "R"
+              ],
+              "to_stop_id": "R29S"
+            }
+          ],
+          "name": "W to R via Herald Sq",
+          "research_library_id": "w_r",
+          "service_alias_policy": "PRESERVE_DECLARED_RESEARCH_ALIASES_EXCEPT_GOOGLE_COVERED_3_SERVICE; NEVER_POOL_GOOGLE_STAY",
+          "transfer_walk_seconds": [
+            240
+          ],
+          "transfer_walking_provenance": [
+            {
+              "kind": "AUTHORED_TRANSFER_FROM_PRIOR_RESEARCH_LIBRARY",
+              "seconds": 240,
+              "transfer_index": 0
+            }
+          ],
+          "walking_provenance": {
+            "access": {
+              "capture": {
+                "path": "data/local/google-corridors/2026-11-20-current/research-walks/pilot_hayden_tandon_access_R09S.json",
+                "sha256": "d26e603323b362e23a997cc7a15c9ff4ad2740468d71ac012310e28ea7d5ee52"
+              },
+              "job": {
+                "component": "access",
+                "corridor_id": "pilot_hayden_tandon",
+                "id": "pilot_hayden_tandon_access_R09S",
+                "request": {
+                  "destination": {
+                    "location": {
+                      "latLng": {
+                        "latitude": 40.750582,
+                        "longitude": -73.940202
+                      }
+                    }
+                  },
+                  "languageCode": "en-US",
+                  "origin": {
+                    "address": "Hayden LIC Apartments, 43-25 Hunter Street, Long Island City, NY 11101"
+                  },
+                  "travelMode": "WALK"
+                },
+                "station_name": "Queensboro Plaza",
+                "stop_id": "R09S"
+              },
+              "kind": "GOOGLE_WALK_TO_STATION_COORDINATE_PLATFORM_ACCESS_UNVERIFIED",
+              "reason": null,
+              "received_at": "2026-11-20T16:01:28.591131Z",
+              "requested_at": "2026-11-20T16:01:28.498196Z",
+              "seconds": 366.0,
+              "status": "AVAILABLE"
+            },
+            "egress": {
+              "capture": {
+                "path": "data/local/google-corridors/2026-11-20-current/research-walks/pilot_hayden_tandon_egress_R29S.json",
+                "sha256": "aef3704a5888bde0857dba89a3c94939227178b6bc52194bce195a9f5bd5e9d1"
+              },
+              "job": {
+                "component": "egress",
+                "corridor_id": "pilot_hayden_tandon",
+                "id": "pilot_hayden_tandon_egress_R29S",
+                "request": {
+                  "destination": {
+                    "address": "NYU Tandon School of Engineering, 6 MetroTech Center, Brooklyn, NY 11201"
+                  },
+                  "languageCode": "en-US",
+                  "origin": {
+                    "location": {
+                      "latLng": {
+                        "latitude": 40.69218,
+                        "longitude": -73.985942
+                      }
+                    }
+                  },
+                  "travelMode": "WALK"
+                },
+                "station_name": "Jay St-MetroTech",
+                "stop_id": "R29S"
+              },
+              "kind": "GOOGLE_WALK_TO_STATION_COORDINATE_PLATFORM_ACCESS_UNVERIFIED",
+              "reason": null,
+              "received_at": "2026-11-20T16:01:28.471859Z",
+              "requested_at": "2026-11-20T16:01:28.308929Z",
+              "seconds": 225.0,
+              "status": "AVAILABLE"
+            }
+          }
+        }
+      ],
+      "unavailable_candidates": [
+        {
+          "candidate_provenance": "CURRENT_GOOGLE_ROUTE_REJECTED_NORMALIZATION",
+          "google_route_index": 3,
+          "id": "google-unavailable-pilot_hayden_tandon-3",
+          "name": "E then A (provider route unavailable)",
+          "reason_codes": [
+            "MISSING_TRANSFER_WALK"
+          ]
+        }
+      ]
+    },
+    {
+      "destination": "Brooklyn Borough Hall, 209 Joralemon Street, Brooklyn, NY 11201",
+      "google": {
+        "all_provider_routes": [
+          {
+            "normalization_status": "NORMALIZED",
+            "normalized_itinerary_id": "google-route-54502e7253ac53a2be3cd264",
+            "provider_duration_seconds": 1437.0,
+            "route_index": 0,
+            "route_labels": [
+              "DEFAULT_ROUTE"
+            ],
+            "selected_as_stay": true
+          },
+          {
+            "normalization_status": "NORMALIZED",
+            "normalized_itinerary_id": "google-route-7216c8289da57456f28b1b48",
+            "provider_duration_seconds": 1875.0,
+            "route_index": 1,
+            "route_labels": [
+              "DEFAULT_ROUTE_ALTERNATE"
+            ],
+            "selected_as_stay": false
+          },
+          {
+            "normalization_status": "NORMALIZED",
+            "normalized_itinerary_id": "google-route-f64f3db98836328b08094801",
+            "provider_duration_seconds": 1866.0,
+            "route_index": 2,
+            "route_labels": [
+              "DEFAULT_ROUTE_ALTERNATE"
+            ],
+            "selected_as_stay": false
+          },
+          {
+            "normalization_status": "DUPLICATE",
+            "normalized_itinerary_id": "google-route-54502e7253ac53a2be3cd264",
+            "provider_duration_seconds": 1437.0,
+            "route_index": 3,
+            "route_labels": [
+              "DEFAULT_ROUTE_ALTERNATE"
+            ],
+            "selected_as_stay": false
+          },
+          {
+            "normalization_status": "NORMALIZED",
+            "normalized_itinerary_id": "google-route-fae079d4a0a7051e64aa1cda",
+            "provider_duration_seconds": 1437.0,
+            "route_index": 4,
+            "route_labels": [
+              "DEFAULT_ROUTE_ALTERNATE"
+            ],
+            "selected_as_stay": false
+          },
+          {
+            "normalization_status": "NORMALIZED",
+            "normalized_itinerary_id": "google-route-de788210588f9366a3b6c046",
+            "provider_duration_seconds": 1949.0,
+            "route_index": 5,
+            "route_labels": [
+              "DEFAULT_ROUTE_ALTERNATE"
+            ],
+            "selected_as_stay": false
+          }
+        ],
+        "capture": {
+          "bytes": 54527,
+          "path": "data/local/google-corridors/2026-11-20-current/grandcentral_boroughhall.provider.json",
+          "sha256": "035039ff44524da9f42f615a7acd3a66b0645ff905e8daae312542d82cd2172e"
+        },
+        "current_duration_seconds": 1437.0,
+        "current_duration_used_as_historical_outcome": false,
+        "default_route_id": "google-route-54502e7253ac53a2be3cd264",
+        "default_route_index": 0,
+        "default_route_labels": [
+          "DEFAULT_ROUTE"
+        ],
+        "derived_summary": {
+          "bytes": 81391,
+          "path": "data/local/google-corridors/2026-11-20-current/grandcentral_boroughhall.summary.json",
+          "sha256": "e0f35d184bef29beeeb6d2604abb99ce0ac537d0e812cb9bcd177401eea2b734"
+        },
+        "received_at": "2026-11-20T15:54:47.348971Z",
+        "requested_at": "2026-11-20T15:54:46.887438Z",
+        "selection": {
+          "method": "GOOGLE_DEFAULT_ROUTE",
+          "route_index": 0
+        }
+      },
+      "id": "grandcentral_boroughhall",
+      "origin": "East 42nd Street and Lexington Avenue, Manhattan, New York, NY",
+      "reference_route_id": "google-route-54502e7253ac53a2be3cd264",
+      "research_library_deduplication": [
+        {
+          "reason": "EXACT_GOOGLE_4_AND_5_ROUTES_ALREADY_PRESERVED_SEPARATELY",
+          "research_route_id": "lexington_direct"
+        }
+      ],
+      "routes": [
+        {
+          "access_walk_seconds": 111.0,
+          "candidate_provenance": "CURRENT_GOOGLE_ROUTE",
+          "egress_walk_seconds": 171.0,
+          "family": "GOOGLE_5",
+          "google": {
+            "current_provider_eta": "2026-11-20T16:26:23Z",
+            "normalization_provenance": {
+              "boundary_reconciliations": [
+                {
+                  "distance_metres": 3.86,
+                  "path": "routes[0].legs[0].steps[1]"
+                },
+                {
+                  "distance_metres": 0.445,
+                  "path": "routes[0].legs[0].steps[2].endLocation"
+                },
+                {
+                  "distance_metres": 0.445,
+                  "path": "routes[0].legs[0].steps[3]"
+                },
+                {
+                  "distance_metres": 5.155,
+                  "path": "routes[0].legs[0].steps[4]"
+                }
+              ],
+              "derived_provider_eta": "2026-11-20T16:26:23Z",
+              "duration_vs_clock_difference_seconds": 459.112562,
+              "egress_walking_seconds": 171.0,
+              "eta_basis": "LAST_SUBWAY_ARRIVAL_PLUS_EGRESS",
+              "itinerary_id": "google-route-54502e7253ac53a2be3cd264",
+              "last_subway_arrival_at": "2026-11-20T16:23:32Z",
+              "original_duration_seconds": 1437.0,
+              "queried_at": "2026-11-20T15:54:46.887438Z",
+              "received_at": "2026-11-20T15:54:47.348971Z",
+              "route_index": 0,
+              "selected": true,
+              "source_route_indices": [
+                0,
+                3
+              ],
+              "status": "NORMALIZED",
+              "subway_durations": [
+                {
+                  "clock_duration_seconds": 1140.0,
+                  "path": "routes[0].legs[0].steps[2]",
+                  "static_duration_seconds": 1140.0
+                }
+              ],
+              "unverified_endpoint_coordinates": [
+                "origin",
+                "destination"
+              ]
+            },
+            "representative_route_index": 0,
+            "source_route_indices": [
+              0,
+              3
+            ]
+          },
+          "id": "google-route-54502e7253ac53a2be3cd264",
+          "legs": [
+            {
+              "feed_id": "numbered",
+              "from_stop_id": "631S",
+              "route_id": "5",
+              "route_ids": [
+                "5"
+              ],
+              "to_stop_id": "423S"
+            }
+          ],
+          "name": "5: Grand Central-42 St to Borough Hall",
+          "station_mapping_evidence": [
+            {
+              "alighting": {
+                "distance_metres": 0.672,
+                "mta_stop_id": "423S",
+                "official_coordinates": {
+                  "latitude": 40.692404,
+                  "longitude": -73.990151
+                },
+                "official_daytime_routes": "4 5",
+                "official_south_direction_label": "Outbound",
+                "official_station_name": "Borough Hall",
+                "provider_coordinates": {
+                  "latitude": 40.69241,
+                  "longitude": -73.99015
+                },
+                "provider_name": "Borough Hall"
+              },
+              "boarding": {
+                "distance_metres": 17.803,
+                "mta_stop_id": "631S",
+                "official_coordinates": {
+                  "latitude": 40.751776,
+                  "longitude": -73.976848
+                },
+                "official_daytime_routes": "4 5 6",
+                "official_south_direction_label": "Downtown",
+                "official_station_name": "Grand Central-42 St",
+                "provider_coordinates": {
+                  "latitude": 40.75172,
+                  "longitude": -73.97665
+                },
+                "provider_name": "Grand Central-42 St"
+              },
+              "headsign": "Flatbush Av-Brooklyn College",
+              "route_id": "5"
+            }
+          ],
+          "transfer_walk_seconds": [],
+          "walking_provenance": "SUM_OF_EXPLICIT_CURRENT_PROVIDER_WALK_STEPS_HELD_FIXED_FOR_HISTORICAL_REPLAY"
+        },
+        {
+          "access_walk_seconds": 100.0,
+          "candidate_provenance": "CURRENT_GOOGLE_ROUTE",
+          "egress_walk_seconds": 138.0,
+          "family": "GOOGLE_7_3",
+          "google": {
+            "current_provider_eta": "2026-11-20T16:26:24Z",
+            "normalization_provenance": {
+              "boundary_reconciliations": [
+                {
+                  "distance_metres": 5.409,
+                  "path": "routes[1].legs[0].steps[1]"
+                },
+                {
+                  "distance_metres": 0.478,
+                  "path": "routes[1].legs[0].steps[2].startLocation"
+                },
+                {
+                  "distance_metres": 0.54,
+                  "path": "routes[1].legs[0].steps[2].endLocation"
+                },
+                {
+                  "distance_metres": 0.478,
+                  "path": "routes[1].legs[0].steps[2]"
+                },
+                {
+                  "distance_metres": 0.54,
+                  "path": "routes[1].legs[0].steps[3]"
+                },
+                {
+                  "distance_metres": 0.279,
+                  "path": "routes[1].legs[0].steps[4].endLocation"
+                },
+                {
+                  "distance_metres": 0.279,
+                  "path": "routes[1].legs[0].steps[5]"
+                },
+                {
+                  "distance_metres": 1.79,
+                  "path": "routes[1].legs[0].steps[7]"
+                }
+              ],
+              "derived_provider_eta": "2026-11-20T16:26:24Z",
+              "duration_vs_clock_difference_seconds": 22.112562000000025,
+              "egress_walking_seconds": 138.0,
+              "eta_basis": "LAST_SUBWAY_ARRIVAL_PLUS_EGRESS",
+              "itinerary_id": "google-route-7216c8289da57456f28b1b48",
+              "last_subway_arrival_at": "2026-11-20T16:24:06Z",
+              "original_duration_seconds": 1875.0,
+              "queried_at": "2026-11-20T15:54:46.887438Z",
+              "received_at": "2026-11-20T15:54:47.348971Z",
+              "route_index": 1,
+              "selected": true,
+              "source_route_indices": [
+                1
+              ],
+              "status": "NORMALIZED",
+              "subway_durations": [
+                {
+                  "clock_duration_seconds": 160.0,
+                  "path": "routes[1].legs[0].steps[2]",
+                  "static_duration_seconds": 160.0
+                },
+                {
+                  "clock_duration_seconds": 1140.0,
+                  "path": "routes[1].legs[0].steps[4]",
+                  "static_duration_seconds": 1140.0
+                }
+              ],
+              "unverified_endpoint_coordinates": [
+                "origin",
+                "destination"
+              ]
+            },
+            "representative_route_index": 1,
+            "source_route_indices": [
+              1
+            ]
+          },
+          "id": "google-route-7216c8289da57456f28b1b48",
+          "legs": [
+            {
+              "feed_id": "numbered",
+              "from_stop_id": "723S",
+              "route_id": "7",
+              "route_ids": [
+                "7"
+              ],
+              "to_stop_id": "725S"
+            },
+            {
+              "feed_id": "numbered",
+              "from_stop_id": "127S",
+              "route_id": "3",
+              "route_ids": [
+                "3"
+              ],
+              "to_stop_id": "232S"
+            }
+          ],
+          "name": "7 then 3: Grand Central-42 St to Borough Hall",
+          "station_mapping_evidence": [
+            {
+              "alighting": {
+                "distance_metres": 39.309,
+                "mta_stop_id": "725S",
+                "official_coordinates": {
+                  "latitude": 40.755477,
+                  "longitude": -73.987691
+                },
+                "official_daytime_routes": "7",
+                "official_south_direction_label": "Hudson Yards",
+                "official_station_name": "Times Sq-42 St",
+                "provider_coordinates": {
+                  "latitude": 40.75567,
+                  "longitude": -73.9873
+                },
+                "provider_name": "Times Sq-42 St"
+              },
+              "boarding": {
+                "distance_metres": 95.118,
+                "mta_stop_id": "723S",
+                "official_coordinates": {
+                  "latitude": 40.751431,
+                  "longitude": -73.976041
+                },
+                "official_daytime_routes": "7",
+                "official_south_direction_label": "Hudson Yards",
+                "official_station_name": "Grand Central-42 St",
+                "provider_coordinates": {
+                  "latitude": 40.75105,
+                  "longitude": -73.97503
+                },
+                "provider_name": "Grand Central-42 St"
+              },
+              "headsign": "34 St-Hudson Yards",
+              "route_id": "7"
+            },
+            {
+              "alighting": {
+                "distance_metres": 0.202,
+                "mta_stop_id": "232S",
+                "official_coordinates": {
+                  "latitude": 40.693219,
+                  "longitude": -73.989998
+                },
+                "official_daytime_routes": "2 3",
+                "official_south_direction_label": "Outbound",
+                "official_station_name": "Borough Hall",
+                "provider_coordinates": {
+                  "latitude": 40.69322,
+                  "longitude": -73.99
+                },
+                "provider_name": "Borough Hall"
+              },
+              "boarding": {
+                "distance_metres": 0.421,
+                "mta_stop_id": "127S",
+                "official_coordinates": {
+                  "latitude": 40.75529,
+                  "longitude": -73.987495
+                },
+                "official_daytime_routes": "1 2 3",
+                "official_south_direction_label": "Downtown",
+                "official_station_name": "Times Sq-42 St",
+                "provider_coordinates": {
+                  "latitude": 40.75529,
+                  "longitude": -73.9875
+                },
+                "provider_name": "Times Sq-42 St"
+              },
+              "headsign": "New Lots Av",
+              "route_id": "3"
+            }
+          ],
+          "transfer_walk_seconds": [
+            46.0
+          ],
+          "walking_provenance": "SUM_OF_EXPLICIT_CURRENT_PROVIDER_WALK_STEPS_HELD_FIXED_FOR_HISTORICAL_REPLAY"
+        },
+        {
+          "access_walk_seconds": 100.0,
+          "candidate_provenance": "CURRENT_GOOGLE_ROUTE",
+          "egress_walk_seconds": 312.0,
+          "family": "GOOGLE_7_F",
+          "google": {
+            "current_provider_eta": "2026-11-20T16:26:21Z",
+            "normalization_provenance": {
+              "boundary_reconciliations": [
+                {
+                  "distance_metres": 5.409,
+                  "path": "routes[2].legs[0].steps[1]"
+                },
+                {
+                  "distance_metres": 0.478,
+                  "path": "routes[2].legs[0].steps[2].startLocation"
+                },
+                {
+                  "distance_metres": 0.404,
+                  "path": "routes[2].legs[0].steps[2].endLocation"
+                },
+                {
+                  "distance_metres": 0.478,
+                  "path": "routes[2].legs[0].steps[2]"
+                },
+                {
+                  "distance_metres": 0.404,
+                  "path": "routes[2].legs[0].steps[3]"
+                },
+                {
+                  "distance_metres": 0.474,
+                  "path": "routes[2].legs[0].steps[4].startLocation"
+                },
+                {
+                  "distance_metres": 0.419,
+                  "path": "routes[2].legs[0].steps[4].endLocation"
+                },
+                {
+                  "distance_metres": 0.474,
+                  "path": "routes[2].legs[0].steps[4]"
+                },
+                {
+                  "distance_metres": 0.419,
+                  "path": "routes[2].legs[0].steps[5]"
+                },
+                {
+                  "distance_metres": 2.53,
+                  "path": "routes[2].legs[0].steps[6]"
+                }
+              ],
+              "derived_provider_eta": "2026-11-20T16:26:21Z",
+              "duration_vs_clock_difference_seconds": 28.112562000000025,
+              "egress_walking_seconds": 312.0,
+              "eta_basis": "LAST_SUBWAY_ARRIVAL_PLUS_EGRESS",
+              "itinerary_id": "google-route-f64f3db98836328b08094801",
+              "last_subway_arrival_at": "2026-11-20T16:21:09Z",
+              "original_duration_seconds": 1866.0,
+              "queried_at": "2026-11-20T15:54:46.887438Z",
+              "received_at": "2026-11-20T15:54:47.348971Z",
+              "route_index": 2,
+              "selected": true,
+              "source_route_indices": [
+                2
+              ],
+              "status": "NORMALIZED",
+              "subway_durations": [
+                {
+                  "clock_duration_seconds": 70.0,
+                  "path": "routes[2].legs[0].steps[2]",
+                  "static_duration_seconds": 70.0
+                },
+                {
+                  "clock_duration_seconds": 1116.0,
+                  "path": "routes[2].legs[0].steps[4]",
+                  "static_duration_seconds": 1110.0
+                }
+              ],
+              "unverified_endpoint_coordinates": [
+                "origin",
+                "destination"
+              ]
+            },
+            "representative_route_index": 2,
+            "source_route_indices": [
+              2
+            ]
+          },
+          "id": "google-route-f64f3db98836328b08094801",
+          "legs": [
+            {
+              "feed_id": "numbered",
+              "from_stop_id": "723S",
+              "route_id": "7",
+              "route_ids": [
+                "7"
+              ],
+              "to_stop_id": "724S"
+            },
+            {
+              "feed_id": "bdfm",
+              "from_stop_id": "D16S",
+              "route_id": "F",
+              "route_ids": [
+                "F"
+              ],
+              "to_stop_id": "A41S"
+            }
+          ],
+          "name": "7 then F: Grand Central-42 St to Jay St-MetroTech",
+          "station_mapping_evidence": [
+            {
+              "alighting": {
+                "distance_metres": 0.276,
+                "mta_stop_id": "724S",
+                "official_coordinates": {
+                  "latitude": 40.753821,
+                  "longitude": -73.981963
+                },
+                "official_daytime_routes": "7",
+                "official_south_direction_label": "Hudson Yards",
+                "official_station_name": "5 Av",
+                "provider_coordinates": {
+                  "latitude": 40.75382,
+                  "longitude": -73.98196
+                },
+                "provider_name": "5 Av"
+              },
+              "boarding": {
+                "distance_metres": 95.118,
+                "mta_stop_id": "723S",
+                "official_coordinates": {
+                  "latitude": 40.751431,
+                  "longitude": -73.976041
+                },
+                "official_daytime_routes": "7",
+                "official_south_direction_label": "Hudson Yards",
+                "official_station_name": "Grand Central-42 St",
+                "provider_coordinates": {
+                  "latitude": 40.75105,
+                  "longitude": -73.97503
+                },
+                "provider_name": "Grand Central-42 St"
+              },
+              "headsign": "34 St-Hudson Yards",
+              "route_id": "7"
+            },
+            {
+              "alighting": {
+                "distance_metres": 0.279,
+                "mta_stop_id": "A41S",
+                "official_coordinates": {
+                  "latitude": 40.692338,
+                  "longitude": -73.987342
+                },
+                "official_daytime_routes": "A C F",
+                "official_south_direction_label": "Outbound",
+                "official_station_name": "Jay St-MetroTech",
+                "provider_coordinates": {
+                  "latitude": 40.69234,
+                  "longitude": -73.98734
+                },
+                "provider_name": "Jay St-MetroTech"
+              },
+              "boarding": {
+                "distance_metres": 0.238,
+                "mta_stop_id": "D16S",
+                "official_coordinates": {
+                  "latitude": 40.754222,
+                  "longitude": -73.984569
+                },
+                "official_daytime_routes": "B D F M",
+                "official_south_direction_label": "Downtown",
+                "official_station_name": "42 St-Bryant Pk",
+                "provider_coordinates": {
+                  "latitude": 40.75422,
+                  "longitude": -73.98457
+                },
+                "provider_name": "42 St-Bryant Pk"
+              },
+              "headsign": "Coney Island-Stillwell Av",
+              "route_id": "F"
+            }
+          ],
+          "transfer_walk_seconds": [
+            53.0
+          ],
+          "walking_provenance": "SUM_OF_EXPLICIT_CURRENT_PROVIDER_WALK_STEPS_HELD_FIXED_FOR_HISTORICAL_REPLAY"
+        },
+        {
+          "access_walk_seconds": 115.0,
+          "candidate_provenance": "CURRENT_GOOGLE_ROUTE",
+          "egress_walk_seconds": 171.0,
+          "family": "GOOGLE_4",
+          "google": {
+            "current_provider_eta": "2026-11-20T16:38:01Z",
+            "normalization_provenance": {
+              "boundary_reconciliations": [
+                {
+                  "distance_metres": 3.86,
+                  "path": "routes[4].legs[0].steps[1]"
+                },
+                {
+                  "distance_metres": 0.445,
+                  "path": "routes[4].legs[0].steps[2].endLocation"
+                },
+                {
+                  "distance_metres": 5.605,
+                  "path": "routes[4].legs[0].steps[2]"
+                },
+                {
+                  "distance_metres": 0.445,
+                  "path": "routes[4].legs[0].steps[3]"
+                },
+                {
+                  "distance_metres": 5.155,
+                  "path": "routes[4].legs[0].steps[4]"
+                }
+              ],
+              "derived_provider_eta": "2026-11-20T16:38:01Z",
+              "duration_vs_clock_difference_seconds": 1157.1125619999998,
+              "egress_walking_seconds": 171.0,
+              "eta_basis": "LAST_SUBWAY_ARRIVAL_PLUS_EGRESS",
+              "itinerary_id": "google-route-fae079d4a0a7051e64aa1cda",
+              "last_subway_arrival_at": "2026-11-20T16:35:10Z",
+              "original_duration_seconds": 1437.0,
+              "queried_at": "2026-11-20T15:54:46.887438Z",
+              "received_at": "2026-11-20T15:54:47.348971Z",
+              "route_index": 4,
+              "selected": true,
+              "source_route_indices": [
+                4
+              ],
+              "status": "NORMALIZED",
+              "subway_durations": [
+                {
+                  "clock_duration_seconds": 1140.0,
+                  "path": "routes[4].legs[0].steps[2]",
+                  "static_duration_seconds": 1140.0
+                }
+              ],
+              "unverified_endpoint_coordinates": [
+                "origin",
+                "destination"
+              ]
+            },
+            "representative_route_index": 4,
+            "source_route_indices": [
+              4
+            ]
+          },
+          "id": "google-route-fae079d4a0a7051e64aa1cda",
+          "legs": [
+            {
+              "feed_id": "numbered",
+              "from_stop_id": "631S",
+              "route_id": "4",
+              "route_ids": [
+                "4"
+              ],
+              "to_stop_id": "423S"
+            }
+          ],
+          "name": "4: Grand Central-42 St to Borough Hall",
+          "station_mapping_evidence": [
+            {
+              "alighting": {
+                "distance_metres": 0.672,
+                "mta_stop_id": "423S",
+                "official_coordinates": {
+                  "latitude": 40.692404,
+                  "longitude": -73.990151
+                },
+                "official_daytime_routes": "4 5",
+                "official_south_direction_label": "Outbound",
+                "official_station_name": "Borough Hall",
+                "provider_coordinates": {
+                  "latitude": 40.69241,
+                  "longitude": -73.99015
+                },
+                "provider_name": "Borough Hall"
+              },
+              "boarding": {
+                "distance_metres": 17.803,
+                "mta_stop_id": "631S",
+                "official_coordinates": {
+                  "latitude": 40.751776,
+                  "longitude": -73.976848
+                },
+                "official_daytime_routes": "4 5 6",
+                "official_south_direction_label": "Downtown",
+                "official_station_name": "Grand Central-42 St",
+                "provider_coordinates": {
+                  "latitude": 40.75172,
+                  "longitude": -73.97665
+                },
+                "provider_name": "Grand Central-42 St"
+              },
+              "headsign": "Crown Hts-Utica Av",
+              "route_id": "4"
+            }
+          ],
+          "transfer_walk_seconds": [],
+          "walking_provenance": "SUM_OF_EXPLICIT_CURRENT_PROVIDER_WALK_STEPS_HELD_FIXED_FOR_HISTORICAL_REPLAY"
+        },
+        {
+          "access_walk_seconds": 115.0,
+          "candidate_provenance": "CURRENT_GOOGLE_ROUTE",
+          "egress_walk_seconds": 217.0,
+          "family": "GOOGLE_6_R",
+          "google": {
+            "current_provider_eta": "2026-11-20T16:31:27Z",
+            "normalization_provenance": {
+              "boundary_reconciliations": [
+                {
+                  "distance_metres": 3.86,
+                  "path": "routes[5].legs[0].steps[1]"
+                },
+                {
+                  "distance_metres": 0.496,
+                  "path": "routes[5].legs[0].steps[2].startLocation"
+                },
+                {
+                  "distance_metres": 0.394,
+                  "path": "routes[5].legs[0].steps[2].endLocation"
+                },
+                {
+                  "distance_metres": 0.496,
+                  "path": "routes[5].legs[0].steps[2]"
+                },
+                {
+                  "distance_metres": 0.394,
+                  "path": "routes[5].legs[0].steps[3]"
+                },
+                {
+                  "distance_metres": 0.502,
+                  "path": "routes[5].legs[0].steps[4].startLocation"
+                },
+                {
+                  "distance_metres": 0.355,
+                  "path": "routes[5].legs[0].steps[4].endLocation"
+                },
+                {
+                  "distance_metres": 0.502,
+                  "path": "routes[5].legs[0].steps[4]"
+                },
+                {
+                  "distance_metres": 0.355,
+                  "path": "routes[5].legs[0].steps[5]"
+                },
+                {
+                  "distance_metres": 8.275,
+                  "path": "routes[5].legs[0].steps[6]"
+                }
+              ],
+              "derived_provider_eta": "2026-11-20T16:31:27Z",
+              "duration_vs_clock_difference_seconds": 251.1125619999998,
+              "egress_walking_seconds": 217.0,
+              "eta_basis": "LAST_SUBWAY_ARRIVAL_PLUS_EGRESS",
+              "itinerary_id": "google-route-de788210588f9366a3b6c046",
+              "last_subway_arrival_at": "2026-11-20T16:27:50Z",
+              "original_duration_seconds": 1949.0,
+              "queried_at": "2026-11-20T15:54:46.887438Z",
+              "received_at": "2026-11-20T15:54:47.348971Z",
+              "route_index": 5,
+              "selected": true,
+              "source_route_indices": [
+                5
+              ],
+              "status": "NORMALIZED",
+              "subway_durations": [
+                {
+                  "clock_duration_seconds": 360.0,
+                  "path": "routes[5].legs[0].steps[2]",
+                  "static_duration_seconds": 360.0
+                },
+                {
+                  "clock_duration_seconds": 1020.0,
+                  "path": "routes[5].legs[0].steps[4]",
+                  "static_duration_seconds": 1020.0
+                }
+              ],
+              "unverified_endpoint_coordinates": [
+                "origin",
+                "destination"
+              ]
+            },
+            "representative_route_index": 5,
+            "source_route_indices": [
+              5
+            ]
+          },
+          "id": "google-route-de788210588f9366a3b6c046",
+          "legs": [
+            {
+              "feed_id": "numbered",
+              "from_stop_id": "631S",
+              "route_id": "6",
+              "route_ids": [
+                "6"
+              ],
+              "to_stop_id": "635S"
+            },
+            {
+              "feed_id": "nqrw",
+              "from_stop_id": "R20S",
+              "route_id": "R",
+              "route_ids": [
+                "R"
+              ],
+              "to_stop_id": "R28S"
+            }
+          ],
+          "name": "6 then R: Grand Central-42 St to Court St",
+          "station_mapping_evidence": [
+            {
+              "alighting": {
+                "distance_metres": 3.303,
+                "mta_stop_id": "635S",
+                "official_coordinates": {
+                  "latitude": 40.734673,
+                  "longitude": -73.989951
+                },
+                "official_daytime_routes": "4 5 6",
+                "official_south_direction_label": "Downtown",
+                "official_station_name": "14 St-Union Sq",
+                "provider_coordinates": {
+                  "latitude": 40.73467,
+                  "longitude": -73.98999
+                },
+                "provider_name": "14 St-Union Sq"
+              },
+              "boarding": {
+                "distance_metres": 19.288,
+                "mta_stop_id": "631S",
+                "official_coordinates": {
+                  "latitude": 40.751776,
+                  "longitude": -73.976848
+                },
+                "official_daytime_routes": "4 5 6",
+                "official_south_direction_label": "Downtown",
+                "official_station_name": "Grand Central-42 St",
+                "provider_coordinates": {
+                  "latitude": 40.75176,
+                  "longitude": -73.97662
+                },
+                "provider_name": "Grand Central-42 St"
+              },
+              "headsign": "Brooklyn Bridge-City Hall",
+              "route_id": "6"
+            },
+            {
+              "alighting": {
+                "distance_metres": 0.253,
+                "mta_stop_id": "R28S",
+                "official_coordinates": {
+                  "latitude": 40.6941,
+                  "longitude": -73.991777
+                },
+                "official_daytime_routes": "R",
+                "official_south_direction_label": "Southbound",
+                "official_station_name": "Court St",
+                "provider_coordinates": {
+                  "latitude": 40.6941,
+                  "longitude": -73.99178
+                },
+                "provider_name": "Court St"
+              },
+              "boarding": {
+                "distance_metres": 249.781,
+                "mta_stop_id": "R20S",
+                "official_coordinates": {
+                  "latitude": 40.735736,
+                  "longitude": -73.990568
+                },
+                "official_daytime_routes": "N Q R W",
+                "official_south_direction_label": "Downtown",
+                "official_station_name": "14 St-Union Sq",
+                "provider_coordinates": {
+                  "latitude": 40.73674,
+                  "longitude": -73.99322
+                },
+                "provider_name": "14 St-Union Sq"
+              },
+              "headsign": "Bay Ridge-95 St",
+              "route_id": "R"
+            }
+          ],
+          "transfer_walk_seconds": [
+            51.0
+          ],
+          "walking_provenance": "SUM_OF_EXPLICIT_CURRENT_PROVIDER_WALK_STEPS_HELD_FIXED_FOR_HISTORICAL_REPLAY"
+        },
+        {
+          "access_walk_seconds": 100.0,
+          "authored_transfer_indices": [],
+          "candidate_provenance": "EXISTING_RESEARCH_ROUTE_LIBRARY_WITH_RECONCILED_CURRENT_OD_WALKS",
+          "egress_walk_seconds": 138.0,
+          "family": "BROADWAY_VIA_7",
+          "id": "research_broadway_via_7",
+          "legs": [
+            {
+              "feed_id": "numbered",
+              "from_stop_id": "723S",
+              "route_id": "7",
+              "route_ids": [
+                "7"
+              ],
+              "to_stop_id": "725S"
+            },
+            {
+              "feed_id": "numbered",
+              "from_stop_id": "127S",
+              "route_id": "2",
+              "route_ids": [
+                "2"
+              ],
+              "to_stop_id": "232S"
+            }
+          ],
+          "name": "7 to 2 via Times Square (research library service variant)",
+          "research_library_id": "broadway_via_7",
+          "service_alias_policy": "PRESERVE_DECLARED_RESEARCH_ALIASES_EXCEPT_GOOGLE_COVERED_3_SERVICE; NEVER_POOL_GOOGLE_STAY",
+          "transfer_walk_seconds": [
+            46.0
+          ],
+          "transfer_walking_provenance": [
+            {
+              "kind": "CURRENT_PROVIDER_EXPLICIT_WALK_SAME_STATION_PAIR",
+              "source_route_id": "google-route-7216c8289da57456f28b1b48",
+              "transfer_index": 0
+            }
+          ],
+          "walking_provenance": {
+            "access": {
+              "component": "access",
+              "kind": "CURRENT_PROVIDER_EXPLICIT_WALK_SAME_OD_AND_STATION",
+              "seconds": 100.0,
+              "source_route_id": "google-route-7216c8289da57456f28b1b48",
+              "stop_id": "723S"
+            },
+            "egress": {
+              "component": "egress",
+              "kind": "CURRENT_PROVIDER_EXPLICIT_WALK_SAME_OD_AND_STATION",
+              "seconds": 138.0,
+              "source_route_id": "google-route-7216c8289da57456f28b1b48",
+              "stop_id": "232S"
+            }
+          }
+        },
+        {
+          "access_walk_seconds": 954.0,
+          "authored_transfer_indices": [],
+          "candidate_provenance": "EXISTING_RESEARCH_ROUTE_LIBRARY_WITH_RECONCILED_CURRENT_OD_WALKS",
+          "egress_walk_seconds": 138.0,
+          "family": "BROADWAY_ON_FOOT",
+          "id": "research_walk_broadway",
+          "legs": [
+            {
+              "feed_id": "numbered",
+              "from_stop_id": "127S",
+              "route_id": "2",
+              "route_ids": [
+                "2",
+                "3"
+              ],
+              "to_stop_id": "232S"
+            }
+          ],
+          "name": "Walk to Times Square, then 2 or 3 to Borough Hall",
+          "research_library_id": "walk_broadway",
+          "service_alias_policy": "PRESERVE_DECLARED_RESEARCH_ALIASES_EXCEPT_GOOGLE_COVERED_3_SERVICE; NEVER_POOL_GOOGLE_STAY",
+          "transfer_walk_seconds": [],
+          "transfer_walking_provenance": [],
+          "walking_provenance": {
+            "access": {
+              "capture": {
+                "path": "data/local/google-corridors/2026-11-20-current/research-walks/grandcentral_boroughhall_access_127S.json",
+                "sha256": "c8b64cf72ebbd70d9c3754082fc452c78ebd592544e25fbd344c9813c08f895a"
+              },
+              "job": {
+                "component": "access",
+                "corridor_id": "grandcentral_boroughhall",
+                "id": "grandcentral_boroughhall_access_127S",
+                "request": {
+                  "destination": {
+                    "location": {
+                      "latLng": {
+                        "latitude": 40.75529,
+                        "longitude": -73.987495
+                      }
+                    }
+                  },
+                  "languageCode": "en-US",
+                  "origin": {
+                    "address": "East 42nd Street and Lexington Avenue, Manhattan, New York, NY"
+                  },
+                  "travelMode": "WALK"
+                },
+                "station_name": "Times Sq-42 St",
+                "stop_id": "127S"
+              },
+              "kind": "GOOGLE_WALK_TO_STATION_COORDINATE_PLATFORM_ACCESS_UNVERIFIED",
+              "reason": null,
+              "received_at": "2026-11-20T16:01:28.738901Z",
+              "requested_at": "2026-11-20T16:01:28.590727Z",
+              "seconds": 954.0,
+              "status": "AVAILABLE"
+            },
+            "egress": {
+              "component": "egress",
+              "kind": "CURRENT_PROVIDER_EXPLICIT_WALK_SAME_OD_AND_STATION",
+              "seconds": 138.0,
+              "source_route_id": "google-route-7216c8289da57456f28b1b48",
+              "stop_id": "232S"
+            }
+          }
+        },
+        {
+          "access_walk_seconds": 738.0,
+          "authored_transfer_indices": [],
+          "candidate_provenance": "EXISTING_RESEARCH_ROUTE_LIBRARY_WITH_RECONCILED_CURRENT_OD_WALKS",
+          "egress_walk_seconds": 312.0,
+          "family": "SIXTH_AVENUE_F",
+          "id": "research_walk_f",
+          "legs": [
+            {
+              "feed_id": "bdfm",
+              "from_stop_id": "D16S",
+              "route_id": "F",
+              "route_ids": [
+                "F",
+                "FX"
+              ],
+              "to_stop_id": "A41S"
+            }
+          ],
+          "name": "Walk to Bryant Park, F to Jay Street, walk to Borough Hall",
+          "research_library_id": "walk_f",
+          "service_alias_policy": "PRESERVE_DECLARED_RESEARCH_ALIASES_EXCEPT_GOOGLE_COVERED_3_SERVICE; NEVER_POOL_GOOGLE_STAY",
+          "transfer_walk_seconds": [],
+          "transfer_walking_provenance": [],
+          "walking_provenance": {
+            "access": {
+              "capture": {
+                "path": "data/local/google-corridors/2026-11-20-current/research-walks/grandcentral_boroughhall_access_D16S.json",
+                "sha256": "ba09211592447e5d41a774027f825b93b9d5cce8ed8a5b895e10c93131c8dcb8"
+              },
+              "job": {
+                "component": "access",
+                "corridor_id": "grandcentral_boroughhall",
+                "id": "grandcentral_boroughhall_access_D16S",
+                "request": {
+                  "destination": {
+                    "location": {
+                      "latLng": {
+                        "latitude": 40.754222,
+                        "longitude": -73.984569
+                      }
+                    }
+                  },
+                  "languageCode": "en-US",
+                  "origin": {
+                    "address": "East 42nd Street and Lexington Avenue, Manhattan, New York, NY"
+                  },
+                  "travelMode": "WALK"
+                },
+                "station_name": "42 St-Bryant Pk",
+                "stop_id": "D16S"
+              },
+              "kind": "GOOGLE_WALK_TO_STATION_COORDINATE_PLATFORM_ACCESS_UNVERIFIED",
+              "reason": null,
+              "received_at": "2026-11-20T16:01:28.751176Z",
+              "requested_at": "2026-11-20T16:01:28.593650Z",
+              "seconds": 738.0,
+              "status": "AVAILABLE"
+            },
+            "egress": {
+              "component": "egress",
+              "kind": "CURRENT_PROVIDER_EXPLICIT_WALK_SAME_OD_AND_STATION",
+              "seconds": 312.0,
+              "source_route_id": "google-route-f64f3db98836328b08094801",
+              "stop_id": "A41S"
+            }
+          }
+        }
+      ],
+      "unavailable_candidates": []
+    },
+    {
+      "destination": "West 42nd Street and Seventh Avenue, Manhattan, New York, NY",
+      "google": {
+        "all_provider_routes": [
+          {
+            "normalization_status": "NORMALIZED",
+            "normalized_itinerary_id": "google-route-9a6888e689fb501e230ccda5",
+            "provider_duration_seconds": 878.0,
+            "route_index": 0,
+            "route_labels": [
+              "DEFAULT_ROUTE"
+            ],
+            "selected_as_stay": true
+          },
+          {
+            "normalization_status": "DUPLICATE",
+            "normalized_itinerary_id": "google-route-9a6888e689fb501e230ccda5",
+            "provider_duration_seconds": 878.0,
+            "route_index": 1,
+            "route_labels": [
+              "DEFAULT_ROUTE_ALTERNATE"
+            ],
+            "selected_as_stay": false
+          },
+          {
+            "normalization_status": "NORMALIZED",
+            "normalized_itinerary_id": "google-route-59e8e3290ecae4779e70fb80",
+            "provider_duration_seconds": 1058.0,
+            "route_index": 2,
+            "route_labels": [
+              "DEFAULT_ROUTE_ALTERNATE"
+            ],
+            "selected_as_stay": false
+          },
+          {
+            "normalization_status": "NORMALIZED",
+            "normalized_itinerary_id": "google-route-b0b73137413b2a2d691f0c66",
+            "provider_duration_seconds": 1214.0,
+            "route_index": 3,
+            "route_labels": [
+              "DEFAULT_ROUTE_ALTERNATE"
+            ],
+            "selected_as_stay": false
+          },
+          {
+            "normalization_status": "DUPLICATE",
+            "normalized_itinerary_id": "google-route-9a6888e689fb501e230ccda5",
+            "provider_duration_seconds": 878.0,
+            "route_index": 4,
+            "route_labels": [
+              "DEFAULT_ROUTE_ALTERNATE"
+            ],
+            "selected_as_stay": false
+          },
+          {
+            "normalization_status": "DUPLICATE",
+            "normalized_itinerary_id": "google-route-9a6888e689fb501e230ccda5",
+            "provider_duration_seconds": 878.0,
+            "route_index": 5,
+            "route_labels": [
+              "DEFAULT_ROUTE_ALTERNATE"
+            ],
+            "selected_as_stay": false
+          }
+        ],
+        "capture": {
+          "bytes": 34715,
+          "path": "data/local/google-corridors/2026-11-20-current/courtsquare_timessquare.provider.json",
+          "sha256": "6e20b3f5a2820ca4c6bfa5f8020ee21b923de93b9a2b81b7efdea22930a7d694"
+        },
+        "current_duration_seconds": 878.0,
+        "current_duration_used_as_historical_outcome": false,
+        "default_route_id": "google-route-9a6888e689fb501e230ccda5",
+        "default_route_index": 0,
+        "default_route_labels": [
+          "DEFAULT_ROUTE"
+        ],
+        "derived_summary": {
+          "bytes": 47432,
+          "path": "data/local/google-corridors/2026-11-20-current/courtsquare_timessquare.summary.json",
+          "sha256": "a5f6e0c64d5ad539a324f188991078fe4285aab170ee518b84b4be0e25a8dbeb"
+        },
+        "received_at": "2026-11-20T15:54:47.297236Z",
+        "requested_at": "2026-11-20T15:54:46.886885Z",
+        "selection": {
+          "method": "GOOGLE_DEFAULT_ROUTE",
+          "route_index": 0
+        }
+      },
+      "id": "courtsquare_timessquare",
+      "origin": "Court Square Park, Long Island City, NY",
+      "reference_route_id": "google-route-9a6888e689fb501e230ccda5",
+      "research_library_deduplication": [],
+      "routes": [
+        {
+          "access_walk_seconds": 170.0,
+          "candidate_provenance": "CURRENT_GOOGLE_ROUTE",
+          "egress_walk_seconds": 68.0,
+          "family": "GOOGLE_7",
+          "google": {
+            "current_provider_eta": "2026-11-20T16:13:08Z",
+            "normalization_provenance": {
+              "boundary_reconciliations": [
+                {
+                  "distance_metres": 0.611,
+                  "path": "routes[0].legs[0].steps[2].startLocation"
+                },
+                {
+                  "distance_metres": 0.54,
+                  "path": "routes[0].legs[0].steps[2].endLocation"
+                },
+                {
+                  "distance_metres": 0.611,
+                  "path": "routes[0].legs[0].steps[2]"
+                },
+                {
+                  "distance_metres": 0.54,
+                  "path": "routes[0].legs[0].steps[3]"
+                }
+              ],
+              "derived_provider_eta": "2026-11-20T16:13:08Z",
+              "duration_vs_clock_difference_seconds": 223.1131150000001,
+              "egress_walking_seconds": 68.0,
+              "eta_basis": "LAST_SUBWAY_ARRIVAL_PLUS_EGRESS",
+              "itinerary_id": "google-route-9a6888e689fb501e230ccda5",
+              "last_subway_arrival_at": "2026-11-20T16:12:00Z",
+              "original_duration_seconds": 878.0,
+              "queried_at": "2026-11-20T15:54:46.886885Z",
+              "received_at": "2026-11-20T15:54:47.297236Z",
+              "route_index": 0,
+              "selected": true,
+              "source_route_indices": [
+                0,
+                1,
+                4,
+                5
+              ],
+              "status": "NORMALIZED",
+              "subway_durations": [
+                {
+                  "clock_duration_seconds": 640.0,
+                  "path": "routes[0].legs[0].steps[2]",
+                  "static_duration_seconds": 640.0
+                }
+              ],
+              "unverified_endpoint_coordinates": [
+                "origin",
+                "destination"
+              ]
+            },
+            "representative_route_index": 0,
+            "source_route_indices": [
+              0,
+              1,
+              4,
+              5
+            ]
+          },
+          "id": "google-route-9a6888e689fb501e230ccda5",
+          "legs": [
+            {
+              "feed_id": "numbered",
+              "from_stop_id": "719S",
+              "route_id": "7",
+              "route_ids": [
+                "7"
+              ],
+              "to_stop_id": "725S"
+            }
+          ],
+          "name": "7: Court Sq to Times Sq-42 St",
+          "station_mapping_evidence": [
+            {
+              "alighting": {
+                "distance_metres": 39.309,
+                "mta_stop_id": "725S",
+                "official_coordinates": {
+                  "latitude": 40.755477,
+                  "longitude": -73.987691
+                },
+                "official_daytime_routes": "7",
+                "official_south_direction_label": "Hudson Yards",
+                "official_station_name": "Times Sq-42 St",
+                "provider_coordinates": {
+                  "latitude": 40.75567,
+                  "longitude": -73.9873
+                },
+                "provider_name": "Times Sq-42 St"
+              },
+              "boarding": {
+                "distance_metres": 0.928,
+                "mta_stop_id": "719S",
+                "official_coordinates": {
+                  "latitude": 40.747023,
+                  "longitude": -73.945264
+                },
+                "official_daytime_routes": "7",
+                "official_south_direction_label": "Manhattan",
+                "official_station_name": "Court Sq",
+                "provider_coordinates": {
+                  "latitude": 40.74703,
+                  "longitude": -73.94527
+                },
+                "provider_name": "Court Sq"
+              },
+              "headsign": "34 St-Hudson Yards",
+              "route_id": "7"
+            }
+          ],
+          "transfer_walk_seconds": [],
+          "walking_provenance": "SUM_OF_EXPLICIT_CURRENT_PROVIDER_WALK_STEPS_HELD_FIXED_FOR_HISTORICAL_REPLAY"
+        },
+        {
+          "access_walk_seconds": 278.0,
+          "candidate_provenance": "CURRENT_GOOGLE_ROUTE",
+          "egress_walk_seconds": 228.0,
+          "family": "GOOGLE_F",
+          "google": {
+            "current_provider_eta": "2026-11-20T16:12:52Z",
+            "normalization_provenance": {
+              "boundary_reconciliations": [
+                {
+                  "distance_metres": 0.562,
+                  "path": "routes[2].legs[0].steps[3].startLocation"
+                },
+                {
+                  "distance_metres": 0.474,
+                  "path": "routes[2].legs[0].steps[3].endLocation"
+                },
+                {
+                  "distance_metres": 0.562,
+                  "path": "routes[2].legs[0].steps[3]"
+                },
+                {
+                  "distance_metres": 0.474,
+                  "path": "routes[2].legs[0].steps[4]"
+                },
+                {
+                  "distance_metres": 2.079,
+                  "path": "routes[2].legs[0].steps[5]"
+                }
+              ],
+              "derived_provider_eta": "2026-11-20T16:12:52Z",
+              "duration_vs_clock_difference_seconds": 27.113115000000107,
+              "egress_walking_seconds": 228.0,
+              "eta_basis": "LAST_SUBWAY_ARRIVAL_PLUS_EGRESS",
+              "itinerary_id": "google-route-59e8e3290ecae4779e70fb80",
+              "last_subway_arrival_at": "2026-11-20T16:09:04Z",
+              "original_duration_seconds": 1058.0,
+              "queried_at": "2026-11-20T15:54:46.886885Z",
+              "received_at": "2026-11-20T15:54:47.297236Z",
+              "route_index": 2,
+              "selected": true,
+              "source_route_indices": [
+                2
+              ],
+              "status": "NORMALIZED",
+              "subway_durations": [
+                {
+                  "clock_duration_seconds": 510.0,
+                  "path": "routes[2].legs[0].steps[3]",
+                  "static_duration_seconds": 510.0
+                }
+              ],
+              "unverified_endpoint_coordinates": [
+                "origin",
+                "destination"
+              ]
+            },
+            "representative_route_index": 2,
+            "source_route_indices": [
+              2
+            ]
+          },
+          "id": "google-route-59e8e3290ecae4779e70fb80",
+          "legs": [
+            {
+              "feed_id": "bdfm",
+              "from_stop_id": "F09S",
+              "route_id": "F",
+              "route_ids": [
+                "F"
+              ],
+              "to_stop_id": "D16S"
+            }
+          ],
+          "name": "F: Court Sq-23 St to 42 St-Bryant Pk",
+          "station_mapping_evidence": [
+            {
+              "alighting": {
+                "distance_metres": 0.238,
+                "mta_stop_id": "D16S",
+                "official_coordinates": {
+                  "latitude": 40.754222,
+                  "longitude": -73.984569
+                },
+                "official_daytime_routes": "B D F M",
+                "official_south_direction_label": "Downtown",
+                "official_station_name": "42 St-Bryant Pk",
+                "provider_coordinates": {
+                  "latitude": 40.75422,
+                  "longitude": -73.98457
+                },
+                "provider_name": "42 St-Bryant Pk"
+              },
+              "boarding": {
+                "distance_metres": 0.667,
+                "mta_stop_id": "F09S",
+                "official_coordinates": {
+                  "latitude": 40.747846,
+                  "longitude": -73.946
+                },
+                "official_daytime_routes": "E F",
+                "official_south_direction_label": "Manhattan",
+                "official_station_name": "Court Sq-23 St",
+                "provider_coordinates": {
+                  "latitude": 40.74784,
+                  "longitude": -73.946
+                },
+                "provider_name": "Court Sq-23 St"
+              },
+              "headsign": "Coney Island-Stillwell Av",
+              "route_id": "F"
+            }
+          ],
+          "transfer_walk_seconds": [],
+          "walking_provenance": "SUM_OF_EXPLICIT_CURRENT_PROVIDER_WALK_STEPS_HELD_FIXED_FOR_HISTORICAL_REPLAY"
+        },
+        {
+          "access_walk_seconds": 278.0,
+          "candidate_provenance": "CURRENT_GOOGLE_ROUTE",
+          "egress_walk_seconds": 246.0,
+          "family": "GOOGLE_E",
+          "google": {
+            "current_provider_eta": "2026-11-20T16:15:06Z",
+            "normalization_provenance": {
+              "boundary_reconciliations": [
+                {
+                  "distance_metres": 0.562,
+                  "path": "routes[3].legs[0].steps[3].startLocation"
+                },
+                {
+                  "distance_metres": 0.462,
+                  "path": "routes[3].legs[0].steps[3].endLocation"
+                },
+                {
+                  "distance_metres": 0.562,
+                  "path": "routes[3].legs[0].steps[3]"
+                },
+                {
+                  "distance_metres": 0.462,
+                  "path": "routes[3].legs[0].steps[4]"
+                },
+                {
+                  "distance_metres": 4.651,
+                  "path": "routes[3].legs[0].steps[5]"
+                }
+              ],
+              "derived_provider_eta": "2026-11-20T16:15:06Z",
+              "duration_vs_clock_difference_seconds": 5.113115000000107,
+              "egress_walking_seconds": 246.0,
+              "eta_basis": "LAST_SUBWAY_ARRIVAL_PLUS_EGRESS",
+              "itinerary_id": "google-route-b0b73137413b2a2d691f0c66",
+              "last_subway_arrival_at": "2026-11-20T16:11:00Z",
+              "original_duration_seconds": 1214.0,
+              "queried_at": "2026-11-20T15:54:46.886885Z",
+              "received_at": "2026-11-20T15:54:47.297236Z",
+              "route_index": 3,
+              "selected": true,
+              "source_route_indices": [
+                3
+              ],
+              "status": "NORMALIZED",
+              "subway_durations": [
+                {
+                  "clock_duration_seconds": 690.0,
+                  "path": "routes[3].legs[0].steps[3]",
+                  "static_duration_seconds": 690.0
+                }
+              ],
+              "unverified_endpoint_coordinates": [
+                "origin",
+                "destination"
+              ]
+            },
+            "representative_route_index": 3,
+            "source_route_indices": [
+              3
+            ]
+          },
+          "id": "google-route-b0b73137413b2a2d691f0c66",
+          "legs": [
+            {
+              "feed_id": "ace",
+              "from_stop_id": "F09S",
+              "route_id": "E",
+              "route_ids": [
+                "E"
+              ],
+              "to_stop_id": "A27S"
+            }
+          ],
+          "name": "E: Court Sq-23 St to 42 St-Port Authority Bus Terminal",
+          "station_mapping_evidence": [
+            {
+              "alighting": {
+                "distance_metres": 9.689,
+                "mta_stop_id": "A27S",
+                "official_coordinates": {
+                  "latitude": 40.757308,
+                  "longitude": -73.989735
+                },
+                "official_daytime_routes": "A C E",
+                "official_south_direction_label": "Downtown",
+                "official_station_name": "42 St-Port Authority Bus Terminal",
+                "provider_coordinates": {
+                  "latitude": 40.75731,
+                  "longitude": -73.98962
+                },
+                "provider_name": "42 St-Port Authority Bus Terminal"
+              },
+              "boarding": {
+                "distance_metres": 0.667,
+                "mta_stop_id": "F09S",
+                "official_coordinates": {
+                  "latitude": 40.747846,
+                  "longitude": -73.946
+                },
+                "official_daytime_routes": "E F",
+                "official_south_direction_label": "Manhattan",
+                "official_station_name": "Court Sq-23 St",
+                "provider_coordinates": {
+                  "latitude": 40.74784,
+                  "longitude": -73.946
+                },
+                "provider_name": "Court Sq-23 St"
+              },
+              "headsign": "World Trade Center",
+              "route_id": "E"
+            }
+          ],
+          "transfer_walk_seconds": [],
+          "walking_provenance": "SUM_OF_EXPLICIT_CURRENT_PROVIDER_WALK_STEPS_HELD_FIXED_FOR_HISTORICAL_REPLAY"
+        }
+      ],
+      "unavailable_candidates": []
+    }
+  ],
+  "extra_label_sources": [
+    {
+      "key": "labels",
+      "manifest": "data/manifests/preincident-inputs.json"
+    },
+    {
+      "key": "labels",
+      "manifest": "data/manifests/google-corridor-inputs.json"
+    }
+  ],
+  "historical_walking_limit": "Current Google provider walks or station-coordinate walks are fixed assumptions. Platform access and authored transfer durations are not independently measured.",
+  "provider_line_policy": "EXACT_CAPTURED_LINE_WITHOUT_COMPATIBLE_SERVICE_POOLING",
+  "provider_only_config": {
+    "path": "data/config/google-corridors-provider.json",
+    "sha256": "5ca970aae7adb56bb3d3438aa6721037d9aab51c57c3795dc9e1fb7806934f2e"
+  },
+  "research_candidates_included": true,
+  "research_library_sources": [
+    {
+      "path": "data/config/october.json",
+      "sha256": "3abd85c7514cfcb9479ef61ed184415e9435de3f56dff409adaa71e0e9582ca4"
+    },
+    {
+      "path": "algo/stayorswitch/preincident_replay.py",
+      "sha256": "8e273d2cc20f61afdeed2a0e18025cdd94eb67887f78425b3e7b91946b892989"
+    }
+  ],
+  "research_walk_manifest": {
+    "path": "data/manifests/google-corridor-research-walks.json",
+    "sha256": "307dd5e689e9009485f134dd88629b51cda5ad101b614014df6c56cfa971ea91"
+  },
+  "schema_version": "google-corridor-experiment-config-v1",
+  "station_metadata": {
+    "path": "data/local/google-corridors/2026-11-20-current/official-stations.json",
+    "sha256": "40f829816b08434dfd23ddd6e2b75a98ad7bd9bc2c00861c9a257726435cb0cb"
+  },
+  "station_metadata_url": "https://data.ny.gov/resource/39hk-dx4f.json?$limit=5000",
+  "supplemental_sources": [
+    {
+      "manifest": "data/manifests/preincident-inputs.json",
+      "replace_feeds": [
+        "bdfm",
+        "numbered"
+      ]
+    },
+    {
+      "manifest": "data/manifests/google-corridor-inputs.json",
+      "replace_feeds": [
+        "numbered",
+        "nqrw"
+      ]
+    }
+  ]
+}
