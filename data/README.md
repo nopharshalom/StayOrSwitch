@@ -1,18 +1,26 @@
-# October 2026 Data Workspace
+# October Training and November Analysis Data
 
-The active scope is **October 1–31, 2026**, America/New_York. Previous November
-historical/model datasets, processing modules and reports have been removed.
-Follow the [approved implementation plan](../algo/docs/october-implementation-plan.md),
-[configuration](config/october.json), and [shared schema](docs/october-schema.md).
+The current extension fits a separate model on **October 1–31, 2026** and
+analyzes the **13 weekdays on November 2–6, 9–13, and 16–18, 2026**,
+America/New_York, across the same five corridors. The
+[weekday reporting addendum](../algo/docs/november-weekday-reporting.md) preserves
+the original November 1–18 input grid; November 19 is boundary evidence only.
+Follow the [new analysis plan](../algo/docs/november-five-corridor-plan.md) and
+[November source guide](docs/november-2026-source.md). The original October
+experiment and its artifacts remain preserved; the older, superseded November
+tree-model experiment remains removed.
 
 Data acquisition, normalized observations, screened outcome labels, incident
 versions, time-conditioned statistics and data tests belong here. Algorithm
 comparison and evaluation live under `algo/`. Raw and processed data remain
 ignored local artifacts; small provenance manifests and reports are committed.
 
-Development uses October 1–17, validation October 18–24, and test October 25–31.
-Descriptive whole-month statistics must not be used to predict held-out cases.
-Boundary September 30 / November 1 journals only resolve October labels.
+The original experiment uses October 1–17 for development, October 18–24 for
+validation, and October 25–31 for testing. Its descriptive whole-month artifact
+must not predict those held-out cases. The new full-October predictive artifact
+is independently refitted and sealed for November analysis. November 2–15 had
+prior project exposure, so November 16–18 is reported separately. September 30
+and November 1 journals in the original October source remain boundary evidence.
 
 Historical ETA error is final inferred arrival minus the MTA forecast available
 at the query cutoff. Preserve separate signed/positive-only statistics, time
@@ -26,7 +34,33 @@ The source is [Subway Data NYC](https://subwaydata.nyc/), derived from official
 MTA feeds. Final-prediction journal outcomes are proxies, not observed passenger
 arrivals. Each downloaded archive and derived output must have provenance.
 
-## Completed source preparation
+## Full-October model and November weekdays
+
+The separate [full-month training report](reports/full-october-fit.md) records
+870,415 eligible October observations and 33,091 aggregate groups. The
+[independent fit audit](manifests/full-october-fit-audit.json) verifies eligibility,
+selected aggregate statistics, source separation, and the preserved experiment.
+
+The [weekday peak report](reports/november-weekday-peak-delays.md) describes the
+five fixed Stay paths over 13 November weekdays, with separate signed and
+positive-only ETA errors and outcome coverage. Its
+[daily table](reports/november-weekday-peak-delays-daily.csv) contains 195 cells;
+the [daily heatmap](reports/november-weekday-peak-delay.png) shows positive-only
+errors. Unknown and missed journeys are not zero delay. See
+[the source guide](docs/november-2026-source.md) and
+[peak reproduction guide](docs/november-peak-analysis.md) for commands.
+There are 2,360 usable paired outcomes out of 2,860 scheduled checkpoints;
+Court Square's midday 7 service has only 74 of 156. A low positive-only delay
+does not imply a low absolute error. Raw-source audits linked from the report
+explain that negative ETA errors primarily reflect overestimated waiting time
+in that cell and verify the largest daily positive-error cells.
+
+The separate [Stay/Switch results](../algo/reports/november-weekday-test.md) and
+[interpretation](../algo/reports/november-weekday-interpretation.md) use service
+problem checkpoints, not the daily peak grid. Their denominators must not be
+combined with these descriptive delay statistics.
+
+## Preserved October source preparation
 
 All 31 October dates and 64 required archives are verified. The prepared source
 contains 231,608 snapshots, including 8,410 service-alert captures, plus 2,162,769
@@ -41,7 +75,7 @@ See the [source quality report](reports/october-source.json),
 [pre-evaluation identity correction](../algo/reports/october-protocol-revision.md).
 The original normalization and corrected label producers have separate lineage.
 
-## Completed historical profiles
+## Preserved October experimental profiles
 
 The month produces 1,095,007 representative observations, of which 871,210 are
 eligible for full-month description, across 33,154 aggregate groups. The frozen

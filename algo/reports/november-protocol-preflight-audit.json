@@ -1,0 +1,149 @@
+{
+  "boundary_policy": "October 31 supplies input carry; November 19 supplies following-day evidence, not analysis departures.",
+  "focused_tests": {
+    "modules": [
+      "data.tests.test_full_october_fit",
+      "data.tests.test_november_outcomes",
+      "data.tests.test_november_peak_analysis",
+      "algo.tests.test_november_replay"
+    ],
+    "passed": 56
+  },
+  "formal_analysis_dates": [
+    "2026-11-01",
+    "2026-11-18"
+  ],
+  "interpretation": [
+    "All November validation recorded here is input-only; no result-performance claims are made.",
+    "Publisher incident IDs are not guaranteed independent causal failures.",
+    "Severe qualification distinguishes explicit severe-service text from complete loss of the fixed Stay through path.",
+    "Planned closure mentions require decision-time schedule checks and cannot be inferred from absent Stay forecasts."
+  ],
+  "november_outcomes_read": false,
+  "old_experiment_preservation": {
+    "files_checked": 126,
+    "manifest": {
+      "path": "data/manifests/november-preservation.json",
+      "sha256": "b3ff75c34e5841b79fbb1ddc4cbab5331528b5af855d875950055c4bcc8d80a5"
+    },
+    "mismatches": []
+  },
+  "peak_input_audit": {
+    "assertions": 70074,
+    "checks": [
+      "Exact local-time departure grid and unique IDs",
+      "Only November 1\u201318 analysis departures",
+      "Original five Stay paths and walking assumptions",
+      "Uncorrected MTA endpoint corrections are zero",
+      "Forecast boarding feasibility and journey arithmetic",
+      "Physical train sequence identity from as-of descriptors",
+      "Earliest representatives selected before outcomes",
+      "No outcome/error fields in prepared inputs"
+    ],
+    "daily_corridor_period_cells": 270,
+    "earliest_input_representatives": 3494,
+    "forecast_available": 3529,
+    "forecast_unavailable": 431,
+    "freeze": {
+      "path": "data/manifests/november-peak-inputs-frozen.json",
+      "sha256": "b73f9f149e4e77d2328e5dd5e5886028eebebc0c5c61d6b4760ad4ae4e94e484"
+    },
+    "scheduled_checkpoints": 3960
+  },
+  "provisional_notice_notes": {
+    "artifacts": [
+      {
+        "path": "algo/reports/november-f-notice-notes.json",
+        "sha256": "65cb7bdd4199e25505677edde082173a06e53e31d422f6dcbf8c224aa64187e7"
+      },
+      {
+        "path": "algo/reports/november-five-notice-notes.json",
+        "sha256": "8fcbdda13e0ddae3d0dbec42122b65a9762164bb9644c21dd5f69560e70f5221"
+      },
+      {
+        "path": "algo/reports/november-seven-notice-notes.json",
+        "sha256": "149853af6e074df07fee5fae12f4d0d129768f34114179ae92468cbd73335cff"
+      },
+      {
+        "path": "algo/reports/november-two-notice-notes.json",
+        "sha256": "d8d6d258a12d14b9dc94cd601a2d182e897a47d86e5d374aedbf903db5931671"
+      },
+      {
+        "path": "algo/reports/november-a-notice-notes.json",
+        "sha256": "414fa0d1d2a9084c24656d0fdc2e11559473f4103419872742c7faebd5b5c0f4"
+      }
+    ],
+    "confirmed": 769,
+    "counts_are_source_version_counts_not_analysis_performance_denominators": true,
+    "excluded": 579,
+    "final_exposure_scope_binding_pending": true,
+    "inventory": {
+      "path": "algo/local/november-2026/input-only-incidents.json.gz",
+      "sha256": "edef31ad586ec3a69c088c9e6dd863ec19d1f2cd8162954faf58e8be38bd1793"
+    },
+    "inventory_text_identity_assertions": 8568,
+    "inventory_versions": 1507,
+    "inventory_versions_by_route": {
+      "2": 326,
+      "5": 228,
+      "7": 81,
+      "A": 474,
+      "F": 398
+    },
+    "missing_version_notes": 0,
+    "schema_and_source_assertions": 4831,
+    "source_files_hashed": 20,
+    "unresolved": 216,
+    "versions": 1564
+  },
+  "real_shape_outcome_screen_sanity": {
+    "alias_records": {
+      "7X": 147,
+      "FX": 6,
+      "W": 338
+    },
+    "arrival_originally_usable": 16887,
+    "arrival_retained_usable": 16653,
+    "bad_confirmation_and_identity_assertions": 180,
+    "dates": [
+      "2026-10-01",
+      "2026-10-04",
+      "2026-10-17",
+      "2026-10-31"
+    ],
+    "departure_originally_usable": 16400,
+    "departure_retained_usable": 16194,
+    "encoded_identities_accepted": 20254,
+    "encoded_identities_rejected": 0,
+    "label_records": 20254,
+    "producer": {
+      "path": "data/november_outcomes.py",
+      "sha256": "a87bab20b27fc28438c14436a5feeae5340e2fe0ae9908ff41cf6634240b1d1d"
+    },
+    "sources": [
+      {
+        "path": "data/processed/october/2026-10-01.labels.json.gz",
+        "sha256": "1f1b958a6636b4dbad0fa16841812a855e8e7063bc09293a0d3903399e9bef38"
+      },
+      {
+        "path": "data/processed/october/2026-10-04.labels.json.gz",
+        "sha256": "32f2b1b70c4d2c707942741a6e97a87bffacbf02e50614d11c8cd3976d6950c9"
+      },
+      {
+        "path": "data/processed/october/2026-10-17.labels.json.gz",
+        "sha256": "18c726606b22d83f8ba45eedb45227bd659a3f5e635b3092baf5c3f0ff5c8345"
+      },
+      {
+        "path": "data/processed/october/2026-10-31.labels.json.gz",
+        "sha256": "aa8691ccfa63556e0903558892f36b9de5f5ed2cab90490993bdcd21369f2b6e"
+      }
+    ],
+    "uses_only_previously_analyzed_october_labels": true
+  },
+  "schema_version": "november-protocol-preflight-audit-v1",
+  "source_window": [
+    "2026-10-31",
+    "2026-11-19"
+  ],
+  "stage": "INPUT_ONLY_PREFLIGHT_NOT_FINAL_SCOPE_OR_OUTCOME_AUDIT"
+}

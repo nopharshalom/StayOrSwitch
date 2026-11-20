@@ -1,0 +1,2498 @@
+{
+  "acquisition": {
+    "bytes": 28333,
+    "path": "data/manifests/november-2026-acquisition.json",
+    "sha256": "4335d63174a5721de73d6ab833958f1acbaa1e5a1bf8be873ba5644194807719"
+  },
+  "archives": [
+    {
+      "archive_date": "2026-10-30",
+      "bytes": 1413728,
+      "cache_verified": true,
+      "fetched_at": "2026-11-19T23:29:58.066492Z",
+      "kind": "csv",
+      "path": "/Users/hollisyang/Desktop/Studio/StayOrSwitch/data/raw/october/subwaydatanyc_2026-10-30_csv.tar.xz",
+      "resolved_url": "https://data.subwaydata.nyc/2026-10/subwaydatanyc_2026-10-30_csv_5de91950c552.tar.xz",
+      "reused_existing_raw_archive": true,
+      "sha256": "5de91950c552e4e43f69c971c678acb01473bf0bae02a39237daed5a6412e868",
+      "source": "Subway Data NYC",
+      "url": "https://subwaydata.nyc/data/subwaydatanyc_2026-10-30_csv.tar.xz"
+    },
+    {
+      "archive_date": "2026-10-31",
+      "bytes": 1022276,
+      "cache_verified": true,
+      "fetched_at": "2026-11-19T23:30:03.190923Z",
+      "kind": "csv",
+      "path": "/Users/hollisyang/Desktop/Studio/StayOrSwitch/data/raw/october/subwaydatanyc_2026-10-31_csv.tar.xz",
+      "resolved_url": "https://data.subwaydata.nyc/2026-10/subwaydatanyc_2026-10-31_csv_cc374ae4a486.tar.xz",
+      "reused_existing_raw_archive": true,
+      "sha256": "cc374ae4a486be869bd026946a30b8c324e1cb0492b47ea05903c4b3a4e82952",
+      "source": "Subway Data NYC",
+      "url": "https://subwaydata.nyc/data/subwaydatanyc_2026-10-31_csv.tar.xz"
+    },
+    {
+      "archive_date": "2026-10-31",
+      "bytes": 56226528,
+      "cache_verified": true,
+      "fetched_at": "2026-11-19T23:30:04.078208Z",
+      "kind": "gtfsrt",
+      "path": "/Users/hollisyang/Desktop/Studio/StayOrSwitch/data/raw/october/subwaydatanyc_2026-10-31_gtfsrt.tar.xz",
+      "resolved_url": "https://data.subwaydata.nyc/2026-10/subwaydatanyc_2026-10-31_gtfsrt_1280ef06d1eb.tar.xz",
+      "reused_existing_raw_archive": true,
+      "sha256": "1280ef06d1eb3c5849e548ac83f31c8a31be8b988130f3508af763e179c03c6e",
+      "source": "Subway Data NYC",
+      "url": "https://subwaydata.nyc/data/subwaydatanyc_2026-10-31_gtfsrt.tar.xz"
+    },
+    {
+      "archive_date": "2026-11-01",
+      "bytes": 925100,
+      "cache_verified": true,
+      "fetched_at": "2026-11-19T23:30:04.359114Z",
+      "kind": "csv",
+      "path": "/Users/hollisyang/Desktop/Studio/StayOrSwitch/data/raw/october/subwaydatanyc_2026-11-01_csv.tar.xz",
+      "resolved_url": "https://data.subwaydata.nyc/2026-11/subwaydatanyc_2026-11-01_csv_0c534abf3d98.tar.xz",
+      "reused_existing_raw_archive": true,
+      "sha256": "0c534abf3d989d0b18a6b99d8d9b817f9b313063c4a614f6e2f63f0d561272a9",
+      "source": "Subway Data NYC",
+      "url": "https://subwaydata.nyc/data/subwaydatanyc_2026-11-01_csv.tar.xz"
+    },
+    {
+      "archive_date": "2026-11-01",
+      "bytes": 53759908,
+      "cache_verified": false,
+      "fetched_at": "2026-11-20T17:43:21.952831Z",
+      "kind": "gtfsrt",
+      "path": "/Users/hollisyang/Desktop/Studio/StayOrSwitch/data/raw/november-2026/subwaydatanyc_2026-11-01_gtfsrt.tar.xz",
+      "resolved_url": "https://data.subwaydata.nyc/2026-11/subwaydatanyc_2026-11-01_gtfsrt_7b38a35cbd34.tar.xz",
+      "sha256": "7b38a35cbd344d2197918fd1ba0562396ef6d8b9ff76fe6b074812163fc04def",
+      "source": "Subway Data NYC",
+      "url": "https://subwaydata.nyc/data/subwaydatanyc_2026-11-01_gtfsrt.tar.xz"
+    },
+    {
+      "archive_date": "2026-11-02",
+      "bytes": 1449048,
+      "cache_verified": false,
+      "fetched_at": "2026-11-20T17:43:18.351766Z",
+      "kind": "csv",
+      "path": "/Users/hollisyang/Desktop/Studio/StayOrSwitch/data/raw/november-2026/subwaydatanyc_2026-11-02_csv.tar.xz",
+      "resolved_url": "https://data.subwaydata.nyc/2026-11/subwaydatanyc_2026-11-02_csv_1142f579a9e2.tar.xz",
+      "sha256": "1142f579a9e24c3a6887b656dfb194710b9482b45eeaeea112fd19cf94e86a9c",
+      "source": "Subway Data NYC",
+      "url": "https://subwaydata.nyc/data/subwaydatanyc_2026-11-02_csv.tar.xz"
+    },
+    {
+      "archive_date": "2026-11-02",
+      "bytes": 80544912,
+      "cache_verified": false,
+      "fetched_at": "2026-11-20T17:43:20.891702Z",
+      "kind": "gtfsrt",
+      "path": "/Users/hollisyang/Desktop/Studio/StayOrSwitch/data/raw/november-2026/subwaydatanyc_2026-11-02_gtfsrt.tar.xz",
+      "resolved_url": "https://data.subwaydata.nyc/2026-11/subwaydatanyc_2026-11-02_gtfsrt_8eb3f1764689.tar.xz",
+      "sha256": "8eb3f176468976afea79c66f533ce414b44490188c30b0d76fd937382e3582d7",
+      "source": "Subway Data NYC",
+      "url": "https://subwaydata.nyc/data/subwaydatanyc_2026-11-02_gtfsrt.tar.xz"
+    },
+    {
+      "archive_date": "2026-11-03",
+      "bytes": 1454160,
+      "cache_verified": false,
+      "fetched_at": "2026-11-20T17:43:19.647326Z",
+      "kind": "csv",
+      "path": "/Users/hollisyang/Desktop/Studio/StayOrSwitch/data/raw/november-2026/subwaydatanyc_2026-11-03_csv.tar.xz",
+      "resolved_url": "https://data.subwaydata.nyc/2026-11/subwaydatanyc_2026-11-03_csv_18a9e4ea6dcf.tar.xz",
+      "sha256": "18a9e4ea6dcf5ebd935f834c787ea83f26e84598be96c78c322cb2ff3e4f990a",
+      "source": "Subway Data NYC",
+      "url": "https://subwaydata.nyc/data/subwaydatanyc_2026-11-03_csv.tar.xz"
+    },
+    {
+      "archive_date": "2026-11-03",
+      "bytes": 82078764,
+      "cache_verified": false,
+      "fetched_at": "2026-11-20T17:43:26.923103Z",
+      "kind": "gtfsrt",
+      "path": "/Users/hollisyang/Desktop/Studio/StayOrSwitch/data/raw/november-2026/subwaydatanyc_2026-11-03_gtfsrt.tar.xz",
+      "resolved_url": "https://data.subwaydata.nyc/2026-11/subwaydatanyc_2026-11-03_gtfsrt_8d6b08219e2e.tar.xz",
+      "sha256": "8d6b08219e2e5e5f74c718fc88768fd3b5fb47c8ec85a23bf33ee9c20fd16458",
+      "source": "Subway Data NYC",
+      "url": "https://subwaydata.nyc/data/subwaydatanyc_2026-11-03_gtfsrt.tar.xz"
+    },
+    {
+      "archive_date": "2026-11-04",
+      "bytes": 1428988,
+      "cache_verified": false,
+      "fetched_at": "2026-11-20T17:43:21.584392Z",
+      "kind": "csv",
+      "path": "/Users/hollisyang/Desktop/Studio/StayOrSwitch/data/raw/november-2026/subwaydatanyc_2026-11-04_csv.tar.xz",
+      "resolved_url": "https://data.subwaydata.nyc/2026-11/subwaydatanyc_2026-11-04_csv_339385893548.tar.xz",
+      "sha256": "339385893548ae061cd00e52a72e10b9e337357d4be375d14ecc3a5557e799f0",
+      "source": "Subway Data NYC",
+      "url": "https://subwaydata.nyc/data/subwaydatanyc_2026-11-04_csv.tar.xz"
+    },
+    {
+      "archive_date": "2026-11-04",
+      "bytes": 84201200,
+      "cache_verified": false,
+      "fetched_at": "2026-11-20T17:43:25.617247Z",
+      "kind": "gtfsrt",
+      "path": "/Users/hollisyang/Desktop/Studio/StayOrSwitch/data/raw/november-2026/subwaydatanyc_2026-11-04_gtfsrt.tar.xz",
+      "resolved_url": "https://data.subwaydata.nyc/2026-11/subwaydatanyc_2026-11-04_gtfsrt_cd8e74c41f9e.tar.xz",
+      "sha256": "cd8e74c41f9e890a1ea43a6d63810eaebe13c9e9de46170f1e270b2653533c2b",
+      "source": "Subway Data NYC",
+      "url": "https://subwaydata.nyc/data/subwaydatanyc_2026-11-04_gtfsrt.tar.xz"
+    },
+    {
+      "archive_date": "2026-11-05",
+      "bytes": 1437772,
+      "cache_verified": false,
+      "fetched_at": "2026-11-20T17:43:23.175154Z",
+      "kind": "csv",
+      "path": "/Users/hollisyang/Desktop/Studio/StayOrSwitch/data/raw/november-2026/subwaydatanyc_2026-11-05_csv.tar.xz",
+      "resolved_url": "https://data.subwaydata.nyc/2026-11/subwaydatanyc_2026-11-05_csv_de0de2910faf.tar.xz",
+      "sha256": "de0de2910faf84648b751eac71690e0d71660ee29102f987f59eac5004e92789",
+      "source": "Subway Data NYC",
+      "url": "https://subwaydata.nyc/data/subwaydatanyc_2026-11-05_csv.tar.xz"
+    },
+    {
+      "archive_date": "2026-11-05",
+      "bytes": 79807892,
+      "cache_verified": false,
+      "fetched_at": "2026-11-20T17:43:28.761701Z",
+      "kind": "gtfsrt",
+      "path": "/Users/hollisyang/Desktop/Studio/StayOrSwitch/data/raw/november-2026/subwaydatanyc_2026-11-05_gtfsrt.tar.xz",
+      "resolved_url": "https://data.subwaydata.nyc/2026-11/subwaydatanyc_2026-11-05_gtfsrt_cb6e9c6899a4.tar.xz",
+      "sha256": "cb6e9c6899a4d1e05e52abc551adc373c15d8319041830e933bf7a5499117b93",
+      "source": "Subway Data NYC",
+      "url": "https://subwaydata.nyc/data/subwaydatanyc_2026-11-05_gtfsrt.tar.xz"
+    },
+    {
+      "archive_date": "2026-11-06",
+      "bytes": 1449044,
+      "cache_verified": false,
+      "fetched_at": "2026-11-20T17:43:26.564860Z",
+      "kind": "csv",
+      "path": "/Users/hollisyang/Desktop/Studio/StayOrSwitch/data/raw/november-2026/subwaydatanyc_2026-11-06_csv.tar.xz",
+      "resolved_url": "https://data.subwaydata.nyc/2026-11/subwaydatanyc_2026-11-06_csv_c31ac2374817.tar.xz",
+      "sha256": "c31ac23748175027be415793a227031e2b401641ca2110b8145f4c2982a3e0e6",
+      "source": "Subway Data NYC",
+      "url": "https://subwaydata.nyc/data/subwaydatanyc_2026-11-06_csv.tar.xz"
+    },
+    {
+      "archive_date": "2026-11-06",
+      "bytes": 82182820,
+      "cache_verified": false,
+      "fetched_at": "2026-11-20T17:43:31.226618Z",
+      "kind": "gtfsrt",
+      "path": "/Users/hollisyang/Desktop/Studio/StayOrSwitch/data/raw/november-2026/subwaydatanyc_2026-11-06_gtfsrt.tar.xz",
+      "resolved_url": "https://data.subwaydata.nyc/2026-11/subwaydatanyc_2026-11-06_gtfsrt_76110a69de14.tar.xz",
+      "sha256": "76110a69de1469eb7c8679e6057124c08f22ecece13e62b6dd749d7aaf60d7ee",
+      "source": "Subway Data NYC",
+      "url": "https://subwaydata.nyc/data/subwaydatanyc_2026-11-06_gtfsrt.tar.xz"
+    },
+    {
+      "archive_date": "2026-11-07",
+      "bytes": 956636,
+      "cache_verified": false,
+      "fetched_at": "2026-11-20T17:43:27.974567Z",
+      "kind": "csv",
+      "path": "/Users/hollisyang/Desktop/Studio/StayOrSwitch/data/raw/november-2026/subwaydatanyc_2026-11-07_csv.tar.xz",
+      "resolved_url": "https://data.subwaydata.nyc/2026-11/subwaydatanyc_2026-11-07_csv_fda884039bdf.tar.xz",
+      "sha256": "fda884039bdfae8622198800a90dba3fa29ed2f5cba165e675488ebde4a0dc8e",
+      "source": "Subway Data NYC",
+      "url": "https://subwaydata.nyc/data/subwaydatanyc_2026-11-07_csv.tar.xz"
+    },
+    {
+      "archive_date": "2026-11-07",
+      "bytes": 53148644,
+      "cache_verified": false,
+      "fetched_at": "2026-11-20T17:43:33.239389Z",
+      "kind": "gtfsrt",
+      "path": "/Users/hollisyang/Desktop/Studio/StayOrSwitch/data/raw/november-2026/subwaydatanyc_2026-11-07_gtfsrt.tar.xz",
+      "resolved_url": "https://data.subwaydata.nyc/2026-11/subwaydatanyc_2026-11-07_gtfsrt_0278f43eb1dd.tar.xz",
+      "sha256": "0278f43eb1dd02e1f4529c4d5ca6b488ca49f354a34b260b7ca2c761af1d464b",
+      "source": "Subway Data NYC",
+      "url": "https://subwaydata.nyc/data/subwaydatanyc_2026-11-07_gtfsrt.tar.xz"
+    },
+    {
+      "archive_date": "2026-11-08",
+      "bytes": 887684,
+      "cache_verified": false,
+      "fetched_at": "2026-11-20T17:43:30.300086Z",
+      "kind": "csv",
+      "path": "/Users/hollisyang/Desktop/Studio/StayOrSwitch/data/raw/november-2026/subwaydatanyc_2026-11-08_csv.tar.xz",
+      "resolved_url": "https://data.subwaydata.nyc/2026-11/subwaydatanyc_2026-11-08_csv_f596011f6002.tar.xz",
+      "sha256": "f596011f60020a961f5eaf3203ff7ec7da125bad22d26a0cf55633593423bf8a",
+      "source": "Subway Data NYC",
+      "url": "https://subwaydata.nyc/data/subwaydatanyc_2026-11-08_csv.tar.xz"
+    },
+    {
+      "archive_date": "2026-11-08",
+      "bytes": 48180396,
+      "cache_verified": false,
+      "fetched_at": "2026-11-20T17:43:34.149569Z",
+      "kind": "gtfsrt",
+      "path": "/Users/hollisyang/Desktop/Studio/StayOrSwitch/data/raw/november-2026/subwaydatanyc_2026-11-08_gtfsrt.tar.xz",
+      "resolved_url": "https://data.subwaydata.nyc/2026-11/subwaydatanyc_2026-11-08_gtfsrt_bda1a6adbe6e.tar.xz",
+      "sha256": "bda1a6adbe6e72fcd9064d1d59a80925e52d9084a9e628be85ddcd2bc6b7be3b",
+      "source": "Subway Data NYC",
+      "url": "https://subwaydata.nyc/data/subwaydatanyc_2026-11-08_gtfsrt.tar.xz"
+    },
+    {
+      "archive_date": "2026-11-09",
+      "bytes": 1448248,
+      "cache_verified": false,
+      "fetched_at": "2026-11-20T17:43:31.824702Z",
+      "kind": "csv",
+      "path": "/Users/hollisyang/Desktop/Studio/StayOrSwitch/data/raw/november-2026/subwaydatanyc_2026-11-09_csv.tar.xz",
+      "resolved_url": "https://data.subwaydata.nyc/2026-11/subwaydatanyc_2026-11-09_csv_22ecd972f73e.tar.xz",
+      "sha256": "22ecd972f73ebae0c08f9edcb98e04ab257ee4727d46a9f3a809fc413debe4f5",
+      "source": "Subway Data NYC",
+      "url": "https://subwaydata.nyc/data/subwaydatanyc_2026-11-09_csv.tar.xz"
+    },
+    {
+      "archive_date": "2026-11-09",
+      "bytes": 79640404,
+      "cache_verified": false,
+      "fetched_at": "2026-11-20T17:43:36.682045Z",
+      "kind": "gtfsrt",
+      "path": "/Users/hollisyang/Desktop/Studio/StayOrSwitch/data/raw/november-2026/subwaydatanyc_2026-11-09_gtfsrt.tar.xz",
+      "resolved_url": "https://data.subwaydata.nyc/2026-11/subwaydatanyc_2026-11-09_gtfsrt_2359e0ecfbc3.tar.xz",
+      "sha256": "2359e0ecfbc346d4348afcba335651d0d80df5b14f923b64e6af4136fde1db95",
+      "source": "Subway Data NYC",
+      "url": "https://subwaydata.nyc/data/subwaydatanyc_2026-11-09_gtfsrt.tar.xz"
+    },
+    {
+      "archive_date": "2026-11-10",
+      "bytes": 1457500,
+      "cache_verified": false,
+      "fetched_at": "2026-11-20T17:43:34.222767Z",
+      "kind": "csv",
+      "path": "/Users/hollisyang/Desktop/Studio/StayOrSwitch/data/raw/november-2026/subwaydatanyc_2026-11-10_csv.tar.xz",
+      "resolved_url": "https://data.subwaydata.nyc/2026-11/subwaydatanyc_2026-11-10_csv_d5ef3c611f0b.tar.xz",
+      "sha256": "d5ef3c611f0b883dc453f3ad65e41039c4c097eb9695d6bb10c9afd622ee4f65",
+      "source": "Subway Data NYC",
+      "url": "https://subwaydata.nyc/data/subwaydatanyc_2026-11-10_csv.tar.xz"
+    },
+    {
+      "archive_date": "2026-11-10",
+      "bytes": 84058328,
+      "cache_verified": false,
+      "fetched_at": "2026-11-20T17:43:41.144728Z",
+      "kind": "gtfsrt",
+      "path": "/Users/hollisyang/Desktop/Studio/StayOrSwitch/data/raw/november-2026/subwaydatanyc_2026-11-10_gtfsrt.tar.xz",
+      "resolved_url": "https://data.subwaydata.nyc/2026-11/subwaydatanyc_2026-11-10_gtfsrt_aed23c62a2c4.tar.xz",
+      "sha256": "aed23c62a2c481986a2886437d69137a89e74cfb37d618cea24f3f0e8a807f59",
+      "source": "Subway Data NYC",
+      "url": "https://subwaydata.nyc/data/subwaydatanyc_2026-11-10_gtfsrt.tar.xz"
+    },
+    {
+      "archive_date": "2026-11-11",
+      "bytes": 1448548,
+      "cache_verified": false,
+      "fetched_at": "2026-11-20T17:43:34.845403Z",
+      "kind": "csv",
+      "path": "/Users/hollisyang/Desktop/Studio/StayOrSwitch/data/raw/november-2026/subwaydatanyc_2026-11-11_csv.tar.xz",
+      "resolved_url": "https://data.subwaydata.nyc/2026-11/subwaydatanyc_2026-11-11_csv_c18c91d5b5a5.tar.xz",
+      "sha256": "c18c91d5b5a53e56f19f068465b83ae9bd21cd62a764ffd02b6c0c82276aae1a",
+      "source": "Subway Data NYC",
+      "url": "https://subwaydata.nyc/data/subwaydatanyc_2026-11-11_csv.tar.xz"
+    },
+    {
+      "archive_date": "2026-11-11",
+      "bytes": 84470016,
+      "cache_verified": false,
+      "fetched_at": "2026-11-20T17:43:46.246719Z",
+      "kind": "gtfsrt",
+      "path": "/Users/hollisyang/Desktop/Studio/StayOrSwitch/data/raw/november-2026/subwaydatanyc_2026-11-11_gtfsrt.tar.xz",
+      "resolved_url": "https://data.subwaydata.nyc/2026-11/subwaydatanyc_2026-11-11_gtfsrt_97ec9566e144.tar.xz",
+      "sha256": "97ec9566e144c1af4dd75b139340052f15f3d57a9e5d6709b40eab9060246656",
+      "source": "Subway Data NYC",
+      "url": "https://subwaydata.nyc/data/subwaydatanyc_2026-11-11_gtfsrt.tar.xz"
+    },
+    {
+      "archive_date": "2026-11-12",
+      "bytes": 1421424,
+      "cache_verified": false,
+      "fetched_at": "2026-11-20T17:43:37.178579Z",
+      "kind": "csv",
+      "path": "/Users/hollisyang/Desktop/Studio/StayOrSwitch/data/raw/november-2026/subwaydatanyc_2026-11-12_csv.tar.xz",
+      "resolved_url": "https://data.subwaydata.nyc/2026-11/subwaydatanyc_2026-11-12_csv_eff3699fee9e.tar.xz",
+      "sha256": "eff3699fee9e59a0b87317c575382ee7cb26434a17220942cd5118968106d0f3",
+      "source": "Subway Data NYC",
+      "url": "https://subwaydata.nyc/data/subwaydatanyc_2026-11-12_csv.tar.xz"
+    },
+    {
+      "archive_date": "2026-11-12",
+      "bytes": 81099184,
+      "cache_verified": false,
+      "fetched_at": "2026-11-20T17:43:44.674427Z",
+      "kind": "gtfsrt",
+      "path": "/Users/hollisyang/Desktop/Studio/StayOrSwitch/data/raw/november-2026/subwaydatanyc_2026-11-12_gtfsrt.tar.xz",
+      "resolved_url": "https://data.subwaydata.nyc/2026-11/subwaydatanyc_2026-11-12_gtfsrt_20778f547f8b.tar.xz",
+      "sha256": "20778f547f8b75df7313929197aa8c5df1d9c1cadd14c9d79b63db0a0bdf13e6",
+      "source": "Subway Data NYC",
+      "url": "https://subwaydata.nyc/data/subwaydatanyc_2026-11-12_gtfsrt.tar.xz"
+    },
+    {
+      "archive_date": "2026-11-13",
+      "bytes": 1396816,
+      "cache_verified": false,
+      "fetched_at": "2026-11-20T17:43:41.878360Z",
+      "kind": "csv",
+      "path": "/Users/hollisyang/Desktop/Studio/StayOrSwitch/data/raw/november-2026/subwaydatanyc_2026-11-13_csv.tar.xz",
+      "resolved_url": "https://data.subwaydata.nyc/2026-11/subwaydatanyc_2026-11-13_csv_9bc69845ae8e.tar.xz",
+      "sha256": "9bc69845ae8ebdb40b40aa266f501e07ee433025bbe8674d5d75c67e6096f580",
+      "source": "Subway Data NYC",
+      "url": "https://subwaydata.nyc/data/subwaydatanyc_2026-11-13_csv.tar.xz"
+    },
+    {
+      "archive_date": "2026-11-13",
+      "bytes": 82535696,
+      "cache_verified": false,
+      "fetched_at": "2026-11-20T17:43:47.317582Z",
+      "kind": "gtfsrt",
+      "path": "/Users/hollisyang/Desktop/Studio/StayOrSwitch/data/raw/november-2026/subwaydatanyc_2026-11-13_gtfsrt.tar.xz",
+      "resolved_url": "https://data.subwaydata.nyc/2026-11/subwaydatanyc_2026-11-13_gtfsrt_df7f6b605aaf.tar.xz",
+      "sha256": "df7f6b605aaf61e249301dfa4bb3ddb93b501800b705b90578ee9b45a5d1a11d",
+      "source": "Subway Data NYC",
+      "url": "https://subwaydata.nyc/data/subwaydatanyc_2026-11-13_gtfsrt.tar.xz"
+    },
+    {
+      "archive_date": "2026-11-14",
+      "bytes": 931716,
+      "cache_verified": false,
+      "fetched_at": "2026-11-20T17:43:45.465836Z",
+      "kind": "csv",
+      "path": "/Users/hollisyang/Desktop/Studio/StayOrSwitch/data/raw/november-2026/subwaydatanyc_2026-11-14_csv.tar.xz",
+      "resolved_url": "https://data.subwaydata.nyc/2026-11/subwaydatanyc_2026-11-14_csv_06438f723121.tar.xz",
+      "sha256": "06438f7231211681d3ab78cf7e27249055c30f6f6bc953d1ca305fbf748f88f1",
+      "source": "Subway Data NYC",
+      "url": "https://subwaydata.nyc/data/subwaydatanyc_2026-11-14_csv.tar.xz"
+    },
+    {
+      "archive_date": "2026-11-14",
+      "bytes": 51442288,
+      "cache_verified": false,
+      "fetched_at": "2026-11-20T17:43:50.554984Z",
+      "kind": "gtfsrt",
+      "path": "/Users/hollisyang/Desktop/Studio/StayOrSwitch/data/raw/november-2026/subwaydatanyc_2026-11-14_gtfsrt.tar.xz",
+      "resolved_url": "https://data.subwaydata.nyc/2026-11/subwaydatanyc_2026-11-14_gtfsrt_c376c3459183.tar.xz",
+      "sha256": "c376c3459183a6cc944798f73d713565f80642c9c8bc237696cf697774432bc1",
+      "source": "Subway Data NYC",
+      "url": "https://subwaydata.nyc/data/subwaydatanyc_2026-11-14_gtfsrt.tar.xz"
+    },
+    {
+      "archive_date": "2026-11-15",
+      "bytes": 872328,
+      "cache_verified": false,
+      "fetched_at": "2026-11-20T17:43:47.221463Z",
+      "kind": "csv",
+      "path": "/Users/hollisyang/Desktop/Studio/StayOrSwitch/data/raw/november-2026/subwaydatanyc_2026-11-15_csv.tar.xz",
+      "resolved_url": "https://data.subwaydata.nyc/2026-11/subwaydatanyc_2026-11-15_csv_a04714de613a.tar.xz",
+      "sha256": "a04714de613a3a1cc5ce026609373fcc6e4ba0633dec7535e4d29c84bcd7cfb3",
+      "source": "Subway Data NYC",
+      "url": "https://subwaydata.nyc/data/subwaydatanyc_2026-11-15_csv.tar.xz"
+    },
+    {
+      "archive_date": "2026-11-15",
+      "bytes": 47597252,
+      "cache_verified": false,
+      "fetched_at": "2026-11-20T17:43:49.909457Z",
+      "kind": "gtfsrt",
+      "path": "/Users/hollisyang/Desktop/Studio/StayOrSwitch/data/raw/november-2026/subwaydatanyc_2026-11-15_gtfsrt.tar.xz",
+      "resolved_url": "https://data.subwaydata.nyc/2026-11/subwaydatanyc_2026-11-15_gtfsrt_b872ef0f3138.tar.xz",
+      "sha256": "b872ef0f313862f97384babdb2b106e0bb930bd46dcab2e5a9fb448d7258d8be",
+      "source": "Subway Data NYC",
+      "url": "https://subwaydata.nyc/data/subwaydatanyc_2026-11-15_gtfsrt.tar.xz"
+    },
+    {
+      "archive_date": "2026-11-16",
+      "bytes": 1454860,
+      "cache_verified": false,
+      "fetched_at": "2026-11-20T17:43:48.353885Z",
+      "kind": "csv",
+      "path": "/Users/hollisyang/Desktop/Studio/StayOrSwitch/data/raw/november-2026/subwaydatanyc_2026-11-16_csv.tar.xz",
+      "resolved_url": "https://data.subwaydata.nyc/2026-11/subwaydatanyc_2026-11-16_csv_d0ce028b44ec.tar.xz",
+      "sha256": "d0ce028b44ecaa2e9318dfec94578f568287b0ec29f590746e871ff7e267243e",
+      "source": "Subway Data NYC",
+      "url": "https://subwaydata.nyc/data/subwaydatanyc_2026-11-16_csv.tar.xz"
+    },
+    {
+      "archive_date": "2026-11-16",
+      "bytes": 80284892,
+      "cache_verified": false,
+      "fetched_at": "2026-11-20T17:43:54.601297Z",
+      "kind": "gtfsrt",
+      "path": "/Users/hollisyang/Desktop/Studio/StayOrSwitch/data/raw/november-2026/subwaydatanyc_2026-11-16_gtfsrt.tar.xz",
+      "resolved_url": "https://data.subwaydata.nyc/2026-11/subwaydatanyc_2026-11-16_gtfsrt_fa6075e1bd5d.tar.xz",
+      "sha256": "fa6075e1bd5df6eb49cdbb15f51057986e595255cf7092e3a3f44a3ad6d70ddc",
+      "source": "Subway Data NYC",
+      "url": "https://subwaydata.nyc/data/subwaydatanyc_2026-11-16_gtfsrt.tar.xz"
+    },
+    {
+      "archive_date": "2026-11-17",
+      "bytes": 1437320,
+      "cache_verified": false,
+      "fetched_at": "2026-11-20T17:43:50.574388Z",
+      "kind": "csv",
+      "path": "/Users/hollisyang/Desktop/Studio/StayOrSwitch/data/raw/november-2026/subwaydatanyc_2026-11-17_csv.tar.xz",
+      "resolved_url": "https://data.subwaydata.nyc/2026-11/subwaydatanyc_2026-11-17_csv_b3a849820bbf.tar.xz",
+      "sha256": "b3a849820bbfe7064714a0f52e4a9bbdb3262dfdd093247f8896401fbffffeeb",
+      "source": "Subway Data NYC",
+      "url": "https://subwaydata.nyc/data/subwaydatanyc_2026-11-17_csv.tar.xz"
+    },
+    {
+      "archive_date": "2026-11-17",
+      "bytes": 84163616,
+      "cache_verified": false,
+      "fetched_at": "2026-11-20T17:43:55.163352Z",
+      "kind": "gtfsrt",
+      "path": "/Users/hollisyang/Desktop/Studio/StayOrSwitch/data/raw/november-2026/subwaydatanyc_2026-11-17_gtfsrt.tar.xz",
+      "resolved_url": "https://data.subwaydata.nyc/2026-11/subwaydatanyc_2026-11-17_gtfsrt_9e110c39667c.tar.xz",
+      "sha256": "9e110c39667c7fa05b3b6a843509be89a4a7026706563ac7d4ecf1bc907fd8f6",
+      "source": "Subway Data NYC",
+      "url": "https://subwaydata.nyc/data/subwaydatanyc_2026-11-17_gtfsrt.tar.xz"
+    },
+    {
+      "archive_date": "2026-11-18",
+      "bytes": 1433736,
+      "cache_verified": false,
+      "fetched_at": "2026-11-20T17:43:51.063354Z",
+      "kind": "csv",
+      "path": "/Users/hollisyang/Desktop/Studio/StayOrSwitch/data/raw/november-2026/subwaydatanyc_2026-11-18_csv.tar.xz",
+      "resolved_url": "https://data.subwaydata.nyc/2026-11/subwaydatanyc_2026-11-18_csv_ecbe6ebe1bf7.tar.xz",
+      "sha256": "ecbe6ebe1bf75cc17ca4bf50061cb283a12bf5fef951a121ca0462cfe4d8076c",
+      "source": "Subway Data NYC",
+      "url": "https://subwaydata.nyc/data/subwaydatanyc_2026-11-18_csv.tar.xz"
+    },
+    {
+      "archive_date": "2026-11-18",
+      "bytes": 82197424,
+      "cache_verified": false,
+      "fetched_at": "2026-11-20T17:44:00.453025Z",
+      "kind": "gtfsrt",
+      "path": "/Users/hollisyang/Desktop/Studio/StayOrSwitch/data/raw/november-2026/subwaydatanyc_2026-11-18_gtfsrt.tar.xz",
+      "resolved_url": "https://data.subwaydata.nyc/2026-11/subwaydatanyc_2026-11-18_gtfsrt_cef6a1190719.tar.xz",
+      "sha256": "cef6a11907192ae2a9c6097ae37b39de5ee701ebe54a22940e5cc2f2e740eab2",
+      "source": "Subway Data NYC",
+      "url": "https://subwaydata.nyc/data/subwaydatanyc_2026-11-18_gtfsrt.tar.xz"
+    },
+    {
+      "archive_date": "2026-11-19",
+      "bytes": 1479548,
+      "cache_verified": false,
+      "fetched_at": "2026-11-20T17:43:55.229194Z",
+      "kind": "csv",
+      "path": "/Users/hollisyang/Desktop/Studio/StayOrSwitch/data/raw/november-2026/subwaydatanyc_2026-11-19_csv.tar.xz",
+      "resolved_url": "https://data.subwaydata.nyc/2026-11/subwaydatanyc_2026-11-19_csv_78d6987c52ce.tar.xz",
+      "sha256": "78d6987c52ce0b219d14a7e450a17d02fbbd194b7f6562f307fa6a6b01598ce2",
+      "source": "Subway Data NYC",
+      "url": "https://subwaydata.nyc/data/subwaydatanyc_2026-11-19_csv.tar.xz"
+    },
+    {
+      "archive_date": "2026-11-19",
+      "bytes": 80550268,
+      "cache_verified": false,
+      "fetched_at": "2026-11-20T17:43:58.372058Z",
+      "kind": "gtfsrt",
+      "path": "/Users/hollisyang/Desktop/Studio/StayOrSwitch/data/raw/november-2026/subwaydatanyc_2026-11-19_gtfsrt.tar.xz",
+      "resolved_url": "https://data.subwaydata.nyc/2026-11/subwaydatanyc_2026-11-19_gtfsrt_521b19afb6bc.tar.xz",
+      "sha256": "521b19afb6bc97cc089940214dd7172f1c3108d8bfb8b6c9ecb63e9422ab212b",
+      "source": "Subway Data NYC",
+      "url": "https://subwaydata.nyc/data/subwaydatanyc_2026-11-19_gtfsrt.tar.xz"
+    }
+  ],
+  "code_sha256": {
+    "algo/stayorswitch/mta.py": "f7e863de59ef092166767aaa8042bdf2d586892b692bd49f260c35215a0d8f3c",
+    "data/november_2026.py": "ddd589fa2f7508f60334937e5b8975844452093636da05455e625e746cdb778e",
+    "data/october/__init__.py": "630de8bab4998e234cfee460ad14cfc43352dcaa80bb9a8c3cc7a0a92bf056c6",
+    "data/october/labels.py": "e22e2ed808a1ab24ec5cc36f9e1642bc045f9a7abcb7a84d3d00cbe1feda5919",
+    "data/october/prepare.py": "c7566bf7dca048c05a8f576b48b69900dc52d8967e94846ada4ae3f7944c9170",
+    "data/october/projection.py": "504c7074510e1d66c88aaa59b4759cd650945b0630dc69067cc0b3fcb29994a5",
+    "data/october/sources.py": "c895acfe723c1a894ca6f97222114731373a6e5729c17b9b16525e70eaa05957",
+    "data/scripts/prepare_november_2026.py": "e1baae9b9339afe13c6ecfae312e56c8f113ed8d9de49d4bcda642da8861e6f8",
+    "data/scripts/prepare_october.py": "84dfa5470a17606dbebf09e0425c616538b4e8939584af132487c68825033fdc"
+  },
+  "config": {
+    "bytes": 11184,
+    "path": "data/config/november-2026.json",
+    "sha256": "0c44bc161eda89a5b9859d26cc8a0c3157883f69781eeb45998136fd6bffc74c"
+  },
+  "dates": [
+    "2026-11-01",
+    "2026-11-02",
+    "2026-11-03",
+    "2026-11-04",
+    "2026-11-05",
+    "2026-11-06",
+    "2026-11-07",
+    "2026-11-08",
+    "2026-11-09",
+    "2026-11-10",
+    "2026-11-11",
+    "2026-11-12",
+    "2026-11-13",
+    "2026-11-14",
+    "2026-11-15",
+    "2026-11-16",
+    "2026-11-17",
+    "2026-11-18",
+    "2026-11-19"
+  ],
+  "days": [
+    {
+      "boundary_input_only": true,
+      "by_feed": {
+        "ace": 1440,
+        "bdfm": 1440,
+        "g": 1440,
+        "nqrw": 1440,
+        "numbered": 1440,
+        "subway-alerts": 205
+      },
+      "cache_verified": false,
+      "counts": {
+        "alert_snapshots": 205,
+        "alert_versions_before_deduplication": 39332,
+        "projection_entities_after": 1066968,
+        "projection_entities_before": 1066968,
+        "projection_stops_after": 1183228,
+        "projection_stops_before": 12425233,
+        "projection_trips_after": 391499,
+        "projection_trips_before": 576833,
+        "snapshots": 7405,
+        "state:FRESH": 7404,
+        "state:MISSING": 1
+      },
+      "date": "2026-10-31",
+      "elapsed_seconds": 130.11,
+      "fingerprint": {
+        "archive_sha256": "1280ef06d1eb3c5849e548ac83f31c8a31be8b988130f3508af763e179c03c6e",
+        "code_sha256": {
+          "algo/stayorswitch/mta.py": "f7e863de59ef092166767aaa8042bdf2d586892b692bd49f260c35215a0d8f3c",
+          "data/november_2026.py": "ddd589fa2f7508f60334937e5b8975844452093636da05455e625e746cdb778e",
+          "data/october/__init__.py": "630de8bab4998e234cfee460ad14cfc43352dcaa80bb9a8c3cc7a0a92bf056c6",
+          "data/october/labels.py": "e22e2ed808a1ab24ec5cc36f9e1642bc045f9a7abcb7a84d3d00cbe1feda5919",
+          "data/october/prepare.py": "c7566bf7dca048c05a8f576b48b69900dc52d8967e94846ada4ae3f7944c9170",
+          "data/october/projection.py": "504c7074510e1d66c88aaa59b4759cd650945b0630dc69067cc0b3fcb29994a5",
+          "data/october/sources.py": "c895acfe723c1a894ca6f97222114731373a6e5729c17b9b16525e70eaa05957",
+          "data/scripts/prepare_november_2026.py": "e1baae9b9339afe13c6ecfae312e56c8f113ed8d9de49d4bcda642da8861e6f8",
+          "data/scripts/prepare_october.py": "84dfa5470a17606dbebf09e0425c616538b4e8939584af132487c68825033fdc"
+        },
+        "config_sha256": "0c44bc161eda89a5b9859d26cc8a0c3157883f69781eeb45998136fd6bffc74c"
+      },
+      "ordering": "CHRONOLOGICAL_WITHIN_EACH_FEED_NOT_GLOBAL",
+      "outputs": {
+        "alerts": {
+          "bytes": 8913560,
+          "path": "data/processed/november-2026/2026-10-31.alerts.jsonl.gz",
+          "sha256": "0ae8012161431e38b2b29ad1b9f2cd97ee0209323250444d5a57c90b81665e1c"
+        },
+        "receipts": {
+          "bytes": 520559,
+          "path": "data/processed/november-2026/2026-10-31.receipts.json.gz",
+          "sha256": "f4166ccfb2fac4a380a3d6009de89f6610ba476dc46b73e5c3092eb576332a6b"
+        },
+        "snapshots": {
+          "bytes": 50610258,
+          "path": "data/processed/november-2026/2026-10-31.snapshots.jsonl.gz",
+          "sha256": "5b22883d355dbfe5d99f02ba9782f2c7f47e9345f0c47f7a618b3fe85768fe76"
+        },
+        "trips": {
+          "bytes": 67983,
+          "path": "data/processed/november-2026/2026-10-31.trips.json.gz",
+          "sha256": "815015121eda856a80606dce7a851dbcd2170a94d5e506b89d6bb71e28b174bd"
+        }
+      },
+      "raw_counts": {
+        "members": 109906
+      },
+      "raw_train_capture_bounds": {
+        "ace": {
+          "captures": 9769,
+          "first_captured_at": 1793419205.634,
+          "last_captured_at": 1793505592.678
+        },
+        "bdfm": {
+          "captures": 11518,
+          "first_captured_at": 1793419200.458,
+          "last_captured_at": 1793505598.576
+        },
+        "g": {
+          "captures": 11513,
+          "first_captured_at": 1793419200.535,
+          "last_captured_at": 1793505598.573
+        },
+        "nqrw": {
+          "captures": 11515,
+          "first_captured_at": 1793419200.444,
+          "last_captured_at": 1793505597.672
+        },
+        "numbered": {
+          "captures": 30874,
+          "first_captured_at": 1793419200.458,
+          "last_captured_at": 1793505598.582
+        }
+      },
+      "stage": "NORMALIZED",
+      "trip_count": 4786
+    },
+    {
+      "boundary_input_only": false,
+      "by_feed": {
+        "ace": 1500,
+        "bdfm": 1500,
+        "g": 1500,
+        "nqrw": 1500,
+        "numbered": 1500,
+        "subway-alerts": 219
+      },
+      "cache_verified": false,
+      "counts": {
+        "alert_snapshots": 219,
+        "alert_versions_before_deduplication": 41884,
+        "projection_entities_after": 1069063,
+        "projection_entities_before": 1069063,
+        "projection_stops_after": 1109751,
+        "projection_stops_before": 11882888,
+        "projection_trips_after": 378236,
+        "projection_trips_before": 573164,
+        "snapshots": 7719,
+        "state:FRESH": 7719
+      },
+      "date": "2026-11-01",
+      "elapsed_seconds": 127.28,
+      "fingerprint": {
+        "archive_sha256": "7b38a35cbd344d2197918fd1ba0562396ef6d8b9ff76fe6b074812163fc04def",
+        "code_sha256": {
+          "algo/stayorswitch/mta.py": "f7e863de59ef092166767aaa8042bdf2d586892b692bd49f260c35215a0d8f3c",
+          "data/november_2026.py": "ddd589fa2f7508f60334937e5b8975844452093636da05455e625e746cdb778e",
+          "data/october/__init__.py": "630de8bab4998e234cfee460ad14cfc43352dcaa80bb9a8c3cc7a0a92bf056c6",
+          "data/october/labels.py": "e22e2ed808a1ab24ec5cc36f9e1642bc045f9a7abcb7a84d3d00cbe1feda5919",
+          "data/october/prepare.py": "c7566bf7dca048c05a8f576b48b69900dc52d8967e94846ada4ae3f7944c9170",
+          "data/october/projection.py": "504c7074510e1d66c88aaa59b4759cd650945b0630dc69067cc0b3fcb29994a5",
+          "data/october/sources.py": "c895acfe723c1a894ca6f97222114731373a6e5729c17b9b16525e70eaa05957",
+          "data/scripts/prepare_november_2026.py": "e1baae9b9339afe13c6ecfae312e56c8f113ed8d9de49d4bcda642da8861e6f8",
+          "data/scripts/prepare_october.py": "84dfa5470a17606dbebf09e0425c616538b4e8939584af132487c68825033fdc"
+        },
+        "config_sha256": "0c44bc161eda89a5b9859d26cc8a0c3157883f69781eeb45998136fd6bffc74c"
+      },
+      "ordering": "CHRONOLOGICAL_WITHIN_EACH_FEED_NOT_GLOBAL",
+      "outputs": {
+        "alerts": {
+          "bytes": 9432906,
+          "path": "data/processed/november-2026/2026-11-01.alerts.jsonl.gz",
+          "sha256": "23ed0c5006893b077499130ab9f4706dbabf2ecc4294ed960058a235bf7574d2"
+        },
+        "receipts": {
+          "bytes": 532773,
+          "path": "data/processed/november-2026/2026-11-01.receipts.json.gz",
+          "sha256": "30888671fa251af170c3bcaa9ceb1149830d84efc3e9759c291680b92d6c3152"
+        },
+        "snapshots": {
+          "bytes": 50430076,
+          "path": "data/processed/november-2026/2026-11-01.snapshots.jsonl.gz",
+          "sha256": "5556b074513c9ff0ccb86cc3e5340966dcee37551f03e91ae7fe36d428bb00f7"
+        },
+        "trips": {
+          "bytes": 63295,
+          "path": "data/processed/november-2026/2026-11-01.trips.json.gz",
+          "sha256": "341cd7eeda0a88ff78227564c7724c0c06ddb3b1a87109f869f746463186dd49"
+        }
+      },
+      "raw_counts": {
+        "members": 110380
+      },
+      "raw_train_capture_bounds": {
+        "ace": {
+          "captures": 11860,
+          "first_captured_at": 1793505605.466,
+          "last_captured_at": 1793595595.448
+        },
+        "bdfm": {
+          "captures": 11645,
+          "first_captured_at": 1793505600.448,
+          "last_captured_at": 1793595588.58
+        },
+        "g": {
+          "captures": 8855,
+          "first_captured_at": 1793505600.453,
+          "last_captured_at": 1793595587.668
+        },
+        "nqrw": {
+          "captures": 11995,
+          "first_captured_at": 1793505600.444,
+          "last_captured_at": 1793595590.538
+        },
+        "numbered": {
+          "captures": 32850,
+          "first_captured_at": 1793505600.533,
+          "last_captured_at": 1793595598.572
+        }
+      },
+      "stage": "NORMALIZED",
+      "trip_count": 4356
+    },
+    {
+      "boundary_input_only": false,
+      "by_feed": {
+        "ace": 1440,
+        "bdfm": 1440,
+        "g": 1440,
+        "nqrw": 1440,
+        "numbered": 1459,
+        "subway-alerts": 288
+      },
+      "cache_verified": false,
+      "counts": {
+        "alert_snapshots": 288,
+        "alert_versions_before_deduplication": 52400,
+        "projection_entities_after": 1783563,
+        "projection_entities_before": 1783563,
+        "projection_stops_after": 1884695,
+        "projection_stops_before": 18620555,
+        "projection_trips_after": 649528,
+        "projection_trips_before": 956498,
+        "snapshots": 7507,
+        "state:FRESH": 7497,
+        "state:MISSING": 10
+      },
+      "date": "2026-11-02",
+      "elapsed_seconds": 229.97,
+      "fingerprint": {
+        "archive_sha256": "8eb3f176468976afea79c66f533ce414b44490188c30b0d76fd937382e3582d7",
+        "code_sha256": {
+          "algo/stayorswitch/mta.py": "f7e863de59ef092166767aaa8042bdf2d586892b692bd49f260c35215a0d8f3c",
+          "data/november_2026.py": "ddd589fa2f7508f60334937e5b8975844452093636da05455e625e746cdb778e",
+          "data/october/__init__.py": "630de8bab4998e234cfee460ad14cfc43352dcaa80bb9a8c3cc7a0a92bf056c6",
+          "data/october/labels.py": "e22e2ed808a1ab24ec5cc36f9e1642bc045f9a7abcb7a84d3d00cbe1feda5919",
+          "data/october/prepare.py": "c7566bf7dca048c05a8f576b48b69900dc52d8967e94846ada4ae3f7944c9170",
+          "data/october/projection.py": "504c7074510e1d66c88aaa59b4759cd650945b0630dc69067cc0b3fcb29994a5",
+          "data/october/sources.py": "c895acfe723c1a894ca6f97222114731373a6e5729c17b9b16525e70eaa05957",
+          "data/scripts/prepare_november_2026.py": "e1baae9b9339afe13c6ecfae312e56c8f113ed8d9de49d4bcda642da8861e6f8",
+          "data/scripts/prepare_october.py": "84dfa5470a17606dbebf09e0425c616538b4e8939584af132487c68825033fdc"
+        },
+        "config_sha256": "0c44bc161eda89a5b9859d26cc8a0c3157883f69781eeb45998136fd6bffc74c"
+      },
+      "ordering": "CHRONOLOGICAL_WITHIN_EACH_FEED_NOT_GLOBAL",
+      "outputs": {
+        "alerts": {
+          "bytes": 11845380,
+          "path": "data/processed/november-2026/2026-11-02.alerts.jsonl.gz",
+          "sha256": "1b47c1d27774d90fca2afee30ab8c0a8e8124fb455fb986a82a737ae885558bb"
+        },
+        "receipts": {
+          "bytes": 506592,
+          "path": "data/processed/november-2026/2026-11-02.receipts.json.gz",
+          "sha256": "e4073b8e757eeb3254644c6e5491206023c5438c863f701e8c365203013c20d1"
+        },
+        "snapshots": {
+          "bytes": 76986490,
+          "path": "data/processed/november-2026/2026-11-02.snapshots.jsonl.gz",
+          "sha256": "35a3a70911d34b3d8413a0e4fce6926d9f6851471aa7d4bcbd53d187424edbc6"
+        },
+        "trips": {
+          "bytes": 99973,
+          "path": "data/processed/november-2026/2026-11-02.trips.json.gz",
+          "sha256": "e7286d7f9bf3be073dc9dd785c27d3c09d64de971886d5b9949dc15458176564"
+        }
+      },
+      "raw_counts": {
+        "members": 104537
+      },
+      "raw_train_capture_bounds": {
+        "ace": {
+          "captures": 11514,
+          "first_captured_at": 1793595603.571,
+          "last_captured_at": 1793681997.672
+        },
+        "bdfm": {
+          "captures": 9301,
+          "first_captured_at": 1793595603.568,
+          "last_captured_at": 1793681988.591
+        },
+        "g": {
+          "captures": 11511,
+          "first_captured_at": 1793595600.464,
+          "last_captured_at": 1793681997.663
+        },
+        "nqrw": {
+          "captures": 9659,
+          "first_captured_at": 1793595602.745,
+          "last_captured_at": 1793681987.706
+        },
+        "numbered": {
+          "captures": 30068,
+          "first_captured_at": 1793595600.46,
+          "last_captured_at": 1793681997.759
+        }
+      },
+      "stage": "NORMALIZED",
+      "trip_count": 6889
+    },
+    {
+      "boundary_input_only": false,
+      "by_feed": {
+        "ace": 1440,
+        "bdfm": 1440,
+        "g": 1442,
+        "nqrw": 1440,
+        "numbered": 1451,
+        "subway-alerts": 256
+      },
+      "cache_verified": false,
+      "counts": {
+        "alert_snapshots": 256,
+        "alert_versions_before_deduplication": 45843,
+        "projection_entities_after": 1598936,
+        "projection_entities_before": 1598936,
+        "projection_stops_after": 1840478,
+        "projection_stops_before": 18226652,
+        "projection_trips_after": 587269,
+        "projection_trips_before": 862563,
+        "snapshots": 7469,
+        "state:FRESH": 7461,
+        "state:MISSING": 8
+      },
+      "date": "2026-11-03",
+      "elapsed_seconds": 215.94,
+      "fingerprint": {
+        "archive_sha256": "8d6b08219e2e5e5f74c718fc88768fd3b5fb47c8ec85a23bf33ee9c20fd16458",
+        "code_sha256": {
+          "algo/stayorswitch/mta.py": "f7e863de59ef092166767aaa8042bdf2d586892b692bd49f260c35215a0d8f3c",
+          "data/november_2026.py": "ddd589fa2f7508f60334937e5b8975844452093636da05455e625e746cdb778e",
+          "data/october/__init__.py": "630de8bab4998e234cfee460ad14cfc43352dcaa80bb9a8c3cc7a0a92bf056c6",
+          "data/october/labels.py": "e22e2ed808a1ab24ec5cc36f9e1642bc045f9a7abcb7a84d3d00cbe1feda5919",
+          "data/october/prepare.py": "c7566bf7dca048c05a8f576b48b69900dc52d8967e94846ada4ae3f7944c9170",
+          "data/october/projection.py": "504c7074510e1d66c88aaa59b4759cd650945b0630dc69067cc0b3fcb29994a5",
+          "data/october/sources.py": "c895acfe723c1a894ca6f97222114731373a6e5729c17b9b16525e70eaa05957",
+          "data/scripts/prepare_november_2026.py": "e1baae9b9339afe13c6ecfae312e56c8f113ed8d9de49d4bcda642da8861e6f8",
+          "data/scripts/prepare_october.py": "84dfa5470a17606dbebf09e0425c616538b4e8939584af132487c68825033fdc"
+        },
+        "config_sha256": "0c44bc161eda89a5b9859d26cc8a0c3157883f69781eeb45998136fd6bffc74c"
+      },
+      "ordering": "CHRONOLOGICAL_WITHIN_EACH_FEED_NOT_GLOBAL",
+      "outputs": {
+        "alerts": {
+          "bytes": 10348238,
+          "path": "data/processed/november-2026/2026-11-03.alerts.jsonl.gz",
+          "sha256": "c00fc4c3ce914a7fc9de8361f6397f005df8820c9ecadac36d48ad5537e4502d"
+        },
+        "receipts": {
+          "bytes": 516498,
+          "path": "data/processed/november-2026/2026-11-03.receipts.json.gz",
+          "sha256": "bfa5e4db8a9f8feacdc3d2c0be7eec620b90363cdd9fdcf72d39b1738707b7a2"
+        },
+        "snapshots": {
+          "bytes": 71188536,
+          "path": "data/processed/november-2026/2026-11-03.snapshots.jsonl.gz",
+          "sha256": "b1b361aa13712e80d130aadfee94ae094d56a026742dedd24243d81c9eb47a9e"
+        },
+        "trips": {
+          "bytes": 98334,
+          "path": "data/processed/november-2026/2026-11-03.trips.json.gz",
+          "sha256": "68aa8163d687e3f03458629b2f6b04537fa7452131c9854f234b58932692b2db"
+        }
+      },
+      "raw_counts": {
+        "members": 108434
+      },
+      "raw_train_capture_bounds": {
+        "ace": {
+          "captures": 9384,
+          "first_captured_at": 1793682000.446,
+          "last_captured_at": 1793768397.665
+        },
+        "bdfm": {
+          "captures": 11487,
+          "first_captured_at": 1793682000.454,
+          "last_captured_at": 1793768395.449
+        },
+        "g": {
+          "captures": 11491,
+          "first_captured_at": 1793682000.459,
+          "last_captured_at": 1793768392.668
+        },
+        "nqrw": {
+          "captures": 11446,
+          "first_captured_at": 1793682002.698,
+          "last_captured_at": 1793768397.699
+        },
+        "numbered": {
+          "captures": 29899,
+          "first_captured_at": 1793682000.538,
+          "last_captured_at": 1793768397.669
+        }
+      },
+      "stage": "NORMALIZED",
+      "trip_count": 6859
+    },
+    {
+      "boundary_input_only": false,
+      "by_feed": {
+        "ace": 1442,
+        "bdfm": 1440,
+        "g": 1440,
+        "nqrw": 1440,
+        "numbered": 1451,
+        "subway-alerts": 256
+      },
+      "cache_verified": false,
+      "counts": {
+        "alert_snapshots": 256,
+        "alert_versions_before_deduplication": 47281,
+        "projection_entities_after": 1559991,
+        "projection_entities_before": 1559991,
+        "projection_stops_after": 1819485,
+        "projection_stops_before": 18040017,
+        "projection_trips_after": 567296,
+        "projection_trips_before": 841453,
+        "snapshots": 7469,
+        "state:FRESH": 7462,
+        "state:MISSING": 7
+      },
+      "date": "2026-11-04",
+      "elapsed_seconds": 306.18,
+      "fingerprint": {
+        "archive_sha256": "cd8e74c41f9e890a1ea43a6d63810eaebe13c9e9de46170f1e270b2653533c2b",
+        "code_sha256": {
+          "algo/stayorswitch/mta.py": "f7e863de59ef092166767aaa8042bdf2d586892b692bd49f260c35215a0d8f3c",
+          "data/november_2026.py": "ddd589fa2f7508f60334937e5b8975844452093636da05455e625e746cdb778e",
+          "data/october/__init__.py": "630de8bab4998e234cfee460ad14cfc43352dcaa80bb9a8c3cc7a0a92bf056c6",
+          "data/october/labels.py": "e22e2ed808a1ab24ec5cc36f9e1642bc045f9a7abcb7a84d3d00cbe1feda5919",
+          "data/october/prepare.py": "c7566bf7dca048c05a8f576b48b69900dc52d8967e94846ada4ae3f7944c9170",
+          "data/october/projection.py": "504c7074510e1d66c88aaa59b4759cd650945b0630dc69067cc0b3fcb29994a5",
+          "data/october/sources.py": "c895acfe723c1a894ca6f97222114731373a6e5729c17b9b16525e70eaa05957",
+          "data/scripts/prepare_november_2026.py": "e1baae9b9339afe13c6ecfae312e56c8f113ed8d9de49d4bcda642da8861e6f8",
+          "data/scripts/prepare_october.py": "84dfa5470a17606dbebf09e0425c616538b4e8939584af132487c68825033fdc"
+        },
+        "config_sha256": "0c44bc161eda89a5b9859d26cc8a0c3157883f69781eeb45998136fd6bffc74c"
+      },
+      "ordering": "CHRONOLOGICAL_WITHIN_EACH_FEED_NOT_GLOBAL",
+      "outputs": {
+        "alerts": {
+          "bytes": 10595307,
+          "path": "data/processed/november-2026/2026-11-04.alerts.jsonl.gz",
+          "sha256": "8afeb6c29b218b3b3c847fb1e15c9e2c67067c09bc3eb59bbca293e9271f2f11"
+        },
+        "receipts": {
+          "bytes": 530899,
+          "path": "data/processed/november-2026/2026-11-04.receipts.json.gz",
+          "sha256": "5d3da02c31ca0427a11ac21cf72735864dad48469e3c6bb06a9d7132312db6fc"
+        },
+        "snapshots": {
+          "bytes": 70491233,
+          "path": "data/processed/november-2026/2026-11-04.snapshots.jsonl.gz",
+          "sha256": "e4cd930cf575ef854d733ecf286208ee922a5384d45df65682467f0ed231bb6b"
+        },
+        "trips": {
+          "bytes": 98066,
+          "path": "data/processed/november-2026/2026-11-04.trips.json.gz",
+          "sha256": "14262c7c89749a7d3ad6d0cd88d55aca9d35c0e03a290c7f9943fb4b5ca2652f"
+        }
+      },
+      "raw_counts": {
+        "members": 108339
+      },
+      "raw_train_capture_bounds": {
+        "ace": {
+          "captures": 11428,
+          "first_captured_at": 1793768400.449,
+          "last_captured_at": 1793854798.562
+        },
+        "bdfm": {
+          "captures": 11518,
+          "first_captured_at": 1793768405.463,
+          "last_captured_at": 1793854792.672
+        },
+        "g": {
+          "captures": 10328,
+          "first_captured_at": 1793768403.565,
+          "last_captured_at": 1793854790.533
+        },
+        "nqrw": {
+          "captures": 11520,
+          "first_captured_at": 1793768400.458,
+          "last_captured_at": 1793854793.58
+        },
+        "numbered": {
+          "captures": 30582,
+          "first_captured_at": 1793768400.455,
+          "last_captured_at": 1793854798.572
+        }
+      },
+      "stage": "NORMALIZED",
+      "trip_count": 6775
+    },
+    {
+      "boundary_input_only": false,
+      "by_feed": {
+        "ace": 1440,
+        "bdfm": 1440,
+        "g": 1440,
+        "nqrw": 1440,
+        "numbered": 1452,
+        "subway-alerts": 293
+      },
+      "cache_verified": false,
+      "counts": {
+        "alert_snapshots": 293,
+        "alert_versions_before_deduplication": 63267,
+        "projection_entities_after": 1576379,
+        "projection_entities_before": 1576379,
+        "projection_stops_after": 1855231,
+        "projection_stops_before": 18073867,
+        "projection_trips_after": 573237,
+        "projection_trips_before": 848801,
+        "snapshots": 7505,
+        "state:FRESH": 7499,
+        "state:MISSING": 6
+      },
+      "date": "2026-11-05",
+      "elapsed_seconds": 301.16,
+      "fingerprint": {
+        "archive_sha256": "cb6e9c6899a4d1e05e52abc551adc373c15d8319041830e933bf7a5499117b93",
+        "code_sha256": {
+          "algo/stayorswitch/mta.py": "f7e863de59ef092166767aaa8042bdf2d586892b692bd49f260c35215a0d8f3c",
+          "data/november_2026.py": "ddd589fa2f7508f60334937e5b8975844452093636da05455e625e746cdb778e",
+          "data/october/__init__.py": "630de8bab4998e234cfee460ad14cfc43352dcaa80bb9a8c3cc7a0a92bf056c6",
+          "data/october/labels.py": "e22e2ed808a1ab24ec5cc36f9e1642bc045f9a7abcb7a84d3d00cbe1feda5919",
+          "data/october/prepare.py": "c7566bf7dca048c05a8f576b48b69900dc52d8967e94846ada4ae3f7944c9170",
+          "data/october/projection.py": "504c7074510e1d66c88aaa59b4759cd650945b0630dc69067cc0b3fcb29994a5",
+          "data/october/sources.py": "c895acfe723c1a894ca6f97222114731373a6e5729c17b9b16525e70eaa05957",
+          "data/scripts/prepare_november_2026.py": "e1baae9b9339afe13c6ecfae312e56c8f113ed8d9de49d4bcda642da8861e6f8",
+          "data/scripts/prepare_october.py": "84dfa5470a17606dbebf09e0425c616538b4e8939584af132487c68825033fdc"
+        },
+        "config_sha256": "0c44bc161eda89a5b9859d26cc8a0c3157883f69781eeb45998136fd6bffc74c"
+      },
+      "ordering": "CHRONOLOGICAL_WITHIN_EACH_FEED_NOT_GLOBAL",
+      "outputs": {
+        "alerts": {
+          "bytes": 14226611,
+          "path": "data/processed/november-2026/2026-11-05.alerts.jsonl.gz",
+          "sha256": "b698d5ec2f3f2222f922990626d2ff8eba2096864ede442ba7660024514dc54e"
+        },
+        "receipts": {
+          "bytes": 501506,
+          "path": "data/processed/november-2026/2026-11-05.receipts.json.gz",
+          "sha256": "4d429b7e5352ae3853575e5837cae7273b1818fc04ddd1b16cbd9d2eaec16dd8"
+        },
+        "snapshots": {
+          "bytes": 75452337,
+          "path": "data/processed/november-2026/2026-11-05.snapshots.jsonl.gz",
+          "sha256": "cf27d099cb38ce5a1a40009173cab4ce35ee6784705bd4f5d247b67665cc5a3a"
+        },
+        "trips": {
+          "bytes": 98205,
+          "path": "data/processed/november-2026/2026-11-05.trips.json.gz",
+          "sha256": "1dd41265b3b5801d56566796d04cf03a7025e684ac1a78180d9da521167bd55f"
+        }
+      },
+      "raw_counts": {
+        "members": 102752
+      },
+      "raw_train_capture_bounds": {
+        "ace": {
+          "captures": 11514,
+          "first_captured_at": 1793854800.458,
+          "last_captured_at": 1793941188.565
+        },
+        "bdfm": {
+          "captures": 9412,
+          "first_captured_at": 1793854805.459,
+          "last_captured_at": 1793941192.665
+        },
+        "g": {
+          "captures": 9925,
+          "first_captured_at": 1793854805.454,
+          "last_captured_at": 1793941192.667
+        },
+        "nqrw": {
+          "captures": 10219,
+          "first_captured_at": 1793854805.535,
+          "last_captured_at": 1793941192.689
+        },
+        "numbered": {
+          "captures": 30324,
+          "first_captured_at": 1793854800.458,
+          "last_captured_at": 1793941197.662
+        }
+      },
+      "stage": "NORMALIZED",
+      "trip_count": 6782
+    },
+    {
+      "boundary_input_only": false,
+      "by_feed": {
+        "ace": 1440,
+        "bdfm": 1440,
+        "g": 1440,
+        "nqrw": 1440,
+        "numbered": 1454,
+        "subway-alerts": 237
+      },
+      "cache_verified": false,
+      "counts": {
+        "alert_snapshots": 237,
+        "alert_versions_before_deduplication": 50493,
+        "projection_entities_after": 1537517,
+        "projection_entities_before": 1537517,
+        "projection_stops_after": 1826001,
+        "projection_stops_before": 17816333,
+        "projection_trips_after": 556028,
+        "projection_trips_before": 825657,
+        "snapshots": 7451,
+        "state:FRESH": 7443,
+        "state:MISSING": 8
+      },
+      "date": "2026-11-06",
+      "elapsed_seconds": 296.65,
+      "fingerprint": {
+        "archive_sha256": "76110a69de1469eb7c8679e6057124c08f22ecece13e62b6dd749d7aaf60d7ee",
+        "code_sha256": {
+          "algo/stayorswitch/mta.py": "f7e863de59ef092166767aaa8042bdf2d586892b692bd49f260c35215a0d8f3c",
+          "data/november_2026.py": "ddd589fa2f7508f60334937e5b8975844452093636da05455e625e746cdb778e",
+          "data/october/__init__.py": "630de8bab4998e234cfee460ad14cfc43352dcaa80bb9a8c3cc7a0a92bf056c6",
+          "data/october/labels.py": "e22e2ed808a1ab24ec5cc36f9e1642bc045f9a7abcb7a84d3d00cbe1feda5919",
+          "data/october/prepare.py": "c7566bf7dca048c05a8f576b48b69900dc52d8967e94846ada4ae3f7944c9170",
+          "data/october/projection.py": "504c7074510e1d66c88aaa59b4759cd650945b0630dc69067cc0b3fcb29994a5",
+          "data/october/sources.py": "c895acfe723c1a894ca6f97222114731373a6e5729c17b9b16525e70eaa05957",
+          "data/scripts/prepare_november_2026.py": "e1baae9b9339afe13c6ecfae312e56c8f113ed8d9de49d4bcda642da8861e6f8",
+          "data/scripts/prepare_october.py": "84dfa5470a17606dbebf09e0425c616538b4e8939584af132487c68825033fdc"
+        },
+        "config_sha256": "0c44bc161eda89a5b9859d26cc8a0c3157883f69781eeb45998136fd6bffc74c"
+      },
+      "ordering": "CHRONOLOGICAL_WITHIN_EACH_FEED_NOT_GLOBAL",
+      "outputs": {
+        "alerts": {
+          "bytes": 11383430,
+          "path": "data/processed/november-2026/2026-11-06.alerts.jsonl.gz",
+          "sha256": "dd6c5ff993b46da3dbd009dfb2dbbefab037f5743fa5f9c6d0d10ce76a7a1165"
+        },
+        "receipts": {
+          "bytes": 519797,
+          "path": "data/processed/november-2026/2026-11-06.receipts.json.gz",
+          "sha256": "53fcf1cb7923040b8eb8976bd17b94ea7a708794e13c5fe790464c0a0c0a0c9a"
+        },
+        "snapshots": {
+          "bytes": 70911138,
+          "path": "data/processed/november-2026/2026-11-06.snapshots.jsonl.gz",
+          "sha256": "2d12667106c84ff407a23f7707a304ea7c6aeb08d15f59fe1c716ceae7570197"
+        },
+        "trips": {
+          "bytes": 96894,
+          "path": "data/processed/november-2026/2026-11-06.trips.json.gz",
+          "sha256": "1450e3da00a3e0efb7bb5355b079bc45b126ee0da6585de2101baa569e397283"
+        }
+      },
+      "raw_counts": {
+        "members": 108720
+      },
+      "raw_train_capture_bounds": {
+        "ace": {
+          "captures": 10029,
+          "first_captured_at": 1793941200.446,
+          "last_captured_at": 1794027585.458
+        },
+        "bdfm": {
+          "captures": 11521,
+          "first_captured_at": 1793941203.569,
+          "last_captured_at": 1794027592.673
+        },
+        "g": {
+          "captures": 11518,
+          "first_captured_at": 1793941202.673,
+          "last_captured_at": 1794027598.566
+        },
+        "nqrw": {
+          "captures": 10663,
+          "first_captured_at": 1793941207.682,
+          "last_captured_at": 1794027592.677
+        },
+        "numbered": {
+          "captures": 30457,
+          "first_captured_at": 1793941200.445,
+          "last_captured_at": 1794027598.581
+        }
+      },
+      "stage": "NORMALIZED",
+      "trip_count": 6675
+    },
+    {
+      "boundary_input_only": false,
+      "by_feed": {
+        "ace": 1440,
+        "bdfm": 1440,
+        "g": 1440,
+        "nqrw": 1440,
+        "numbered": 1442,
+        "subway-alerts": 214
+      },
+      "cache_verified": false,
+      "counts": {
+        "alert_snapshots": 214,
+        "alert_versions_before_deduplication": 45876,
+        "projection_entities_after": 1003221,
+        "projection_entities_before": 1003221,
+        "projection_stops_after": 1168763,
+        "projection_stops_before": 11078301,
+        "projection_trips_after": 361920,
+        "projection_trips_before": 535250,
+        "snapshots": 7416,
+        "state:FRESH": 7415,
+        "state:STALE": 1
+      },
+      "date": "2026-11-07",
+      "elapsed_seconds": 200.89,
+      "fingerprint": {
+        "archive_sha256": "0278f43eb1dd02e1f4529c4d5ca6b488ca49f354a34b260b7ca2c761af1d464b",
+        "code_sha256": {
+          "algo/stayorswitch/mta.py": "f7e863de59ef092166767aaa8042bdf2d586892b692bd49f260c35215a0d8f3c",
+          "data/november_2026.py": "ddd589fa2f7508f60334937e5b8975844452093636da05455e625e746cdb778e",
+          "data/october/__init__.py": "630de8bab4998e234cfee460ad14cfc43352dcaa80bb9a8c3cc7a0a92bf056c6",
+          "data/october/labels.py": "e22e2ed808a1ab24ec5cc36f9e1642bc045f9a7abcb7a84d3d00cbe1feda5919",
+          "data/october/prepare.py": "c7566bf7dca048c05a8f576b48b69900dc52d8967e94846ada4ae3f7944c9170",
+          "data/october/projection.py": "504c7074510e1d66c88aaa59b4759cd650945b0630dc69067cc0b3fcb29994a5",
+          "data/october/sources.py": "c895acfe723c1a894ca6f97222114731373a6e5729c17b9b16525e70eaa05957",
+          "data/scripts/prepare_november_2026.py": "e1baae9b9339afe13c6ecfae312e56c8f113ed8d9de49d4bcda642da8861e6f8",
+          "data/scripts/prepare_october.py": "84dfa5470a17606dbebf09e0425c616538b4e8939584af132487c68825033fdc"
+        },
+        "config_sha256": "0c44bc161eda89a5b9859d26cc8a0c3157883f69781eeb45998136fd6bffc74c"
+      },
+      "ordering": "CHRONOLOGICAL_WITHIN_EACH_FEED_NOT_GLOBAL",
+      "outputs": {
+        "alerts": {
+          "bytes": 10208649,
+          "path": "data/processed/november-2026/2026-11-07.alerts.jsonl.gz",
+          "sha256": "92b4509f24e7104b5ee312bb4baf845dcb7a077bf014994d9920be3ff46169b7"
+        },
+        "receipts": {
+          "bytes": 527603,
+          "path": "data/processed/november-2026/2026-11-07.receipts.json.gz",
+          "sha256": "39e6b52efbf4945bfa26d95d4957690a9a69981d857478ee62510fa045e98fbb"
+        },
+        "snapshots": {
+          "bytes": 50503533,
+          "path": "data/processed/november-2026/2026-11-07.snapshots.jsonl.gz",
+          "sha256": "957e1d96eed020cc9acc96efee02e448b8601b1589b8e01f9c49fead2ee0bed2"
+        },
+        "trips": {
+          "bytes": 60737,
+          "path": "data/processed/november-2026/2026-11-07.trips.json.gz",
+          "sha256": "ad1d6d11a8e017f982b2399e6cfab710dc49c9e1a7e3f875b1ca38f11d80262c"
+        }
+      },
+      "raw_counts": {
+        "members": 111264
+      },
+      "raw_train_capture_bounds": {
+        "ace": {
+          "captures": 11032,
+          "first_captured_at": 1794027600.455,
+          "last_captured_at": 1794113997.671
+        },
+        "bdfm": {
+          "captures": 11526,
+          "first_captured_at": 1794027600.449,
+          "last_captured_at": 1794113997.685
+        },
+        "g": {
+          "captures": 11520,
+          "first_captured_at": 1794027600.454,
+          "last_captured_at": 1794113995.446
+        },
+        "nqrw": {
+          "captures": 11521,
+          "first_captured_at": 1794027602.902,
+          "last_captured_at": 1794113998.563
+        },
+        "numbered": {
+          "captures": 30907,
+          "first_captured_at": 1794027600.452,
+          "last_captured_at": 1794113997.669
+        }
+      },
+      "stage": "NORMALIZED",
+      "trip_count": 4196
+    },
+    {
+      "boundary_input_only": false,
+      "by_feed": {
+        "ace": 1440,
+        "bdfm": 1440,
+        "g": 1440,
+        "nqrw": 1440,
+        "numbered": 1442,
+        "subway-alerts": 173
+      },
+      "cache_verified": false,
+      "counts": {
+        "alert_snapshots": 173,
+        "alert_versions_before_deduplication": 36902,
+        "projection_entities_after": 973017,
+        "projection_entities_before": 973017,
+        "projection_stops_after": 1109878,
+        "projection_stops_before": 10455411,
+        "projection_trips_after": 349839,
+        "projection_trips_before": 516710,
+        "snapshots": 7375,
+        "state:FRESH": 7374,
+        "state:STALE": 1
+      },
+      "date": "2026-11-08",
+      "elapsed_seconds": 186.69,
+      "fingerprint": {
+        "archive_sha256": "bda1a6adbe6e72fcd9064d1d59a80925e52d9084a9e628be85ddcd2bc6b7be3b",
+        "code_sha256": {
+          "algo/stayorswitch/mta.py": "f7e863de59ef092166767aaa8042bdf2d586892b692bd49f260c35215a0d8f3c",
+          "data/november_2026.py": "ddd589fa2f7508f60334937e5b8975844452093636da05455e625e746cdb778e",
+          "data/october/__init__.py": "630de8bab4998e234cfee460ad14cfc43352dcaa80bb9a8c3cc7a0a92bf056c6",
+          "data/october/labels.py": "e22e2ed808a1ab24ec5cc36f9e1642bc045f9a7abcb7a84d3d00cbe1feda5919",
+          "data/october/prepare.py": "c7566bf7dca048c05a8f576b48b69900dc52d8967e94846ada4ae3f7944c9170",
+          "data/october/projection.py": "504c7074510e1d66c88aaa59b4759cd650945b0630dc69067cc0b3fcb29994a5",
+          "data/october/sources.py": "c895acfe723c1a894ca6f97222114731373a6e5729c17b9b16525e70eaa05957",
+          "data/scripts/prepare_november_2026.py": "e1baae9b9339afe13c6ecfae312e56c8f113ed8d9de49d4bcda642da8861e6f8",
+          "data/scripts/prepare_october.py": "84dfa5470a17606dbebf09e0425c616538b4e8939584af132487c68825033fdc"
+        },
+        "config_sha256": "0c44bc161eda89a5b9859d26cc8a0c3157883f69781eeb45998136fd6bffc74c"
+      },
+      "ordering": "CHRONOLOGICAL_WITHIN_EACH_FEED_NOT_GLOBAL",
+      "outputs": {
+        "alerts": {
+          "bytes": 8228165,
+          "path": "data/processed/november-2026/2026-11-08.alerts.jsonl.gz",
+          "sha256": "aef640c34d6912ab73b5576788818ee6a9550a66bdb9e618e3d3a26ee520e12c"
+        },
+        "receipts": {
+          "bytes": 498397,
+          "path": "data/processed/november-2026/2026-11-08.receipts.json.gz",
+          "sha256": "04ce1a509dba57774c2ebf030ce61eb66797de6890434901f53c2652128ef0ef"
+        },
+        "snapshots": {
+          "bytes": 47140458,
+          "path": "data/processed/november-2026/2026-11-08.snapshots.jsonl.gz",
+          "sha256": "ea31c9f0b69a88ce86c7a9075f76b6f018b91ab627dd061770cbfc155a50568b"
+        },
+        "trips": {
+          "bytes": 59392,
+          "path": "data/processed/november-2026/2026-11-08.trips.json.gz",
+          "sha256": "4d4b68f1f425c0753f67fefa9352fb291f207bcd03c2b68bb2c8858e3f25eec0"
+        }
+      },
+      "raw_counts": {
+        "members": 104649
+      },
+      "raw_train_capture_bounds": {
+        "ace": {
+          "captures": 11521,
+          "first_captured_at": 1794114000.472,
+          "last_captured_at": 1794200392.681
+        },
+        "bdfm": {
+          "captures": 9842,
+          "first_captured_at": 1794114000.469,
+          "last_captured_at": 1794200393.568
+        },
+        "g": {
+          "captures": 8238,
+          "first_captured_at": 1794114008.568,
+          "last_captured_at": 1794200393.554
+        },
+        "nqrw": {
+          "captures": 11516,
+          "first_captured_at": 1794114000.447,
+          "last_captured_at": 1794200395.445
+        },
+        "numbered": {
+          "captures": 31260,
+          "first_captured_at": 1794114000.453,
+          "last_captured_at": 1794200397.673
+        }
+      },
+      "stage": "NORMALIZED",
+      "trip_count": 4086
+    },
+    {
+      "boundary_input_only": false,
+      "by_feed": {
+        "ace": 1440,
+        "bdfm": 1440,
+        "g": 1440,
+        "nqrw": 1440,
+        "numbered": 1442,
+        "subway-alerts": 210
+      },
+      "cache_verified": false,
+      "counts": {
+        "alert_snapshots": 210,
+        "alert_versions_before_deduplication": 40389,
+        "projection_entities_after": 1562693,
+        "projection_entities_before": 1562693,
+        "projection_stops_after": 1848484,
+        "projection_stops_before": 18123302,
+        "projection_trips_after": 569711,
+        "projection_trips_before": 839279,
+        "snapshots": 7412,
+        "state:FRESH": 7411,
+        "state:MISSING": 1
+      },
+      "date": "2026-11-09",
+      "elapsed_seconds": 307.3,
+      "fingerprint": {
+        "archive_sha256": "2359e0ecfbc346d4348afcba335651d0d80df5b14f923b64e6af4136fde1db95",
+        "code_sha256": {
+          "algo/stayorswitch/mta.py": "f7e863de59ef092166767aaa8042bdf2d586892b692bd49f260c35215a0d8f3c",
+          "data/november_2026.py": "ddd589fa2f7508f60334937e5b8975844452093636da05455e625e746cdb778e",
+          "data/october/__init__.py": "630de8bab4998e234cfee460ad14cfc43352dcaa80bb9a8c3cc7a0a92bf056c6",
+          "data/october/labels.py": "e22e2ed808a1ab24ec5cc36f9e1642bc045f9a7abcb7a84d3d00cbe1feda5919",
+          "data/october/prepare.py": "c7566bf7dca048c05a8f576b48b69900dc52d8967e94846ada4ae3f7944c9170",
+          "data/october/projection.py": "504c7074510e1d66c88aaa59b4759cd650945b0630dc69067cc0b3fcb29994a5",
+          "data/october/sources.py": "c895acfe723c1a894ca6f97222114731373a6e5729c17b9b16525e70eaa05957",
+          "data/scripts/prepare_november_2026.py": "e1baae9b9339afe13c6ecfae312e56c8f113ed8d9de49d4bcda642da8861e6f8",
+          "data/scripts/prepare_october.py": "84dfa5470a17606dbebf09e0425c616538b4e8939584af132487c68825033fdc"
+        },
+        "config_sha256": "0c44bc161eda89a5b9859d26cc8a0c3157883f69781eeb45998136fd6bffc74c"
+      },
+      "ordering": "CHRONOLOGICAL_WITHIN_EACH_FEED_NOT_GLOBAL",
+      "outputs": {
+        "alerts": {
+          "bytes": 9224228,
+          "path": "data/processed/november-2026/2026-11-09.alerts.jsonl.gz",
+          "sha256": "fe56e3db3c55c8e11c1d16119006cae4b1084b6d967d48eaf3523ed6a8e94a47"
+        },
+        "receipts": {
+          "bytes": 500669,
+          "path": "data/processed/november-2026/2026-11-09.receipts.json.gz",
+          "sha256": "08eb4e069428306f09d46ce1b72ec2d6b5dd329e2dc68ac92182c1ee269218fe"
+        },
+        "snapshots": {
+          "bytes": 69704098,
+          "path": "data/processed/november-2026/2026-11-09.snapshots.jsonl.gz",
+          "sha256": "c92ceeaabeca2896314a51146fa7082d81d92a18b9d80eb8310be5baa9508b79"
+        },
+        "trips": {
+          "bytes": 97515,
+          "path": "data/processed/november-2026/2026-11-09.trips.json.gz",
+          "sha256": "1cba0b29ad29a746a61a3a0be69c54bebea6d2fd31ba4df0a91291293c810e38"
+        }
+      },
+      "raw_counts": {
+        "members": 102835
+      },
+      "raw_train_capture_bounds": {
+        "ace": {
+          "captures": 11431,
+          "first_captured_at": 1794200402.687,
+          "last_captured_at": 1794286788.564
+        },
+        "bdfm": {
+          "captures": 10170,
+          "first_captured_at": 1794200407.7,
+          "last_captured_at": 1794286795.537
+        },
+        "g": {
+          "captures": 11353,
+          "first_captured_at": 1794200407.709,
+          "last_captured_at": 1794286795.453
+        },
+        "nqrw": {
+          "captures": 9066,
+          "first_captured_at": 1794200408.577,
+          "last_captured_at": 1794286795.447
+        },
+        "numbered": {
+          "captures": 29681,
+          "first_captured_at": 1794200400.477,
+          "last_captured_at": 1794286797.666
+        }
+      },
+      "stage": "NORMALIZED",
+      "trip_count": 6841
+    },
+    {
+      "boundary_input_only": false,
+      "by_feed": {
+        "ace": 1440,
+        "bdfm": 1440,
+        "g": 1440,
+        "nqrw": 1440,
+        "numbered": 1450,
+        "subway-alerts": 214
+      },
+      "cache_verified": false,
+      "counts": {
+        "alert_snapshots": 214,
+        "alert_versions_before_deduplication": 40433,
+        "projection_entities_after": 1590493,
+        "projection_entities_before": 1590493,
+        "projection_stops_after": 1860972,
+        "projection_stops_before": 18353818,
+        "projection_trips_after": 582554,
+        "projection_trips_before": 858333,
+        "snapshots": 7424,
+        "state:FRESH": 7419,
+        "state:MISSING": 4,
+        "state:STALE": 1
+      },
+      "date": "2026-11-10",
+      "elapsed_seconds": 317.98,
+      "fingerprint": {
+        "archive_sha256": "aed23c62a2c481986a2886437d69137a89e74cfb37d618cea24f3f0e8a807f59",
+        "code_sha256": {
+          "algo/stayorswitch/mta.py": "f7e863de59ef092166767aaa8042bdf2d586892b692bd49f260c35215a0d8f3c",
+          "data/november_2026.py": "ddd589fa2f7508f60334937e5b8975844452093636da05455e625e746cdb778e",
+          "data/october/__init__.py": "630de8bab4998e234cfee460ad14cfc43352dcaa80bb9a8c3cc7a0a92bf056c6",
+          "data/october/labels.py": "e22e2ed808a1ab24ec5cc36f9e1642bc045f9a7abcb7a84d3d00cbe1feda5919",
+          "data/october/prepare.py": "c7566bf7dca048c05a8f576b48b69900dc52d8967e94846ada4ae3f7944c9170",
+          "data/october/projection.py": "504c7074510e1d66c88aaa59b4759cd650945b0630dc69067cc0b3fcb29994a5",
+          "data/october/sources.py": "c895acfe723c1a894ca6f97222114731373a6e5729c17b9b16525e70eaa05957",
+          "data/scripts/prepare_november_2026.py": "e1baae9b9339afe13c6ecfae312e56c8f113ed8d9de49d4bcda642da8861e6f8",
+          "data/scripts/prepare_october.py": "84dfa5470a17606dbebf09e0425c616538b4e8939584af132487c68825033fdc"
+        },
+        "config_sha256": "0c44bc161eda89a5b9859d26cc8a0c3157883f69781eeb45998136fd6bffc74c"
+      },
+      "ordering": "CHRONOLOGICAL_WITHIN_EACH_FEED_NOT_GLOBAL",
+      "outputs": {
+        "alerts": {
+          "bytes": 9319570,
+          "path": "data/processed/november-2026/2026-11-10.alerts.jsonl.gz",
+          "sha256": "05dfaf3caaafece8e3c71c34dea3a54023b217de9c8c4540bdcbc6e0d1a68b6b"
+        },
+        "receipts": {
+          "bytes": 517404,
+          "path": "data/processed/november-2026/2026-11-10.receipts.json.gz",
+          "sha256": "76539d8b84e92a07a96c1299835156ce4b120bced5137dde4df076ec70034cd2"
+        },
+        "snapshots": {
+          "bytes": 70708170,
+          "path": "data/processed/november-2026/2026-11-10.snapshots.jsonl.gz",
+          "sha256": "930931e46efeedb30104ce0292a16a2335c10946d0c47065a52aeef880563d65"
+        },
+        "trips": {
+          "bytes": 98015,
+          "path": "data/processed/november-2026/2026-11-10.trips.json.gz",
+          "sha256": "ec0e60798fe8e1d960ae45b7c6cd39c758537b7cd5ac6622e5461f2447fd9489"
+        }
+      },
+      "raw_counts": {
+        "members": 108418
+      },
+      "raw_train_capture_bounds": {
+        "ace": {
+          "captures": 9262,
+          "first_captured_at": 1794286802.688,
+          "last_captured_at": 1794373188.581
+        },
+        "bdfm": {
+          "captures": 11520,
+          "first_captured_at": 1794286805.466,
+          "last_captured_at": 1794373195.454
+        },
+        "g": {
+          "captures": 11520,
+          "first_captured_at": 1794286803.559,
+          "last_captured_at": 1794373195.448
+        },
+        "nqrw": {
+          "captures": 11483,
+          "first_captured_at": 1794286807.692,
+          "last_captured_at": 1794373195.458
+        },
+        "numbered": {
+          "captures": 29912,
+          "first_captured_at": 1794286800.45,
+          "last_captured_at": 1794373197.674
+        }
+      },
+      "stage": "NORMALIZED",
+      "trip_count": 6787
+    },
+    {
+      "boundary_input_only": false,
+      "by_feed": {
+        "ace": 1440,
+        "bdfm": 1440,
+        "g": 1440,
+        "nqrw": 1440,
+        "numbered": 1448,
+        "subway-alerts": 214
+      },
+      "cache_verified": false,
+      "counts": {
+        "alert_snapshots": 214,
+        "alert_versions_before_deduplication": 40025,
+        "projection_entities_after": 1586705,
+        "projection_entities_before": 1586705,
+        "projection_stops_after": 1835396,
+        "projection_stops_before": 18204269,
+        "projection_trips_after": 578672,
+        "projection_trips_before": 855322,
+        "snapshots": 7422,
+        "state:FRESH": 7418,
+        "state:MISSING": 4
+      },
+      "date": "2026-11-11",
+      "elapsed_seconds": 338.41,
+      "fingerprint": {
+        "archive_sha256": "97ec9566e144c1af4dd75b139340052f15f3d57a9e5d6709b40eab9060246656",
+        "code_sha256": {
+          "algo/stayorswitch/mta.py": "f7e863de59ef092166767aaa8042bdf2d586892b692bd49f260c35215a0d8f3c",
+          "data/november_2026.py": "ddd589fa2f7508f60334937e5b8975844452093636da05455e625e746cdb778e",
+          "data/october/__init__.py": "630de8bab4998e234cfee460ad14cfc43352dcaa80bb9a8c3cc7a0a92bf056c6",
+          "data/october/labels.py": "e22e2ed808a1ab24ec5cc36f9e1642bc045f9a7abcb7a84d3d00cbe1feda5919",
+          "data/october/prepare.py": "c7566bf7dca048c05a8f576b48b69900dc52d8967e94846ada4ae3f7944c9170",
+          "data/october/projection.py": "504c7074510e1d66c88aaa59b4759cd650945b0630dc69067cc0b3fcb29994a5",
+          "data/october/sources.py": "c895acfe723c1a894ca6f97222114731373a6e5729c17b9b16525e70eaa05957",
+          "data/scripts/prepare_november_2026.py": "e1baae9b9339afe13c6ecfae312e56c8f113ed8d9de49d4bcda642da8861e6f8",
+          "data/scripts/prepare_october.py": "84dfa5470a17606dbebf09e0425c616538b4e8939584af132487c68825033fdc"
+        },
+        "config_sha256": "0c44bc161eda89a5b9859d26cc8a0c3157883f69781eeb45998136fd6bffc74c"
+      },
+      "ordering": "CHRONOLOGICAL_WITHIN_EACH_FEED_NOT_GLOBAL",
+      "outputs": {
+        "alerts": {
+          "bytes": 9219842,
+          "path": "data/processed/november-2026/2026-11-11.alerts.jsonl.gz",
+          "sha256": "73a2c3dba065d41e7e7c64f5c982651cbd6a091248865dbe70817bf646803984"
+        },
+        "receipts": {
+          "bytes": 535726,
+          "path": "data/processed/november-2026/2026-11-11.receipts.json.gz",
+          "sha256": "93ec509b6a945263abd4a20b276a56ef091393ac85ccfb78f58ba565075e36eb"
+        },
+        "snapshots": {
+          "bytes": 70061963,
+          "path": "data/processed/november-2026/2026-11-11.snapshots.jsonl.gz",
+          "sha256": "64a2d8da7762892447e4c77ddf6429c3e516f44028e97c66515f82b2b5cc3890"
+        },
+        "trips": {
+          "bytes": 96826,
+          "path": "data/processed/november-2026/2026-11-11.trips.json.gz",
+          "sha256": "d6e0105877a2cd1348a7c2ea50cd892d1c765abcfeae905b498013cbf79a710c"
+        }
+      },
+      "raw_counts": {
+        "members": 111173
+      },
+      "raw_train_capture_bounds": {
+        "ace": {
+          "captures": 11519,
+          "first_captured_at": 1794373200.536,
+          "last_captured_at": 1794459595.446
+        },
+        "bdfm": {
+          "captures": 11091,
+          "first_captured_at": 1794373200.459,
+          "last_captured_at": 1794459597.681
+        },
+        "g": {
+          "captures": 11433,
+          "first_captured_at": 1794373202.673,
+          "last_captured_at": 1794459597.673
+        },
+        "nqrw": {
+          "captures": 11517,
+          "first_captured_at": 1794373205.461,
+          "last_captured_at": 1794459597.678
+        },
+        "numbered": {
+          "captures": 30894,
+          "first_captured_at": 1794373200.451,
+          "last_captured_at": 1794459598.58
+        }
+      },
+      "stage": "NORMALIZED",
+      "trip_count": 6707
+    },
+    {
+      "boundary_input_only": false,
+      "by_feed": {
+        "ace": 1440,
+        "bdfm": 1440,
+        "g": 1440,
+        "nqrw": 1440,
+        "numbered": 1448,
+        "subway-alerts": 305
+      },
+      "cache_verified": false,
+      "counts": {
+        "alert_snapshots": 305,
+        "alert_versions_before_deduplication": 67645,
+        "projection_entities_after": 1555904,
+        "projection_entities_before": 1555904,
+        "projection_stops_after": 1821888,
+        "projection_stops_before": 18091975,
+        "projection_trips_after": 564617,
+        "projection_trips_before": 840166,
+        "snapshots": 7513,
+        "state:FRESH": 7509,
+        "state:MISSING": 4
+      },
+      "date": "2026-11-12",
+      "elapsed_seconds": 327.55,
+      "fingerprint": {
+        "archive_sha256": "20778f547f8b75df7313929197aa8c5df1d9c1cadd14c9d79b63db0a0bdf13e6",
+        "code_sha256": {
+          "algo/stayorswitch/mta.py": "f7e863de59ef092166767aaa8042bdf2d586892b692bd49f260c35215a0d8f3c",
+          "data/november_2026.py": "ddd589fa2f7508f60334937e5b8975844452093636da05455e625e746cdb778e",
+          "data/october/__init__.py": "630de8bab4998e234cfee460ad14cfc43352dcaa80bb9a8c3cc7a0a92bf056c6",
+          "data/october/labels.py": "e22e2ed808a1ab24ec5cc36f9e1642bc045f9a7abcb7a84d3d00cbe1feda5919",
+          "data/october/prepare.py": "c7566bf7dca048c05a8f576b48b69900dc52d8967e94846ada4ae3f7944c9170",
+          "data/october/projection.py": "504c7074510e1d66c88aaa59b4759cd650945b0630dc69067cc0b3fcb29994a5",
+          "data/october/sources.py": "c895acfe723c1a894ca6f97222114731373a6e5729c17b9b16525e70eaa05957",
+          "data/scripts/prepare_november_2026.py": "e1baae9b9339afe13c6ecfae312e56c8f113ed8d9de49d4bcda642da8861e6f8",
+          "data/scripts/prepare_october.py": "84dfa5470a17606dbebf09e0425c616538b4e8939584af132487c68825033fdc"
+        },
+        "config_sha256": "0c44bc161eda89a5b9859d26cc8a0c3157883f69781eeb45998136fd6bffc74c"
+      },
+      "ordering": "CHRONOLOGICAL_WITHIN_EACH_FEED_NOT_GLOBAL",
+      "outputs": {
+        "alerts": {
+          "bytes": 15368521,
+          "path": "data/processed/november-2026/2026-11-12.alerts.jsonl.gz",
+          "sha256": "0e302dbca7d47f62826ee704b27f9510ab535cad2d2d2c3aac5be7ed59dd791a"
+        },
+        "receipts": {
+          "bytes": 495891,
+          "path": "data/processed/november-2026/2026-11-12.receipts.json.gz",
+          "sha256": "60c7bab12b394eeadc6f8a2f141d152c0cff4a8d312e185b1e49be7cc7c03323"
+        },
+        "snapshots": {
+          "bytes": 75421207,
+          "path": "data/processed/november-2026/2026-11-12.snapshots.jsonl.gz",
+          "sha256": "5179df7a3c32fdc9ac79ed6e61eb0e25291c65bb8ef6ee5f3c02e0a47b4e1a1f"
+        },
+        "trips": {
+          "bytes": 98025,
+          "path": "data/processed/november-2026/2026-11-12.trips.json.gz",
+          "sha256": "6cf7277ac63af77a218251af7fd1b56c88694cb1734b26f1911a70762eceb84f"
+        }
+      },
+      "raw_counts": {
+        "members": 100461
+      },
+      "raw_train_capture_bounds": {
+        "ace": {
+          "captures": 11518,
+          "first_captured_at": 1794459605.473,
+          "last_captured_at": 1794545992.678
+        },
+        "bdfm": {
+          "captures": 9597,
+          "first_captured_at": 1794459600.536,
+          "last_captured_at": 1794545997.691
+        },
+        "g": {
+          "captures": 8723,
+          "first_captured_at": 1794459600.535,
+          "last_captured_at": 1794545997.663
+        },
+        "nqrw": {
+          "captures": 10006,
+          "first_captured_at": 1794459600.446,
+          "last_captured_at": 1794545997.867
+        },
+        "numbered": {
+          "captures": 30530,
+          "first_captured_at": 1794459600.46,
+          "last_captured_at": 1794545998.57
+        }
+      },
+      "stage": "NORMALIZED",
+      "trip_count": 6769
+    },
+    {
+      "boundary_input_only": false,
+      "by_feed": {
+        "ace": 1440,
+        "bdfm": 1440,
+        "g": 1440,
+        "nqrw": 1440,
+        "numbered": 1444,
+        "subway-alerts": 301
+      },
+      "cache_verified": false,
+      "counts": {
+        "alert_snapshots": 301,
+        "alert_versions_before_deduplication": 66286,
+        "projection_entities_after": 1537419,
+        "projection_entities_before": 1537419,
+        "projection_stops_after": 1808838,
+        "projection_stops_before": 17957046,
+        "projection_trips_after": 558779,
+        "projection_trips_before": 830445,
+        "snapshots": 7505,
+        "state:FRESH": 7503,
+        "state:MISSING": 2
+      },
+      "date": "2026-11-13",
+      "elapsed_seconds": 323.6,
+      "fingerprint": {
+        "archive_sha256": "df7f6b605aaf61e249301dfa4bb3ddb93b501800b705b90578ee9b45a5d1a11d",
+        "code_sha256": {
+          "algo/stayorswitch/mta.py": "f7e863de59ef092166767aaa8042bdf2d586892b692bd49f260c35215a0d8f3c",
+          "data/november_2026.py": "ddd589fa2f7508f60334937e5b8975844452093636da05455e625e746cdb778e",
+          "data/october/__init__.py": "630de8bab4998e234cfee460ad14cfc43352dcaa80bb9a8c3cc7a0a92bf056c6",
+          "data/october/labels.py": "e22e2ed808a1ab24ec5cc36f9e1642bc045f9a7abcb7a84d3d00cbe1feda5919",
+          "data/october/prepare.py": "c7566bf7dca048c05a8f576b48b69900dc52d8967e94846ada4ae3f7944c9170",
+          "data/october/projection.py": "504c7074510e1d66c88aaa59b4759cd650945b0630dc69067cc0b3fcb29994a5",
+          "data/october/sources.py": "c895acfe723c1a894ca6f97222114731373a6e5729c17b9b16525e70eaa05957",
+          "data/scripts/prepare_november_2026.py": "e1baae9b9339afe13c6ecfae312e56c8f113ed8d9de49d4bcda642da8861e6f8",
+          "data/scripts/prepare_october.py": "84dfa5470a17606dbebf09e0425c616538b4e8939584af132487c68825033fdc"
+        },
+        "config_sha256": "0c44bc161eda89a5b9859d26cc8a0c3157883f69781eeb45998136fd6bffc74c"
+      },
+      "ordering": "CHRONOLOGICAL_WITHIN_EACH_FEED_NOT_GLOBAL",
+      "outputs": {
+        "alerts": {
+          "bytes": 15058800,
+          "path": "data/processed/november-2026/2026-11-13.alerts.jsonl.gz",
+          "sha256": "6753b841f4e91872c7cada832e79170f49b5802c2775aa595c7a4aa1152c1352"
+        },
+        "receipts": {
+          "bytes": 523974,
+          "path": "data/processed/november-2026/2026-11-13.receipts.json.gz",
+          "sha256": "1f7df163a7444d6a62f734fff25fb0f161f752d8fe208579b8e7ebc3e701224c"
+        },
+        "snapshots": {
+          "bytes": 74393149,
+          "path": "data/processed/november-2026/2026-11-13.snapshots.jsonl.gz",
+          "sha256": "29a04405b63a6d698d2c59524fef04b8c82ae9e2e862bcc36fc98c8fcc71d649"
+        },
+        "trips": {
+          "bytes": 98404,
+          "path": "data/processed/november-2026/2026-11-13.trips.json.gz",
+          "sha256": "14b218e362a57f31564725666ffd62b095885973be2c6b18b7191adae9662ac9"
+        }
+      },
+      "raw_counts": {
+        "members": 108766
+      },
+      "raw_train_capture_bounds": {
+        "ace": {
+          "captures": 9445,
+          "first_captured_at": 1794546005.537,
+          "last_captured_at": 1794632390.535
+        },
+        "bdfm": {
+          "captures": 11521,
+          "first_captured_at": 1794546000.451,
+          "last_captured_at": 1794632397.671
+        },
+        "g": {
+          "captures": 11521,
+          "first_captured_at": 1794546000.449,
+          "last_captured_at": 1794632398.578
+        },
+        "nqrw": {
+          "captures": 11225,
+          "first_captured_at": 1794546000.469,
+          "last_captured_at": 1794632398.582
+        },
+        "numbered": {
+          "captures": 30793,
+          "first_captured_at": 1794546000.447,
+          "last_captured_at": 1794632397.666
+        }
+      },
+      "stage": "NORMALIZED",
+      "trip_count": 6809
+    },
+    {
+      "boundary_input_only": false,
+      "by_feed": {
+        "ace": 1440,
+        "bdfm": 1440,
+        "g": 1440,
+        "nqrw": 1440,
+        "numbered": 1444,
+        "subway-alerts": 185
+      },
+      "cache_verified": false,
+      "counts": {
+        "alert_snapshots": 185,
+        "alert_versions_before_deduplication": 40827,
+        "projection_entities_after": 1004963,
+        "projection_entities_before": 1004963,
+        "projection_stops_after": 1102781,
+        "projection_stops_before": 10826909,
+        "projection_trips_after": 357357,
+        "projection_trips_before": 537247,
+        "snapshots": 7389,
+        "state:FRESH": 7387,
+        "state:MISSING": 1,
+        "state:STALE": 1
+      },
+      "date": "2026-11-14",
+      "elapsed_seconds": 210.35,
+      "fingerprint": {
+        "archive_sha256": "c376c3459183a6cc944798f73d713565f80642c9c8bc237696cf697774432bc1",
+        "code_sha256": {
+          "algo/stayorswitch/mta.py": "f7e863de59ef092166767aaa8042bdf2d586892b692bd49f260c35215a0d8f3c",
+          "data/november_2026.py": "ddd589fa2f7508f60334937e5b8975844452093636da05455e625e746cdb778e",
+          "data/october/__init__.py": "630de8bab4998e234cfee460ad14cfc43352dcaa80bb9a8c3cc7a0a92bf056c6",
+          "data/october/labels.py": "e22e2ed808a1ab24ec5cc36f9e1642bc045f9a7abcb7a84d3d00cbe1feda5919",
+          "data/october/prepare.py": "c7566bf7dca048c05a8f576b48b69900dc52d8967e94846ada4ae3f7944c9170",
+          "data/october/projection.py": "504c7074510e1d66c88aaa59b4759cd650945b0630dc69067cc0b3fcb29994a5",
+          "data/october/sources.py": "c895acfe723c1a894ca6f97222114731373a6e5729c17b9b16525e70eaa05957",
+          "data/scripts/prepare_november_2026.py": "e1baae9b9339afe13c6ecfae312e56c8f113ed8d9de49d4bcda642da8861e6f8",
+          "data/scripts/prepare_october.py": "84dfa5470a17606dbebf09e0425c616538b4e8939584af132487c68825033fdc"
+        },
+        "config_sha256": "0c44bc161eda89a5b9859d26cc8a0c3157883f69781eeb45998136fd6bffc74c"
+      },
+      "ordering": "CHRONOLOGICAL_WITHIN_EACH_FEED_NOT_GLOBAL",
+      "outputs": {
+        "alerts": {
+          "bytes": 9218407,
+          "path": "data/processed/november-2026/2026-11-14.alerts.jsonl.gz",
+          "sha256": "00e9b962ab1d8f0271ee0e53fd8f840392b304bd61fa9ab4cc2b2fe21579684e"
+        },
+        "receipts": {
+          "bytes": 527865,
+          "path": "data/processed/november-2026/2026-11-14.receipts.json.gz",
+          "sha256": "51e15f43c4c7490b2711e3b18d04cae35971c487c1c2aa5d21e176d49dc7dffd"
+        },
+        "snapshots": {
+          "bytes": 48645823,
+          "path": "data/processed/november-2026/2026-11-14.snapshots.jsonl.gz",
+          "sha256": "bda3e08b87c4bc5de4bbbfaaacd4530c2d2796f54de8f9712ed718867178bdb7"
+        },
+        "trips": {
+          "bytes": 61545,
+          "path": "data/processed/november-2026/2026-11-14.trips.json.gz",
+          "sha256": "4e0e456de34f48a0611a8cf354d77f8e6a67f671dcd836c0cf6284c919a2c760"
+        }
+      },
+      "raw_counts": {
+        "members": 111154
+      },
+      "raw_train_capture_bounds": {
+        "ace": {
+          "captures": 11518,
+          "first_captured_at": 1794632402.674,
+          "last_captured_at": 1794718798.573
+        },
+        "bdfm": {
+          "captures": 11106,
+          "first_captured_at": 1794632400.46,
+          "last_captured_at": 1794718798.564
+        },
+        "g": {
+          "captures": 11518,
+          "first_captured_at": 1794632400.469,
+          "last_captured_at": 1794718788.555
+        },
+        "nqrw": {
+          "captures": 11517,
+          "first_captured_at": 1794632400.451,
+          "last_captured_at": 1794718788.565
+        },
+        "numbered": {
+          "captures": 30753,
+          "first_captured_at": 1794632400.528,
+          "last_captured_at": 1794718798.565
+        }
+      },
+      "stage": "NORMALIZED",
+      "trip_count": 4239
+    },
+    {
+      "boundary_input_only": false,
+      "by_feed": {
+        "ace": 1440,
+        "bdfm": 1440,
+        "g": 1440,
+        "nqrw": 1440,
+        "numbered": 1440,
+        "subway-alerts": 188
+      },
+      "cache_verified": false,
+      "counts": {
+        "alert_snapshots": 188,
+        "alert_versions_before_deduplication": 40862,
+        "projection_entities_after": 998017,
+        "projection_entities_before": 998017,
+        "projection_stops_after": 1024896,
+        "projection_stops_before": 10054048,
+        "projection_trips_after": 351453,
+        "projection_trips_before": 529610,
+        "snapshots": 7388,
+        "state:FRESH": 7388
+      },
+      "date": "2026-11-15",
+      "elapsed_seconds": 186.63,
+      "fingerprint": {
+        "archive_sha256": "b872ef0f313862f97384babdb2b106e0bb930bd46dcab2e5a9fb448d7258d8be",
+        "code_sha256": {
+          "algo/stayorswitch/mta.py": "f7e863de59ef092166767aaa8042bdf2d586892b692bd49f260c35215a0d8f3c",
+          "data/november_2026.py": "ddd589fa2f7508f60334937e5b8975844452093636da05455e625e746cdb778e",
+          "data/october/__init__.py": "630de8bab4998e234cfee460ad14cfc43352dcaa80bb9a8c3cc7a0a92bf056c6",
+          "data/october/labels.py": "e22e2ed808a1ab24ec5cc36f9e1642bc045f9a7abcb7a84d3d00cbe1feda5919",
+          "data/october/prepare.py": "c7566bf7dca048c05a8f576b48b69900dc52d8967e94846ada4ae3f7944c9170",
+          "data/october/projection.py": "504c7074510e1d66c88aaa59b4759cd650945b0630dc69067cc0b3fcb29994a5",
+          "data/october/sources.py": "c895acfe723c1a894ca6f97222114731373a6e5729c17b9b16525e70eaa05957",
+          "data/scripts/prepare_november_2026.py": "e1baae9b9339afe13c6ecfae312e56c8f113ed8d9de49d4bcda642da8861e6f8",
+          "data/scripts/prepare_october.py": "84dfa5470a17606dbebf09e0425c616538b4e8939584af132487c68825033fdc"
+        },
+        "config_sha256": "0c44bc161eda89a5b9859d26cc8a0c3157883f69781eeb45998136fd6bffc74c"
+      },
+      "ordering": "CHRONOLOGICAL_WITHIN_EACH_FEED_NOT_GLOBAL",
+      "outputs": {
+        "alerts": {
+          "bytes": 9267710,
+          "path": "data/processed/november-2026/2026-11-15.alerts.jsonl.gz",
+          "sha256": "87f130b1c432a0f0945d949a54afb0dd4c9f04f1dbe3842cfc4646d6a68ef1ae"
+        },
+        "receipts": {
+          "bytes": 509958,
+          "path": "data/processed/november-2026/2026-11-15.receipts.json.gz",
+          "sha256": "75497d201fd354bd8648b4af7e214e4285e630d9254aa21224a9e8b3a7fc0c56"
+        },
+        "snapshots": {
+          "bytes": 47200699,
+          "path": "data/processed/november-2026/2026-11-15.snapshots.jsonl.gz",
+          "sha256": "edc2d9677bb27c9421af93bf7f7c27f7394c37dfa98f454093165bcd046d6ce3"
+        },
+        "trips": {
+          "bytes": 61482,
+          "path": "data/processed/november-2026/2026-11-15.trips.json.gz",
+          "sha256": "dfb036549805721b26364ec957413a5c72809d44958b77c4d2829b337402c454"
+        }
+      },
+      "raw_counts": {
+        "members": 106883
+      },
+      "raw_train_capture_bounds": {
+        "ace": {
+          "captures": 11509,
+          "first_captured_at": 1794718800.454,
+          "last_captured_at": 1794805195.442
+        },
+        "bdfm": {
+          "captures": 9480,
+          "first_captured_at": 1794718800.449,
+          "last_captured_at": 1794805197.671
+        },
+        "g": {
+          "captures": 11032,
+          "first_captured_at": 1794718800.447,
+          "last_captured_at": 1794805185.463
+        },
+        "nqrw": {
+          "captures": 11004,
+          "first_captured_at": 1794718800.441,
+          "last_captured_at": 1794805185.538
+        },
+        "numbered": {
+          "captures": 30645,
+          "first_captured_at": 1794718800.533,
+          "last_captured_at": 1794805198.567
+        }
+      },
+      "stage": "NORMALIZED",
+      "trip_count": 4184
+    },
+    {
+      "boundary_input_only": false,
+      "by_feed": {
+        "ace": 1440,
+        "bdfm": 1440,
+        "g": 1440,
+        "nqrw": 1440,
+        "numbered": 1444,
+        "subway-alerts": 195
+      },
+      "cache_verified": false,
+      "counts": {
+        "alert_snapshots": 195,
+        "alert_versions_before_deduplication": 39028,
+        "projection_entities_after": 1668252,
+        "projection_entities_before": 1668252,
+        "projection_stops_after": 1859092,
+        "projection_stops_before": 17945510,
+        "projection_trips_after": 621256,
+        "projection_trips_before": 892654,
+        "snapshots": 7399,
+        "state:FRESH": 7397,
+        "state:MISSING": 2
+      },
+      "date": "2026-11-16",
+      "elapsed_seconds": 319.02,
+      "fingerprint": {
+        "archive_sha256": "fa6075e1bd5df6eb49cdbb15f51057986e595255cf7092e3a3f44a3ad6d70ddc",
+        "code_sha256": {
+          "algo/stayorswitch/mta.py": "f7e863de59ef092166767aaa8042bdf2d586892b692bd49f260c35215a0d8f3c",
+          "data/november_2026.py": "ddd589fa2f7508f60334937e5b8975844452093636da05455e625e746cdb778e",
+          "data/october/__init__.py": "630de8bab4998e234cfee460ad14cfc43352dcaa80bb9a8c3cc7a0a92bf056c6",
+          "data/october/labels.py": "e22e2ed808a1ab24ec5cc36f9e1642bc045f9a7abcb7a84d3d00cbe1feda5919",
+          "data/october/prepare.py": "c7566bf7dca048c05a8f576b48b69900dc52d8967e94846ada4ae3f7944c9170",
+          "data/october/projection.py": "504c7074510e1d66c88aaa59b4759cd650945b0630dc69067cc0b3fcb29994a5",
+          "data/october/sources.py": "c895acfe723c1a894ca6f97222114731373a6e5729c17b9b16525e70eaa05957",
+          "data/scripts/prepare_november_2026.py": "e1baae9b9339afe13c6ecfae312e56c8f113ed8d9de49d4bcda642da8861e6f8",
+          "data/scripts/prepare_october.py": "84dfa5470a17606dbebf09e0425c616538b4e8939584af132487c68825033fdc"
+        },
+        "config_sha256": "0c44bc161eda89a5b9859d26cc8a0c3157883f69781eeb45998136fd6bffc74c"
+      },
+      "ordering": "CHRONOLOGICAL_WITHIN_EACH_FEED_NOT_GLOBAL",
+      "outputs": {
+        "alerts": {
+          "bytes": 9045104,
+          "path": "data/processed/november-2026/2026-11-16.alerts.jsonl.gz",
+          "sha256": "9c4ddbf065cbd7720dca6ad76929e52c4fc963c028495a22cab6c5b929b766c4"
+        },
+        "receipts": {
+          "bytes": 486843,
+          "path": "data/processed/november-2026/2026-11-16.receipts.json.gz",
+          "sha256": "ce19d28f2a0cfae7d027fe3af097ed5f4e56d6a64bc00f9fe69cf28be4e64eb4"
+        },
+        "snapshots": {
+          "bytes": 72417590,
+          "path": "data/processed/november-2026/2026-11-16.snapshots.jsonl.gz",
+          "sha256": "1949286aa2105927951f08906d269aad8f94a56fb3c2ad489bd4e848ea445bbf"
+        },
+        "trips": {
+          "bytes": 98744,
+          "path": "data/processed/november-2026/2026-11-16.trips.json.gz",
+          "sha256": "307cb9fb1f77e20d2554a62d2a8eadfdb8a8798ca81d8310551bc303ed1c06fe"
+        }
+      },
+      "raw_counts": {
+        "members": 100163
+      },
+      "raw_train_capture_bounds": {
+        "ace": {
+          "captures": 9234,
+          "first_captured_at": 1794805207.734,
+          "last_captured_at": 1794891592.668
+        },
+        "bdfm": {
+          "captures": 11521,
+          "first_captured_at": 1794805200.45,
+          "last_captured_at": 1794891593.559
+        },
+        "g": {
+          "captures": 8760,
+          "first_captured_at": 1794805200.455,
+          "last_captured_at": 1794891597.672
+        },
+        "nqrw": {
+          "captures": 9322,
+          "first_captured_at": 1794805200.446,
+          "last_captured_at": 1794891597.673
+        },
+        "numbered": {
+          "captures": 30457,
+          "first_captured_at": 1794805200.453,
+          "last_captured_at": 1794891597.667
+        }
+      },
+      "stage": "NORMALIZED",
+      "trip_count": 6826
+    },
+    {
+      "boundary_input_only": false,
+      "by_feed": {
+        "ace": 1440,
+        "bdfm": 1440,
+        "g": 1440,
+        "nqrw": 1440,
+        "numbered": 1448,
+        "subway-alerts": 251
+      },
+      "cache_verified": false,
+      "counts": {
+        "alert_snapshots": 251,
+        "alert_versions_before_deduplication": 49092,
+        "projection_entities_after": 1591792,
+        "projection_entities_before": 1591792,
+        "projection_stops_after": 1811268,
+        "projection_stops_before": 18146188,
+        "projection_trips_after": 591041,
+        "projection_trips_before": 859796,
+        "snapshots": 7459,
+        "state:FRESH": 7455,
+        "state:MISSING": 3,
+        "state:STALE": 1
+      },
+      "date": "2026-11-17",
+      "elapsed_seconds": 326.34,
+      "fingerprint": {
+        "archive_sha256": "9e110c39667c7fa05b3b6a843509be89a4a7026706563ac7d4ecf1bc907fd8f6",
+        "code_sha256": {
+          "algo/stayorswitch/mta.py": "f7e863de59ef092166767aaa8042bdf2d586892b692bd49f260c35215a0d8f3c",
+          "data/november_2026.py": "ddd589fa2f7508f60334937e5b8975844452093636da05455e625e746cdb778e",
+          "data/october/__init__.py": "630de8bab4998e234cfee460ad14cfc43352dcaa80bb9a8c3cc7a0a92bf056c6",
+          "data/october/labels.py": "e22e2ed808a1ab24ec5cc36f9e1642bc045f9a7abcb7a84d3d00cbe1feda5919",
+          "data/october/prepare.py": "c7566bf7dca048c05a8f576b48b69900dc52d8967e94846ada4ae3f7944c9170",
+          "data/october/projection.py": "504c7074510e1d66c88aaa59b4759cd650945b0630dc69067cc0b3fcb29994a5",
+          "data/october/sources.py": "c895acfe723c1a894ca6f97222114731373a6e5729c17b9b16525e70eaa05957",
+          "data/scripts/prepare_november_2026.py": "e1baae9b9339afe13c6ecfae312e56c8f113ed8d9de49d4bcda642da8861e6f8",
+          "data/scripts/prepare_october.py": "84dfa5470a17606dbebf09e0425c616538b4e8939584af132487c68825033fdc"
+        },
+        "config_sha256": "0c44bc161eda89a5b9859d26cc8a0c3157883f69781eeb45998136fd6bffc74c"
+      },
+      "ordering": "CHRONOLOGICAL_WITHIN_EACH_FEED_NOT_GLOBAL",
+      "outputs": {
+        "alerts": {
+          "bytes": 11342865,
+          "path": "data/processed/november-2026/2026-11-17.alerts.jsonl.gz",
+          "sha256": "a663456e4d599687a806f6e74dc7e95d2487fd2067dc12e1c1a1bc0f09014ea4"
+        },
+        "receipts": {
+          "bytes": 534239,
+          "path": "data/processed/november-2026/2026-11-17.receipts.json.gz",
+          "sha256": "a8318579ba17c70ae8f4f69ce2671d63e19021b680f3c7874fd7b2bff57802f9"
+        },
+        "snapshots": {
+          "bytes": 72029830,
+          "path": "data/processed/november-2026/2026-11-17.snapshots.jsonl.gz",
+          "sha256": "3043ed6bd23902c0114970543c7b5efe1cc98b1ccea10c617dd0c29cf5c978ba"
+        },
+        "trips": {
+          "bytes": 104580,
+          "path": "data/processed/november-2026/2026-11-17.trips.json.gz",
+          "sha256": "fa3ef71c52f5a74b41d66ad80ec63e2fa2bf37eab6d0c5d30682366654f8ef00"
+        }
+      },
+      "raw_counts": {
+        "members": 111084
+      },
+      "raw_train_capture_bounds": {
+        "ace": {
+          "captures": 11520,
+          "first_captured_at": 1794891605.45,
+          "last_captured_at": 1794977993.583
+        },
+        "bdfm": {
+          "captures": 11519,
+          "first_captured_at": 1794891602.689,
+          "last_captured_at": 1794977992.712
+        },
+        "g": {
+          "captures": 11517,
+          "first_captured_at": 1794891600.464,
+          "last_captured_at": 1794977995.445
+        },
+        "nqrw": {
+          "captures": 11519,
+          "first_captured_at": 1794891600.445,
+          "last_captured_at": 1794977995.44
+        },
+        "numbered": {
+          "captures": 30222,
+          "first_captured_at": 1794891600.471,
+          "last_captured_at": 1794977997.689
+        }
+      },
+      "stage": "NORMALIZED",
+      "trip_count": 7277
+    },
+    {
+      "boundary_input_only": false,
+      "by_feed": {
+        "ace": 1440,
+        "bdfm": 1440,
+        "g": 1440,
+        "nqrw": 1440,
+        "numbered": 1451,
+        "subway-alerts": 254
+      },
+      "cache_verified": false,
+      "counts": {
+        "alert_snapshots": 254,
+        "alert_versions_before_deduplication": 52427,
+        "projection_entities_after": 1552628,
+        "projection_entities_before": 1552628,
+        "projection_stops_after": 1800057,
+        "projection_stops_before": 18185853,
+        "projection_trips_after": 576520,
+        "projection_trips_before": 841895,
+        "snapshots": 7465,
+        "state:FRESH": 7459,
+        "state:MISSING": 6
+      },
+      "date": "2026-11-18",
+      "elapsed_seconds": 304.39,
+      "fingerprint": {
+        "archive_sha256": "cef6a11907192ae2a9c6097ae37b39de5ee701ebe54a22940e5cc2f2e740eab2",
+        "code_sha256": {
+          "algo/stayorswitch/mta.py": "f7e863de59ef092166767aaa8042bdf2d586892b692bd49f260c35215a0d8f3c",
+          "data/november_2026.py": "ddd589fa2f7508f60334937e5b8975844452093636da05455e625e746cdb778e",
+          "data/october/__init__.py": "630de8bab4998e234cfee460ad14cfc43352dcaa80bb9a8c3cc7a0a92bf056c6",
+          "data/october/labels.py": "e22e2ed808a1ab24ec5cc36f9e1642bc045f9a7abcb7a84d3d00cbe1feda5919",
+          "data/october/prepare.py": "c7566bf7dca048c05a8f576b48b69900dc52d8967e94846ada4ae3f7944c9170",
+          "data/october/projection.py": "504c7074510e1d66c88aaa59b4759cd650945b0630dc69067cc0b3fcb29994a5",
+          "data/october/sources.py": "c895acfe723c1a894ca6f97222114731373a6e5729c17b9b16525e70eaa05957",
+          "data/scripts/prepare_november_2026.py": "e1baae9b9339afe13c6ecfae312e56c8f113ed8d9de49d4bcda642da8861e6f8",
+          "data/scripts/prepare_october.py": "84dfa5470a17606dbebf09e0425c616538b4e8939584af132487c68825033fdc"
+        },
+        "config_sha256": "0c44bc161eda89a5b9859d26cc8a0c3157883f69781eeb45998136fd6bffc74c"
+      },
+      "ordering": "CHRONOLOGICAL_WITHIN_EACH_FEED_NOT_GLOBAL",
+      "outputs": {
+        "alerts": {
+          "bytes": 11791687,
+          "path": "data/processed/november-2026/2026-11-18.alerts.jsonl.gz",
+          "sha256": "6481fbd930dffe0c2bc3abeb6c15d0304de40ccc20c4913d96976b8a80ff582d"
+        },
+        "receipts": {
+          "bytes": 529127,
+          "path": "data/processed/november-2026/2026-11-18.receipts.json.gz",
+          "sha256": "407416e2e446b798fd0cbb8312dee9e90f7f0be540bf3cf99739b53562ead343"
+        },
+        "snapshots": {
+          "bytes": 71765960,
+          "path": "data/processed/november-2026/2026-11-18.snapshots.jsonl.gz",
+          "sha256": "74eb026a84a62d666798a89813df25198a5189d920fdb327503cb9ab3497e73b"
+        },
+        "trips": {
+          "bytes": 103500,
+          "path": "data/processed/november-2026/2026-11-18.trips.json.gz",
+          "sha256": "52953ffb7e54bd8e6a94fa79800209c63eed9687baeff5a92afffa851e8da480"
+        }
+      },
+      "raw_counts": {
+        "members": 110123
+      },
+      "raw_train_capture_bounds": {
+        "ace": {
+          "captures": 11519,
+          "first_captured_at": 1794978002.682,
+          "last_captured_at": 1795064395.471
+        },
+        "bdfm": {
+          "captures": 10161,
+          "first_captured_at": 1794978002.671,
+          "last_captured_at": 1795064388.558
+        },
+        "g": {
+          "captures": 11520,
+          "first_captured_at": 1794978002.663,
+          "last_captured_at": 1795064392.66
+        },
+        "nqrw": {
+          "captures": 11520,
+          "first_captured_at": 1794978002.698,
+          "last_captured_at": 1795064392.673
+        },
+        "numbered": {
+          "captures": 30587,
+          "first_captured_at": 1794978000.498,
+          "last_captured_at": 1795064397.682
+        }
+      },
+      "stage": "NORMALIZED",
+      "trip_count": 7161
+    },
+    {
+      "boundary_input_only": false,
+      "by_feed": {
+        "ace": 1440,
+        "bdfm": 1440,
+        "g": 1440,
+        "nqrw": 1440,
+        "numbered": 1444,
+        "subway-alerts": 292
+      },
+      "cache_verified": false,
+      "counts": {
+        "alert_snapshots": 292,
+        "alert_versions_before_deduplication": 68551,
+        "projection_entities_after": 1559799,
+        "projection_entities_before": 1559799,
+        "projection_stops_after": 1816764,
+        "projection_stops_before": 18050049,
+        "projection_trips_after": 574788,
+        "projection_trips_before": 841108,
+        "snapshots": 7496,
+        "state:FRESH": 7494,
+        "state:MISSING": 2
+      },
+      "date": "2026-11-19",
+      "elapsed_seconds": 289.89,
+      "fingerprint": {
+        "archive_sha256": "521b19afb6bc97cc089940214dd7172f1c3108d8bfb8b6c9ecb63e9422ab212b",
+        "code_sha256": {
+          "algo/stayorswitch/mta.py": "f7e863de59ef092166767aaa8042bdf2d586892b692bd49f260c35215a0d8f3c",
+          "data/november_2026.py": "ddd589fa2f7508f60334937e5b8975844452093636da05455e625e746cdb778e",
+          "data/october/__init__.py": "630de8bab4998e234cfee460ad14cfc43352dcaa80bb9a8c3cc7a0a92bf056c6",
+          "data/october/labels.py": "e22e2ed808a1ab24ec5cc36f9e1642bc045f9a7abcb7a84d3d00cbe1feda5919",
+          "data/october/prepare.py": "c7566bf7dca048c05a8f576b48b69900dc52d8967e94846ada4ae3f7944c9170",
+          "data/october/projection.py": "504c7074510e1d66c88aaa59b4759cd650945b0630dc69067cc0b3fcb29994a5",
+          "data/october/sources.py": "c895acfe723c1a894ca6f97222114731373a6e5729c17b9b16525e70eaa05957",
+          "data/scripts/prepare_november_2026.py": "e1baae9b9339afe13c6ecfae312e56c8f113ed8d9de49d4bcda642da8861e6f8",
+          "data/scripts/prepare_october.py": "84dfa5470a17606dbebf09e0425c616538b4e8939584af132487c68825033fdc"
+        },
+        "config_sha256": "0c44bc161eda89a5b9859d26cc8a0c3157883f69781eeb45998136fd6bffc74c"
+      },
+      "ordering": "CHRONOLOGICAL_WITHIN_EACH_FEED_NOT_GLOBAL",
+      "outputs": {
+        "alerts": {
+          "bytes": 15107008,
+          "path": "data/processed/november-2026/2026-11-19.alerts.jsonl.gz",
+          "sha256": "6d7ca70aa518531e1ef6b73502144b97d8df1e81ab2c26119253911d2aecc535"
+        },
+        "receipts": {
+          "bytes": 504953,
+          "path": "data/processed/november-2026/2026-11-19.receipts.json.gz",
+          "sha256": "4592627674ffc9f61a4bbc85ead61befa129d3a6ccb1fff276eb4acf14306df6"
+        },
+        "snapshots": {
+          "bytes": 75280028,
+          "path": "data/processed/november-2026/2026-11-19.snapshots.jsonl.gz",
+          "sha256": "b7b574b9be6ed2e5d7ca8699a10e4ebdb7bdf3563a9347e2341ef3b587e2afa6"
+        },
+        "trips": {
+          "bytes": 101573,
+          "path": "data/processed/november-2026/2026-11-19.trips.json.gz",
+          "sha256": "e96656193729a43a371294c5a517f594ffe56ea928cfda59198634849b06c466"
+        }
+      },
+      "raw_counts": {
+        "members": 103932
+      },
+      "raw_train_capture_bounds": {
+        "ace": {
+          "captures": 10302,
+          "first_captured_at": 1795064400.448,
+          "last_captured_at": 1795150795.446
+        },
+        "bdfm": {
+          "captures": 9915,
+          "first_captured_at": 1795064403.568,
+          "last_captured_at": 1795150790.482
+        },
+        "g": {
+          "captures": 10670,
+          "first_captured_at": 1795064402.685,
+          "last_captured_at": 1795150790.463
+        },
+        "nqrw": {
+          "captures": 10107,
+          "first_captured_at": 1795064403.569,
+          "last_captured_at": 1795150790.443
+        },
+        "numbered": {
+          "captures": 30848,
+          "first_captured_at": 1795064400.444,
+          "last_captured_at": 1795150797.678
+        }
+      },
+      "stage": "NORMALIZED",
+      "trip_count": 7024
+    }
+  ],
+  "following_boundary": {
+    "date": "2026-11-20",
+    "error": "HTTPStatusError: Client error '404 Not Found' for url 'https://subwaydata.nyc/data/subwaydatanyc_2026-11-20_csv.tar.xz'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/404",
+    "kind": "csv",
+    "status": "UNAVAILABLE"
+  },
+  "generated_at": "2026-11-20T18:06:33.235859Z",
+  "input_carry_dates": [
+    "2026-10-31"
+  ],
+  "requested_dates_complete": true,
+  "schema_version": "november-2026-source-v1",
+  "stage": "INPUTS_PREPARED"
+}

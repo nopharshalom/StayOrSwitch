@@ -1,11 +1,31 @@
 # Historical ETA Delay and Severe-Incident Decisions
 
-The active implementation follows the [October plan](docs/october-implementation-plan.md).
-The November component-model experiment and its data/results have been removed
-at the user's request. Implementation status is recorded below and in the new
-reports; no prior model accuracy or switching claim applies to this version.
+The current extension follows the [full-October / November analysis plan](docs/november-five-corridor-plan.md):
+fit a separate October 1–31 profile, evaluate service problems on the existing
+five corridors, and report daily peak-period complete-journey ETA errors.
+The [weekday reporting addendum](docs/november-weekday-reporting.md) restricts
+primary results to November 2–6, 9–13, and 16–18, while preserving the all-date
+input preparation. The October 1–17 experiment and all earlier frozen reports remain intact.
+The older November tree-model experiment remains removed; its accuracy claims
+do not apply to the current historical-statistics implementation.
 
-## Current scope
+The [new training report](../data/reports/full-october-fit.md),
+[weekday Stay/Switch report](reports/november-weekday-test.md),
+[interpretation and operational limits](reports/november-weekday-interpretation.md),
+and [weekday peak ETA report](../data/reports/november-weekday-peak-delays.md)
+describe the completed full-month model and November weekday analysis.
+The 197 earliest weekday corridor/notice-family representatives contain
+34 model Switch recommendations: 11 meaningful gains, one tie, one loss and
+21 unknown outcomes. In 81 comparable model-versus-raw-MTA primary decisions,
+there are seven gains, 73 ties and one loss; 36 further concrete-action pairs
+have unknown outcomes. Incident-specific history has not established an
+advantage over time-only history. Read the catchability, walking sensitivity,
+and earlier-Stay-train qualifications before using these results.
+
+Earlier results below belong to the original October 1–17 predictive profile
+and retain their own scope.
+
+## Preserved October experiment
 
 - Full October 2026 history, with separate development, validation and test weeks.
 - Historical ETA delay by route segment, direction, day type, time of day and prediction horizon.
@@ -13,7 +33,7 @@ reports; no prior model accuracy or switching claim applies to this version.
 - A common as-of cutoff and explicit unavailable outcomes for transfers and missing evidence.
 - Historical statistics first; no CatBoost model is part of the new implementation.
 
-## Implementation status
+## October implementation status
 
 The plan, configuration, data pipeline, historical profiles, multi-route
 comparator, evaluator and handoff instructions are implemented. The previous

@@ -22,6 +22,38 @@
 
 ## Product and evidence boundaries
 
+- On November 20, the user authorized a separate model fitted on October 1–31
+  and a November 1–18 analysis of the same five existing Google-defined
+  corridors. Preserve the original October 1–17 model and every earlier
+  frozen experiment. The new full-month predictive artifact supersedes the
+  descriptive-only full-month restriction only for this new version; do not
+  relabel or overwrite the old descriptive artifact. Follow
+  `algo/docs/november-five-corridor-plan.md` for date separation, input-only
+  incident purging, quality gates, incident replay, and daily peak statistics.
+- The new analysis reports service-delay Stay/Switch performance and complete
+  journey ETA residuals at daily morning/midday/evening departure checkpoints.
+  November 2–15 had prior project exposure; report November 16–18 separately.
+  Unknown outcomes, missed selected trains, and endpoints lacking confirmed
+  near-event records remain explicit. The new stricter evidence gates must
+  not silently rewrite old frozen results.
+- The user subsequently requested weekday-only final reporting: November
+  2–6, 9–13, and 16–18 (13 dates). Follow
+  `algo/docs/november-weekday-reporting.md` and its separately sealed calendar
+  view. Keep the full-October fit and existing all-date input freezes intact;
+  primary peak tables contain 2,860 checkpoints and 195 daily cells. Select
+  the earliest weekday incident representative within each existing cohort
+  window, rather than filtering an earlier weekend representative list.
+- The completed November weekday results and their interpretation are in
+  `algo/reports/november-weekday-test.md` and
+  `algo/reports/november-weekday-interpretation.md`. Preserve their frozen
+  inputs, predictions and outcomes. Do not report model-versus-own-Stay gains
+  as incremental gains over the raw-MTA policy. Read the same-cutoff earlier
+  Stay-train and walking sensitivities with the positive cases. Positive
+  historical departure corrections can admit already-departed trains; any
+  boarding-feasibility change requires a new, separately evaluated version.
+  The incident-specific correction has not shown an advantage over the
+  time-only baseline in the primary weekday comparison.
+
 - StayOrSwitch is a decision companion, not a navigation app. External providers supply current/candidate itineraries; the teammate owns app UI and development.
 - Initial state: not boarded, leaving now. Pilot: Hayden LIC Apartments, 43-25 Hunter Street, Long Island City -> NYU Tandon, 6 MetroTech Center, Brooklyn.
 - Include access walking, waiting, riding, transfer walking/waiting and egress. Do not impose arbitrary walking, transfer or detour penalties. Walking assumptions in historical research must be labeled and tested.

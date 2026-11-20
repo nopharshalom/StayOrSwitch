@@ -1,0 +1,50 @@
+{
+  "addendum": {
+    "path": "algo/docs/november-weekday-reporting.md",
+    "sha256": "130ee969323227dd8278609869d1c9bce8c25711032d389f008f495ee2edd924"
+  },
+  "analysis_date_count": 13,
+  "analysis_dates": [
+    "2026-11-02",
+    "2026-11-03",
+    "2026-11-04",
+    "2026-11-05",
+    "2026-11-06",
+    "2026-11-09",
+    "2026-11-10",
+    "2026-11-11",
+    "2026-11-12",
+    "2026-11-13",
+    "2026-11-16",
+    "2026-11-17",
+    "2026-11-18"
+  ],
+  "inherited_base_protocol": {
+    "path": "algo/docs/november-five-corridor-plan.md",
+    "sha256": "7d1c6236ecb32c519dd07ab709d4c275547f408802571b571d193ae528b47064"
+  },
+  "newly_unused_date_subset": [
+    "2026-11-16",
+    "2026-11-18"
+  ],
+  "original_analysis_bounds": [
+    "2026-11-01",
+    "2026-11-18"
+  ],
+  "outcome_boundary_date": "2026-11-19",
+  "peak_daily_cells": 195,
+  "peak_pooled_cells": 15,
+  "peak_scheduled_checkpoints": 2860,
+  "preserve_all_date_input_freezes": true,
+  "primary_incident_policy": "EARLIEST_QUALIFIED_WEEKDAY_CHECKPOINT_PER_CORRIDOR_PUBLISHER_FAMILY_WITHIN_EXISTING_COHORT",
+  "schema_version": "november-weekday-reporting-v1",
+  "selection_basis": "USER_REQUESTED_LOCAL_MONDAY_THROUGH_FRIDAY_CALENDAR_VIEW_AFTER_INPUT_COVERAGE_INSPECTION",
+  "selection_uses_outcomes": false,
+  "stage": "DECLARED_BEFORE_NOVEMBER_OUTCOME_SCORING",
+  "timezone": "America/New_York",
+  "training_and_overlap_purge_unchanged": true,
+  "training_dates": [
+    "2026-10-01",
+    "2026-10-31"
+  ]
+}

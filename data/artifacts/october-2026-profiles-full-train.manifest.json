@@ -1,0 +1,16 @@
+{
+  "artifact": "data/artifacts/october-2026-profiles-full-train.json.gz",
+  "bytes": 1584963,
+  "fit_split": "train",
+  "november_outcomes_used_for_fit": false,
+  "profile_seal": "f94de920d9ed5bac980b5a7423f6b9096732781eb78d4bb1bd5b64203ba0b9a5",
+  "purpose": "Full-October predictive refit; distinct from the immutable October experiment.",
+  "raw_data_included": false,
+  "sha256": "35f9a70a5045b7a5aa1e43e1e605b4517ab289561ca2bcc86a2de69d4519834a",
+  "timezone": "America/New_York",
+  "training_dates": [
+    "2026-10-01",
+    "2026-10-31"
+  ],
+  "training_freeze": "data/manifests/full-october-fit-frozen.json"
+}

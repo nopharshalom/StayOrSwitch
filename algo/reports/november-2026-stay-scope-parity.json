@@ -1,0 +1,338 @@
+{
+  "checks": 40,
+  "outcomes_read": false,
+  "rows": [
+    {
+      "corridor_id": "pilot_hayden_tandon",
+      "cutoff": 1793505600.0,
+      "parity": true,
+      "selected_train_ids": [],
+      "timing_eligible": false
+    },
+    {
+      "corridor_id": "grandcentral_boroughhall",
+      "cutoff": 1793505600.0,
+      "parity": true,
+      "selected_train_ids": [],
+      "timing_eligible": false
+    },
+    {
+      "corridor_id": "courtsquare_timessquare",
+      "cutoff": 1793505600.0,
+      "parity": true,
+      "selected_train_ids": [
+        "MTA:numbered:20261031:7:142900_7..S:"
+      ],
+      "timing_eligible": true
+    },
+    {
+      "corridor_id": "timesquare_boroughhall",
+      "cutoff": 1793505600.0,
+      "parity": true,
+      "selected_train_ids": [
+        "MTA:numbered:20261031:2:139200_2..S01R:"
+      ],
+      "timing_eligible": true
+    },
+    {
+      "corridor_id": "portauthority_tandon",
+      "cutoff": 1793505600.0,
+      "parity": true,
+      "selected_train_ids": [
+        "MTA:ace:20261031:A:141000_A..S:23%3A28%3A16"
+      ],
+      "timing_eligible": true
+    },
+    {
+      "corridor_id": "pilot_hayden_tandon",
+      "cutoff": 1793511360.484,
+      "parity": true,
+      "selected_train_ids": [],
+      "timing_eligible": false
+    },
+    {
+      "corridor_id": "grandcentral_boroughhall",
+      "cutoff": 1793511360.484,
+      "parity": true,
+      "selected_train_ids": [],
+      "timing_eligible": false
+    },
+    {
+      "corridor_id": "courtsquare_timessquare",
+      "cutoff": 1793511360.484,
+      "parity": true,
+      "selected_train_ids": [
+        "MTA:numbered:20261101:7:008000_7..S:"
+      ],
+      "timing_eligible": true
+    },
+    {
+      "corridor_id": "timesquare_boroughhall",
+      "cutoff": 1793511360.484,
+      "parity": true,
+      "selected_train_ids": [
+        "MTA:numbered:20261101:2:009950_2..S08R:"
+      ],
+      "timing_eligible": true
+    },
+    {
+      "corridor_id": "portauthority_tandon",
+      "cutoff": 1793511360.484,
+      "parity": true,
+      "selected_train_ids": [
+        "MTA:ace:20261101:A:006950_A..S74R:01%3A06%3A19"
+      ],
+      "timing_eligible": true
+    },
+    {
+      "corridor_id": "pilot_hayden_tandon",
+      "cutoff": 1793526552.718,
+      "parity": true,
+      "selected_train_ids": [],
+      "timing_eligible": false
+    },
+    {
+      "corridor_id": "grandcentral_boroughhall",
+      "cutoff": 1793526552.718,
+      "parity": true,
+      "selected_train_ids": [],
+      "timing_eligible": false
+    },
+    {
+      "corridor_id": "courtsquare_timessquare",
+      "cutoff": 1793526552.718,
+      "parity": true,
+      "selected_train_ids": [
+        "MTA:numbered:20261101:7:028000_7..S:"
+      ],
+      "timing_eligible": true
+    },
+    {
+      "corridor_id": "timesquare_boroughhall",
+      "cutoff": 1793526552.718,
+      "parity": true,
+      "selected_train_ids": [
+        "MTA:numbered:20261101:2:023950_2..S08R:"
+      ],
+      "timing_eligible": true
+    },
+    {
+      "corridor_id": "portauthority_tandon",
+      "cutoff": 1793526552.718,
+      "parity": true,
+      "selected_train_ids": [
+        "MTA:ace:20261101:A:026950_A..S74R:04%3A29%3A30"
+      ],
+      "timing_eligible": true
+    },
+    {
+      "corridor_id": "pilot_hayden_tandon",
+      "cutoff": 1793545825.533,
+      "parity": true,
+      "selected_train_ids": [],
+      "timing_eligible": false
+    },
+    {
+      "corridor_id": "grandcentral_boroughhall",
+      "cutoff": 1793545825.533,
+      "parity": true,
+      "selected_train_ids": [],
+      "timing_eligible": false
+    },
+    {
+      "corridor_id": "courtsquare_timessquare",
+      "cutoff": 1793545825.533,
+      "parity": true,
+      "selected_train_ids": [
+        "MTA:numbered:20261101:7:059250_7..S:"
+      ],
+      "timing_eligible": true
+    },
+    {
+      "corridor_id": "timesquare_boroughhall",
+      "cutoff": 1793545825.533,
+      "parity": true,
+      "selected_train_ids": [
+        "MTA:numbered:20261101:2:055650_2..S01R:"
+      ],
+      "timing_eligible": true
+    },
+    {
+      "corridor_id": "portauthority_tandon",
+      "cutoff": 1793545825.533,
+      "parity": true,
+      "selected_train_ids": [
+        "MTA:ace:20261101:A:057750_A..S58X004:09%3A37%3A30"
+      ],
+      "timing_eligible": true
+    },
+    {
+      "corridor_id": "pilot_hayden_tandon",
+      "cutoff": 1793556832.749,
+      "parity": true,
+      "selected_train_ids": [],
+      "timing_eligible": false
+    },
+    {
+      "corridor_id": "grandcentral_boroughhall",
+      "cutoff": 1793556832.749,
+      "parity": true,
+      "selected_train_ids": [],
+      "timing_eligible": false
+    },
+    {
+      "corridor_id": "courtsquare_timessquare",
+      "cutoff": 1793556832.749,
+      "parity": true,
+      "selected_train_ids": [
+        "MTA:numbered:20261101:7:077600_7..S:"
+      ],
+      "timing_eligible": true
+    },
+    {
+      "corridor_id": "timesquare_boroughhall",
+      "cutoff": 1793556832.749,
+      "parity": true,
+      "selected_train_ids": [
+        "MTA:numbered:20261101:2:074600_2..S01R:"
+      ],
+      "timing_eligible": true
+    },
+    {
+      "corridor_id": "portauthority_tandon",
+      "cutoff": 1793556832.749,
+      "parity": true,
+      "selected_train_ids": [
+        "MTA:ace:20261101:A:076050_A..S57X002:12%3A42%3A00"
+      ],
+      "timing_eligible": true
+    },
+    {
+      "corridor_id": "pilot_hayden_tandon",
+      "cutoff": 1793561927.736,
+      "parity": true,
+      "selected_train_ids": [],
+      "timing_eligible": false
+    },
+    {
+      "corridor_id": "grandcentral_boroughhall",
+      "cutoff": 1793561927.736,
+      "parity": true,
+      "selected_train_ids": [],
+      "timing_eligible": false
+    },
+    {
+      "corridor_id": "courtsquare_timessquare",
+      "cutoff": 1793561927.736,
+      "parity": true,
+      "selected_train_ids": [
+        "MTA:numbered:20261101:7:086600_7..S:"
+      ],
+      "timing_eligible": true
+    },
+    {
+      "corridor_id": "timesquare_boroughhall",
+      "cutoff": 1793561927.736,
+      "parity": true,
+      "selected_train_ids": [
+        "MTA:numbered:20261101:2:082600_2..S01R:"
+      ],
+      "timing_eligible": true
+    },
+    {
+      "corridor_id": "portauthority_tandon",
+      "cutoff": 1793561927.736,
+      "parity": true,
+      "selected_train_ids": [
+        "MTA:ace:20261101:A:085216_A..S58X004:14%3A14%3A00"
+      ],
+      "timing_eligible": true
+    },
+    {
+      "corridor_id": "pilot_hayden_tandon",
+      "cutoff": 1793575097.695,
+      "parity": true,
+      "selected_train_ids": [],
+      "timing_eligible": false
+    },
+    {
+      "corridor_id": "grandcentral_boroughhall",
+      "cutoff": 1793575097.695,
+      "parity": true,
+      "selected_train_ids": [],
+      "timing_eligible": false
+    },
+    {
+      "corridor_id": "courtsquare_timessquare",
+      "cutoff": 1793575097.695,
+      "parity": true,
+      "selected_train_ids": [
+        "MTA:numbered:20261101:7:108100_7..S:"
+      ],
+      "timing_eligible": true
+    },
+    {
+      "corridor_id": "timesquare_boroughhall",
+      "cutoff": 1793575097.695,
+      "parity": true,
+      "selected_train_ids": [
+        "MTA:numbered:20261101:2:105000_2..S01R:"
+      ],
+      "timing_eligible": true
+    },
+    {
+      "corridor_id": "portauthority_tandon",
+      "cutoff": 1793575097.695,
+      "parity": true,
+      "selected_train_ids": [
+        "MTA:ace:20261101:A:106550_A..S58X004:17%3A45%3A30"
+      ],
+      "timing_eligible": true
+    },
+    {
+      "corridor_id": "pilot_hayden_tandon",
+      "cutoff": 1793595347.716,
+      "parity": true,
+      "selected_train_ids": [],
+      "timing_eligible": false
+    },
+    {
+      "corridor_id": "grandcentral_boroughhall",
+      "cutoff": 1793595347.716,
+      "parity": true,
+      "selected_train_ids": [],
+      "timing_eligible": false
+    },
+    {
+      "corridor_id": "courtsquare_timessquare",
+      "cutoff": 1793595347.716,
+      "parity": true,
+      "selected_train_ids": [
+        "MTA:numbered:20261101:7:285500_7..S:"
+      ],
+      "timing_eligible": true
+    },
+    {
+      "corridor_id": "timesquare_boroughhall",
+      "cutoff": 1793595347.716,
+      "parity": true,
+      "selected_train_ids": [
+        "MTA:numbered:20261101:2:283000_2..S01R:"
+      ],
+      "timing_eligible": true
+    },
+    {
+      "corridor_id": "portauthority_tandon",
+      "cutoff": 1793595347.716,
+      "parity": true,
+      "selected_train_ids": [
+        "MTA:ace:20261101:A:140450_A..S74R:23%3A24%3A30"
+      ],
+      "timing_eligible": true
+    }
+  ],
+  "scope": "INPUT_ONLY_FIXED_STAY_FORECAST_OPTIMIZATION",
+  "snapshot_path": "algo/local/november-2026/selected-input-snapshots/2026-11-01.json.gz",
+  "snapshot_sha256": "81f119a86fccea6ac9d8df66399480ec09157a9b952cf12eb4ef6f3a8656d992",
+  "timing_eligible_checks": 24
+}

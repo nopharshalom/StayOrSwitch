@@ -1,0 +1,305 @@
+{
+  "assertion_count": 84,
+  "case_count": 3,
+  "cases": [
+    {
+      "assertion_count": 28,
+      "case_id": "pilot_hayden_tandon--1794504600",
+      "cell": [
+        "pilot_hayden_tandon",
+        "2026-11-12",
+        "MIDDAY"
+      ],
+      "error_seconds": 2151.0,
+      "local_time": "2026-11-12T12:30:00-05:00",
+      "outcome_arrival_at": 1794509107.0,
+      "passed_assertions": [
+        "normalized_source_hash",
+        "latest_capture_found",
+        "capture_not_future",
+        "next_capture_after_cutoff",
+        "capture_age_at_most_180_seconds",
+        "source_age_at_most_180_seconds",
+        "one_normalized_selected_trip",
+        "normalized_identity_trip_id",
+        "normalized_identity_start_date",
+        "normalized_identity_route_id",
+        "normalized_identity_start_time",
+        "one_boarding_and_alighting_stop",
+        "normalized_boarding_departure_matches",
+        "normalized_alighting_arrival_matches",
+        "boarding_is_explicit_departure",
+        "raw_archive_hash",
+        "raw_archive_member_found",
+        "raw_payload_hash_matches_normalized_provenance",
+        "one_raw_exact_descriptor",
+        "one_raw_boarding_and_alighting_stop",
+        "raw_boarding_has_explicit_departure",
+        "raw_alighting_has_explicit_arrival",
+        "raw_departure_equals_frozen_forecast",
+        "raw_arrival_equals_frozen_forecast",
+        "raw_stops_have_forward_order",
+        "raw_header_time_matches_normalized_source",
+        "destination_not_last_forecast_stop",
+        "whole_journey_error_equals_arrival_residual"
+      ],
+      "raw_alighting": {
+        "arrival_time": 1794506956,
+        "departure_time": 1794506956,
+        "later_forecast_stop_ids": [
+          "F20S",
+          "F21S",
+          "F22S",
+          "F23S",
+          "F24S",
+          "F25S",
+          "F26S",
+          "F27S",
+          "F29S",
+          "F30S",
+          "F31S",
+          "F32S",
+          "F33S",
+          "F34S",
+          "F35S",
+          "F36S",
+          "F38S",
+          "F39S",
+          "D42S",
+          "D43S"
+        ],
+        "stop_id": "A41S"
+      },
+      "raw_archive": {
+        "path": "data/raw/november-2026/subwaydatanyc_2026-11-12_gtfsrt.tar.xz",
+        "sha256": "20778f547f8b75df7313929197aa8c5df1d9c1cadd14c9d79b63db0a0bdf13e6"
+      },
+      "raw_boarding": {
+        "arrival_time": 1794505321,
+        "departure_time": 1794505321,
+        "stop_id": "F09S"
+      },
+      "raw_entity_id": "000049F",
+      "raw_source_timestamp": 1794504545,
+      "snapshot": {
+        "archive_provenance": {
+          "archive": "subwaydatanyc_2026-11-12_gtfsrt.tar.xz",
+          "archive_member": "nycsubway_BDFM_20261112T172905.541Z_ye5kdflrhr3h.gtfsrt",
+          "sha256": "c13aa195713c767ad327c8a6fb5cfdaa6b0f6f16e8d672f61484227f692a7607"
+        },
+        "captured_at": 1794504545.541,
+        "next_capture_at": 1794504605.747,
+        "path": "data/processed/november-2026/2026-11-12.snapshots.jsonl.gz",
+        "sha256": "5179df7a3c32fdc9ac79ed6e61eb0e25291c65bb8ef6ee5f3c02e0a47b4e1a1f",
+        "source_updated_at": "2026-11-12T17:29:05Z"
+      },
+      "trip_id": "MTA:bdfm:20261112:F:073400_F..S54R:12%3A13%3A59"
+    },
+    {
+      "assertion_count": 28,
+      "case_id": "portauthority_tandon--1793636100",
+      "cell": [
+        "portauthority_tandon",
+        "2026-11-02",
+        "MIDDAY"
+      ],
+      "error_seconds": 2009.0,
+      "local_time": "2026-11-02T11:15:00-05:00",
+      "outcome_arrival_at": 1793639587.0,
+      "passed_assertions": [
+        "normalized_source_hash",
+        "latest_capture_found",
+        "capture_not_future",
+        "next_capture_after_cutoff",
+        "capture_age_at_most_180_seconds",
+        "source_age_at_most_180_seconds",
+        "one_normalized_selected_trip",
+        "normalized_identity_trip_id",
+        "normalized_identity_start_date",
+        "normalized_identity_route_id",
+        "normalized_identity_start_time",
+        "one_boarding_and_alighting_stop",
+        "normalized_boarding_departure_matches",
+        "normalized_alighting_arrival_matches",
+        "boarding_is_explicit_departure",
+        "raw_archive_hash",
+        "raw_archive_member_found",
+        "raw_payload_hash_matches_normalized_provenance",
+        "one_raw_exact_descriptor",
+        "one_raw_boarding_and_alighting_stop",
+        "raw_boarding_has_explicit_departure",
+        "raw_alighting_has_explicit_arrival",
+        "raw_departure_equals_frozen_forecast",
+        "raw_arrival_equals_frozen_forecast",
+        "raw_stops_have_forward_order",
+        "raw_header_time_matches_normalized_source",
+        "destination_not_last_forecast_stop",
+        "whole_journey_error_equals_arrival_residual"
+      ],
+      "raw_alighting": {
+        "arrival_time": 1793637578,
+        "departure_time": 1793637578,
+        "later_forecast_stop_ids": [
+          "A42S",
+          "A46S",
+          "A48S",
+          "A51S",
+          "A55S",
+          "A57S",
+          "A59S",
+          "A60S",
+          "A61S",
+          "H02S",
+          "H03S",
+          "H04S",
+          "H06S",
+          "H07S",
+          "H08S",
+          "H09S",
+          "H10S",
+          "H11S"
+        ],
+        "stop_id": "A41S"
+      },
+      "raw_archive": {
+        "path": "data/raw/november-2026/subwaydatanyc_2026-11-02_gtfsrt.tar.xz",
+        "sha256": "8eb3f176468976afea79c66f533ce414b44490188c30b0d76fd937382e3582d7"
+      },
+      "raw_boarding": {
+        "arrival_time": 1793636513,
+        "departure_time": 1793636513,
+        "stop_id": "A27S"
+      },
+      "raw_entity_id": "000039A",
+      "raw_source_timestamp": 1793636040,
+      "snapshot": {
+        "archive_provenance": {
+          "archive": "subwaydatanyc_2026-11-02_gtfsrt.tar.xz",
+          "archive_member": "nycsubway_ACE_20261102T161402.686Z_ypdlfewkuxks.gtfsrt",
+          "sha256": "c3c6b292caa5d5218e4cf7bb87b13b91086f9bdf5b90fb15a0b7ae4291569473"
+        },
+        "captured_at": 1793636042.686,
+        "next_capture_at": 1793636102.676,
+        "path": "data/processed/november-2026/2026-11-02.snapshots.jsonl.gz",
+        "sha256": "35a3a70911d34b3d8413a0e4fce6926d9f6851471aa7d4bcbd53d187424edbc6",
+        "source_updated_at": "2026-11-02T16:14:00Z"
+      },
+      "trip_id": "MTA:ace:20261102:A:065500_A..S58R:10%3A55%3A10"
+    },
+    {
+      "assertion_count": 28,
+      "case_id": "pilot_hayden_tandon--1794608100",
+      "cell": [
+        "pilot_hayden_tandon",
+        "2026-11-13",
+        "EVENING_PEAK"
+      ],
+      "error_seconds": 3086.0,
+      "local_time": "2026-11-13T17:15:00-05:00",
+      "outcome_arrival_at": 1794613541.0,
+      "passed_assertions": [
+        "normalized_source_hash",
+        "latest_capture_found",
+        "capture_not_future",
+        "next_capture_after_cutoff",
+        "capture_age_at_most_180_seconds",
+        "source_age_at_most_180_seconds",
+        "one_normalized_selected_trip",
+        "normalized_identity_trip_id",
+        "normalized_identity_start_date",
+        "normalized_identity_route_id",
+        "normalized_identity_start_time",
+        "one_boarding_and_alighting_stop",
+        "normalized_boarding_departure_matches",
+        "normalized_alighting_arrival_matches",
+        "boarding_is_explicit_departure",
+        "raw_archive_hash",
+        "raw_archive_member_found",
+        "raw_payload_hash_matches_normalized_provenance",
+        "one_raw_exact_descriptor",
+        "one_raw_boarding_and_alighting_stop",
+        "raw_boarding_has_explicit_departure",
+        "raw_alighting_has_explicit_arrival",
+        "raw_departure_equals_frozen_forecast",
+        "raw_arrival_equals_frozen_forecast",
+        "raw_stops_have_forward_order",
+        "raw_header_time_matches_normalized_source",
+        "destination_not_last_forecast_stop",
+        "whole_journey_error_equals_arrival_residual"
+      ],
+      "raw_alighting": {
+        "arrival_time": 1794610455,
+        "departure_time": 1794610455,
+        "later_forecast_stop_ids": [
+          "F20S",
+          "F21S",
+          "F22S",
+          "F23S",
+          "F24S",
+          "F25S",
+          "F26S",
+          "F27S",
+          "F29S",
+          "F30S",
+          "F31S",
+          "F32S",
+          "F33S",
+          "F34S",
+          "F35S",
+          "F36S",
+          "F38S",
+          "F39S",
+          "D42S",
+          "D43S"
+        ],
+        "stop_id": "A41S"
+      },
+      "raw_archive": {
+        "path": "data/raw/november-2026/subwaydatanyc_2026-11-13_gtfsrt.tar.xz",
+        "sha256": "df7f6b605aaf61e249301dfa4bb3ddb93b501800b705b90578ee9b45a5d1a11d"
+      },
+      "raw_boarding": {
+        "arrival_time": 1794608745,
+        "departure_time": 1794608745,
+        "stop_id": "F09S"
+      },
+      "raw_entity_id": "000069F",
+      "raw_source_timestamp": 1794608046,
+      "snapshot": {
+        "archive_provenance": {
+          "archive": "subwaydatanyc_2026-11-13_gtfsrt.tar.xz",
+          "archive_member": "nycsubway_BDFM_20261113T221407.691Z_p6kpu4dcpaf3.gtfsrt",
+          "sha256": "7f94fa7062780bb59a07288170b0f41d12746e1eca3e516e1cd9aaa178dadb0c"
+        },
+        "captured_at": 1794608047.691,
+        "next_capture_at": 1794608100.464,
+        "path": "data/processed/november-2026/2026-11-13.snapshots.jsonl.gz",
+        "sha256": "29a04405b63a6d698d2c59524fef04b8c82ae9e2e862bcc36fc98c8fcc71d649",
+        "source_updated_at": "2026-11-13T22:14:06Z"
+      },
+      "trip_id": "MTA:bdfm:20261113:F:102300_F..S54R:17%3A03%3A05"
+    }
+  ],
+  "conclusion": "All three frozen forecasts use raw boarding departure and raw destination arrival fields; no departure fallback at the destination or terminal-dwell substitution was found.",
+  "limitations": [
+    "The selected raw forecasts and later final-prediction proxies are verified feed values, not independent passenger measurements.",
+    "Exact forecast-selected trains remain fixed; an adaptive same-line passenger may board another train."
+  ],
+  "producer": {
+    "path": "data/scripts/audit_november_large_peak_forecasts.py",
+    "sha256": "9e1afcf3a07b6fab61ca26c1ebd30f91ede2d0e062336039a41482a5751146d1"
+  },
+  "purpose": "FIELD_AND_RAW_PROVENANCE_DIAGNOSTIC; NOT_NEW_PERFORMANCE_EVIDENCE",
+  "schema_version": "november-large-peak-raw-forecast-audit-v1",
+  "scored_rows": {
+    "path": "data/processed/november-peak-analysis/scored-weekday-checkpoints.json.gz",
+    "sha256": "b26a4d74bbf2c893d1056e52806268f5077867dd81fc2c447e20c2be31f94f56"
+  },
+  "selection": "POSTHOC_LARGEST_POSITIVE_ERROR_PER_THREE_DIAGNOSED_CELLS",
+  "selection_uses_outcomes": true,
+  "source_manifest": {
+    "path": "data/manifests/november-2026.json",
+    "sha256": "f34e3f8369975436df8a14b7fbea86d28fd4fd35cd6bba3c9e6c25710bdc095e"
+  },
+  "status": "PASS"
+}

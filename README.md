@@ -34,11 +34,31 @@ Recurring NYC commuters with familiar routes and real alternatives. The starting
 
 ## Status and next steps
 
-The active algorithm work follows the [October implementation plan](algo/docs/october-implementation-plan.md):
-historical ETA delay by time of day and meaningful switching during severe
-service problems, using October 1–31, 2026 history and multiple route families.
+The active extension follows the [full-October / November analysis plan](algo/docs/november-five-corridor-plan.md):
+a separate model fitted on October 1–31, 2026, followed by service-delay
+evaluation and daily peak ETA-error analysis on the existing five corridors.
+The [weekday reporting addendum](algo/docs/november-weekday-reporting.md) selects
+November 2–6, 9–13, and 16–18 for the primary results. The original October 1–17 model and every prior frozen experiment
+remain preserved. November 2–15 had prior project exposure; the new analysis
+also reports November 16–18 separately.
 The initial algorithm user has not boarded and is leaving now; the screens
 above illustrate the broader product concept.
+
+The extension is complete. The [new training report](data/reports/full-october-fit.md)
+records 870,415 eligible observations from all 31 October days. Read the
+[November interpretation](algo/reports/november-weekday-interpretation.md) with
+the [frozen Stay/Switch results](algo/reports/november-weekday-test.md): among
+197 earliest weekday corridor/notice-family representatives, the model makes
+34 Switch recommendations, with 11 meaningful gains, one tie, one loss and
+21 unknown outcomes. This is not an overall success rate. Selected-train
+catchability remains a practical weakness, and incident-specific correction
+has not demonstrated an advantage over the time-only baseline.
+
+The [weekday peak report](data/reports/november-weekday-peak-delays.md) provides
+195 daily corridor/period cells, with usable outcomes at 2,360 of 2,860 fixed
+departure checkpoints. It reports both signed ETA error and positive-only
+delay, retaining unknown outcomes and the exact selected-train limitation.
+The original experiment and all earlier frozen results below remain unchanged.
 
 October data preparation, time-conditioned historical profiles and multi-route
 replays are complete. See the [historical delay tables](data/reports/profiles-horizon-notes.md)

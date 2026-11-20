@@ -1,0 +1,127 @@
+{
+  "corridor_config_artifacts": [
+    {
+      "path": "data/config/google-corridors.json",
+      "sha256": "6e973cb42424db8ca832b22206cea482619d0390856db0aeea771f131440344b"
+    },
+    {
+      "path": "data/config/incremental-extra-corridors.json",
+      "sha256": "2d0abf32ab614218f47a695bc386a9d1e98a3aace6286557e073fa08d5fac3a8"
+    }
+  ],
+  "event_representatives": 3494,
+  "policy": {
+    "alerts_max_age_seconds": 300,
+    "all_service_contexts_included": true,
+    "dates": [
+      "2026-11-01",
+      "2026-11-18"
+    ],
+    "duration_bands_seconds": [
+      0,
+      900,
+      1800,
+      3600
+    ],
+    "following_boundary_evidence_date": "2026-11-19",
+    "following_boundary_is_analysis_exposure": false,
+    "grid_seconds": 900,
+    "independent_passenger_measurements": false,
+    "max_endpoint_age_seconds": 180,
+    "missing_outcomes_are_zero": false,
+    "periods": [
+      {
+        "end_hour": 10,
+        "id": "MORNING_PEAK",
+        "start_hour": 6
+      },
+      {
+        "end_hour": 14,
+        "id": "MIDDAY",
+        "start_hour": 11
+      },
+      {
+        "end_hour": 20,
+        "id": "EVENING_PEAK",
+        "start_hour": 16
+      }
+    ],
+    "primary_estimand": "UNIFORM_DEPARTURE_GRID_MEAN_OF_PROXY_DESTINATION_ARRIVAL_MINUS_RAW_MTA_FORECAST",
+    "reference_policy": "EXISTING_CURRENT_GOOGLE_STAY_PATH; RAW_MTA_SELECTED_EXACT_TRAIN",
+    "requires_archived_endpoint_confirmation": true,
+    "requires_exact_normalized_train_and_stop_identity": true,
+    "schema_version": "november-peak-delays-v1",
+    "secondary_estimand": "EARLIEST_INPUT_CHECKPOINT_PER_PHYSICAL_SEQUENCE_DATE_PERIOD_DURATION_BAND",
+    "selection_reads_outcomes": false,
+    "timezone": "America/New_York",
+    "train_max_age_seconds": 180
+  },
+  "prepared_inputs": {
+    "path": "data/processed/november-peak-analysis/prepared-inputs.json.gz",
+    "sha256": "b888a6aad36007936eb5eb9fc6f088ef8fe3c0d3c12abdb37665fe97226b56d8"
+  },
+  "producer_sha256": {
+    "algo/stayorswitch/matching.py": "4fbe2d3e51595dc33f746d5e8c4623402ca0537906e5f00a242488796010b262",
+    "algo/stayorswitch/october_evaluation.py": "ad430d0ef18510c876f31c78b45134a62885845b816aa92abe77538d8c7afeab",
+    "algo/stayorswitch/severe.py": "6c6fa7f4fd45316583d7f55c10b5b907618fbb022b648c415a725ce6da36742e",
+    "data/delay_profiles/__init__.py": "1748bf1fb14b82d6a12dc3c8f687504b48a0dc494da985ae8acb5be9a428d790",
+    "data/delay_profiles/build.py": "8925b99e67b34f4c61fa264f9f7edba4859ff6dc0b0cdc5e46fda4066d8ffc4a",
+    "data/delay_profiles/common.py": "0d66ec04553c567f6bf581130c8b018014cb1af63eda92336aa3d94fc053becf",
+    "data/delay_profiles/estimator.py": "9b44d6b76bf40e134806299bf05ffe8ec61b6b93fe9c9712cdb128ce1477a62a",
+    "data/delay_profiles/incidents.py": "3cf3a3e6ea8c22d1fb8bf6fc595a7df25653de4aa30bdda5cd5ae5686a9594f1",
+    "data/november_outcomes.py": "a87bab20b27fc28438c14436a5feeae5340e2fe0ae9908ff41cf6634240b1d1d",
+    "data/november_peak_analysis.py": "ca000ff8f73bc5584eb04fb942bf151fa463f6510d41c149abc41a1949d84868",
+    "data/october/labels.py": "e22e2ed808a1ab24ec5cc36f9e1642bc045f9a7abcb7a84d3d00cbe1feda5919",
+    "data/october/sources.py": "c895acfe723c1a894ca6f97222114731373a6e5729c17b9b16525e70eaa05957",
+    "data/scripts/analyze_november_peaks.py": "d959a3d256dccc43c2bd26d92146f329c7fd1fd4a45bb12962e4dfc8689fddf8"
+  },
+  "scheduled_checkpoints": 3960,
+  "schema_version": "november-peak-input-freeze-v1",
+  "selection_reads_outcome_labels": false,
+  "source_manifest_at_preparation": {
+    "path": "data/manifests/november-2026-inputs.json",
+    "sha256": "5be975845dc3fbe43a0556edf08e841214f87ade2c3819de892f346d4fe33139"
+  },
+  "source_sha256": {
+    "data/processed/november-2026/2026-10-31.alerts.jsonl.gz": "0ae8012161431e38b2b29ad1b9f2cd97ee0209323250444d5a57c90b81665e1c",
+    "data/processed/november-2026/2026-10-31.snapshots.jsonl.gz": "5b22883d355dbfe5d99f02ba9782f2c7f47e9345f0c47f7a618b3fe85768fe76",
+    "data/processed/november-2026/2026-11-01.alerts.jsonl.gz": "23ed0c5006893b077499130ab9f4706dbabf2ecc4294ed960058a235bf7574d2",
+    "data/processed/november-2026/2026-11-01.snapshots.jsonl.gz": "5556b074513c9ff0ccb86cc3e5340966dcee37551f03e91ae7fe36d428bb00f7",
+    "data/processed/november-2026/2026-11-02.alerts.jsonl.gz": "1b47c1d27774d90fca2afee30ab8c0a8e8124fb455fb986a82a737ae885558bb",
+    "data/processed/november-2026/2026-11-02.snapshots.jsonl.gz": "35a3a70911d34b3d8413a0e4fce6926d9f6851471aa7d4bcbd53d187424edbc6",
+    "data/processed/november-2026/2026-11-03.alerts.jsonl.gz": "c00fc4c3ce914a7fc9de8361f6397f005df8820c9ecadac36d48ad5537e4502d",
+    "data/processed/november-2026/2026-11-03.snapshots.jsonl.gz": "b1b361aa13712e80d130aadfee94ae094d56a026742dedd24243d81c9eb47a9e",
+    "data/processed/november-2026/2026-11-04.alerts.jsonl.gz": "8afeb6c29b218b3b3c847fb1e15c9e2c67067c09bc3eb59bbca293e9271f2f11",
+    "data/processed/november-2026/2026-11-04.snapshots.jsonl.gz": "e4cd930cf575ef854d733ecf286208ee922a5384d45df65682467f0ed231bb6b",
+    "data/processed/november-2026/2026-11-05.alerts.jsonl.gz": "b698d5ec2f3f2222f922990626d2ff8eba2096864ede442ba7660024514dc54e",
+    "data/processed/november-2026/2026-11-05.snapshots.jsonl.gz": "cf27d099cb38ce5a1a40009173cab4ce35ee6784705bd4f5d247b67665cc5a3a",
+    "data/processed/november-2026/2026-11-06.alerts.jsonl.gz": "dd6c5ff993b46da3dbd009dfb2dbbefab037f5743fa5f9c6d0d10ce76a7a1165",
+    "data/processed/november-2026/2026-11-06.snapshots.jsonl.gz": "2d12667106c84ff407a23f7707a304ea7c6aeb08d15f59fe1c716ceae7570197",
+    "data/processed/november-2026/2026-11-07.alerts.jsonl.gz": "92b4509f24e7104b5ee312bb4baf845dcb7a077bf014994d9920be3ff46169b7",
+    "data/processed/november-2026/2026-11-07.snapshots.jsonl.gz": "957e1d96eed020cc9acc96efee02e448b8601b1589b8e01f9c49fead2ee0bed2",
+    "data/processed/november-2026/2026-11-08.alerts.jsonl.gz": "aef640c34d6912ab73b5576788818ee6a9550a66bdb9e618e3d3a26ee520e12c",
+    "data/processed/november-2026/2026-11-08.snapshots.jsonl.gz": "ea31c9f0b69a88ce86c7a9075f76b6f018b91ab627dd061770cbfc155a50568b",
+    "data/processed/november-2026/2026-11-09.alerts.jsonl.gz": "fe56e3db3c55c8e11c1d16119006cae4b1084b6d967d48eaf3523ed6a8e94a47",
+    "data/processed/november-2026/2026-11-09.snapshots.jsonl.gz": "c92ceeaabeca2896314a51146fa7082d81d92a18b9d80eb8310be5baa9508b79",
+    "data/processed/november-2026/2026-11-10.alerts.jsonl.gz": "05dfaf3caaafece8e3c71c34dea3a54023b217de9c8c4540bdcbc6e0d1a68b6b",
+    "data/processed/november-2026/2026-11-10.snapshots.jsonl.gz": "930931e46efeedb30104ce0292a16a2335c10946d0c47065a52aeef880563d65",
+    "data/processed/november-2026/2026-11-11.alerts.jsonl.gz": "73a2c3dba065d41e7e7c64f5c982651cbd6a091248865dbe70817bf646803984",
+    "data/processed/november-2026/2026-11-11.snapshots.jsonl.gz": "64a2d8da7762892447e4c77ddf6429c3e516f44028e97c66515f82b2b5cc3890",
+    "data/processed/november-2026/2026-11-12.alerts.jsonl.gz": "0e302dbca7d47f62826ee704b27f9510ab535cad2d2d2c3aac5be7ed59dd791a",
+    "data/processed/november-2026/2026-11-12.snapshots.jsonl.gz": "5179df7a3c32fdc9ac79ed6e61eb0e25291c65bb8ef6ee5f3c02e0a47b4e1a1f",
+    "data/processed/november-2026/2026-11-13.alerts.jsonl.gz": "6753b841f4e91872c7cada832e79170f49b5802c2775aa595c7a4aa1152c1352",
+    "data/processed/november-2026/2026-11-13.snapshots.jsonl.gz": "29a04405b63a6d698d2c59524fef04b8c82ae9e2e862bcc36fc98c8fcc71d649",
+    "data/processed/november-2026/2026-11-14.alerts.jsonl.gz": "00e9b962ab1d8f0271ee0e53fd8f840392b304bd61fa9ab4cc2b2fe21579684e",
+    "data/processed/november-2026/2026-11-14.snapshots.jsonl.gz": "bda3e08b87c4bc5de4bbbfaaacd4530c2d2796f54de8f9712ed718867178bdb7",
+    "data/processed/november-2026/2026-11-15.alerts.jsonl.gz": "87f130b1c432a0f0945d949a54afb0dd4c9f04f1dbe3842cfc4646d6a68ef1ae",
+    "data/processed/november-2026/2026-11-15.snapshots.jsonl.gz": "edc2d9677bb27c9421af93bf7f7c27f7394c37dfa98f454093165bcd046d6ce3",
+    "data/processed/november-2026/2026-11-16.alerts.jsonl.gz": "9c4ddbf065cbd7720dca6ad76929e52c4fc963c028495a22cab6c5b929b766c4",
+    "data/processed/november-2026/2026-11-16.snapshots.jsonl.gz": "1949286aa2105927951f08906d269aad8f94a56fb3c2ad489bd4e848ea445bbf",
+    "data/processed/november-2026/2026-11-17.alerts.jsonl.gz": "a663456e4d599687a806f6e74dc7e95d2487fd2067dc12e1c1a1bc0f09014ea4",
+    "data/processed/november-2026/2026-11-17.snapshots.jsonl.gz": "3043ed6bd23902c0114970543c7b5efe1cc98b1ccea10c617dd0c29cf5c978ba",
+    "data/processed/november-2026/2026-11-18.alerts.jsonl.gz": "6481fbd930dffe0c2bc3abeb6c15d0304de40ccc20c4913d96976b8a80ff582d",
+    "data/processed/november-2026/2026-11-18.snapshots.jsonl.gz": "74eb026a84a62d666798a89813df25198a5189d920fdb327503cb9ab3497e73b",
+    "data/processed/november-2026/2026-11-19.alerts.jsonl.gz": "6d7ca70aa518531e1ef6b73502144b97d8df1e81ab2c26119253911d2aecc535",
+    "data/processed/november-2026/2026-11-19.snapshots.jsonl.gz": "b7b574b9be6ed2e5d7ca8699a10e4ebdb7bdf3563a9347e2341ef3b587e2afa6"
+  }
+}

@@ -1,0 +1,676 @@
+{
+  "archives": [
+    {
+      "archive_date": "2026-10-30",
+      "bytes": 1413728,
+      "cache_verified": true,
+      "fetched_at": "2026-11-19T23:29:58.066492Z",
+      "kind": "csv",
+      "path": "/Users/hollisyang/Desktop/Studio/StayOrSwitch/data/raw/october/subwaydatanyc_2026-10-30_csv.tar.xz",
+      "resolved_url": "https://data.subwaydata.nyc/2026-10/subwaydatanyc_2026-10-30_csv_5de91950c552.tar.xz",
+      "reused_existing_raw_archive": true,
+      "sha256": "5de91950c552e4e43f69c971c678acb01473bf0bae02a39237daed5a6412e868",
+      "source": "Subway Data NYC",
+      "url": "https://subwaydata.nyc/data/subwaydatanyc_2026-10-30_csv.tar.xz"
+    },
+    {
+      "archive_date": "2026-10-31",
+      "bytes": 1022276,
+      "cache_verified": true,
+      "fetched_at": "2026-11-19T23:30:03.190923Z",
+      "kind": "csv",
+      "path": "/Users/hollisyang/Desktop/Studio/StayOrSwitch/data/raw/october/subwaydatanyc_2026-10-31_csv.tar.xz",
+      "resolved_url": "https://data.subwaydata.nyc/2026-10/subwaydatanyc_2026-10-31_csv_cc374ae4a486.tar.xz",
+      "reused_existing_raw_archive": true,
+      "sha256": "cc374ae4a486be869bd026946a30b8c324e1cb0492b47ea05903c4b3a4e82952",
+      "source": "Subway Data NYC",
+      "url": "https://subwaydata.nyc/data/subwaydatanyc_2026-10-31_csv.tar.xz"
+    },
+    {
+      "archive_date": "2026-10-31",
+      "bytes": 56226528,
+      "cache_verified": true,
+      "fetched_at": "2026-11-19T23:30:04.078208Z",
+      "kind": "gtfsrt",
+      "path": "/Users/hollisyang/Desktop/Studio/StayOrSwitch/data/raw/october/subwaydatanyc_2026-10-31_gtfsrt.tar.xz",
+      "resolved_url": "https://data.subwaydata.nyc/2026-10/subwaydatanyc_2026-10-31_gtfsrt_1280ef06d1eb.tar.xz",
+      "reused_existing_raw_archive": true,
+      "sha256": "1280ef06d1eb3c5849e548ac83f31c8a31be8b988130f3508af763e179c03c6e",
+      "source": "Subway Data NYC",
+      "url": "https://subwaydata.nyc/data/subwaydatanyc_2026-10-31_gtfsrt.tar.xz"
+    },
+    {
+      "archive_date": "2026-11-01",
+      "bytes": 925100,
+      "cache_verified": true,
+      "fetched_at": "2026-11-19T23:30:04.359114Z",
+      "kind": "csv",
+      "path": "/Users/hollisyang/Desktop/Studio/StayOrSwitch/data/raw/october/subwaydatanyc_2026-11-01_csv.tar.xz",
+      "resolved_url": "https://data.subwaydata.nyc/2026-11/subwaydatanyc_2026-11-01_csv_0c534abf3d98.tar.xz",
+      "reused_existing_raw_archive": true,
+      "sha256": "0c534abf3d989d0b18a6b99d8d9b817f9b313063c4a614f6e2f63f0d561272a9",
+      "source": "Subway Data NYC",
+      "url": "https://subwaydata.nyc/data/subwaydatanyc_2026-11-01_csv.tar.xz"
+    },
+    {
+      "archive_date": "2026-11-01",
+      "bytes": 53759908,
+      "cache_verified": false,
+      "fetched_at": "2026-11-20T17:43:21.952831Z",
+      "kind": "gtfsrt",
+      "path": "/Users/hollisyang/Desktop/Studio/StayOrSwitch/data/raw/november-2026/subwaydatanyc_2026-11-01_gtfsrt.tar.xz",
+      "resolved_url": "https://data.subwaydata.nyc/2026-11/subwaydatanyc_2026-11-01_gtfsrt_7b38a35cbd34.tar.xz",
+      "sha256": "7b38a35cbd344d2197918fd1ba0562396ef6d8b9ff76fe6b074812163fc04def",
+      "source": "Subway Data NYC",
+      "url": "https://subwaydata.nyc/data/subwaydatanyc_2026-11-01_gtfsrt.tar.xz"
+    },
+    {
+      "archive_date": "2026-11-02",
+      "bytes": 1449048,
+      "cache_verified": false,
+      "fetched_at": "2026-11-20T17:43:18.351766Z",
+      "kind": "csv",
+      "path": "/Users/hollisyang/Desktop/Studio/StayOrSwitch/data/raw/november-2026/subwaydatanyc_2026-11-02_csv.tar.xz",
+      "resolved_url": "https://data.subwaydata.nyc/2026-11/subwaydatanyc_2026-11-02_csv_1142f579a9e2.tar.xz",
+      "sha256": "1142f579a9e24c3a6887b656dfb194710b9482b45eeaeea112fd19cf94e86a9c",
+      "source": "Subway Data NYC",
+      "url": "https://subwaydata.nyc/data/subwaydatanyc_2026-11-02_csv.tar.xz"
+    },
+    {
+      "archive_date": "2026-11-02",
+      "bytes": 80544912,
+      "cache_verified": false,
+      "fetched_at": "2026-11-20T17:43:20.891702Z",
+      "kind": "gtfsrt",
+      "path": "/Users/hollisyang/Desktop/Studio/StayOrSwitch/data/raw/november-2026/subwaydatanyc_2026-11-02_gtfsrt.tar.xz",
+      "resolved_url": "https://data.subwaydata.nyc/2026-11/subwaydatanyc_2026-11-02_gtfsrt_8eb3f1764689.tar.xz",
+      "sha256": "8eb3f176468976afea79c66f533ce414b44490188c30b0d76fd937382e3582d7",
+      "source": "Subway Data NYC",
+      "url": "https://subwaydata.nyc/data/subwaydatanyc_2026-11-02_gtfsrt.tar.xz"
+    },
+    {
+      "archive_date": "2026-11-03",
+      "bytes": 1454160,
+      "cache_verified": false,
+      "fetched_at": "2026-11-20T17:43:19.647326Z",
+      "kind": "csv",
+      "path": "/Users/hollisyang/Desktop/Studio/StayOrSwitch/data/raw/november-2026/subwaydatanyc_2026-11-03_csv.tar.xz",
+      "resolved_url": "https://data.subwaydata.nyc/2026-11/subwaydatanyc_2026-11-03_csv_18a9e4ea6dcf.tar.xz",
+      "sha256": "18a9e4ea6dcf5ebd935f834c787ea83f26e84598be96c78c322cb2ff3e4f990a",
+      "source": "Subway Data NYC",
+      "url": "https://subwaydata.nyc/data/subwaydatanyc_2026-11-03_csv.tar.xz"
+    },
+    {
+      "archive_date": "2026-11-03",
+      "bytes": 82078764,
+      "cache_verified": false,
+      "fetched_at": "2026-11-20T17:43:26.923103Z",
+      "kind": "gtfsrt",
+      "path": "/Users/hollisyang/Desktop/Studio/StayOrSwitch/data/raw/november-2026/subwaydatanyc_2026-11-03_gtfsrt.tar.xz",
+      "resolved_url": "https://data.subwaydata.nyc/2026-11/subwaydatanyc_2026-11-03_gtfsrt_8d6b08219e2e.tar.xz",
+      "sha256": "8d6b08219e2e5e5f74c718fc88768fd3b5fb47c8ec85a23bf33ee9c20fd16458",
+      "source": "Subway Data NYC",
+      "url": "https://subwaydata.nyc/data/subwaydatanyc_2026-11-03_gtfsrt.tar.xz"
+    },
+    {
+      "archive_date": "2026-11-04",
+      "bytes": 1428988,
+      "cache_verified": false,
+      "fetched_at": "2026-11-20T17:43:21.584392Z",
+      "kind": "csv",
+      "path": "/Users/hollisyang/Desktop/Studio/StayOrSwitch/data/raw/november-2026/subwaydatanyc_2026-11-04_csv.tar.xz",
+      "resolved_url": "https://data.subwaydata.nyc/2026-11/subwaydatanyc_2026-11-04_csv_339385893548.tar.xz",
+      "sha256": "339385893548ae061cd00e52a72e10b9e337357d4be375d14ecc3a5557e799f0",
+      "source": "Subway Data NYC",
+      "url": "https://subwaydata.nyc/data/subwaydatanyc_2026-11-04_csv.tar.xz"
+    },
+    {
+      "archive_date": "2026-11-04",
+      "bytes": 84201200,
+      "cache_verified": false,
+      "fetched_at": "2026-11-20T17:43:25.617247Z",
+      "kind": "gtfsrt",
+      "path": "/Users/hollisyang/Desktop/Studio/StayOrSwitch/data/raw/november-2026/subwaydatanyc_2026-11-04_gtfsrt.tar.xz",
+      "resolved_url": "https://data.subwaydata.nyc/2026-11/subwaydatanyc_2026-11-04_gtfsrt_cd8e74c41f9e.tar.xz",
+      "sha256": "cd8e74c41f9e890a1ea43a6d63810eaebe13c9e9de46170f1e270b2653533c2b",
+      "source": "Subway Data NYC",
+      "url": "https://subwaydata.nyc/data/subwaydatanyc_2026-11-04_gtfsrt.tar.xz"
+    },
+    {
+      "archive_date": "2026-11-05",
+      "bytes": 1437772,
+      "cache_verified": false,
+      "fetched_at": "2026-11-20T17:43:23.175154Z",
+      "kind": "csv",
+      "path": "/Users/hollisyang/Desktop/Studio/StayOrSwitch/data/raw/november-2026/subwaydatanyc_2026-11-05_csv.tar.xz",
+      "resolved_url": "https://data.subwaydata.nyc/2026-11/subwaydatanyc_2026-11-05_csv_de0de2910faf.tar.xz",
+      "sha256": "de0de2910faf84648b751eac71690e0d71660ee29102f987f59eac5004e92789",
+      "source": "Subway Data NYC",
+      "url": "https://subwaydata.nyc/data/subwaydatanyc_2026-11-05_csv.tar.xz"
+    },
+    {
+      "archive_date": "2026-11-05",
+      "bytes": 79807892,
+      "cache_verified": false,
+      "fetched_at": "2026-11-20T17:43:28.761701Z",
+      "kind": "gtfsrt",
+      "path": "/Users/hollisyang/Desktop/Studio/StayOrSwitch/data/raw/november-2026/subwaydatanyc_2026-11-05_gtfsrt.tar.xz",
+      "resolved_url": "https://data.subwaydata.nyc/2026-11/subwaydatanyc_2026-11-05_gtfsrt_cb6e9c6899a4.tar.xz",
+      "sha256": "cb6e9c6899a4d1e05e52abc551adc373c15d8319041830e933bf7a5499117b93",
+      "source": "Subway Data NYC",
+      "url": "https://subwaydata.nyc/data/subwaydatanyc_2026-11-05_gtfsrt.tar.xz"
+    },
+    {
+      "archive_date": "2026-11-06",
+      "bytes": 1449044,
+      "cache_verified": false,
+      "fetched_at": "2026-11-20T17:43:26.564860Z",
+      "kind": "csv",
+      "path": "/Users/hollisyang/Desktop/Studio/StayOrSwitch/data/raw/november-2026/subwaydatanyc_2026-11-06_csv.tar.xz",
+      "resolved_url": "https://data.subwaydata.nyc/2026-11/subwaydatanyc_2026-11-06_csv_c31ac2374817.tar.xz",
+      "sha256": "c31ac23748175027be415793a227031e2b401641ca2110b8145f4c2982a3e0e6",
+      "source": "Subway Data NYC",
+      "url": "https://subwaydata.nyc/data/subwaydatanyc_2026-11-06_csv.tar.xz"
+    },
+    {
+      "archive_date": "2026-11-06",
+      "bytes": 82182820,
+      "cache_verified": false,
+      "fetched_at": "2026-11-20T17:43:31.226618Z",
+      "kind": "gtfsrt",
+      "path": "/Users/hollisyang/Desktop/Studio/StayOrSwitch/data/raw/november-2026/subwaydatanyc_2026-11-06_gtfsrt.tar.xz",
+      "resolved_url": "https://data.subwaydata.nyc/2026-11/subwaydatanyc_2026-11-06_gtfsrt_76110a69de14.tar.xz",
+      "sha256": "76110a69de1469eb7c8679e6057124c08f22ecece13e62b6dd749d7aaf60d7ee",
+      "source": "Subway Data NYC",
+      "url": "https://subwaydata.nyc/data/subwaydatanyc_2026-11-06_gtfsrt.tar.xz"
+    },
+    {
+      "archive_date": "2026-11-07",
+      "bytes": 956636,
+      "cache_verified": false,
+      "fetched_at": "2026-11-20T17:43:27.974567Z",
+      "kind": "csv",
+      "path": "/Users/hollisyang/Desktop/Studio/StayOrSwitch/data/raw/november-2026/subwaydatanyc_2026-11-07_csv.tar.xz",
+      "resolved_url": "https://data.subwaydata.nyc/2026-11/subwaydatanyc_2026-11-07_csv_fda884039bdf.tar.xz",
+      "sha256": "fda884039bdfae8622198800a90dba3fa29ed2f5cba165e675488ebde4a0dc8e",
+      "source": "Subway Data NYC",
+      "url": "https://subwaydata.nyc/data/subwaydatanyc_2026-11-07_csv.tar.xz"
+    },
+    {
+      "archive_date": "2026-11-07",
+      "bytes": 53148644,
+      "cache_verified": false,
+      "fetched_at": "2026-11-20T17:43:33.239389Z",
+      "kind": "gtfsrt",
+      "path": "/Users/hollisyang/Desktop/Studio/StayOrSwitch/data/raw/november-2026/subwaydatanyc_2026-11-07_gtfsrt.tar.xz",
+      "resolved_url": "https://data.subwaydata.nyc/2026-11/subwaydatanyc_2026-11-07_gtfsrt_0278f43eb1dd.tar.xz",
+      "sha256": "0278f43eb1dd02e1f4529c4d5ca6b488ca49f354a34b260b7ca2c761af1d464b",
+      "source": "Subway Data NYC",
+      "url": "https://subwaydata.nyc/data/subwaydatanyc_2026-11-07_gtfsrt.tar.xz"
+    },
+    {
+      "archive_date": "2026-11-08",
+      "bytes": 887684,
+      "cache_verified": false,
+      "fetched_at": "2026-11-20T17:43:30.300086Z",
+      "kind": "csv",
+      "path": "/Users/hollisyang/Desktop/Studio/StayOrSwitch/data/raw/november-2026/subwaydatanyc_2026-11-08_csv.tar.xz",
+      "resolved_url": "https://data.subwaydata.nyc/2026-11/subwaydatanyc_2026-11-08_csv_f596011f6002.tar.xz",
+      "sha256": "f596011f60020a961f5eaf3203ff7ec7da125bad22d26a0cf55633593423bf8a",
+      "source": "Subway Data NYC",
+      "url": "https://subwaydata.nyc/data/subwaydatanyc_2026-11-08_csv.tar.xz"
+    },
+    {
+      "archive_date": "2026-11-08",
+      "bytes": 48180396,
+      "cache_verified": false,
+      "fetched_at": "2026-11-20T17:43:34.149569Z",
+      "kind": "gtfsrt",
+      "path": "/Users/hollisyang/Desktop/Studio/StayOrSwitch/data/raw/november-2026/subwaydatanyc_2026-11-08_gtfsrt.tar.xz",
+      "resolved_url": "https://data.subwaydata.nyc/2026-11/subwaydatanyc_2026-11-08_gtfsrt_bda1a6adbe6e.tar.xz",
+      "sha256": "bda1a6adbe6e72fcd9064d1d59a80925e52d9084a9e628be85ddcd2bc6b7be3b",
+      "source": "Subway Data NYC",
+      "url": "https://subwaydata.nyc/data/subwaydatanyc_2026-11-08_gtfsrt.tar.xz"
+    },
+    {
+      "archive_date": "2026-11-09",
+      "bytes": 1448248,
+      "cache_verified": false,
+      "fetched_at": "2026-11-20T17:43:31.824702Z",
+      "kind": "csv",
+      "path": "/Users/hollisyang/Desktop/Studio/StayOrSwitch/data/raw/november-2026/subwaydatanyc_2026-11-09_csv.tar.xz",
+      "resolved_url": "https://data.subwaydata.nyc/2026-11/subwaydatanyc_2026-11-09_csv_22ecd972f73e.tar.xz",
+      "sha256": "22ecd972f73ebae0c08f9edcb98e04ab257ee4727d46a9f3a809fc413debe4f5",
+      "source": "Subway Data NYC",
+      "url": "https://subwaydata.nyc/data/subwaydatanyc_2026-11-09_csv.tar.xz"
+    },
+    {
+      "archive_date": "2026-11-09",
+      "bytes": 79640404,
+      "cache_verified": false,
+      "fetched_at": "2026-11-20T17:43:36.682045Z",
+      "kind": "gtfsrt",
+      "path": "/Users/hollisyang/Desktop/Studio/StayOrSwitch/data/raw/november-2026/subwaydatanyc_2026-11-09_gtfsrt.tar.xz",
+      "resolved_url": "https://data.subwaydata.nyc/2026-11/subwaydatanyc_2026-11-09_gtfsrt_2359e0ecfbc3.tar.xz",
+      "sha256": "2359e0ecfbc346d4348afcba335651d0d80df5b14f923b64e6af4136fde1db95",
+      "source": "Subway Data NYC",
+      "url": "https://subwaydata.nyc/data/subwaydatanyc_2026-11-09_gtfsrt.tar.xz"
+    },
+    {
+      "archive_date": "2026-11-10",
+      "bytes": 1457500,
+      "cache_verified": false,
+      "fetched_at": "2026-11-20T17:43:34.222767Z",
+      "kind": "csv",
+      "path": "/Users/hollisyang/Desktop/Studio/StayOrSwitch/data/raw/november-2026/subwaydatanyc_2026-11-10_csv.tar.xz",
+      "resolved_url": "https://data.subwaydata.nyc/2026-11/subwaydatanyc_2026-11-10_csv_d5ef3c611f0b.tar.xz",
+      "sha256": "d5ef3c611f0b883dc453f3ad65e41039c4c097eb9695d6bb10c9afd622ee4f65",
+      "source": "Subway Data NYC",
+      "url": "https://subwaydata.nyc/data/subwaydatanyc_2026-11-10_csv.tar.xz"
+    },
+    {
+      "archive_date": "2026-11-10",
+      "bytes": 84058328,
+      "cache_verified": false,
+      "fetched_at": "2026-11-20T17:43:41.144728Z",
+      "kind": "gtfsrt",
+      "path": "/Users/hollisyang/Desktop/Studio/StayOrSwitch/data/raw/november-2026/subwaydatanyc_2026-11-10_gtfsrt.tar.xz",
+      "resolved_url": "https://data.subwaydata.nyc/2026-11/subwaydatanyc_2026-11-10_gtfsrt_aed23c62a2c4.tar.xz",
+      "sha256": "aed23c62a2c481986a2886437d69137a89e74cfb37d618cea24f3f0e8a807f59",
+      "source": "Subway Data NYC",
+      "url": "https://subwaydata.nyc/data/subwaydatanyc_2026-11-10_gtfsrt.tar.xz"
+    },
+    {
+      "archive_date": "2026-11-11",
+      "bytes": 1448548,
+      "cache_verified": false,
+      "fetched_at": "2026-11-20T17:43:34.845403Z",
+      "kind": "csv",
+      "path": "/Users/hollisyang/Desktop/Studio/StayOrSwitch/data/raw/november-2026/subwaydatanyc_2026-11-11_csv.tar.xz",
+      "resolved_url": "https://data.subwaydata.nyc/2026-11/subwaydatanyc_2026-11-11_csv_c18c91d5b5a5.tar.xz",
+      "sha256": "c18c91d5b5a53e56f19f068465b83ae9bd21cd62a764ffd02b6c0c82276aae1a",
+      "source": "Subway Data NYC",
+      "url": "https://subwaydata.nyc/data/subwaydatanyc_2026-11-11_csv.tar.xz"
+    },
+    {
+      "archive_date": "2026-11-11",
+      "bytes": 84470016,
+      "cache_verified": false,
+      "fetched_at": "2026-11-20T17:43:46.246719Z",
+      "kind": "gtfsrt",
+      "path": "/Users/hollisyang/Desktop/Studio/StayOrSwitch/data/raw/november-2026/subwaydatanyc_2026-11-11_gtfsrt.tar.xz",
+      "resolved_url": "https://data.subwaydata.nyc/2026-11/subwaydatanyc_2026-11-11_gtfsrt_97ec9566e144.tar.xz",
+      "sha256": "97ec9566e144c1af4dd75b139340052f15f3d57a9e5d6709b40eab9060246656",
+      "source": "Subway Data NYC",
+      "url": "https://subwaydata.nyc/data/subwaydatanyc_2026-11-11_gtfsrt.tar.xz"
+    },
+    {
+      "archive_date": "2026-11-12",
+      "bytes": 1421424,
+      "cache_verified": false,
+      "fetched_at": "2026-11-20T17:43:37.178579Z",
+      "kind": "csv",
+      "path": "/Users/hollisyang/Desktop/Studio/StayOrSwitch/data/raw/november-2026/subwaydatanyc_2026-11-12_csv.tar.xz",
+      "resolved_url": "https://data.subwaydata.nyc/2026-11/subwaydatanyc_2026-11-12_csv_eff3699fee9e.tar.xz",
+      "sha256": "eff3699fee9e59a0b87317c575382ee7cb26434a17220942cd5118968106d0f3",
+      "source": "Subway Data NYC",
+      "url": "https://subwaydata.nyc/data/subwaydatanyc_2026-11-12_csv.tar.xz"
+    },
+    {
+      "archive_date": "2026-11-12",
+      "bytes": 81099184,
+      "cache_verified": false,
+      "fetched_at": "2026-11-20T17:43:44.674427Z",
+      "kind": "gtfsrt",
+      "path": "/Users/hollisyang/Desktop/Studio/StayOrSwitch/data/raw/november-2026/subwaydatanyc_2026-11-12_gtfsrt.tar.xz",
+      "resolved_url": "https://data.subwaydata.nyc/2026-11/subwaydatanyc_2026-11-12_gtfsrt_20778f547f8b.tar.xz",
+      "sha256": "20778f547f8b75df7313929197aa8c5df1d9c1cadd14c9d79b63db0a0bdf13e6",
+      "source": "Subway Data NYC",
+      "url": "https://subwaydata.nyc/data/subwaydatanyc_2026-11-12_gtfsrt.tar.xz"
+    },
+    {
+      "archive_date": "2026-11-13",
+      "bytes": 1396816,
+      "cache_verified": false,
+      "fetched_at": "2026-11-20T17:43:41.878360Z",
+      "kind": "csv",
+      "path": "/Users/hollisyang/Desktop/Studio/StayOrSwitch/data/raw/november-2026/subwaydatanyc_2026-11-13_csv.tar.xz",
+      "resolved_url": "https://data.subwaydata.nyc/2026-11/subwaydatanyc_2026-11-13_csv_9bc69845ae8e.tar.xz",
+      "sha256": "9bc69845ae8ebdb40b40aa266f501e07ee433025bbe8674d5d75c67e6096f580",
+      "source": "Subway Data NYC",
+      "url": "https://subwaydata.nyc/data/subwaydatanyc_2026-11-13_csv.tar.xz"
+    },
+    {
+      "archive_date": "2026-11-13",
+      "bytes": 82535696,
+      "cache_verified": false,
+      "fetched_at": "2026-11-20T17:43:47.317582Z",
+      "kind": "gtfsrt",
+      "path": "/Users/hollisyang/Desktop/Studio/StayOrSwitch/data/raw/november-2026/subwaydatanyc_2026-11-13_gtfsrt.tar.xz",
+      "resolved_url": "https://data.subwaydata.nyc/2026-11/subwaydatanyc_2026-11-13_gtfsrt_df7f6b605aaf.tar.xz",
+      "sha256": "df7f6b605aaf61e249301dfa4bb3ddb93b501800b705b90578ee9b45a5d1a11d",
+      "source": "Subway Data NYC",
+      "url": "https://subwaydata.nyc/data/subwaydatanyc_2026-11-13_gtfsrt.tar.xz"
+    },
+    {
+      "archive_date": "2026-11-14",
+      "bytes": 931716,
+      "cache_verified": false,
+      "fetched_at": "2026-11-20T17:43:45.465836Z",
+      "kind": "csv",
+      "path": "/Users/hollisyang/Desktop/Studio/StayOrSwitch/data/raw/november-2026/subwaydatanyc_2026-11-14_csv.tar.xz",
+      "resolved_url": "https://data.subwaydata.nyc/2026-11/subwaydatanyc_2026-11-14_csv_06438f723121.tar.xz",
+      "sha256": "06438f7231211681d3ab78cf7e27249055c30f6f6bc953d1ca305fbf748f88f1",
+      "source": "Subway Data NYC",
+      "url": "https://subwaydata.nyc/data/subwaydatanyc_2026-11-14_csv.tar.xz"
+    },
+    {
+      "archive_date": "2026-11-14",
+      "bytes": 51442288,
+      "cache_verified": false,
+      "fetched_at": "2026-11-20T17:43:50.554984Z",
+      "kind": "gtfsrt",
+      "path": "/Users/hollisyang/Desktop/Studio/StayOrSwitch/data/raw/november-2026/subwaydatanyc_2026-11-14_gtfsrt.tar.xz",
+      "resolved_url": "https://data.subwaydata.nyc/2026-11/subwaydatanyc_2026-11-14_gtfsrt_c376c3459183.tar.xz",
+      "sha256": "c376c3459183a6cc944798f73d713565f80642c9c8bc237696cf697774432bc1",
+      "source": "Subway Data NYC",
+      "url": "https://subwaydata.nyc/data/subwaydatanyc_2026-11-14_gtfsrt.tar.xz"
+    },
+    {
+      "archive_date": "2026-11-15",
+      "bytes": 872328,
+      "cache_verified": false,
+      "fetched_at": "2026-11-20T17:43:47.221463Z",
+      "kind": "csv",
+      "path": "/Users/hollisyang/Desktop/Studio/StayOrSwitch/data/raw/november-2026/subwaydatanyc_2026-11-15_csv.tar.xz",
+      "resolved_url": "https://data.subwaydata.nyc/2026-11/subwaydatanyc_2026-11-15_csv_a04714de613a.tar.xz",
+      "sha256": "a04714de613a3a1cc5ce026609373fcc6e4ba0633dec7535e4d29c84bcd7cfb3",
+      "source": "Subway Data NYC",
+      "url": "https://subwaydata.nyc/data/subwaydatanyc_2026-11-15_csv.tar.xz"
+    },
+    {
+      "archive_date": "2026-11-15",
+      "bytes": 47597252,
+      "cache_verified": false,
+      "fetched_at": "2026-11-20T17:43:49.909457Z",
+      "kind": "gtfsrt",
+      "path": "/Users/hollisyang/Desktop/Studio/StayOrSwitch/data/raw/november-2026/subwaydatanyc_2026-11-15_gtfsrt.tar.xz",
+      "resolved_url": "https://data.subwaydata.nyc/2026-11/subwaydatanyc_2026-11-15_gtfsrt_b872ef0f3138.tar.xz",
+      "sha256": "b872ef0f313862f97384babdb2b106e0bb930bd46dcab2e5a9fb448d7258d8be",
+      "source": "Subway Data NYC",
+      "url": "https://subwaydata.nyc/data/subwaydatanyc_2026-11-15_gtfsrt.tar.xz"
+    },
+    {
+      "archive_date": "2026-11-16",
+      "bytes": 1454860,
+      "cache_verified": false,
+      "fetched_at": "2026-11-20T17:43:48.353885Z",
+      "kind": "csv",
+      "path": "/Users/hollisyang/Desktop/Studio/StayOrSwitch/data/raw/november-2026/subwaydatanyc_2026-11-16_csv.tar.xz",
+      "resolved_url": "https://data.subwaydata.nyc/2026-11/subwaydatanyc_2026-11-16_csv_d0ce028b44ec.tar.xz",
+      "sha256": "d0ce028b44ecaa2e9318dfec94578f568287b0ec29f590746e871ff7e267243e",
+      "source": "Subway Data NYC",
+      "url": "https://subwaydata.nyc/data/subwaydatanyc_2026-11-16_csv.tar.xz"
+    },
+    {
+      "archive_date": "2026-11-16",
+      "bytes": 80284892,
+      "cache_verified": false,
+      "fetched_at": "2026-11-20T17:43:54.601297Z",
+      "kind": "gtfsrt",
+      "path": "/Users/hollisyang/Desktop/Studio/StayOrSwitch/data/raw/november-2026/subwaydatanyc_2026-11-16_gtfsrt.tar.xz",
+      "resolved_url": "https://data.subwaydata.nyc/2026-11/subwaydatanyc_2026-11-16_gtfsrt_fa6075e1bd5d.tar.xz",
+      "sha256": "fa6075e1bd5df6eb49cdbb15f51057986e595255cf7092e3a3f44a3ad6d70ddc",
+      "source": "Subway Data NYC",
+      "url": "https://subwaydata.nyc/data/subwaydatanyc_2026-11-16_gtfsrt.tar.xz"
+    },
+    {
+      "archive_date": "2026-11-17",
+      "bytes": 1437320,
+      "cache_verified": false,
+      "fetched_at": "2026-11-20T17:43:50.574388Z",
+      "kind": "csv",
+      "path": "/Users/hollisyang/Desktop/Studio/StayOrSwitch/data/raw/november-2026/subwaydatanyc_2026-11-17_csv.tar.xz",
+      "resolved_url": "https://data.subwaydata.nyc/2026-11/subwaydatanyc_2026-11-17_csv_b3a849820bbf.tar.xz",
+      "sha256": "b3a849820bbfe7064714a0f52e4a9bbdb3262dfdd093247f8896401fbffffeeb",
+      "source": "Subway Data NYC",
+      "url": "https://subwaydata.nyc/data/subwaydatanyc_2026-11-17_csv.tar.xz"
+    },
+    {
+      "archive_date": "2026-11-17",
+      "bytes": 84163616,
+      "cache_verified": false,
+      "fetched_at": "2026-11-20T17:43:55.163352Z",
+      "kind": "gtfsrt",
+      "path": "/Users/hollisyang/Desktop/Studio/StayOrSwitch/data/raw/november-2026/subwaydatanyc_2026-11-17_gtfsrt.tar.xz",
+      "resolved_url": "https://data.subwaydata.nyc/2026-11/subwaydatanyc_2026-11-17_gtfsrt_9e110c39667c.tar.xz",
+      "sha256": "9e110c39667c7fa05b3b6a843509be89a4a7026706563ac7d4ecf1bc907fd8f6",
+      "source": "Subway Data NYC",
+      "url": "https://subwaydata.nyc/data/subwaydatanyc_2026-11-17_gtfsrt.tar.xz"
+    },
+    {
+      "archive_date": "2026-11-18",
+      "bytes": 1433736,
+      "cache_verified": false,
+      "fetched_at": "2026-11-20T17:43:51.063354Z",
+      "kind": "csv",
+      "path": "/Users/hollisyang/Desktop/Studio/StayOrSwitch/data/raw/november-2026/subwaydatanyc_2026-11-18_csv.tar.xz",
+      "resolved_url": "https://data.subwaydata.nyc/2026-11/subwaydatanyc_2026-11-18_csv_ecbe6ebe1bf7.tar.xz",
+      "sha256": "ecbe6ebe1bf75cc17ca4bf50061cb283a12bf5fef951a121ca0462cfe4d8076c",
+      "source": "Subway Data NYC",
+      "url": "https://subwaydata.nyc/data/subwaydatanyc_2026-11-18_csv.tar.xz"
+    },
+    {
+      "archive_date": "2026-11-18",
+      "bytes": 82197424,
+      "cache_verified": false,
+      "fetched_at": "2026-11-20T17:44:00.453025Z",
+      "kind": "gtfsrt",
+      "path": "/Users/hollisyang/Desktop/Studio/StayOrSwitch/data/raw/november-2026/subwaydatanyc_2026-11-18_gtfsrt.tar.xz",
+      "resolved_url": "https://data.subwaydata.nyc/2026-11/subwaydatanyc_2026-11-18_gtfsrt_cef6a1190719.tar.xz",
+      "sha256": "cef6a11907192ae2a9c6097ae37b39de5ee701ebe54a22940e5cc2f2e740eab2",
+      "source": "Subway Data NYC",
+      "url": "https://subwaydata.nyc/data/subwaydatanyc_2026-11-18_gtfsrt.tar.xz"
+    },
+    {
+      "archive_date": "2026-11-19",
+      "bytes": 1479548,
+      "cache_verified": false,
+      "fetched_at": "2026-11-20T17:43:55.229194Z",
+      "kind": "csv",
+      "path": "/Users/hollisyang/Desktop/Studio/StayOrSwitch/data/raw/november-2026/subwaydatanyc_2026-11-19_csv.tar.xz",
+      "resolved_url": "https://data.subwaydata.nyc/2026-11/subwaydatanyc_2026-11-19_csv_78d6987c52ce.tar.xz",
+      "sha256": "78d6987c52ce0b219d14a7e450a17d02fbbd194b7f6562f307fa6a6b01598ce2",
+      "source": "Subway Data NYC",
+      "url": "https://subwaydata.nyc/data/subwaydatanyc_2026-11-19_csv.tar.xz"
+    },
+    {
+      "archive_date": "2026-11-19",
+      "bytes": 80550268,
+      "cache_verified": false,
+      "fetched_at": "2026-11-20T17:43:58.372058Z",
+      "kind": "gtfsrt",
+      "path": "/Users/hollisyang/Desktop/Studio/StayOrSwitch/data/raw/november-2026/subwaydatanyc_2026-11-19_gtfsrt.tar.xz",
+      "resolved_url": "https://data.subwaydata.nyc/2026-11/subwaydatanyc_2026-11-19_gtfsrt_521b19afb6bc.tar.xz",
+      "sha256": "521b19afb6bc97cc089940214dd7172f1c3108d8bfb8b6c9ecb63e9422ab212b",
+      "source": "Subway Data NYC",
+      "url": "https://subwaydata.nyc/data/subwaydatanyc_2026-11-19_gtfsrt.tar.xz"
+    }
+  ],
+  "errors": [],
+  "generated_at": "2026-11-20T17:44:00.576047Z",
+  "optional_following_boundary": {
+    "date": "2026-11-20",
+    "error": "HTTPStatusError: Client error '404 Not Found' for url 'https://subwaydata.nyc/data/subwaydatanyc_2026-11-20_csv.tar.xz'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/404",
+    "kind": "csv",
+    "status": "UNAVAILABLE"
+  },
+  "required_jobs": [
+    {
+      "date": "2026-11-01",
+      "kind": "gtfsrt"
+    },
+    {
+      "date": "2026-11-01",
+      "kind": "csv"
+    },
+    {
+      "date": "2026-11-02",
+      "kind": "csv"
+    },
+    {
+      "date": "2026-11-02",
+      "kind": "gtfsrt"
+    },
+    {
+      "date": "2026-11-03",
+      "kind": "csv"
+    },
+    {
+      "date": "2026-11-03",
+      "kind": "gtfsrt"
+    },
+    {
+      "date": "2026-11-04",
+      "kind": "csv"
+    },
+    {
+      "date": "2026-11-04",
+      "kind": "gtfsrt"
+    },
+    {
+      "date": "2026-11-05",
+      "kind": "csv"
+    },
+    {
+      "date": "2026-11-05",
+      "kind": "gtfsrt"
+    },
+    {
+      "date": "2026-11-06",
+      "kind": "csv"
+    },
+    {
+      "date": "2026-11-06",
+      "kind": "gtfsrt"
+    },
+    {
+      "date": "2026-11-07",
+      "kind": "csv"
+    },
+    {
+      "date": "2026-11-07",
+      "kind": "gtfsrt"
+    },
+    {
+      "date": "2026-11-08",
+      "kind": "csv"
+    },
+    {
+      "date": "2026-11-08",
+      "kind": "gtfsrt"
+    },
+    {
+      "date": "2026-11-09",
+      "kind": "csv"
+    },
+    {
+      "date": "2026-11-09",
+      "kind": "gtfsrt"
+    },
+    {
+      "date": "2026-11-10",
+      "kind": "csv"
+    },
+    {
+      "date": "2026-11-10",
+      "kind": "gtfsrt"
+    },
+    {
+      "date": "2026-11-11",
+      "kind": "csv"
+    },
+    {
+      "date": "2026-11-11",
+      "kind": "gtfsrt"
+    },
+    {
+      "date": "2026-11-12",
+      "kind": "csv"
+    },
+    {
+      "date": "2026-11-12",
+      "kind": "gtfsrt"
+    },
+    {
+      "date": "2026-11-13",
+      "kind": "csv"
+    },
+    {
+      "date": "2026-11-13",
+      "kind": "gtfsrt"
+    },
+    {
+      "date": "2026-11-14",
+      "kind": "csv"
+    },
+    {
+      "date": "2026-11-14",
+      "kind": "gtfsrt"
+    },
+    {
+      "date": "2026-11-15",
+      "kind": "csv"
+    },
+    {
+      "date": "2026-11-15",
+      "kind": "gtfsrt"
+    },
+    {
+      "date": "2026-11-16",
+      "kind": "csv"
+    },
+    {
+      "date": "2026-11-16",
+      "kind": "gtfsrt"
+    },
+    {
+      "date": "2026-11-17",
+      "kind": "csv"
+    },
+    {
+      "date": "2026-11-17",
+      "kind": "gtfsrt"
+    },
+    {
+      "date": "2026-11-18",
+      "kind": "csv"
+    },
+    {
+      "date": "2026-11-18",
+      "kind": "gtfsrt"
+    },
+    {
+      "date": "2026-11-19",
+      "kind": "csv"
+    },
+    {
+      "date": "2026-11-19",
+      "kind": "gtfsrt"
+    },
+    {
+      "date": "2026-10-31",
+      "kind": "gtfsrt"
+    },
+    {
+      "date": "2026-10-31",
+      "kind": "csv"
+    },
+    {
+      "date": "2026-10-30",
+      "kind": "csv"
+    }
+  ],
+  "schema_version": "november-2026-acquisition-v1",
+  "stage": "ACQUIRED"
+}
