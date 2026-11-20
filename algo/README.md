@@ -44,6 +44,34 @@ Severe-specific training support meets the event and incident gates in only
 eight broad A-line groups. Other severe contexts disclose fallback to time
 profiles. All outcomes remain screened final MTA prediction proxies.
 
+## Supplemental affected-route Stay replay
+
+The user's follow-up asks about a commuter whose intended route is actually
+affected, rather than already taking the fastest MTA route. The
+[supplemental experiment](reports/affected-stay-context.md) holds the original
+predictor, selected trains and thresholds fixed and changes only the Stay
+reference. Official route/direction wording qualifies 150 route/checkpoint pairs
+across seven incident families before scoring. All 11 candidate variants remain.
+
+Read the [validation supplement](reports/affected-stay-validation.md) and
+[test supplement](reports/affected-stay-test.md), with separately labeled
+[observable case illustrations](reports/affected-stay-illustrations.md). Results are post-hoc and
+separate from the original benchmark; neither unknown outcomes nor missed
+trains count as successful recommendations. A mixed-line/direction severity
+limitation in the frozen classifier is explicitly documented and audited out
+of this cohort, without changing the original predictor or reports.
+
+With the original complete replay archives available locally, verify the
+supplemental freeze and reproduce both splits:
+
+```sh
+.venv/bin/python algo/scripts/evaluate_affected_stay.py --freeze-only
+.venv/bin/python algo/scripts/evaluate_affected_stay.py
+```
+
+These commands check the original code, configuration, profile, case archives
+and text-review hashes. They do not refit profiles or generate new routes.
+
 ## Algorithm handoff
 
 Use [the comparator and integration instructions](docs/severe-comparison.md)

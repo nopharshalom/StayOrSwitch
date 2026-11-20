@@ -43,8 +43,11 @@ above illustrate the broader product concept.
 October data preparation, time-conditioned historical profiles and multi-route
 replays are complete. See the [historical delay tables](data/reports/profiles-horizon-notes.md)
 and [final test report](algo/reports/october-test.md). Severe-Switch effectiveness
-remains unvalidated: the fastest-MTA reference had no definite severe exposure
-in the held-out cases. Conditional timing comparisons are reported separately.
+could not be assessed by that original benchmark: the fastest-MTA reference
+had no definite severe exposure. A separate [affected-route Stay replay](algo/reports/affected-stay-context.md)
+now tests the commuter's disrupted-route scenario with unchanged predictions.
+Its post-hoc results and outcome coverage do not establish general success rates
+or prove an advantage from historical corrections over live MTA.
 
 See the [algorithm workspace](algo/README.md) and [data workspace](data/README.md)
 for implementation status, reproducible commands and measured results. The
