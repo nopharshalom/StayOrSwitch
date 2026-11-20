@@ -34,18 +34,10 @@ def any_saving_category(row):
     return outcomes.pop() if len(outcomes) == 1 else "ambiguous"
 
 
-def write_any_saving_report(rows):
+def result_table(rows):
     from statistics import mean, median
 
     lines = [
-        "# November weekday Stay/Switch experiment",
-        "",
-        "The October 1–31, 2026 historical ETA model supplied the frozen recommendations. The evaluation uses the November 2–6, 9–13 and 16–18 weekday cohort for two corridors selected after reviewing earlier results. Each observation is a recommendation time. Multiple decisions can involve the same trains or incident. The two corridors originally had 635 checkpoints. The table covers the 595 with Stay or Switch advice and excludes 10 Monitor and 30 Undetermined decisions. The sample includes service-problem checkpoints beyond the onset and across severity levels.",
-        "",
-        "Both routes start at the same decision time and include walking, waiting and transfers. A passenger is assumed to board the earliest compatible train whose fresh MTA departure forecast is strictly later than platform readiness. The selected train needs a screened arrival from the journal or a bounded vehicle observation. These are reconstructed journeys.",
-        "",
-        "Each comparison follows the original recommendation. Any positive saving counts as a gain. Zero saving or a loss up to and including 10% of the original Stay duration is a tie. A larger loss counts as slower. Percentages and time summaries use classifiable cases. Positive minutes indicate savings.",
-        "",
         "| Corridor | Advice | Issued | Classified | Faster | Tie | Slower | Faster rate | Mean minutes saved | Median minutes saved |",
         "|---|---|---:|---:|---:|---:|---:|---:|---:|---:|",
     ]
@@ -87,6 +79,22 @@ def write_any_saving_report(rows):
                 minutes(median),
             ]
             lines.append("| " + " | ".join(map(str, values)) + " |")
+    return lines
+
+
+def write_any_saving_report(rows):
+
+    lines = [
+        "# November weekday Stay/Switch experiment",
+        "",
+        "The October 1–31, 2026 historical ETA model supplied the frozen recommendations. The evaluation uses the November 2–6, 9–13 and 16–18 weekday cohort for two corridors selected after reviewing earlier results. Each observation is a recommendation time. Multiple decisions can involve the same trains or incident. The two corridors originally had 635 checkpoints. The table covers the 595 with Stay or Switch advice and excludes 10 Monitor and 30 Undetermined decisions. The sample includes service-problem checkpoints beyond the onset and across severity levels.",
+        "",
+        "Both routes start at the same decision time and include walking, waiting and transfers. A passenger is assumed to board the earliest compatible train whose fresh MTA departure forecast is strictly later than platform readiness. The selected train needs a screened arrival from the journal or a bounded vehicle observation. These are reconstructed journeys.",
+        "",
+        "Each comparison follows the original recommendation. Any positive saving counts as a gain. Zero saving or a loss up to and including 10% of the original Stay duration is a tie. A larger loss counts as slower. Percentages and time summaries use classifiable cases. Positive minutes indicate savings.",
+        "",
+    ]
+    lines.extend(result_table(rows))
     lines += [
         "",
         f"Of {len(rows)} issued recommendations, {sum(row['category'] in CATEGORIES for row in rows)} have a classifiable comparison. Unknown outcomes are excluded from each faster rate. Stay is compared with the supplied alternative. Switch is compared with the original Stay.",

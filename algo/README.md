@@ -2,7 +2,7 @@
 
 ## Historical evaluation
 
-Run `python algo/scripts/evaluate_all_forecast_boarding.py` from the repository root after installing the [project dependencies](requirements-live-lock.txt). It reconstructs both journeys for each of the 595 frozen recommendations and writes the [result table](reports/november-all-forecast-boarding-any-saving.md) and [case records](reports/november-all-forecast-boarding.json). The case field `bounds` contains Stay and alternative duration ranges in seconds, in that order. `category` scores the recommended action. Null bounds indicate missing evidence, and `ambiguous` means the range crosses an outcome threshold.
+Run `python algo/scripts/evaluate_recorded_boarding.py` from the repository root after installing the [project dependencies](requirements-live-lock.txt). It reconstructs both journeys for each of the 595 frozen recommendations and writes the [result table](reports/november-recorded-boarding.md) and [case records](reports/november-recorded-boarding.json). The case field `bounds` contains Stay and alternative duration ranges in seconds, in that order. `category` scores the recommended action. Null bounds indicate missing evidence, and `ambiguous` means the range crosses an outcome threshold.
 
 ## App integration
 
