@@ -1,5 +1,18 @@
 # Historical ETA Delay and Severe-Incident Decisions
 
+For commuter advice, run the [boarding-safe forecast](docs/boarding-safe-handoff.md)
+in all modes with `--output forecast.json`, then run
+`python algo/scripts/run_commuter_advice.py forecast.json`. Applications can
+also call `stayorswitch.commuter_advice.commuter_advice(model, raw, reference)`
+with the incident-profile and raw-MTA predictions for the same cutoff.
+The response identifies the compared routes, their predicted durations in seconds,
+the number of usable alternatives and the reason for the action.
+A partial-coverage Stay compares only the timed alternatives. An added Switch
+requires both forecasts to predict at least 10% savings on the same route.
+MONITOR keeps the current route pending another update. UNDETERMINED means
+the reference has no usable duration. See the [weekday replay](reports/november-commuter-coverage.md).
+
+
 The current evaluation uses a [feed-following passenger policy](docs/november-feed-replay-plan.md):
 select from the feed available at each historical time, update only as new
 feed information arrives, and validate the train ultimately selected for
@@ -14,7 +27,7 @@ alongside the counts. The selected train's inferred travel time must pass a
 permissive geographic sanity screen; unusable outcomes remain unknown without
 an outcome-based fallback to another train.
 
-The latest prediction entrypoint is documented in the
+The underlying forecast entrypoint is documented in the
 [boarding-safe handoff](docs/boarding-safe-handoff.md). It keeps historical ETA
 correction but uses an independent conservative boarding gate, including
 transfer readiness and a configurable margin. The default is 120 seconds;
