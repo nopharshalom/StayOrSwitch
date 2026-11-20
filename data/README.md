@@ -26,6 +26,21 @@ The source is [Subway Data NYC](https://subwaydata.nyc/), derived from official
 MTA feeds. Final-prediction journal outcomes are proxies, not observed passenger
 arrivals. Each downloaded archive and derived output must have provenance.
 
+## Completed source preparation
+
+All 31 October dates and 64 required archives are verified. The prepared source
+contains 231,608 snapshots, including 8,410 service-alert captures, plus 2,162,769
+raw train receipt records for outcome-confirmation timing. Alert capture counts
+are not independent incident counts.
+
+There are 196,024 endpoint label records, of which 167,216 have usable arrival
+labels and 163,679 have usable departure labels. These counts include normalized
+aliases; profile fitting deduplicates physical endpoint events separately.
+See the [source quality report](reports/october-source.json),
+[verification](reports/october-source-verification.json), and
+[pre-evaluation identity correction](../algo/reports/october-protocol-revision.md).
+The original normalization and corrected label producers have separate lineage.
+
 ## Reproduce the data preparation
 
 Run from the repository root using the prepared Python environment:

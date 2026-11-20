@@ -1,0 +1,217 @@
+{
+  "archive_count": 64,
+  "daily_label_parity": "ONLY_APPROVED_RAW_PREFIX_FLAG_AND_DERIVED_USABILITY_CHANGED",
+  "label_generation": {
+    "all_daily_labels_match_only_approved_flag_change": true,
+    "approved_changed_paths": [
+      "data/october/labels.py"
+    ],
+    "daily_normalization_metadata_unchanged": true,
+    "elapsed_seconds": 139.28,
+    "generated_at": "2026-11-20T00:42:11.604892Z",
+    "merged_labels_match_only_approved_flag_change": true,
+    "normalization_rerun": false,
+    "policy_change": "ACTUAL_RAW_PREFIX_OR_REVIEWED_W_FROM_N_FX_FROM_F_7X_FROM_7",
+    "previous_label_artifacts": {
+      "daily": {
+        "2026-10-01": {
+          "bytes": 361985,
+          "path": "data/processed/october/2026-10-01.labels.json.gz",
+          "sha256": "db5f0d382ff6e3270795d5be1af4934545f86b90c4c258685c0321b6da4a67bc"
+        },
+        "2026-10-02": {
+          "bytes": 365970,
+          "path": "data/processed/october/2026-10-02.labels.json.gz",
+          "sha256": "6421a3fe2cde25728a694e249b1e6aba8d4a49ff1f7c32f9c08397eedd371bed"
+        },
+        "2026-10-03": {
+          "bytes": 211373,
+          "path": "data/processed/october/2026-10-03.labels.json.gz",
+          "sha256": "ffaf17e48de56daca10e0e44227ee23607cce8dc65d4ead30dd847397e389b8a"
+        },
+        "2026-10-04": {
+          "bytes": 196518,
+          "path": "data/processed/october/2026-10-04.labels.json.gz",
+          "sha256": "32f2b1b70c4d2c707942741a6e97a87bffacbf02e50614d11c8cd3976d6950c9"
+        },
+        "2026-10-05": {
+          "bytes": 370050,
+          "path": "data/processed/october/2026-10-05.labels.json.gz",
+          "sha256": "7947fc026c1432bbf70ac154813a86611ca25084a7e924bae33a307baed917d6"
+        },
+        "2026-10-06": {
+          "bytes": 371830,
+          "path": "data/processed/october/2026-10-06.labels.json.gz",
+          "sha256": "45032040dcccbf3f1374150a94652ea646d1ed9650078ec914e49c0b765e32d0"
+        },
+        "2026-10-07": {
+          "bytes": 356474,
+          "path": "data/processed/october/2026-10-07.labels.json.gz",
+          "sha256": "db4427b5bc3e8282cd76182dcf536d35784e6315025eecfaa45d68a9da8bef08"
+        },
+        "2026-10-08": {
+          "bytes": 362312,
+          "path": "data/processed/october/2026-10-08.labels.json.gz",
+          "sha256": "3a88dc661213d503323d519d6693efbd122389f6b99d43f8b3a66637e764f021"
+        },
+        "2026-10-09": {
+          "bytes": 360526,
+          "path": "data/processed/october/2026-10-09.labels.json.gz",
+          "sha256": "276fdf3d66e1fce2ce3c98f05b41df7e87c26c1335b8c9a7d3cde77dc9a75fff"
+        },
+        "2026-10-10": {
+          "bytes": 213944,
+          "path": "data/processed/october/2026-10-10.labels.json.gz",
+          "sha256": "5e89ca141c98660a71e98df4f7e8b54e9bae70ffe3a53fa350ac152d17c295ca"
+        },
+        "2026-10-11": {
+          "bytes": 195708,
+          "path": "data/processed/october/2026-10-11.labels.json.gz",
+          "sha256": "c3aada9c64a3a27e0fe921254edaa24bb9a44e591fc07308369cab88686f3b82"
+        },
+        "2026-10-12": {
+          "bytes": 356410,
+          "path": "data/processed/october/2026-10-12.labels.json.gz",
+          "sha256": "7bc69802e0a5168e9b556a091b5a6aa7dec6e70cc6534b1bf457ba504daaa9b5"
+        },
+        "2026-10-13": {
+          "bytes": 351395,
+          "path": "data/processed/october/2026-10-13.labels.json.gz",
+          "sha256": "84deb942fa9090d16dfb4de0823fbfdb0e678ec768f3ffffc6e8bb720e381992"
+        },
+        "2026-10-14": {
+          "bytes": 355620,
+          "path": "data/processed/october/2026-10-14.labels.json.gz",
+          "sha256": "f363f64cc993b31767af9f48a2987721a25017941de162a36a002fbb3a59c551"
+        },
+        "2026-10-15": {
+          "bytes": 364002,
+          "path": "data/processed/october/2026-10-15.labels.json.gz",
+          "sha256": "f107ec2bf0bf6e97db08d2f124c5c88d6bf716261ecde605d01980f5c743509a"
+        },
+        "2026-10-16": {
+          "bytes": 359016,
+          "path": "data/processed/october/2026-10-16.labels.json.gz",
+          "sha256": "0518e0d833d597fff4dae176d25bc815e3af90b5530365d6c5c64c4bb2730342"
+        },
+        "2026-10-17": {
+          "bytes": 223215,
+          "path": "data/processed/october/2026-10-17.labels.json.gz",
+          "sha256": "6edf2653202ba070197a9aa58a93525c8bab7dba40baa0e9bb4d3c9594a2f8cb"
+        },
+        "2026-10-18": {
+          "bytes": 210309,
+          "path": "data/processed/october/2026-10-18.labels.json.gz",
+          "sha256": "96f5f590e59b8e9b039e58f3083e6f783b5253caadaff9778b2910e3ebc16c47"
+        },
+        "2026-10-19": {
+          "bytes": 365542,
+          "path": "data/processed/october/2026-10-19.labels.json.gz",
+          "sha256": "f8d8a9de8ba262a94db6163898401294a75ca5cb183bb36fa994e22c321a719f"
+        },
+        "2026-10-20": {
+          "bytes": 362604,
+          "path": "data/processed/october/2026-10-20.labels.json.gz",
+          "sha256": "1e39eb7dbbe9812252eb35d93f8c457b4f3614a384fd90289b12b64d9ce3ce57"
+        },
+        "2026-10-21": {
+          "bytes": 361218,
+          "path": "data/processed/october/2026-10-21.labels.json.gz",
+          "sha256": "63e9ea4a6bfe542e9b6d0f6e7f9f2df028838985059ade5a327776dd852ec7be"
+        },
+        "2026-10-22": {
+          "bytes": 375573,
+          "path": "data/processed/october/2026-10-22.labels.json.gz",
+          "sha256": "1105c012a9016005287ba73e2999d0021876e5883a6fa91e311b1f283e9f8833"
+        },
+        "2026-10-23": {
+          "bytes": 369527,
+          "path": "data/processed/october/2026-10-23.labels.json.gz",
+          "sha256": "92ee18af62ca6d8dd89b13aba5f5550d7e55ef454b4b5459fc4cef17e480d9e6"
+        },
+        "2026-10-24": {
+          "bytes": 208658,
+          "path": "data/processed/october/2026-10-24.labels.json.gz",
+          "sha256": "b359b8930e0583abc2513daef84420052fca46b0aabb4c994b80508c4f0039e4"
+        },
+        "2026-10-25": {
+          "bytes": 198801,
+          "path": "data/processed/october/2026-10-25.labels.json.gz",
+          "sha256": "cf3d06a826ef8dda0cce2df6fe06f1e3cac7a576cebe57a671613a70447f51f2"
+        },
+        "2026-10-26": {
+          "bytes": 366472,
+          "path": "data/processed/october/2026-10-26.labels.json.gz",
+          "sha256": "acd89e857486cc9c85a479faa3fcf00538f5309f7e68b727a7bbd0bdba13120e"
+        },
+        "2026-10-27": {
+          "bytes": 362864,
+          "path": "data/processed/october/2026-10-27.labels.json.gz",
+          "sha256": "d279a336770bad2f1c9e5b3332c972986b9b7895576560769ef71059df74b8dc"
+        },
+        "2026-10-28": {
+          "bytes": 364370,
+          "path": "data/processed/october/2026-10-28.labels.json.gz",
+          "sha256": "9a2463d631b21020b414a86dce8f682c707154c5f9cf8bc5c5251f9ea2e3fbc5"
+        },
+        "2026-10-29": {
+          "bytes": 353090,
+          "path": "data/processed/october/2026-10-29.labels.json.gz",
+          "sha256": "2e0b4460b728e7c7cc2ab19d4e1a23c5d8a07c2b59493f03fb3b25fd71eccf85"
+        },
+        "2026-10-30": {
+          "bytes": 370178,
+          "path": "data/processed/october/2026-10-30.labels.json.gz",
+          "sha256": "74c9205594bd16c379e3b58580fe35c519c9edbb7314e48f1c8d2a3efd2999d0"
+        },
+        "2026-10-31": {
+          "bytes": 230240,
+          "path": "data/processed/october/2026-10-31.labels.json.gz",
+          "sha256": "51abc5acc5763b0918e2cc6bea776d20a6634bd5fe80e8154915c35cd4157a47"
+        }
+      },
+      "merged": {
+        "bytes": 9522326,
+        "path": "data/processed/october/labels.json.gz",
+        "sha256": "862b9761ce4d687f49ccfa2a68c414b644a9829f92a2627571b0ce5646179b8f"
+      }
+    },
+    "previous_manifest": {
+      "bytes": 158743,
+      "path": "data/manifests/october-normalization-origin.json",
+      "sha256": "a0c659a507376aca1fe87cea9e41619b7648c9ebc4e2c59123ef67e2f13a076e"
+    },
+    "previous_report": {
+      "bytes": 83023,
+      "path": "data/reports/october-source-normalization-origin.json",
+      "sha256": "ab07aca4e540592431693efbfd37359ea3752ee369999fcd4a78b06c6d9fcc76"
+    },
+    "quality_changes": {
+      "flag:RAW_TRIP_ROUTE_MISMATCH": {
+        "after": 0,
+        "before": 9822
+      },
+      "usable_arrival_rows": {
+        "after": 167216,
+        "before": 158660
+      },
+      "usable_departure_rows": {
+        "after": 163679,
+        "before": 155438
+      }
+    },
+    "rebuild_script": {
+      "bytes": 8749,
+      "path": "data/scripts/rebuild_october_labels.py",
+      "sha256": "824db1bcd224e7d2a83612b3cfc09f503a01ce004b5398d169859fdfd11d25f9"
+    },
+    "retained_artifacts_verified": 221
+  },
+  "label_rebuild_elapsed_seconds": 139.28,
+  "normalization_artifacts_unchanged": true,
+  "prepared_dates": 31,
+  "retained_artifact_count": 221,
+  "source_manifest_sha256": "9397bc6ad9c4159a028f4613580206a560fba772bf9c845395e38eb628ea179f",
+  "stage": "VERIFIED",
+  "verified_at": "2026-11-20T00:42:11.610187Z"
+}

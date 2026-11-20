@@ -28,6 +28,7 @@
 - Live Stay means the user's selected itinerary. Historical replay uses the same-cutoff fastest unmodified MTA candidate as the reference, as requested by the user. No reference means no invented Stay/Switch decision.
 - Use one information cutoff, preserve alert versions, and never backdate later severe wording or read future feeds to make a transfer catchable.
 - Final MTA prediction journals are screened outcome proxies, not independent passenger observations. Missing or missed-boarding outcomes remain unknown, never successes or ties.
+- Raw trip-ID prefixes are namespace hints. Accept the actual route's own prefix and the observed aliases W <- N, FX <- F, and 7X <- 7, while preserving exact journal actual-route, service/direction and cross-route collision checks. See the pre-evaluation identity correction record; do not reintroduce the rejected-prefix bug.
 - Do not double-count delay already included in MTA ETA. Distinct line names do not establish independent disruption exposure.
 - Data freshness and last-known reconstructed archive alerts are different. Unknown alerts are not normal service.
 - Preserve reusable Google/MTA integration, baseline journey arithmetic, API contracts and UI materials while replacing the old modeling/data stack.

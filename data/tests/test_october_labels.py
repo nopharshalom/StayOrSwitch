@@ -131,18 +131,53 @@ class OctoberLabelsTests(unittest.TestCase):
             result, _ = self.build(trips={"normalized": dict(self.trip, direction_id=gtfs_direction, nyct_direction="SOUTH")})
             self.assertTrue(result["normalized"]["F09S"]["arrival_usable"])
 
-    def test_observed_express_route_aliases_preserve_actual_service_identity(self):
-        for route, raw_route in (("FX", "F"), ("7X", "7")):
-            trip = dict(self.trip, route_id=route, trip_id="060000_" + raw_route + "..S")
-            uid = source_trip_uid(trip)
-            journal = dict(self.journal_trip, route_id=route, trip_id=trip["trip_id"], trip_uid=uid)
-            result, _ = self.build(trips={"normalized": trip}, trip_rows=[journal],
-                                   stop_rows=[dict(self.stop, trip_uid=uid)])
-            self.assertTrue(result["normalized"]["F09S"]["arrival_usable"])
-            self.assertNotEqual(canonical_event_trip_id(trip), canonical_event_trip_id(dict(trip, route_id=raw_route)))
+    def test_actual_and_observed_alias_prefixes_preserve_actual_service_identity(self):
+        for route, raw_route in (("W", "W"), ("W", "N"), ("FX", "FX"),
+                                 ("FX", "F"), ("7X", "7X"), ("7X", "7")):
+            with self.subTest(route=route, raw_route=raw_route):
+                trip = dict(self.trip, route_id=route, trip_id="060000_" + raw_route + "..S")
+                uid = source_trip_uid(trip)
+                journal = dict(self.journal_trip, route_id=route, trip_id=trip["trip_id"], trip_uid=uid)
+                result, _ = self.build(trips={"normalized": trip}, trip_rows=[journal],
+                                       stop_rows=[dict(self.stop, trip_uid=uid)])
+                label = result["normalized"]["F09S"]
+                self.assertTrue(label["arrival_usable"])
+                self.assertEqual(label["route_id"], route)
+                self.assertEqual(label["canonical_event_trip_id"], canonical_event_trip_id(trip))
+                if route != raw_route:
+                    self.assertNotEqual(canonical_event_trip_id(trip), canonical_event_trip_id(dict(trip, route_id=raw_route)))
+                    result, _ = self.build(trips={"normalized": trip},
+                                           trip_rows=[dict(journal, route_id=raw_route)],
+                                           stop_rows=[dict(self.stop, trip_uid=uid)])
+                    self.assertIn("CSV_ROUTE_MISMATCH", result["normalized"]["F09S"]["quality_flags"])
         bad = dict(self.trip, route_id="E")
         result, _ = self.build(trips={"normalized": bad}, trip_rows=[dict(self.journal_trip, route_id="E")])
         self.assertIn("RAW_TRIP_ROUTE_MISMATCH", result["normalized"]["F09S"]["quality_flags"])
+
+    def test_n_and_w_actual_routes_sharing_encoded_uid_remain_ambiguous(self):
+        n_trip = dict(self.trip, feed_id="nqrw", route_id="N", trip_id="060000_N..S")
+        w_trip = dict(n_trip, id="w-service", route_id="W")
+        uid = source_trip_uid(n_trip)
+        journal = dict(self.journal_trip, route_id="W", trip_id=w_trip["trip_id"], trip_uid=uid)
+        result, counts = self.build(trips={"n-service": n_trip, "w-service": w_trip},
+                                    trip_rows=[journal], stop_rows=[dict(self.stop, trip_uid=uid)])
+        self.assertEqual(source_trip_uid(w_trip), uid)
+        self.assertNotEqual(canonical_event_trip_id(n_trip), canonical_event_trip_id(w_trip))
+        self.assertEqual(counts["ambiguous_source_uids"], 1)
+        for endpoints in result.values():
+            self.assertFalse(endpoints["F09S"]["arrival_usable"])
+            self.assertIn("AMBIGUOUS_NORMALIZED_TRIP_FOR_CSV_UID", endpoints["F09S"]["quality_flags"])
+
+    def test_encoded_aliases_are_not_accepted_in_reverse(self):
+        for route, raw_route in (("N", "W"), ("F", "FX"), ("7", "7X")):
+            with self.subTest(route=route, raw_route=raw_route):
+                trip = dict(self.trip, route_id=route, trip_id="060000_" + raw_route + "..S")
+                uid = source_trip_uid(trip)
+                journal = dict(self.journal_trip, route_id=route, trip_id=trip["trip_id"], trip_uid=uid)
+                result, _ = self.build(trips={"normalized": trip}, trip_rows=[journal],
+                                       stop_rows=[dict(self.stop, trip_uid=uid)])
+                self.assertIn("RAW_TRIP_ROUTE_MISMATCH", result["normalized"]["F09S"]["quality_flags"])
+                self.assertFalse(result["normalized"]["F09S"]["arrival_usable"])
 
     def test_identity_conflict_in_one_alias_invalidates_shared_journal(self):
         other = dict(self.trip, id="other-alias", start_time="10:00:04", identity_conflict=True)

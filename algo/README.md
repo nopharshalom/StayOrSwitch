@@ -17,11 +17,13 @@ reports; no prior model accuracy or switching claim applies to this version.
 
 The plan, configuration, data pipeline, historical profiles, multi-route
 comparator, evaluator and handoff instructions are implemented. The previous
-data/model stack has been removed. The frozen implementation passes 245 algorithm
-tests, 111 data tests and the retained 14-scenario contract validator.
+data/model stack has been removed. The corrected frozen implementation passes
+246 algorithm tests, 116 data tests and the retained 14-scenario contract validator.
 
-All 64 required October/boundary archives have been acquired and verified.
-Whole-month preparation is running; full profiles and held-out replay are pending.
+All 64 required October/boundary archives and all 31 prepared days have been
+verified. Full profiles are being generated; held-out replay is pending.
+The [pre-evaluation identity correction](reports/october-protocol-revision.md)
+documents the renewed protocol and unchanged decision/evaluation rules.
 Completed real-data results will be linked here only after verification.
 
 ## Algorithm handoff

@@ -1,0 +1,42 @@
+{
+  "stage": "INTERRUPTED_BEFORE_TRAIN_FIT_OR_HELD_OUT_OUTCOME_ACCESS",
+  "reason": "Root requested correction of legitimate W actual route with N encoded raw trip namespace.",
+  "completed_forecast_dates": [
+    "2026-10-01"
+  ],
+  "in_progress_forecast_date": "2026-10-02",
+  "development_label_dates_opened": [
+    "2026-10-01",
+    "2026-10-02"
+  ],
+  "nondevelopment_labels_opened": false,
+  "train_profile_sealed": false,
+  "exit_code": 130,
+  "artifacts": [
+    {
+      "path": "data/processed/october/interrupted-before-w-identity-correction/profile-observations.sqlite",
+      "bytes": 59670528,
+      "sha256": "797b784ecae51debc0f7b1e4b0e0f9b2543800bd6609190eb2c958716bf841c2"
+    },
+    {
+      "path": "data/processed/october/interrupted-before-w-identity-correction/profile-observations.sqlite-wal",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "data/processed/october/interrupted-before-w-identity-correction/profile-observations.sqlite-shm",
+      "bytes": 131072,
+      "sha256": "6075bf8147c446b5c9bf5395a9fe0377ad8f6f584dc3b9a8d9aabc60ec979f47"
+    },
+    {
+      "path": "data/processed/october/interrupted-before-w-identity-correction/incidents.json.gz",
+      "bytes": 1673285,
+      "sha256": "57d78963d57a419ae838763fcc06614841eefe02b0ffc9a7b7b0d4c6b81d9773"
+    },
+    {
+      "path": "data/processed/october/interrupted-before-w-identity-correction/october-protocol-frozen.json",
+      "bytes": 2587,
+      "sha256": "422939ff0f37676d0d12559697176010603f46dbe28fd0ec7a193ab328229215"
+    }
+  ]
+}

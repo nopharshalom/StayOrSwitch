@@ -69,11 +69,13 @@ def _identity_flags(trip):
     if raw is None:
         flags.append("UNRECOGNIZED_ENCODED_TRIP_IDENTITY")
     else:
-        # Express service descriptors use the base line in their encoded raw
-        # IDs (observed in October input feeds). Keep the actual express route
-        # in canonical identities; this is only raw-suffix validation.
-        encoded_route = {"FX": "F", "7X": "7"}.get(trip.get("route_id"), trip.get("route_id"))
-        if raw.group(1) != encoded_route:
+        # October feeds contain both actual-route prefixes and these explicit
+        # encoded aliases. Keep the actual route in canonical identities and
+        # require exact journal route matching; this only validates raw IDs.
+        actual_route = trip.get("route_id")
+        encoded_routes = {actual_route}
+        encoded_routes.update({"W": {"N"}, "FX": {"F"}, "7X": {"7"}}.get(actual_route, set()))
+        if raw.group(1) not in encoded_routes:
             flags.append("RAW_TRIP_ROUTE_MISMATCH")
         cardinal = {"NORTH": "N", "SOUTH": "S"}.get(trip.get("nyct_direction"))
         if cardinal is not None and cardinal != raw.group(2):

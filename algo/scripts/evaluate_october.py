@@ -75,7 +75,7 @@ def protocol_fingerprint(config_path):
     for directory in ("algo/stayorswitch", "data/delay_profiles", "data/october"):
         paths.extend((ROOT / directory).glob("*.py"))
     paths.extend(ROOT / path for path in ("algo/scripts/evaluate_october.py", "data/scripts/build_delay_profiles.py",
-                                         "data/scripts/prepare_october.py"))
+                                         "data/scripts/prepare_october.py", "data/scripts/rebuild_october_labels.py"))
     return {"schema_version": "october-protocol-freeze-v1", "config_sha256": sha256(config_path),
             "code_sha256": {str(path.relative_to(ROOT)): sha256(path) for path in sorted(paths)}}
 

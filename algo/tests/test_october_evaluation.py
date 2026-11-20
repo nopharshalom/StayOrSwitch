@@ -925,6 +925,30 @@ class EvaluationFreezeTests(unittest.TestCase):
                         self.runner.verify_evaluation_freeze(path, changed, create=create)
                     self.assertEqual(path.read_bytes(), original)
 
+    def test_label_rebuild_script_is_covered_by_protocol_fingerprint_and_freeze(self):
+        paths = ["algo/scripts/evaluate_october.py", "data/scripts/build_delay_profiles.py",
+                 "data/scripts/prepare_october.py", "data/scripts/rebuild_october_labels.py",
+                 "algo/stayorswitch/comparator.py", "data/delay_profiles/estimator.py",
+                 "data/october/sources.py"]
+        for relative in paths:
+            path = self.root / relative
+            path.parent.mkdir(parents=True, exist_ok=True)
+            path.write_text('"""Synthetic protocol input: ' + relative + '."""\n')
+        original = self.runner.protocol_fingerprint(self.config)
+        rebuild = "data/scripts/rebuild_october_labels.py"
+        self.assertEqual(set(original["code_sha256"]), set(paths))
+        self.assertEqual(original["code_sha256"][rebuild], self.runner.sha256(self.root / rebuild))
+        freeze_path = self.root / "protocol-freeze.json"
+        self.runner.verify_evaluation_freeze(freeze_path, original, create=True)
+        frozen_bytes = freeze_path.read_bytes()
+        (self.root / rebuild).write_text('"""Changed synthetic label rebuild."""\n')
+        revised = self.runner.protocol_fingerprint(self.config)
+        self.assertNotEqual(revised["code_sha256"][rebuild], original["code_sha256"][rebuild])
+        self.assertEqual(revised["config_sha256"], original["config_sha256"])
+        with self.assertRaises(ValueError):
+            self.runner.verify_evaluation_freeze(freeze_path, revised)
+        self.assertEqual(freeze_path.read_bytes(), frozen_bytes)
+
     def test_matching_train_only_profile_is_accepted(self):
         estimator = self.runner.verify_frozen_profile(self.config, self.manifest_path)
         self.assertEqual(estimator.fit_split, "train")

@@ -76,6 +76,15 @@ fails if source code or configuration changes during a run. `PREPARED` is emitte
 only when all configured October dates have completed; subset runs are explicitly
 marked `SMOKE_PREPARED`.
 
+The reviewed raw-prefix correction for W, FX, and 7X uses
+`data/scripts/rebuild_october_labels.py`. It verifies and preserves all original
+normalization artifacts and producer fingerprints, archives the original
+manifest/report, and records a separate label producer and rebuild-script hash.
+The active manifest becomes `RELABELING` during the migration. It returns to
+`PREPARED` only after every daily and merged label is proven unchanged except
+for the approved prefix exclusion and its derived usability flags. A new
+evaluation protocol seal is required before fitting resumes.
+
 Run the focused boundary checks with:
 
 ```sh
