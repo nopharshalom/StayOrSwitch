@@ -15,7 +15,7 @@ Run with the repository root and `algo/` on `PYTHONPATH`:
 from data.delay_profiles import IncidentIndex, ProfileEstimator
 from stayorswitch.severe import evaluate_modes
 
-profiles = ProfileEstimator("data/processed/october/profiles-train.json.gz")
+profiles = ProfileEstimator("data/artifacts/october-2026-profiles-train.json.gz")
 incidents = IncidentIndex(alert_snapshots, max_age_seconds=300)
 report = evaluate_modes(
     snapshots, supplied_routes, cutoff, current_route_id,
@@ -31,6 +31,12 @@ returns `NOT_APPLICABLE`; the algorithm never silently invents a reference.
 An `IncidentIndex` must include available alert observations, including empty
 successful captures and failed captures. A missing index is unknown evidence.
 Only observations received by the cutoff may affect a prediction.
+
+The [versioned inference bundle](../../data/artifacts/README.md) is identical
+to the frozen development profile used for evaluation. The teammate can load
+it without rebuilding the historical month. It is trained only on October 1–17;
+full-month descriptive profiles are separate. Severe-specific support is sparse,
+so expose each endpoint's fallback and `incident_supported` fields in the client.
 
 Each supplied route has:
 
@@ -210,8 +216,9 @@ After preparing October snapshots and freezing development profiles:
 
 ```sh
 .venv/bin/python algo/scripts/run_severe.py \
-  --snapshots data/processed/october/2026-10-12.snapshots.jsonl.gz \
-  --cutoff 2026-10-12T08:00:00-04:00 \
+  --snapshots data/processed/october/2026-10-26.snapshots.jsonl.gz \
+  --profiles data/artifacts/october-2026-profiles-train.json.gz \
+  --cutoff 2026-10-26T08:00:00-04:00 \
   --current-route-id g_direct \
   --output data/reports/october-comparison-example.json
 ```

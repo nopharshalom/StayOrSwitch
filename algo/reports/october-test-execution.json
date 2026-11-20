@@ -1,0 +1,17 @@
+{
+  "command": [
+    "/Users/hollisyang/Desktop/Studio/StayOrSwitch/.venv/bin/python",
+    "algo/scripts/evaluate_october.py",
+    "--split",
+    "test",
+    "--allow-final-test"
+  ],
+  "elapsed_seconds": 451.3,
+  "exit_code": 0,
+  "final_test_explicitly_approved": true,
+  "finished_at": "2026-11-20T01:09:39.198818+00:00",
+  "outcome_tie_margin_seconds": 180,
+  "primary_switch_margin_seconds": 300,
+  "split": "test",
+  "started_at": "2026-11-20T01:02:07.894531+00:00"
+}

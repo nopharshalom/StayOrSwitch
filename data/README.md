@@ -41,6 +41,26 @@ See the [source quality report](reports/october-source.json),
 [pre-evaluation identity correction](../algo/reports/october-protocol-revision.md).
 The original normalization and corrected label producers have separate lineage.
 
+## Completed historical profiles
+
+The month produces 1,095,007 representative observations, of which 871,210 are
+eligible for full-month description, across 33,154 aggregate groups. The frozen
+October 1–17 inference profile uses 469,466 eligible observations. Repeated
+forecasts are deduplicated within each component/horizon/context group; these
+counts are not distinct passenger trips or independent incidents.
+
+Read the [time-of-day tables and horizon explanation](reports/profiles-horizon-notes.md)
+and [complete profile report](reports/profiles.md). Weekdays, Saturdays and
+Sundays remain separate. Severe support is sparse: only eight broad A-line
+training groups pass both the independent-event and incident thresholds.
+Other severe contexts retain explicit fallback instead of invented averages.
+
+Small [versioned aggregate bundles](artifacts/README.md) are included for the
+app teammate: one frozen inference profile and one descriptive whole-month
+profile. Raw snapshots and individual outcome rows remain local. The
+[final test report](../algo/reports/october-test.md) distinguishes conditional
+timing comparisons from still-unvalidated severe-service recommendations.
+
 ## Reproduce the data preparation
 
 Run from the repository root using the prepared Python environment:

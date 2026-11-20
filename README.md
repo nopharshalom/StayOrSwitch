@@ -40,6 +40,12 @@ service problems, using October 1–31, 2026 history and multiple route families
 The initial algorithm user has not boarded and is leaving now; the screens
 above illustrate the broader product concept.
 
+October data preparation, time-conditioned historical profiles and multi-route
+replays are complete. See the [historical delay tables](data/reports/profiles-horizon-notes.md)
+and [final test report](algo/reports/october-test.md). Severe-Switch effectiveness
+remains unvalidated: the fastest-MTA reference had no definite severe exposure
+in the held-out cases. Conditional timing comparisons are reported separately.
+
 See the [algorithm workspace](algo/README.md) and [data workspace](data/README.md)
 for implementation status, reproducible commands and measured results. The
 previous November model/data experiment has been removed from the active project.

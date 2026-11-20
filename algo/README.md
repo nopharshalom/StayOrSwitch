@@ -21,10 +21,28 @@ data/model stack has been removed. The corrected frozen implementation passes
 246 algorithm tests, 116 data tests and the retained 14-scenario contract validator.
 
 All 64 required October/boundary archives and all 31 prepared days have been
-verified. Full profiles are being generated; held-out replay is pending.
+verified. Full-month profiles and both held-out replays are complete. Monthly
+description uses 871,210 eligible representative observations; predictive
+evaluation uses only the frozen October 1–17 development profiles.
 The [pre-evaluation identity correction](reports/october-protocol-revision.md)
 documents the renewed protocol and unchanged decision/evaluation rules.
-Completed real-data results will be linked here only after verification.
+
+- [Historical means by time of day and forecast horizon](../data/reports/profiles-horizon-notes.md)
+- [Complete monthly profile report](../data/reports/profiles.md)
+- [Validation replay: October 18–24](reports/october-validation.md)
+- [Final test replay: October 25–31](reports/october-test.md)
+
+All 11 variants across seven route families were retained. The final test has
+128 predeclared checkpoints from six incident families, but zero selected Stay
+references with definite applicable severe exposure. There are therefore zero
+strict Switch decisions and no validated severe-Switch success rate. Of the
+14 incident-profile timing-only Switch diagnostics, four have comparable
+outcomes: two meaningful gains, one practical tie and one meaningful loss;
+ten remain unknown. These diagnostics are not formal incident advice.
+
+Severe-specific training support meets the event and incident gates in only
+eight broad A-line groups. Other severe contexts disclose fallback to time
+profiles. All outcomes remain screened final MTA prediction proxies.
 
 ## Algorithm handoff
 
@@ -34,6 +52,12 @@ incident-conditioned corrections. The caller supplies candidate routes and an
 explicit current route. Outputs preserve selected trains, historical support,
 estimated savings, unavailable alternatives, and separate formal versus
 conditional timing advice. The latter is not a product recommendation.
+
+The [versioned aggregate profile bundles](../data/artifacts/README.md) let the
+teammate run inference without rebuilding historical data. The inference bundle
+preserves the exact frozen development statistics; neither bundle contains raw
+data or individual outcome rows.
+The separate monthly bundle is for descriptive history, not held-out inference.
 
 After [preparing the data and freezing profiles](../data/README.md):
 
