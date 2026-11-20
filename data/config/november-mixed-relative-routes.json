@@ -1,0 +1,148 @@
+[
+  {
+    "destination": "Brooklyn Borough Hall, 209 Joralemon Street, Brooklyn, NY 11201",
+    "id": "inwood207_boroughhall",
+    "origin": "Broadway and West 207th Street, Manhattan, New York, NY",
+    "routes": [
+      {
+        "id": "google-route-460e63a42346ca0ec3c86a51",
+        "name": "A",
+        "family": "GOOGLE_A",
+        "legs": [
+          {
+            "route_id": "A",
+            "route_ids": [
+              "A"
+            ],
+            "feed_id": "ace",
+            "from_stop_id": "A02S",
+            "to_stop_id": "A41S"
+          }
+        ],
+        "access_walk_seconds": 85.0,
+        "egress_walk_seconds": 312.0,
+        "transfer_walk_seconds": []
+      },
+      {
+        "id": "google-route-8368a3cd3df68f88dd17ae53",
+        "name": "1 then 3",
+        "family": "GOOGLE_1_3",
+        "legs": [
+          {
+            "route_id": "1",
+            "route_ids": [
+              "1"
+            ],
+            "feed_id": "numbered",
+            "from_stop_id": "108S",
+            "to_stop_id": "123S"
+          },
+          {
+            "route_id": "3",
+            "route_ids": [
+              "3"
+            ],
+            "feed_id": "numbered",
+            "from_stop_id": "123S",
+            "to_stop_id": "232S"
+          }
+        ],
+        "access_walk_seconds": 420.0,
+        "egress_walk_seconds": 138.0,
+        "transfer_walk_seconds": [
+          73.0
+        ]
+      }
+    ],
+    "reference_route_id": "google-route-460e63a42346ca0ec3c86a51",
+    "unavailable_candidates": [],
+    "capture_path": "data/local/google-corridors/long-preview/inwood207_boroughhall.summary.json",
+    "capture_sha256": "5f9173ef452db4604473bceaeab37cac19444dc4639552503d6de31e2102de67"
+  },
+  {
+    "destination": "NYU Tandon School of Engineering, 6 MetroTech Center, Brooklyn, NY 11201",
+    "id": "kewgardens_tandon",
+    "origin": "Queens Boulevard and Union Turnpike, Kew Gardens, Queens, NY",
+    "routes": [
+      {
+        "id": "google-route-736a0dd890233bfe7ae2aff9",
+        "name": "F",
+        "family": "GOOGLE_F",
+        "legs": [
+          {
+            "route_id": "F",
+            "route_ids": [
+              "F"
+            ],
+            "feed_id": "bdfm",
+            "from_stop_id": "F06S",
+            "to_stop_id": "A41S"
+          }
+        ],
+        "access_walk_seconds": 132.0,
+        "egress_walk_seconds": 279.0,
+        "transfer_walk_seconds": []
+      },
+      {
+        "id": "google-route-3ed85f1d63617569ae0671c1",
+        "name": "FX",
+        "family": "GOOGLE_FX",
+        "legs": [
+          {
+            "route_id": "FX",
+            "route_ids": [
+              "FX"
+            ],
+            "feed_id": "bdfm",
+            "from_stop_id": "F06S",
+            "to_stop_id": "A41S"
+          }
+        ],
+        "access_walk_seconds": 132.0,
+        "egress_walk_seconds": 279.0,
+        "transfer_walk_seconds": []
+      },
+      {
+        "id": "google-route-c4a8f16fea4171d4791de6bd",
+        "name": "E then R",
+        "family": "GOOGLE_E_R",
+        "legs": [
+          {
+            "route_id": "E",
+            "route_ids": [
+              "E"
+            ],
+            "feed_id": "ace",
+            "from_stop_id": "F06S",
+            "to_stop_id": "E01S"
+          },
+          {
+            "route_id": "R",
+            "route_ids": [
+              "R"
+            ],
+            "feed_id": "nqrw",
+            "from_stop_id": "R25S",
+            "to_stop_id": "R29S"
+          }
+        ],
+        "access_walk_seconds": 132.0,
+        "egress_walk_seconds": 233.0,
+        "transfer_walk_seconds": [
+          194.0
+        ]
+      }
+    ],
+    "reference_route_id": "google-route-736a0dd890233bfe7ae2aff9",
+    "unavailable_candidates": [
+      {
+        "id": "kewgardens_tandon-unavailable-2",
+        "reason_codes": [
+          "PROVIDER_PATH_NORMALIZATION_FAILED"
+        ]
+      }
+    ],
+    "capture_path": "data/local/google-corridors/long-preview-kew/kewgardens_tandon.summary.json",
+    "capture_sha256": "32a945cd226bd8a263df8178798ea2c662ece69b885dc9dd0363a03c000d4852"
+  }
+]
